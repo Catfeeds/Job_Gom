@@ -1,0 +1,1 @@
+console.log('src/js/page/test/why.js~~');

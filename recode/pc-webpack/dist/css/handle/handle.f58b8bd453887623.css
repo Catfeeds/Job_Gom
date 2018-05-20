@@ -1,0 +1,7 @@
+@charset "UTF-8";
+body {
+  width: 800px; }
+  body #container {
+    width: 100px;
+    height: 100px;
+    background: url(../img/dca1a2fe.国美plus.png); }

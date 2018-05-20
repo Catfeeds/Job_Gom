@@ -1,0 +1,16 @@
+{
+  "name": "1",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+      "dev":"webpack-dev-server --config bin/webpack.config.js --env=mx-dev",
+	   "prd":"webpack-dev-server --https --config bin/webpack.config.js --env=mx-prd"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "webpack": "^3.5.4",
+    "webpack-dev-server": "^2.7.1"
+  }
+}

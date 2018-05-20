@@ -1,0 +1,10 @@
+.test {
+  width: 100px;
+  height: 50px;
+  border: 1px solid #ff0;
+  background: url(//js.meixincdn.com/pc/m/dist/images/test/logo.png?v=0bcb); }
+  .test .bat {
+    width: 10px; }
+
+.yes {
+  background: url(//js.meixincdn.com/pc/m/dist/images/test/logo.png?v=0bcb); }

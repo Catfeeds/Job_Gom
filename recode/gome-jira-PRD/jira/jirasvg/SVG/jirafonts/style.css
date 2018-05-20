@@ -1,0 +1,65 @@
+@font-face {
+  font-family: 'jirafonts';
+  src:  url('fonts/jirafonts.eot?gfsnfo');
+  src:  url('fonts/jirafonts.eot?gfsnfo#iefix') format('embedded-opentype'),
+    url('fonts/jirafonts.ttf?gfsnfo') format('truetype'),
+    url('fonts/jirafonts.woff?gfsnfo') format('woff'),
+    url('fonts/jirafonts.svg?gfsnfo#jirafonts') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'jirafonts' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-返回图标@2x2:before {
+  content: "\e900";
+  color: #666;
+}
+.icon-工作量分析图标@2x:before {
+  content: "\e901";
+  color: #d63333;
+}
+.icon-上拉加载图标@2x:before {
+  content: "\e902";
+  color: #999;
+}
+.icon-搜索图标@2x:before {
+  content: "\e903";
+}
+.icon-下一级图标@2x:before {
+  content: "\e904";
+  color: #666;
+}
+.icon-项目阶段分析图标@2x:before {
+  content: "\e905";
+  color: #d63333;
+}
+.icon-项目类型分析图标@2x:before {
+  content: "\e906";
+  color: #d63333;
+}
+.icon-项目筛选搜索图标@2x:before {
+  content: "\e907";
+  color: #d63333;
+}
+.icon-项目状态分析图标@2x:before {
+  content: "\e908";
+  color: #d63333;
+}
+.icon-总览图标@2x:before {
+  content: "\e909";
+  color: #d63333;
+}

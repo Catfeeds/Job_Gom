@@ -1,0 +1,1 @@
+console.log('src/page/test3');

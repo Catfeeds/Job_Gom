@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="44px" height="44px" viewBox="0 0 44 44" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 44.1 (41455) - http://www.bohemiancoding.com/sketch -->
+    <title>总览图标@2x</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="切片" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <path d="M22.4496644,2 L5,12.2012898 L5,32.3355705 L22.4496644,42 L39.8993289,31.7986053 L39.8993289,11.9328335 L22.4496644,2 Z M8.48993289,12.8959475 L22.2449664,5 L36,12.8959475 L22.2449664,20.7919463 L8.48993289,12.8959475 Z M23.90625,22.73216 L37.4832215,15.1279297 L37.4832215,30.3958691 L23.90625,38 L23.90625,22.73216 Z M7.10571289,30.4243164 L7.43286133,15.017334 L20.9438477,23.1164551 L20.9438477,38.6364746 L7.10571289,30.4243164 Z" id="总览图标" fill="#D63333"></path>
+    </g>
+</svg>

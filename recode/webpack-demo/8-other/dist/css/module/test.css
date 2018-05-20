@@ -1,0 +1,11 @@
+.test {
+  width: 100px;
+  height: 50px;
+  border: 1px solid #ff0;
+  background: url(../../images/test/logo.png); }
+
+.yes {
+  background: url(../../images/test/logo.png); }
+
+.test2 {
+  width: 200px; }

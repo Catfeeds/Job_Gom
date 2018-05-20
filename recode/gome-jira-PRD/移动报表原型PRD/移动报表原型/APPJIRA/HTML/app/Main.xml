@@ -1,0 +1,72 @@
+﻿<project version="2.4" name="jiraAPP最终最终版" ID="FE76231C-6FB5-457D-9FE0-A56A1D048887">
+  <params>
+    <pageParam version="4.7" minAllowVersion="4.7"/>
+    <projectParam version="2.4" minAllowVersion="2.4" platform="MtMobile" orientation="MoPortrait" mobileScreenScale="1.77777779102325" mobileType="mmtIOS" pageSize="(375,667)" backgroundColor="4294967295" fontSize="0" fontFamily="" projectType="ptPersonalProject"/>
+    <previewParam version="1.0"/>
+    <colorParam version="1.0"/>
+  </params>
+  <pages>
+    <page name="首页1" ID="B17A3E72-5A08-4603-9FB8-B553E046871D" expanded="True" code="PBfKqRlKsa" thumbCode="PBfKqRlKsa" status="psWhite" isfolder="False"/>
+    <page name="总览表格1" ID="A4CE4CF6-736C-477C-99F6-8ACA726E2AFB" expanded="True" code="oQhqOjEExu" thumbCode="oQhqOjEExu" status="psWhite" isfolder="False"/>
+    <page name="总览图形1" ID="C67A729D-52C8-4153-A817-2C1C6AAF5FBE" expanded="True" code="VBrW7ZemG5" thumbCode="VBrW7ZemG5" status="psWhite" isfolder="False"/>
+    <page name="项目阶段表格1" ID="B4A3F332-DFEA-4E7A-9278-EFB0E63F0D51" expanded="True" code="Pzb6895FTG" thumbCode="Pzb6895FTG" status="psWhite" isfolder="False"/>
+    <page name="项目阶段图形1" ID="9CBA1755-B7EE-4D31-87DA-30339566C2B2" expanded="True" code="DirZ8xs2Ss" thumbCode="DirZ8xs2Ss" status="psWhite" isfolder="False"/>
+    <page name="项目状态表格1" ID="D7D9E671-3CA0-49F6-B4C5-58DB84A21110" expanded="True" code="4HMqMl98Cu" thumbCode="4HMqMl98Cu" status="psWhite" isfolder="False"/>
+    <page name="项目状态图形1" ID="B18B847D-17F5-471D-9791-CFAA524A4CBD" expanded="True" code="TTsCuqsogx" thumbCode="TTsCuqsogx" status="psWhite" isfolder="False"/>
+    <page name="项目类型1" ID="6F38CF9B-37FF-42C8-9934-17F8920F8CF8" expanded="True" code="M5GASrITSJ" thumbCode="M5GASrITSJ" status="psWhite" isfolder="False"/>
+    <page name="项目类型表格1" ID="A6061C9A-02DF-474B-8A3C-1A1B62F2CB6C" expanded="True" code="XMit9fexZ2" thumbCode="XMit9fexZ2" status="psWhite" isfolder="False"/>
+    <page name="项目类型图形1" ID="216AE602-4BE6-42FF-828C-7BF95A0FEBF7" expanded="True" code="YM85eexTeX" thumbCode="YM85eexTeX" status="psWhite" isfolder="False"/>
+    <page name="风险类型表格1" ID="D5BB24CA-E2DE-49CB-84D7-A07C22209E88" expanded="False" code="kalW9XAeDX" thumbCode="kalW9XAeDX" status="psWhite" isfolder="False"/>
+    <page name="风险类型图形1" ID="079CD65B-3090-46F5-B61D-65BEB9440267" expanded="True" code="yCER9T644a" thumbCode="yCER9T644a" status="psWhite" isfolder="False"/>
+    <page name="工作量类型1" ID="063CE912-2307-4E1E-B370-F7F1F1B35D5D" expanded="True" code="BArwXdoqvq" thumbCode="BArwXdoqvq" status="psWhite" isfolder="False"/>
+    <page name="阶段人天表格1" ID="BC0F1B46-0969-4F88-B922-4DCE0D450705" expanded="True" code="nIzyzKCSLp" thumbCode="nIzyzKCSLp" status="psWhite" isfolder="False"/>
+    <page name="阶段人天图形1" ID="7EBCE60C-1A94-4C2D-89D5-EB7AC8401B22" expanded="True" code="M1Eemty3NI" thumbCode="M1Eemty3NI" status="psWhite" isfolder="False"/>
+    <page name="阶段人数表格1" ID="0EDF18D8-D901-4067-802D-075D64C0F59F" expanded="True" code="RpPLE9UAWc" thumbCode="RpPLE9UAWc" status="psWhite" isfolder="False"/>
+    <page name="阶段人数图形1" ID="849303E2-71E4-4C7C-B4CA-8866C3D9B046" expanded="True" code="NudAINQxcv" thumbCode="NudAINQxcv" status="psWhite" isfolder="False"/>
+    <page name="阶段任务数表格1" ID="B17BED2B-F00D-49E0-A767-4F1D079D3850" expanded="True" code="nvYutKIwsC" thumbCode="nvYutKIwsC" status="psWhite" isfolder="False"/>
+    <page name="阶段任务数图形1" ID="42459592-E78D-4E8E-8D13-1B18482D4547" expanded="True" code="xHoeVtNZJh" thumbCode="xHoeVtNZJh" status="psWhite" isfolder="False"/>
+    <page name="筛选类型1" ID="38435B1E-31EF-4343-9081-C3138638522D" expanded="True" code="RRyDE11Mkz" thumbCode="RRyDE11Mkz" status="psWhite" isfolder="False"/>
+    <page name="搜索1" ID="CB8E150F-92A2-4661-95C3-D7759264F22D" expanded="True" code="OwzjxOYH1J" thumbCode="OwzjxOYH1J" isLastOpen="True" status="psWhite" isfolder="False"/>
+    <page name="筛选中心1" ID="C4472891-63C4-4044-B1B0-F10D33FAFE68" expanded="True" code="yoxYzLfHPE" thumbCode="OLw5K2OKuS" status="psWhite" isfolder="False"/>
+    <page name="筛选部门1" ID="1464CC56-9876-47A8-B64A-18A4EE81D780" expanded="True" code="tSBW4RUv22" thumbCode="tSBW4RUv22" status="psWhite" isfolder="False"/>
+    <page name="筛选结果1" ID="2FDFB51D-075B-4075-B6B6-49C216BBCDCF" expanded="True" code="oPagM7vexf" thumbCode="oPagM7vexf" status="psWhite" isfolder="False"/>
+    <page name="项目详情页1" ID="922B863B-E908-44ED-B474-7E9D2083741F" expanded="True" code="BiXrtmVetX" thumbCode="BiXrtmVetX" status="psWhite" isfolder="False"/>
+    <page name="项目详情页2" ID="D426A5FC-73D2-49BC-B29F-41A92543D227" expanded="True" code="PN3dV3XmFt" thumbCode="uRf9ziCsYQ" status="psWhite" isfolder="False"/>
+    <page name="项目成员选择页1" ID="64127204-9076-4524-8285-5CC682322B25" expanded="True" code="LdBjOH5lkA" thumbCode="LdBjOH5lkA" status="psWhite" isfolder="False"/>
+    <page name="项目成员选择页2" ID="55D9F44A-12FA-4721-83F5-7B5F78CDF7CF" expanded="True" code="WZmjbrZxu1" thumbCode="WZmjbrZxu1" status="psWhite" isfolder="False"/>
+  </pages>
+  <masters>
+    <master name="母版" ID="1E15787D-E0BE-4C7C-8660-A58B10E37D2C" status="psWhite" createDate="1899-12-30 00:00:00">
+      <refPages/>
+    </master>
+    <master name="母版1" ID="47E5588E-D916-4624-9F04-45067939B97B" status="psWhite" createDate="1899-12-30 00:00:00">
+      <refPages/>
+    </master>
+    <master name="母版2" ID="8F5C90A3-C110-441F-B670-D60CBE6DD1B7" status="psWhite" createDate="1899-12-30 00:00:00">
+      <refPages/>
+    </master>
+    <master name="母版3" ID="570C9257-A807-46EB-9DF4-E48CB584F85D" status="psWhite" createDate="1899-12-30 00:00:00">
+      <refPages>
+        <page ID="9CBA1755-B7EE-4D31-87DA-30339566C2B2" refCount="2"/>
+      </refPages>
+    </master>
+    <master name="母版4" ID="5659EA42-C096-48EE-A744-153ED2C9E4B1" status="psWhite" createDate="1899-12-30 00:00:00">
+      <refPages/>
+    </master>
+    <master name="母版5" ID="0D5B25FB-3C48-45CA-A060-B68D2EA3D2B9" status="psWhite" createDate="1899-12-30 00:00:00">
+      <refPages/>
+    </master>
+    <master name="母版6" ID="CDE6C03A-A1E5-4060-8A83-42A653ECB532" status="psWhite" createDate="1899-12-30 00:00:00">
+      <refPages/>
+    </master>
+    <master name="母版7" ID="835D0AAB-22FB-4DFB-967B-7596C6A6EBB6" status="psWhite" createDate="1899-12-30 00:00:00">
+      <refPages>
+        <page ID="216AE602-4BE6-42FF-828C-7BF95A0FEBF7" refCount="1"/>
+      </refPages>
+    </master>
+    <master name="母版8" ID="40351524-1F1A-4744-8412-0911F59D5546" status="psWhite" createDate="1899-12-30 00:00:00">
+      <refPages/>
+    </master>
+  </masters>
+  <images/>
+</project>

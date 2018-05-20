@@ -1,0 +1,563 @@
+@charset "utf-8";
+html, body, div, p, ul, li,ol, dl, dt, dd, h1, h2, h3, h4, h5, h6, form, input, select, button, textarea, iframe, table, th, td, a, img { margin: 0; padding: 0;}
+body { background: #fff; color: #363636;font-family: 'Microsoft Yahei'; font-size: 14px;}
+h1, h2, h3, h4, h5, h6{font-weight: normal;}
+ul,ol,li,dl,dd,dt{list-style: none;}
+a img,img { border: 0 none; vertical-align: top; }
+a:focus { outline: none; }
+i, em, cite { font-style: normal; }
+button { cursor: pointer; }
+a{text-decoration: none;outline: none;color: #333;}
+a:focus{outline:none;}
+
+.fl{float: left;}
+.fr{float: right;}
+.clearfix:after{display: block;clear: both;content: '';}
+.clearfix{zoom:1;}
+body,html{width: 100%;height: 100%;}
+
+
+.cont{
+    width: 100%;
+    height: 13.34rem;
+    background: url("../images/bg.jpg") no-repeat;
+    background-size: cover;
+    color: #631819;
+}
+.cont>div{
+    display: none;
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height: 13.34rem;
+}
+
+.close{
+    width: 0.85rem;
+    height: 0.85rem;
+    position: absolute;
+    background: url("../images/close.png") no-repeat;
+    background-size: cover;
+    top:-0.3rem;
+    right: -0.3rem;
+}
+.layer{
+    background: url("../images/opa5.png");
+}
+
+.smallHintBg{
+    position: absolute;
+    top:5.4rem;
+    left: 1rem;
+    width: 5.24rem;
+    height: 2.58rem;
+    background: url("../images/hintBg.png") no-repeat;
+    background-size: cover;
+}
+.smallHint-cont{
+    position: absolute;
+    top:50%;
+    margin-top: -0.26rem;
+    height: 0.52rem;
+    width: 100%;
+    line-height: 0.52rem;
+    text-align: center;
+    font-size: 0.38rem;
+    font-weight: bold;
+}
+.bigHintBg{
+    position: relative;
+    margin:5.46rem 0 0 0.3rem;
+    width: 6.59rem;
+    height:2.58rem;
+    background: url("../images/failureBg.png") no-repeat;
+    background-size: cover;
+}
+/* .hint .close,.share .close,.failure .close,.succeed .close,.certain .close{
+    top:-0.3rem;
+    right: -0.3rem;
+} */
+.lotto-btn{
+    background: url("../images/lotto.png")no-repeat;
+    background-size: cover;
+    width: 1.84rem;
+    height: 0.62rem;
+}
+.palyAgain-btn{
+    background: url("../images/playAgain.png")no-repeat;
+    background-size: cover;
+    width: 1.84rem;
+    height: 0.62rem;
+}
+.hide{
+    display: none;
+}
+
+/* loading */
+.cont>.loading{
+    display: block;
+}
+.loading .load{
+    position: absolute;
+    top:6.3rem;
+    left: 1.1rem;
+    width: 1.66rem;
+    height: 0.36rem;
+    background: url("../images/loading.png") no-repeat;
+    background-size: cover;
+}
+.loading .loadBg{
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 13.34rem;
+    background: #000;
+    opacity: 0.92;
+}
+.loading .load-plan{
+    position: absolute;
+    top:6.9rem;
+    left: 1.1rem;
+    width: 4.79rem;
+    height: 0.21rem;
+    background: url("../images/plan.png") no-repeat;
+    background-size: cover;
+}
+
+.loading .plan{
+    position: absolute;
+    top:-0.05rem;
+    left: 0;
+    width: 50%;
+    height: 0.26rem;
+}
+.loading .plan-percent{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+.loading .percent{
+    width: 4.79rem;
+    height: 0.26rem;
+    background: url("../images/percent.png") no-repeat;
+    background-size: cover;
+}
+.loading .percent-pic{
+    position: absolute;
+    top:-0.25rem;
+    right: -0.4rem;
+    width: 0.61rem;
+    height: 0.70rem;
+    background: url("../images/loadPic.png") no-repeat;
+    background-size: cover;
+}
+.loading .load-num{
+    position: absolute;
+    top:-0.06rem;
+    right: -1rem;
+    font-size: 0.18rem;
+    color: #fff;
+}
+
+
+/* home */
+.home{
+    background: url("../images/homeTitle.png") no-repeat;
+    background-size: cover;
+}
+.home a{
+    position: absolute;
+    left:50%;
+}
+.home .start-game,.home .rule-game{
+    margin-left: -1.39rem;
+    width: 2.78rem;
+    height: 0.95rem;
+}
+.home .start-game{
+    top:7.47rem;
+    background: url("../images/startGame.png") no-repeat;
+    background-size: cover;
+}
+.home .rule-game{
+    top:8.7rem;
+    background: url("../images/ruleGame.png") no-repeat;
+    background-size: cover;
+}
+.home .back{
+    bottom:0.7rem;
+    width: 2.36rem;
+    margin-left: -1.18rem;
+    height: 1rem;
+    background: url("../images/back.png") no-repeat;
+    background-size: cover;
+}
+
+/* rule */
+
+.rule .ruleBg{
+    position: absolute;
+    top: 1.12rem;
+    left: 0.7rem;
+    width: 6.14rem;
+    height: 11.17rem;
+    background: url("../images/rule-bg.png") no-repeat;
+    background-size: cover;
+}
+.rule .rule-item{
+    margin:2.1rem 0 0 0.66rem ;
+    width: 5rem;
+    height: 8.3rem;
+    overflow: auto;
+}
+.rule .item-cont{
+    width: 4.82rem;
+    line-height: 0.42rem;
+    font-size: 0.2rem;
+}
+.rule .close{
+    top:1.18rem;
+    right: 0.12rem;
+}
+.rule .back{
+    position: absolute;
+    left: 50%;
+    margin-left: -1.225rem;
+    bottom:-0.3rem;
+    width: 2.45rem;
+    height: 0.83rem;
+    background: url("../images/backHome.png") no-repeat;
+    background-size: cover;
+}
+/* hint */
+.hint-btn{
+    position: absolute;
+    bottom: -0.26rem;
+    left:50%;
+    margin-left: -1.225rem;
+    width: 2.45rem;
+    height: 0.83rem;
+    background: url("../images/hintBtn.png") no-repeat;
+    background-size: cover;
+}
+.toLoad-btn{
+    position: absolute;
+    bottom: -0.26rem;
+    left:50%;
+    margin-left: -1.225rem;
+    width: 2.45rem;
+    height: 0.83rem;
+    background: url("../images/toLoadBtn.png") no-repeat;
+    background-size: cover;
+}
+.toLoad .smallHint-cont{
+    width: 3.5rem;
+    height: 1.4rem;
+    left:50%;
+    margin: -.52rem 0 0 -1.75rem;
+}
+/* gameOver */
+.gameOver .game-grade{
+    position: absolute;
+    top:3.24rem;
+    left: 0.96rem;
+    width: 5.28rem;
+    height: 6.96rem;
+    background: url("../images/gameGrade.png") no-repeat;
+    background-size: cover;
+}
+.gameOver .grade{
+    padding-top: 2.4rem;
+    font-size: 0.38rem;
+    line-height: 0.58rem;
+    font-weight: bold;
+    text-align: center;
+}
+.gameOver p{
+    font-size: 0.56rem;
+    line-height: 0.76rem;
+    padding-bottom: 0.2rem;
+}
+.gameOver .close{
+    top:1.16rem;
+    right: -0.3rem;
+}
+.gameOver .btn{
+    padding-top: 0.2rem;
+    width: 4.18rem;
+    margin:0 auto;
+}
+.gameOver .btn div{
+
+    width: 1.84rem;
+    height: 0.62rem;
+}
+.gameOver .upload{
+    background: url("../images/upload.png") no-repeat;
+    background-size: cover;
+}
+.gameOver .again{
+    background: url("../images/again.png") no-repeat;
+    background-size: cover;
+}
+
+/* certain */
+.certain .certain-upload{
+    font-size: 0.38rem;
+    line-height: 0.52rem;
+    text-align: center;
+    width: 5.34rem;
+    padding-top: 0.8rem;
+    margin:0 auto; 
+    font-weight: bold;
+}
+/* failure */
+.failure{
+    text-align: center;
+    font-weight: bold;
+}
+.failure .upload-failure{
+    font-size: 0.38rem;
+    line-height: 0.58rem;
+    width: 3.2rem;
+    padding-top: 0.54rem;
+    margin: 0 auto ;
+    position: relative;
+    text-align: left;
+}
+.failure .upload-failure span{
+    position: absolute;
+    top:0.64rem;
+    right: 0;
+    width: 0.41rem;
+    height: 0.38rem;
+    background: url("../images/failed.png") no-repeat;
+    background-size: cover;
+}
+.failure .anew{
+    font-size: 0.24rem;
+    line-height: 0.24rem;
+    padding-bottom:0.22rem;
+}
+.failure .time{
+    font-size: 0.32rem;
+    line-height: 0.32rem;
+}
+.failure .back,.happy .back{
+    font-size: 0.36rem;
+    line-height: 0.36rem;
+    color: #fcebb8;
+    font-weight: normal;
+    padding-top:0.24rem;
+}
+/* succeed */
+.succeed{
+    text-align: center;
+}
+
+
+.succeed .upload-succeed{
+    font-weight: bold;
+    padding-top: 0.62rem;
+    font-size: 0.36rem;
+    line-height: 0.52rem;
+}
+.succeed .extra{
+    font-size: 0.32rem;
+    line-height: 0.52rem;
+
+}
+.succeed .extra span{
+    color:#b40b13;
+    font-weight: bold;
+}
+.succeed .btn{
+    position: absolute;
+    bottom:-0.16rem;
+    left: 50%;
+    margin-left: -3.06rem;
+    width: 6.12rem;
+}
+.succeed .btn div{
+    float: left;
+    width: 1.84rem;
+    height: 0.62rem;
+}
+.succeed .share-btn{
+    background: url("../images/share.png")no-repeat;
+    background-size: cover;
+}
+.succeed .lotto-btn{
+    margin: 0 0.3rem;
+}
+/* share */
+.share .btn,.happy .btn{
+    position: absolute;
+    bottom:-0.16rem;
+    width: 4.18rem;
+    left: 50%;
+    margin-left: -2.09rem;
+}
+.happy .back{
+    position: absolute;
+    width: 100%;
+    top:8.4rem;
+    padding:0;
+    text-align: center;
+}
+/* game */
+.game{
+    background: url("../images/game.jpg")no-repeat;
+    background-size: cover;
+    color: #fff;
+    font-size: 0.32rem;
+    line-height: 0.54rem;
+}
+.game .state{
+    width: 6.58rem;
+    height: 0.55rem;
+    margin:2.04rem auto 0;
+}
+.game .countDown,.game .amount{
+    padding:0.05rem 0.06rem 0.05rem 0.18rem;
+    width: 2.9rem;
+    height: 0.45rem;
+    line-height: 0.45rem;
+    background: url("../images/state.png")no-repeat;
+    background-size: cover;
+}
+.game .time,.game .num{
+    text-align: center;
+    background: #540d04;
+    height: 0.44rem;
+    border-radius: 0.22rem;
+}
+.game .time{
+    width: 1.86rem;
+}
+.game .num{
+    width: 1.38rem;
+}
+.game .hole-box{
+    padding-top: 1.4rem;
+}
+.game .hole{
+    position: relative;
+    float: left;
+    padding: 0 0.64rem;
+    width: 2.46rem;
+    height: 2.3rem;
+}
+.game .hole-top{
+    position: absolute;
+    bottom: 0.4rem;
+    width: 2.46rem;
+    height:0.45rem;
+    background: url("../images/holeTop.png")no-repeat;
+    background-size: cover;
+}
+.game .hole-bottom{
+    position: absolute;
+    bottom: 0;
+    width: 2.46rem;
+    height:0.72rem;
+    background: url("../images/holeBottom.png")no-repeat;
+    background-size: cover;
+}
+.game .ratting-box{
+    position: absolute;
+    bottom: 0.4rem;
+    left: 50%;
+    margin-left:-0.685rem;
+    width: 1.37rem;
+    height: 0%;
+}
+.game .ratting{
+    height: 100%;
+    overflow: hidden;
+    position: absolute;
+    width: 1.59rem;
+    top:0;
+    left: 0;
+}
+.game .pic{
+    position: absolute;
+    width: 1.37rem;
+    height: 1.59rem;
+    top:0.66rem;
+}
+.game .nullHit .hit-ratting{
+    background: url("../images/nullHit.png")no-repeat;
+    background-size: cover;
+}
+.game .hit .hit-ratting{
+    background: url("../images/hit.png")no-repeat;
+    background-size: cover;
+}
+.game .star{
+    position: absolute;
+    top:0rem;
+    width: 1.45rem;
+    height: 0.66rem;
+    background: url("../images/star.png")no-repeat;
+    background-size: cover;
+}
+.game .nullHit .star{
+    display: none;
+}
+.game .hit .star{
+    display: block;
+}
+.game .hammer{
+    position: absolute;
+    top:5rem;
+    left: 2rem;
+    width: 1.68rem;
+    height: 2.14rem;
+    background: url("../images/hammer.png")no-repeat;
+    background-size: cover;
+    animation-duration: .5s;
+    animation-fill-mode: both;
+}
+
+
+
+/* animation */
+  .move{
+   -webkit-animation: down 2s linear alternate;
+   -o-animation: down 2s linear alternate;
+   animation: down 2s linear alternate;
+} 
+@keyframes down {
+    0%{height: 0%}
+    50%{height: 86%}
+    100%{height: 0%}
+}
+@-webkit-keyframes down {
+    0%{height: 0%}
+    50%{height: 86%}
+    100%{height: 0%}
+}
+@-o-keyframes down {
+    0%{height: 0%}
+    50%{height: 86%}
+    100%{height: 0%}
+}
+
+@keyframes rotateInDownRight {
+    0% {
+        transform-origin: right bottom;
+        transform: rotate(15deg);
+    }
+
+    to {
+        transform-origin: right bottom;
+        transform: rotate(-30deg);
+    }
+}
+
+.rotateInDownRight {
+    animation-name: rotateInDownRight
+}

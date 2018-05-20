@@ -1,0 +1,22 @@
+.blue{
+  background: blue;
+}
+
+.red {
+  background: red;
+}
+
+.green {
+  background: green;
+}
+
+.fl {
+  float: left;
+}
+
+.clearfloat:after{display:block;clear:both;content:"";visibility:hidden;height:0}
+.clearfloat{zoom:1} 
+
+.childUl, .subChildUl {
+  width: 100px;
+}
