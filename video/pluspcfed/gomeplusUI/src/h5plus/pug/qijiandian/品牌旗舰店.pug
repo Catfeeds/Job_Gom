@@ -1,0 +1,134 @@
+doctype html
+html(lang="zh-CN")
+	include ../../../m-widget/head/head.jade
+	link(type="text/css",rel="stylesheet",href="../../css/public/base-zx.css")
+	link(type="text/css",rel="stylesheet",href="../../css/module/flagshop/shop.min.45f6b70a3e.css")
+	link(type="text/css",rel="stylesheet",href="../../css/module/flagshop/flagshop.css")
+	script(src="../../js/jquery.js")
+	script(src="../../js/UI/menu.js")
+	script(src="../../js/UI/menu-top.js")
+	body
+		article.shop_cont
+			ul.flag-list-menu
+				li.active
+					a(href="javascript:;").list-btn 全部
+				li
+					a(href="javascript:;").list-btn 新品
+				li
+					a(href="javascript:;").list-btn 热销
+				li
+					a(href="javascript:;").list-btn 促销
+			.flag-flex
+				.flex-box.flex-two
+					.t-t
+						a(href="##").img
+							img(src="http://wx1.sinaimg.cn/mw600/6925010dgy1fftw6cxjwdj20km0ixdit.jpg")
+						a(href="##").txt
+							span.dec 机械(Mechanic laptop blah blah blah blah blah blah blah blah blah blah blah blah blah)
+							span.price ￥6688.00
+					.t-b
+						a(href="##").img
+							img(src="http://wx1.sinaimg.cn/mw600/6925010dgy1fftw6cxjwdj20km0ixdit.jpg")
+						a(href="##").txt
+							span.dec 机械(Mechanic laptop blah blah blah blah blah blah blah blah blah blah blah blah blah)
+							span.price ￥6688.00
+				.flex-box.flex-one
+					h3.title
+						em
+						span 超值单品
+						em
+					a(href="##").img
+						img(src="http://wx1.sinaimg.cn/mw600/6925010dgy1fftw6cxjwdj20km0ixdit.jpg")
+					a(href="##").txt
+						span.dec 机械(Mechanic laptop blah blah blah blah blah blah blah blah blah blah blah blah blah)
+						span.price ￥6688.00
+			.flag-flex
+				.flex-box.flex-one
+					h3.title
+						em
+						span 超值单品
+						em
+					a(href="##").img
+						img(src="http://wx1.sinaimg.cn/mw600/6925010dgy1fftw6cxjwdj20km0ixdit.jpg")
+					a(href="##").txt
+						span.dec 机械(Mechanic laptop blah blah blah blah blah blah blah blah blah blah blah blah blah)
+						span.price ￥6688.00
+				.flex-box.flex-two
+					.t-t
+						a(href="##").img
+							img(src="http://wx1.sinaimg.cn/mw600/6925010dgy1fftw6cxjwdj20km0ixdit.jpg")
+						a(href="##").txt
+							span.dec 机械(Mechanic laptop blah blah blah blah blah blah blah blah blah blah blah blah blah)
+							span.price ￥6688.00
+					.t-b
+						a(href="##").img
+							img(src="http://wx1.sinaimg.cn/mw600/6925010dgy1fftw6cxjwdj20km0ixdit.jpg")
+						a(href="##").txt
+							span.dec 机械(Mechanic laptop blah blah blah blah blah blah blah blah blah blah blah blah blah)
+							span.price ￥6688.00
+			section.prod_floor
+				h4.vip_title
+					i.line
+					span.line_goods_name 商品分类
+					i.line
+			ul.flag-sorts
+				- for (var x = 0; x < 8; x++)
+					li.img-txt
+						a(href="##").mt-a
+							img(src="http://wx1.sinaimg.cn/mw600/6925010dgy1fftw6cxjwdj20km0ixdit.jpg")
+							p 笔记本本
+			section.prod_floor
+				h4.vip_title
+					i.line
+					span.line_goods_name 地域分类
+					i.line
+			ul.flag-sorts
+				- for (var x = 0; x < 8; x++)
+					li.img-txt
+						a(href="##").tags 最多四个
+			ul.flag-f-menu
+				li
+					a(href="javascript:;")
+						em.icon.icon-list
+						span 精彩活动
+					.sub-f-list
+						i.triangle
+						ul
+							li
+								a(href="http://www.baidu.com") 这儿最多七个字儿
+							li
+								a(href="javascript:;") 这儿最多七个字
+							li
+								a(href="javascript:;") 这儿最多
+							li
+								a(href="javascript:;") 这
+				li
+					a(href="javascript:;")
+						em.icon.icon-list
+						span 特惠专区
+					.sub-f-list
+						i.triangle
+						ul
+							li
+								a(href="javascript:;") 这儿
+							li
+								a(href="javascript:;") 这儿
+							li
+								a(href="javascript:;") 最少
+							li
+								a(href="javascript:;") 这
+				li
+					a(href="javascript:;")
+						em.icon.icon-list
+						span 客服
+					.sub-f-list
+						i.triangle
+						ul
+							li
+								a(href="javascript:;") 这儿客服
+							li
+								a(href="javascript:;") 这儿客服
+							li
+								a(href="javascript:;") 最少客服
+							li
+								a(href="javascript:;") 这客服

@@ -1,0 +1,59 @@
+//- extends layout.jade
+extends ../public/layout.jade
+
+block title
+	title 现金账户明细-单天明细
+//- block link-theme
+//- 	link(rel='stylesheet' type="text/css" href="../../css/module/account.css")
+
+//- account
+block content
+	include ../public/menu.jade
+	div.content-main
+		div.amp-account
+			// crumbs
+			div.crumbs
+				a(href="javascript:void(0);")
+					span 我的账户
+					em >
+				a(href="javascript:void(0);").actived
+					span 现金账户明细
+					em >
+			// account-main
+			div.account-main.account-main01
+				// amp-path
+				div.amp-path.amp-path-large
+					span.path-col
+						| 2016年12月11日费用支出明细
+				div.main-wrap
+					// 单天明细
+					div.record-consume
+						// 列表
+						div.cont-list
+							table.table
+								tr
+									th
+										span 计划名称
+									th
+										span 账户
+									th
+										span 支出（元）
+								tr
+									td
+										span 2016/11/23
+									td
+										span
+											a(href="#") 主账户
+									td
+										span 156
+								- for (var i =0;i<8;i++)
+									tr
+										td
+											span 2016/12/23
+										td
+											span
+												a(href="#") 主账户
+										td
+											span 156
+						
+			

@@ -1,0 +1,208 @@
+doctype html
+html(lang="zh-CN")
+	include ../../../pc-widget/head/head.jade
+	link(type="text/css",rel="stylesheet",href="../../css/public/public.css")
+	link(type="text/css",rel="stylesheet",href="../../css/module/shoppublic.css")
+	link(type="text/css",rel="stylesheet",href="../../css/module/sureorder.css")
+	body.opg
+		include ../../../pc-widget/header/header.jade
+		include ../../../pc-widget/menu/menu.jade
+		div.wrap-box
+			h1.shopcar 确认收货地址
+			div.address-editor
+				p.addre-send 新增收货地址：
+				.edit-add-box
+					dl.receiver.clearfix
+						dt 收货人:
+						dd
+							input(type="text")
+					p.warn-txt 收货人的姓名为2-20个字符
+					dl.area.clearfix
+						dt 所在地区:
+						dd
+							div
+								span.down-arrow
+									// icon替换 .icon.icon-down
+									em.iconn-2
+								span.menu-add 选择省
+								ul
+									li 子菜单一
+									li 子菜单二
+									li 子菜单一
+									li 子菜单二
+									li 子菜单一
+									li 子菜单二
+							div
+								span.down-arrow
+									// icon替换 .icon.icon-down
+									em.iconn-2
+								span.menu-add 选择市
+								ul
+									li 子菜单一
+									li 子菜单二
+							div
+								span.down-arrow
+									// icon替换 .icon.icon-down
+									em.iconn-2
+								span.menu-add 选择区县
+								ul
+									li 子菜单一
+									li 子菜单二
+							div
+								span.down-arrow
+									// icon替换 .icon.icon-down
+									em.iconn-2
+								span.menu-radio-checked 选择街道
+								ul
+									li 子菜单一
+									li 子菜单二
+					p.warn-txt 请补充地址
+					dl.detail-add.clearfix
+						dt 详细地址:
+						dd
+							input(type="text")
+					p.warn-txt 请输入详细地址
+					dl.phone.clearfix
+						dt 电话号:
+						dd
+							input(type="text")
+					p.warn-txt 请输入10-12位电话或者手机号码
+					.set-default-add
+						a(href="javascript:;").menu-radio.menu-radio-checked
+						| 设置为默认地址
+					a.pc-btn.pc-btnw160.pc-btnh50.pc-no-radius.edit-ad-btn(href="javascript:;") 保存
+			h1.shopcar 确认订单信息
+			table.shop-car-list.order-information
+				tr.bor-bom
+					th.width55
+						.merchandise-news.margi-left20 商品信息
+					th 单价（元）
+					th 数量
+					th 金额（元）
+			table.shop-car-list.order-information
+				tr.bor-bom
+					td.align-left(colspan="4")
+						.check-all
+							input(type="checkbox")
+							div.shop-arl-check.icon-fontsize
+								// icon替换 icon
+								em.iconn-44
+							span.store-name-text 马克华妃旗舰店
+				- for (var a = 0; a < 3; a++)
+					tr
+						td.width55
+							.products-by.margi-left20
+								input(type="checkbox")
+								.graphic
+									a(href="javescript:")
+										.product-bx
+											img(src="//img.alicdn.com/bao/uploaded/i1/TB1OgSRLVXXXXaaXFXXXXXXXXXX_!!0-item_pic.jpg_250x250xz.jpg")
+										.product-name
+											h4.product-title 洗颜专科矿物质水清透防晒乳液洗颜专科矿物质水清透防晒乳液防晒乳液洗颜专科矿物质水清透防晒乳液洗颜专科矿物质水清透防晒乳液防晒乳液
+											p.product-color 颜色：SPF30 .PA 40ml
+											p.product-source
+												span 商品来自美店：
+												| 农夫山泉小店
+						td
+							.new-border-bom 500.00
+						td
+							.new-border-bom 20
+						td
+							.new-border-bom 1122.00
+			table.shop-car-list.order-information
+				tr.bor-bom
+					td.align-left(colspan="4").total-price
+						.commodity-prices 运费：
+							strong ￥15.00
+							| &nbsp;&nbsp;&nbsp;店铺合计（含运费）:
+							strong ￥1234.00
+			table.shop-car-list.order-information
+				tr.bor-bom
+					td.align-left(colspan="4")
+						.check-all
+							input(type="checkbox")
+							div.shop-arl-check.icon-fontsize
+								// icon替换 icon
+								em.iconn-44
+							span.store-name-text 马克华妃旗舰店
+				- for (var a = 0; a < 2; a++)
+					tr
+						td.width55
+							.products-by.margi-left20
+								input(type="checkbox")
+								.graphic
+									a(href="javescript:")
+										.product-bx
+											img(src="//img.alicdn.com/bao/uploaded/i1/TB1OgSRLVXXXXaaXFXXXXXXXXXX_!!0-item_pic.jpg_250x250xz.jpg")
+										.product-name
+											h4.product-title 洗颜专科矿物质水清透防晒乳液洗颜专科矿物质水清透防晒乳液防晒乳液洗颜专科矿物质水清透防晒乳液洗颜专科矿物质水清透防晒乳液防晒乳液
+											p.product-color 颜色：SPF30 .PA 40ml
+											p.product-source
+												span 商品来自美店：
+												| 农夫山泉小店
+						td
+							.new-border-bom 500.00
+						td
+							.new-border-bom 20
+						td
+							.new-border-bom 1122.00
+			table.shop-car-list.order-information
+				tr
+					td.align-left(colspan="4").total-price
+						.commodity-prices 运费：
+							strong ￥15.00
+							| &nbsp;&nbsp;&nbsp;店铺合计（含运费）:
+							strong ￥1234.00
+			h1.shopcar 发票明细
+			.address-editor
+				div.invoice-details
+					p.invoice-txt 发票类型：
+						span 普通发票
+					p.invoice-txt 发票抬头：
+						a(href="javescript:;") 个人
+					p.invoice-txt 发票内容：
+						span 明细
+			h1.shopcar 优惠信息
+			.address-editor.marg-b20
+				div.invoice-details
+					p.invoice-txt.marg-r10
+						a(href="javescript:")
+							span.looked-up 使用优惠券
+							// icon替换 icon
+							em.iconn-45
+					p.invoice-txt 已抵扣：
+						span.looked-up ￥6.00
+			.address-editor.marg-b20
+				div.invoice-details
+					p.invoice-txt.marg-r10
+						a(href="javescript:")
+							span.looked-up 使用国美币
+							// icon替换 icon
+							em.iconn-45
+					p.invoice-txt 无可用国美币
+			.address-editor.marg-b20.pad0
+				div.items-total
+					p
+						strong.numb 4
+						| 件商品，商品合计：
+						span ￥11300.00
+					p 运费：
+						span ￥30.00
+					p 使用优惠券：
+						span ￥300.00
+					p 使用国美币：
+						span ￥0.00
+				.submit-order-bx
+					p.submit-order-txt 应付金额：
+						span
+							strong ￥
+							| 300.00
+					p.submit-order-txt  寄送至：北京市朝阳区鹏润大厦33层 张倩倩收 1800000000
+					div.submit-btn
+						a(href="javescript:").pc-btn.pc-btnw160.pc-btnh50.pc-no-radius 提交订单
+
+
+
+		include ../../../pc-widget/footer/footer.jade
+			
+		

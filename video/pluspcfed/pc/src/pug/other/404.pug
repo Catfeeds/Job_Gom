@@ -1,0 +1,43 @@
+doctype html
+html(lang="zh-CN")
+	include ../../widget/head/head.pug
+	link(type="text/css",rel="stylesheet",href="../../css/public/public.css")
+	link(type="text/css",rel="stylesheet",href="../../css/module/404.css")
+	body.opg
+		include ../../widget/header/header.pug
+		include ../../widget/menu/menu.pug
+		.wrong
+			img(src="../../images/public/500.png")
+			p
+				span 抱歉！服务器君正在打盹
+				span 请返回
+					a(href="##") 首页
+					| 查看
+		.wrong
+			img(src="../../images/public/404.png")
+			p
+				span 抱歉！该话题已被删除
+				span 去
+					a(href="##") 圈子首页
+					| 逛逛吧
+		.wrong
+			img(src="../../images/public/404.png")
+			p
+				span 该圈子已经解散了，去
+					a(href="##") 圈子首页
+					| 逛逛吧
+		.wrong
+			img(src="../../images/public/404.png")
+			p
+				span 抱歉！该圈子审核未通过
+				span 请返回
+					a(href="##") 首页
+					| 查看
+		.wrong
+			img(src="../../images/public/404.png")
+			p
+				span 抱歉！该话题审核未通过
+				span 请返回
+					a(href="##") 首页
+					| 查看
+		include ../../widget/footer/footer.pug

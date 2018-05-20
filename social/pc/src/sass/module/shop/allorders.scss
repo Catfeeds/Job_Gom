@@ -1,0 +1,336 @@
+@import '../../../../../../gomeplusUI/pc/src/sass/common/basic/_base.scss';
+@import '../../../../../../gomeplusUI/pc/src/sass/common/basic/_mixins.scss';
+.mart20{
+  margin-top: 20px; 
+}
+.order-right{
+  width: 963px;
+  float: right;
+  padding: 16px 20px 30px;
+  background-color: #fff;
+}
+.no-order{
+	height: 314px;
+	text-align: center;
+	.icon-order{
+		margin-top: 100px;
+		display: inline-block;
+		width: 80px;
+		height: 80px;
+		line-height: 80px;
+		font-size: 38px;
+		color: $color-gray;
+		border-radius: 50%;
+		background-color: #f8f8f8;
+	}
+	p{
+		margin-top: 20px;
+		color: $font-grey-normal;
+		a{
+			color: $link-hover;
+			&:hover{
+				text-decoration: underline;
+			}
+		}
+	}
+}
+.order-state-nav{
+	border-bottom: 1px solid $bor-bom;
+	.order-state-nav-a{
+		float: left;
+		width: 116px;
+		padding: 15px 0;
+		margin-bottom: -1px;
+		font-size: $text16;
+		text-align: center;
+		span{
+			color: $btn-e30d3e;
+		}
+		&:hover{
+			color: $btn-e30d3e;
+		}
+	}
+	.active{
+		color: $btn-e30d3e;
+		border-bottom: 1px solid $btn-e30d3e;
+	}
+	.trade-state-select{
+	    float: right;
+	    width: 156px;
+	    height: 28px;
+	    line-height: 28px;
+	    cursor: pointer;
+	    position: relative;
+	    border-radius: 3px;
+	    margin-top: 15px;
+	    text-indent: 10px;
+	    color: $color-gray;
+	    border: 1px solid $bor-bom;
+	    .icon-down{
+	    	position: absolute;
+		    right: 8px;
+		    top: 8px;
+		    &:before{
+		    	content: "\ea57";
+		    }
+    	}
+    	.icon-up{
+    		&:before{
+		    	content: "\ea55";
+		    }
+    	}
+    	.trade-state-select-list{
+    		display: none;
+    		position: absolute;
+    		top: 30px;
+    		left: 0;
+    		width: 156px;
+    		a{
+    			display: block;
+    		}
+    	}
+	}
+}
+.order-prod-nav{
+	width: 100%;
+	height: 45px;
+	line-height: 45px;
+	margin-top: 13px;
+    background: #fff8e7;
+    th{	
+    	font-weight: normal;
+    	text-align: center;
+    }
+    .order-base-nav{
+    	width: 308px;
+    	.prod-info{
+    		float: left;
+    		margin-left: 16px;
+    	}
+    }
+    .order-comment-nav{
+        width: 336px;
+    }
+    .sin-price{
+		width: 88px;
+    }
+    .count{
+		width: 50px;
+    }
+    .prod-opr{
+		width: 110px;
+    }
+    .trade-sum{
+		width: 135px;
+    }
+    .trade-state{
+		width: 112px;
+    }
+    .order-opr{
+		width: 159px;
+    }
+}
+.order-prod-info{
+	width: 100%;
+	margin-top: 20px;
+	border: 1px solid $bor-bom;
+	&:hover{
+		border: 1px solid #c9c8c5;
+	}
+	td{
+		text-align: center;
+	}
+	.order-base-nav{
+		height: 39px;
+		line-height: 39px;
+		font-size: $text14;
+		color: $font-grey-normal;
+		background-color: #fcfcfc;
+		padding-left: 15px;
+		border-bottom: 1px solid $bor-bom;
+		li{
+			float: left;
+			color: $color-gray;
+			&:hover{
+				a{
+					color: $btn-e30d3e;
+				}
+			}
+		}
+		li.countdown{
+			float: right;
+			margin-right: 32px;
+			color: $color-gray;
+			.icon-clock{
+				color: $color-danger;
+				margin-right: 10px;
+			}
+		}
+		.time{
+			margin-right: 43px;
+		}
+		.order-number{
+			margin-right: 28px;
+		}
+		.color-default{
+			color: $color-default;
+		}
+		.icon-platform{
+			font-size: $text16;
+			color: #b9b9b9;
+			margin-right: 13px;
+			margin-top: 1px;
+		    vertical-align: -2px;
+		}
+	}
+	.order-l{
+		width: 308px;
+	    border-right: 1px solid $bor-bom;
+	    .order-l-list{
+	    	border-bottom: 1px solid $bor-bom;
+	    }
+	    .bor-none{
+	    	border-bottom: none;
+	    }
+		span{
+			float: left;
+			margin-top: 52px;
+		}
+		.order-img{
+			float: left;
+			width: 78px;
+			height: 78px;
+			margin: 20px 0 20px 18px;
+			border: 1px solid $bor-bom;
+		}
+		.parameter{
+			float: left;
+			width: 182px;
+			text-align: left;
+			padding: 18px 0 24px 16px;
+			a{
+				display: block;
+				width: 182px;
+				height: 40px;
+				overflow: hidden;
+				font-size: $text14;
+				font-weight: normal;
+				line-height: 20px;
+				&:hover{
+					 color: $btn-e30d3e;
+				}
+			}
+			p{
+				width: 182px;
+				@extend %text-hide;
+				margin-top: 20px;
+				span{
+					margin: 0 3px 0 0;
+				}
+			}
+		}
+	}
+	.s-price{
+		width: 88px;
+	}
+	.count-num{
+		width: 50px;
+	}
+	.connect-shop{
+		float: left;
+		width: 110px;
+		margin-top: 52px;
+		a{
+		    display: block;
+		}
+		a:hover{
+			color: $btn-e30d3e;
+		}
+	}
+	.more{
+	    margin-top: 43px;
+	}
+	.t-price{
+		width: 135px;
+		border-right: 1px solid $bor-bom;
+		.fare{
+			color: $color-gray;
+			margin-top: 4px;
+		}
+	}
+	.trading-status{
+		width: 112px;
+		border-right: 1px solid $bor-bom;
+		span{
+			display: block;
+			color: $color-important-txt;
+			margin-bottom: 11px;
+			&.mb0{
+				margin-bottom: 0;
+			}
+		}
+		span.font-grey-normal{
+			color: $color-gray;
+		}
+		span.font-grey-6{
+			color: $font-grey-normal;
+		}
+		a{
+			display: block;
+			&:hover{
+				color: $btn-e30d3e;
+			}
+		}
+	}
+	.order-operate{
+		width: 159px;
+	}
+}
+.order-blank-btn{
+	display: block;
+	width: 98px;
+	height: 30px;
+	line-height: 30px;
+	text-align: center;
+	margin: 0 auto;
+	border: 1px solid $bor-bom;
+	border-radius: 2px;
+	position: relative;
+	&:hover{
+		color: $color-txt;
+		background-color: $btn-e30d3e;
+		border: 1px solid $btn-e30d3e;
+	}
+}
+.order-pay-btn{
+	color: $color-txt;
+	background-color: $color-danger;
+	border: 1px solid $color-danger;
+}
+.order-blank-btn-disabled{
+	color: $color-txt;
+	background-color: #9a9a9a;
+	border: 1px solid #9a9a9a;
+	&:hover{
+		color: $color-txt;
+		background-color: #9a9a9a;
+		border: 1px solid #9a9a9a;
+	}
+}
+.marb14{
+	margin-bottom: 14px;
+}
+.small-mask{
+	position: absolute;
+	display: block;
+	color: $color-txt;
+	padding: 10px 20px;
+	white-space: nowrap;
+	border-radius: 5px;
+	background: url(../../../images/public/opacity.png) repeat;
+}
+.page{
+	margin: 30px auto 0;
+}
+
+

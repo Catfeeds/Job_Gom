@@ -1,0 +1,100 @@
+//- extends layout.jade
+extends ../public/layout.jade
+
+block title
+	title 我的账户-账户资金划拨
+//- block link-theme
+//- 	link(rel='stylesheet' type="text/css" href="../../css/module/account.css")
+
+//- account
+block content
+	include ../public/menu.jade
+	div.content-main
+		div.amp-account
+			// crumbs
+			div.crumbs
+				a(href="javascript:void(0);")
+					span 我的账户
+					em >
+				a(href="javascript:void(0);").actived
+					span 账户概况
+					em >
+			// amp-module
+			div.amp-module
+				div.module-statis
+					div.statis-infor
+						div.infor-name
+							p
+								span.name-icon
+								span.name-title 现金账户
+						div.infor-data
+							ul
+								li
+									p
+										strong 广告帐户余额
+										span ¥80000
+								li
+									p
+										strong 今日广告花费
+										span ¥80000
+								li
+									p
+										strong 返利帐户余额
+										span ¥80000
+								li
+									p
+										strong 今日返利花费
+										span ¥80000
+					div.statis-fn
+						a(href="#").btn.btn-primary 充值
+						a(href="#").btn.btn-base-gray 设置余额提醒
+						a(href="#").btn.btn-base-gray 资金划拔
+	// 遮罩
+	div.master
+	// 账户资金划拨
+	div.amp-drawer
+		div.drawer-part
+			h2.part-header
+				span.header-text 账户资金划拨
+				span.header-fn
+					em.icon.icon-close
+			div.money-cont
+				div.form-column
+					div.column-group
+						div.group-aside
+							| 总可用余额：
+						div.group-detail
+							div.detail-row 
+								span.form-infor 900,000.00 元
+				div.column-group
+					div.group-aside
+						| 广告帐户余额：
+					div.group-detail
+						div.detail-row 
+							div.ele-input.ele-input-normal
+								input(type="text")
+							div.form-text 元
+				div.column-group
+					div.group-aside
+						| 返利帐户余额：
+					div.group-detail
+						div.detail-row 
+							div.ele-input.ele-input-normal
+								input(type="text")
+							div.form-text 元
+						div.detail-row.detail-row04
+							span.row-check
+								em.icon.icon-single.icon-singled
+								i 1/4总可用余额
+							span.row-check
+								em.icon.icon-single
+								i 1/3总可用余额
+							span.row-check
+								em.icon.icon-single
+								i 1/2总可用余额
+							span.row-check
+								em.icon.icon-single
+								i 全部总可用余额
+		div.drawer-btn
+			a(href="#").btn.btn-primary 确定
+			a(href="#").btn.btn-gray 关闭

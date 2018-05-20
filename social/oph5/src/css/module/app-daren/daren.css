@@ -1,0 +1,272 @@
+  .opg-daren{
+  overflow:hidden;
+}
+.opg-daren a{
+  width:7.5rem;
+}
+.opg-daren .ban{
+  overflow:hidden;
+  display:block;
+}
+.opg-daren .top a>img{
+    width: 100%;
+}
+.opg-daren .apply{
+  text-align:center;
+  margin-top:-0.42rem;
+}
+.opg-daren .apply a{
+    overflow: hidden;
+    display: inline-block;
+}
+.opg-daren .top .apply img{
+  width:5.45rem;
+}
+.opg-daren .top a{
+  overflow:hidden;
+
+}
+.opg-daren .top .black{
+  overflow: hidden;
+  height:0.31rem;
+    margin-top: 0.57rem;
+    position: relative;
+    top: 0.1rem;
+}
+.opg-daren .black img{
+  width: 100%;
+}
+.opg-daren .rule>img{
+  width:100%;
+}
+.opg-daren .rule>img:nth-child(2){
+  margin-top:-0.57rem;
+}
+.opg-daren .rule li span{
+  font-size:0.3rem;
+}
+
+.opg-daren .rule{
+  overflow:hidden;
+  position:relative;
+}
+.opg-daren .rule a{
+  float: left;
+  overflow:hidden;
+}
+.opg-daren .responsible a{
+  overflow: hidden;
+    display: block;
+    /*margin-top: -0.97rem;*/
+    float: left;
+    /*margin-bottom:0.34rem;*/
+    width:7.5rem;
+}
+.opg-daren .responsible img{
+  width:100%;
+}
+img{width:100%;display:block;}
+.people{
+/*    background:url(../../../../images/op/app-daren/circle.png)0 0 no-repeat;
+  background-size:100% 100%;*/
+}
+.opg-daren .circle{
+  background:url(../../../../images/op/app-daren/circle.png)0 0 no-repeat;
+  background-size:100% 100%;
+}
+/*推荐达人*/
+.opg-daren .people,.circle{
+  /*margin-top:0.26rem;*/
+/*  background:url(../../../../images/op/app-daren/end_04.png)0 0 no-repeat;
+  background-size:100% 100%;*/
+  overflow:hidden;
+  position:relative;
+}
+.opg-daren .people>img,.circle-img{
+  z-index:-1;
+  position: absolute;
+}
+.opg-daren .people-title,.circle-title{
+  width:100%;
+  text-align:center;
+  /*margin-top:0.26rem;*/
+  /*margin-bottom:0.59rem;  */
+}
+.opg-daren .people ul{
+  overflow: hidden;
+      padding-top: 0.07rem;
+    padding-bottom: 0.34rem;
+    /*margin-left: 0.26rem;*/
+}
+.opg-daren .people .tj-daren li{
+   float:left;
+    /*margin-right: 0.2rem;*/
+    margin-top:0.34rem;
+
+}
+.opg-daren .people .tj-daren a{
+  display:block;
+  font-size:0.3rem;
+  width:1.58rem;
+    word-break: keep-all;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    position:relative;
+    margin-left:0.23rem;
+}
+.opg-daren .recommend img{
+
+}
+
+.opg-daren .n-list a{
+  font-size:0.3rem;
+  width:1.58rem;
+    word-break: keep-all;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.opg-daren .circle .tj-cicle{
+  overflow:hidden;
+  zoom:1;
+  padding-bottom: 0.34rem;
+}
+
+.opg-daren .circle .tj-cicle li{
+
+    float: left;
+    margin-top:0.34rem;
+
+}
+.opg-daren .circle .tj-cicle a{
+  display: block;
+  width: 3.4rem;
+  height: 2.18rem;
+  margin-left: 0.23rem;
+  float: left;
+  border: 1px solid #000;
+  padding: 0.1rem;
+
+}
+.opg-daren .circle .tj-cicle p{ 
+  width: 100%;
+  height: 100%;
+  position: relative;
+  /*border-style: solid;*/
+}
+.opg-daren .circle .tj-cicle img{
+    width: 100%;
+    height: 100%;
+}
+.opg-daren .circle .tj-daren {
+  margin-left: 0.26rem;
+    overflow: hidden;
+    margin-top:0.34rem;
+    width:100%;
+}
+.out-circle{
+     
+    height: 1.58rem;
+    width: 1.58rem;
+    position: relative;
+    border-radius: 50%;
+    overflow: hidden;
+    border-width: 3px;
+    border-style: solid;
+    border-color: rgb(255, 141, 172);
+    border-image: initial;
+    background: rgb(255, 255, 255);
+    padding:0.05rem;
+    }
+    
+  .opg-daren  .tj-daren  p img{
+      width:100%;
+      height:100%;
+      border-radius:50%;
+      /*padding:0.05rem;*/
+    }
+    .opg-daren  .tj-daren a{
+
+    }
+    .tj-daren span{
+       display: block;
+      word-break: keep-all;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+      overflow: hidden;
+    }
+    em{
+      width:0.4rem;height:0.4rem;
+      background-image:url(../../../../images/op/app-daren/guan.png)0 0 no-repeat;     
+      background-size:100% 100%;
+      display:inline-block;
+      position:absolute;
+      position: absolute;
+      right: 0.12rem;
+      bottom: 0.4rem;
+    }
+      .opg-daren  .tj-daren em img{
+      width:100%;
+      height:100%;
+   
+    }
+    .dl_clients{
+        position: absolute;
+        height:60px;
+    }
+    .dl_clients .dl_client{
+      position: fixed;
+      top: 0;
+      width: 100%;
+      z-index: 1000;
+      background: #FBB52D;
+      height: 60px;
+    }
+    .dl_clients dl{
+      padding-top: 4px;
+
+    }
+    .dl_clients dl dt, .dl_clients dl dt img{
+        width: 40px;
+        height: 40px;
+        float: left;
+    }
+    .dl_clients dl dt{
+        margin-left: 27px;
+        margin-right: 12px;
+        margin-top: 6px;
+    }
+    .dl_clients dl dd{
+          padding-top: 9px;
+    }
+    .dl_clients dl dd p{
+        color: #fff;
+        font-size: 13px;
+        height: 20px;
+    }
+    .dl_clients a{
+      width: 80px;
+    height: 29px;
+    color: #f4cc56;
+    display: block;
+    font-size: 15px;
+    line-height: 29px;
+    text-align: center;
+    border-radius: 30px;
+    background: #fff;
+    position: absolute;
+    right: 40px;
+    top: 17px;
+    }
+    .dl_clients .dl_close{
+      top: 5px;
+    right: 5px;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    /*background: url(../../images/mime_close.png) no-repeat;*/
+    background: url(../../../images/module/app-daren/mime_close.png) no-repeat;
+    background-size: 100% 100%;
+    -webkit-background-size: 100% 100%;
+    }

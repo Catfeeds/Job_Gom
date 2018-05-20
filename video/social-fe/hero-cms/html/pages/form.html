@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Flat Admin V.2 - Free Bootstrap Admin Templates</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Fonts -->
+    <link href='http://fonts.googleapis.com/css?family=Roboto+Condensed:300,400' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Lato:300,400,700,900' rel='stylesheet' type='text/css'>
+    <!-- CSS Libs -->
+    <link rel="stylesheet" type="text/css" href="../../lib/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="../../lib/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="../../lib/css/animate.min.css">
+    <link rel="stylesheet" type="text/css" href="../../lib/css/select2.min.css">
+    <!-- CSS App -->
+    <link rel="stylesheet" type="text/css" href="../../css/style.css">
+    <link rel="stylesheet" type="text/css" href="../../css/themes/flat-blue.css">
+</head>
+
+<body class="flat-blue">
+    <div class="app-container expanded">
+        <div class="row content-container">
+            <nav class="navbar navbar-default navbar-fixed-top navbar-top">
+                <div class="container-fluid">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-expand-toggle">
+                            <i class="fa fa-bars icon"></i>
+                        </button>
+                        <ol class="breadcrumb navbar-breadcrumb">
+                            <li>Form</li>
+                            <li class="active">Form Kits</li>
+                        </ol>
+                        <button type="button" class="navbar-right-expand-toggle pull-right visible-xs">
+                            <i class="fa fa-th icon"></i>
+                        </button>
+                    </div>
+                    <ul class="nav navbar-nav navbar-right">
+                        <button type="button" class="navbar-right-expand-toggle pull-right visible-xs">
+                            <i class="fa fa-times icon"></i>
+                        </button>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><i class="fa fa-comments-o"></i></a>
+                            <ul class="dropdown-menu animated fadeInDown">
+                                <li class="title">
+                                    Notification <span class="badge pull-right">0</span>
+                                </li>
+                                <li class="message">
+                                    No new notification
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="dropdown danger">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><i class="fa fa-star-half-o"></i> 4</a>
+                            <ul class="dropdown-menu danger  animated fadeInDown">
+                                <li class="title">
+                                    Notification <span class="badge pull-right">4</span>
+                                </li>
+                                <li>
+                                    <ul class="list-group notifications">
+                                        <a href="#">
+                                            <li class="list-group-item">
+                                                <span class="badge">1</span> <i class="fa fa-exclamation-circle icon"></i> new registration
+                                            </li>
+                                        </a>
+                                        <a href="#">
+                                            <li class="list-group-item">
+                                                <span class="badge success">1</span> <i class="fa fa-check icon"></i> new orders
+                                            </li>
+                                        </a>
+                                        <a href="#">
+                                            <li class="list-group-item">
+                                                <span class="badge danger">2</span> <i class="fa fa-comments icon"></i> customers messages
+                                            </li>
+                                        </a>
+                                        <a href="#">
+                                            <li class="list-group-item message">
+                                                view all
+                                            </li>
+                                        </a>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="dropdown profile">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Emily Hart <span class="caret"></span></a>
+                            <ul class="dropdown-menu animated fadeInDown">
+                                <li class="profile-img">
+                                    <img src="../../img/profile/picjumbo.com_HNCK4153_resize.jpg" class="profile-img">
+                                </li>
+                                <li>
+                                    <div class="profile-info">
+                                        <h4 class="username">Emily Hart</h4>
+                                        <p>emily_hart@email.com</p>
+                                        <div class="btn-group margin-bottom-2x" role="group">
+                                            <button type="button" class="btn btn-default"><i class="fa fa-user"></i> Profile</button>
+                                            <button type="button" class="btn btn-default"><i class="fa fa-sign-out"></i> Logout</button>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+            <div class="side-menu sidebar-inverse">
+                <nav class="navbar navbar-default" role="navigation">
+                    <div class="side-menu-container">
+                        <div class="navbar-header">
+                            <a class="navbar-brand" href="#">
+                                <div class="icon fa fa-paper-plane"></div>
+                                <div class="title">Flat Admin V.2</div>
+                            </a>
+                            <button type="button" class="navbar-expand-toggle pull-right visible-xs">
+                                <i class="fa fa-times icon"></i>
+                            </button>
+                        </div>
+                        <ul class="nav navbar-nav">
+                            <li>
+                                <a href="list.html">
+                                    <span class="icon fa fa-table"></span><span class="title">直播管理</span>
+                                </a>
+                            </li>
+                            <li class="active">
+                                <a href="form.html">
+                                    <span class="icon fa fa-user-times"></span><span class="title">创建题目</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="endlive.html">
+                                    <span class="icon fa fa-video-camera"></span><span class="title">已结束的直播</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="live.html">
+                                    <span class="icon fa fa-desktop"></span><span class="title">直播中监控</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+            <!-- Main Content -->
+            <div class="container-fluid">
+                <div class="side-body">
+                    <div class="page-title">
+                        <span class="title">创建/编辑场次</span>
+                        <div class="description">描述描述描述描述描述描述描述</div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-12">
+                            <div class="card">
+                                <div class="card-body">
+                                    <div class="form-horizontal" id="form-val">
+                                        <div class="form-group">
+                                            <label for="input0" class="col-sm-2 control-label">视频节目id</label>
+                                            <div class="col-sm-3">
+                                                <input type="text" name="vid" class="form-control" id="input0" placeholder="请输入视频节目id">
+                                                <p class="error text-danger"></p>
+                                            </div>
+                                            <div class="col-sm-1">
+                                                <button class="btn btn-info videoId" data-type="getVideoMsg">获取</button>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="input1" class="col-sm-2 control-label">直播时间</label>
+                                            <div class="col-sm-10">
+                                                <input type="text" name="vid" class="form-control" id="input1" readonly="true"   placeholder="点击获取按钮，获取直播时间">
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="input2" class="col-sm-2 control-label">直播标题</label>
+                                            <div class="col-sm-10">
+                                                <input type="text" name="title" class="form-control" id="input2" readonly="true" placeholder="点击获取按钮，获取直播标题">
+                                                
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="form-group">
+                                            <label for="input3" class="col-sm-2 control-label">奖池信息</label>
+                                            <div class="col-sm-10">
+                                                <input type="text" name="num" class="form-control" id="input3" placeholder="请输入奖池金额">
+                                                <p class="error text-danger"></p>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="input4" class="col-sm-2 control-label">期望答对人数</label>
+                                            <div class="col-sm-10">
+                                                <input type="text" name="people" class="form-control" id="input4" placeholder="请输入期望答对人数">
+                                                <p class="error text-danger"></p>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="input5" class="col-sm-2 control-label">进入机器人最大值</label>
+                                            <div class="col-sm-10">
+                                                <input type="text" name="ai" class="form-control" id="input5" placeholder="请输入进入机器人最大值">
+                                                <p class="error text-danger"></p>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="input5" class="col-sm-2 control-label"></label>
+                                            <div class="col-sm-10">
+                                                <button type="button" class="btn btn-info" id="form-save">保存场次</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="sub-title">题库</div>
+                                    <table class="table table-bordered" id="table">
+                                        <thead>
+                                            <tr>
+                                                <th width="50">序号</th>
+                                                <th width="250">题目</th>
+                                                <th>选项1</th>
+                                                <th>选项2</th>
+                                                <th>选项3</th>
+                                                <th>正确答案</th>
+                                                <th width="115">操作</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <th>1</th>
+                                                <td><input id="ans-title1" type="text" class="form-control" placeholder="请输入题目"></td>
+                                                <td><input id="option-a1" type="text" class="form-control" placeholder="请输入选项1"></td>
+                                                <td><input id="option-b1" type="text" class="form-control" placeholder="请输入选项2"></td>
+                                                <td><input id="option-c1" type="text" class="form-control" placeholder="请输入选项3"></td>
+                                                <td>
+                                                    <select id="answer1">
+                                                        <option value="0">请选择</option>
+                                                        <option value="A">A</option>
+                                                        <option value="B">B</option>
+                                                        <option value="C">C</option>
+                                                    </select>
+                                                </td>
+                                                <td>
+                                                    <button data-id="1" type="button" class="btn btn-sm btn-info answer-save lose">保存</button>
+                                                    <button data-id="1" type="button" class="btn btn-sm btn-success answer-add lose">添加</button>
+                                                    <input type="hidden" id="qid1" value="" />
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                    <div>
+                                        <button type="button" class="btn btn-info" id="all-save">保存全部</button>
+                                        <input type="hidden" id="live-id" value="" />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer class="app-footer">
+            <div class="wrapper">
+                <span class="pull-right">2.1 <a href="#"><i class="fa fa-long-arrow-up"></i></a></span> © 2015 Copyright.
+            </div>
+        </footer>
+    </div>
+    <!-- Javascript Libs -->
+    <script type="text/javascript" src="../../lib/js/jquery.min.js"></script>
+    <script type="text/javascript" src="../../lib/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="../../lib/js/bootstrap-switch.min.js"></script>
+
+    <script type="text/javascript" src="../../lib/js/jquery.matchHeight-min.js"></script>
+    <script type="text/javascript" src="../../lib/js/select2.full.min.js"></script>
+    <script type="text/javascript" src="../../lib/js/validator.js"></script>
+    <!-- Javascript -->
+    <script type="text/javascript" src="../../js/app.js"></script>
+    
+    <div class="toast hide">
+        <div></div>
+    </div>
+    <div class="dialog hide">
+        <div class="shadeBox"></div>
+        <div class="dialog-container">
+            <div class="title">确定要修改吗？</div>
+            <div class="dailog-btn">
+                <span class="on" data-type="onOk">确定</span>
+                <span class="off" data-type="onCancel">取消</span>
+            </div>
+        </div>
+    </div>
+    
+</body>
+
+</html>

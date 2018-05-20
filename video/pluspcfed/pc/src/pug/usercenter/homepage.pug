@@ -1,0 +1,134 @@
+doctype html
+html(lang="zh-CN")
+	include ../../widget/head/head.pug
+	link(type="text/css",rel="stylesheet",href="../../css/public/public.css")
+	link(type="text/css",rel="stylesheet",href="../../css/module/usercenter-he-page.css")
+	body.opg
+		include ../../widget/header/header.pug
+		include ../../widget/menu/menu.pug
+		.wrap-box.wrap-boxS.clearfix
+			.home-box
+				.home-bg
+				.personal-home-block
+					.black-bg
+					.personal-home-info.clearfix
+						img(src="../../images/emoji/baiyan.png").person-img
+						.expert 电器电器达人
+						.info-detail
+							p Saiil
+							span 话题：215
+							span 圈子：223
+			.clearfix.mart15
+				.home-content-block.fl
+					.home-content
+						h3.content-title Ta的话题
+						.content-topic
+							.no-topic
+								.txt.clearfix
+									// icon替换 icon
+									p 
+										span
+											| 暂时还没有话题
+							ul.topic-list
+								- for (var x = 0; x < 3; x++)
+									li
+										h4
+											a(href="#") 140平大方得体美式三居室，幸福温馨的居家感觉
+										p
+											a(href="#") 化繁为简的方式， 抛弃传统繁复的语言， 提炼出精简的符号式语言表现空间。 软装上现代与。
+										dl.clearfix
+											dd
+												a(href="#")
+													img(src="../../images/user/home-bg.jpg")
+												.hover-show
+													span 亿电脑显
+												.video-play
+											dd
+												a(href="#")
+													img(src="../../images/user/home-bg.jpg")
+												.list-layer
+													span.list-price ¥555.00
+													em.icon.icon-goods
+												.hover-show
+													span 亿电脑显
+											dd
+												a(href="#")
+													img(src="../../images/user/home-bg.jpg")
+												.list-layer
+													span.list-price ¥555.00
+													em.icon.icon-goods
+												.hover-show
+													span 亿电脑显
+										.clearfix
+											.fl
+												span.marr18 21分钟前
+												span 来自圈子：
+												a(href="#") 时尚源头
+											.fr
+												span
+													// icon替换 .icon
+													em.iconn-10
+													| 268
+												span
+													// icon替换 .icon
+													em.iconn-11
+													| 16
+												span
+													// icon替换 .icon
+													em.iconn-57
+													| 2
+					.more-comments
+						a(href="##").clearfix
+							span
+								img(src="../../images/circle/small-logo.png")
+								| 加载更多精彩内容...
+				.home-side
+					.side-circle
+						.his
+							h3 他的圈子
+							span (
+							span.num 99
+							span )
+							.arrow-box
+								a(href="##").disabled
+									// icon替换 .icon
+									em.iconn-8
+								a(href="##")
+									// icon替换 
+									em.iconn-9
+						.circle-box
+							.no-topic
+								.txt.clearfix
+									// icon替换 icon
+									p
+										span
+											| Ta还没有圈子呢～
+							ul.circle-page.clearfix
+								- for (var x = 0; x < 3; x++)
+									li.circle-list.clearfix
+										.img.fl
+											a(href="##")
+												img(src="../../images/emoji/baiyan.png")
+											.circle-style-block
+												span.circle-type 服装
+										.circle-list-info.fl
+											p 吃货的世界
+											.circle-details
+												span.marr10 成员：110
+												span 话题：238
+											.circle-joins
+												span.joins-circle +&nbsp;加入圈子
+								li.circle-list.clearfix
+									.img.fl
+										a(href="##")
+											img(src="../../images/emoji/baiyan.png")
+										.circle-style-block
+											span.circle-type Plus活动社
+									.circle-list-info.fl
+										p 吃货的世界
+										.circle-details
+											span.marr10 成员：110
+											span 话题：238
+										.circle-joins
+											span.joins-circle.joined √&nbsp;已加入
+		include ../../widget/footer/footer.pug

@@ -1,0 +1,82 @@
+.opg{
+	background:#eae8e7;
+	overflow-x:hidden;
+}
+.opg .header{
+	height:auto;
+
+}
+.winter_title{
+	margin-bottom:65px;
+}
+.opg .header img{
+	width:100%;
+}
+ img{
+	/*width:100%;*/
+}
+.opg .main {
+	background:url(../../images/winterfood/bg.png) 0 0 repeat;
+	background-size:100% 100%;
+	/*position:relative;*/
+	/*top:65px;*/
+	margin:0 auto;
+	width:1213px;
+	/*padding-bottom:10px;*/
+}
+
+.opg .bottom{
+/*	background:url(../../images/winter/bgbg.png) 0 0 no-repeat;
+	background-size:contain;*/
+	overflow:hidden;
+	position:relative;
+	/*width:1920px;*/
+	width:100%;
+	/*height:2500px;*/
+}
+
+.opg .snacks-s{
+	overflow:hidden;
+	position:relative;
+	/*padding-top:222px;*/
+	background:url(../../images/winterfood/bt1.png) 0 0 no-repeat;
+	background-size:contain;
+}
+.winter_title img{
+	width:100%;
+}
+.opg .snacks-p{
+	overflow:hidden;
+	position:relative;
+	/*padding-top:322px;*/
+	background:url(../../images/winterfood/bt2.png) 0 0 no-repeat;
+	height:1200px;
+	padding-top:100px;
+	background-size:100% 100%;
+
+}
+.opg .snacks-s{
+	position:relative;
+
+}
+
+.opg .snacks-p{
+	position:relative;
+	/*top:350px;*/
+}
+.opg ul{
+	width:1020px;
+	overflow:hidden;
+	margin:0 auto;
+	padding-top:165px;
+}
+.opg  li {
+	width:304px;
+	height:411px;
+	float:left;
+	margin-top:20px;
+	margin-right:26px;
+}
+/*img{
+	width:100%;
+}*/

@@ -1,0 +1,23 @@
+/* card */
+@import "../../components/_app.scss"; // 工具函数
+@import "../../base/public.scss"; // 公共样式
+@import "../../components/scroll-load.scss"; // 上拉加载更多
+@import '../../components/card.scss';
+@import '../../components/topTitle.scss';
+
+.card-title {
+    padding: rem(20px) rem(40px) rem(6);
+    box-sizing: border-box;
+    font-size: rem(24px);
+    color: #999;
+    line-height: 1;
+    text-align: center;
+    .num{
+    	color: #666666;
+    }
+}
+
+.no-more{
+    margin-top: rem(-30);
+    background: #fff;
+}

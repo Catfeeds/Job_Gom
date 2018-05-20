@@ -1,0 +1,41 @@
+doctype html
+html(lang="zh-CN")
+	include ../../../../../gomeplusUI/pc/src/jade/head.jade
+	link(type="text/css",rel="stylesheet",href="../../css/public/public.css")
+	link(type="text/css",rel="stylesheet",href="../../css/module/usercenter/usercenter.css")
+	body.opg
+		include ../../../../../gomeplusUI/pc/src/jade/header.jade
+		include ../../../../../gomeplusUI/pc/src/jade/menu.jade
+		.wrap-box.mart20.clearfix
+			include ../../../../../gomeplusUI/pc/src/jade/usercenter-side.jade
+			.order-right
+				.right-text-title
+					h2 我发布的话题
+					a(href="#") 发布话题
+				ul.clearfix.mytopic-list
+					- for (var x = 0; x < 10; x++)
+						li
+							a(href="#").title 最多40个字最多40个字最多40个字最多40个字最多40个字最多40个字最多40个字最多40个字最多40个字
+							span 2016-09-06
+							p
+								| 发表自圈子: 
+								a(href="#") 骑行圈
+				.page
+					a(href="javascript:;") 上一页
+					a(href="javascript:;").active 1
+					a(href="javascript:;") 2
+					a(href="javascript:;") 3
+					a(href="javascript:;") 4
+					a(href="javascript:;") 5
+					a(href="javascript:;") 6
+					a(href="javascript:;") 下一页
+					a(href="javascript:;").disabled 最后一页
+				.no-topic
+					.txt.clearfix
+						em.icon &#xe964;
+						p
+							span
+								| 你还没相关话题哦,赶快去 
+								a(href="#") 发布话题 
+								| 吧
+		include ../../../../../gomeplusUI/pc/src/jade/footer.jade

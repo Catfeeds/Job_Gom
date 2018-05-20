@@ -1,0 +1,192 @@
+@import '../../../../../../gomeplusUI/pc/src/sass/common/basic/_base.scss';
+@import '../../../../../../gomeplusUI/pc/src/sass/common/basic/_mixins.scss';
+.circle-bj{
+  width: 1200px;
+  height: auto;
+  margin:20px auto;
+  background: $bg-fff;
+  .circle-con-box{
+    width: 1105px;
+    height: auto;
+    margin: 0 auto;
+    overflow: hidden;
+    p{
+      width: auto;
+      height: 77px;
+      line-height: 77px;
+      text-align: left;
+      font-size: $text18;
+      font-weight: normal;
+      &.pad-top10{
+      padding-top: 10px;
+    }
+      span{
+        font-size: $text12;
+        color: $color-gray;
+        margin-left: 10px;
+      }
+    }
+    .category-list{
+      width: auto;
+      height: auto;
+      overflow: hidden;
+      margin-right: -15px;
+      li{
+        width: auto;
+        text-align: center;
+        color:$color-default;
+        float: left;
+        margin-right: 15px;
+        margin-bottom: 15px;
+        a{
+          &:hover{
+            background: $link-hover;
+            color: $color-txt;
+            border: 1px solid $link-hover;
+            a{
+              display: block;
+              color: $color-txt;
+            }
+          }
+          display: block;
+          padding: 5px 20px;
+          border: 1px solid $bor-bom;
+          &.active{
+            border: 2px solid $link-hover;
+            color: $color-default;
+            padding: 4px 20px;
+            position: relative;
+            em{
+              position: absolute;
+              bottom: -6px;
+              right: -5px;
+              color: $link-hover ;
+              font-size: 25px;
+            }
+            &:hover{
+              background: #fff;
+              a{
+                display: block;
+                color: $color-default;
+              }
+            }
+          }
+        }
+
+      }
+
+    }
+    .category-list2{
+      width: 100%;
+      height: auto;
+      overflow: hidden;
+      line-height: 28px;
+      padding: 8px 0 8px 15px;
+      background: $btn-active-bor-color;
+      a{
+        display: block;
+        font-size: 14px;
+        color:$color-default ;
+        width: auto;
+        padding-right: 30px;
+        text-align: center;
+        float: left;
+        &:hover{
+          color: $link-hover;
+        }
+        &.active{
+          color: $link-hover;
+        }
+      }
+    }
+    .div-input{
+        position: relative;
+        span{
+            position: absolute;
+            left: 620px;
+            top: 0;
+            color: #999;
+            line-height: 42px;
+        }
+        .write-name{
+          width: 645px;
+          height: 40px;
+          line-height: 40px;
+          padding-left: 10px;
+          border: 1px solid $bor-bom;
+        }
+    }
+    .circle-head{
+      padding: 0 0 30px 0;
+      border-bottom: 1px solid $bor-bom;
+      .upload-head-bx{
+        width: 265px;
+        border-right: none;
+      }
+      .upload-picture{
+        float: none;
+        display: block;
+        margin: 0 auto;
+      }
+      .picture-bj-img{
+        margin: 30px auto;
+      }
+    }
+    .head-preview-bx{
+      float: left;
+      width: auto;
+      border-left: 1px solid $bor-bom;
+      margin-left: 40px;
+      padding-left: 50px;
+      margin-top: 70px;
+      .picture-bx3{
+        float: right;
+        width: 60px;
+        height: auto;
+        padding: 0;
+        overflow: hidden;
+      }
+    }
+    .head-title{
+      font-size: 14px;
+      color: $color-default;
+      height: 28px;
+      line-height: 28px;
+      margin-top: -10px;
+    }
+    .head-size{
+      font-size: 12px;
+      color: $color-gray;
+      height: 20px;
+      line-height: 20px;
+      margin:0;
+    }
+    .picture2-bx{
+      width: 265px;
+      height: 192px;
+      margin-top: 20px;
+    }
+    .pc-btnw80{
+      width: 80px;
+      display: block;
+      clear: both;
+      margin: 0 auto;
+    }
+    .pc-btnw200{
+      width: 200px;
+    }
+    .pc-btnh50{
+      height: 50px;
+      line-height: 50px;
+    }
+    .submit-btn{
+      clear: both;
+      padding: 40px 0 60px 0;
+       a{
+         font-size: 18px;
+         margin: 0 auto;
+         display: block;
+        }
+    }
+  }
+}

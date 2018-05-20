@@ -1,0 +1,94 @@
+doctype html
+html(lang="zh-CN")
+	include ../../../../../gomeplusUI/pc/src/jade/head.jade
+	link(type="text/css",rel="stylesheet",href="../../css/public/public.css")
+	link(type="text/css",rel="stylesheet",href="../../css/module/shop/checklogistics.css")
+	body.opg
+		include ../../../../../gomeplusUI/pc/src/jade/header.jade
+		include ../../../../../gomeplusUI/pc/src/jade/menu.jade
+		.wrap-box
+			.crumbs-box
+				a(href="javascript:;") 我的订单
+				em >
+				a(href="javascript:;") 待收货
+				em >
+				span.crnmb-activ 查看物流
+			.bg-white
+				.content-top.clearfix
+					h3 你的包裹已签收
+					a(href="javascript:;").w98-h30.order-btn-blank 物流投诉
+				.logis-progress
+					table
+						tr
+							td.clearfix
+								em.icon.dot &#xea58;
+								.time.clearfix
+									p.date 2016-04-07
+									p.week 周一
+									p.hour
+										span 22:13:09
+										span 22:13:09
+								p.state-illustrate
+									span 您的订单开始处理
+									span 您的订单已打物流单
+						tr
+							td.clearfix
+								em.icon.dot &#xea58;
+								.time.clearfix
+									p.date 2016-04-07
+									p.week 周二
+									p.hour
+										span 22:13:09
+								p.state-illustrate
+									span 福州转运中心公司 已发出,下一站 北京转运中心
+						tr
+							td.clearfix
+								em.icon.dot &#xea58;
+								.time.clearfix
+									p.date 2016-04-07
+									p.week 周三
+									p.hour
+										span 22:13:09
+										span 22:13:09
+								p.state-illustrate
+									span 北京市朝阳区黄港 已收入
+									span 【北京市】北京市朝阳区黄港派件员：方敬知 15311523119正在为您派件
+						tr
+							td.clearfix
+								em.icon.dot.active &#xea58;
+								.time
+									p.date 2016-04-07
+									p.week 周四
+									p.hour
+										span 22:13:09
+								p.state-illustrate
+									span
+										| 【北京市】北京市朝阳区黄港公司 
+										span.checked 已签收 
+			.detail-txt
+				ul
+					li.fl.clearfix
+						p
+							| 货运单号：
+							span.bold 19994860607 
+						p
+							| 物流公司：
+							span.bold 顺丰快递
+						p
+							| 客服电话：
+							span 010-9899878
+					li.fl.clearfix
+						p
+							| 卖家昵称：
+							span 商品店铺
+						p
+							a(href="javascript:;").connect 联系商家
+					li
+						p
+							| 发货地址：
+							span 【北京市】北京市朝阳区黄港派件员：正在为您派件   方敬知  15311523119  
+					li
+						p
+							| 收货地址：
+							span 【北京市朝阳区三元桥霄云路26号鹏瑞大厦B座33层   周先生  13811523119
+		include ../../../../../gomeplusUI/pc/src/jade/footer.jade

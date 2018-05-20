@@ -1,0 +1,109 @@
+@import"amend.scss";
+.opg{
+	background: #e7e7e7;
+}
+.perfect-company{
+	font-family: 'Microsoft YaHei';
+	width: 1198px;
+	border:1px solid #d9dadc;
+	padding: 60px 0 28px;
+	background:#fff;
+	margin: 0 auto;
+	&.company {
+		.company-tempo {
+			width:760px;
+			margin: 0 auto;
+			padding: 48px 0 60px;
+			background:url("../../images/meihao/company-progressbar.jpg") no-repeat 50% top;
+			font-size: 14px;
+			height:14px;
+			line-height: 14px;
+			color: #333;
+			p{
+				float: left;
+			}
+			.tempo-approve{
+				padding:0 127px;
+			}
+			.tempo-perfect{
+				color: #a5a5a5;
+			}
+			.tempo-success{
+				color:#a5a5a5;
+			}
+			.tempo-perfect{
+            	width:86px;
+            	padding-right:152px;
+        	}
+		}
+		.company-info{
+			padding-left: 240px;
+			font-size: 14px;
+			color:#333;
+		}
+		.info{
+			.info-left {
+				width: 108px;
+				.red {
+					color: #ed2835;
+					margin: 0 3px 0 0;
+				}
+			}
+			.webuploader-pick-hover{
+				.img-again {
+					background: #f3f3f3;
+				}
+				.right-img a {
+					background: url("../../images/meihao/headH.jpg") no-repeat;
+					border: 1px solid #737373;
+				}
+			}
+			.img-again {
+				margin: 0;
+			}
+			.licensePic{
+				overflow: hidden;
+				float: none;
+				.webuploader-container {
+					position: relative;
+					width: 80px;
+					height: 80px;
+				}
+				img {
+					width: 78px;
+					height: 78px;
+				}
+				.upload-pic {
+					display: none;
+					width: 78px;
+					height: 78px;
+					border: 1px solid #dedede;
+					padding: 0;
+					.bar-upload-pic {
+						width: 40px;
+						height: 3px;
+						overflow: hidden;
+						background-color: #e9e8e5;
+						margin: 37px 0 0 19px;
+						span {
+							display: block;
+					    	width: 0%;
+					    	height: 3px;
+					    	background-color: #e60039
+						}
+					}
+				}
+			}
+			.right-term {
+				line-height: 18px;
+				padding: 6px 0;
+				height: auto;
+			}
+		}
+		.choose-btn {
+			padding: 20px 0 0 357px;
+		}
+	}
+}
+
+

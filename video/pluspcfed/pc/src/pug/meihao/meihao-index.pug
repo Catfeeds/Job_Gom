@@ -1,0 +1,33 @@
+doctype html 
+html(lang="zh-CN")   
+    meta(charset="utf-8") 
+    link(type="text/css",rel="stylesheet",href="../../css/public/public.css")
+    link(type="text/css",rel="stylesheet",href="../../css/module/meihaoIndex.css")
+    body.opg  
+        include ../../widget/header/header-meihao.pug
+        .meihao.clearfix
+            include ../../widget/aside/meihao.pug
+            #meihao-home
+                .notice.clearfix
+                    a(href="#").left 这里是公告这里是公告这里是公告
+                    a(href="#").right 查看更多
+                .count-data
+                    .con-title 综合数据
+                    .box.clearfix
+                        dl.con
+                            dt 累计内容发布数
+                            dd 50
+                        dl.prev
+                            dt 昨日内容总浏览次数
+                            dd 500,300 
+                        dl.member
+                            dt 主推圈子总浏览量 / 成员数
+                            dd 500,399 / 750
+                .content-manager
+                    .con-title 内容管理
+                    .con-data
+                        include ../../widget/list/meihao-content.pug
+                        .view-more
+                            a(href="#") 查看更多
+script(type="text/javascript",src="http://js.dev.meixincdn.com:1314/debug/js/conf/vendor.js") 
+script(type="text/javascript",src="../../js/conf/meihaoIndex.js") 

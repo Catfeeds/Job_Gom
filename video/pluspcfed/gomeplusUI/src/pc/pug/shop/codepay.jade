@@ -1,0 +1,31 @@
+doctype html
+html(lang="zh-CN")
+	include ../../../pc-widget/head/head.jade
+	link(type="text/css",rel="stylesheet",href="../../css/public/public.css")
+	link(type="text/css",rel="stylesheet",href="../../css/module/codepay.css")
+	body(style="background-color:#fff;").opg
+		include ../../../pc-widget/header/header.jade
+		include ../../../pc-widget/menu/menu.jade
+		.wrap-box
+			.code-pay
+				.code
+					img(src="../../images/public/wxpay-code.png")
+				.tip
+					h3 扫码支付
+					p 提示：推荐使用国美Plus扫描上方二维码完成支付
+				ul.info
+					li
+						span.span-l 订单编号：
+						span.span-r 348781222222888858888834211
+					li
+						span.span-l 支付金额：
+						span.span-r ￥1993.00
+					li
+						span.span-l 下单时间：
+						span.span-r 2017-01-04 10:21:06
+					li
+						span.span-l 收货信息：
+						span.span-r
+							span 周子涛 138****6666
+							span 北京市海淀区西二旗软件园华夏科技大厦
+		include ../../../pc-widget/footer/footer.jade

@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html data-use-rem="750" data-dpr="2">
+<head>
+	<meta charset="utf-8">
+	<title>扔沙包</title>
+	<meta name="author" content="m.gome.com.cn">
+	<meta name="viewport" content="target-densitydpi=device-dpi, width=device-width, initial-scale=1, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+	<meta name="applicable-device" content="mobile">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<meta name="format-detection" content="telephone=no">
+	<meta name="wap-font-scale" content="no">
+	<meta http-equiv="Expires" content="-1">
+	<meta http-equiv="Cache-Control" content="no-cache">
+	<meta http-equiv="Cache-Control" content="no-siteapp">
+	<meta http-equiv="Cache-Control" content="no-transform">
+	<meta http-equiv="Pragma" content="no-cache">
+	<link rel="stylesheet" type="text/css" href="../css/reset.css">
+	<link rel="stylesheet" type="text/css" href="../css/index.css">
+	<script src="https://js.gomein.net.cn/mobile/cms/prom/hybrid/??b/components/src/vendor/GomeJSBridge.min.js?v=2017101202"></script>
+	<script src="https://js.gomein.net.cn/mobile/cms/prom/hybrid/p/cms/src/utils/gomeBridge.js?v=2017101202"></script>
+</head>
+<body>
+	<script type="text/javascript" src="../js/rem.js"></script>
+	<div class="page">
+		<!-- loading -->
+		<div id="loading" class="layer opc92 block" style="/* display: none; */">
+	        <div class="load">loading...</div>
+	        <div class="load-plan">
+	            <div id="plan" class="plan">
+	                <div class="plan-percent">
+	                    <div class="percent"></div>
+	                    <div class="percent-pic"></div>
+	                </div>
+	            </div>
+	            <div class="load-num">
+	                <span id="planNum" class="num">100</span>%
+	            </div>
+	        </div>
+	    </div>
+	    <!-- 分享弹层 -->
+	    <section class="layer opc92" id="shareLayer">
+	    	<div class="share-layer">
+
+	    	</div>
+	    </section>
+		<!-- 人物 -->
+		<section class="section">
+			<ul id="peoples">
+				<li class="people"><p class="people-img"></p></li>
+				<li class="people center"><p class="people-img"></p></li>
+				<li class="people right"><p class="people-img"></p></li>
+			</ul>
+		</section>
+		<!-- 个数和倒计时 -->
+		<section class="footer" id="footer">
+			<div class="footer-bg">
+				<p class="footer-bg-countdown"><strong id="countDownNum">60</strong>s</p>
+				<p class="footer-bg-num"><strong id="hitNumText">0</strong>个</p>
+			</div>
+			<p class="footer-remain">剩余<strong id="shabaoText">10</strong>个</p>
+		</section>
+		<!-- 开始游戏页面 -->
+		<section class="layer" id="startCon">
+			<div class="start">
+				<a id="startTime" class="start-game" href="javascript:;"></a>
+				<a id="ruleBtn" class="game-rule" href="javascript:;"></a>
+				<a class="go-main" href="javascript:;"><span>返回活动页面</span></a>
+			</div>
+		</section>
+		<!-- 去登录 -->
+		<section class="layer" id="login">
+			<div class="login">
+				<p>抱歉！您还未登录</p>
+				<p>请登录后再玩游戏</p>
+				<a href="javascript:;" id="loginBtn"></a>
+				<span class="del"></span>
+			</div>
+		</section>
+		<!-- 错误 -->
+		<section class="layer" id="error">
+			<div class="login error">
+				<p>抱歉，发生错误！</p>
+				<a class="submit" href="javascript:;"></a>
+				<span class="del"></span>
+			</div>
+		</section>
+		<!-- 活动规则 -->
+		<section class="layer" id="ruleLayer">
+			<div class="rule">
+				<div class="rule-item">
+					<div>
+						<p>1、本活动仅限国美互联网用户参与</p>
+						<p>2、活动时间：2017年11月1日-2017年11月11日；</p>
+						<p>3、用户点击“立即参与”按钮，即可参与此活动；</p>
+						<p>4、每轮游戏时间为60秒钟，最多10个沙包机会；</p>
+						<p>5、用户在60秒时间内，扔中一个目标物可获得20享乐值，全部扔中可获得200享乐值；</p>
+						<p>6、若用户在60秒内未扔中任何一个目标物，则挑战失败，或不满意挑战成绩，用户可点击提示弹窗中的再次挑战按钮或重新进入游戏页，重新挑战隐藏关卡；</p>
+						<p>7、活动奖励：扔中一个目标物可获得20享乐值，每200享乐值可获得一次拆红包的机会，随机抽取0.1-1111元不等额红包，活动期间可累计所得红包，随时兑换整额国美双十一优惠券；</p>
+						<p>8、每日仅有一次上传享乐值的机会，上传成功后，可继续挑战，但不记录；</p>
+						<p>9、每日参与分享游戏，可获得额外获得100享乐值（每日分享游戏获得100享乐值仅限一次）；</p>
+					</div>
+					<span class="del"></span>
+				</div>
+			</div>
+			<a class="home" id="home" href="javascript:;"></a>
+		</section>
+		<!-- 游戏结束 -->
+		<section class="layer" id="gameOver">
+			<div class="game-over">
+				<div>游戏结束！</div>
+				<p class="hit-num">扔中数量：<strong id="overHitNum">8</strong></p>
+				<p class="mb-36">获得享乐值：<strong id="getFeastNum">160</strong></p>
+				<span class="del"></span>
+				<a class="upload" id="upload" href="javascript:;"></a>
+				<a class="once-again" id="onceAgain" href="javascript:;"></a>
+			</div>
+		</section>
+		<!-- 确定上传 -->
+		<section class="layer" id="confirmFeast">
+			<div class="login confirm-feast">
+				<p>亲，每天只能上传一次享乐值，确定上传吗？</p>
+				<a id="feastSubmit" class="confirm" href="javascript:;"></a>
+				<span class="del"></span>
+			</div>
+		</section>
+		<section class="layer" id="toastLayer">
+			<div class="login confirm-feast">
+				<p></p>
+				<a id="toastSubmit" class="confirm" href="javascript:;"></a>
+				<span class="del"></span>
+			</div>
+		</section>
+		<!-- 上传享乐失败 -->
+		<section class="layer" id="uploadError">
+			<div class="upload-error">
+				<p class="title">上传享乐值失败<span></span></p>
+				<p class="upload">请重新上传～～～</p>
+				<p class="go-back">3 s 后自动返回上一级页面</p>
+				<span class="del"></span>
+				<a class="go-main" href="javascript:;"><span>返回活动页面</span></a>
+			</div>
+		</section>
+		<!-- 上传享乐成功 -->
+		<section class="layer" id="uploadSuccess">
+			<div class="upload-success">
+				<p class="upload-success-text">上传享乐值成功！</p>
+				<p class="share-text">分享可额外获得100享乐值哦！</p>
+				<a class="share" id="shareBtn" href="javascript:;"></a>
+				<a class="redpacket" href="javascript:;"></a>
+				<a class="once-again" href="javascript:;"></a>
+				<a class="go-main" href="javascript:;"><span>返回活动页面</span></a>
+				<span class="del"></span>
+			</div>
+		</section>
+		<!-- 分享成功 -->
+		<section class="layer" id="shareSuccess">
+			<div class="feast-success">
+				<p>分享成功</p>
+				<a class="redpacket" href="javascript:;"></a>
+				<a class="once-again" href="javascript:;"></a>
+				<span class="del"></span>
+				<a class="go-main" href="javascript:;"><span>返回活动页面</span></a>
+			</div>
+		</section>
+		<!-- 未扔中 -->
+		<section class="layer" id="noHit">
+			<div class="no-hit">
+			</div>
+		</section>
+		<!-- 扔中 -->
+		<section class="layer" id="hit">
+			<div class="hit">
+
+			</div>
+		</section>
+		<!-- 验证码 -->
+		<section class="layer" id="identifyingCode">
+			<div class="identifying-code">
+				<p>请输入验证码</p>
+				<div class="code-con">
+					<input maxlength="4" placeholder="请输入验证码" type="text">
+					<img src="">
+				</div>
+				<div class="btns">
+					<a class="cancel" href="javascript:;"></a>
+					<a class="confirm" href="javascript:;"></a>
+				</div>
+			</div>
+		</section>
+	</div>
+
+
+<script src="http://js.gomein.net.cn/eccms/js/topics_js/181/6745723906.min.js"></script>
+<script type="text/javascript">
+	var access_terminal = "app";
+	var shabaoid = "c0557486";
+	var plat_form = '0';
+</script>
+<script src="../js/zepto.min.js"></script>
+<script src="../js/index.js"></script>
+</body>
+</html>

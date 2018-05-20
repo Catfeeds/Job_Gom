@@ -1,0 +1,76 @@
+//- extends layout.jade
+extends ../../../widget-platform/pug/layout/layout-m.jade
+
+//- index
+block content
+	.platform-tipsinfo
+		h5 说明
+		p main-list 公用类
+		p main-list grid-list-bor 九格-边框列表
+		p main-list single-list 单行列表
+		p li item item-big 大图模式
+		p 具体查看结构，谢谢~
+		p.maty 有问题沟通-maty
+		h5 知识点
+		p ①添加不同类展现不同样式结构
+	//end
+
+	//- grid-1
+	//- div.platform-content
+	//- 	h3.platform-header 九格-列表结构
+	//- 	//- div.platform-intro
+	//- 	//- 	p 积极维护中...
+	//- 	div.platform-example-auto#grid-1
+	//- 		include ../../../../m-widget/grid/grid-1.jade
+	//- 	pre.platform-pre.hide
+	//- 		code.platform-code#grid-1_code
+	//- 		span.platform-jade pug
+	//- 		span.platform-jade.platform-html.actived html
+	//- grid-2
+	div.platform-content
+		h3.platform-header 九格-带有边框列表
+		//- div.platform-intro
+		//- 	p 积极维护中...
+		div.platform-example-auto#grid-2
+			include ../../../../m-widget/grid/grid-2.jade
+		pre.platform-pre.hide
+			code.platform-code#grid-2_code
+			span.platform-jade pug
+			span.platform-jade.platform-html.actived html
+	//- grid-3
+	div.platform-content
+		h3.platform-header 单行列表
+		//- div.platform-intro
+		//- 	p 积极维护中...
+		div.platform-example-auto#grid-3
+			include ../../../../m-widget/grid/grid-3.jade
+		pre.platform-pre.hide
+			code.platform-code#grid-3_code
+			span.platform-jade pug
+			span.platform-jade.platform-html.actived html
+	//- grid-4
+	//- div.platform-content
+	//- 	h3.platform-header 列表
+	//- 	//- div.platform-intro
+	//- 	//- 	p 积极维护中...
+	//- 	div.platform-example-auto#grid-4
+	//- 		include ../../../../m-widget/grid/grid-4.jade
+	//- 	pre.platform-pre.hide
+	//- 		code.platform-code#grid-4_code
+	//- 		span.platform-jade pug
+	//- 		span.platform-jade.platform-html.actived html
+	//- grid-5
+	div.platform-content
+		h3.platform-header 店铺/话题列表
+		//- div.platform-intro
+		//- 	p 积极维护中...
+		div.platform-example-auto#grid-5
+			include ../../../../m-widget/grid/grid-5.jade
+		pre.platform-pre.hide
+			code.platform-code#grid-5_code
+			span.platform-jade pug
+			span.platform-jade.platform-html.actived html
+	script(type='text/javascript').
+		HtmlFormat.init(['grid-1','grid-2','grid-3','grid-5'],false,'_code','html','span.platform-jade');
+		$(".platform-grid").parent('li').addClass("actived");
+

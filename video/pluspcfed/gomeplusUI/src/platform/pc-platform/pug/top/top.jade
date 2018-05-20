@@ -1,0 +1,21 @@
+//- extends layout.jade
+extends ../../../widget-platform/pug/layout/layout.jade
+
+//- top
+block content
+	h2.platform-title top
+	div.platform-content
+		h3.platform-header top
+		div.platform-intro 
+			p 返回顶部 | 意见反馈
+		div.platform-example#top
+			include ../../../../pc-widget/top/top.jade
+		pre.platform-pre
+			code.platform-code#top_code
+			span.platform-jade jade
+			span.platform-jade.platform-html.actived html
+	//- js format html code
+	script(type='text/javascript').
+		HtmlFormat.init(['button'],true,'_code','html','span.platform-jade');
+		$(".platform-top").parent('li').addClass("actived");
+	

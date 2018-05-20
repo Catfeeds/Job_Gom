@@ -1,0 +1,270 @@
+@import '../../../pc-widget/config/_base.scss';
+@import '../../../pc-widget/config/_mixins.scss';
+
+.opg .crumbs-box{
+    background: #f6f5ee;
+    width: 1200px;
+    margin: 0 auto;
+}
+.bg-white{
+	background-color: $bg-fff;
+}
+.borb{
+	border-bottom: 1px solid #f6f5ee;
+}
+.borr{
+	border-right: 1px solid #f6f5ee;
+}
+.post-comment-table{
+	th{
+		height: 59px;
+		line-height: 59px;
+		font-weight: normal;
+	}
+	td{
+		vertical-align: top;
+	}
+	.comment-title{
+		width: 165px;
+		font-size: $text20;
+		font-weight: normal;
+		padding-left: 20px; 
+	}
+	.order-num{
+		padding-left: 37px;
+		text-align: left;
+		.font-grey-normal{
+			color: $font-grey-normal;
+			margin-right: 10px;
+		}
+	}
+	.product-info{
+		width: 152px;
+    	height: 335px;
+		text-align: center;
+		padding: 30px 15px 0 19px;
+		img{
+			width: 78px;
+			height: 78px;
+			border: 1px solid $bor-bom;
+		}
+		.prod-title{
+			display: block;
+			width: 152px;
+			max-height: 38px;
+			padding-top: 10px;
+			word-break: break-all;
+			overflow: hidden;
+			&:hover{
+				color: $btn-e30d3e;
+			}
+		}
+		p{
+			margin-top: 10px;
+			word-break: break-all;
+		}
+	}
+	.comment-box{
+		width: 1013px;
+		padding-top: 10px;
+		li{
+			margin-bottom: 13px;
+		}
+		.comment-post{
+			padding-left: 36px;
+		}
+		.textarea{
+			height: 160px;
+			position: relative;
+			display: inline-block;
+			textarea{
+				width: 805px;
+				height: 116px;
+				padding: 9px 12px;
+				overflow-y: auto;
+				border: 1px solid $bor-bom;
+				&:hover{
+					border: 1px solid #c9c8c5;
+				}
+				&:focus{
+					border: $btn-e30d3e solid 1px;
+				}
+			}
+			.txt-count{
+				position: absolute;
+				bottom: 0;
+				right: 0;
+				color: $color-gray;
+				span{
+					color: $color-danger;
+				}
+			}
+		}
+	}
+	.feature-title{
+		display: inline-block;
+		color: $font-grey-normal;
+		margin-right: 10px;
+		height: 34px;
+		line-height: 34px;
+	    vertical-align: top;
+	}
+	.star-box{
+		display: inline-block;
+		height: 34px;
+		line-height: 34px;
+		margin-right: 38px;
+		.iconn-43{
+			color: $bor-bom;
+			font-size: 20px;
+			margin-right: 10px;
+		    vertical-align: -3px;
+		    &.active{
+		    	color: $color-important-txt;
+		    }
+		    /* &.five{
+		    	color: $btn-e30d3e;
+		    } */
+		}
+		.zero{
+			color: $color-gray;
+			margin-left: 14px;
+		}
+		.star-num{
+			display: inline-block;
+			width: 65px;
+			height: 22px;
+			line-height: 22px;
+			text-align: center;
+			margin-left: 6px;
+			color: $color-important-txt;
+			border: 1px solid $color-important-txt;
+			position: relative;
+			.icon-left{
+				position: absolute;
+				left: -7px;
+				top: 6px;
+				width: 7px;
+				height: 8px;
+				background: url(../../images/shop/comment-score-sj.png) no-repeat;
+			}
+			/* &.five{
+				color: $btn-e30d3e;
+				border: 1px solid $btn-e30d3e;
+				.icon-left{
+					background: url(../../images/shop/comment-score-five.png) no-repeat;
+				}
+			} */
+		}
+	}
+	.pics-list-wrap{
+		display: inline-block;
+		.pics-list{
+			width: 450px;
+			li{
+			    float: left;
+			    width: 78px;
+			    height: 78px;
+			    line-height: 76px;
+			    text-align: center;
+			    border: 1px solid #e9e8e5;
+			    margin-right: 10px;
+			    margin-bottom: 0;
+			    position: relative;
+			    cursor: pointer;
+			    img {
+				    width: 78px;
+				    height: 78px;
+				}
+				&:hover{
+					.iconn-66 {
+					    display: block;
+					}
+				} 
+			}
+			.iconn-66 {
+			    display: none;
+			    position: absolute;
+			    top: -7px;
+			    right: -7px;
+			    font-size: 16px;
+			    opacity: 0.6;
+			}
+			.bar-upload-pic{
+				width: 40px;
+				height: 3px;
+				overflow: hidden;
+				background-color: $bor-bom;
+				margin: 38px 0 0 19px;
+				span{
+					display: block;
+					width: 0%;
+					height: 3px;
+					background-color: $link-hover;
+				}
+			}
+			input {
+			    display: block;
+			    width: 76px;
+			    height: 76px;
+			    line-height: 76px;
+			    opacity: 0;
+		        visibility: hidden;
+			    cursor: pointer;
+			    position: absolute;
+			    top: 1px;
+			    left: 1px;
+			    z-index: 9;
+			}
+			.iconn-50{
+			    font-size: 21px;
+			    font-weight: bold;
+			    color: #f95353;
+			    cursor: pointer;
+		        line-height: 80px;
+			}
+			.re-upload{
+				font-size: $text12;
+				color: $color-danger;
+			}
+		}
+		.num-pics {
+		    margin-top: 13px;
+		    color: #666;
+		    text-align: left;
+		    padding-bottom: 10px;
+		    .link-hover-red {
+			    color: #e60039;
+			}
+			.deep-gray {
+			    color: #333;
+			}
+		}
+	}
+	.service-score{
+		padding: 17px 0 17px 37px;
+	}
+	.submit-comment{
+		float: right;
+		width: 120px;
+		height: 40px;
+		line-height: 40px;
+		text-align: center;
+		color: $color-txt;
+		margin-right: 60px;
+		border-radius: 3px;
+	    margin-top: -2px;
+		background-color: $color-danger;
+		&:hover{
+			background-color: $btn-e30d3e;
+		}
+	}
+}
+.commented-txt{
+	color: $font-grey-normal;
+	text-align: center;
+	padding-top: 120px;
+	a{
+		color: $link-hover;
+	}
+}

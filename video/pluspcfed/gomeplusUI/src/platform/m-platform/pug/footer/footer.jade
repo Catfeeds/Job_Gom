@@ -1,0 +1,26 @@
+//- extends layout.jade
+extends ../../../widget-platform/pug/layout/layout-m.jade
+
+//- index
+block content
+	.platform-tipsinfo
+		p icp-txt 公用类
+		p 具体查看结构，谢谢~
+		p.maty 有问题沟通-maty
+	//end
+
+	//- footer
+	div.platform-content
+		h3.platform-header 版权
+		//- div.platform-intro
+		//- 	p 积极维护中...
+		div.platform-example#footer-1
+			include ../../../../m-widget/footer/footer-1.jade
+		pre.platform-pre.hide
+			code.platform-code#footer-1_code
+			span.platform-jade pug
+			span.platform-jade.platform-html.actived html
+	script(type='text/javascript').
+		HtmlFormat.init(['footer-1'],false,'_code','html','span.platform-jade');
+		$(".platform-footer-1").parent('li').addClass("actived");
+

@@ -1,0 +1,29 @@
+@charset "UTF-8";
+// --------------------------------
+// https://www.gomeplus.com/
+// v1.0 - 20161101
+// maty
+
+.hide{
+    display:none!important;
+}
+.show{
+    display:block!important;
+}
+.cursor-default{
+    cursor: default;
+}
+.cursor-pointer{
+    cursor: pointer;
+}
+.loading-box{
+    display: table;
+    width: 100%;
+    height: 200px;
+    text-align: center;
+    .loading-img{
+        display: table-cell;
+        vertical-align: middle;
+    }
+}
+

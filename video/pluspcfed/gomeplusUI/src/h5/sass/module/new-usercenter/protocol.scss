@@ -1,0 +1,52 @@
+@charset "UTF-8";
+@import '../../../../m-widget/reset/_base.scss';
+@import '../../../../m-widget/reset/_mixin.scss';
+
+/*用户协议*/
+// .protocol{}
+.prot-wrap{
+	padding: rem(24 38 30);
+	h5{
+		color: nth($color,5);
+		font-size: rem(30);
+		line-height: rem(42);
+		font-weight: 700;
+		margin-bottom: rem(8);
+	}
+	h5 ~ h5{
+		margin-top: rem(20);
+	}
+	// 标题
+	p{
+		color: nth($color,4);
+		font-size: rem(28);
+		line-height: rem(40);
+	}
+	p + p{
+		margin-top: rem(40);
+	}
+	// 内容
+	.link-a{
+		color: #4990E2;
+		display: inline-block;
+		margin-top: rem(10);
+	}
+	// 蓝色文字
+}
+.prot-btn ~ .prot-wrap{
+	padding-bottom: rem(120);
+}
+.prot-btn{
+	color: nth($color,1);
+	font-size: rem(30);
+	line-height: inherit;
+	display: block;
+	text-align: center; 
+	padding: rem(30) 0;
+	background-color: #F66A6B;
+	position: fixed;
+	left: 0;
+	right: 0;
+	bottom: 0;
+}
+

@@ -1,0 +1,32 @@
+/* icon */
+@import "../../base/public.scss";
+
+fieldset{
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+.list{
+    [class^="icon-"], [class*=" icon-"]{
+        display: block;
+        font-size: rem(80px);
+        
+    }
+    .mls{
+        display: block;
+        padding: rem(10px) 0;
+    }
+    .glyph{
+        float: left;
+        overflow: hidden;
+        box-sizing: border-box;
+        width: 50%;
+        background: #fff;
+        text-align: center;
+        padding: rem(10px);
+        margin: rem(0);
+    }
+    .hidden-true,.unitRight{
+        display: none;
+    }
+}

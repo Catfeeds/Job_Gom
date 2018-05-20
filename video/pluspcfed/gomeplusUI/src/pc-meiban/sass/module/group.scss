@@ -1,0 +1,250 @@
+@import '../../../sasscore/configure.scss';
+.cut{
+    width: 100%;
+    height: 35px;
+    overflow:hidden;
+    text-overflow:ellipsis;
+    white-space:nowrap;
+}
+.group-list{
+    padding: 10px 0;
+    li{
+        line-height: 40px;
+        position: relative;
+        a{
+            padding: 0 20px 0 40px;
+            display: block;
+        }
+        em{
+            position: absolute;
+            left: 20px;
+            top: -1px;
+            font-size: 12px;
+            color: #c6c6c6;
+        }
+        .num{
+            position: absolute;
+            right: 20px;
+            top: 0;
+            color: #999;
+        }
+        p{
+            width: 100%;
+            @include ellipsis();
+        }
+        li a{
+            padding-left: 60px;
+        }
+        li em{
+            left: 42px;
+        }
+        li li a{
+            padding-left: 84px;
+        }
+        li li em{
+            left: 65px;
+        }
+        li li li a{
+            padding-left: 94px;
+        }
+        &.active{
+            background: #f3f4f5;
+        }
+    }
+    .group-my{
+        li{
+            cursor: pointer;
+            padding: 5px 28px 5px 85px;
+            height: 35px;
+            line-height: 35px;
+            position: relative;
+            a{
+                padding: 0;
+            }
+            .im-name{
+                position: absolute;
+                left: 39px;
+                top: 5px;
+                width: 35px;
+                height: 35px;
+                font-size: 12px;
+                border-radius: 3px;
+                background: #68C6AA;
+                color: #fff;
+                line-height: 35px;
+                text-align: center;
+                .iconn-46{
+                    font-size: 28px;
+                }
+            }
+            &.active{
+                background: #f3f4f5;
+            }
+        }
+    }
+}
+
+//没有会话记录
+.no-record{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    p{
+        padding: 10px 0 5px;
+    }
+    span{
+        font-size: 12px;
+        color: #999;
+    }
+}
+
+//加载失败
+.load-fail{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    font-size: 12px;
+    line-height: 32px;
+    height: 32px;
+    em.iconn-6{
+        font-size: 32px;
+        margin-right: 10px;
+        float: left;
+    }
+    a{
+        color: #4590E4;
+    }
+}
+
+//通讯录
+.group-detail{
+    padding: 20px;
+    .more{
+        position: absolute;
+        left: 50%;
+        bottom: 0;
+        transform: translate(-50%);
+        height: 45px;
+        line-height: 45px;
+        color: #999;
+        span{
+            color: #4590E4;
+        }
+    }
+    .detail-title{
+        font-size: 18px;
+    }
+    .detail-scroll{
+        overflow-y: auto;
+        height: 370px;
+    }
+    .detail-table{
+        width: 100%;
+        .table-head,td{
+            padding: 10px;
+            text-align: left;
+            line-height: 35px;
+            border-bottom: 1px solid #eee;
+        }
+        .table-head{
+            line-height: 23px;
+            box-sizing: border-box;
+            color: #999;
+            width: 33.33%;
+            float: left;
+        }
+        td{
+            width: 33.33%;
+            word-break:break-all;
+            word-wrap:break-word;
+            .im-name{
+                width: 35px;
+                height: 35px;
+                border-radius: 3px;
+                background: #68C6AA;
+                color: #fff;
+                font-size: 12px;
+                line-height: 35px;
+                text-align: center;
+                float: left;
+                margin-right: 10px;
+            }
+            span{
+                font-size: 12px;
+                margin-left: 10px;
+                color: #999;
+            }
+        }
+        tr:hover td{
+            background: #F3F4F5;
+        }
+    }
+}
+
+//我的群组
+.my-detal{
+    padding: 20px;
+    .detail-title{
+        text-align: center;
+        font-size: 16px;
+        position: relative;
+        .im-name{
+            width: 60px;
+            height: 60px;
+            border-radius: 5px;
+            background: #68C6AA;
+            color: #fff;
+            line-height: 60px;
+            text-align: center;
+            margin: 10px auto;
+            .iconn-46{
+                font-size: 34px;
+            }
+        }
+        .iconn-5{
+            color: #FFC52A;
+            font-size: 16px;
+            margin-left: 10px;
+        }
+        .un-active{
+            position: absolute;
+            left: 50%;
+            top: 96px;
+            transform: translate(-50%);
+            color: #999;
+            font-size: 12px;
+        }
+    }
+}
+.btn-send{
+    width: 176px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    color: #fff;
+    background: #4A4C5B;
+    border-radius: 4px;
+    position: absolute;
+    left: 50%;
+    bottom: 30px;
+    margin-left: -88px;
+    &:hover{
+        background: #4590E4;
+    }
+    &:active{
+        background: #3773b6;
+    }
+    &.disabled{
+        background: #ccc;
+    }
+}
+
+
+
+
+
+
+

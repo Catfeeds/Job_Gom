@@ -1,0 +1,38 @@
+.mart20 {
+    margin-top: 20px;
+}
+
+.order-side-bar {
+    width: 130px;
+    float: left;
+    h3 {
+        line-height: 32px;
+        width: 130px;
+        font-size: $text14;
+        color: #5e5e5e;
+        font-weight: 700;
+        padding: 5px 0 0 0;
+        a.active {
+            &:before {
+                margin-top: 5px;
+            }
+        }
+    }
+    .active {
+        color: #f5323f;
+        _background: none;
+        _border: none
+    }
+    ul {
+        line-height: 26px;
+    }
+    li {
+        width: 130px;
+        margin: 0 0 5px 0;
+        a {
+            display: block;
+            font-size: 13px;
+            color: #888;
+        }
+    }
+}

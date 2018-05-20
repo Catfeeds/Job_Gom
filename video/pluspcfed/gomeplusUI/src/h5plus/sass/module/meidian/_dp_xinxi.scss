@@ -1,0 +1,208 @@
+@charset "UTF-8";
+// @ Css name：店铺信息
+// @ Author： matianye@
+// @ Date： 2017-03-20 15:55
+// @ Last Modified by： maty
+// @ Last Modified time：2017-03-20 15:55
+//==========================
+
+@import "../../../../sasscore/_configure.scss";
+
+.meidian{
+	// 店铺信息头部
+	.md-header{
+		min-height: rem(250);
+		padding: rem(60 14 60 26);
+		background-position: center center;
+		background-repeat: no-repeat;
+		background-size: cover;
+		position: relative;
+		// 店铺Logo
+		.logo{
+			position: relative;
+			z-index: 1;
+			display: block;
+			margin-right: rem(30);
+			overflow: hidden;
+			width: rem(120);
+			height: rem(120);
+			@include prefix(border-radius, rem(8), webkit);
+		}
+		.file{
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			opacity: 0;
+		}
+
+		// 店铺名称
+		h3{
+			font-size: rem(32);
+		}
+
+		// 店铺公告提示
+		.hint{
+			margin-top: rem(6);
+			margin-bottom: rem(14);
+			font-size: rem(24);
+			line-height: rem(34);
+			@include ellipsis(mobile, 2);
+		}
+		
+		// 店铺等级
+		.grade{
+			margin-top: rem(10);
+			font-size: rem(24);
+			line-height: rem(34);
+			a.c-f{
+				padding-left: rem(6);
+				padding-right: rem(6);
+				font-size: rem(14);
+				text-decoration: underline;
+			}
+		}
+
+		// 得分进度 
+		.slider{
+			margin-top: rem(18);
+			line-height: rem(22);
+			-webkit-align-items: center;
+			align-items: center;
+			.inner,
+			.track{
+				position: relative;
+				width: rem(268);
+				height: rem(8);
+				float: left;
+				background-color: #E8E8E8;
+				@include prefix(border-radius, rem(8), webkit);
+			}
+			.track{
+				width: 0;
+				background-image:-webkit-linear-gradient(to right, #FBDA61, #F76B1C);
+				background-image:linear-gradient(to right, #FBDA61, #F76B1C);
+			}
+			.spot{
+				position: absolute;
+				left: 0;
+				top: rem(-2rem);
+				margin-left: rem(-6);
+				width: rem(12);
+				height: rem(12);
+				@include prefix(border-radius, rem(12), webkit);
+				background-color: #F66E29;
+			}
+			.num{
+				margin-left: rem(10);
+				font-size: rem(16);
+			}
+		}
+		
+		// 点赞样式
+		.link{
+			display: inline-block;
+			margin-top: rem(64);
+			width: rem(76);
+			color: #fff;
+			font-size: rem(24);
+			text-align: center;
+			p{
+				margin-top: rem(8);
+			}
+			em{
+				color: #fff;
+			}
+		}
+	}
+
+	// 动态评分
+	.md-score{
+		@extend %p-tb10;
+		@extend %public;
+		.flex-box{
+			@extend %p-tb10;
+		}
+	}
+
+	// 店铺描述信息
+	.md-describe{
+		@extend %public;
+		.flex-box{
+			@extend %p-tb20;
+		}
+		p{
+			word-wrap:break-word;
+			white-space:normal;
+			word-break:break-all;
+		}
+	}
+
+	// 店铺信息标签
+	.tag-box{
+		display: block;
+		@extend %p-tb20;
+		margin-top: rem(20);
+		font-size: 0;
+		background-color: #fff;
+		li{
+			display: inline-block;
+			margin-left: rem(26);
+			margin-right: rem(4);
+			width: rem(152);
+			height: rem(56);
+			color: #FF5C5C;
+			font-size: rem(24);
+			line-height: rem(56);
+			text-align: center;
+			&:nth-child(n+5){
+				margin-top: rem(30);
+			}
+			&:before{
+				border-color: #FF5C5C;
+				@include prefix(border-radius, rem(110), webkit);
+			}
+		}
+	}
+
+	// 二维码
+	.qr-code{
+		display: none;
+		position: fixed;
+		left: 0;
+		right: 0;
+		top: 0;
+		bottom: 0;
+		z-index: 88;
+		background-color: rgba(96, 96, 96, .75);
+		.inner-box{
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			padding-top: rem(80);
+			margin: rem(-280 0 0 -280);
+			width: rem(560);
+			height: rem(560);
+			background-color: #fff;
+			@include prefix(border-radius, rem(10), webkit);
+		}
+		.close{
+			position: absolute;
+			top: rem(20);
+			right: rem(20);
+			font-size: rem(30);
+		}
+		img{
+			margin-left: auto;
+			margin-right: auto;
+			width: rem(410);
+			height: rem(410);
+		}
+	}
+
+}
+
+
+
+

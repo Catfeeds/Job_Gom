@@ -1,0 +1,78 @@
+1. html/shop/shopdetail.html
+	<div class="fr">
+             <!-- p 优惠券--> （删掉的）
+	     <span>满100元可用</span>
+	</div>
+2. menu 结构改变，头像增加达人图标，加 * 结构更改
+	<div class="index-login">*
+          <div class="index-login-head"> *
+		<em class="icon-daren"></em> *
+		<img src="https://css.meixincdn.com/m/h5/dist/images/newHome/nav-ticket.png">
+	  </div>
+	  <span>飞翔的企鹅</span> *
+          <div class="login-link">
+            	<div class="sanjiao"></div><a href="#">我的收藏</a><a href="#">我的话题</a><a href="#">我的圈子</a><a href="#">收货地址</a><a href="#">个人设置</a>
+          </div>
+        </div>
+3. html/circle/topicdetails.html 
+	话题详情页，头像增加达人图标，加 * 结构更改或增加
+	<div class="user-head">
+		<em class="icon-daren"></em> *
+		<a href="##"><img src="head.png" alt=""></a>
+	</div>
+
+	<div class="topic-user-head">
+		<em class="icon-daren"></em> *
+		<img src="1ea_800.jpg">
+	</div>
+
+ 	<div class="circle-comments">
+            <dl class="clearfix">
+              <dt>
+		<em class="icon-daren"></em> *
+		<img src="https://i6.meixincdn.com/v1/img/T1GRYTB7KT1R4cSCrK.png">
+	      </dt>
+4. html/usercenter/usertopic.html
+	<div class="circle-index-list">内的结构修改，UL，LI都换成div标签
+5. html/usercenter/userindex.html
+	我的订单下图片列表处后面的···标签及内容变更
+6. html/usercenter/orderdetail.html订单详情页，加 * 结构更改或增加
+	带操作的表格 <td colspan="6 * " class="align-left"> 5改成6 
+	第一个 class为products-by的div加class borb 加下边线
+7. html/usercenter/checklogistics.html 查看物流
+       <div class="detail-txt">
+        <ul>
+          <li class="fl clearfix">
+            <p>货运单号：<span class="bold">19994860607 </span></p>
+            <p>物流公司：<span class="bold">顺丰快递</span></p>
+            <p>客服电话：<span>010-9899878</span></p>
+          </li>
+          <li class="fl clearfix">
+            <p>卖家昵称：<span>商品店铺</span></p>
+            <p><a href="javascript:;" class="connect">联系商家</a></p>
+          </li>
+          <li>
+            <p>发货地址：<span>【北京市】北京市朝阳区黄港派件员：正在为您派件   方敬知  15311523119  </span></p>
+          </li>
+          <li>
+            <p>收货地址：<span>【北京市朝阳区三元桥霄云路26号鹏瑞大厦B座33层   周先生  13811523119</span></p>
+          </li>
+        </ul>
+      </div>	
+8. html/usercenter/returngoods.html退换货申请页面
+	<a href="javascript:;" class="shop-info">
+		<em class="icon icon-shop">?</em>
+		<span>都来咪商店</span> *
+	</a>
+	上传图片与发布评论一致
+	<ul class="pics-list clearfix">
+                    <li><img src="../../images/public/default-img2.jpg" alt=""><a href="javascript:;" class="icon icon-dele-pic">?</a></li>
+                    <li><img src="../../images/public/default-img2.jpg" alt=""><a href="javascript:;" class="icon icon-dele-pic">?</a></li>
+                    <li><a href="javascript:;" class="re-upload">重新上传</a></li>
+                    <li>
+                      <div class="bar-upload-pic"><span></span></div>
+                    </li>
+                    <li>
+                      <input type="file"><a href="javascript:;" class="icon icon-add">?</a>
+                    </li>
+                  </ul>

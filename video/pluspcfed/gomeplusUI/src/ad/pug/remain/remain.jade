@@ -1,0 +1,86 @@
+//- extends layout.jade
+extends ../public/layout.jade
+
+block title
+	title 余额提醒
+//- block link-theme
+//- 	link(rel='stylesheet' type="text/css" href="../../css/module/remain.css")
+
+//- remain
+block content
+	include ../public/menu.jade
+	div.content-main
+		div.amp-account.amp-remain
+			// crumbs
+			div.crumbs
+				a(href="javascript:void(0);").actived
+					span 余额提醒
+					em >
+			// account-main
+			div.account-main.bg-white
+				// 账户余额提醒
+				div.amp-path.amp-path-large
+					span.path-col 
+						b 账户余额提醒
+				div.main-wrap
+					div.form-column
+						div.column-group
+							div.group-detail
+								div.detail-row 
+									span.row-check
+										em.icon.icon-single.icon-singled
+										i 开启
+									span.row-check
+										em.icon.icon-single
+										i 关闭
+						div.column-group
+							div.group-detail
+								div.detail-row
+									h2.group-title 提醒金额：
+								div.detail-row 
+									span.form-text
+										i.group-tip *
+										| 当帐户少于
+									div.ele-input
+										input(type="text",value="")
+									span.form-text 元时提醒我
+								div.detail-row 
+									span.form-text
+										i.group-tip *
+										| 当帐户少于
+									div.ele-input.disable
+										input(type="text",value="",disabled="disabled")
+									span.form-text 元时提醒我
+				// 通知方式
+				div.amp-path.amp-path-bd.amp-path-large
+					span.path-col 
+						b 通知方式
+				div.main-wrap.main-wrap02
+					div.form-column
+						div.column-group
+							div.group-detail
+								div.detail-row
+									span.row-check
+										em.icon.icon-select.icon-selected
+										i.group-tip *
+										i 手机短信：
+									div.ele-input.hover
+										input(type="text",value="17701404453")
+					div.column-group
+							div.group-detail
+								div.detail-row
+									span.row-check
+										em.icon.icon-select
+										i 电子邮件：
+									div.ele-input.disable
+										input(type="text",value="",disabled="disabled")
+								div.detail-row
+									span.row-check
+										em.icon.icon-select.icon-selected
+										i.group-tip *
+										i 电子邮件：
+									div.ele-input
+										input(type="text",value="")
+				// 提交
+				div.submit-wrap
+					a(href="#").btn.btn-primary 提交

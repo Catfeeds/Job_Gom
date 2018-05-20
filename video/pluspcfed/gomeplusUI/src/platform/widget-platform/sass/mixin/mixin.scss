@@ -1,0 +1,44 @@
+// mixin
+@mixin linear($start-color,$end-color){
+	background: -moz-linear-gradient(top, $start-color 0%, $end-color 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,$start-color), color-stop(100%,$end-color));
+    background: -webkit-linear-gradient(top, $start-color 0%,$end-color 100%);
+    background: -o-linear-gradient(top, $start-color 0%,$end-color 100%);
+    background: -ms-linear-gradient(top, $start-color 0%,$end-color 100%);
+    background: linear-gradient(to bottom, $start-color 0%,$end-color 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#{$start-color}', endColorstr='#{$end-color}',GradientType=0 );
+}
+// display
+@mixin display($value:none){
+	display:$value!important;
+}
+// posR
+@mixin posR($value:relative){
+	position:$value;
+	left:auto;
+	top:auto;
+	@include prefix(transform,translate(0%, 0%));
+}
+// scrollbar
+::-webkit-scrollbar{
+	width: 10px;
+	height:10px;
+}
+
+::-webkit-scrollbar-track{
+	-webkit-box-shadow: inset 0 0 5px rgba(0,0,0,0.2);
+	border-radius: 5px;
+	background: rgba(0,0,0,0.1);
+}
+
+::-webkit-scrollbar-thumb{
+	border-radius: 5px;
+	-webkit-box-shadow: inset 0 0 5px rgba(0,0,0,0.2);
+	background: rgba(0,0,0,0.2);
+}
+
+::-webkit-scrollbar-thumb:hover{
+	border-radius: 5px;
+	-webkit-box-shadow: inset 0 0 5px rgba(0,0,0,0.2);
+	background: rgba(0,0,0,0.3);
+}

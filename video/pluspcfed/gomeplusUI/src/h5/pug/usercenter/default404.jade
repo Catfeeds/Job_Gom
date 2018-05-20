@@ -1,0 +1,57 @@
+doctype html
+html(lang="zh-CN" data-use-rem="750")
+    include ../../../m-widget/head/head.jade
+    link(type="text/css",rel="stylesheet",href="../../css/public/public-wap.css")
+    link(type="text/css",rel="stylesheet",href="../../css/module/usercenter-new.css")
+    
+    body.opg.user-center
+        include ../../../m-widget/head/rem.jade
+        
+        div
+            .user-header
+                header.header.change-bj
+                    span
+                        a.head-back(href="##")
+                            em.iconn-1
+                    span
+                        a.head-edit(href="##")
+                            em.iconn-4
+                        .tab-nav
+                            p.active
+                                em.iconn-44
+                                | 首页
+                            p
+                                em.iconn-15
+                                | 分类
+                            p
+                                em.iconn-32
+                                | 购物车
+                            p
+                                em.iconn-90
+                                | 我的
+                .header-box
+                    .head
+                        a(href="#")
+                            img.head-img(src="https://i6.meixincdn.com/T1JXETByAT1R4cSCrK.90x90cTz.png")
+                            span
+                                img(src="../../images/usercenter/mark.png")
+                    h3 扮野优美Horipro
+                        img(src="../../images/usercenter/sex-girl.png").sex-icon
+                    .head-tex
+                        p Ta的话题
+                            span 10
+                        p Ta的话题
+                            span 10
+                    a.head-btn(href="#") Ta的店铺
+            ul.menu-list
+                li.item
+                    p.txt 话题
+                li.item.active
+                    i.num
+                    p.txt 圈子
+            .m-prompt
+                .pro-img
+                    img(src="../../images/common/img-1.png")
+                .pro-txt Ta还没有圈子哦~
+
+

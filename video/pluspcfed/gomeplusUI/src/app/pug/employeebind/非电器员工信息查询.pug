@@ -1,0 +1,29 @@
+extends ../public/head.jade
+block title
+	title 非电器员工信息查询
+block link-theme
+	link(rel='stylesheet' type="text/css" href="../../css/module/employeebind/employeebind.css")
+block content
+	//- js
+	include ../public/mobileJs.jade
+	.banner 国美 Plus 邀请你来赚大钱
+	.bind-infor
+		.header-module.header-module_gray
+			span 员工信息查询
+		ul.form-list
+			li.list-item.list-item_color
+				em.icon.icon-person
+				.item-text 姚丽丽
+			li.list-item.list-item_color
+				em.icon.icon-id
+				.item-text 00345
+		ul.form-personal.form-list_mb2
+			li.personal-item
+				span.item-company 公司名称
+				.item-show
+					input.input-style(type="text" placeholder="请选择门店" value="国美九诺")
+			li.personal-item
+				span.item-company 岗位职级
+				.item-show
+					input.input-style(type="text" placeholder="请选择对应岗位" value="市场营销")
+		a.button.button-primary(href="javascript:;") 修改资料

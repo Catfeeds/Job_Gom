@@ -1,0 +1,71 @@
+/* subscription */
+@import "../../components/_app.scss"; // 工具函数
+@import "../../base/public.scss"; // 公共样式
+@import "../../components/sub-list.scss"; //
+@import "../../components/topTitle.scss";
+@import "../../components/scroll-load.scss"; // 上拉加载更多
+@import "../index/index.scss";
+.fl{
+	float:left;
+}
+.fr{
+	float:right;
+}
+//登陆
+.loginBtn{
+	width:100%;
+	padding-top:rem(50);
+	padding-bottom:rem(40);
+	div{
+		margin: rem(0) auto;
+		line-height: 1;
+		font-size :rem(30);
+		width: rem(200);
+		color: #333333;
+		text-align:center;
+		border-radius :rem(100);
+		background:#f6f6f6;
+		padding: rem(16) 0 rem(14);
+	}
+}
+
+.no-data .noData_sunAll{
+	a{
+		display:inline-block;
+		width:rem(216);
+		line-height:rem(60);
+		background:#262629;
+		color:#fff;
+		font-size:rem(30);
+		border-radius : rem(200);
+		margin-top:rem(70);
+
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

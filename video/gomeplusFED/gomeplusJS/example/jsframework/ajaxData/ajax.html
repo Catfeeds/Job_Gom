@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>AJAX</title>
+    <script src="../../../node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="../../../dist/gmp.js"></script>
+</head>
+<body>
+<button id="btn">点击</button>
+<script>
+    new GMP({
+        data: {
+          res:{}
+        },
+        events: {
+            'click #btn': 'clickBtn'
+        },
+        clickBtn: function() {
+            console.log(this.data.res);
+        },
+        init: function() {
+            var that = this;
+            $.ajax({
+                header:{
+                    "Content-Type":"application/json"
+                },
+                dataType:'jsonp',
+                data: {
+                    location: '北京',
+                    output: 'json',
+                    ak: 'd9yywXyVIDPpPvbUEPpiuhZYaHmOpynP'
+                },
+                url: 'http://api.map.baidu.com/telematics/v3/weather',
+                success: function (data) {
+                    that.data.res = data;
+                }
+            })
+        }
+    });
+</script>
+</body>
+</html>

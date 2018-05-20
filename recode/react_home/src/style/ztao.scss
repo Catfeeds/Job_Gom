@@ -1,0 +1,22 @@
+@charset "UTF-8";
+
+@import "rest";
+@import "xiangmude";
+@import "nprogress.css";
+@import "anim.scss";
+//@import "hover/hover";
+.zhuye{
+  @include juzhong(500px);
+  padding: 20px;
+  >div{
+   padding: 10px;
+  }
+}
+.neiye{
+  text-align: center;
+  padding: 20px;
+}
+.head{
+  text-align: center;
+  font-size: 24px;
+}

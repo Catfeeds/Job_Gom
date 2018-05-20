@@ -1,0 +1,393 @@
+// base.scss
+@import "../../../widget-platform/sass/base/base.scss";
+
+
+// flatform-nav
+.flatform-nav{
+	position:fixed;
+	right:0;
+	top:0;
+	left:0;
+	z-index:999999;
+	padding:0 $space*7 0 $space*12;
+	height:$navHeight;
+	border-bottom:1px solid darken($bg-blue,15%);
+	@include linear($bg-blue,darken($bg-blue,5%));
+	a{
+		color:#fff;
+		&:hover,
+		&:focus{
+			color:#fff;
+		}
+	}
+	.flatform-logo{
+		height:$navHeight;
+		line-height:$navHeight;
+		font-size:20px;
+		color:#fff;
+		position:absolute;
+		left:$space;
+		top:0;
+	}
+	.nar-arrow-left,
+	.nar-arrow-right{
+		position:absolute;
+		top:22px;
+		z-index:100;
+		cursor:pointer;
+	}
+	.nar-arrow-left{
+		left:$space * 11;
+		border-top:8px solid transparent;
+    	border-right:16px solid lighten($bg-blue,15%);
+    	border-bottom:8px solid transparent;
+    	&:hover{
+    		border-right-color:lighten($bg-blue,40%);
+    	}
+	}
+	.nar-arrow-right{
+		right:$space*6;
+		border-top:8px solid transparent;
+    	border-left:16px solid lighten($bg-blue,15%);
+    	border-bottom:8px solid transparent;
+    	&:hover{
+    		border-left-color:lighten($bg-blue,40%);
+    	}
+	}
+	.nav-icon{
+		display:none;
+		position:absolute;
+		right:$space;
+		top:10px;
+		z-index:1000;
+		width:40px;
+		height:40px;
+		padding:5px;
+		cursor:pointer;
+		background:darken($bg-blue,10%);
+		border:1px solid darken($bg-blue,10%);
+		@include prefix(border-radius,4px);
+		&:hover,
+		&:focus{
+			background:lighten($bg-blue,5%);
+		}
+		a{
+			position:relative;
+			margin-top:5px;
+			display:block;
+			height:2px;
+			background:#fff;
+			&:after,
+			&:before{
+				content:'';
+				position:absolute;
+				top:8px;
+				left:0;
+				right:0;
+				height:2px;
+				background:#fff;
+				overflow:hidden;
+			}
+			&:after{
+				top:16px;
+			}
+		}
+	}
+}
+// nav-list
+.nav-list{
+	position:relative;
+	width:100%;
+	overflow:hidden;
+	height:$navHeight;
+	ul{
+		position:relative;
+		height:$navHeight;
+		width:99999px;
+		li{
+			float:left;
+			height:$navHeight;
+			line-height:$navHeight;
+			a{
+				float:left;
+				height:$navHeight;
+				width:100px;
+				text-align:center;
+				line-height:$navHeight;
+				font-size:16px;
+				color:#fff;
+				text-transform:capitalize;
+				// @include prefix(transition,all 0.5s,webkit moz ms);
+				&:hover,
+				&:focus{
+					color:#fff;
+					background:darken($bg-blue,5%);
+				}
+			}
+			&.actived{
+				a,
+				a:hover,
+				a:focus{
+					color:#fff;
+					background:darken($bg-blue,5%);
+				}
+			}
+		}
+	}
+}
+// flatform-back
+.flatform-back{
+	position:absolute;
+	right:$space;
+	top:0;
+	height:$navHeight;
+	line-height:$navHeight;
+	font-size:14px;
+	a{
+		@include prefix(border-radius,6px);
+		padding:0 $space/2;
+		display:block;
+		margin-top:15px;
+		height:30px;
+		color:#fff;
+		border:1px solid darken($bg-blue,10%);
+		line-height:30px;
+		background:darken($bg-blue,10%);
+		&:hover,
+		&:focus{
+			background:lighten($bg-blue,5%);
+		}
+	}
+}
+// platform-main
+.platform-main{
+	margin-left:0;
+	padding-left:$space;
+	padding-right:$space;
+}
+
+.platform-intro{
+	font-size: 16px;
+	line-height: 1.8;
+	// padding: 5px 10px;
+	margin: 20px 20px 25px;
+	// border: 1px solid #f2f2f2;
+	// background-color: #f9f9f9;
+}
+
+// platform-content
+.platform-content{
+	padding:0;
+}
+
+// m-platform
+.platform-example,
+.platform-example-auto{
+	margin: 15px;
+	// button
+	// background-color: #f1f1f1;
+	// br{
+	// 	display:none;
+	// }
+	[class^="m-btn"],
+	[class*="m-btn"]{
+		margin-right:$space/2;
+		margin-bottom:$space/4;
+		margin-top:$space/4;
+	}
+	
+	// dialog
+	.m-dialog{
+		@include posR();
+	}
+	// header
+	.header{
+		position:relative;
+		left:auto;
+		top:auto;
+	}
+	// header
+	.header-private{
+		background:#aaa;
+		z-index: 1000;
+		// z-index: 111;
+	}
+	// menu-list-shopbtn
+	.menu-list-shopbtn{
+		position:relative;
+	}
+	// del-menu
+	.del-menu{
+		position:relative;
+	}
+	// m-share-bottom
+	.m-share-bottom{
+		@include posR();
+	}
+	// m-share-top
+	.m-share-top{
+		@include posR();
+		background:#aaa;
+	}
+	// m-toast
+	.m-toast,
+	.m-toast-logo{
+		@include posR();
+	}
+}
+.platform-example-auto{
+	margin: 20px 0;
+	position: relative;
+}
+// icon
+#icon{
+	p{
+		padding:$space 0;
+		border-bottom: 1px solid #dedede;
+		em{
+			margin-right:$space;
+		}
+	}
+}
+
+// maty Start
+.platform-tipsinfo{
+	color: #666;
+	font-size: 14px;
+	line-height: 1.8;
+	padding: 10px 15px;
+	margin-bottom: 20px;
+	border: 1px solid #f2f2f2;
+	background-color: #f9f9f9;
+	p{
+		text-shadow: 1px 1px 0px #FFF;
+	}
+	p.maty{
+		color: #999;
+	}
+	h5{
+		color: #333;
+		font-size: 18px;
+		text-shadow: 1px 1px #fff;
+	}
+	h5 ~ h5{
+		margin-top: 20px;
+	}
+}
+// maty End
+
+
+
+
+// mobile class sheetstyle
+@media screen and (max-width:768px) {
+
+	html, body{
+		height:auto;
+		overflow: auto;
+		overflow-x: hidden;
+	}
+	.hide{
+		@include display;
+	}
+	.nar-arrow-left,
+	.nar-arrow-right{
+		@include display;
+	}
+	.flatform-nav{
+		padding:0 $space;
+	}
+	.platform-main{
+		padding:0;
+		padding-top:$navHeight+$space;
+	}
+	.platform-scroll{
+		padding-right:0;
+	}
+	
+    .nav-icon{
+		display:block!important;
+	}
+    // logo
+    .flatform-logo{
+    	@include display(block);
+    }
+    // nav-list
+    .nav-list{
+    	position:absolute;
+    	left:0;
+    	right:0;
+    	top:60px;
+    	height:auto;
+    	background:$bg-blue-light;
+    	display:none;
+    	ul{
+    		width:100%!important;
+    		height:auto!important;
+    		li{
+    			width:33%;
+    			height:40px;
+    			a{
+    				width:100%;
+    				height:40px;
+    				line-height:40px;
+    			}
+    		}
+    	}
+    }
+    .platform-header{
+    	font-size: 16px;
+    	small{
+    		color: #666;
+    		font-size: 65%;
+    	}
+    }
+    // maty Start
+	.platform-tipsinfo{
+		font-size: 12px;
+		margin: 0 10px 10px;
+		h5{
+			color: #333;
+			font-size: 14px;
+			text-shadow: 1px 1px #fff;
+		}
+		h5 ~ h5{
+			margin-top: 10px;
+		}
+	}
+	// maty End
+}//768 end
+
+
+// maty
+
+#dialog-1,
+#dialog-2,
+#dialog-3,
+#dialog-4,
+#dialog-5{
+	padding: 20px 10px;
+	background: rgba(0,0,0,.4);
+}
+
+.m-downapp{
+	.app-box{
+		position: relative;
+	}
+}
+
+
+.opg .m-toast,
+.opg .m-dialog,
+.m-toast-logo{
+	display: block;
+}
+.opg .m-downapp .app-box{
+	position: absolute;	
+}
+
+@media screen and (max-width: 768px){
+	body{
+		max-width: none;
+	}
+}

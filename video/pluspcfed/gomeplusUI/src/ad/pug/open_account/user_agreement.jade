@@ -1,0 +1,73 @@
+//- extends layout.jade
+extends ../public/login_layout.jade
+
+block title
+	title 我的账户
+//- block link-theme
+//- 	link(rel='stylesheet' type="text/css" href="../../css/module/open_account.css")
+
+//- account
+block content
+	style.
+		body{
+			background-image:none;
+		}
+	div.open_account
+		div.account-step
+			div.part-guide.part-guide01
+				span.guide-step.guide-step01
+					b.step-text 选择身份
+					b.step-number 1
+					b.step-icon
+						em.icon.icon-right
+				span.guide-step.guide-step02
+					b.step-text 填写公司信息
+					b.step-number 2
+					b.step-icon
+						em.icon.icon-right
+				span.guide-step.guide-step03
+					b.step-text 指定联系人
+					b.step-number 3
+					b.step-icon
+						em.icon.icon-right
+				span.guide-step.guide-step04
+					b.step-text 资料确认
+					b.step-number 4
+					b.step-icon
+						em.icon.icon-right
+				span.guide-percent
+		div.account_content
+			h1 选择身份
+			div.content_img
+				div.img_content_f.active
+					em.icon.icon-manifest
+					p 代理商
+				div.img_content_c
+					em.icon.icon-manifest
+					p 入驻商家
+	include ../public/footer.jade
+	div.master
+	div.dialog-agreement
+		h2.agreement-header
+			span 代理商用户服务协议
+			em.icon.icon-close
+		div.agreement-body
+			div.body-infor
+				h2.
+					【审慎阅读】您在申请注册流程中点击同意前，应当认真阅读以下协议。请您务必审慎阅读、充分理解协议中相关条款内容，其中包括：
+				p.
+					1、与您约定免除或限制责任的条款；<br>
+					2、与您约定法律适用和管辖的条款；<br>
+					3、其他以粗体下划线标识的重要条款。
+				p.bold 如您对协议有任何疑问，可向平台客服咨询。
+				p.
+					【特别提示】当您按照注册页面提示填写信息、阅读并同意协议且完成全部注册程序后，即表示您已充分阅读、理解并接受协议的全部内容。如您因平台服务与淘宝发生争议的，适用《淘宝平台服务协议》处理。如您在使用平台服务过程中与其他用户发生争议的，依您与其他用户达成的协议处理。
+				h2 阅读协议的过程中，如果您不同意相关协议或其中任何条款约定，您应立即停止注册程序。
+				p.bold.
+					《淘宝服务协议》<br>
+					《法律声明及隐私权政策》<br>
+					《支付宝服务协议》<br>
+				p.
+					【特别提示】当您按照注册页面提示填写信息、阅读并同意协议且完成全部注册程序后，即表示您已充分阅读、理解并接受协议的全部内容。如您因平台服务与淘宝发生争议的，适用《淘宝平台服务协议》处理。如您在使用平台服务过程中与其他用户发生争议的，依您与其他用户达成的协议处理。
+		div.agreement-footer
+			a(href="#").btn.btn-primary 同意以上协议，下一步

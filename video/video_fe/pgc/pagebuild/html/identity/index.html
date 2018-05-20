@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+    <head>
+        <meta charset="utf-8">
+        <meta name="renderer" content="webkit">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>GomePlus视频频道</title>
+        <meta name="keywords" content="GomePlus视频频道" />
+        <meta name="description" content="" />
+        <link rel="stylesheet" type="text/css" href="/vpgc/dist/css/app.css">
+    </head>
+
+    <body>
+        <div class="main">
+            <div class="head">
+	<div class="logo">
+		<a href="/"><img src="../../../../src/imgs/public/logo.png" /></a>
+	</div>
+	<div class="fr">
+		<span>小賀先森</span>
+		<span class="line">|</span>
+		<a href="javascript:;">退出</a>
+	</div>
+</div>
+            <div class="id-wrap">
+                <div class="id-w1200">
+                	<div class="id-step">
+                        <div class="step step1 active">
+                            <p>请选择入驻类型</p>
+                            <span>1</span>
+                        </div>
+                        <div class="step step2 active">
+                            <p>用户信息填写</p>
+                            <span>2</span>
+                        </div>
+                        <div class="step step3 active">
+                            <p>美号信息填写</p>
+                            <span>3</span>
+                        </div>
+                        <div class="step step4 active">
+                            <p>申请成功</p>
+                            <span>4</span>
+                        </div>
+                    </div>
+                    <!--选择入住类型-->
+                    <div class="id-card1 hide">
+                        <div class="id-tab">
+                        	<a href="#">
+                        	    <div class="img"></div>
+                        	    <div class="text">个人自媒体</div>
+                        	</a>
+                        	<a href="#" class="company">
+                                <div class="img"></div>
+                                <div class="text">企业机构</div>
+                            </a>
+                        </div>
+                        <div class="btn-next">
+                        	<input type="button" value="下一步" class="btn btn-block" />
+                        </div>
+                    </div>
+                    <!--用户信息填写-->
+                    <div class="id-card2 hide">
+                        <div class="form-group">
+                            <label>
+                                <span class="color-rad">*</span>
+                                真实姓名：
+                            </label>
+                            <div class="form-input">
+                                <input class="input-text" type="text" placeholder="请输入真实姓名，以便更好确认身份" value="">
+                                <p class="error show">请输入真实姓名</p>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label>
+                                <span class="color-rad">*</span>
+                                身份证号：
+                            </label>
+                            <div class="form-input">
+                                <input class="input-text" type="text" placeholder="请输入真实身份证号，以便更好确认身份" value="">
+                                <p class="error show">请输入真实姓名</p>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label>微信号：</label>
+                            <div class="form-input">
+                                <input class="input-text" type="text" placeholder="请输入真实姓名，以便更好确认身份" value="">
+                                <p class="error show">请输入真实姓名</p>
+                            </div>
+                        </div>
+                        <div class="btn-next2">
+                            <input type="button" value="下一步" class="btn btn-block" />
+                        </div>
+                    </div>
+                    <!--美号信息填写-->
+                    <div class="id-card3 hide">
+                    	<div class="form-group">
+                            <label>
+                                <span class="color-rad">*</span>
+                                美号昵称：
+                            </label>
+                            <div class="form-input">
+                                <input class="input-text" type="text" placeholder="请输入真实姓名，以便更好确认身份" value="">
+                                <span class="num">0/12</span>
+                                <p class="error show">请输入真实姓名</p>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label>
+                                <span class="color-rad">*</span>
+                                美号简介：
+                            </label>
+                            <div class="form-input">
+                                <input class="input-text" type="text" placeholder="请输入真实身份证号，以便更好确认身份" value="">
+                                <span class="num">0/12</span>
+                                <p class="error show">请输入真实姓名</p>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label>
+                                <span class="color-rad">*</span>
+                                美号头像：
+                            </label>
+                            <div class="form-input upload-box">
+                                <div class="upload-attention">仅支持JPG、PNG、PNEG的图片文件，且文件小于4M，像素大于130*130</div>
+                                <div class="clearfix">
+                                	<div class="upload-img">
+                                        <div class="upload-add">
+                                            <div class="add-item">
+                                                <em class="icon-7"></em>
+                                            </div>
+                                            <input type="file" name="" value="" class="upload-btn" />
+                                        </div>
+                                        <div class="img-add">
+                                            <div class="loading-bg">
+                                                <span class="icon-20 indicator"></span>
+                                            </div>
+                                            <img src="//gfs10.gomein.net.cn/T1mfCjBgLT1RCvBVdK_c126_126.jpg" />
+                                            <span class="icon-4 del"></span>
+                                        </div>
+                                    </div>
+                                    <div class="upload-img">
+                                        <div class="upload-add">
+                                            <div class="add-item">
+                                                <em class="icon-7"></em>
+                                            </div>
+                                            <input type="file" name="" value="" class="upload-btn" />
+                                        </div>
+                                    </div>
+                                </div>
+                                <p class="error show">图片仅支持jpg、png、pneg格式</p>
+                            </div>
+                        </div>
+                        <div class="btn-next2">
+                            <input type="button" value="提交" class="btn btn-block" />
+                        </div>
+                    </div>
+                    <!--申请成功-->
+                    <div class="id-card4 hide">
+                    	<div class="upload-success">
+                            <div class="icon-2 icon-suc"></div>
+                            <div class="title">提交成功</div>
+                            <div class="tip">申请资料审核中，请耐心等待~</div>
+                            <div class="action">
+                                <span>3</span>秒后进入<a href="">国美内容创作平台</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!--企业信息填写-->
+                    <div class="id-card5">
+                        <div class="form-group">
+                            <label></label>
+                            <div class="form-input">
+                                <div class="title">联系人信息</div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label>
+                                <span class="color-rad">*</span>
+                                真实姓名：
+                            </label>
+                            <div class="form-input">
+                                <input class="input-text" type="text" placeholder="请输入真实姓名，以便更好确认身份" value="">
+                                <p class="error show">请输入真实姓名</p>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label>
+                                <span class="color-rad">*</span>
+                                身份证号：
+                            </label>
+                            <div class="form-input">
+                                <input class="input-text" type="text" placeholder="请输入真实身份证号，以便更好确认身份" value="">
+                                <p class="error show">请输入真实姓名</p>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label>
+                                <span class="color-rad">*</span>
+                                手机号：
+                            </label>
+                            <div class="form-input">
+                                <input class="input-text" type="text" placeholder="请输入真实身份证号，以便更好确认身份" value="">
+                                <p class="error show">请输入真实姓名</p>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label>
+                                <span class="color-rad">*</span>
+                                验证码：
+                            </label>
+                            <div class="form-input">
+                                <input class="input-text input-code" type="text" placeholder="请输入真实身份证号，以便更好确认身份" value="">
+                                <p class="error show">请输入真实姓名</p>
+                            </div>
+                            <input type="button" class="btn " value="获取验证码">
+                        </div>
+                        <div class="form-group">
+                            <label>
+                                固定电话：
+                            </label>
+                            <div class="form-input">
+                                <input class="input-text" type="text" placeholder="请输入真实身份证号，以便更好确认身份" value="">
+                                <p class="error show">请输入真实姓名</p>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label>
+                                <span class="color-rad">*</span>
+                                邮箱：
+                            </label>
+                            <div class="form-input">
+                                <input class="input-text" type="text" placeholder="请输入真实身份证号，以便更好确认身份" value="">
+                                <p class="error show">请输入真实姓名</p>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label>
+                                微信号：
+                            </label>
+                            <div class="form-input">
+                                <input class="input-text" type="text" placeholder="请输入真实身份证号，以便更好确认身份" value="">
+                                <p class="error show">请输入真实姓名</p>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label></label>
+                            <div class="form-input">
+                                <div class="title">公司信息</div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label>
+                                <span class="color-rad">*</span>
+                                公司名称：
+                            </label>
+                            <div class="form-input">
+                                <input class="input-text" type="text" placeholder="请输入真实身份证号，以便更好确认身份" value="">
+                                <p class="error show">请输入真实姓名</p>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label>
+                                <span class="color-rad">*</span>
+                                办公地址：
+                            </label>
+                            <div class="form-input">
+                                <input class="input-text" type="text" placeholder="请输入真实身份证号，以便更好确认身份" value="">
+                                <p class="error show">请输入真实姓名</p>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label>
+                                <span class="color-rad">*</span>
+                                统一社会信用代码：
+                            </label>
+                            <div class="form-input">
+                                <input class="input-text" type="text" placeholder="请输入真实身份证号，以便更好确认身份" value="">
+                                <p class="error show">请输入真实姓名</p>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label>
+                                <span class="color-rad">*</span>
+                                营业执照：
+                            </label>
+                            <div class="form-input upload-box">
+                                <div class="upload-attention">仅支持JPG、PNG、PNEG的图片文件，且文件小于4M，像素大于130*130</div>
+                                <div class="clearfix">
+                                    <div class="upload-img">
+                                        <div class="upload-add">
+                                            <div class="add-item">
+                                                <em class="icon-7"></em>
+                                            </div>
+                                            <input type="file" name="" value="" class="upload-btn" />
+                                        </div>
+                                        <div class="img-add">
+                                            <div class="loading-bg">
+                                            	<span class="icon-20 indicator"></span>
+                                            </div>
+                                            <img src="//gfs10.gomein.net.cn/T1mfCjBgLT1RCvBVdK_c126_126.jpg" />
+                                            <span class="icon-4 del"></span>
+                                        </div>
+                                    </div>
+                                    <div class="upload-img">
+                                        <div class="upload-add">
+                                            <div class="add-item">
+                                                <em class="icon-7"></em>
+                                            </div>
+                                            <input type="file" name="" value="" class="upload-btn" />
+                                        </div>
+                                    </div>
+                                </div>
+                                <p class="error show">图片仅支持jpg、png、pneg格式</p>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label>
+                                公司网址：
+                            </label>
+                            <div class="form-input">
+                                <input class="input-text" type="text" placeholder="请输入真实身份证号，以便更好确认身份" value="">
+                                <p class="error show">请输入真实姓名</p>
+                            </div>
+                        </div>
+                        <div class="btn-next2">
+                            <input type="button" value="提交" class="btn btn-block" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer">
+    <div class="body-footer">
+    	<ul>
+    		<li><a>国美官网</a><span>|</span></li>
+    		<li><a>美妙官网</a><span>|</span></li>
+    		<li><a>联系我们</a><span>|</span></li>
+    		<li><a>关于我们</a><span>|</span></li>
+    		<li><a>平台协议</a></li>
+    	</ul>
+    	<div className="copyRight">Copyright © 2015-2017 美信网络技术有限公司版权所有</div>
+	</div>
+</div>
+        </div>
+        <script src="/vpgc/dist/js/vendor.js"></script>
+        <script src="/vpgc/dist/js/main.js"></script>
+    </body>
+
+</html>

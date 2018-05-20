@@ -1,0 +1,52 @@
+//- extends layout.jade
+extends ../public/layout.jade
+
+block title
+	title 我的账户-账户概况
+//- block link-theme
+//- 	link(rel='stylesheet' type="text/css" href="../../css/module/account.css")
+
+//- account
+block content
+	include ../public/menu.jade
+	div.content-main
+		div.amp-account
+			// crumbs
+			div.crumbs
+				a(href="javascript:void(0);")
+					span 我的账户
+					em >
+				a(href="javascript:void(0);").actived
+					span 账户概况
+					em >
+			// amp-module
+			div.amp-module
+				div.module-statis
+					div.statis-infor
+						div.infor-name
+							p
+								span.name-icon
+									em.icon.icon-wallet
+								span.name-title 现金账户
+						div.infor-data
+							ul
+								li
+									p
+										strong 广告帐户余额
+										span ¥803400
+								li
+									p
+										strong 今日广告花费
+										span ¥80000
+								li
+									p
+										strong 返利帐户余额
+										span ¥80000
+								li
+									p
+										strong 今日返利花费
+										span ¥80000
+					div.statis-fn
+						a(href="#").btn.btn-primary 充值
+						a(href="#").btn.btn-base-gray 设置余额提醒
+						a(href="#").btn.btn-base-gray 资金划拔

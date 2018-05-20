@@ -1,0 +1,25 @@
+doctype html
+html(lang="zh-CN")
+    include ../../../../../gomeplusUI/pc/src/jade/head.jade
+    body.opg.lg-bg
+        link(type="text/css",rel="stylesheet",href="../../css/public/public.css")
+        link(type="text/css",rel="stylesheet",href="../../css/module/login/login.css")
+        .lg-header
+            .lg-header-in
+                h1.lg-logo
+                    a 国美plus
+        .lg-main
+            //步骤 开始
+            h4.lg-tip-title 关联手机
+            //步骤 结束
+            div.lg-form
+                h4.lg-succ-top
+                    img(src="../../images/login/lg-all-big.png")
+                    | 关联成功！
+                span.congratulation QQ账号和国美在线账号关联成功！
+                    em 5 
+                    | 秒自动跳转至
+                    em &nbsp;国美+首页
+        include ../../../../../gomeplusUI/pc/src/jade/footer.jade
+
+

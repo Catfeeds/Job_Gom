@@ -1,0 +1,403 @@
+doctype html
+html(lang="zh-CN")
+	include ../../widget/head/head.pug
+	link(type="text/css",rel="stylesheet",href="../../css/public/public.css")
+	link(type="text/css",rel="stylesheet",href="../../css/module/mix_circlelist.css")
+	body.opg
+		include ../../widget/header/header.pug
+		include ../../widget/menu/menu.pug
+		div.wrap-box
+			.circle-top.clearfix
+				//- 中栏无圈子
+				.circle-release
+					.circle-releasecenter
+						.circle-r-left
+						.circle-r-right
+							span 该圈子已经解散啦，去&nbsp;
+							a(href="#") 圈子首页
+							span &nbsp;逛逛吧
+				//- 左边栏内容栏
+				.circle-content
+					.circle-title.clearfix
+						.circle-title-left
+							.circle-t-l-cover
+								img.c-t-l-cover(src="https://i6.meixincdn.com/v1/img/T1GRYTB7KT1R4cSCrK.png" alt="")
+							.circle-t-l-join.clearfix
+								a.c-t-l-join.common-join(href="#") 加入圈子
+								a.c-t-l-create.common-join(href="#") 创建圈子
+						.circle-title-right
+							.circle-t-r-title
+								h1.c-t-r-title 服装搭配小技巧
+							.circle-t-r-time.clearfix
+								.circle-t-r-t-timedetail
+									p.c-t-r-t-time 创建于2015年3月27日
+								.circle-t-r-t-ownerdetail
+									span.c-t-r-t-owner 圈主：
+									a(href="#")
+										span.c-t-r-t-user 跨界搭服装
+							.circle-t-r-type
+								.circle-t-r-t-typedetail.clearfix
+									span.c-t-r-t-type 分类：
+									i.c-t-r-t-typelist 美妆
+									i.c-t-r-t-typelist 时尚
+							.circle-t-r-countdetail.clearfix
+								.circle-t-r-c-memberdetail
+									span.c-t-r-c-member 成员：
+									span.c-t-r-c-membercount 391
+								.circle-t-r-c-topicdetail
+									span.c-t-r-c-topic 话题：
+									span.c-t-r-c-topiccount 287
+							.circle-t-r-circledetail
+								span.c-t-r-c-detail 圈子简介：
+								span.c-t-r-c-detailcontent 泪奔呀，发现自己创建了一个纯广告天地，删都删不了....广告能 不能自动屏蔽掉呀！泪奔哇~ 泪奔哇~泪奔哇~泪奔哇~泪奔呀，发现自己创建了一个纯广告天地，删都删不了....广告能 不能自动屏蔽掉呀！泪奔哇~ 泪奔哇~泪奔哇~泪奔哇~泪奔呀，发现自己创建了一个纯广告天地，删都删不了....
+					.circle-lists
+						.circle-lists-labalbar.clearfix
+							.circle-l-l-tab
+								.circle-l-l-t-topic.tabtopic-active
+									a(href="#") 最近话题
+								.circle-l-l-t-topic
+									a(href="#") 精选话题
+							.circle-l-l-submit
+								a(href="#")
+									em.iconn-76
+									span 发布话题
+						.circle-lists-cell
+							ul.circle-l-c-wrap.clearfix
+								//-1
+								li.circle-l-c-w-minute.circle-minute-frist
+									.circle-l-c-w-m-wrap.clearfix
+										.circle-l-c-w-m-user.clearfix
+											a(href="#")
+												img(src="https://i6.meixincdn.com/v1/img/T1GRYTB7KT1R4cSCrK.png" alt="").circle-l-c-w-m-u-icon
+											a(href="#")
+												span.circle-l-c-w-m-u-name 时尚小妖精
+										.circle-l-c-w-m-title.clearfix
+											span.circle-l-c-w-m-titlewrap
+												i.circle-l-c-w-m-titletop 置顶
+												i.circle-l-c-w-m-titlequality 精品
+												i.circle-l-c-w-m-titleinterview 专访
+											a(href="#")
+												h3 140平大方得体没事三居室，幸福温馨的居家感觉
+										a(href="#").circle-l-c-w-m-hover
+											.circle-l-c-w-m-paper
+												p 化繁为简的方式， 抛弃传统繁复的语言， 提炼出精简的符号式语言表现空间。 软装上现代与美式的混搭 勾勒出温馨明快的画面。
+										.circle-l-c-w-m-imagepreview.clearfix
+											a(href="#").circle-l-c-w-m-imagepreviewhover
+												.circle-imagepreview-img.circle-imagepreview-play
+													img(src="https://i6.meixincdn.com/v1/img/T1GRYTB7KT1R4cSCrK.png" alt="")
+													.circle-i-p-icon
+											a(href="#").circle-l-c-w-m-imagepreviewhover
+												.circle-imagepreview-goods
+													img(src="https://i6.meixincdn.com/v1/img/T1GRYTB7KT1R4cSCrK.png" alt="")
+													.circle-i-goodsmask.clearfix
+														.circle-i-g-price
+															span.circle-i-g-p-currency ￥
+															span.circle-i-g-p-pricecount 555.00
+														.circle-i-g-icon
+															i.circle-i-g-i-word 返利
+															i.circle-i-g-i-icon
+											a(href="#").circle-l-c-w-m-imagepreviewhover
+												.circle-imagepreview-img
+													img(src="https://i6.meixincdn.com/v1/img/T1GRYTB7KT1R4cSCrK.png" alt="")
+										.circle-l-c-w-m-state.clearfix
+											.circle-l-c-w-m-s-left
+												em.iconn-75
+												span.circle-l-c-w-m-s-l-timedate 2个小时前
+											.circle-l-c-w-m-s-right
+												ul.circle-l-c-w-m-s-r-tool
+													li
+														em.icon.iconn-10
+														span.circle-l-c-w-m-s-r-islikecount 23
+													li
+														em.icon.iconn-11
+														span.circle-l-c-w-m-s-r-iscommetcount 5
+													li
+														em.icon.iconn-57
+														span.circle-l-c-w-m-s-r-isstarcount 23
+								//-2
+								li.circle-l-c-w-minute
+									.circle-l-c-w-m-wrap.clearfix
+										.circle-l-c-w-m-user.clearfix
+											a(href="#")
+												img(src="https://i6.meixincdn.com/v1/img/T1GRYTB7KT1R4cSCrK.png" alt="").circle-l-c-w-m-u-icon
+											a(href="#")
+												span.circle-l-c-w-m-u-name 时尚小妖精
+										.circle-l-c-w-m-title.clearfix
+											span.circle-l-c-w-m-titlewrap
+												i.circle-l-c-w-m-titletop 置顶
+												i.circle-l-c-w-m-titlequality 精品
+												i.circle-l-c-w-m-titleinterview 专访
+											a(href="#")
+												h3 140平大方得体没事三居室，幸福温馨的居家感觉
+										a(href="#").circle-l-c-w-m-hover
+											.circle-l-c-w-m-paper
+												p 化繁为简的方式， 抛弃传统繁复的语言， 提炼出精简的符号式语言表现空间。 软装上现代与美式的混搭 勾勒出温馨明快的画面。
+										.circle-l-c-w-m-imagepreview.clearfix
+											a(href="#").circle-l-c-w-m-imagepreviewhover
+												.circle-imagepreview-img.circle-imagepreview-play
+													img(src="https://i6.meixincdn.com/v1/img/T1GRYTB7KT1R4cSCrK.png" alt="")
+													.circle-i-p-icon
+											a(href="#").circle-l-c-w-m-imagepreviewhover
+												.circle-imagepreview-goods
+													img(src="https://i6.meixincdn.com/v1/img/T1GRYTB7KT1R4cSCrK.png" alt="")
+													.circle-i-goodsmask.clearfix
+														.circle-i-g-price
+															span.circle-i-g-p-currency ￥
+															span.circle-i-g-p-pricecount 555.00
+														.circle-i-g-icon
+															i.circle-i-g-i-word 返利
+															i.circle-i-g-i-icon
+											a(href="#").circle-l-c-w-m-imagepreviewhover
+												.circle-imagepreview-img
+													img(src="https://i6.meixincdn.com/v1/img/T1GRYTB7KT1R4cSCrK.png" alt="")
+										.circle-l-c-w-m-state.clearfix
+											.circle-l-c-w-m-s-left
+												em.iconn-75
+												span.circle-l-c-w-m-s-l-timedate 2个小时前
+											.circle-l-c-w-m-s-right
+												ul.circle-l-c-w-m-s-r-tool
+													li
+														em.icon.iconn-10
+														span.circle-l-c-w-m-s-r-islikecount 23
+													li
+														em.icon.iconn-11
+														span.circle-l-c-w-m-s-r-iscommetcount 5
+													li
+														em.icon.iconn-57
+														span.circle-l-c-w-m-s-r-isstarcount 23
+								//-3
+								li.circle-l-c-w-minute.circle-minute-last
+									.circle-l-c-w-m-wrap.clearfix
+										.circle-l-c-w-m-user.clearfix
+											a(href="#")
+												img(src="https://i6.meixincdn.com/v1/img/T1GRYTB7KT1R4cSCrK.png" alt="").circle-l-c-w-m-u-icon
+											a(href="#")
+												span.circle-l-c-w-m-u-name 时尚小妖精
+										.circle-l-c-w-m-title.clearfix
+											span.circle-l-c-w-m-titlewrap
+												i.circle-l-c-w-m-titletop 置顶
+												i.circle-l-c-w-m-titlequality 精品
+												i.circle-l-c-w-m-titleinterview 专访
+											a(href="#")
+												h3 140平大方得体没事三居室，幸福温馨的居家感觉
+										a(href="#").circle-l-c-w-m-hover
+											.circle-l-c-w-m-paper
+												p 化繁为简的方式， 抛弃传统繁复的语言， 提炼出精简的符号式语言表现空间。 软装上现代与美式的混搭 勾勒出温馨明快的画面。
+										.circle-l-c-w-m-imagepreview.clearfix
+											a(href="#").circle-l-c-w-m-imagepreviewhover
+												.circle-imagepreview-img.circle-imagepreview-play
+													img(src="https://i6.meixincdn.com/v1/img/T1GRYTB7KT1R4cSCrK.png" alt="")
+													.circle-i-p-icon
+											a(href="#").circle-l-c-w-m-imagepreviewhover
+												.circle-imagepreview-goods
+													img(src="https://i6.meixincdn.com/v1/img/T1GRYTB7KT1R4cSCrK.png" alt="")
+													.circle-i-goodsmask.clearfix
+														.circle-i-g-price
+															span.circle-i-g-p-currency ￥
+															span.circle-i-g-p-pricecount 555.00
+														.circle-i-g-icon
+															i.circle-i-g-i-word 返利
+															i.circle-i-g-i-icon
+											a(href="#").circle-l-c-w-m-imagepreviewhover
+												.circle-imagepreview-img
+													img(src="https://i6.meixincdn.com/v1/img/T1GRYTB7KT1R4cSCrK.png" alt="")
+										.circle-l-c-w-m-state.clearfix
+											.circle-l-c-w-m-s-left
+												em.iconn-75
+												span.circle-l-c-w-m-s-l-timedate 2个小时前
+											.circle-l-c-w-m-s-right
+												ul.circle-l-c-w-m-s-r-tool
+													li
+														em.icon.iconn-10
+														span.circle-l-c-w-m-s-r-islikecount 23
+													li
+														em.icon.iconn-11
+														span.circle-l-c-w-m-s-r-iscommetcount 5
+													li
+														em.icon.iconn-57
+														span.circle-l-c-w-m-s-r-isstarcount 23
+
+
+
+						//- 左边栏-暂无最新话题
+						.circle-nonetopic
+							.circle-nt-center
+								.circle-nt-c-left
+								.circle-nt-c-right
+									span 暂无话题，快来抢占沙发，
+									a(href="#") 发布话题
+									span &nbsp;吧！
+
+						//- 左边栏-暂无精选话题
+						.circle-nonequality
+							.circle-nq-center
+								.circle-nq-c-left
+								.circle-nq-c-right
+									span 还没有精选话题
+
+					include ../../widget/page/page.pug
+
+
+				//- 右边栏-用户栏
+				.circle-user
+					.circle-self.clearfix
+						.circle-self-top
+							.circle-s-t-avatwarp
+								img(src="https://i6.meixincdn.com/v1/img/T1GRYTB7KT1R4cSCrK.png" alt="")
+								.circle-s-t-fans
+						.circle-self-down
+							.circle-s-d-loader.clearfix
+								i.circle-s-d-l-icon 圈主
+								a(href="#").circle-s-d-l-name
+									span 一望损苺苔
+								.circle-s-d-l-gender.circle-s-d-l-gender-woman
+							.circle-s-d-count.clearfix
+								span.circle-s-d-c-t-name 话题
+								span.circle-s-d-c-t-topiccount 1200
+								span.circle-s-d-c-throughline |
+								span.circle-s-d-c-c-name 圈子
+								span.circle-s-d-c-c-circlecount 15
+							.circle-s-d-lookhost
+								a.circle-s-d-l-hostbutton(href="#") 查看TA的主页
+					.circle-sameclass
+						.circle-sameclass-title.clearfix
+							.circle-s-t-word 同类别值得加入
+							a(href="#")
+								.circle-s-t-change
+									.circle-s-t-changeicon
+									span 换一换
+						ul.circle-sameclass-list.clearfix
+							li.circle-s-l-cell
+								a(href="#").circle-s-l-c-wrap
+									.circle-s-l-c-avater
+										img(src="https://i6.meixincdn.com/v1/img/T1GRYTB7KT1R4cSCrK.png" alt="")
+									p.circle-s-l-c-name 颜控
+								p.circle-s-l-c-member
+									span.circle-s-l-c-membername 成员：
+									span.circle-s-l-c-count 1010
+								a(href="#")
+									.circle-s-l-c-button.circle-s-l-c-button-joined √ 已加入
+							li.circle-s-l-cell
+								a(href="#").circle-s-l-c-wrap
+									.circle-s-l-c-avater
+										img(src="https://i6.meixincdn.com/v1/img/T1GRYTB7KT1R4cSCrK.png" alt="")
+									p.circle-s-l-c-name 颜控
+								p.circle-s-l-c-member
+									span.circle-s-l-c-membername 成员：
+									span.circle-s-l-c-count 1010
+								a(href="#")
+									.circle-s-l-c-button +加入圈子
+							li.circle-s-l-cell
+								a(href="#").circle-s-l-c-wrap
+									.circle-s-l-c-avater
+										img(src="https://i6.meixincdn.com/v1/img/T1GRYTB7KT1R4cSCrK.png" alt="")
+									p.circle-s-l-c-name 颜控
+								p.circle-s-l-c-member
+									span.circle-s-l-c-membername 成员：
+									span.circle-s-l-c-count 1010
+								a(href="#")
+									.circle-s-l-c-button +加入圈子
+							li.circle-s-l-cell
+								a(href="#").circle-s-l-c-wrap
+									.circle-s-l-c-avater
+										img(src="https://i6.meixincdn.com/v1/img/T1GRYTB7KT1R4cSCrK.png" alt="")
+									p.circle-s-l-c-name 颜控
+								p.circle-s-l-c-member
+									span.circle-s-l-c-membername 成员：
+									span.circle-s-l-c-count 1010
+								a(href="#")
+									.circle-s-l-c-button +加入圈子
+							li.circle-s-l-cell
+								a(href="#").circle-s-l-c-wrap
+									.circle-s-l-c-avater
+										img(src="https://i6.meixincdn.com/v1/img/T1GRYTB7KT1R4cSCrK.png" alt="")
+									p.circle-s-l-c-name 颜控
+								p.circle-s-l-c-member
+									span.circle-s-l-c-membername 成员：
+									span.circle-s-l-c-count 1010
+								a(href="#")
+									.circle-s-l-c-button +加入圈子
+							li.circle-s-l-cell
+								a(href="#").circle-s-l-c-wrap
+									.circle-s-l-c-avater
+										img(src="https://i6.meixincdn.com/v1/img/T1GRYTB7KT1R4cSCrK.png" alt="")
+									p.circle-s-l-c-name 颜控
+								p.circle-s-l-c-member
+									span.circle-s-l-c-membername 成员：
+									span.circle-s-l-c-count 1010
+								a(href="#")
+									.circle-s-l-c-button +加入圈子
+					.circle-hottopic
+						.circle-hottopic-title
+							.circle-t-t-word 热门话题
+							a(href="#")
+								.circle-t-t-change 换一换
+						ol.circle-hottopic-list
+							li.circle-h-l-cell.clearfix
+								.circle-h-l-cellleft
+									img(src="https://i6.meixincdn.com/v1/img/T1GRYTB7KT1R4cSCrK.png" alt="")
+								.circle-h-l-cellright
+									.circle-h-l-c-name
+										a(href="#") 你想知道的眼妆秘密都在 这里哦,看这里看这里看...
+									ul.circle-h-l-c-tool.clearfix
+										li
+											em.icon.iconn-11
+											span.circle-h-l-c-t-iscommetcount 5
+										li
+											em.icon.iconn-10
+											span.circle-h-l-c-t-islikecount 23
+							li.circle-h-l-cell.clearfix
+								.circle-h-l-cellleft
+									img(src="https://i6.meixincdn.com/v1/img/T1GRYTB7KT1R4cSCrK.png" alt="")
+								.circle-h-l-cellright
+									.circle-h-l-c-name
+										a(href="#") 你想知道的眼妆秘密都在 这里哦,看这里看这里看...
+									ul.circle-h-l-c-tool.clearfix
+										li
+											em.icon.iconn-11
+											span.circle-h-l-c-t-iscommetcount 5
+										li
+											em.icon.iconn-10
+											span.circle-h-l-c-t-islikecount 23
+							li.circle-h-l-cell.clearfix
+								.circle-h-l-cellleft
+									img(src="https://i6.meixincdn.com/v1/img/T1GRYTB7KT1R4cSCrK.png" alt="")
+								.circle-h-l-cellright
+									.circle-h-l-c-name
+										a(href="#") 你想知道的眼妆秘密都在 这里哦,看这里看这里看...
+									ul.circle-h-l-c-tool.clearfix
+										li
+											em.icon.iconn-11
+											span.circle-h-l-c-t-iscommetcount 5
+										li
+											em.icon.iconn-10
+											span.circle-h-l-c-t-islikecount 23
+							li.circle-h-l-cell.clearfix
+								.circle-h-l-cellleft
+									img(src="https://i6.meixincdn.com/v1/img/T1GRYTB7KT1R4cSCrK.png" alt="")
+								.circle-h-l-cellright
+									.circle-h-l-c-name
+										a(href="#") 你想知道的眼妆秘密都在 这里哦,看这里看这里看...
+									ul.circle-h-l-c-tool.clearfix
+										li
+											em.icon.iconn-11
+											span.circle-h-l-c-t-iscommetcount 5
+										li
+											em.icon.iconn-10
+											span.circle-h-l-c-t-islikecount 23
+							li.circle-h-l-cell.clearfix
+								.circle-h-l-cellleft
+									img(src="https://i6.meixincdn.com/v1/img/T1GRYTB7KT1R4cSCrK.png" alt="")
+								.circle-h-l-cellright
+									.circle-h-l-c-name
+										a(href="#") 你想知道的眼妆秘密都在 这里哦,看这里看这里看...
+									ul.circle-h-l-c-tool.clearfix
+										li
+											em.icon.iconn-11
+											span.circle-h-l-c-t-iscommetcount 5
+										li
+											em.icon.iconn-10
+											span.circle-h-l-c-t-islikecount 23
+
+		include ../../widget/footer/footer.pug
+	script(type="text/javascript",src="../../js/conf/talentApplication.js")

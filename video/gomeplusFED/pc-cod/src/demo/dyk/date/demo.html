@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8"/>
+    <title>日历 - 插件</title>
+    <link rel="stylesheet" type="text/css" href="date1.css">
+    <link rel="shortcut icon" href="http://www.dev.gomeplus.com/favicon.ico">
+    <script src="jquery.min.js"></script>
+    <script src="dater.js"></script>
+    <script>
+        $(function () {
+            $('[data-node=showDate]').miniDate({
+              daterCls:'1111'
+            });
+            $('[data-node=showDate1]').miniDate({
+              startTime:'1999/9/10',
+              nowTime : '2016/06/20',
+              daterCls:'2222'
+            });
+            $('[data-node=showDate2]').miniDate({
+              startTime:'2016/07/10',
+              nowTime : '2016/07/18'
+            });
+            $('[data-node=showDate3]').miniDate({
+              startTime:'2016/01/16',
+              endTime:'2016/03/01',
+              nowTime : '2016/02/11 '
+            });
+            //$.fn.miniDate();
+        });
+    </script>
+</head>
+<body>
+<!-- <div class="clearfix dome3_box" data-node="demo_box"> -->
+    <!--日历 begin-->
+    <input class="showDate" value='点击选择日期'  data-node="showDate"/>
+    <input class="aa" value='选择日期'  data-node="showDate1"/>
+    <input class="aa" value='选择日期'  data-node="showDate2"/>
+    <input class="aa" value='选择日期'  data-node="showDate3"/>
+   <!--  <div class="data_box" data-node="data_box">
+       <span class="showDate" data-node="showDate">点击选择日期</span>
+   </div> -->
+    <!--日历 end-->
+<!-- </div> -->
+</body>
+</html>

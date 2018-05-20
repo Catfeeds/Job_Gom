@@ -1,0 +1,19 @@
+[ 2017-03-28T13:25:24+08:00 ] 0.0.0.0 0.0.0.0 CLI 
+[ log ] cmd:index.php es/esalert/start pro normal [运行时间：0.064813s][吞吐率：15.43req/s] [内存消耗：1,522.39kb] [文件加载：34]
+[ info ] [ LANG ] /Users/zhangliang/workspace/webapps/gome/pc_admin/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'es',
+    1 => 'esalert',
+    2 => 'start',
+  ),
+)
+[ info ] [ HEADER ] array (
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------

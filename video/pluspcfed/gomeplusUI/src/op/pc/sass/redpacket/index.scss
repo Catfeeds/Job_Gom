@@ -1,0 +1,88 @@
+@import '../../../../pc/sass/public/public.scss';
+body {
+	background: url('../../images/redpacket/bg-new.png') no-repeat center 0 #ffb80d;
+}
+body div {
+	text-align: center;
+}
+.count {
+	background: url('../../images/redpacket/count.png') no-repeat center 0;
+	height: 360px; 
+	margin: 440px 0 0 0;
+}
+.count p {
+    padding: 128px 0 0 0;
+	font-size: 24px;
+	color: #fff;
+}
+.count p span {
+	font-size: 40px;
+}
+.info {
+	background: url('../../images/redpacket/info.png') no-repeat center 0;
+	height: 749px; 
+}
+.info p {
+	position: absolute;
+	bottom: -28px;
+	left: 50%;
+	margin: 0 0 0 -250px;
+}
+.info p img {
+	width: 500px;
+	height: 500px;
+}
+.info .info-list {
+    position: relative;
+	width: 630px;
+	height: 606px;
+	padding: 67px 0 0 0;
+	margin: 0 auto;
+}
+.info .info-list .prizesList {
+    position: relative;
+	margin: 20px 20px  0 20px;
+    height: 141px;
+    overflow: hidden;
+}
+.info .info-list .prizesList h2{
+	text-align: left;
+	font-size: 26px;
+	color: #fff;
+	margin: 20px 0 0 20px;
+}
+.info .info-list .prizesList ul {
+	position: absolute;
+	left: 0;
+}
+.info .info-list li {
+	background: #6ac8d7;
+	padding: 8px 16px;
+	border-radius: 20px;
+	font-size: 14px;
+	color: #fff;
+	margin: 0 0 10px 0;
+	text-align: left;
+	float: left;
+	clear: both;
+}
+.step {
+	background: url('../../images/redpacket/step.png') no-repeat center 0;
+	height: 315px;
+}
+.rule {
+	background: url('../../images/redpacket/footer.jpg') no-repeat center bottom;
+	height: 1110px;
+}
+.rule p {
+	background: url('../../images/redpacket/rule.png') no-repeat center 0;
+	height: 646px;
+}
+.code {
+    position: fixed;
+    right: 0;
+    bottom: 100px;
+	background: url('../../images/redpacket/code.png') no-repeat;
+	width: 171px;
+	height: 222px;
+}

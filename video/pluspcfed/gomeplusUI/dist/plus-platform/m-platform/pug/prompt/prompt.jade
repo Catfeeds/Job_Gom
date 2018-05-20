@@ -1,0 +1,28 @@
+//- extends layout.jade
+extends ../../../widget-platform/pug/layout/layout-m.jade
+
+//- index
+block content
+	.platform-tipsinfo
+		h5 说明
+		p m-prompt 公用类名
+		p 具体查看结构，谢谢~
+		p.maty 有问题沟通-maty
+	//end
+
+	//- prompt-1
+	div.platform-content
+		h3.platform-header 公用占位符
+		//- div.platform-intro
+		//- 	p 按钮样式-1
+		div.platform-example#prompt-1
+			include ../../../../plus-widget/prompt/prompt-1.jade
+		pre.platform-pre.hide
+			code.platform-code#prompt-1_code
+			span.platform-jade pug
+			span.platform-jade.platform-html.actived html
+	
+	script(type='text/javascript').
+		HtmlFormat.init(['prompt-1'],false,'_code','html','span.platform-jade');
+		$(".platform-prompt").parent('li').addClass("actived");
+	

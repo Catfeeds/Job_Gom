@@ -1,0 +1,104 @@
+{
+  "name": "gome-sitespeed.io",
+  "bin": {
+    "gome-sitespeed": "./bin/sitespeed.js"
+  },
+  "version": "1.2.3",
+  "description": "Analyze the web performance of your site,this not official version",
+  "keywords": [
+    "performance",
+    "web",
+    "rules",
+    "har",
+    "webperf",
+    "perfmatters",
+    "navigation-timing",
+    "browser"
+  ],
+  "homepage": "https://www.sitespeed.io",
+  "license": "MIT",
+  "author": {
+    "name": "Peter Hedenskog",
+    "url": "https://www.peterhedenskog.com"
+  },
+  "contributors": [
+    {
+      "name": "Tobias Lidskog"
+    },
+    {
+      "name": "Jonathan Lee"
+    }
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/sitespeedio/sitespeed.io.git"
+  },
+  "bugs": {
+    "url": "https://github.com/sitespeedio/sitespeed.io/issues"
+  },
+  "scripts": {
+    "lint": "npm run eslint && npm run pug-lint",
+    "eslint": "eslint .",
+    "eclint": "eclint check * lib/**/* bin/**/* tools/**/* !*.iml",
+    "eclint:fix": "eclint fix * lib/**/* bin/**/* tools/**/* !*.iml",
+    "pug-lint": "pug-lint lib/plugins/html/templates",
+    "test": "mocha",
+    "check-licenses": "tools/check-licenses.js",
+    "travis": "npm run lint && npm run test",
+    "build:css": "node-sass lib/plugins/html/src/sass/main.scss > lib/plugins/html/assets/css/index.css && cleancss -o lib/plugins/html/assets/css/index.min.css lib/plugins/html/assets/css/index.css"
+  },
+  "engines": {
+    "node": ">=4.3.0"
+  },
+  "publishConfig": {
+    "tag": "canary"
+  },
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "chai-as-promised": "^5.2.0",
+    "clean-css": "^3.4.17",
+    "eclint": "^1.1.5",
+    "eslint": "^2.9.0",
+    "jsdoc": "^3.3.3",
+    "license-checker": "^5.1.2",
+    "mocha": "^2.4.4",
+    "node-sass": "^3.8.0",
+    "pug-lint": "^2.3.0",
+    "pug-lint-config-clock": "^2.0.0"
+  },
+  "main": "./lib/sitespeed.js",
+  "dependencies": {
+    "bluebird": "3.4.1",
+    "browsertime": "1.0.0-beta.9",
+    "concurrent-queue": "7.0.1",
+    "fast-stats": "0.0.3",
+    "fs-extra": "0.30.0",
+    "gpagespeed": "3.0.0",
+    "influx": "4.2.1",
+    "intel": "1.1.1",
+    "line-reader": "0.4.0",
+    "lodash.assign": "^4.1.0",
+    "lodash.chunk": "4.1.0",
+    "lodash.clonedeep": "4.4.0",
+    "lodash.difference": "4.4.0",
+    "lodash.foreach": "4.4.1",
+    "lodash.get": "4.4.0",
+    "lodash.merge": "4.5.0",
+    "lodash.pullall": "4.2.0",
+    "lodash.reduce": "4.5.0",
+    "lodash.set": "4.3.0",
+    "longjohn": "0.2.11",
+    "mkdirp": "0.5.1",
+    "moment": "2.14.1",
+    "mongodb": "^2.2.5",
+    "node-slack": "0.0.7",
+    "node-uuid": "1.4.7",
+    "pagexray": "0.9.0",
+    "png-crop": "0.0.1",
+    "pug": "^2.0.0-beta4",
+    "simplecrawler": "0.7.0",
+    "webcoach-zh": "^0.1.3",
+    "webpagetest": "0.3.4",
+    "yargs": "4.8.1"
+  }
+}

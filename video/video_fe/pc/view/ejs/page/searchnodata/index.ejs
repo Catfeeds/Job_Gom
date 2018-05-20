@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+	<meta charset="utf-8">
+	<meta name="renderer" content="webkit">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>GomePlus视频频道</title>
+	<meta name="keywords" content="GomePlus视频频道" />
+	<meta name="description" content="" />
+	<meta name="format-detection" content="telephone=no">
+	<meta name="x5-page-mode" content="no-title"/>
+	<link rel="stylesheet" href="http://css.atguat.com.cn/??gmlib/reset/1.1.0/reset.css,gmpro/1.0.0/public/1.0.0/css/top.min.css,gmpro/1.0.0/public/1.2.0/css/foot-gomeplus.min.css?v=201704181727">
+	<link rel="stylesheet" type="text/css" href="<%=devenv%>dist/css/searchnodata.css">
+</head>
+<body>
+	<%- include('../../common/head.ejs')%>
+	<%- include('../../common/testUser.ejs')%>
+	<!-- main -->
+	<div class="wrap">
+		<div class="search-nodata">
+			<div>
+				<div class="error">
+					<p>抱歉，没有找到相关内容</p>
+				</div>
+			</div>
+			<div data-id="guesslike-wrap"></div>
+		</div>
+	</div>
+	<!-- main --> 
+	<%- include('../../common/footer.ejs')%>
+	<script src="<%=devenv%>dist/js/vendor.js"></script>
+	<script src="<%=devenv%>dist/js/searchnodata.js"></script>
+</body>
+</html>

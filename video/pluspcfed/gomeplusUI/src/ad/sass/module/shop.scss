@@ -1,0 +1,41 @@
+@charset "utf-8";
+
+// _configure.scss
+@import "../public/_configure.scss";
+
+// shop-wrap
+.shop-wrap{
+	margin-top:10px;
+	background:#fff;
+}
+// shop-cont
+.shop-cont{
+	padding:50px 0px 0px 116px;
+	.group-detail{
+		padding-bottom:30px;
+	}
+	.form-gray-width{
+		width:235px;
+	}
+	.form-gray-text{
+		margin-left:10px;
+	}
+	.shop-picture{
+		img{
+			border:1px solid $border-btn-normal;
+			margin:0px 10px 10px 0px;
+			width:111px;
+			height:153px;
+		}
+	}
+	.column-group01{
+		.group-detail{
+			padding-bottom:7px;
+		}
+	}
+	.column-group02{
+		.group-detail{
+			padding-bottom:11px;
+		}
+	}
+}

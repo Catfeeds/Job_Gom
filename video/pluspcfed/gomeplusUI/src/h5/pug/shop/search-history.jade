@@ -1,0 +1,45 @@
+doctype html
+html(lang="zh-CN",data-use-rem="750")
+    include ../../../m-widget/head/head.jade
+    link(type="text/css",rel="stylesheet",href="../../css/public/public-wap.css")
+    link(type="text/css",rel="stylesheet",href="../../css/module/search.css")
+
+    body.opg.search
+        include ../../../m-widget/head/rem.jade
+        
+        .search-layer
+            header.header
+                span
+                    a.head-back(href="##")
+                        em.iconn-close
+                .head-search.w600
+                    .sec-tab
+                        .tab-txt 商品
+                        .tab-nav
+                            p.active
+                                em.iconn-83
+                                | 商品
+                            p
+                                em.iconn-93
+                                | 店铺
+                    input.sec-ipt(type="search" placeholder="搜索店铺内商品")
+                    em.iconn-82
+                span
+                    a.head-edit(href="##") 搜索
+
+            .search-list
+                ul.sec-result
+                    -for(i=0; i<5; i++)
+                        li 条纹打底衫
+                // 搜索提示
+            .search-list
+                h2.sec-tit 搜索历史
+                    em.iconn-76
+                ul.sec-hist
+                    -for(i=0; i<10; i++)
+                        li 条底衫
+                // 搜索历史
+
+
+
+

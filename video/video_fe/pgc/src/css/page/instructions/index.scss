@@ -1,0 +1,38 @@
+/**
+ * [操作指南]
+ * @Author: Fu Xiaochun
+ * @Email:  fuzhengchun@gomeplus.com
+ */
+/* guide */
+@import "../../base/public";
+
+.guide-wrap{
+	position:relative;
+	background: $bg;
+
+	.guide-content{
+		padding:0 20px;
+		background:#FFF;
+	}
+	.guide-head{
+		padding:20px;
+		background:#FFF;
+		border-bottom:1px solid #f0f0f0;
+		h2{
+			height:46px;
+			line-height:46px;
+			font-size: 22px;
+			font-weight:normal;
+			text-align: center;
+		}
+	}
+	.guide-info{
+		padding: 20px 20px 50px 20px;
+		font-size:0;
+		text-align:center;
+		img{
+			max-width:936px;
+			width:100%;
+		}
+	}
+}

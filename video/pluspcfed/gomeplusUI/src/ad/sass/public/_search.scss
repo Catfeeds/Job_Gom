@@ -1,0 +1,37 @@
+@charset "utf-8";
+
+// Defined search module stylesheet
+//##------------------------------------------
+
+.set-fn{
+	@include clearfix();
+	.fn-plan{
+		float:left;
+		margin-right:20px;
+		.plan-title{
+			@include inline-block();
+			margin-right:1px;
+			height:40px;
+			line-height:40px;
+			font-size:14px;
+			color:$text-dark;
+		}
+		.plan-title-gray{
+			color:$text-light;
+			padding-left:5px;
+		}
+		.ele-input{
+			width:150px;
+		}
+		.ele-select{
+			width:130px;
+			.dialog{
+				width:100%;
+				top:38px;
+			}
+		}
+	}
+	.fn-search{
+		float:left;
+	}
+}

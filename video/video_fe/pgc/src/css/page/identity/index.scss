@@ -1,0 +1,258 @@
+/* identity */
+@import "../../base/public.scss";
+
+.id-wrap{
+    height: calc(100vh - 189px);
+    background: #fff;
+    overflow-x: hidden;
+    overflow-y: auto;
+    .id-w1200{
+        width: 1200px;
+        margin: 0 auto;
+    }
+}
+.id-step{
+    width: 1156px;
+    height: 70px;
+    padding-top: 40px;
+    margin: 0 0 0 20px;
+    font-size: 22px;
+    position: relative;
+    &:after{
+        content: "";
+        position: absolute;
+        left: 69px;
+        bottom: 13px;
+        height: 4px;
+        line-height: 0;
+        font-size: 0;
+        width: 1000px;
+        background: $border;
+        border-radius: 2px;
+        z-index: 1;
+    }
+    .step{
+        float: left;
+        width: 7em;
+        text-align: center;
+        position: relative;
+        p{
+            line-height: 1;
+            padding-bottom: 18px;
+        }
+        span{
+            display: inline-block;
+            width: 30px;
+            height: 30px;
+            line-height: 30px;
+            border-radius: 50%;
+            background: $border;
+            color: #fff;
+            position: relative;
+            z-index: 3;
+        }
+        &.active{
+            span{
+                background: $success;
+            }
+        }
+    }
+    .step1{
+        padding-right: 100px;
+        &.active:after{
+            content: "";
+            position: absolute;
+            left: 75px;
+            bottom: 13px;
+            height: 4px;
+            line-height: 0;
+            font-size: 0;
+            width: 180px;
+            background: $success;
+            border-radius: 2px;
+            z-index: 2;
+        }
+    }
+    .step2{
+        padding: 0 94px;
+        &.active:after{
+            content: "";
+            position: absolute;
+            left: 0;
+            bottom: 13px;
+            height: 4px;
+            line-height: 0;
+            font-size: 0;
+            width: 345px;
+            background: $success;
+            border-radius: 2px;
+            z-index: 2;
+        }
+    }
+    .step3{
+        padding: 0 94px;
+        &.active:after{
+            content: "";
+            position: absolute;
+            left: 0;
+            bottom: 13px;
+            height: 4px;
+            line-height: 0;
+            font-size: 0;
+            width: 330px;
+            background: $success;
+            border-radius: 2px;
+            z-index: 2;
+        }
+    }
+    .step4{
+        float: right;
+        margin-right: 20px;
+        &.active:after{
+            content: "";
+            position: absolute;
+            left: -103px;
+            bottom: 13px;
+            height: 4px;
+            line-height: 0;
+            font-size: 0;
+            width: 170px;
+            background: $success;
+            border-radius: 2px;
+            z-index: 2;
+        }
+    }
+}
+
+.id-tab{
+    padding: 4% 0 88px;
+    text-align: center;
+    a{
+        display: inline-block;
+        width: 133px;
+        text-align: center;
+        margin: 0 83px;
+        .img{
+            width: 131px;
+            height: 131px;
+            border-radius: 50%;
+            border: 1px solid #fff;
+            background: url(../../../imgs/public/icon-geren.png) no-repeat center #edf3fd;
+        }
+        .text{
+            font-size: 18px;
+            line-height: 1;
+            padding-top: 20px;
+        }
+        &:hover,&.active{
+            .img{
+                border-color: #67b3ff;
+            }
+            .text{
+                color: #3e9bf7;
+            }
+        }
+    }
+    .company .img{
+        background-image: url(../../../imgs/public/icon-qiye.png);
+    }
+}
+
+.btn-next{
+    width: 350px;
+    margin: 0 auto;
+}
+
+.id-wrap .form-group label{
+    width: 10em;
+}
+
+.id-card2,.id-card3,.id-card5{
+    padding: 4% 0 20px 278px;
+    .form-group .form-input .input-text{
+        width: 430px;
+        &.input-code{
+            width: 320px;
+        }
+    }
+    .form-group .btn{
+        right: auto;
+        left: 472px;
+    }
+    .btn-next2{
+        padding-left: 10em;
+        .btn{
+            width: 350px;
+        }
+    }
+}
+
+.id-card5{
+    padding-top: 45px;
+    .form-input .title{
+        width: 430px;
+        font-size: 18px;
+        text-align: center;
+        color: $gray;
+        padding: 15px 0;
+    }
+}
+
+.id-card4{
+    padding-top: 6%;
+    .upload-success{
+        width: 256px;
+        margin: 0 auto;
+        text-align: center;
+        line-height: 1;
+        .icon-suc{
+            font-size: 80px;
+            color: #54c50d;
+        }
+        .title{
+            font-size: 24px;
+            color: $base;
+            margin-top: 19px;
+        }
+        .tip{
+            font-size: 18px;
+            color: $gray;
+            margin-top: 15px;
+        }
+        .action{
+            margin-top: 40px;
+            color: $gray;
+            font-size: 14px;
+            a{
+                color: #3e9bf7;
+            }
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.footer{
+    padding: 0;
+}

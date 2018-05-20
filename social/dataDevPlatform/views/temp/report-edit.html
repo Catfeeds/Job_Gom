@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>报表编辑</title>
+
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css">
+</head>
+<style>
+    div {
+        border-width: 2px;
+        border-color: #6a84ff;
+    }
+    body {
+        padding-top:80px;
+    }
+</style>
+<body>
+<div class="container">
+    <div class="row">
+        <nav class="navbar navbar-default navbar-fixed-top">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <a style="padding: 9px;display:block;" href="#">
+                        <img alt="Brand" src="../src/assets/img/navbarLogo.png">
+                    </a>
+                </div>
+                <ul class="nav navbar-nav">
+                    <!-- add "active" to any li tag to control active state-->
+                    <li class="nav-item active"><a href="#" class="index" @click="makeActive('index')">项目</a></li>
+                    <li class="nav-item"><a href="#" class="reports" @click="makeActive('reports')">报表</a></li>
+                    <li class="nav-item"><a href="#" class="components" @click="makeActive('components')">组件</a></li>
+                    <li class="nav-item"><a href="#" class="data" @click="makeActive('data')">数据</a></li>
+                    <li class="nav-item"><a href="#" class="tools" @click="makeActive('tools')">工具</a></li>
+                    <li class="nav-item"><p class="navbar-text navbar-right">用户名： <a href="#" class="navbar-link">abc </a>
+                        <a href="javascript:">登出</a></p>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+
+    <div class="row">
+        <div class="col-lg-1">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-1"><h5>报表:</h5></div>
+                    <div class="col-lg-2">
+                        <select class="form-control" style="width:100%;">
+                            <option value="1">报表1</option>
+                            <option value="2">报表2</option>
+                            <option value="3">报表3</option>
+                            <option value="4">报表4</option>
+                        </select>
+                    </div>
+                    <div class="col-lg-1"><h5>布局:</h5></div>
+                    <div class="col-lg-2">
+                        <select class="form-control" style="width:100%;">
+                            <option value="1">布局1</option>
+                            <option value="2">布局2</option>
+                            <option value="3">布局3</option>
+                            <option value="4">布局4</option>
+                        </select>
+                    </div>
+                    <div class="col-lg-1"><button class="btn btn-primary">编辑简介</button></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <hr>
+
+    <div class="row">
+        <div class="col-lg-2">
+            <ul class="list-group">
+                <li class="list-group-item">∧</li>
+                <li class="list-group-item">组件1</li>
+                <li class="list-group-item">组件2</li>
+                <li class="list-group-item">组件3</li>
+                <li class="list-group-item">组件4</li>
+                <li class="list-group-item">组件5</li>
+                <li class="list-group-item">∨</li>
+            </ul>
+        </div>
+
+        <div class="col-lg-5">
+            <div class="container">
+                <div class="row" style="padding:5px;">
+                    <div class="col-sm-3" style="border-style: dashed;padding:5px;height:215px;"></div>
+                    <div class="col-sm-3" style="border-style: dashed;padding:5px;height:215px;"></div>
+                </div>
+                <div class="row" style="padding:5px;">
+                    <div class="col-sm-6" style="border-style: dashed;padding:5px;height:80px;"></div>
+                </div>
+                <div class="row" style="padding:5px;">
+                    <div class="col-sm-6" style="border-style: dashed;padding:5px;height:230px;"></div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="row">
+        <div class="col-lg-2"><br></div>
+        <div class="col-lg-10">
+            <input class="btn btn-primary" value="说明" style="width:62.5%;">
+        </div>
+    </div>
+    <hr>
+    <div class="row">
+        <div class="col-lg-2"></div>
+        <div class="col-sm-10">
+            <input class="btn btn-primary" value="预览">
+            <input class="btn btn-primary" value="保存">
+            <input class="btn btn-primary" value="放弃">
+        </div>
+    </div>
+</div>
+</body>
+</html>

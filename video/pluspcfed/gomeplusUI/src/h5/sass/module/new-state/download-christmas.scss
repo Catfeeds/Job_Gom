@@ -1,0 +1,127 @@
+@charset "UTF-8";
+.christmas-bg1{
+	height: rem(650);
+	background: url(../../images/state/christmas-bg1.jpg) no-repeat;
+	text-align: center;
+	.star-shadow, .star{
+		width: rem(40);
+		height: rem(40);
+		position: absolute;
+		top: rem(112);
+		left: rem(15);
+	}
+	.star{
+		background-position: -1.31rem -2.02rem;
+	}
+	@keyframes shining
+	{
+	50% {opacity: 0;}
+	100% {opacity: 1;}
+	}
+	.star-shadow{
+		animation: shining 2s infinite;
+		-moz-animation: shining 2s infinite;	/* Firefox */
+		-webkit-animation: shining 2s infinite;	/* Safari 和 Chrome */
+		-o-animation: shining 2s infinite;	/* Opera */
+		background-position: -1.91rem -2.02rem;
+	}
+	.logo{
+		display: inline-block;
+		width: rem(138);
+		height: rem(138);
+		border-radius: rem(20);
+		margin-top: rem(309);
+		background: url(../../images/common/logo-img.png) no-repeat;
+		background-size: rem(138) rem(138);
+	}
+	.name{
+		font-size: rem(34);
+		margin-top: rem(20);
+	}
+	.description{
+		font-size: rem(48);
+		margin-top: rem(45);
+	}
+}
+.christmas-bg2{
+	height: rem(420);
+	background: url(../../images/state/christmas-bg2.jpg) no-repeat;
+	a{
+		position: absolute;
+		left: 50%;
+		display: block;
+		width: rem(520);
+		height: rem(140);
+		background: url(../../images/state/download-btn.png) no-repeat;
+		background-size: rem(520) rem(300);
+	}
+	.ios-btn{
+		top: rem(652);
+		margin-left: - rem(274);
+		background-position: 0 0;
+	}
+	.and-btn{
+		top: rem(862);
+		margin-left: - rem(254);
+		background-position: 0 -1.6rem;
+	}
+}
+.christmas-bg4{
+	z-index: 9;
+	height: rem(284);
+	margin-top: -2.84rem;
+	background: url(../../images/state/christmas-bg4.png) no-repeat;
+}
+.christmas-bg{
+	width: 100%;
+	color: #fff;
+	background-size: 100% 100%;
+}
+.christmas-bg3{
+	padding-bottom: rem(284);
+	background: url(../../images/state/christmas-bg3.jpg) repeat-y;
+	background-size: 100% rem(420);
+	p{
+		font-size: rem(24);
+		line-height: rem(40);
+		padding: 0 rem(50);
+		word-break: break-all;
+		padding-top: rem(22);
+	}
+}
+.sprites-title{
+	width: 100%;
+	height: rem(72);
+}
+.sprites-title, .sprites-icon, .star-shadow, .star{
+	background: url(../../images/state/sprites.png) no-repeat;
+	background-size: rem(854) auto;
+}
+.christ-intro{
+	background-position: 0 0;
+}
+.christ-fl-intro{
+	margin-top: rem(75);
+	background-position: 0 -.94rem;
+}
+.sprites-icon{
+	display: inline-block;
+	width: rem(32);
+	height: rem(32);
+	vertical-align: - rem(4);
+}
+.icon-boots{
+	background-position: -7.7rem 0;
+}
+.icon-hat{
+	background-position: -8.22rem 0;
+}
+.icon-bell{
+	background-position: -7.7rem -.52rem;
+}
+.icon-candy{
+	background-position: -8.22rem -.52rem;
+}
+.icon-snowman{
+	background-position: -7.7rem -1.06rem;
+}

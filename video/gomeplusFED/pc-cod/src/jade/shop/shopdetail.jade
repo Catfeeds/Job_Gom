@@ -1,0 +1,164 @@
+doctype html
+html(lang="zh-CN")
+	include ../../../../../gomeplusUI/pc/src/jade/head.jade
+	link(type="text/css",rel="stylesheet",href="../../css/public/public.css")
+	link(type="text/css",rel="stylesheet",href="../../css/module/shop/shop-detail.css")
+	body.opg
+		include ../../../../../gomeplusUI/pc/src/jade/header.jade
+		include ../../../../../gomeplusUI/pc/src/jade/menu.jade
+		.wrap-box
+			.fixed-tool
+				a(href="##").tool-1
+					em.icon.icon-user &#xead7;
+					span.hover-txt 个人中心
+				a(href="##").tool-2
+					em.icon.icon-cart &#xeaa2;
+					p 购物车
+					span.cart-num 20
+				a(href="##").tool-3
+					em.icon.icon-coupon &#xead6;
+					span.hover-txt 我的优惠券
+				a(href="##").tool-4
+					em.icon.icon-order &#xead8;
+					span.hover-txt 我的订单
+				a(href="##").tool-5
+					em.icon.icon-save &#xeaa1;
+					span.hover-txt 我的收藏
+			.shop-title.clearfix
+				include ../../../../../gomeplusUI/pc/src/jade/crumbs.jade
+				include ../../../../../gomeplusUI/pc/src/jade/sort.jade
+			.shop-list
+				.list-name.clearfix
+					.img
+						img(src="../../images/link1.png")
+					h1
+						| 德世朗旗舰店
+						span.vip1
+						span.vip2
+						span.vip3
+					p.line2 放心厨具，还原最真实的厨房世界
+					div.clearfix
+						p.shop-score
+							| 商品描述：
+							span 4.8
+							| 卖家服务：
+							span 4.6
+							| 物流服务：
+							span 4
+						p.function-icon.clearfix
+							a(href="javascript:;").clearfix
+								em.icon.icon-like.active
+								span 5463
+							a(href="javascript:;").clearfix
+								em.icon.icon-save.active
+								span 5463
+							a(href="javascript:;").clearfix
+								em.icon.icon-share.active
+							
+			.detail-menu
+				.fl
+					a(href="javascript:;")
+						| 本店所有商品
+						em.icon.icon-up &#xea55;
+						em.icon.icon-down &#xea57;
+					.open-list
+						a(href="javascript:;") 未分类
+						a(href="javascript:;") 母婴
+						a(href="javascript:;") 女装
+						a(href="javascript:;") 男装
+						a(href="javascript:;") 箱包
+				a(href="javascript:;").active 店铺首页
+				a(href="javascript:;") 全部商品
+				a(href="javascript:;") 上新商品
+				a(href="javascript:;") 店铺特惠
+			.detail-coupons
+				dl.clearfix
+					dt
+						em.icon &#xe93d;
+						p 店铺优惠券
+					.coupon-list.clearfix
+						- for (var x = 0; x < 4; x++)
+							dd
+								.clearfix
+									.fl
+										| ￥
+										span 50
+									.fr
+										// p 优惠券
+										span 满100元可用
+								a(href="javascript:;").pc-btn.pc-btnw155.pc-btnh30 立即领取
+								p 2015.04.24-2015.05.05
+			p.no-merchants 该类目下无商品，去其他类目逛逛吧
+			h2.title 返利商品
+			.shop-list.shop-list-bg
+				ul.clearfix
+					- for (var x = 0; x < 10; x++)
+						li
+							.mg-negative
+								em.icon-fan 返
+								img(src="https://i6.meixincdn.com/v1/img/T1GRYTB7KT1R4cSCrK.png")
+								.btn-box
+									a(href="javascritp:;").pc-btn.pc-btnh40 立即购买
+									a(href="javascritp:;").pc-btn.pc-btnh40.pc-bj-fc8753 加入购物车
+								.text
+									| ￥
+									span 259.00
+									p 我新依旧心潮澎湃要你命300湃要你命300
+			h2.title 直降商品
+			.shop-list.shop-list-bg
+				ul.clearfix
+					- for (var x = 0; x < 5; x++)
+						li
+							.mg-negative
+								em.icon-fan.icon-jiang 降
+								img(src="https://i6.meixincdn.com/v1/img/T1GRYTB7KT1R4cSCrK.png")
+								.btn-box
+									a(href="javascritp:;").pc-btn.pc-btnh40 立即购买
+									a(href="javascritp:;").pc-btn.pc-btnh40.pc-bj-fc8753 加入购物车
+								.text
+									| ￥
+									span 259.00
+									p 我新依旧心潮澎湃要你命300湃要你命300
+			h2.title 全部商品
+			.shop-list.shop-list-bg
+				ul.clearfix
+					- for (var x = 0; x < 15; x++)
+						li
+							.mg-negative
+								img(src="https://i6.meixincdn.com/v1/img/T1GRYTB7KT1R4cSCrK.png")
+								.btn-box
+									a(href="javascritp:;").pc-btn.pc-btnh40 立即购买
+									a(href="javascritp:;").pc-btn.pc-btnh40.pc-bj-fc8753 加入购物车
+								.text
+									| ￥
+									span 259.00
+									p 我新依旧心潮澎湃要你命300湃要你命300
+			.no-new
+				dl.clearfix
+					dt
+						em.icon.icon-bag &#xea60;
+					dd
+						span 店铺最近没有更新
+						a(href="##").red-big 逛逛全部商品
+							em 》
+			.no-new
+				dl.clearfix
+					dt
+						em.icon.icon-bag &#xe908;
+					dd
+						span 店铺最近没有特惠
+						a(href="##").red-big 逛逛全部商品
+							em 》
+			.no-new
+				dl.no-business.clearfix
+					dt
+						em.icon.icon-bag &#xea5f;
+					dd
+						span 该店铺未在营业中
+						a(href="##").red-big 去逛逛
+							em 》
+			.page-more
+				a(href="javascript:;").pc-btn.pc-btnw
+					| 点击查看更多商品
+					em.icon &#xe98c;
+		include ../../../../../gomeplusUI/pc/src/jade/footer.jade

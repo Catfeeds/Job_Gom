@@ -1,0 +1,52 @@
+/* wrap */
+@import "../../base/public";
+
+.main{
+    overflow: hidden;
+    position: relative;
+    height: 100vh;
+}
+
+.menu{
+    z-index: 9;
+    position: absolute;
+    left: 0;
+    top: 90px;
+    width: 260px;
+    background: $white;
+    padding-bottom: 99999px;
+    margin-bottom: -99999px;
+    ul{
+        padding-top: 20px;
+        a{
+            display: block;
+            height: 60px;
+            line-height: 60px;
+            padding-left: 50px;
+            color: $link;
+            [class^="icon-"], [class*=" icon-"]{
+                color: #ccc;
+                margin-right: 10px;
+                font-size: 14px;
+                text-align:center;
+            }
+            &:hover{
+                background: #f9f9f9;
+                color: $link-hover;
+            }
+            &.active{
+                background: #f9f9f9;
+                color: $link-hover;
+                [class^="icon-"], [class*=" icon-"]{
+                    color: $link-hover;
+                }
+            }
+        }
+    }
+}
+.content{
+    margin: 20px 0 80px 280px;
+    background: $white;
+    height: calc(100vh - 189px);    //head 90px, margin 54px
+    overflow: auto;
+}

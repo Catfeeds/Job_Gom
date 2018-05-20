@@ -1,0 +1,223 @@
+doctype html
+html(lang="zh-CN")
+	include ../../widget/head/head.pug
+	link(type="text/css",rel="stylesheet",href="../../css/public/public.css")
+	link(type="text/css",rel="stylesheet",href="../../css/module/circle.css")
+	body.opg.bg-fff
+		include ../../widget/header/header.pug
+		include ../../widget/menu/menu.pug
+		.fixed-tool
+			a(href="##").tool-1
+				em.iconn-76
+				span.hover-txt 发布话题
+			a(href="##").line1
+				em.iconn-30
+				span.hover-txt 微信
+			a(href="##").line1
+				em.iconn-31
+				span.hover-txt 微博
+			a(href="##").line1
+				em.iconn-32
+				span.hover-txt QQ
+			a(href="##").tool-1
+				em.iconn-33
+				span.hover-txt QQ空间
+		.wrap-box
+			.circle-top
+				img(src="https://i6.meixincdn.com/v1/img/T1GRYTB7KT1R4cSCrK.png").img
+				.head-title
+					img(src="https://i6.meixincdn.com/v1/img/T1GRYTB7KT1R4cSCrK.png")
+					.title-name
+						h2
+							| 圈子名圈子名圈子名圈子名圈子名圈子名
+							span.color-r 娱乐
+							span.color-r 时尚
+							span.color-o 美食
+							span.color-o 生活
+							span.color-o 摄影
+							span.color-o 旅行
+							span.color-y 宠物
+							span.color-y DIY
+							span.color-y 玩具
+							span.color-y 文玩
+							span.color-g 健康
+							span.color-g 健身
+							span.color-g 奥运
+							span.color-g 数码/家电
+							span.color-r2 置顶
+							span.color-o2 精品
+					.title-text
+						a(href="javascript:;").pc-btn 加入圈子
+						span
+							| 成员：
+							em 200
+						span
+							| 话题：
+							em 200
+			.circle-list.clearfix
+				.list-title
+					a(href="javascript:;").active 全部话题
+					a(href="javascript:;") 精选话题
+					a(href="javascript:;").pc-btn
+						// icon替换 icon
+						em.iconn-76
+						| 发布话题
+				.list-left
+					ul.clearfix
+						//全部
+						li
+							.title
+								span.bg-r 置顶
+								span.bg-y 精品
+								span.bg-y2 专访
+								a(href="#") #纠结#伦敦时装周又出幺蛾子
+							p.desc 没想到中国还有这样一座城！整座城就是一个大型的八卦阵！相传这座八卦城是由全真教七子之一的丘处机设计的，8条主干道分别对应“乾坎艮震巽离兑的”64条街路路相通，处处充满玄机。
+							.img-list
+								dl.clearfix
+									- for(var i = 0; i < 6; i++)
+										dd
+											a(href="javascript:;")
+												img(src="https://i6.meixincdn.com/v1/img/T1GRYTB7KT1R4cSCrK.png")
+												em.icon-video
+								a(href="javascript:;").more 展开全部
+							.time
+								// icon替换 icon-time
+								em.iconn-75
+								| 3分钟前更新
+							.name
+								a(href="#")
+									img(src="https://i6.meixincdn.com/v1/img/T1GRYTB7KT1R4cSCrK.png")
+									| 英俊的叔叔
+								span
+									// icon替换 icon
+									em.iconn-11
+									| 238
+								span
+									// icon替换 icon
+									em.iconn-10
+									| 238
+						//仅标题
+						li
+							.title
+								span.bg-r 置顶
+								span.bg-y 精品
+								a(href="#") #纠结#伦敦时装周又出幺蛾子
+							.name
+								a(href="#")
+									img(src="https://i6.meixincdn.com/v1/img/T1GRYTB7KT1R4cSCrK.png")
+									| 英俊的叔叔
+								span
+									// icon替换 icon
+									em.iconn-11
+									| 238
+								span
+									// icon替换 icon
+									em.iconn-10
+									| 238
+						//仅描述
+						li
+							.title
+								span.bg-r 置顶
+								span.bg-y 精品
+								a(href="#") #纠结#伦敦时装周又出幺蛾子
+							p.desc 没想到中国还有这样一座城！整座城就是一个大型的八卦阵！相传这座八卦城是由全真教七子之一的丘处机设计的，8条主干道分别对应“乾坎艮震巽离兑的”64条街路路相通，处处充满玄机。
+							.time
+								// icon替换 icon-time
+								em.iconn-75
+								| 3分钟前更新
+							.name
+								a(href="#")
+									img(src="https://i6.meixincdn.com/v1/img/T1GRYTB7KT1R4cSCrK.png")
+									| 英俊的叔叔
+								span
+									// icon替换 icon
+									em.iconn-11
+									| 238
+								span
+									// icon替换 icon
+									em.iconn-10
+									| 238
+						//描述+图片列表
+						li
+							.title
+								span.bg-r 置顶
+								span.bg-y 精品
+								a(href="#") #纠结#伦敦时装周又出幺蛾子
+							p.desc 没想到中国还有这样一座城！整座城就是一个大型的八卦阵！相传这座八卦城是由全真教七子之一的丘处机设计的，8条主干道分别对应“乾坎艮震巽离兑的”64条街路路相通，处处充满玄机。
+							.img-list
+								dl.clearfix
+									dd
+										.list-box
+											a(href="#")
+												img(src="https://i6.meixincdn.com/v1/img/T1GRYTB7KT1R4cSCrK.png")
+												p
+													span.fl ￥2199.00
+													span.fr 返利
+									- for(var i = 0; i < 6; i++)
+										dd
+											a(href="javascript:;")
+												img(src="https://i6.meixincdn.com/v1/img/T1GRYTB7KT1R4cSCrK.png")
+												em.icon-video
+								a(href="javascript:;").more 展开全部
+							.time
+								// icon替换 icon-time
+								em.iconn-75
+								| 3分钟前更新
+							.name
+								a(href="#")
+									img(src="https://i6.meixincdn.com/v1/img/T1GRYTB7KT1R4cSCrK.png")
+									| 英俊的叔叔
+								span
+									// icon替换 icon
+									em.iconn-11
+									| 238
+								span
+									// icon替换 icon
+									em.iconn-10
+									| 238
+					.page
+						a(href="javascript:;").disabled 上一页
+						a(href="javascript:;") 1
+						a(href="javascript:;") 2
+						a(href="javascript:;") 3
+						a(href="javascript:;").active 4
+						a(href="javascript:;") 5
+						span ···
+						a(href="javascript:;") 100
+						a(href="javascript:;") 下一页
+						a(href="javascript:;") 最后一页
+					.no-message
+						img(src="../../images/circle/no-message.jpg")
+						p.strong 要晒，不要Shy
+						p 发布第一个话题，你的地盘听你的
+						a(href="javascript:;").pc-btn 发布话题
+				.list-right
+					.right-title
+						.title-img
+							img(src="https://i6.meixincdn.com/v1/img/T1GRYTB7KT1R4cSCrK.png")
+							em.icon-vip
+						h3
+							.text-hide 圈主名字
+							span [圈主]
+						p
+							span 成员：200
+							span 话题：2,000
+						a(href="#").pc-btn 查看ta的主页
+					.circle-hot
+						.hot-title 热门话题
+						ul.clearfix
+							- for (var x = 0; x < 5; x++)
+								li
+									.img
+										a(href="#")
+											img(src="https://i6.meixincdn.com/v1/img/T1GRYTB7KT1R4cSCrK.png")
+									.text
+										a(href="#") 有个城市下了盘大棋有个城市下了盘大棋！
+										span
+											em.icon &#xeac9;
+											| 238
+										span
+											em.icon &#xeaca;
+											| 238
+		include ../../widget/footer/footer.pug
+

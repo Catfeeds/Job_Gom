@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>ZNM | TEST</title>
+    <meta charset="UTF-8">
+    <style type="text/css">
+        * {
+            padding: 0;
+            margin: 0;
+
+        }
+        html,
+        body {
+            height: 100%;
+        }
+
+        body {
+            background-color: lightgreen;
+        }
+
+        #ie-upd-top-bar {
+            display: none;
+            position: absolute;
+            width: 100%;
+            height: 60px;
+            top: 0px;
+            background-color: red;
+        }
+
+        #ie-upd-popup {
+            display: none;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.3);
+        }
+
+        #ie-upd-popup .close {
+            position: absolute;
+            width: 20px;
+            height: 20px;
+            top: 10px;
+            right: 10px;
+            background-color: blue;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div id="ie-upd-popup">
+        <button class="close"></button>
+    </div>
+    <div id="ie-upd-top-bar">
+    </div>
+
+    <script src="/node_modules/jquery/dist/jquery.min.js"></script>
+    <script>
+	var s = `NO.
+	OK.
+	T恤.
+	乒乓球
+	便便.
+	凋谢.
+	勾引.
+	包包.
+	口红.
+	咖啡.
+	哼哼.
+	啤酒.
+	喝水.
+	嘘.
+	嘿哈.
+	太阳.
+	太阳镜
+	奸笑.
+	安慰.
+	帽子.
+	心碎.
+	思考.
+	恭喜.
+	打脸.
+	抱拳.
+	拥抱.
+	捂脸.
+	握手.
+	月亮.
+	机智.
+	炸弹.
+	爱心.
+	爱慕.
+	猪头.
+	玫瑰.
+	痛哭.
+	皱眉.
+	眼镜.
+	礼物.
+	篮球.
+	红包.
+	耶.
+	胜利.
+	菜刀.
+	蛋糕.
+	蜡烛.
+	裙子.
+	裤子.
+	西瓜.
+	财迷.
+	赞.
+	足球.
+	飞吻.
+	骷髅.
+	高跟鞋`;
+	var a = [];
+	s = s.split(/[\.\n\s]+/);
+	console.log(s);
+	</script>
+
+    <!--[if lte IE 9]>
+        <script src="/node_modules/jquery/dist/jquery.min.js"></script>
+        <script src="./ie9tips.js"></script>
+    <![endif]-->
+
+</body>
+</html>

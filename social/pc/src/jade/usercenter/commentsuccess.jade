@@ -1,0 +1,62 @@
+doctype html
+html(lang="zh-CN")
+	include ../../../../../gomeplusUI/pc/src/jade/head.jade
+	link(type="text/css",rel="stylesheet",href="../../css/public/public.css")
+	link(type="text/css",rel="stylesheet",href="../../css/module/shop/commentsuccess.css")
+	body.opg
+		include ../../../../../gomeplusUI/pc/src/jade/header.jade
+		include ../../../../../gomeplusUI/pc/src/jade/menu.jade
+		.crumbs-box
+			a(href="javascript:;") 我的订单
+			em >
+			a(href="javascript:;") 待评论
+			em >
+			a(href="javascript:;") 发布评论
+			em >
+			span.crnmb-activ 评论成功
+		.wrap-box.comment-suc
+			.title
+				em.icon.icon-suc &#xea52;
+				h2 发表评论成功！
+			p 以下商品未评，去看看吧~
+			a(href="javascript:;") 返回待评论列表 >
+		.wrap-box
+			h3.goods-title
+				span 待评论
+			.shop-list
+				a(href="javascript:;").icon.icon-left &#xe970;
+				a(href="javascript:;").icon.icon-right &#xe98c;
+				ul.clearfix
+					- for (var x = 0; x < 5; x++)
+						li
+							a(href="#")
+								img(src="https://i6.meixincdn.com/v1/img/T1GRYTB7KT1R4cSCrK.png")
+								.comment-btn 立即评论
+			h3.goods-title
+				span 为你推荐
+			.shop-list
+				ul.clearfix
+					- for (var x = 0; x < 5; x++)
+						li
+							a(href="#")
+								img(src="https://i6.meixincdn.com/v1/img/T1GRYTB7KT1R4cSCrK.png")
+								.text
+									| ￥
+									span 259.00
+									p 我新依旧心潮澎湃要你命300湃要你命300
+			.more-comments
+				a(href="##").clearfix
+					span
+						img(src="../../images/circle/small-logo.png")
+						| 点击加载更多
+						em.icon.icon-right &#xe98c;
+			.more-comments
+				a(href="##").disabled.clearfix
+					span
+						img(src="../../images/public/loading.gif")
+						| 正在加载...
+			.more-comments
+				a(href="##").disabled.clearfix
+					span
+						| 没有可加载内容
+		include ../../../../../gomeplusUI/pc/src/jade/footer.jade

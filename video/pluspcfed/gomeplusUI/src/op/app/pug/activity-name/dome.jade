@@ -1,0 +1,90 @@
+doctype html
+html(lang="zh-CN" data-use-rem="750")
+    include ../../../../m-widget/head/head.jade
+    include ../../../../m-widget/head/rem.jade
+    link(type="text/css",rel="stylesheet",href="../../css/activity-name/dome.css")
+    body
+        .box
+            a.aa(href="#") 加前缀
+            .text @include prefix(border-radius,10px,moz ms o);
+        .box
+            a.aa(href="#") 加前缀
+            .text666 @include prefix(border-radius,10px,moz ms o);
+        .box
+            a.aa(href="#") 截字
+            .text1
+                em @include ellipsis(mobile,3);
+                | @include ellipsis(mobile,3);@include ellipsis(mobile,3);@include ellipsis(mobile,3);@include ellipsis(mobile,3);@include ellipsis(mobile,3);
+        .box
+            a.aa(href="#") rem
+            .text2 width:rem(100);
+                br
+                | margin:rem(100 200 300 400);
+        .box
+            a.aa(href="#") line
+            .text3
+                em @include line(all,red,20)
+                br
+                | @include line(top,red);
+                br
+                | @include line(bottom,red);
+                br
+                | @include line(left,red);
+                br
+                | @include line(right,red);
+                br
+                | // $border-color 选填 默认值为#c7c7c7
+                br
+                | // $radius 选填 默认值为0
+        .box
+            a.aa.w4(href="#") box-sizing: border-box
+            .text4
+                em @include box-sizing(border,moz o);
+                br
+                | box-sizing($mode,$prefixes:webkit);
+                br
+                | // $mode: border || content || padding 必填
+                br
+                | //$prefixs 选填，默认参数值为webkit，忽略此参数默认自动添加-weibit前缀
+
+        .box
+            a.aa(href="#") flex
+            .text5 @include flex(center,center);
+                br
+                | flex($horizontal:left,$vertical:top)
+                br
+                | 1,$horizontal：left || center || right || space // 选填 默认为left(flex-start)
+                br
+                | 2,$vertical ：top || center || bottom // 选填 默认为top(flex-start)
+
+        .box
+            a.aa(href="#") flex-col
+            .text6
+                .a @include flex-col(4);
+                .b @include flex-col(2);
+        .box
+            a.aa(href="#") scale
+            .text7
+                em scale($direction:xy,$xy:(1,1),$prefixes:webkit,$origin:defaultValue)
+                br
+                | //默认值为xy即X、Y轴同时缩放等同于scale()，x则只缩放X轴等同于scaleX()，y则只缩放Y轴等同于scaleY()
+                br
+                | //$xy 1≤参数≤2，参数必须使用大括号'( )'包裹，如果为2个参数则需要用逗号‘，’分割
+                br
+                | // $prefixes 如果忽略此参数，则默认参数为webkit
+                br
+                | //$origin 缩放点位置，默认值为defaultValue即 center center，默认值不输出transform-origin，其它情况根据实际需要进行设置;
+
+        .box1
+            a(href="#",data-a="")
+                span 111111
+                这是换行
+                这是换行
+            #asd 这是换行
+            a(href="#",data-a="") 这是标题
+            .ads
+
+            ul
+                li 不循环列表
+                - for(var i=0; i<10; i++)
+                    li 列表

@@ -1,0 +1,43 @@
+{
+  "name": "activity",
+  "version": "1.0.0",
+  "description": "pc activity project",
+  "main": "index.js",
+  "scripts": {
+    "dev": "cross-env NODE_ENV=dev gulp dev",
+    "pre": "cross-env NODE_ENV=pre gulp dev",
+    "prd": "cross-env NODE_ENV=prd gulp dev",
+    "dist": "cross-env NODE_ENV=dist gulp dist",
+    "build": "cross-env NODE_ENV=build gulp build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "http://code.ds.gome.com.cn/gitlab/pluspcfed/activity.git"
+  },
+  "author": "liugang-ds",
+  "license": "ISC",
+  "devDependencies": {
+    "axios": "^0.17.1",
+    "babel-core": "^6.26.0",
+    "babel-preset-env": "^1.6.1",
+    "cross-env": "^5.1.1",
+    "gulp": "^3.9.1",
+    "gulp-babel": "^7.0.0",
+    "gulp-imagemin": "^4.0.0",
+    "gulp-pug": "^3.3.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-replace": "^0.6.1",
+    "gulp-sass": "^3.1.0",
+    "gulp-server-livereload": "^1.9.2",
+    "gulp-shell": "^0.6.3",
+    "gulp-uglify": "^3.0.0",
+    "gulp-watch": "^4.3.11",
+    "html-webpack-plugin": "^2.30.1",
+    "http-proxy": "^1.16.2",
+    "node-sass": "^4.7.2",
+    "qs": "^6.5.1"
+  },
+  "dependencies": {
+    "exif-js": "^2.3.0"
+  }
+}

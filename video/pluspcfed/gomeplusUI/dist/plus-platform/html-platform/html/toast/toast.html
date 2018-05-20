@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="zh-CN" data-use-rem="750" style="font-size:50px;">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="description" content="">
+    <meta name="keyword" content="">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="format-detection" content="email=no">
+    <title>gomeplusUI-mobile</title>
+    <link rel="stylesheet" type="text/css" href="../../css/public.css">
+    <link rel="stylesheet" type="text/css" href="../../css/platform.css">
+    <script src="../../js/jquery1.42.min.js"></script>
+    <script src="../../js/htmlToJade.js"></script>
+    <script src="../../js/utils/appVersion.js"></script>
+  </head>
+  <body class="opg">
+    <script type="text/javascript">
+      (function appVersion() {
+      	window.platform = {};
+      	var ua = window.navigator.userAgent.toLowerCase();
+      	var isIphone = ua.match(/iphone os/i) == 'iphone os';
+      	var isAndroid = ua.match(/android/i) == 'android';
+      	// ipad 也为mobile
+      	var isMobile = ua.match(/mobile/i) == 'mobile';
+      	var isIpad = ua.match(/ipad/) == 'ipad';
+      
+      	platform.isMobile = function () {
+      		return isMobile && !isIpad;
+      	}
+      	if(platform.isMobile()) {
+      		(function(win){var doc=win.document,html=doc.documentElement,option=html.getAttribute("data-use-rem");if(option===null){return}var baseWidth=parseInt(option).toString()==="NaN"?640:parseInt(option);var grids=baseWidth/100;var clientWidth=html.clientWidth||320;html.style.fontSize=clientWidth/grids+"px";var testDom=document.createElement("div");var testDomWidth=0;var adjustRatio=0;testDom.style.cssText="height:0;width:1rem;";doc.body.appendChild(testDom);var calcTestDom=function(){testDomWidth=testDom.offsetWidth;if(testDomWidth!==Math.round(clientWidth/grids)){adjustRatio=clientWidth/grids/testDomWidth;var reCalcRem=clientWidth*adjustRatio/grids;html.style.fontSize=reCalcRem+"px"}else{doc.body.removeChild(testDom)}};setTimeout(calcTestDom,20);var reCalc=function(){var newCW=html.clientWidth;if(newCW===clientWidth){return}clientWidth=newCW;html.style.fontSize=newCW*(adjustRatio?adjustRatio:1)/grids+"px"};if(!doc.addEventListener){return}var resizeEvt="orientationchange" in win?"orientationchange":"resize";win.addEventListener(resizeEvt,reCalc,false);doc.addEventListener("DOMContentLoaded",reCalc,false)})(window);
+      	}
+      })()
+    </script>
+    <div class="flatform-nav">
+      <div class="flatform-logo"><a href="http://opg-pre.intra.gomeplus.com/gomeplusUI/m-platform/pug/index/index.html">OPG/GomeplusUI</a></div>
+      <div class="flatform-back hide"><a href="http://opg-pre.intra.gomeplus.com/gomeplusUI/pc-platform/pug/index/index.html">PC</a></div><a href="http://opg-pre.intra.gomeplus.com" class="icon-home"><i></i></a><span class="nav-icon"><a href="#"></a></span><span class="nar-arrow-left"></span><span class="nar-arrow-right"></span>
+      <div class="nav-list">
+        <ul style="left:0px">
+          <li><a href="../button/button.html" title="" class="platform-button">button</a></li>
+          <li><a href="../dialog/dialog.html" title="" class="platform-dialog">dialog</a></li>
+          <li><a href="../downapp/downapp.html" title="" class="platform-downapp">downapp</a></li>
+          <li><a href="../header/header.html" title="" class="platform-header-new">header</a></li>
+          <li><a href="../icon/icon.html" title="" class="platform-icon">icon</a></li>
+          <li><a href="../menu/menu.html" title="" class="platform-menu">menu</a></li>
+          <li><a href="../prompt/prompt.html" title="" class="platform-prompt">prompt</a></li>
+          <li><a href="../share/share.html" title="" class="platform-share">share</a></li>
+          <li><a href="../toast/toast.html" title="" class="platform-toast">toast</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="platform-main">
+      <div class="platform-scroll">
+        <div class="platform-tipsinfo">
+          <h5>说明</h5>
+          <p>m-toast 公用类名</p>
+          <p>m-toast m-toast-logo 加载提示</p>
+          <p>m-toast m-toast-auto 提示文字多余三行</p>
+          <p>具体查看结构，谢谢~</p>
+          <p class="maty">有问题沟通-maty</p>
+        </div>
+        <!--end-->
+        <div class="platform-content">
+          <h3 class="platform-header">加载提示</h3>
+          <div id="toast-1" class="platform-example">
+            <div class="m-toast-logo">
+              <div class="t-logo"></div>
+              <p class="t-txt">正在加载...</p>
+            </div>
+            <!--/toast-->
+          </div>
+          <pre class="platform-pre hide"><code id="toast-1_code" class="platform-code"></code><span class="platform-jade">pug</span><span class="platform-jade platform-html actived">html</span></pre>
+        </div>
+        <div class="platform-content">
+          <h3 class="platform-header">单行提示</h3>
+          <div id="toast-2" class="platform-example">
+            <div class="m-toast">
+              <p class="t-txt">请输入库存</p>
+            </div>
+            <!--/toast-->
+          </div>
+          <pre class="platform-pre hide"><code id="toast-2_code" class="platform-code"></code><span class="platform-jade">pug</span><span class="platform-jade platform-html actived">html</span></pre>
+        </div>
+        <div class="platform-content">
+          <h3 class="platform-header">两行提示</h3>
+          <div id="toast-3" class="platform-example">
+            <div class="m-toast">
+              <p class="t-txt">请输入库存请输入库存请输入库存</p>
+            </div>
+            <!--/toast-->
+          </div>
+          <pre class="platform-pre hide"><code id="toast-3_code" class="platform-code"></code><span class="platform-jade">pug</span><span class="platform-jade platform-html actived">html</span></pre>
+        </div>
+        <div class="platform-content">
+          <h3 class="platform-header">多行提示</h3>
+          <div id="toast-4" class="platform-example">
+            <div class="m-toast">
+              <p class="t-txt">我有三行甚至多行文字，请为我添加上类 m-toast-auto</p>
+            </div>
+            <!--/toast-->
+          </div>
+          <pre class="platform-pre hide"><code id="toast-4_code" class="platform-code"></code><span class="platform-jade">pug</span><span class="platform-jade platform-html actived">html</span></pre>
+        </div>
+        <script type="text/javascript">
+          HtmlFormat.init(['toast-1','toast-2','toast-3','toast-4'],false,'_code','html','span.platform-jade');
+          $(".platform-toast").parent('li').addClass("actived");
+        </script>
+      </div>
+    </div>
+    <script src="../../js/m/menu.js"></script>
+  </body>
+</html>

@@ -1,0 +1,125 @@
+@import '../../../../m-widget/reset/reset.scss';
+@import '../../../../sasscore/_configure.scss';
+body{
+  line-height: .6rem;
+}
+.box{
+  width:90%;
+  height: auto;
+  margin: 1rem auto;
+}
+em{
+  color: red;
+  font-style: normal;
+}
+.aa{
+  width: 3rem;
+  height: .6rem;
+  line-height: .6rem;
+  text-align: center;
+  border: 1px solid red;
+  display: block;
+  margin:0 auto;
+}
+.w4{
+  width: 4rem;
+}
+
+.text{
+  border: 1px solid red;
+  padding: .2rem;
+  @include prefix(border-radius,10px,moz ms o);
+}
+
+.text666{
+  border: 1px solid green;
+  @include prefix(border-radius,rem(20),moz ms o)
+}
+
+.text1{
+  height: auto;
+  padding:0 .2rem;
+  border: 1px solid red;
+  @include ellipsis(mobile,3);
+  em{
+    color:red;
+    font-style: normal;
+  }
+}
+.text2{
+  height: auto;
+  padding:rem(20);
+  border: 1px solid red;
+  @include ellipsis(mobile,3);
+  em{
+    color:red;
+    font-style: normal;
+  }
+}
+
+.text3{
+  height: auto;
+  padding:rem(20);
+  @include line(all,red,20);
+}
+
+.text4{
+  height: auto;
+  padding:rem(20);
+  border: 1px solid red;
+  @include box-sizing(border,moz o);
+}
+
+.text5{
+  em{
+    display: block;
+  }
+  height: auto;
+  padding:rem(20);
+  border: 1px solid red;
+  @include flex(center,center);
+}
+
+.text6{
+  height: auto;
+  padding:rem(20);
+  border: 1px solid red;
+
+  display: flex;
+  .a{
+    border: 2px solid red;
+    @include flex-col(4);
+    height: 2rem;
+  }
+  .b{
+    border: 2px solid green;
+    @include flex-col(2);
+  }
+}
+
+
+.text7{
+  height: auto;
+  padding:rem(20);
+  border: 1px solid red;
+  @include flex-col(2);
+  margin-bottom: 6rem;
+}
+
+
+.box1{
+  width: auto;
+  overflow: hidden;
+    height: 100px;
+}
+
+
+
+
+
+
+
+
+
+
+

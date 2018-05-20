@@ -1,0 +1,14 @@
+/**app.wxss**/
+image{
+  width: 100%;
+}
+.nodata{
+    display:flex;
+    text-align: center;
+    padding-top: 100rpx;
+    justify-content: center;
+    align-items: center;
+}
+.nodata icon,.nodata text{
+    margin:0 10rpx;
+}

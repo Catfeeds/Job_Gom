@@ -1,0 +1,46 @@
+doctype html
+html(lang="zh-CN",data-use-rem="750")
+    include ../../../m-widget/head/head.jade
+    link(type="text/css",rel="stylesheet",href="../../css/public/public-wap.css")
+    link(type="text/css",rel="stylesheet",href="../../css/module/search.css")
+    
+    body.opg.search
+        include ../../../m-widget/head/rem.jade
+        
+        header.header
+            span
+                a.head-back(href="##")
+                    em.iconn-43
+            .head-search.w600
+                .sec-tab
+                    .tab-txt 商品
+                    .tab-nav
+                        p.active
+                            em.iconn-83
+                            | 商品
+                        p
+                            em.iconn-93
+                            | 店铺
+                input.sec-ipt(type="search" placeholder="搜索店铺内商品")
+            span
+                a.head-icn(href="##")
+                    em.iconn-0
+        .menu
+            ul.menu-list
+                li.item.active
+                    i.num
+                    p.txt 综合
+                li.item
+                    p.txt 销量
+                li.item
+                    p.txt 价格
+                        span
+                li.item
+                    p.txt 新品
+        .problem
+            img(src="../../images/shop/404.png")
+            p
+                | 好像出现了一点小问题
+                br
+                | 刷新一下试试
+            a(href="#") 刷新

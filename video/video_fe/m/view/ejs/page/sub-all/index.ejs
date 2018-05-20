@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="zh-CN" data-use-rem="750">
+<head>
+	<meta charset="utf-8">
+	<title>GomePlus视频频道</title>
+	<meta name="keywords" content="GomePlus视频频道" />
+	<meta name="description" content="" />
+	<meta name="format-detection" content="telephone=no">
+	<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no,minimal-ui" />
+	<meta name="x5-page-mode" content="no-title"/>
+	<link rel="stylesheet" type="text/css" href="/m/vm/dist/css/sub-all.css">
+</head>
+
+<body>
+<script type="text/javascript">
+    var $CONFIG = {
+        userId: 100017938673,//用户id，为0标识未登录
+        nickName:"美美_461486973383389",
+        avatar:"//gfs11.atguat.net.cn/T1o4KTBTWQ1RCvBVdK.png",
+        domain:"http://m.v.dev.gomeplus.com/",
+        mdomain:"http://m.v.dev.gomeplus.com/",
+        plusDomain:"http://m.uatplus.com/",
+        loginUrl:"http://m.v.dev.gomeplus.com/login/do?return_url=aHR0cDovL20udi5kZXYuZ29tZXBsdXMuY29tL3N1YnNjcmliZS9wdWJsaXNoX2xpc3Q=",
+        jsdomain:"http://js.dev.meixincdn.com/",
+    };
+    </script>
+
+	<%- include('../../common/rem.ejs')%>
+	
+	<header class="top-title">
+        <div class="left">
+            <a href="#"><em class="icon-22"></em></a>
+        </div>
+    	<h2>全部订阅</h2>
+        <div class="right"><a class="compile" href="javascript:;"></a></div>
+    </header>
+    <!-- 订阅－没有登录，没订阅-->
+    <div class="subAll" id="subList">
+       	<%- include('../../common/sub-list.ejs')%>
+    </div>
+	<%- include('../../common/footer.ejs')%>
+	<script src="/m/vm/dist/js/vendor.js"></script>
+	<script src="/m/vm/dist/js/sub-all.js"></script>
+</body>
+</html>

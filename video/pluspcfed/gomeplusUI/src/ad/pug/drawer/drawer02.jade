@@ -1,0 +1,649 @@
+//- extends layout.jade
+extends ../public/layout.jade
+
+block title
+	title 抽屉-新建投放单元
+//- block link-theme
+//- 	link(rel='stylesheet' type="text/css" href="../../css/module/account.css")
+//- 	link(rel='stylesheet' type="text/css" href="../../css/module/drawer.css")
+
+//- drawer
+block content
+	include ../public/menu.jade
+	div.content-main
+		div.amp-account
+			include ../public/crumbs.jade
+			div.account-set
+				div.set-option
+					a(href="#").btn.btn-normal 新建投放计划
+					a(href="#").btn.btn-normal 启用
+					a(href="#").btn.btn-normal 暂停
+					a(href="#").btn.btn-normal 删除
+				div.set-fn
+					div.fn-plan
+						span.plan-title 计划名称：
+						div.ele-input
+							input(type="text",value="")
+					div.fn-plan
+						span.plan-title 选择时间：
+						div.ele-select.ele-selected
+							span.select-text 2016/12/13
+						span.plan-title.plan-title-gray -
+						div.ele-select
+							span.select-text 年/月/日
+					div.fn-plan.fn-plan-new
+						span.plan-title 状态：
+						div.ele-select
+							span.select-text 全部
+							//- dialog
+							div.dialog.dialog-white
+								ul
+									li
+										a(href="#",title="") 全部
+									li.actived
+										a(href="#",title="") 暂停
+									li
+										a(href="#",title="") 有效
+									li
+										a(href="#",title="") 过期
+									li
+										a(href="#",title="") 未开启
+					div.fn-search
+						a(href="#").btn.btn-primary 查询
+			div.amp-data
+				div.data-table
+					div.table-list
+						div.list-header.actived
+							span.span-col-1
+								em.icon.icon-select
+								i.data-id 投放计划ID
+							span.span-col-2 投放计划名称
+							span.span-col-3 有效期
+							span.span-col-4 广告日预算
+							span.span-col-5 返利日预算
+							span.span-col-6 状态
+							span.span-col-7 展现数
+							span.span-col-8 点击数
+							span.span-col-9 点击率(%)
+							span.span-col-10 广告总花费
+							span.span-col-11 返利总花费
+							span.span-col-12 操作
+						div.list-body
+							div.body-row.actived
+									span.span-col-1
+										em.icon.icon-select
+										i.ellipsis 02345678
+									span.span-col-2 
+										i.ellipsis
+											a.ellipsis(href="#") 十一活动广告推广系列信息
+									span.span-col-3 
+										i.ellipsis.time-more 2016/09/22-2016/10/20
+										//- dialog
+										div.dialog.dialog-white.dialog-time.arrow
+											ul
+												li
+													a(href="#",title="") 2016/09/22-2016/09/23
+												li.actived
+													a(href="#",title="") 2016/09/22-2016/09/23
+												li
+													a(href="#",title="") 2016/09/22-2016/09/23
+									span.span-col-4 
+										i.ellipsis 10000
+									span.span-col-5 
+										i.ellipsis 10000
+									span.span-col-6 
+										i.ellipsis 暂停
+									span.span-col-7 
+										i.ellipsis 10000
+									span.span-col-8 
+										i.ellipsis 10000
+									span.span-col-9 
+										i.ellipsis 0,25
+									span.span-col-10 
+										i.ellipsis 10000
+									span.span-col-11 
+										i.ellipsis 10000
+									span.span-col-12
+										b.operat-link
+											a(href="#",title="") 修改
+											a(href="#",title="") 复制计划
+											a(href="#",title="") 新建投放单元
+							- for (var i =0;i<8;i++)
+								div.body-row
+									span.span-col-1
+										em.icon.icon-select
+										i.data-id 12345678
+									span.span-col-2 
+										a(href="#") 十一活动广告
+									span.span-col-3 
+										i.data-time 2016/09/22-2016/10/20
+										em.icon.icon-plus
+									span.span-col-4 10000
+									span.span-col-5 10000
+									span.span-col-6 暂停
+									span.span-col-7 10000
+									span.span-col-8 10000
+									span.span-col-9 0,25
+									span.span-col-10 10000
+									span.span-col-11 10000
+									span.span-col-12
+										b.operat-link
+											a(href="#",title="") 修改
+											a(href="#",title="") 复制计划
+											a(href="#",title="") 新建投放单元
+			include ../public/page.jade
+	// master
+	div.master(style="z-index:1200")
+	// 新建投放单元
+	div.amp-drawer
+		div.drawer-part
+			h2.part-header
+				span.header-text 新建投放单元
+				span.header-fn
+					em.icon.icon-close
+			div.part-guide.part-guide02
+				span.guide-step.guide-step01
+					b.step-text 新建投放计划
+					b.step-number 1
+					b.step-icon
+						em.icon.icon-right
+				span.guide-step.guide-step02
+					b.step-text 新建投放单元
+					b.step-number 2
+					b.step-icon
+						em.icon.icon-right
+				span.guide-step.guide-step03
+					b.step-text 新建创意
+					b.step-number 3
+					b.step-icon
+						em.icon.icon-right
+				span.guide-percent
+			div.amp-form.amp-form02
+				div.form-column
+					div.column-group
+						div.group-aside 
+							i.group-tip *
+							| 投放单元名称：
+						div.group-detail
+							div.detail-row 
+								div.ele-input.ele-input03
+									input(type="text",value="")
+					div.column-group
+						div.group-aside 投放平台：
+						div.group-detail
+							div.detail-row 
+								span.row-check
+									em.icon.icon-single
+									i APP
+								span.row-check
+									em.icon.icon-single.icon-singled
+									i WAP
+								span.row-check
+									em.icon.icon-single
+									i PC
+					div.column-group
+						div.group-aside 投放类型：
+						div.group-detail
+							div.detail-row 
+								span.row-check
+									em.icon.icon-single.icon-singled
+									i 商品推广
+					div.column-group
+						div.group-aside 投放广告位：
+						div.group-detail
+							div.detail-row.detail-row-02 
+								span.form-text
+									| 已选择
+									i.group-tip 2
+									| 个广告位
+								a(href="#").btn.btn-primary.btn-primary-small 添加广告位
+							div.detail-row.detail-row03
+								table.table
+									tr
+										th
+											span 媒体名称
+										th
+											span 广告位名称
+										th(width="90")
+											span 刊例价
+										th(width="120")
+											span 素材尺寸限制
+										th(width="120")
+											span 素材大小限制
+										th(width="58")
+											span 操作
+									tr
+										td
+											span 我是媒体名称
+										td
+											span 我是广告位名称
+										td
+											span 1000
+										td
+											span 1990*400
+										td
+											span 50K
+										td
+											span
+												em.icon.icon-delete
+									tr
+										td
+											span 我是媒体名称
+										td
+											span 我是广告位名称
+										td
+											span 1000
+										td
+											span 1990*400
+										td
+											span 50K
+										td
+											span
+												em.icon.icon-delete
+							div.detail-row 
+								span.form-text 地域定向：
+								span.row-check
+									em.icon.icon-single
+									i 不限
+								span.row-check
+									em.icon.icon-single.icon-singled
+									i 自定义
+							// 自定义
+							div.address-data 
+								span.row-check
+									em.icon.icon-select.icon-selected
+									i 全选
+								div.address-list
+									div.list-province
+										ul
+											li
+												span.row-check
+													em.icon.icon-selected
+													i 北京市
+											li
+												span.row-check
+													em.icon.icon-selected
+													i 天津市
+											li.actived
+												span.row-check
+													em.icon.icon-selected
+													i 河北省
+											li
+												span.row-check
+													em.icon.icon-select
+													i 山西省
+											li
+												span.row-check
+													em.icon.icon-selected
+													i 内蒙古自治区
+											li
+												span.row-check
+													em.icon.icon-selected
+													i 宁夏回族自治区
+											li
+												span.row-check
+													em.icon.icon-select
+													i 湖北省
+											li
+												span.row-check
+													em.icon.icon-selected
+													i 陕西省
+											li
+												span.row-check
+													em.icon.icon-selected
+													i 新疆
+											li
+												span.row-check
+													em.icon.icon-selected
+													i 西藏
+									div.list-city
+										ul
+											li
+												span.row-check
+													em.icon.icon-selected
+													i 石家庄市
+											li
+												span.row-check
+													em.icon.icon-select
+													i 唐山市
+											li
+												span.row-check
+													em.icon.icon-selected
+													i 秦皇岛市
+											li
+												span.row-check
+													em.icon.icon-selected
+													i 邯郸市
+											li
+												span.row-check
+													em.icon.icon-selected
+													i 石家庄市
+											li
+												span.row-check
+													em.icon.icon-selected
+													i 邢台市
+											li
+												span.row-check
+													em.icon.icon-selected
+													i 保定市
+											li
+												span.row-check
+													em.icon.icon-selected
+													i 张家口市
+											li
+												span.row-check
+													em.icon.icon-selected
+													i 承德市
+											li
+												span.row-check
+													em.icon.icon-selected
+													i 沧州市
+											li
+												span.row-check
+													em.icon.icon-selected
+													i 廊坊市
+											li
+												span.row-check
+													em.icon.icon-selected
+													i 衡水市
+
+
+							div.detail-row 
+								span.form-text 时间段定向：
+								span.row-check
+									em.icon.icon-single
+									i 全时间段
+								span.row-check
+									em.icon.icon-single.icon-singled
+									i 自定义时间段
+								// 自定义时间段
+								div.time-space
+									div.space-header
+										span.row-check
+											em.icon.icon-single.icon-single
+											i 整周展示
+										span.row-check
+											em.icon.icon-single.icon-singled
+											i 仅工作日全天展示
+										span.row-check
+											em.icon.icon-single.icon-single
+											i 仅休息日全天展示
+									div.space-cont
+										div.cont-tip
+											i.time-pointer.green-module  
+											span.time-tip-text 投放时间段
+											i.time-pointer
+											span.time-tip-text 暂停时间段
+										div.cont-header
+											span.span-row-1 日期
+											span.span-row-2 复制到
+											span.span-row-3 00:00-05:00
+											span.span-row-3 06:00-11:00
+											span.span-row-3 12:00-17:00
+											span.span-row-3 18:00-23:00
+										div.cont-infor
+											ul
+												li.actived
+													div.span-row-1
+														span.row-check
+															em.icon.icon-select
+															i 星期一
+													div.span-row-2 
+														a(href="#").btn.btn-gray-small 整周
+														a(href="#").btn.btn-gray-small 工作日
+														a(href="#").btn.btn-gray-small 休息日
+													div.span-row-3 
+														i.time-pointer 0
+														i.time-pointer 1
+														i.time-pointer 2
+														i.time-pointer 3
+														i.time-pointer 4
+														i.time-pointer 5
+													div.span-row-3
+														i.time-pointer 6
+														i.time-pointer 7
+														i.time-pointer 8
+														i.time-pointer 9
+														i.time-pointer 10
+														i.time-pointer 11
+													div.span-row-3
+														i.time-pointer 12
+														i.time-pointer 13
+														i.time-pointer 14
+														i.time-pointer 15
+														i.time-pointer 16
+														i.time-pointer 17
+													div.span-row-3
+														i.time-pointer 18
+														i.time-pointer 19
+														i.time-pointer 20
+														i.time-pointer 21
+														i.time-pointer 22
+														i.time-pointer 23
+												li.actived
+													div.span-row-1
+														span.row-check
+															em.icon.icon-select
+															i 星期二
+													div.span-row-2 
+														a(href="#").btn.btn-gray-small 整周
+														a(href="#").btn.btn-gray-small 工作日
+														a(href="#").btn.btn-gray-small 休息日
+													div.span-row-3 
+														i.time-pointer 0
+														i.time-pointer.gray-module 1
+														i.time-pointer.gray-module 2
+														i.time-pointer 3
+														i.time-pointer 4
+														i.time-pointer 5
+													div.span-row-3
+														i.time-pointer 6
+														i.time-pointer 7
+														i.time-pointer 8
+														i.time-pointer 9
+														i.time-pointer 10
+														i.time-pointer 11
+													div.span-row-3
+														i.time-pointer 12
+														i.time-pointer 13
+														i.time-pointer 14
+														i.time-pointer 15
+														i.time-pointer 16
+														i.time-pointer 17
+													div.span-row-3
+														i.time-pointer 18
+														i.time-pointer 19
+														i.time-pointer 20
+														i.time-pointer 21
+														i.time-pointer 22
+														i.time-pointer 23
+												li.actived
+													div.span-row-1
+														span.row-check
+															em.icon.icon-select
+															i 星期三
+													div.span-row-2 
+														a(href="#").btn.btn-gray-small 整周
+														a(href="#").btn.btn-gray-small 工作日
+														a(href="#").btn.btn-gray-small 休息日
+													div.span-row-3 
+														i.time-pointer 0
+														i.time-pointer.gray-module 1
+														i.time-pointer.gray-module 2
+														i.time-pointer.gray-module 3
+														i.time-pointer.gray-module 4
+														i.time-pointer 5
+													div.span-row-3
+														i.time-pointer 6
+														i.time-pointer 7
+														i.time-pointer 8
+														i.time-pointer 9
+														i.time-pointer 10
+														i.time-pointer 11
+													div.span-row-3
+														i.time-pointer 12
+														i.time-pointer 13
+														i.time-pointer 14
+														i.time-pointer 15
+														i.time-pointer 16
+														i.time-pointer 17
+													div.span-row-3
+														i.time-pointer 18
+														i.time-pointer 19
+														i.time-pointer 20
+														i.time-pointer 21
+														i.time-pointer 22
+														i.time-pointer 23
+												li.actived
+													div.span-row-1
+														span.row-check
+															em.icon.icon-select
+															i 星期四
+													div.span-row-2 
+														a(href="#").btn.btn-gray-small 整周
+														a(href="#").btn.btn-gray-small 工作日
+														a(href="#").btn.btn-gray-small 休息日
+													div.span-row-3 
+														i.time-pointer 0
+														i.time-pointer.green-module 1
+														i.time-pointer.green-module 2
+														i.time-pointer 3
+														i.time-pointer 4
+														i.time-pointer 5
+													div.span-row-3
+														i.time-pointer.green-module 6
+														i.time-pointer 7
+														i.time-pointer 8
+														i.time-pointer 9
+														i.time-pointer 10
+														i.time-pointer 11
+													div.span-row-3
+														i.time-pointer 12
+														i.time-pointer 13
+														i.time-pointer 14
+														i.time-pointer 15
+														i.time-pointer 16
+														i.time-pointer 17
+													div.span-row-3
+														i.time-pointer 18
+														i.time-pointer 19
+														i.time-pointer 20
+														i.time-pointer 21
+														i.time-pointer 22
+														i.time-pointer 23
+												li.actived
+													div.span-row-1
+														span.row-check
+															em.icon.icon-select
+															i 星期五
+													div.span-row-2 
+														a(href="#").btn.btn-gray-small 整周
+														a(href="#").btn.btn-gray-small 工作日
+														a(href="#").btn.btn-gray-small 休息日
+													div.span-row-3 
+														i.time-pointer 0
+														i.time-pointer 1
+														i.time-pointer 2
+														i.time-pointer 3
+														i.time-pointer 4
+														i.time-pointer 5
+													div.span-row-3
+														i.time-pointer 6
+														i.time-pointer 7
+														i.time-pointer 8
+														i.time-pointer 9
+														i.time-pointer 10
+														i.time-pointer 11
+													div.span-row-3
+														i.time-pointer 12
+														i.time-pointer 13
+														i.time-pointer 14
+														i.time-pointer 15
+														i.time-pointer 16
+														i.time-pointer 17
+													div.span-row-3
+														i.time-pointer 18
+														i.time-pointer 19
+														i.time-pointer 20
+														i.time-pointer 21
+														i.time-pointer 22
+														i.time-pointer 23
+												li
+													div.span-row-1
+														span.row-check
+															em.icon.icon-select
+															i 星期六
+													div.span-row-2 
+														a(href="#").btn.btn-gray-small 整周
+														a(href="#").btn.btn-gray-small 工作日
+														a(href="#").btn.btn-gray-small 休息日
+													div.span-row-3 
+														i.time-pointer 0
+														i.time-pointer 1
+														i.time-pointer 2
+														i.time-pointer 3
+														i.time-pointer 4
+														i.time-pointer 5
+													div.span-row-3
+														i.time-pointer 6
+														i.time-pointer 7
+														i.time-pointer 8
+														i.time-pointer 9
+														i.time-pointer 10
+														i.time-pointer 11
+													div.span-row-3
+														i.time-pointer 12
+														i.time-pointer 13
+														i.time-pointer 14
+														i.time-pointer 15
+														i.time-pointer 16
+														i.time-pointer 17
+													div.span-row-3
+														i.time-pointer 18
+														i.time-pointer 19
+														i.time-pointer 20
+														i.time-pointer 21
+														i.time-pointer 22
+														i.time-pointer 23
+												li
+													div.span-row-1
+														span.row-check
+															em.icon.icon-select
+															i 星期日
+													div.span-row-2 
+														a(href="#").btn.btn-gray-small 整周
+														a(href="#").btn.btn-gray-small 工作日
+														a(href="#").btn.btn-gray-small 休息日
+													div.span-row-3 
+														i.time-pointer 0
+														i.time-pointer 1
+														i.time-pointer 2
+														i.time-pointer 3
+														i.time-pointer 4
+														i.time-pointer 5
+													div.span-row-3
+														i.time-pointer 6
+														i.time-pointer 7
+														i.time-pointer 8
+														i.time-pointer 9
+														i.time-pointer 10
+														i.time-pointer 11
+													div.span-row-3
+														i.time-pointer 12
+														i.time-pointer 13
+														i.time-pointer 14
+														i.time-pointer 15
+														i.time-pointer 16
+														i.time-pointer 17
+													div.span-row-3
+														i.time-pointer 18
+														i.time-pointer 19
+														i.time-pointer 20
+														i.time-pointer 21
+														i.time-pointer 22
+														i.time-pointer 23
+							
+		div.drawer-btn
+			a(href="#").btn.btn-primary 保存
+			a(href="#").btn.btn-primary 保存并下一步
+			a(href="#").btn.btn-gray 取消

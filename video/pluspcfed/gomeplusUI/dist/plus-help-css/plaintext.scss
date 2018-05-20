@@ -1,0 +1,185 @@
+@import "../plus-sasscore/_configure.scss";
+body.plaintext {
+  padding: 0;
+  background-color: #f9f9f9; }
+
+.plaintext {
+  padding: 0.4rem 0.3rem 0.2rem;
+  color: #999;
+  font-size: 0.28rem;
+  line-height: 0.4rem; }
+  .plaintext h1, .plaintext h2, .plaintext h3 {
+    margin-top: 0.2rem;
+    margin-bottom: 0.2rem;
+    color: #333; }
+  .plaintext h1 {
+    margin-top: 0.4rem;
+    font-size: 0.34rem; }
+    .plaintext h1:first-child {
+      margin-top: 0; }
+  .plaintext h2 {
+    font-size: 0.3rem; }
+  .plaintext h3 {
+    font-size: 0.28rem; }
+  .plaintext p {
+    padding-bottom: 0.2rem; }
+  .plaintext .flex-boxs {
+    margin-top: 0.2rem; }
+    .plaintext .flex-boxs em {
+      background-image: url(../../../images/public/m-vip.png?version=20170320); }
+
+.im-items {
+  background-color: #fff; }
+  .im-items li {
+    position: relative;
+    position: relative; }
+    .im-items li:after {
+      content: '';
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      height: 1px;
+      display: block;
+      border-bottom: 1px solid #ddd;
+      -webkit-transform-origin: 100% 100%;
+      transform-origin: 100% 100%; }
+    @media (-webkit-min-device-pixel-ratio: 1.5) {
+      .im-items li:before {
+        -webkit-transform: scale(1, 0.5);
+        transform: scale(1, 0.5); } }
+    @media (min-device-pixel-ratio: 1.5) {
+      .im-items li:before {
+        -webkit-transform: scale(1, 0.5);
+        transform: scale(1, 0.5); } }
+    @media (-webkit-min-device-pixel-ratio: 3) {
+      .im-items li:before {
+        -webkit-transform: scale(1, 0.3);
+        transform: scale(1, 0.3); } }
+    @media (min-device-pixel-ratio: 3) {
+      .im-items li:before {
+        -webkit-transform: scale(1, 0.3);
+        transform: scale(1, 0.3); } }
+    .im-items li:after {
+      -webkit-transform: scaleY(0.5);
+      transform: scaleY(0.5); }
+    .im-items li a {
+      position: relative;
+      display: block;
+      padding: 0.2rem 0.6rem 0.2rem 0.3rem;
+      font-size: 0.3rem;
+      line-height: 0.36rem; }
+    .im-items li em[class^="iconn"] {
+      position: absolute;
+      right: 0.3rem;
+      top: 50%;
+      margin-top: -0.15rem;
+      font-size: 0.28rem;
+      color: #ccc; }
+
+
+
+// new
+.hlp-nav{
+  height: auto;
+  background-color:#fff;
+  overflow: hidden;
+  padding:rem(18) 0 0 rem(30);
+  border-top:1px solid #ecebeb;
+  border-bottom:1px solid #ecebeb;
+  span{
+    display: block;
+    font-size: rem(24);
+    display: block;
+    padding:rem(8) rem(25);
+    float: left;
+    margin:0 rem(20) rem(20) 0;
+    color: #666;
+    &:last-child{
+      margin-right: 0;
+    }
+    &:before{
+    border-radius:.8rem;
+    }
+    &.actived{
+      background-color:#f66a6b;
+      border-radius:.8rem;
+      color: #fff;
+      &:before{
+      border-radius:.5rem;
+      }
+    }
+  }
+}
+.opg .hlp-nav:after{
+  background-color:#d2d2d2;
+}
+.hlp-list{
+  &.actived{
+    display: block
+  }
+  display: none;
+  overflow: hidden;
+  li{
+    padding:0 rem(30) rem(25) rem(30);
+    background-color:#fff;
+    margin-top: rem(10);
+    list-style: none;
+    border-top:1px solid #ecebeb;
+    border-bottom:1px solid #ecebeb;
+    &.actived{
+      .hlp-txt{
+        display: block;
+      }
+      .arrows{
+        background:url(t-arrow.png);
+        background-repeat: no-repeat;
+        background-size: rem(30) rem(16);
+        margin-top: rem(7);
+      }
+    }
+    h1{
+      font-size: rem(30);
+      float: left;
+      margin:0;
+      width: rem(640);
+    }
+    .arrows{
+      float: right;
+      width: rem(30);
+      height: rem(16);
+      background:url(b-arrow.png);
+      background-repeat: no-repeat;
+      background-size: rem(30) rem(16);
+      margin-top: rem(12);
+    }
+  }
+}
+.hlp-title{
+  overflow: hidden;
+  padding:rem(30) 0 0 0;
+}
+.hlp-txt{
+  font-size: rem(26);
+  color: #666;
+  line-height: rem(36);
+}
+.plaintext p.hlp-txt{
+  padding:rem(25) 0 0 0;
+  display: none;
+}
+.opg .bor-t:after, .opg .bor-b:after{
+  background-color:#fff;
+}
+.plaintext .bor-b:before{
+    right: 0;
+    bottom: 0;
+    left: 0;
+    -webkit-transform-origin: 100% 100%;
+    transform-origin: 100% 100%;
+}
+.opg .header:after{
+  border-bottom:1px solid #fff;
+}
+// 美店等级规则
+@import '_level.scss';

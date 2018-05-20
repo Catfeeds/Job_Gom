@@ -1,0 +1,20 @@
+//- extends layout.jade
+extends ../../../widget-platform/pug/layout/layout.jade
+
+//- toast
+block content
+	h2.platform-title toast
+	div.platform-content
+		h3.platform-header toast
+		div.platform-intro 
+			p 积极维护中...
+		//- div.platform-example#toast
+			//- include ../../../../pc-widget/toast/toast.jade
+		//- pre.platform-pre
+			//- code.platform-code#toast_code
+			//- span.platform-jade pug
+			//- span.platform-jade.platform-html.actived html
+	//- js format html code
+	script(type='text/javascript').
+		HtmlFormat.init(['toast'],false,'_code','html','span.platform-jade');
+		$(".platform-toast").parent('li').addClass("actived");

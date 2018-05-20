@@ -1,0 +1,17 @@
+<div class="<% if(isAndroid){ %>weui-skin_android <% } %><%= className %>">
+    <div class="weui-mask"></div>
+    <div class="m-share-bottom">   <ul class="share-list">
+        <% for(var i = 0; i < menus.length; i++){ %>
+        <li class="item">
+            <a href="javascript:;" class="<%= menus[i].class %>">
+                <em class="share-icon"></em>
+                <p class="share-txt"><%= menus[i].label %></p>
+            </a>
+        </li>
+        <% } %>
+    </ul>
+        <% for(var j = 0; j < actions.length; j++){ %>
+        <a href="javascript:;" class="share-close"><%= actions[j].label %></a>
+        <% } %>
+    </div>
+</div>

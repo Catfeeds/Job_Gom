@@ -1,0 +1,448 @@
+/* upload_video */
+@import "../../base/public.scss";
+
+.video-center{
+	display: block;
+	height: 100%;
+}
+.video-uploader{
+	display: table;
+	width: 100%;
+	height: 100%;
+	.file-selector{
+		display: table-cell;
+		vertical-align: middle;
+		text-align: center;
+		.file-picker{
+			display: inline-block;
+			position: relative;
+			input{
+				opacity: 0;
+				position: absolute;
+			}
+			/* .webuploader-pick-hover{
+				.btn{
+					background-color: #75b8f9;
+				}
+			} */
+		}
+		.selector{
+			width: 260px;
+		}
+		.desc{
+			margin-top: 20px;
+			color: $gray;
+			font-size: 14px;
+		}
+	}
+	/* 进度条 */
+	.progress-bar{
+		text-align: center;
+		margin-top: 50px;
+		margin-bottom: 50px;
+		.title{
+			font-size: 22px;
+			color: $base;
+			.name{
+				color: $primary;
+				padding-right: 7px;
+			}
+		}
+		.progress-wrap{
+			margin-top: 30px;
+			margin-left: -90px;
+			.progress{
+				width: 650px;
+				height: 10px;
+				position: relative;
+				margin: 0 auto;
+				background-color: #e1e1e1;
+				border-radius: 8px;
+				.percent{
+					width: 20%;
+					height: 10px;
+					position: absolute;
+					border-radius: 8px;
+					background-color: #13ce00;
+				}
+				.num{
+					position: absolute;
+					color: #13ce00;
+					font-size: 16px;
+					top: -26px;
+					right: 0;
+				}
+				.action{
+					width: 110px;
+					position: absolute;
+					left: 670px;
+					top: -5px;
+					text-align: left;
+					color: $base;
+					font-size: 14px;
+					cursor: pointer;
+					span{
+						vertical-align: top;
+						&:hover{
+							color: $primary;
+						}
+					}
+					.cancel{
+						color: #f55050;
+						font-size: 18px;
+						margin-right: 7px;
+					}
+					.reselect{
+						color: #fac00e;
+						font-size: 18px;
+						margin-right: 7px;
+					}
+					.retry{
+						color: #53a6f8;
+						font-size: 18px;
+						margin-right: 7px;
+					}
+				}
+			}
+			.status{
+				width: 650px;
+				color: $gray;
+				font-size: 14px;
+				text-align: left;
+				margin: 10px auto 0;
+			}
+
+		}
+	}
+	.line{
+		height: 1px;
+		background-color: $bg;
+		margin: 0 25px;
+	}
+	.upload-form{
+		/*display: none;*/
+		.form{
+			width: 840px;
+			margin: 50px auto 0;
+			.submit{
+				width: 210px;
+				height: 48px;
+				display: block;
+				margin: 50px auto 50px;
+			}
+		}
+	}
+	.form-group{
+		.form-input{
+			.tag-input-wrap{
+				width: 740px;
+				border: 1px solid $border;
+				border-radius: 3px;
+				padding: 4px 10px 0;
+				box-sizing: border-box;
+				.tag-item{
+					float: left;
+					height: 30px;
+					margin-right: 15px;
+					margin-bottom: 4px;
+					padding: 5px 10px;
+					position: relative;
+					background-color: #e4e4e4;
+					box-sizing: border-box;
+					border-radius: 3px;
+					.del{
+						font-size: 12px;
+					    color: #f55050;
+					    position: absolute;
+					    right: -6px;
+					    top: -2px;
+					    height: 18px;
+					    cursor: pointer;
+					}
+					.red{
+						color: #df4242;
+					}
+					.gray{
+						color:#999;
+					}
+				}
+				.tag-input{
+					width: auto;
+					border: none;
+					height: 26px;
+					padding-bottom: 4px;
+				}
+			}
+			&.picker-box{
+				padding-bottom: 0;
+				.thumb{
+					width: 280px;
+					height: 158px;
+					position: absolute;
+					z-index: 1;
+					img{
+						width: 280px;
+						height: 158px;
+					}
+					.del{
+						position: absolute;
+						right: -9px;
+						top: -9px;
+						font-size: 18px;
+						color: #f55050;
+						background-color: #fff;
+						border-radius: 50%;
+						cursor: pointer;
+					}
+					.indicator{
+						font-size: 30px;
+						position: absolute;
+						top: 64px;
+						left: 126px;
+					}
+				}
+			}
+			.input-text{
+				width: 740px;
+			}
+			.picker-error{
+				clear: both;
+				padding-top: 8px;
+			}
+		}
+		.tag-error{
+			padding-top: 8px;
+		}
+		.picker-label{
+			margin-top: 58px;
+		}
+	}
+	/* 封面图选择按钮 */
+	.picker-wrap{
+		position: absolute;
+		z-index: 1;
+		.webuploader-element-invisible{
+			opacity: 0;
+			position: absolute;
+		}
+		&:hover{
+			.cover-picker:before, .cover-picker:after{
+				background-color: #ccc;
+			}
+		}
+	}
+	.cover-picker{
+		width: 278px;
+		height: 156px;
+		border: 1px solid $border;
+		border-radius: 3px;
+		background-color: #fafafa;
+		&:before{
+			content: '';
+			width: 34px;
+			height: 2px;
+			position: absolute;
+			top: 77px;
+			left: 123px;
+			background-color: $gray;
+		}
+		&:after{
+			content: "";
+			width: 2px;
+			height: 34px;
+			position: absolute;
+			left: 139px;
+			top: 62px;
+			background-color: $gray;
+		}
+	}
+	.remark{
+		float: left;
+		height: 158px;
+		line-height: 158px;
+		font-size: 12px;
+		color: $gray;
+		margin-left: 290px;
+	}
+	/* 上传成功 */
+	.upload-success{
+		width: 256px;
+		display: table-cell;
+		vertical-align: middle;
+		text-align: center;
+		.icon-suc{
+			font-size: 80px;
+			color: #54c50d;
+		}
+		.title{
+			font-size: 24px;
+			color: $base;
+			margin-top: 19px;
+		}
+		.tip{
+			font-size: 14px;
+			color: $gray;
+			margin-top: 17px;
+		}
+		.action{
+			margin-top: 19px;
+			.continue, .mgr{
+				width: 116px;
+				height: 38px;
+				line-height: 38px;
+			}
+			.continue{
+				color: $primary;
+				background-color: $white;
+				border: 1px solid $primary;
+				&:hover{
+					color: $btn-hover;
+				}
+			}
+			.mgr{
+				color: $base;
+				background-color: $bg;
+				border: 1px solid $border;
+				margin-left: 20px;
+				&:hover{
+					color: $btn-hover;
+					background-color: #fff;
+					border: 1px solid $primary;
+				}
+			}
+		}
+	}
+}
+
+.page-video-uploader{
+	.rc-dialog-title{
+		font-size: 20px;
+		padding-top: 27px;
+	}
+	.rc-dialog-footer{
+		.dialog-footer-wrap{
+			height: 100px;
+			padding: 30px;
+			box-sizing: border-box;
+			.ok, .cancel{
+				display: inline-block;
+				width: 120px;
+				height: 40px;
+				line-height: 40px;
+				border-radius: 3px;
+				color: #fff;
+				text-align: center;
+				cursor: pointer;
+				box-sizing: border-box;
+			}
+			.ok{
+				border: 1px solid #53a6f8;
+				background-color: #53a6f8;
+				&:hover{
+					background-color: #75b8f9;
+				}
+			}
+			.cancel{
+				background-color: #ccc;
+				margin-left: 40px;
+				color: #666;
+				border: 1px solid #ccc;
+				background-color: #fff;
+				&:hover{
+					border-color: #999;
+				}
+			}
+		}
+	}
+}
+
+
+
+.add-shop{
+    width: 83px;
+    height: 36px;
+    line-height: 36px;
+    border-radius: 3px;
+    border: 1px solid #e1e1e1;
+    background: #fafafa;
+    cursor: pointer;
+    margin-top: 2px;
+    text-align: center;
+    em{
+        position: static!important;
+        font-size: 12px!important;
+        color: #333!important;
+        margin-right: 5px;
+    }
+}
+
+.shop-list{
+    margin: 0 -10px 0 0;
+    width: 750px;
+}
+.form-group .form-input .paste .del{
+    position: absolute;
+    right: -9px;
+    left: auto;
+    top: -9px;
+    font-size: 18px;
+    color: rgb(245, 80, 80);
+    background-color: rgb(255, 255, 255);
+    cursor: pointer;
+    z-index: 11;
+    border-radius: 50%;
+}
+.paste{
+    float: left;
+    background: #fff8e7;
+    margin: 0 10px 10px 0;
+    text-align: left;
+    display: block;
+    border-radius: 3px;
+    width: 362px;
+    height: 108px;
+    border: 1px solid #fff8e7;
+    position: relative;
+    cursor: pointer;
+    img{
+        float: left;
+        cursor: pointer;
+        width: 108px;
+        height:108px;
+        margin-right: 10px;
+    }
+    .paste-right{
+        margin:10px 10px 0 0;
+        h6{
+            font-size: 14px;
+            font-weight: normal;
+            color: #333;
+            line-height: 24px;
+        }
+        .price{
+            position: absolute;
+            bottom: 20px;
+            left: 120px;
+            color: #f95352;
+        }
+        span{
+            position: absolute;
+            right: 12px;
+            bottom: 12px;
+            width: 90px;
+            height: 30px;
+            line-height: 30px;
+            border-radius: 3px;
+            color: #fff;
+            background: #f95353;
+            font-size: 12px;
+            text-align: center;
+        }
+    }
+//  &:hover{
+//      .paste-right span{
+//          background: #ec392a;
+//          color: #fff;
+//      }
+//  }
+}

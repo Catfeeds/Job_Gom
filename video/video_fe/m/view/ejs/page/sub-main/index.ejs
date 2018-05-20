@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="zh-CN" data-use-rem="750">
+<head>
+	<meta charset="utf-8">
+	<title>GomePlus视频频道</title>
+	<meta name="keywords" content="GomePlus视频频道" />
+	<meta name="description" content="" />
+	<meta name="format-detection" content="telephone=no">
+	<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no,minimal-ui" />
+	<meta name="x5-page-mode" content="no-title"/>
+	<link rel="stylesheet" type="text/css" href="/m/vm/dist/css/sub-main.css">
+</head>
+<body>
+	<%- include('../../common/rem.ejs')%>
+	<div class="feeds-main">
+		<em class="icon-22 main-back"></em>
+		<em class="icon-12 main-share"></em>
+		<div class="main-desc">
+			<img class="head-p" src="" border="0">
+			<h3>小鱼儿</h3>
+			<p>不务正业的青年作家青年作家</p>
+			<div class="main-attention active" data-action="subscribe" data-status="0">
+				<span class="no-subscription"><em class="icon-18"></em> 订阅</span>
+				<span class="subscription">已订阅</span>
+			</div>
+			<p><span data-node="count"></span>16473粉丝</p>
+		</div>
+	</div>
+	<div class="sub-content">
+		<p class="content-title">动态（<span>999</span>）</p>
+		<div class="content-list">
+			<%- include('../../common/sub-mian-card.ejs')%>
+			<%- include('../../common/sub-mian-card.ejs')%>
+		</div>
+	<div>
+	<script src="/m/vm/dist/js/vendor.js"></script>
+	<script src="/m/vm/dist/js/sub-main.js"></script>
+</body>
+</html>

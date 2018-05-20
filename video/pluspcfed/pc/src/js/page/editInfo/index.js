@@ -1,0 +1,10 @@
+//美店名称字数控制
+require('../openShop/limitName').init();
+//上传头像
+require('./upload').init();
+//描述字数控制
+require('../openShop/limitDes').init();
+//删除类目
+require('./typeDel').init();
+//保存
+require('./saveData').init();

@@ -1,0 +1,102 @@
+@import '../../../pc-widget/config/_base.scss';
+@import '../../../pc-widget/config/_mixins.scss';
+
+.bg-white{
+	background-color: $bg-fff;
+}
+.content-top{
+	height: 59px;
+	line-height: 59px;
+	border-bottom: 1px solid $bor-bom;
+	h3{
+		float: left;
+		font-size: $text18;
+		margin-left: 30px
+	}
+	a{
+		float: right;
+		margin-top: 14px;
+		margin-right: 20px;
+	}
+}
+.logis-progress{
+	line-height: 30px;
+	padding: 19px 30px 20px 0;
+	table{
+		display: block;
+		height: 364px;
+		padding-left: 30px;
+		overflow-y: auto;
+		tr{
+			td{
+				width: 1090px;
+			    overflow: visible;
+				padding-left: 25px;
+				position: relative;
+				vertical-align: top;
+				border-left: 1px dashed $bor-bom;
+				.iconn-67{
+					font-size: 5px;
+					color: #d9d9d9;
+					position: absolute;
+					top: 9px;
+					left: -6px;
+					&.active{
+						color: #dc464c;
+					}
+				}
+				.time{
+					float: left;
+				}
+				p{
+					float: left;
+				}
+				.date{
+					margin-right: 18px;
+				}
+				.week{
+					margin-right: 10px;
+				}
+				.hour{
+					color: $font-grey-normal;
+					margin-right: 189px;
+					span{
+						display: block;
+					}
+				}
+				.state-illustrate{
+					span{
+						display: block;
+						&.checked{
+							display: inline;
+							color: #dc464c;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+.detail-txt{
+	line-height: 26px;
+	padding: 20px 0 29px 52px;
+	background-color: $bg-fff8e6;
+	li{
+		line-height: 24px;
+		&.fl{
+			p{
+				float: left;
+			}
+			span.bold{
+				font-weight: bold;
+				margin-right: 50px;
+			}
+		}
+		.connect{
+			padding-left: 30px;
+			&:hover{
+				color: $btn-e30d3e;
+			}
+		}
+	}
+}

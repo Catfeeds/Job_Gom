@@ -1,0 +1,165 @@
+@charset "utf-8";
+
+// AMP configure
+@import "_configure.scss";
+
+// Define form element <select> and <input> sheetstyle
+// ##-------------------------------------------------
+
+// ele-select
+.ele-select{
+	@include inline-block();
+	position:relative;
+	padding:0px 10px;
+	width:200px;
+	height:40px;
+	font-size:14px;
+	line-height:40px;
+	cursor:pointer;
+	border:1px solid $border-select-normal;
+	background:#fff;
+	@include prefix(border-radius,4px);
+	@include box-sizing(border);
+	color:$text-light;
+	&:after{
+		content:"\e909";
+		font-family:$ff-icon;
+		position:absolute;
+		right:9px;
+		top:0;
+		font-size:10px;
+		color:$text-dark;
+	}
+}
+
+.ele-selected{
+	color:$text-dark;
+}
+.ele-select-small{
+	width:130px!important;
+}
+.ele-select-normal{
+	width:250px;
+}
+.ele-select-large{
+	
+}
+
+// ele-input
+.ele-input{
+	@include inline-block();
+	overflow:hidden;
+	position:relative;
+	padding:10px 10px;
+	height:40px;
+	line-height:40px;
+	cursor:pointer;
+	border:1px solid $border-select-normal;
+	background:#fff;
+	@include prefix(border-radius,4px);
+	@include box-sizing(border);
+	color:$text-light;
+	input{
+		display:block;
+		padding:0;
+		margin:0;
+		width:100%;
+		// height:20px;
+		height:100%;
+		line-height:1;
+		font-size:14px;
+		border:0;
+		background:transparent;
+		color:$text-dark;
+		@include box-sizing(border);
+	}
+	// hover status
+	&:hover,
+	&.hover{
+		border-color:$bg-blue;
+		input{
+			color:$text-dark;
+		}
+	}
+	// error status
+	&.error{
+		border-color:$bg-red;
+		background:#fff7d3;
+		input{
+			color:$bg-red;
+		}
+	}
+	// disable status
+	&.disable{
+		cursor:not-allowed;
+		background:$border-table-col;
+		border-color:$border-select-normal!important;
+		&:hover{
+			border-color:$border-select-normal!important;
+		}
+		input{
+			cursor:not-allowed;
+		}
+	}
+}
+
+.ele-input-small{
+
+}
+.ele-input-normal{
+	width:282px!important;
+}
+.ele-input-large{
+	width:420px!important;
+}
+.ele-input-block{
+	width:100%;
+}
+
+// ele-textarea
+.ele-textarea{
+	padding:10px;
+	border:1px solid $border-btn-normal;
+	@include prefix(border-radius,$border-radius-normal);
+	textarea{
+		display:block;
+		padding:0;
+		margin:0;
+		width:100%;
+		height:90px;
+		font-size:14px;
+		line-height:1.5;
+		color:$text-medium;
+		outline:none;
+		background:transparent;
+	}
+	&:hover,
+	&.hover{
+		border-color:$bg-blue;
+		color:$text-dark;
+	}
+	&.disable{
+		cursor:not-allowed;
+		background:$border-table-col;
+		border-color:$border-select-normal!important;
+		textarea{
+			cursor:not-allowed;
+		}
+	}
+}
+// Error tip information
+.error-block{
+	margin-top:5px;
+	color:$bg-red;
+	.icon{
+		color:#fc514e;
+	}
+	.error-text{
+		@include inline-block;
+		margin-left:8px;
+	}
+	&.error-inline{
+		@include inline-block;
+		margin-top:0;
+	}
+}

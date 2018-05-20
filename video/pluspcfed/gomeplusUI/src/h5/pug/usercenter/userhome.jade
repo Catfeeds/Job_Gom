@@ -1,0 +1,120 @@
+doctype html
+html(lang="zh-CN" data-use-rem="750")
+	include ../../../m-widget/head/head.jade
+	link(type="text/css",rel="stylesheet",href="../../css/public/public-wap.css")
+	link(type="text/css",rel="stylesheet",href="../../css/module/usercenter.css")
+
+	body.opg.userhome
+		include ../../../m-widget/head/rem.jade
+		
+		header.header
+			span
+				a.head-back(href="javascript:;")
+					em.iconn-1
+			h1.head-title 标题文字
+			span
+				a.head-edit(href="javascript:;") 编辑
+		// /header
+
+		.m-navmore(style="height:1.1rem;")
+			ul
+				li
+					a(href="javascript:;")
+						em.iconfont-28
+						p 首页
+				li
+					a(href="javascript:;")
+						em.iconfont-29
+						p 分类
+				li
+					a(href="javascript:;")
+						em.iconfont-30
+						p 购物车
+				li
+					a(href="javascript:;")
+						em.iconfont-31
+						p 我的
+
+
+		.content.user-wrap
+			.user-head
+				.head-face
+					img(src="../images/_temp/face.jpg")
+					em
+				.head-nick 用户名最多二十个字符
+
+			section.order-entry
+				.entry-item.item-first
+					a(href="##")
+						.title
+							p 我的订单
+						.tips 查看全部订单
+						.arrow
+							em.iconfont-9
+
+				ul.entry-list
+					li
+						a(href="##")
+							em.iconfont-16
+							p 待付款
+					li
+						a(href="##")
+							em.iconfont-17
+							p 待收货
+					li
+						a(href="##")
+							em.iconfont-18
+							p 待评价
+					li
+						a(href="##")
+							em.iconfont-19
+							p 退款/售后
+
+			section.order-entry
+				.entry-item
+					a(href="##")
+						.icn
+							em.iconfont-20
+						.title 我的购物车
+						.arrow
+							em.iconfont-9
+				.entry-item
+					a(href="##")
+						.icn
+							em.iconfont-21
+						.title 我的收藏
+						.arrow
+							em.iconfont-9
+				.entry-item
+					a(href="##")
+						.icn
+							em.iconfont-22
+						.title 收货地址
+						.arrow
+							em.iconfont-9
+				.entry-item
+					a(href="##")
+						.icn
+							em.iconfont-23
+						.title 返利
+						.arrow
+							em.iconfont-9
+				.entry-item
+					a(href="##")
+						.icn
+							em.iconfont-24
+						.title 优惠券
+						.arrow
+							em.iconfont-9
+
+			.footer
+				ul.bar-nav
+					li
+						a(href="##") 触屏版
+					li
+						a(href="##") 客户端
+					li
+						a(href="##") 退出
+				p.icp-txt 2015-2016年美信网络技术有限公司版权所有 <br>渝ICP备15012739号
+
+		// /content

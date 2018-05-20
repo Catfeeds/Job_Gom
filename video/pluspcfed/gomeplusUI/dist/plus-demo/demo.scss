@@ -1,0 +1,47 @@
+@charset "UTF-8";
+
+@import "../plus-sasscore/_configure.scss";
+
+/* 前缀
+	webkit moz ms o none
+*/
+a{
+	@include prefix(border-radius, rem(20), webkit moz ms o)
+}
+
+
+/* 圆角
+	@include prefix(border-radius,rem(20));
+*/
+.radius{
+	@include prefix(border-radius, rem(20) )
+}
+
+
+/* 单行&多行截字
+	@include ellipsis(); 默认截字一行
+	@include ellipsis(mobile,3); 截字多行
+*/
+.ellipsis{
+	@include ellipsis();
+}
+.ellipsis2{
+	@include ellipsis(mobile,3);
+}
+
+
+/* flex
+	@include flex-box(); 常用属性
+	@include flex-col(1); 常用属性
+*/
+.flex-box{
+	@include flex-box();
+}
+.flex-col{
+	@include flex-col(2);
+}
+
+
+
+
+

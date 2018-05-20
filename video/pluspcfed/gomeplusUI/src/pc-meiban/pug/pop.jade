@@ -1,0 +1,131 @@
+extends ../../pc-widget/head/head-set.jade
+block css-file
+	link(type="text/css",rel="stylesheet",href="../css/public/public.css")
+block body
+	body.opg
+		//消息列表右键弹窗
+		.mouse-new
+			a(href="javascript:;") 置顶
+			a(href="javascript:;") 删除会话
+			a(href="javascript:;") 退出群聊
+		//个人详情弹窗
+		.windows-pop
+			.pop-title
+				.fl
+					p 王百川
+					em.iconn-5
+				.fr
+					.im-name 百川
+					span 未激活
+			.pop-con
+				.personal-detail
+					.detail-message
+						.gray 个人信息
+						p
+							em.iconn-20
+							| 13634569879
+						p
+							em.iconn-42
+							| wanghui@gomeplus.com
+						p
+							em.iconn-4
+							| 技术中心-无线研发部-企业办公客户端-全国销售及市场部-华北大区-大客户销售1部-销售3组-高级销售经理
+						p
+							em.iconn-43
+							| 开发工程师
+						.gray 兼任信息
+						p
+							em.iconn-4
+							| 技术中心-无线研发部-企业办公客户端
+						p
+							em.iconn-43
+							| 开发工程师
+						p
+							em.iconn-4
+							| 技术中心-无线研发部-企业办公客户端
+						p
+							em.iconn-43
+							| 开发工程师
+			.pop-footer
+				//.disabled为禁用样式
+				a(href="javascript:;").btn-send 发起会话
+		//群设置弹窗
+		.windows-pop
+			.pop-title
+				.fl
+					p 王百川
+				.fr
+					.im-name
+						em.iconn-46
+					span (15人)
+			.pop-con
+				.personal-detail
+					.my-detal
+						.detail-tab
+							.fl
+								a(href="javascript:;").active 资料
+							.fr
+								a(href="javascript:;") 成员
+						.detail-name
+							.gray 群名称
+							p 周昊,王伟伟,张鑫,孟非,董丽,王娜娜
+							.gray 群公告
+							p 文能挂机喷队友，武能越塔送人头。进可孤身一挑五，退可坐等二十投。前能飞脚救残敌，后能放墙堵队友。静则百年不见人，动则千里送超神。英勇闪现送一血，卖起队友不回头。顺风浪，逆风投。问君能有几多愁，恰似五人四坑20投。
+							.gray 群主
+							p
+								| 周昊
+								em.iconn-44
+								a(href="javascript:;") 转让群主
+						.detail-members
+							ul.clearfix
+								li.add
+									a(href="javascript:;")
+										.im-name
+											em.iconn-11
+										p 添加
+								li.del
+									a(href="javascript:;")
+										.im-name
+											em.iconn-3
+										p 删除
+								- for (var x = 0; x < 10; x++)
+									li
+										a(href="javascript:;")
+											.im-name
+												| 笑笑
+											p 笑笑
+			.pop-footer
+				//.disabled为禁用样式
+				a(href="javascript:;").btn-out 退出群聊
+		//查看图片
+		.windows-img
+			em.iconn-11
+			em.iconn-13
+			em.iconn-30
+			.edit-icon
+				em.iconn-14
+				em.iconn-31
+				em.iconn-32
+				em.iconn-40
+			ul.clearfix
+				li
+					img(src="https://i6.meixincdn.com/v1/img/T1CzhTBXCT1RXrhCrK.jpg")
+				li
+					img(src="https://i6.meixincdn.com/v1/img/T1CzhTBXCT1RXrhCrK.jpg")
+		//查看图片
+		.windows-warning
+			.warning-title
+				.fl 提示
+				em.iconn-11
+			.warning-text
+				p
+					em.iconn-6
+					| 您的账号已于2016.09.15 17:11:11在其他设备上登录。如果这不是您的操作，请及时修改登录密码。
+				.btn-box
+					a(href="javascript:;").btn-send 确定
+		//确认退出
+		.windows-sure
+			p 退出登录后，将无法收到新消息，确定退出美办？
+			.btn-box
+				a(href="javascript:;").btn-cancle 取消
+				a(href="javascript:;").btn-send 确定

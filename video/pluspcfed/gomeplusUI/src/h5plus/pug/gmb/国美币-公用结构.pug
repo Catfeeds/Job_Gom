@@ -1,0 +1,105 @@
+doctype html
+html(lang="zh-CN", data-use-rem="750")
+	include ../../../m-widget/head/head.jade
+	//- link(type="text/css",rel="stylesheet",href="../../css/public/gomeplusUI.css")
+	link(type="text/css",rel="stylesheet",href="../../css/module/gmb/demo-flex.css")
+	body.opg.gmb
+		include ../../../m-widget/head/rem.jade
+		
+		div.flex-tit
+			h1.h1-tit 标题：左中右排版
+		div.flex-boxs
+			div.flex-box
+				div.flex-hd flex-hd
+				div.flex-bd flex:1
+				div.flex-ft flex-ft
+
+		div.flex-tit
+			h1.h1-tit 标题：左大右小排版
+			p.tips 说明
+		div.flex-boxs
+			div.flex-box
+				div.flex-bd flex-bd
+				div.flex-ft flex-ft
+		
+		div.flex-tit
+			h1.h1-tit 标题：左小右大排版
+			p.tips 说明
+		div.flex-boxs
+			div.flex-box
+				div.flex-hd flex-hd
+				div.flex-bd flex-bd
+
+		div.flex-tit
+			h1.h1-tit 标题：单独100%
+			p.tips 说明
+		div.flex-boxs
+			div.flex-box
+				div.flex-bd flex-bd
+
+		div.flex-tit
+			h1.h1-tit 标题：多块等分
+			p.tips 说明
+		div.flex-boxs
+			div.flex-box
+				div.flex-bd flex-bd
+				div.flex-bd flex-bd
+				div.flex-bd flex-bd
+				
+		
+		div.flex-tit
+			h1.h1-tit 标题：多个flex-box组合
+			p.tips 说明
+		div.flex-boxs
+			div.flex-box
+				div.flex-hd flex-hd
+				div.flex-bd flex:1
+				div.flex-ft flex-ft
+			div.flex-box
+				div.flex-bd flex-bd
+				div.flex-ft flex-ft
+			div.flex-box
+				div.flex-hd flex-hd
+				div.flex-bd flex:1
+				div.flex-ft flex-ft
+		div.flex-boxs
+			div.flex-box
+				div.flex-hd flex-hd
+				div.flex-bd flex:1
+				div.flex-ft flex-ft
+			div.flex-box
+				div.flex-bd flex-bd
+				div.flex-ft flex-ft
+			div.flex-box
+				div.flex-hd flex-hd
+				div.flex-bd flex:1
+				div.flex-ft flex-ft
+		//- flex End
+
+
+		.m-tabs#tab(style="margin-top: .4rem;")
+			div.a
+				ul.m-menu.bor-b.tab-head
+					li.flex-cell.active
+						a.link(href="javascript:;") tab-1
+					li.flex-cell
+						a.link(href="javascript:;") tab-2
+					li.flex-cell
+						a.link(href="javascript:;") tab-3
+					li.flex-cell
+						a.link(href="javascript:;") tab-4
+			//- tab-title
+			.tab-body#tab2
+				.tab-page
+					.naem-a 模块一内容
+				// /tab-1
+				.tab-page
+					.naem-a 模块二内容
+				// /tab-2
+				.tab-page
+					.naem-a 模块三内容
+				// /tab-3
+				.tab-page
+					.naem-a 模块四内容
+				// /tab-4
+			//- tab-body

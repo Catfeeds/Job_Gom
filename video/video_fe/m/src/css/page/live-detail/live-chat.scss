@@ -1,0 +1,115 @@
+@import "../../base/public.scss";
+
+.live-detail{
+	.live-wrap{
+		.live-chat-box{
+			width:100%;
+			height:100%;
+			position:absolute;
+			overflow:hidden;
+			.live-chat-wrap{
+				width:100%;
+				height:100%;
+				position: relative;
+				box-sizing:border-box;
+				padding-bottom:rem(116);
+				overflow:auto;
+			}
+			.live-chat-list{
+				width:100%;
+				li.no-chat{
+					padding:0;
+					width:rem(160);
+					overflow:hidden;
+					margin:rem(100) auto;
+					text-align:center;
+					img{
+						width:rem(160);
+						height:rem(160);
+					}
+					p{
+						font-size:rem(30);
+						color:#666;
+						padding-top: rem(30);
+					}
+				}
+				li{
+					padding: rem(20) rem(30) rem(20) rem(90);
+					position:relative;
+					overflow:hidden;
+				}
+				.live-user-head{
+					width:rem(50);
+					height:rem(50);
+					border-radius:50%;
+					background: #999;
+					overflow:hidden;
+					position:absolute;
+					left: rem(20);
+					top:rem(20);
+					img{
+						width:rem(50);
+						height:rem(50);
+						border-radius:50%;
+					}
+				}
+				.live-user-msg{
+					padding:rem(14) rem(20);
+					background: #f7f7f7;
+					border-radius:rem(20);
+					font-size:rem(28);
+					line-height:rem(40);
+					color:#333;
+					float: left;
+					word-break:break-all;
+					word-wrap:break-word;
+					strong{
+						color:#999;
+					}
+				}
+				li.live-self{
+					.live-user-msg{
+						background: none;
+						border:1px solid #e1e2e5;
+					}
+				}
+			}
+			.live-editor-bar{
+				position:absolute;
+				left:0;
+				bottom:0;
+				width:100%;
+				box-sizing:border-box;
+				padding:rem(24) rem(26);
+				height:rem(116);
+				background: #FFF;
+				display:flex;
+				justify-content:space-between;
+				.v-txt{
+					box-sizing:border-box;
+					width:rem(540);
+					height:rem(68);
+					line-height:rem(68);
+					padding: 0 rem(10);
+					border-radius:rem(34);
+					background: #FFF;
+					box-shadow:0 0 rem(20) rem(5) rgba(0,0,0,.1);
+					font-size: rem(30);
+					color:#999;
+					em{
+						margin-left: rem(10);
+					}
+				}
+				.v-btn{
+					width:rem(140);
+					height:rem(68);
+					background: #e1e2e5;
+					border:none;
+					border-radius:rem(34);
+					color:#FFF;
+					font-size:rem(30);
+				}
+			}
+		}
+	}
+}

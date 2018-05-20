@@ -1,0 +1,85 @@
+<%- include('./gmhead.ejs')%>
+<!-- header -->
+<div class="header" data-node="header">
+    <div class="header-main clearfix">
+        <a class="logo" href="/" target="_self" title="国美视频">
+        	<img alt="国美视频" src="<%=devenv%>dist/imgs/public/logo.png"/>
+        </a>
+        <ul class="nav">
+            <li class="active"><a href="#">首页推荐</a></li>
+            <li><a href="#">订阅</a></li>
+        </ul>
+        <div class="user-area" data-node="userArea">
+            <div class="avatar"></div>
+            <div class="user-info hide">
+                <em class="arrow"></em>
+                <dl class="user-nickname">
+                    <dt><img src=""></dt>
+                    <dd>用户昵称很长很长</dd>
+                </dl>
+                <div class="user-nav">
+                    <a href="#">我的收藏</a>
+                    <a href="#">我的订阅</a>
+                    <a href="#">帮助反馈</a>
+                </div>
+            </div>
+        </div>
+        <div class="record" data-node="record">
+            <div class="name">
+                <em class="icon-29"></em><br/>
+                <span>观看记录</span>
+            </div>
+            <!--<div></div>-->
+            
+            <div class="record-card hide" data-node="recordWrap">
+                <em class="arrow"></em>
+                <div class="empty hide">暂时还没有观看记录哦～</div>
+                <div class="record-card-list">
+                    <h3>最近</h3>
+                    <ul>
+                        <li>
+                            <a class="title" href="#">视频文章标题</a>
+                            <span class="progress">剩余90%</span>
+                            <em title="删除" class="del icon-13"></em>
+                        </li>
+                        <li>
+                            <a class="title" href="#">视频文章标题也是很长很长很长很长很长很长很长的标题</a>
+                            <span class="progress">剩余90%</span>
+                            <em title="删除" class="del icon-13"></em>
+                        </li>
+                        <li>
+                            <a class="title" href="#">视频文章标题</a>
+                            <span class="progress">已看完</span>
+                            <em title="删除" class="del icon-13"></em>
+                        </li>
+                        <li>
+                            <a class="title" href="#">视频文章标题</a>
+                            <span class="progress">剩余90%</span>
+                            <em title="删除" class="del icon-13"></em>
+                        </li>
+                        <li>
+                            <a class="title" href="#">视频文章标题</a>
+                            <span class="progress">剩余90%</span>
+                            <em title="删除" class="del icon-13"></em>
+                        </li>
+                    </ul>
+                    <a class="more-record" href="#">查看更多</a>
+                </div>
+            </div>
+        </div>
+        <div class="record" data-node="record">
+            <a href="http://meimiao.gomeplus.com/" class="name" target="_blank">
+                <em class="icon-48"></em><br/>
+                <span>下载</span>
+            </a>
+        </div>
+        <div class="search clearfix" data-id="search-container">
+            <form action="javascript:;" data-id="search-form">
+                <em class="ico-search icon-30"></em>
+                <input class="input" type="text" data-id="search-input" placeholder="请输入您感兴趣的视频" autocomplete="off">
+                <button class="btn" data-id="search-button" type="button">搜索</button>
+            </form>
+        </div>
+    </div>
+</div>
+<!-- header -->

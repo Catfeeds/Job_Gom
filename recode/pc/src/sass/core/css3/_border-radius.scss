@@ -1,0 +1,15 @@
+// based on prefix() API
+// Arhtor: Mapk Jia Shilong
+
+@import "../utils/_prefix.scss";
+
+// ## Define border radius
+// -----------------------------------------------------
+@mixin border-radius($value:0,$type:m,$prefixs:webkit){
+	@if $type == m{
+		@include prefix(border-radius,rem($value),$prefixs);
+	}
+	@else if $type == pc{
+		@include prefix(border-radius,$value,$prefixs);
+	}
+}

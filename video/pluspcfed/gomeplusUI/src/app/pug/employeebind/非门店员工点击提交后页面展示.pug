@@ -1,0 +1,29 @@
+extends ../public/head.jade
+block title
+	title 非门店员工点击提交后页面展示
+block link-theme
+	link(rel='stylesheet' type="text/css" href="../../css/module/employeebind/employeebind.css")
+block content
+	//- js
+	include ../public/mobileJs.jade
+	.banner 国美 Plus 邀请你来赚大钱
+	.bind-infor
+		.header-module.header-module_gray
+			span 员工信息管理
+		ul.form-list.form-list_mb
+			li.list-item.list-item_color
+				em.icon.icon-person
+				.item-text 姚丽丽
+			li.list-item.list-item_color
+				em.icon.icon-id
+				.item-text 00345
+			li.list-item
+				em.icon.icon-first
+				.item-text 一级分部
+			li.list-item
+				em.icon.icon-second
+				.item-text  二级分部
+			li.list-item
+				em.icon.icon-part
+				.item-text  北京大中劲松店
+		a.button.button-primary(href="javascript:;") 修改资料

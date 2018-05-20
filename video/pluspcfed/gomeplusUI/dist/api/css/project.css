@@ -1,0 +1,30 @@
+.header{
+	background:#27ba9e;
+}
+.section p{
+	line-height:1.7;
+}
+.section p.gray{
+	color:#ccc;
+}
+.section p a{
+	color:#ff8a00;
+	text-decoration:underline;
+	padding:0 0.1rem;
+}
+.module .h1{
+	font-size:0.4rem;
+}
+.section .h2{
+	font-size:0.38rem;
+}
+/*nav*/
+.nav li a:hover,
+.nav li.active a,
+.nav li.active a:hover{
+	background:#11826c;
+}
+/*返回首页*/
+.icon-home{
+	right:0.4rem!important;
+}

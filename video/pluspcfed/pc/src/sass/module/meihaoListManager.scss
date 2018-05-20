@@ -1,0 +1,28 @@
+@charset "utf-8";
+@import '../../widget/config/_base.scss';
+@import '../../widget/header/header-meihao.scss';
+@import '../../widget/aside/meihao.scss';
+@import '../../widget/list/meihao-content.scss';
+#meihao-list-manager{
+	float:left;
+	width:908px;
+	padding:0 40px 30px 40px;
+	h2{
+		padding: 25px 0 28px 0;
+		height:22px;
+		line-height:22px;
+		font-size:18px;
+		color:#333;
+	}
+	.page{
+		.active{
+			color:#107eee;
+		}
+		a:hover{
+			color:#107eee;
+		}
+		.disabled:hover {
+      		color: #999;
+      	}
+	}
+}

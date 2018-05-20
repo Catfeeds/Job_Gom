@@ -1,0 +1,208 @@
+html {
+  font-family: "Helvetica Neue", Helvetica, STHeiTi, Arial, sans-serif;
+  -webkit-text-size-adjust: 100%;
+  font-size: 100px;
+}
+
+body {
+  margin: 0;
+  line-height: 1;
+  font-size: 14px;
+  color: #333333;
+  background-color: white;
+  height: 100%;
+  overflow-x: hidden;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, section, summary {
+  display: block;
+}
+
+a {
+  text-decoration: none;
+  -webkit-tap-highlight-color: transparent;
+  color: #0088cc;
+}
+
+a:active {
+  outline: 0;
+}
+
+img {
+  border: 0;
+  display: block;
+  vertical-align: middle;
+}
+
+html, button, input, select, textarea {
+  font-family: "Helvetica Neue", Helvetica, STHeiTi, Arial, sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6, p, figure, form, blockquote {
+  margin: 0;
+}
+
+ul, ol, li, dl, dd {
+  margin: 0;
+  padding: 0;
+}
+
+ul, ol {
+  list-style: none outside none;
+}
+
+h1, h2, h3 {
+  line-height: 2;
+  font-weight: normal;
+}
+
+input{
+  border: none;
+  outline: none;
+}
+
+html, body, div, article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, section, summary,
+h1, h2, h3, h4, h5, h6, p, ul, ol, li, dl, dd, dt, span, em, a, i, strong, button, input, select, textarea {
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+body{
+  background-color: #f1f1f1;
+}
+.business-name {
+  margin-top: .2rem;
+  height: 1.08rem;
+  font-size: .32rem;
+  padding-top: .4rem;
+  text-align: center;
+  background-color: #fff;
+  border-bottom: 1px solid #ddd; }
+
+/* store business license */
+/* check store business license */
+.check-license {
+  margin-top: .2rem;
+  padding: .4rem 0;
+  background-color: #fff; }
+  .check-license p {
+    font-size: .28rem;
+    color: #999;
+    text-align: center; }
+  .check-license .code {
+    overflow: hidden;
+    margin-top: .68rem; }
+    .check-license .code input {
+      float: left;
+      width: 3.36rem;
+      height: .8rem;
+      padding: .15rem 0;
+      font-size: .36rem;
+      color: #666;
+      margin-left: .66rem;
+      border-bottom: 1px solid #d8d8d8; }
+    .check-license .code img {
+      float: left;
+      width: 2.2rem;
+      height: .8rem;
+      margin-left: .22rem; }
+    .check-license .code a {
+      float: left;
+      color: #999;
+      font-size: .24rem;
+      line-height: .8rem;
+      margin-left: .24rem; }
+  .check-license .m-btn {
+    color: #fff;
+    font-size: .26rem;
+    line-height: inherit;
+    padding: .2rem .3rem;
+    overflow: hidden;
+    vertical-align: top;
+    text-align: center;
+    background-color: #ed5b5d;
+    border-radius: 1.1rem;
+    display: block;
+    margin: .85rem auto 0;
+    min-height: .88rem;
+    font-size: .32rem;
+    padding-top: .29rem;
+    padding-bottom: .25rem;
+    min-width: 3.6rem;
+    max-width: 3.6rem;
+    margin: .85rem auto 0;
+}
+.check-license .m-btn.disabled{
+  background-color: #d8d8d8;
+}
+
+/* check store business license */
+/* store information */
+.store {
+  font-size: .28rem;
+  padding: 0 .3rem;
+  margin-bottom: .1rem;
+  background-color: #fff; }
+
+.store-top {
+  margin-top: .2rem;
+  overflow: hidden;
+  padding: .3rem .3rem; }
+  .store-top .head-content {
+    width: 100%;
+    height: .96rem; }
+    .store-top .head-content .head-l {
+      float: left;
+      width: .96rem;
+      height: .96rem; }
+      .store-top .head-content .head-l img {
+        width: 100%; }
+    .store-top .head-content .head-c {
+      float: left;
+      margin-left: .2rem; }
+      .store-top .head-content .head-c h3 {
+        max-width: 5.5rem;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        font-size: .32rem;
+        font-weight: normal; }
+      .store-top .head-content .head-c .storelevel {
+        margin-top: .16rem; }
+      .store-top .head-content .head-c em {
+        margin-right: .13rem; }
+  .store-top h4 {
+    margin: .56rem 0 .2rem; }
+  .store-top p {
+    color: #999;
+    line-height: .42rem;
+    word-break: break-all; }
+
+.store-param .gray, .store-info .gray {
+  color: #999;
+  line-height: .4rem;
+  padding: .2rem 0; }
+
+.store-param p {
+  line-height: .5rem; }
+
+.store-info {
+  padding: 0; }
+  .store-info li {
+    padding: .2rem .3rem;
+    border-bottom: 1px solid #ddd; }
+    .store-info li:last-child {
+      border-bottom: none; 
+      line-height: .4rem;
+    }
+    .store-info li span {
+      text-align: left; }
+    .store-info li .red {
+      text-align: right;
+      color: #ED5B5D;
+      padding-right: .44rem; }
+    .store-info li .iconn-41 {
+      font-size: .2rem; }
+
+#shop_license{
+  display: none;
+}      

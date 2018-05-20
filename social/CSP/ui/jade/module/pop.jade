@@ -1,0 +1,202 @@
+doctype html
+html(lang="zh-CN")
+	include ../common/head.jade
+	link(type="text/css",rel="stylesheet",href="../../css/public/public.css")
+	body.opg
+		.gap
+			.pop-box
+				.ui-dialog-title 添加账户
+				.add-acount
+					.input
+						label 登录名
+						input(type="text" placeholder="输入用户gomeplus邮箱名").login-name
+					.input
+						label 昵称
+						input(type="text")
+					.input.clearfix
+						label 角色
+						.character
+							input(type="text" value="客服")
+							em.line
+							em.icon-down
+							ul
+								li 客服
+								li 客服经理
+				.ui-dialog-footer.clearfix
+					.ui-dialog-button
+						a(href="##").btn 取消
+						a(href="##").btn.btn-blue.mgl19 确定
+		.gap
+			.pop-box
+				.ui-dialog-title 编辑账户
+				.add-acount
+					h3.add-acount-title 伍聪-信息中心-UED部
+					.input
+						label 昵称
+						input(type="text")
+					.input.clearfix
+						label 角色
+						.character
+							input(type="text" value="客服")
+							em.line
+							em.icon-down
+							ul
+								li 客服
+								li 客服经理
+				.ui-dialog-footer.clearfix
+					.ui-dialog-button
+						a(href="##").btn 取消
+						a(href="##").btn.btn-blue.mgl19 确定
+		//常用语-提示
+		.gap
+			.pop-box
+				.ui-dialog-title 提示
+				.ui-dialog-body
+					p.prompt-txt 您更改了常用语设置，是否保存更改？
+				.ui-dialog-footer.clearfix
+					.ui-dialog-button
+						a(href="##").btn 不保存
+						a(href="##").btn.btn-blue.mgl19 保存
+		//常用语-提示
+		.gap
+			.pop-box
+				.ui-dialog-header
+					.ui-dialog-title 删除
+				.ui-dialog-body
+					p.prompt-txt 确认删除该分类？
+				.ui-dialog-footer.clearfix
+					.ui-dialog-button
+						a(href="##").btn 取消
+						a(href="##").btn.btn-blue.mgl19 确定
+		//IM-提示
+		.gap
+			.pop-box
+				.ui-dialog-header
+					.ui-dialog-title 提示
+				.ui-dialog-body
+					p.im-prompt-txt
+						| 当前还有
+						span 20
+						| 位用户正在咨询，
+						span 30
+						| 位用户等待咨询此操作会导致您离线，请确认后操作！
+				.ui-dialog-footer.clearfix
+					.ui-dialog-button
+						a(href="##").btn 确定退出
+						a(href="##").btn.btn-blue.mgl19 我要留下
+		//配置管理-你好文案
+		.gap
+			.pop-box
+				.ui-dialog-header
+					.ui-dialog-title 配置管理
+				.ui-dialog-body
+				.welcome-txt
+					.input.clearfix
+						label 配置名称：
+						p 你好文案
+					.input.clearfix
+						label 配置说明：
+						p 因客服接入咨询数达到上限导致客户需要等待时发送等待爱抚文案
+					.input
+						label 配置值：
+						textarea
+				.ui-dialog-footer.clearfix
+					.ui-dialog-button
+						a(href="##").btn 取消
+						a(href="##").btn.btn-blue.mgl19 保存
+		//配置管理-上下班时间
+		.gap
+			.pop-box
+				.ui-dialog-header
+					.ui-dialog-title 配置管理
+				.ui-dialog-body
+					.welcome-txt
+						.input.clearfix
+							label 配置名称：
+							p 上下班时间
+						.input.clearfix
+							label 配置说明：
+							p 设置在线客服上下班时间
+						.set-time-box
+							label 配置值：
+							.time-set.clearfix
+								input(type="text")
+								span :
+								input(type="text")
+								span 至
+								input(type="text")
+								span :
+								input(type="text")
+				.ui-dialog-footer.clearfix
+					.ui-dialog-button
+						a(href="##").btn 取消
+						a(href="##").btn.btn-blue.mgl19 保存
+		//配置管理-确认
+		.gap
+			.pop-box
+				.ui-dialog-header
+					.ui-dialog-title 配置管理
+				.ui-dialog-body
+					p.confirm-txt 确定放弃修改？
+				.ui-dialog-footer
+					.ui-dialog-button.confirm-btn
+						a(href="##").btn 取消
+						a(href="##").btn.btn-blue.mgl19 放弃
+		//配置管理-确认
+		.gap
+			.pop-box
+				.ui-dialog-header
+					.ui-dialog-title 配置管理
+				.ui-dialog-body
+					p.confirm-txt 修改内容保存后立即生效，请仔细核对后继续！
+				.ui-dialog-footer
+					.ui-dialog-button.confirm-btn
+						a(href="##").btn 取消
+						a(href="##").btn.btn-blue.mgl19 保存
+		//查看聊天记录
+		.gap
+			.pop-box.check-chat
+				.ui-dialog-header
+					.ui-dialog-title 导出聊天记录
+				.ui-dialog-body
+						.export-chat-records
+							.chat-date.clearfix
+								label 时间
+								.date-box
+									.all-records.clearfix
+										span.raido
+										label 全部聊天记录
+									.choose-date
+										span.raido.active
+										.date-nav.clearfix
+											a(href="javascript:;")
+												img(src="../../images/icon-date1.png")
+												span.date 16/1/18
+											em.line
+											a(href="javascript:;")
+												img(src="../../images/icon-date1.png")
+												span.date 16/5/18
+							.input
+								label 文件名
+								input(type="text")
+							.input.clearfix
+								label 文件位置
+								.file
+									em.icon-file
+										img(src="../../images/icon-file.png")
+									input(type="text")
+								a(href="##").btn.btn-blue.read-btn 浏览
+				.ui-dialog-footer.clearfix
+					.ui-dialog-button.pdr43
+						a(href="##").btn 取消
+						a(href="##").btn.btn-blue.mgl19 导出
+		//IM查看视频
+		.gap
+			.im-video-dialog
+				a(href="javascript:;").icon-close
+				video(width="321",height="468")
+					source(src="../../images/movie.ogg",type="video/ogg")
+					| 您的浏览器不支持 video 标签。
+				em.icon-stop
+				.progress
+					.progress-play(style="width:20%")

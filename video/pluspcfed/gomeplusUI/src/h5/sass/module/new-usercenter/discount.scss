@@ -1,0 +1,205 @@
+@charset "UTF-8";
+body{
+    padding:0;
+    margin: 0;
+    background-color: #eee;
+}
+.user-center{
+    .header{
+         .head-edit{
+            color:#666;
+         }
+    }
+    .nav-dis {
+        background-color: #fff;
+        .item{
+            line-height: .8rem;
+            color: #666;
+            font-size: .28rem;
+            padding: 0;
+            p{
+                display: inline-block;
+                padding:0 .1rem;
+            }
+            em{
+                font-style: normal;
+            }
+        }
+        .active{
+            color: #FF5C5C;
+            p{
+                border-bottom: 1px solid #FF5C5C;
+            }
+        }
+    }
+    .card-list{
+      &.no-usefull{
+        img{
+          -webkit-filter: grayscale(100%);
+          -moz-filter: grayscale(100%);
+          -ms-filter: grayscale(100%);
+          -o-filter: grayscale(100%);
+          filter: grayscale(100%);
+        }
+        .card-rmb{
+          color: #999;
+        }
+        .card-use{
+          color: #999;
+        }
+        .card-shop{
+          p{
+            color: #999;
+          }
+        }
+      }
+        li{
+            margin: .2rem .3rem;
+            position: relative;
+          overflow: hidden;
+          .angle{
+            width: 1.5rem;
+            color: #fff;
+            font-size: .2rem;
+            padding: .08rem 0 .06rem;
+            line-height: 1;
+            text-align: center;
+            background-color: #FF5C5C;
+            transform: rotate(45deg);
+            -webkit-transform: rotate(45deg);
+            position: absolute;
+            right: -.4rem;
+            top: .15rem;
+          }
+          &:last-child{
+            margin-bottom: 0;
+          }
+        }
+        .card-it{
+            background-color: #fff;
+            border-radius: .10rem;
+            padding:.27rem 0 .23rem;
+            display: -webkit-box;
+            display: -webkit-flex;
+            display: -ms-flexbox;
+            display: flex;
+        }
+        .card-cont{
+            width: 4.38rem;
+            border-right: 1px solid #ddd;
+        }
+        .card-money{
+            -webkit-box-flex:1;
+            -webkit-flex:1;
+                -ms-flex:1;
+                    flex:1;
+            text-align: center;
+        }
+        .timeout{
+            position: relative;
+            &:before{
+                content:'';
+                position: absolute;
+                top:-.35rem;
+                right: -.01rem;
+                width: 1.31rem;
+                height: 1.22rem;
+                background: url(../../images/usercenter/timeout.png) no-repeat;
+                background-size: cover;
+            }
+        }
+        .card-shop{
+            display: -webkit-box;
+            display: -webkit-flex;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-align:center;
+            -webkit-align-items:center;
+                -ms-flex-align:center;
+                    align-items:center;
+            img{
+                width: 1rem;
+                height: 1rem;
+                margin:0 .18rem;
+                border-radius: 50%;
+            }
+            p{
+                color: #333;
+                font-size: .28rem;
+                line-height: .4rem;
+                overflow : hidden;
+                text-overflow: ellipsis;
+                display:-webkit-box;
+                -webkit-line-clamp:2;
+                -webkit-box-orient: vertical;
+                word-break: break-all;
+            }
+        }
+        .card-time{
+                color: #999;
+                font-size: .24rem;
+                line-height: .33rem;
+                margin: .16rem 0 0 .18rem;
+             }
+             .card-rmb{
+                color: #FF5C5C;
+                font-size: .36rem;
+                line-height: .6rem;
+                margin-top: .24rem;
+                position: relative;
+                strong{
+                    font-size: .56rem;
+                }
+             }
+             .card-use{
+                color: #FF9E9E;
+                font-size: .24rem;
+                line-height: .33rem;
+             }
+    }
+  .m-prompt{
+    margin-top: 3rem;
+  }
+  .explain{
+    padding: .2rem;
+    color: #333;
+    font-size: .28rem;
+    background: #fff;
+    line-height: .5rem;
+  }
+
+
+  .dropload-down,.dropload-up{
+  position:relative;
+  height:0;
+  overflow:hidden;
+  -webkit-transform:translate3d(0,0,0);
+  transform:translate3d(0,0,0);
+  width:100%;}
+
+
+.dropload-load,.dropload-refresh,.dropload-update{
+position:absolute;
+  left:50%;
+  bottom:0;
+  width:100%;
+  height:50px;
+  line-height:50px;
+  text-align:center;
+  -webkit-transform:translate(-50%,0);
+  transform:translate(-50%,0);}
+
+
+.dropload-load .loading{
+display:inline-block;
+  height:15px;
+  width:15px;
+  border-radius:100%;
+  margin:6px;
+  border:2px solid #666;
+  border-bottom-color:transparent;
+  vertical-align:middle;}
+
+
+
+}

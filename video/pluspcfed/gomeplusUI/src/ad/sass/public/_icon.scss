@@ -1,0 +1,150 @@
+@charset "utf-8";
+
+// AMP configure
+@import "_configure.scss";
+
+// Define icon sheetstyle
+// ##------------------------------------------
+.icon{
+	font-size:16px;
+}
+.icon-account:before{
+	content:'\e911';
+}
+.icon-arrow:before{
+	content:'\e909';
+}
+.icon-arrow-down:before{
+	content:'\e909';
+}
+.icon-arrow-up:before{
+	content:'\e908';
+}
+.icon-manage:before{
+	content:'\e912';
+}
+.icon-letter{
+	position:relative;
+}
+.icon-letter:before{
+	content:'\e914';
+	// color:#b3babf;
+}
+.icon-letter:after{
+	display:none;
+	content:'';
+	position:absolute;
+	right:-3px;
+	top:-1px;
+	width:6px;
+	height:6px;
+	background:$bg-red;
+	@include prefix(border-radius,$border-radius-normal);
+}
+.icon-balance:before{
+	content:'\e913';
+}
+.icon-aptitude:before{
+	content:'\e90d';
+}
+.icon-verify:before{
+	content:'\e910';
+}
+.icon-agreement:before{
+	content:'\e90f';
+}
+.icon-advert:before{
+	content:'\e90b';
+}
+.icon-rebate:before{
+	content:'\e90a';
+}
+.icon-msg:before{
+	content:'\e915';
+}
+.icon-select:before{
+	content:'\e905';
+}
+.icon-selected:before{
+	color:$bg-red;
+	content:'\e904';
+}
+.icon-single:before{
+	content:'\e901';
+}
+.icon-singled:before{
+	color:$bg-red;
+	content:'\e900';
+}
+.icon-home:before{
+	content:'\e902';
+}
+.icon-prev:before{
+	content:'\e906';
+}
+.icon-next:before{
+	content:'\e907';
+}
+.icon-end:before{
+	content:'\e903';
+}
+.icon-generalize:before{
+	content:'\e90e';
+}
+.icon-close:before{
+	content:'\e919';
+}
+.icon-shut:before{
+	content:'\e91a';
+}
+.icon-right:before{
+	content:'\e917';
+}
+.icon-success:before{
+	content:'\e929';
+}
+.icon-help:before{
+	cursor:pointer;
+	content:'\e91e';
+	color:$bg-blue;
+	margin:0px 4px;
+}
+.icon-delete:before{
+	content:'\e91d';
+}
+.icon-calendar:before{
+	content:'\e91c';
+}
+.icon-arrow-right:before{
+	content:'\e907';
+}
+.icon-report:before{
+	content:'\e916';
+}
+.icon-manifest:before{
+	content:'\e918';
+}
+.icon-computer:before{
+	content:'\e91b';
+}
+.icon-wallet:before{
+	content:'\e928';
+}
+.icon-agent-merchant:before{
+	content:'\e924';
+}
+.icon-check-in-merchant:before{
+	content:'\e920';
+}
+.icon-unfold:before{
+	content:'\e926';
+}
+.icon-packup:before{
+	content:'\e922';
+}
+.icon-confirm:before{
+	content:'\e925';
+}
+.icon-warning:before{
+	content:'\e927';
+}

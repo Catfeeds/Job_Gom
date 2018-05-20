@@ -1,0 +1,124 @@
+doctype html
+html(lang="zh-CN", data-use-rem="750")
+	include ../../../m-widget/head/head.jade
+	link(type="text/css",rel="stylesheet",href="../../css/public/gomeplusUI.css")
+	link(type="text/css",rel="stylesheet",href="../../css/module/plaintext/plaintext.css")
+	
+	body.opg.plaintext
+		include ../../../m-widget/head/rem.jade
+		header.header
+			.h-left
+				a.h-back(href="javascript:;")
+					em.iconn-1
+			.h-cnt.flex-cell
+				h1.h-tit 店铺标题
+		// /header
+
+		.plaintext
+			h1.c-3 一、美店等级定义
+			p 美店店铺等级是以积分制的形式将美店的各项指标量化，从而衡量美店店主对店铺的运营能力、销售能力等运营状况的工具。高等级美店意味着美店运营良好，更受用户欢迎。另外店铺等级也是美店店主是否能够享受平台特权、奖励政策的重要评定标准。店铺等级的三个考核标准为美店的活跃度、关注度及销售量进行评定，具体如下：
+
+			h2.c-3 用户关注度：
+			p 1)	美店收藏数：个人美店被收藏总数每增加1次，记1积分，每天上限10分；
+			p 2)	美店点赞数：个人美店被点赞总数量每增加1次，记1积分，每天上限10分；
+			p 3)	美店流量：流量按美店每天的独立访客数计算，最高记20分，具体积分规则如下：
+			ul.flex-boxs
+				li.flex-box
+					div.flex-cell 美店流量（访客量）
+					div.flex-cell 获得积分
+				li.flex-box
+					div.flex-cell 5-10
+					div.flex-cell 2分
+				li.flex-box
+					div.flex-cell 11-25
+					div.flex-cell 4分
+				li.flex-box
+					div.flex-cell 26-50
+					div.flex-cell 6分
+				li.flex-box
+					div.flex-cell 51-100
+					div.flex-cell 8分
+				li.flex-box
+					div.flex-cell 101-200
+					div.flex-cell 10分
+				li.flex-box
+					div.flex-cell 201-500
+					div.flex-cell 12分
+				li.flex-box
+					div.flex-cell 501-1000
+					div.flex-cell 14分
+				li.flex-box
+					div.flex-cell 1001-2000
+					div.flex-cell 16分
+				li.flex-box
+					div.flex-cell 2001-5000
+					div.flex-cell 18分
+				li.flex-box
+					div.flex-cell 5001及以上
+					div.flex-cell 20分
+
+			h2.c-3 美店店主活跃度：
+			p 1)	美店管理：美店店主每天登陆一次，记10积分；
+			p 2)	美店运营：美店每上架一款新产品，记1积分，每天上限10分
+			p 3)	店主分享：美店主每日分享自己的个人美店或美店产品页到其它社交平台。每次分享记2积分，每日上限20分。
+
+			h2.c-3 美店销售指标：
+			p 有效销售产品件数：美店每售出一件商品（已完结未退货订单）记2积分，每天上限30分；
+
+			h1.c-3 二、美店等级及积分对照表
+			p 根据上述积分规则，美店积分=关注度积分+活跃度积分+销售量积分，上述积分按照一定比例累积到美店等级成长值中，得出如下升级所需积分及预估升级时间表：
+			ul.flex-boxs.m-vips
+				li.flex-box
+					div.flex-cell 等级
+					div.flex-cell2 积分
+					div.flex-cell 等级徽标
+				li.flex-box
+					div.flex-cell 1
+					div.flex-cell2 ——
+					div.flex-cell
+						em.m-vip1
+				li.flex-box
+					div.flex-cell 2
+					div.flex-cell2 50-199
+					div.flex-cell
+						em.m-vip2
+				li.flex-box
+					div.flex-cell 3
+					div.flex-cell2 200-899
+					div.flex-cell
+						em.m-vip3
+				li.flex-box
+					div.flex-cell 4
+					div.flex-cell2 900-1799
+					div.flex-cell
+						em.m-vip4
+				li.flex-box
+					div.flex-cell 5
+					div.flex-cell2 1800-3599
+					div.flex-cell
+						em.m-vip5
+				li.flex-box
+					div.flex-cell 6
+					div.flex-cell2 3600-5399
+					div.flex-cell
+						em.m-vip6
+				li.flex-box
+					div.flex-cell 7
+					div.flex-cell2 5400-7199
+					div.flex-cell
+						em.m-vip7
+				li.flex-box
+					div.flex-cell 8
+					div.flex-cell2 7200-8999
+					div.flex-cell
+						em.m-vip8
+				li.flex-box
+					div.flex-cell 9
+					div.flex-cell2 9000-10799
+					div.flex-cell
+						em.m-vip9
+				li.flex-box
+					div.flex-cell 10
+					div.flex-cell2 10800及以上
+					div.flex-cell
+						em.m-vip10

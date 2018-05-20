@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<style>
+.webuploader-container {
+	position: relative;
+}
+.webuploader-element-invisible {
+	position: absolute !important;
+	clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+    clip: rect(1px,1px,1px,1px);
+}
+.webuploader-pick {
+	position: relative;
+	display: inline-block;
+	cursor: pointer;
+	background: #00b7ee;
+	padding: 10px 15px;
+	color: #fff;
+	text-align: center;
+	border-radius: 3px;
+	overflow: hidden;
+}
+.webuploader-pick-hover {
+	background: #00a2d4;
+}
+
+.webuploader-pick-disable {
+	opacity: 0.6;
+	pointer-events:none;
+}
+
+
+	</style>
+</head>
+<body>
+
+		<!-- <div id="Uploader" class="wu-example">
+		    用来存放文件信息
+		    <div class="queuedBox">
+		    	
+		    </div>
+		    <div class="btns">
+		        <div id="filePicker">选择文件</div>
+		        <button class="btn uploadBtn">开始上传</button>
+		    </div>
+		</div> -->
+		<!--  -->
+		<div data-uploader='Uploader'>
+			<div class="showbox">
+				<div data-placeHolder = 'placeHolder' data-defaultAddFile = 'picker'>选择文件</div>
+				<ul class="list"></ul>
+			</div>
+			<div class="statusbox" data-statusBar = 'statusBar'>
+				<div class="info f_l" data-info = 'statusinfo'></div>
+				<div class="statusbox " data-progress = 'progress'>
+					
+					<div class="pressline " data-line = 'line'>
+						<span></span>
+					</div>
+				</div>
+				<div class="btnbox f_r">
+					<span class="btn "  data-AddFile = 'picker'>继续上传</span>
+					<button class="btn uploadBtn" data-uploadBtn = 'uploadBtn'>开始上传</button>
+				</div>
+			</div>
+		</div>
+		<style type="text/css">
+			*{list-style: none;padding:0;margin:0;font-size: 12px;}
+			#Uploader{width: 900px; margin: 30px auto;}
+			.showbox{border:2px #ccc solid;text-align: center;min-height: 300px;position: relative;}
+			.showbox div{position: absolute;top:50%;left: 50%;-webkit-transform: translate(-50%,-50%);width: 130px;}
+			.statusbox{line-height: 50px;color:#666;height: 50px;padding:0  20px;}
+			.f_l{float: left;}
+			.f_r{float: right;}
+			.statusbox button{background:#00b7ee;line-height: 30px;height: 30px;border-radius: 3px;border:0;color:#fff;padding:0 20px;}
+			.del{background:url(http://fex.baidu.com/webuploader/images/icons.png) -48px -24px no-repeat;width: 24px;height: 24px;display: block;margin:5px auto;}
+			.todobox{position: absolute;width: 100%;height: 34px;background:rgba(0,0,0,.3);left: 0;top:0;z-index: 100;display: none;}
+			.list li:hover .todobox{display: block;}
+			.list li{float: left;position: relative;margin:10px;width: 120px;}
+			.pressline{width: 300px;height: 24px;float: left;}
+			.pressline span{height: 100%;border-radius: 12px;background:#00b7ee;width:0;display: block;}
+		</style>
+		
+    <script src="http://js.dev.meixincdn.com/m/pc/src/js/conf/vendor.js"></script>
+    <script src="http://js.dev.meixincdn.com/m/pc/src/js/conf/upload.js" ></script>
+</body>
+</html>

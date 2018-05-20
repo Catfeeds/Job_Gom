@@ -1,0 +1,196 @@
+@charset "utf-8";
+@import '../../widget/header/header-meihao.scss';
+.opg{
+    background: #e7e7e7;
+}
+.failure{
+    width: 1200px;
+    padding:20px 0 152px;
+    margin:0 auto;
+    background:#fff;
+    h3{
+        font-weight: none;
+        width:486px;
+        margin:0 auto;
+        height:98px;
+        line-height:98px;
+        font-size: 18px;
+        color:#f96;
+        text-align: center;
+        border-bottom:1px solid #ddd;
+    }
+    .failure-info{
+        width:506px;
+        margin:0 auto;
+        padding-top: 40px;
+        font-size: 14px;
+        line-height: 18px;
+        .info{
+            div{
+                float:left;
+            }
+            p{
+                font-family: 'Microsoft YaHei';
+                width:88px;
+                text-align: right;
+                padding-right: 10px;
+                color:#333;
+                float:left;
+            }
+            .info-intro{
+
+                width:368px;
+            }
+            .head-img{
+                width:78px;
+                height:78px;
+                border:1px solid #c9c9cb;
+                img{
+                    width:78px;
+                    height:78px;
+                }
+            }
+            .info-license{
+                width:80px;
+                height:80px;
+                border:1px solid  #c9c9cb;
+                img{
+                    width:100%;
+                    height:100%;
+                }
+            }
+        }
+        .info-left{
+            float:left;
+            width:88px;
+            text-align: right;
+            width:88px;
+            padding-right: 10px;
+            line-height: 32px;
+        }
+        .info-right{
+            width:314px;
+        }
+        .right-found{
+            width:292px;
+            border:1px solid  #ddd;
+            height:30px;
+            padding: 0 10px;
+        }
+        .right-term {
+            color: #a5a5a5;
+            height: 34px;
+            line-height: 34px;
+            padding-bottom: 10px;
+        }
+        .right-error{
+            color:#ed2835;
+        }
+        .right-lable{
+            border:1px solid  #ddd;
+            width:150px;
+            height:30px;
+            padding: 0;
+            position: relative;
+            .lable-text{
+                 position: relative;
+                 width:130px;
+                 padding: 0 10px;
+                 height:30px;
+                 line-height: 30px;
+                 span{
+                    position:absolute;
+                    left:120px;
+                    top:0;
+                    width:30px;
+                    height:100%;
+                    background:url("../../images/meihao/lableBtn.jpg")no-repeat 50% 50%;
+                 }
+
+                .lable-btn{
+                    background:url("../../images/meihao/lableBtnH.jpg")no-repeat 50% 50%;
+                }
+            }
+
+        }
+        .lable-list{
+            overflow: scroll;
+            display:none;
+            position:absolute;
+            z-index: 9;
+            width:150px;
+            max-height: 150px;
+            padding: 6px 0 10px;
+            background:#fff;
+            border:1px solid  #ddd;
+            border-top:none;
+            left:-1px;
+            top:31px;
+            li{
+                height:22px;
+                line-height: 22px;
+                a{
+                    display: block;
+                    width:130px;
+                    padding:0 10px;
+                    height:100%;
+                    &:hover{
+                        background:#f3f3f3;
+                    }
+                }
+            }
+        }
+    }
+    .confirm{
+        width:110px;
+        height:30px;
+        line-height: 30px;
+        margin: 0 auto;
+        text-align: center;
+        a{
+            display:block;
+            width:100%;
+            height:100%;
+            border-radius: 2px;
+            background:#ddd;
+            color:#a5a5a5;
+        }
+        .confirm-btn{
+            color:#fff;
+            background:#107eee;
+            &:hover{
+                background:#046ebf;
+            }
+        }
+    }
+    .pd28{
+        padding-bottom: 28px;
+    }
+    .mr10{
+        margin-right: 10px;
+    }
+}
+
+.right-lable{
+    position: relative;
+    .lable-text{
+         position: relative;
+         width:130px;
+         padding: 0 10px;
+         height:30px;
+         line-height: 30px;
+         span{
+            position:absolute;
+            left:120px;
+            top:0;
+            width:30px;
+            height:100%;
+            background:url("../../images/meihao/lableBtn.jpg")no-repeat 50% 50%;
+         }
+
+        .lable-btn{
+            background:url("../../images/meihao/lableBtnH.jpg")no-repeat 50% 50%;
+        }
+    }
+
+}

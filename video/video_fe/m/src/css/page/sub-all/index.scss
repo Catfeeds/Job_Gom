@@ -1,0 +1,33 @@
+/* subscription */
+@import "../../components/_app.scss"; // 工具函数
+@import "../../base/public.scss"; // 公共样式
+@import "../../components/sub-list.scss"; //
+@import "../../components/topTitle.scss";
+@import "../../components/scroll-load.scss"; // 上拉加载更多
+@import "../index/index.scss";
+.fl{
+	float:left;
+}
+.fr{
+	float:right;
+}
+
+.subAll{
+	margin-top:rem(20);
+}
+//登陆
+.loginBtn{
+    width:100%;
+    padding-top:rem(50);
+    padding-bottom:rem(40);
+    div{
+        margin: rem(0) auto;
+        height:rem(60);
+        line-height: rem(60);
+        font-size :rem(30);
+        width: rem(200);
+        text-align:center;
+        border-radius :rem(100);
+        background:#f6f6f6;
+    }
+}

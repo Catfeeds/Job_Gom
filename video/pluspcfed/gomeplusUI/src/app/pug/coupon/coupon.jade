@@ -1,0 +1,153 @@
+doctype html
+html(lang='zh-CN', data-use-rem='750')
+    head
+        meta(charset='UTF-8')
+        meta(name='description', content='')
+        meta(name='keyword', content='')
+        meta(name='viewport', content='width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no')
+        meta(name='format-detection', content='telephone=no')
+        meta(name='format-detection', content='email=no')
+        title 我的优惠券
+        link(rel='stylesheet', type='text/css', href='../../css/coupon/coupon.css')
+    body.opg
+        script(type='text/javascript').
+            (function(win){var doc=win.document,html=doc.documentElement,option=html.getAttribute("data-use-rem");if(option===null){return}var baseWidth=parseInt(option).toString()==="NaN"?640:parseInt(option);var grids=baseWidth/100;var clientWidth=html.clientWidth||320;html.style.fontSize=clientWidth/grids+"px";var testDom=document.createElement("div");var testDomWidth=0;var adjustRatio=0;testDom.style.cssText="height:0;width:1rem;";doc.body.appendChild(testDom);var calcTestDom=function(){testDomWidth=testDom.offsetWidth;if(testDomWidth!==Math.round(clientWidth/grids)){adjustRatio=clientWidth/grids/testDomWidth;var reCalcRem=clientWidth*adjustRatio/grids;html.style.fontSize=reCalcRem+"px"}else{doc.body.removeChild(testDom)}};setTimeout(calcTestDom,20);var reCalc=function(){var newCW=html.clientWidth;if(newCW===clientWidth){return}clientWidth=newCW;html.style.fontSize=newCW*(adjustRatio?adjustRatio:1)/grids+"px"};if(!doc.addEventListener){return}var resizeEvt="orientationchange" in win?"orientationchange":"resize";win.addEventListener(resizeEvt,reCalc,false);doc.addEventListener("DOMContentLoaded",reCalc,false)})(window);
+        nav.nav-tab
+            ul.tab-list
+                li.list-item.active(coupon-type='1')
+                    p.item-text
+                        | 未使用
+                        span (3)
+                li.list-item(coupon-type='2')
+                    p.item-text
+                        | 已过期
+                        span (13)
+                li.list-item(coupon-type='3')
+                    p.item-text
+                        | 已使用
+                        span (3)
+        section.card-tab
+            .no-conpon(style='display:block;')
+                .no-icon
+                p.con-para 亲爱的小伙伴，您还没有优惠券，赶紧去领券中心看看吧！
+                a.btn-go(href='javascript:;') 去看看
+            ul.data-list.cur.now
+                li.data-cont
+                    i.ico-soon
+                    .data-item
+                        section.item-intro
+                            figure.company-text
+                                img(src='../../images/coupon/logo.png', alt='')
+                                figcaption.text-header
+                                    span.limit 限品类
+                                    | MOMO官方旗舰店
+                            p.intro-time
+                                | 使用期限：
+                                span 2016.08.09-2016.12.12
+                        aside.item-aside
+                            p.aside-amount
+                                span ￥
+                                em 200
+                            p.aside-information
+                                | 订单满
+                                span 250000
+                                | 使用
+                    .data-more
+                        a.down(href='javascript:;')
+                        .data-tip
+                            span.tip-h 详细说明
+                            p.tip-para 仅限干果，水果，谷物，饮料，干果，水果，谷物，饮料干果，水果，谷物，饮料等制定商品使用
+                li.data-cont
+                    .data-item
+                        section.item-intro
+                            figure.company-text
+                                img(src='../../images/coupon/logo.png', alt='')
+                                figcaption.text-header
+                                    span.limit 限品类
+                                    | MOMO官方旗舰店
+                            p.intro-time
+                                | 使用期限：
+                                span 2016.08.09-2016.12.12
+                        aside.item-aside
+                            p.aside-amount
+                                span ￥
+                                em 200
+                            p.aside-information
+                                | 订单满
+                                span 250000
+                                | 使用
+                    .data-more
+                        a.down(href='javascript:;')
+                        .data-tip
+                            span.tip-h 详细说明
+                            p.tip-para 仅限干果，水果，谷物，饮料，干果，水果，谷物，饮料干果，水果，谷物，饮料等制定商品使用
+                li.data-cont
+                    i.ico-soon
+                    .data-item
+                        section.item-intro
+                            figure.company-text
+                                img(src='../../images/coupon/logo.png', alt='')
+                                figcaption.text-header MOMO官方旗舰店
+                            p.intro-time
+                                | 使用期限：
+                                span 2016.08.09-2016.12.12
+                        aside.item-aside
+                            p.aside-amount
+                                span ￥
+                                em 200
+                            p.aside-information
+                                | 订单满
+                                span 250000
+                                | 使用
+            ul.data-list.past
+                li.data-cont
+                    .data-item.used-item
+                        section.item-intro
+                            figure.company-text
+                                img(src='../../images/coupon/logo.png', alt='')
+                                figcaption.text-header
+                                    span.limit 限品类
+                                    | MOMO官方旗舰店
+                            p.intro-time
+                                | 使用期限：
+                                span 2016.08.09-2016.12.12
+                        aside.item-aside
+                            p.aside-amount
+                                span ￥
+                                em 200
+                            p.aside-information
+                                | 订单满
+                                span 250000
+                                | 使用
+                    .data-more
+                        a.down(href='javascript:;')
+                        .data-tip
+                            span.tip-h 详细说明
+                            p.tip-para 仅限干果，水果，谷物，饮料，干果，水果，谷物，饮料干果，水果，谷物，饮料等制定商品使用
+            ul.data-list.past
+                li.data-cont
+                    .data-item
+                        section.item-intro
+                            figure.company-text
+                                img(src='../../images/coupon/logo.png', alt='')
+                                figcaption.text-header
+                                    span.limit 限品类
+                                    | MOMO官方旗舰店
+                            p.intro-time
+                                | 使用期限：
+                                span 2016.08.09-2016.12.12
+                        aside.item-aside
+                            p.aside-amount
+                                span ￥
+                                em 200
+                            p.aside-information
+                                | 订单满
+                                span 250000
+                                | 使用
+                    .data-more
+                        a.down(href='javascript:;')
+                        .data-tip
+                            span.tip-h 详细说明
+                            p.tip-para 仅限干果，水果，谷物，饮料，干果，水果，谷物，饮料干果，水果，谷物，饮料等制定商品使用
+        script(src='http://apps.bdimg.com/libs/zepto/1.1.4/zepto.min.js')
+        script(src='../js/conf/couponnew/coupon.js')

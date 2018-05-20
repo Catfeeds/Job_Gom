@@ -1,0 +1,31 @@
+@charset "UTF-8";
+@import "../../../m-widget/reset/reset.scss"; // 
+//========== _configure.scss ==========//
+@import "../../../sasscore/_configure.scss";
+
+@import"new-state/app-download.scss";// App官方下载页
+@import "new-state/download-christmas.scss"; // app下载页圣诞版
+
+
+//==========广播 广播 广播==========//
+// 页面中全部调用本尊
+// 本尊会@import 其他页面样式
+// 谁在本尊中编写样式，本尊是要揍人的哦
+
+// @import 的sass要和pug文件对应，并加好备注是什么页面，顺便留下您的大名，感谢~
+//==========广播结束==========//
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,60 @@
+/* my-subscribe */
+@import "../../base/public.scss";
+@import "../../widgets/user/home-banner.scss";
+@import "../../widgets/user/home-nav.scss";
+@import "../../widgets/list-card.scss";
+@import "../../components/indicator.scss";
+@import "../../components/uc-nodata.scss";
+@import "../../components/click-load.scss";
+.user-home{
+	.content{
+		margin-top: 40px;
+    	margin-bottom: 50px;
+    	.main{
+    		width: 895px;
+    		margin-left: 40px;
+            .list-card li{
+                margin-bottom: 24px;
+            }
+            .indicator{
+                margin-top: 80px;
+            }
+    		.subscriber{
+    			.user{
+    				.avatar{
+    					margin-right: 20px;
+    					img{
+    						width: 60px;
+    						height: 60px;
+    						border-radius: 50%;
+    					}
+    				}
+    				.name{
+    					font-size: 16px;
+    					color: #333;
+    					margin-top: 8px;
+                        a:hover{
+                            color: #ec392a;
+                        }
+    				}
+    				.desc{
+    					font-size: 14px;
+    					color: #999;
+    					margin-top: 5px;
+    				}
+    			}
+    			.more{
+    				color: #999;
+    				font-size: 12px;
+    				margin-top: 37px;
+    			}
+    		}
+    		.list{
+    			margin-top: 20px;
+    		}
+            .no-data.sub{
+                background: url(../../../imgs/public/no-data-sub.png) 50% 50% no-repeat;
+            }
+    	}
+	}
+}

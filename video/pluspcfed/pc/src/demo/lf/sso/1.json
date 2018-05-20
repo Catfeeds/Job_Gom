@@ -1,0 +1,12 @@
+{
+    "success": false,
+    "code": 200,
+    "message": "报错啦",
+    "data": {
+		"user":{
+		"isMobileActivated":true
+		},
+		"isNeedReset":false
+	}
+	
+}

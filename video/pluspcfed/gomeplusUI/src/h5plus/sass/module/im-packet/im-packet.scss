@@ -1,0 +1,37 @@
+@charset "UTF-8";
+// @ Css name：IM H5 Instruction
+// @ Author：majd
+// @ Date：2017-06-05 17:32
+// @ Last Modified by：majd
+// @ Last Modified time：2017-06-05 17:32
+
+// Configure
+// ## include scsscore API
+// @import "../../../../sasscore/_configure.scss";
+
+// IM instruction
+// .im-items{
+// 	background-color:#fff;
+// 	li{
+// 		position:relative;
+// 		@include line(bottom,#ddd);
+// 		&:after{
+// 			@include prefix(transform,scaleY(0.5));
+// 		}
+// 		a{
+// 			position:relative;
+// 			display:block;
+// 			padding:rem(20 60 20 30);
+// 			font-size:rem(30);
+// 			line-height:rem(36);
+// 		}
+// 		em[class^="iconn"]{
+// 			position:absolute;
+// 			right:rem(30);
+// 			top:50%;
+// 			margin-top:rem(-15);
+// 			font-size:rem(28);
+// 			color:#ccc;
+// 		}
+// 	}
+// }

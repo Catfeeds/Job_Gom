@@ -1,0 +1,28 @@
+//- extends layout.jade
+extends ../../../widget-platform/pug/layout/layout-m.jade
+
+//- index
+block content
+	.platform-tipsinfo
+		h5 说明
+		p m-article 框架
+		p 具体查看结构，谢谢~
+		p.maty 有问题沟通-maty
+		h5 知识点
+		p ①标题单行多行对齐
+	//end
+
+	//- article-1 
+	div.platform-content
+		h3.platform-header 文章内容页
+		//- div.platform-intro
+		//- 	p 积极维护中...
+		div.platform-example-auto#article-1
+			include ../../../../m-widget/article/article-1.jade
+		pre.platform-pre.hide
+			code.platform-code#article-1_code
+			span.platform-jade pug
+			span.platform-jade.platform-html.actived html
+	script(type='text/javascript').
+		HtmlFormat.init(['article-1'],false,'_code','html','span.platform-jade');
+		$(".platform-article").parent('li').addClass("actived");

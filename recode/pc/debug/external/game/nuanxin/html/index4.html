@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" >
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <script src="../js/vue.js"></script>
+  <script src="../js/hammer.js"></script>
+</head>
+<body>
+  <div id="app" :style="[bodyreset]">
+    <h2>
+      {{canvasDeltaX}}
+      {{canvasDeltaY}}
+    </h2>
+    <input type="file" @change="changeImgFile">
+    <div :style="[datatest]" @touchstart="tapTheWrap">
+      <img src="" style="background:red; width: 100px; height: 100px; margin: 0 auto; display: block;"/>
+    </div>
+    <img id="review" src="" />
+  </div>
+</body>
+<script>
+    new Vue({
+      el: '#app',
+      data: {
+        imgWidth: 600,
+        maxSize: 1024 * 1024, // 1MB
+        bodyreset: {
+          width: '100vw',
+          overflow: 'hidden'
+        },
+        datatest: {
+          opacity: 0.4,
+          'z-index': 1,
+          position: 'relative',
+          background: 'green',
+          height: (document.documentElement.scrollHeight || document.documentElement.clientHeight) + 'px'
+        },
+        datamove: {
+          position: 'absolute',
+
+        },
+        canvas: document.createElement("canvas"),
+        canvasDeltaX: 0,
+        canvasDeltaY: 0,
+      },
+      methods: {
+        tapTheWrap: function(e) {
+          var _this = this;
+          var mc = new Hammer(e.target);
+          mc.get('pan').set({ direction: Hammer.DIRECTION_ALL });
+          mc.get('pinch').set({ enable: true });
+          mc.on('panleft panright panup pandown tap press', function(e) {
+            // console.log(e)
+            _this.canvasDeltaX = e.deltaX + 'px';
+            _this.canvasDeltaY = e.deltaY + 'px';
+            _this.canvas.style.left = _this.canvasDeltaX;
+            _this.canvas.style.top = _this.canvasDeltaY;
+          });
+          mc.on('pinch', function() {
+            console.log(123123)
+          })
+          mc.on("pinchmove pinchstart pinchin pinchout", function(e) {
+              var transform = {};
+              if(e.type == "pinchstart"){
+                  var scaleIndex = transform.scale || 1;
+              }
+              transform.scale = scaleIndex * e.scale;
+              mc.style.transform = "scale(" + (scaleIndex * e.scale)+ ")";
+          });
+        },
+        changeImgFile: function(e) {
+          this.captureComplete(e.target);
+        },
+        captureComplete: function(el) {
+          var _this = this;
+      		var files = Array.prototype.slice.call(el.files, 0);
+          if(files.length == 1){
+            var file = files[0];
+            if (!/^image/i.test(file.type)) {
+        				// _this.elements.$upIcon.val('');
+        				// files.pop();
+        				// array.pop();
+        				// _this.simulateAlert("请选择图片文件");
+        				alert("请选择图片文件");
+        				return false;
+        			}
+
+        			// this.showSharePage();
+        			// 预览图片功能
+        			var reader = new FileReader();
+        			reader.readAsDataURL(file);
+        			reader.onabort = function(file) {
+        				_this.showFail();
+        			}
+        			reader.onerror = function(file) {
+        				_this.showFail();
+        			}
+        			reader.onload = function(ev) {
+        				if (file.type == "image/gif") {
+        					if (this.result.length < _this.maxSize) {
+        						// _this.compressImage(this.result, file.type);
+        						alert('gif');
+        					} else {
+        						// _this.elements.$upIcon.val('');
+        						// files.pop();
+        						// array.pop();
+        						alert("上传图片请小于1MB");
+        					}
+        				} else {
+        					_this.compressImage(this.result, file.type);
+        					console.log('success')
+        				}
+        			}
+
+        			return true;
+        			// 第二种上传的方案
+        			// var newimgdata = this.createObjectURL(file);
+        			// this.compressImage(newimgdata);
+        		}
+          },
+          compressImage: function(imgSrc, imgType) {
+            var _this = this;
+            var context = this.canvas.getContext("2d");
+            var image = new Image();
+            image.src = imgSrc;
+        		image.onload = function() {
+              // if (imgType != "image/gif" && /^image/i.test(imgType)) {
+                var width = image.width;
+        				var height = image.height;
+                var ratio = width / height;
+                // console.log(width, height)
+                _this.canvas.width = _this.imgWidth;
+                _this.canvas.height = _this.imgWidth / ratio;
+                _this.canvas.style = 'z-index: 0;position: absolute; top: 98px;';
+                context.drawImage(image, 0, 0, width, height, 0, 0, _this.imgWidth, _this.imgWidth / ratio);
+
+                var imageBase64 = _this.canvas.toDataURL("image/jpeg");
+                _this.pancanvasfn();
+                document.getElementById('app').appendChild(_this.canvas);
+
+                _this.pushImageData(imageBase64);
+        			// } else if (imgType == "image/gif" && /^image/i.test(imgType)) {
+        			// 	var imageBase64 = imgSrc;
+        			// 	_this.pushImageData(imageBase64);
+        			// } else {
+        			// 	return false;
+        			// }
+
+            }
+          },
+          pancanvasfn() {
+          },
+          pushImageData(imageBase64) {
+        		var _this = this;
+            // console.log(imageBase64)
+            // document.getElementById('review').setAttribute('src', imageBase64);
+
+          }
+        }
+    })
+</script>
+</html>

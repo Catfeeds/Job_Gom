@@ -1,0 +1,13 @@
+/* error */
+@import "../../components/_app.scss"; // 工具函数
+@import "../../base/public.scss";
+
+.error{
+    margin-top: rem(160);
+    text-align: center;
+    font-size: rem(32);
+    color: #808080;
+    padding-top: rem(270);
+    background: url(../../../imgs/public/error.jpg) no-repeat center top;
+    background-size: rem(230) rem(230);
+}

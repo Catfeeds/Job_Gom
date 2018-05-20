@@ -1,0 +1,21 @@
+//- extends layout.jade
+extends ../public/login_layout.jade
+
+block title
+	title 提交成功
+//- block link-theme
+//- 	link(rel='stylesheet' type="text/css" href="../../css/module/open_account.css")
+
+//- account
+block content
+	style.
+		body{
+			background-image:none;
+		}
+	div.open_account
+		div.account-icon
+			em.icon.icon-confirm
+			h1 申请资料已成功提交!
+			h4 信息进入审核序列，请您耐心等待。结果将以邮件形式通知!
+	include ../public/footer.jade
+

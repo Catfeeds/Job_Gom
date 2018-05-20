@@ -1,0 +1,48 @@
+doctype html
+html(lang="zh-CN",data-use-rem="750")
+	include ../../../m-widget/head/head.jade
+	link(type="text/css",rel="stylesheet",href="../../css/public/public-wap.css")
+	link(type="text/css",rel="stylesheet",href="../../css/module/shop.css")
+	
+	body.opg
+		include ../../../m-widget/head/rem.jade
+
+		.shop-goodsort
+			
+			header.header
+				span
+					a.head-back(href="javascript:;")
+						em.iconn-1
+				h1.head-title 商品分类
+				span
+					a.head-icn(href="javascript:;")
+						em.iconn-4
+			// /header
+
+			.m-navmore(style="height: 1.1rem;")
+				ul
+					li
+						a(href="##")
+							em.iconn-44
+							p 首页
+					li
+						a(href="##")
+							em.iconn-15
+							p 分类
+					li
+						a(href="##")
+							em.iconn-32
+							p 购物车
+					li
+						a(href="##")
+							em.iconn-90
+							p 我的
+			ul.sort
+				li
+					a(href="##") 未分类
+				li
+					a(href="##") 袜子
+				li
+					a(href="##") 裤子
+				li
+					a(href="##") 裙子

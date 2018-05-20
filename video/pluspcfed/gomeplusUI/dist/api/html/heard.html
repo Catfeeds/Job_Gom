@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="zh-CN" data-use-rem="750">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="format-detection" content="email=no">
+    <meta http-equiv="expires" content="0">
+    <link type="text/css" rel="stylesheet" href="../css/public.css">
+    <style>
+        .flex{display: flex;}
+        header{background: #fff;margin: 0;padding: 0 .24rem;}
+        header p{height: .88rem; margin-right: .24rem;color: #666;font-size: .28rem;line-height: .88rem;}
+        header p img{width: .44rem;height: .44rem;margin-top: .22rem;}
+        .flex p:nth-child(2){flex:1;margin-right: .24rem;}
+        header p:last-child{margin-right: 0;}
+        .m-h-choose{padding: 0 .4rem;}
+        .m-h-choose span{flex: 1;display: block;height: .88rem;text-align: center;line-height: .88rem;font-size: .32rem;color: #333;}
+        .m-h-choose span.active{color: #ff5c5c;position: relative;}
+        .m-h-choose span.active:before{content: "";border-bottom: 1px solid #ff5c5c;position: absolute;left: 50%;right: 0;bottom: 0;width: 60%;margin-left: -30%;}
+        .m-h-font{font-size: .32rem;}
+
+        /*二类*/
+        .m-h-tab{padding: 0 .4rem;text-align: center;}
+        .m-h-tab span{flex:1;color: #333;margin-top: .17rem;line-height: .54rem;height: 0.54rem;border: .02rem solid #333;}
+        .m-h-tab span:first-child{border-radius:.06rem 0 0 .06rem;}
+        .m-h-tab span:last-child{border-radius:0 .06rem .06rem 0;}
+        .m-h-tab span.tab-active{background: #333;color: #fff;font-size: .28rem;}
+
+        /*三类*/
+        .m-h-search{flex:1;background: #f6f6f6;border-radius: .5rem;height: .6rem;margin-top: .14rem;position: relative;}
+        .m-h-search input{padding-left: .24rem;font-size: .24rem;}
+        .m-search-btn{position:absolute;display: block;width: .44rem;height: .44rem;margin-top: .08rem;right:.2rem;}
+        .m-search-lbtn{left: .2rem;}
+        .m-search-btn:before{content:"";width: .44rem;height: .44rem;background:url("../images/hot-icon.png") no-repeat;background-size: .44rem .44rem;display: block;}
+        .m-h-select{display:inline-block;color: #666;font-size: .28rem;font-style: normal;padding-left: .24rem;line-height: .6rem;position: relative;padding-right: .3rem;}
+        .m-h-select:before{position: absolute;content: "";width: 0;height: 0;border-left:5px solid transparent;border-right:5px solid transparent;border-top:5px solid #666;right: 0;
+            top: .25rem;}
+    </style>
+</head>
+<body class="opg" style="background: #ccc;">
+<script type="text/javascript">
+    (function appVersion() {
+        window.platform = {};
+        var ua = window.navigator.userAgent.toLowerCase();
+        var isIphone = ua.match(/iphone os/i) == 'iphone os';
+        var isAndroid = ua.match(/android/i) == 'android';
+        // ipad 也为mobile
+        var isMobile = ua.match(/mobile/i) == 'mobile';
+        var isIpad = ua.match(/ipad/) == 'ipad';
+
+        platform.isMobile = function () {
+            return isMobile && !isIpad;
+        }
+        if(platform.isMobile()) {
+            (function(win){var doc=win.document,html=doc.documentElement,option=html.getAttribute("data-use-rem");if(option===null){return}var baseWidth=parseInt(option).toString()==="NaN"?640:parseInt(option);var grids=baseWidth/100;var clientWidth=html.clientWidth||320;html.style.fontSize=clientWidth/grids+"px";var testDom=document.createElement("div");var testDomWidth=0;var adjustRatio=0;testDom.style.cssText="height:0;width:1rem;";doc.body.appendChild(testDom);var calcTestDom=function(){testDomWidth=testDom.offsetWidth;if(testDomWidth!==Math.round(clientWidth/grids)){adjustRatio=clientWidth/grids/testDomWidth;var reCalcRem=clientWidth*adjustRatio/grids;html.style.fontSize=reCalcRem+"px"}else{doc.body.removeChild(testDom)}};setTimeout(calcTestDom,20);var reCalc=function(){var newCW=html.clientWidth;if(newCW===clientWidth){return}clientWidth=newCW;html.style.fontSize=newCW*(adjustRatio?adjustRatio:1)/grids+"px"};if(!doc.addEventListener){return}var resizeEvt="orientationchange" in win?"orientationchange":"resize";win.addEventListener(resizeEvt,reCalc,false);doc.addEventListener("DOMContentLoaded",reCalc,false)})(window);
+        }
+    })()
+</script>
+<!--一类-->
+<header class="flex">
+    <p><img src="../images/time-icon.png" alt=""/><!--取消--></p>
+    <p class="flex m-h-choose">
+        <span class="active">商品</span>
+        <span>详情</span>
+        <span>评价</span>
+    </p>
+    <p class="m-h-font"><img src="../images/time-icon.png" alt=""/></p>
+    <p><img src="../images/hot-icon.png" alt=""/></p>
+</header>
+
+
+<!--二类-->
+<header class="flex" style="margin-top: .3rem">
+    <p><img src="../images/time-icon.png" alt=""/><!--取消--></p>
+    <p class="flex m-h-tab">
+        <span class="tab-active">实物订单</span>
+        <span>其他订单</span>
+    </p>
+    <p class="m-h-font"><img src="../images/time-icon.png" alt=""/></p>
+    <p><img src="../images/hot-icon.png" alt=""/></p>
+</header>
+
+
+<!--三类-->
+<header class="flex" style="margin-top: .3rem">
+    <p><img src="../images/time-icon.png" alt=""/><!--取消--></p>
+    <p class="flex m-h-search">
+        <em class="m-h-select">商品</em>
+        <input type="text" placeholder="净化器满2000减30"/>
+        <a href="#" class="m-search-btn"></a>
+    </p>
+    <p class="m-h-font"><img src="../images/time-icon.png" alt=""/></p>
+    <p><img src="../images/hot-icon.png" alt=""/></p>
+</header>
+
+</body>
+</html>

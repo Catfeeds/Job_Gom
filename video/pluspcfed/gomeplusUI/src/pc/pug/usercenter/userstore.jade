@@ -1,0 +1,97 @@
+doctype html
+html(lang="zh-CN")
+	include ../../../pc-widget/head/head.jade
+	link(type="text/css",rel="stylesheet",href="../../css/public/public.css")
+	link(type="text/css",rel="stylesheet",href="../../css/module/usercenter.css")
+	body.opg
+		include ../../../pc-widget/header/header.jade
+		include ../../../pc-widget/menu/menu.jade
+		.wrap-box.mart20.clearfix
+			include ../../../pc-widget/slider/slider.jade
+			.user-right
+				.usershop-title
+					.left-tab
+						a(href="javascritp:;").active 商品
+						a(href="javascritp:;") 店铺
+						a(href="javascritp:;") 话题
+					.right-edit
+						a(href="javascritp:;") 批量管理
+					.right-edit
+						label
+							input(type="checkbox")
+							| 全选
+						a(href="javascritp:;")
+							// icon替换 
+							em.iconn-72
+							| 删除
+						a(href="javascritp:;") 取消管理
+				.shop-list.store-list
+					ul.clearfix
+						//确定删除弹窗
+						li
+							.mg-negative
+								// icon替换
+								em.iconn-72.icon-del
+								a(href="#")
+									img(src="https://i6.meixincdn.com/v1/img/T1GRYTB7KT1R4cSCrK.png")
+								.text-store
+									a(href="#") 江门国美旗舰店
+									p 收藏时间：2016-05-02
+									p 收藏人数：320
+							.del-btn
+								.del-text
+									p 确定要删除？
+									.text-center
+										a(href="javascritp:;").pc-btn.pc-bj-fff 取消
+										a(href="javascritp:;").pc-btn 确定
+						//批量删除弹窗
+						li.remove-del
+							.mg-negative
+								// icon替换
+								em.iconn-72.icon-del
+								a(href="#")
+									img(src="https://i6.meixincdn.com/v1/img/T1GRYTB7KT1R4cSCrK.png")
+								.text-store
+									a(href="#") 江门国美旗舰店
+									p 收藏时间：2016-05-02
+									p 收藏人数：320
+							.del-all
+								//active为选中
+								em.icon-check
+						- for (var x = 0; x < 10; x++)
+							li
+								.mg-negative
+								// icon替换
+								em.iconn-72.icon-del
+									a(href="#")
+										img(src="https://i6.meixincdn.com/v1/img/T1GRYTB7KT1R4cSCrK.png")
+									.text-store
+										a(href="#") 江门国美旗舰店
+										p 收藏时间：2016-05-02
+										p 收藏人数：320
+				.more-comments
+					a(href="##").clearfix
+						span
+							img(src="../../images/circle/small-logo.png")
+							| 点击加载更多
+							// icon替换 
+							em.iconn-9
+				.more-comments
+					a(href="##").disabled.clearfix
+						span
+							img(src="../../images/public/loading.gif")
+							| 正在加载...
+				.more-comments
+					a(href="##").disabled.clearfix
+						span
+							| 没有可加载内容
+				.no-topic
+					.txt.clearfix
+						// icon替换 
+						em.iconn-35
+						p 
+							span
+								| 你还没收藏的店铺哦,赶快去 
+								a(href="javascript:;") 首页 
+								| 逛逛吧
+		include ../../../pc-widget/footer/footer.jade

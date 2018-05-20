@@ -1,0 +1,20 @@
+extends ../public/head.jade
+block title
+	title 好物志
+block link-theme
+	link(rel='stylesheet' type="text/css" href="../../css/gg-index/hwz.css")
+block content
+	//- js
+	include ../public/mobileJs.jade
+	ul.hwz-list
+		-for (var i=0;i<3;i++)
+			li.hwz-it
+				.hwz-pic.img-default
+					img(src='https://i8.meixincdn.com/T1YXCTB_dv1RXrhCrK.750x420z.jpg')
+				.hwz-cont
+					h4.hwz-title
+						| 属于你的圣诞唇语是什么？
+					p.hwz-tip
+						| 显示文章第一句话内容或副标题
+					span.hwz-author
+						| 作者：小果冻牌QQ糖

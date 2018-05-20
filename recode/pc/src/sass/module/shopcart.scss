@@ -1,0 +1,406 @@
+@import '../../widget/config/_base.scss';
+@import '../../widget/config/_mixins.scss';
+
+body{
+    background: #f6f5ee;
+}
+.opg{
+    .volume-icon-down{
+        display: inline-block;
+        margin-left: 5px;
+        color: $color-gray;
+    }
+   .shop-car-list{
+       &.over-inherit{
+           overflow: inherit;
+       }
+       td.align-left{
+           position: relative;
+       }
+   }
+    .tickets-more{
+        z-index: 10;
+        position: absolute;
+        left: 0;
+        top:28px;
+        border:1px solid #ccc;
+        border-radius: 3px;
+        background-color: #fff;
+        width: 350px;
+        box-shadow: 0 0 2px #ccc;
+        &:before{
+            content:url(../../images/shop/dot.png);
+            width: 19px;
+            height: 11px;
+            position: absolute;
+            top: -19px;
+            left: 10px;
+        }
+        .iconn-7{
+            position: absolute;
+            right: 20px;
+            top: 5px;
+            font-size: 24px;
+            color: #f95353;
+            cursor: pointer;
+        }
+        .ticket-cont{
+            max-height: 177px;
+            overflow-y:auto;
+            padding:0 0 0 20px;
+        }
+        .ticket-list{
+            li{
+                position: relative;
+                padding-top: 15px;
+                border-bottom: 1px solid #e9e8e5;
+                &.padd-bon20{
+                    padding-bottom: 20px;
+                }
+            }
+            .ticket-mn{
+                color: #f95353;
+                font-size: 20px;
+                width: 185px;
+                strong{
+                    font-size: 35px;
+                }
+                span{
+                    padding: 2px 6px;
+                    background: #e8e9e5;
+                    border-radius: 2px;
+                    color: $color-default;
+                    font-size: 12px;
+                    margin-left: 6px;
+                }
+            }
+            .ticket-tip{
+                &.volume-margin8{
+                    margin-top: 10px;
+                }
+                margin:0 14px 0 10px;
+                p{
+                    line-height: 1;
+                }
+                span{
+                    display: block;
+                    line-height: 1.2;
+                    color: #ccc;
+                    font-size: 12px;
+
+                }
+                .fr{
+                    float: right;
+                }
+            }
+            .btn-ticket{
+                position: absolute;
+                top: 34px;
+                right: 20px;
+                border:1px solid #e60039;
+                border-radius: 3px;
+                line-height: 1;
+                color: #e60039;
+                padding:7px 12px;
+            }
+            .disabled{
+                border-color: #999;
+                color: #999;
+                cursor: no-drop;
+            }
+            .receive-success{
+                display: none;
+                position: absolute;
+                top: 49px;
+                right: 20px;
+                color: $color-gray;
+            }
+        }
+    }
+    .volume-pop{
+        .ticket-cont{
+            position: relative;
+            max-height: 380px;
+            .close-x{
+                z-index: 9;
+                position: absolute;
+                top:7px;
+                right: 13px;
+                display: block;
+                font-size: 25px;
+            }
+        }
+        .tickets-more{
+            display: none;
+            left: 55px;
+            top:42px;
+            &:before{
+                top: -15px;
+                left: 106px;
+            }
+        }
+    }
+    .floating-layer{
+        width: 1200px;
+        position: fixed;
+        margin-left: -600px;
+        left: 50%;
+        bottom: 0;
+    }
+    .bor-top{
+        border-top: 1px solid $bor-bom;
+    }
+}
+
+.shop-list{
+    margin-bottom: 15px;
+    position: relative;
+    .icon{
+        font-size: 50px;
+        position: absolute;
+        top: 115px;
+        color: #9a9a9a;
+        &:hover{
+            color: $link-hover;
+        }
+    }
+    .iconn-8{
+        left: -50px;
+    }
+    .iconn-9{
+        right: -50px;
+    }
+    ul{
+        margin-right: -13px;
+        li{
+            background: $bg-fff;
+            $img230:230px;
+            float: left;
+            width: $img230;
+            margin: 0 12px 15px 0;
+            position: relative;
+            .icon-fan{
+                position: absolute;
+                right: 6px;
+                top: -5px;
+                width: 33px;
+                height: 28px;
+                background: url(../../images/public/sprite.png) no-repeat 0 -25px;
+                color: $bg-fff;
+                font-style: normal;
+                text-align: center;
+            }
+            .icon-jiang{
+                background: url(../../images/public/sprite.png) no-repeat -40px -25px;
+            }
+            img{
+                width: $img230;
+                height: $img230;
+            }
+            .text{
+                color: $link-hover;
+                padding: 10px 15px;
+                line-height: 26px;
+                border-top: #f6f5ee;
+                span{
+                    font-size: 25px;
+                }
+                p{
+                    width: 100%;
+                    @extend %text-hide;
+                    color: $color-default;
+                }
+            }
+            .btn-box{
+                display: none;
+                position: absolute;
+                left: 0;
+                top: 190px;
+                width: 100%;
+                height: 40px;
+                z-index: 20;
+                .pc-btn{
+                    width: 100%;
+                    border-radius: 0;
+                }
+            }
+            &:hover{
+                box-shadow: 3px 3px 6px 0 #d2d2d2;
+                -webkit-box-shadow: 3px 3px 6px 0 #d2d2d2;
+                -moz-box-shadow: 3px 3px 6px 0 #d2d2d2;
+                img{
+                    -moz-transform: scale3d(.98,.98,1);
+                    -ms-transform: scale3d(.98,.98,1);
+                    -webkit-transform: scale3d(.98,.98,1);
+                    transform: scale3d(.98,.98,1);
+                }
+                .btn-box{
+                    display: block;
+                }
+            }
+        }
+    }
+    .shop-list-tab{
+        text-align: center;
+        height: 5px;
+        line-height: 5px;
+        padding: 15px 0;
+        a{
+            display: inline-block;
+            width: 10px;
+            height: 5px;
+            font-size: 0;
+            text-indent: -9999;
+            background: #999;
+            margin-right: 5px;
+            &.active{
+                width: 15px;
+                background: #e70d3a;
+            }
+        }
+    }
+}
+.shop-list-scroll{
+    width: 1210px;
+    overflow: hidden;
+    position: relative;
+    height: 305px;
+    ul{
+        width: 10000px;
+        position: absolute;
+        left: 0;
+        top: 0;
+    }
+}
+
+
+.search-result{
+    background: $bg-fff;
+    .result-text{
+        width: 410px;
+        margin: 0 auto;
+        text-align: center;
+        padding: 80px 0;
+        .iconn-5{
+            font-size: 60px;
+            float: left;
+            margin-right: 20px;
+            color: $color-gray;
+        }
+        p{
+            font-size: $text16;
+            color: $font-grey-normal;
+            padding-top: 5px;
+            span{
+                color: $link-hover;
+            }
+            a{
+                font-size: $text30;
+                color: $color-danger;
+            }
+            em{
+                font-style: normal;
+                vertical-align: 3px;
+                margin-left: 10px;
+            }
+        }
+        .text-left{
+            text-align: left;
+        }
+    }
+}
+.top30{
+    margin-top: 30px;
+}
+/* 分开结算 */
+.separate-pay{
+    position:absolute;
+    right: 15px;
+    bottom: 66px;
+    z-index: 10;
+    width: 385px;
+    border-radius: 2px;
+    border: 1px solid #ccc;
+    box-shadow: 0 0 1px #eee;
+    background-color: #fff;
+    h3{
+        color: #666;
+        font-size: 14px;
+        font-weight: normal;
+        line-height: 44px;
+        padding-left: 22px;
+        border-bottom: 1px solid $bor-bom;
+    }
+    .iconn-7{
+        position: absolute;
+        right: 14px;
+        top: 12px;
+        z-index: 10;
+        width: 15px;
+        height: 15px;
+        font-size: 22px;
+        color: #e60039;
+    }
+    .content{
+        color: #666;
+        padding-top: 13px;
+        li{
+            margin: 0 21px;
+            padding: 7px 0 8px;
+            overflow: hidden;
+            border-bottom: 1px dashed $bor-bom;
+            &:last-child{
+                border-bottom: none;
+            }
+        }
+    }
+    .left{
+        float: left;
+        p{
+            max-width: 260px;
+            white-space: nowrap;
+            @extend %text-hide;
+        }
+    }
+    .total{
+        font-size: 12px;
+    }
+    .red{
+        color: $link-hover;
+    }
+    .pc-btn{
+        float: right;
+        width: 70px;
+        font-size: 12px;
+        margin-top: 2px;
+    }
+    .icon-down{
+        display: block;
+        position: absolute;
+        right: 50px;
+        bottom: -9px;
+        z-index: 11;
+        width: 19px;
+        height: 9px;
+        overflow: hidden;
+        &:before{
+            z-index: 9;
+            width: 13px;
+            height: 13px;
+            content: "";
+            overflow: hidden;
+            display: block;
+            margin-left: 3px;
+            margin-top: -7px;
+            background-color: #fff;
+            box-shadow: 0 0 1px #807d7d;
+            -moz-box-shadow: 0 0 1px #807d7d;
+            -webkit-box-shadow: 0 0 1px #807d7d;
+            transform: rotate(45deg);
+            -webkit-transform: rotate(45deg);
+            -ms-transform:rotate(45deg);
+            -moz-transform:rotate(45deg);
+            -o-transform:rotate(45deg);
+        }
+    }
+}

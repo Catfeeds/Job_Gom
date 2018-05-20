@@ -1,0 +1,25 @@
+{
+  "pages":[
+    
+    "pages/home/home",
+    "pages/order/mineorder",
+    "pages/product/search/search"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle":"black"
+  },
+  "tabBar": {
+    "list": [{
+      "pagePath": "pages/home/home",
+      "iconPath":"",
+      "text": "搜索商品"
+    }, {
+      "pagePath": "pages/order/mineorder",
+      "iconPath":"",
+      "text": "我的订单"
+    }]
+  }
+}

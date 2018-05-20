@@ -1,0 +1,121 @@
+@charset "utf-8";
+
+// _configure.scss
+@import "../public/_configure.scss";
+
+// defined login stylesheet
+body{
+	// background-image:none;
+}
+// login-header
+.login-header{
+	height:54px;
+	padding:0px 40px;
+	background-color:#fff;
+	span{
+		overflow:hidden;
+		display:block;
+		float:left;
+		width:144px;
+		height:54px;
+		@include img("logo-login.png");
+		@include prefix(background-size,contain);
+		background-position:left center;
+		a{
+			display:block;
+			width:100%;
+			height:100%;
+			text-indent:-9999px;
+		}
+	}
+}
+// login-body
+.login-body{
+	$mgb-value:         10px;
+	overflow:hidden;
+	.body-scaffold{
+		height:465px;
+		background:url('../../images/login/theme.jpg') no-repeat center center #74a1fd;
+	}
+	.scaffold-main{
+		position:relative;
+		width:1200px;
+		height:100%;
+		margin:0px auto;
+	}
+	.main-wrap{
+		position:absolute;
+		right:120px;
+		top:50%;
+		margin-top:-162px;
+		padding:25px 30px 0px;
+		width:360px;
+		height:324px;
+		background:#fff;
+		@include prefix(border-radius,$border-radius-normal);
+		@include prefix(box-shadow,0px 0px 13px rgba(0,0,0,0.3));
+		h2{
+			margin-bottom:14px;
+			font-size:26px;
+			line-height:1;
+			color:$text-medium;
+			font-weight:normal;
+		}
+		// ele-input
+		.ele-input{
+			height:46px;
+		}
+		.ele-input-block{
+			margin-bottom:$mgb-value;
+		}
+		// wrap-valadate
+		.wrap-valadate{
+			margin-bottom:$mgb-value;
+			.ele-input{
+				width:163px;
+			}
+			.valadate-img{
+				@include inline-block;
+				width:89px;
+				height:44px;
+				margin-left:5px;
+				overflow:hidden;
+				@include prefix(border-radius,$border-radius-normal);
+				img{
+					width:100%;
+					height:100%;
+					font-size:0;
+					line-height:0;
+				}
+			}
+			.valadate-text{
+				@include inline-block;
+				font-size:12px;
+				margin-left:5px;
+			}
+		}
+		// wrap-help
+		.wrap-help{
+			@include clearfix();
+			margin-top:-4px;
+			margin-bottom:7px;
+			a.help-password{
+				float:left;
+				color:$text-light;
+				&:hover{
+					color:darken($text-light,15%);
+				}
+			}
+			a.help-register{
+				float:right;
+			}
+		}
+		// wrap-btn
+		.wrap-btn{
+			.btn{
+				width:100%;
+			}
+		}
+	}
+
+}

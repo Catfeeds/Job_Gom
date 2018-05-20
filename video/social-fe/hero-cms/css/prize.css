@@ -1,0 +1,111 @@
+html {
+    height: 100%;
+}
+
+body {
+    padding: 0px;
+    height: 100%;
+    position: relative;
+    margin: 0px;
+    font-family:'PingFang SC','Microsoft YaHei','Myriad Pro','Hiragino Sans GB',sans-serif;
+}
+
+* {
+    outline: none;
+}
+
+ul,li,p{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.fl{
+    float: left;
+}
+.fr{
+    float: right;
+}
+
+/* prize */
+.prize-box {
+    position: relative;
+    background: url(../img/prize/bg.png) no-repeat center;
+    background-size: cover;
+}
+.prize-title {
+    position: absolute;
+    top: 19%;
+    left: 50%;
+    width: 3.82rem;
+    height: 0.88rem;
+    margin: 0 0 0 -1.91rem;
+    z-index: 11;
+}
+.icon-t {
+    position: absolute;
+    top: 3.44rem;
+    left: 0;
+    width: 0.96rem;
+    height: 0.32rem;
+    background: url(../img/prize/icon-t.png) no-repeat;
+    background-size: cover;
+    z-index: 11;
+}
+.icon-b {
+    position: absolute;
+    bottom: 1.02rem;
+    right: 0;
+    width: 0.84rem;
+    height: 0.28rem;
+    background: url(../img/prize/icon-b.png) no-repeat;
+    background-size: cover;
+    z-index: 11;
+}
+
+.prize-scroll{
+    /*margin: 3.8rem 0.3rem 0.6rem;*/
+    background: #fff;
+    border-radius: 4px;
+    box-shadow: 0 0 0.15rem 0 #3420AC;
+    font-size: 0.14rem;
+    position: absolute;
+    left: 0.3rem;
+    right: 0.3rem;
+    top: 23%;
+    bottom: 0.6rem;
+    padding: 0.86rem 0.24rem;
+    z-index: 10;
+    
+}
+.prize-scroll ul{
+    width: 100%;
+    height: 100%;
+    overflow-y: auto;
+}
+.prize-scroll li{
+    height: 0.72rem;
+    line-height: 0.72rem;
+    color: #666;
+    padding: 0 0.24rem;
+}
+.prize-scroll li span{
+    color: #e75418;
+}
+.prize-scroll li:nth-child(odd){
+    background: #F7EDFF;
+}
+
+.nodata{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    width: 100%;
+    z-index: 11;
+    text-align: center;
+    color: #9b9b9b;
+}
+.nodata img{
+    width: 2.2rem;
+    margin-bottom: 0.06rem;
+}

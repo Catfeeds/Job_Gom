@@ -1,0 +1,24 @@
+doctype html
+html(lang="zh-CN", data-use-rem="750")
+	include ../../../m-widget/head/head.jade
+	link(type="text/css",rel="stylesheet",href="../../css/public/gomeplusUI.css")
+	link(type="text/css",rel="stylesheet",href="../../css/module/ruzhu/ruzhu.css")
+	link(type="text/css",rel="stylesheet",href="../../css/module/plaintext/plaintext.css")
+	body.opg.ruzhu
+		include ../../../m-widget/head/rem.jade
+		<!--header-->
+		header.header
+			.h-left
+				a.h-back(href="javascript:;")
+					em.iconn-1
+			.h-cnt.flex-cell
+				h1.h-tit 感谢入驻
+		section.ruzhu-result.c-6
+			figure.ruzhu-img
+			h1.c-3 感谢入驻国美Plus
+			p 请保持联系方式畅通，我们会尽快联系您!
+			p 
+				| 请登录以下页面，自助完成商家入驻后续流程<br/>
+				a.c-79(href="#") www.gomeplus.com/join
+			a.m-btn-big(href="javascript:;") 下载国美Plus
+			a.m-btn-big.m-btn-bor(href="javascript:;") 关闭

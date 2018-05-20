@@ -1,0 +1,772 @@
+doctype html
+html(lang="zh-CN")
+	include ../../widget/head/head.pug
+	link(type="text/css",rel="stylesheet",href="../../css/public/public.css")
+	link(type="text/css",rel="stylesheet",href="../../css/module/channelPage.css") 
+	
+	script(type="text/javascript") var dynSite='//g.atguat.com.cn',staSite='//www.atguat.com.cn',gomeplusDomain='.gome.com.cn',contextPath='/ec/homeus',cookieDomain='.atguat.com.cn',imgServer='//app.atguat.net.cn/images',stageJsServer='//js.atguat.com.cn',stageImageServer='//app.atguat.net.cn',stageCssServer='//css.atguat.com.cn',gomeplusCdn='//js.dev.meixincdn.com:1314/CDN8053/',versionData='1709220454';	var BPConfig = {startTime: new Date().valueOf()};var $GLOBAL_CONFIG = {};$GLOBAL_CONFIG['current_url']='aHR0cDovL2dyb3VwLmF0Z3VhdC5jb20uY24vP2ludGNtcD1zeS0xMDAwMDAwMzc4LTI=';$GLOBAL_CONFIG['islogin']='0';$GLOBAL_CONFIG['userId']='0';$GLOBAL_CONFIG['nickName']='';$GLOBAL_CONFIG['main_domain']='http://www.pre.gomeplus.com/';$GLOBAL_CONFIG['passport_domain']='http://passport.pre.gomeplus.com/';$GLOBAL_CONFIG['order_domain']='http://order.pre.gomeplus.com/';$GLOBAL_CONFIG['group_domain']='http://group.atguat.com.cn/';$GLOBAL_CONFIG['i_domain']='http://myhome.atguat.com.cn/';$GLOBAL_CONFIG['mall_domain']='http://mall.pre.gomeplus.com/';$GLOBAL_CONFIG['js_domain']='http://js.dev.meixincdn.com';$GLOBAL_CONFIG['pcjspath']='http://js.dev.meixincdn.com:1314/CDN8148/dist';$GLOBAL_CONFIG['pccsspath']='http://js.dev.meixincdn.com:1314/CDN8148/dist';$GLOBAL_CONFIG['pcimgpath']='http://js.dev.meixincdn.com:1314/CDN8148/dist';$GLOBAL_CONFIG['wap_url']='http://m.uatplus.com/';$GLOBAL_CONFIG['wap_circle_url']='http://circle.m.uatplus.com/';$GLOBAL_CONFIG['prefix']='mx_pc_pre_';$GLOBAL_CONFIG['csrf_token']='';$GLOBAL_CONFIG['ss_service_gome']='//ss.atguat.com.cn/';$GLOBAL_CONFIG['cart_service_gome']='http://cart.atguat.com.cn/';var userId='0';$GLOBAL_CONFIG['dynSite']='//g.atguat.com.cn';$GLOBAL_CONFIG['staSite']='//www.atguat.com.cn/';$GLOBAL_CONFIG['contextPath']='/ec/homeus';$GLOBAL_CONFIG['secureURL']='//g.atguat.com.cn';$GLOBAL_CONFIG['cookieDomain']='.atguat.com.cn';$GLOBAL_CONFIG['stageImageServer']='//img.atguat.net.cn';$GLOBAL_CONFIG['imgServer']='//img.atguat.com.cn/images';$GLOBAL_CONFIG['pictureserver']='//img.atguat.com.cn/image';$GLOBAL_CONFIG['stageCssServer']='//css.atguat.com.cn';$GLOBAL_CONFIG['cssserver']='//css.atguat.com.cn/css';$GLOBAL_CONFIG['stageJsServer']='//js.atguat.com.cn';$GLOBAL_CONFIG['jsserver']='//js.atguat.com.cn/js';$GLOBAL_CONFIG['js_net_server']='http://js.atguat.net.cn/';$GLOBAL_CONFIG['protocol']='http';$GLOBAL_CONFIG['versionData']='1504839973';$GLOBAL_CONFIG['product_search_gome']='http://search.atguat.com.cn';$GLOBAL_CONFIG['shop_search_gome']='http://search.atguat.com.cn';$GLOBAL_CONFIG['product_item_gome']='http://item.atguat.com.cn/';$GLOBAL_CONFIG['ggckgd']='PGGMKCKmd0003';$GLOBAL_CONFIG['ggjzgd']='PGGMKJZmd0004';window.page_id="";
+	
+	script(type="text/javascript",src="http://js.dev.meixincdn.com:1314/CDN8148/dist/js/conf/vendor.js")
+	script(type="text/javascript",src="http://js.dev.meixincdn.com:1314/CDN8148/dist/js/conf/channelPage.js")
+		
+	body.opg
+		include ./header-new.pug
+		.content_box
+			.banner_box.clearfix
+				.banner.fl(data-node="banner") 
+					ul
+						li
+							a(href="#")
+								img(src="../../images/meidian/lun1.png")
+						li
+							a(href="#")
+								img(src="../../images/meidian/lun2.png")
+						li
+							a(href="#")
+								img(src="../../images/meidian/lun3.png")
+						li
+							a(href="#")
+								img(src="../../images/meidian/lun4.png")
+					ol
+						li
+						li
+						li.on
+						li
+				.shop_preview.fr
+					.show_preview_top.clearfix
+						img.fl(src="https://gfs13.gomein.net.cn/T175LvB4ET1RCvBVdK_120.jpg")
+						.fl.not_login
+							em(data-node="kt-meidian") 开通美店，赚钱咯!
+							span 快速开店，共享好货，赚丰厚佣金。
+						.fl.logined_noproduct
+							p
+								span 美丽生活精品店
+								img(src="http://js.dev.meixincdn.com:1314/CDN8088/dist/images/user/level/level1.png")
+							.progress.clearfix
+								.progress_info.fl
+									span.pro_num
+								span.num.fl 47/50
+							em 还没有商品上架，快去添加好货分享赚钱吧。
+							.tag_box
+								span 洗衣机
+								span 微波炉
+								span 冰箱
+								span 手机
+					.preview_box
+						ul.clearfix
+							li.sell
+								i.icon.icon_sell
+								p 在售商品：
+									span 0
+							li.income
+								i.icon.icon_income
+								p 近7天收入：
+									span ￥0
+							li.commission
+								i.icon.icon_commission
+								p 待入账佣金：
+									span ￥0
+							li.total
+								i.icon.icon_total
+								p 历史总额：
+									span ￥0
+			.theme_box.recommend
+				h1.clearfix
+					span.fl 爆品推荐
+					a.fr(href="#") 查看更多
+				.recommend_box(data-node="recommend-box")
+					a.turn_left(href="javascript:;")
+					a.turn_right(href="javascript:;")
+					.recommend_list_box
+						ul(data-index="0")
+							li
+								ul.clearfix
+									li
+										.item_box.clearfix
+											img.fl(src="../../images/meidian/lun1.png")
+											div.fl
+												p
+													span.main_tag 自营
+													a(tagget="_blank",href="xxx",title="zzz") 莫杰雏菊女士淡香氛莫杰雏菊女士淡雏菊女士淡
+												.price_box.clearfix
+													span.price ￥79.00
+												.shelves.clearfix
+													span.ret_box
+														span.yj 佣金
+														span.ret 最高￥15.32
+													span.already_sj.fr 已上架
+									li
+										.item_box.clearfix
+											img.fl(src="../../images/meidian/lun1.png")
+											div.fl
+												p
+													span.main_tag 自营
+													a(tagget="_blank",href="xxx",title="zzz") 莫杰雏菊女士淡香氛莫杰雏菊女士淡雏菊女士淡
+												.price_box.clearfix
+													span.price ￥79.00
+												.shelves.clearfix
+													span.ret_box
+														span.yj 佣金
+														span.ret 最高￥15.32
+													span.sj.fr 上架
+									li
+										.item_box.clearfix
+											img.fl(src="../../images/meidian/lun1.png")
+											div.fl
+												p
+													span.main_tag 自营
+													a(tagget="_blank",href="xxx",title="zzz") 莫杰雏菊女士淡香氛莫杰雏菊女士淡雏菊女士淡
+												.price_box.clearfix
+													span.price ￥79.00
+												.shelves.clearfix
+													span.ret_box
+														span.yj 佣金
+														span.ret 最高￥15.32
+													span.sj.fr 已上架
+									li
+										.item_box.clearfix
+											img.fl(src="../../images/meidian/lun1.png")
+											div.fl
+												p
+													span.main_tag 自营
+													a(tagget="_blank",href="xxx",title="zzz") 莫杰雏菊女士淡香氛莫杰雏菊女士淡雏菊女士淡
+												.price_box.clearfix
+													span.price ￥79.00
+												.shelves.clearfix
+													span.ret_box
+														span.yj 佣金
+														span.ret 最高￥15.32
+													span.sj.fr 已上架
+									li
+										.item_box.clearfix
+											img.fl(src="../../images/meidian/lun1.png")
+											div.fl
+												p
+													span.main_tag 自营
+													a(tagget="_blank",href="xxx",title="zzz") 莫杰雏菊女士淡香氛莫杰雏菊女士淡雏菊女士淡
+												.price_box.clearfix
+													span.price ￥79.00
+												.shelves.clearfix
+													span.ret_box
+														span.yj 佣金
+														span.ret 最高￥15.32
+													span.sj.fr 已上架
+									li
+										.item_box.clearfix
+											img.fl(src="../../images/meidian/lun1.png")
+											div.fl
+												p
+													span.main_tag 自营
+													a(tagget="_blank",href="xxx",title="zzz") 莫杰雏菊女士淡香氛莫杰雏菊女士淡雏菊女士淡
+												.price_box.clearfix
+													span.price ￥79.00
+												.shelves.clearfix
+													span.ret_box
+														span.yj 佣金
+														span.ret 最高￥15.32
+													span.sj.fr 已上架
+							li
+								ul.clearfix
+									li
+										.item_box.clearfix
+											img.fl(src="../../images/meidian/lun1.png")
+											div.fl
+												p
+													span.main_tag 自营
+													a(tagget="_blank",href="xxx",title="zzz") 莫杰雏菊女士淡香氛莫杰雏菊女士淡雏菊女士淡
+												.price_box.clearfix
+													span.price ￥79.00
+												.shelves.clearfix
+													span.ret_box
+														span.yj 佣金
+														span.ret 最高￥15.32
+													span.sj.fr 已上架
+									li
+										.item_box.clearfix
+											img.fl(src="../../images/meidian/lun1.png")
+											div.fl
+												p
+													span.main_tag 自营
+													a(tagget="_blank",href="xxx",title="zzz") 莫杰雏菊女士淡香氛莫杰雏菊女士淡雏菊女士淡
+												.price_box.clearfix
+													span.price ￥79.00
+												.shelves.clearfix
+													span.ret_box
+														span.yj 佣金
+														span.ret 最高￥15.32
+													span.sj.fr 已上架
+									li
+										.item_box.clearfix
+											img.fl(src="../../images/meidian/lun1.png")
+											div.fl
+												p
+													span.main_tag 自营
+													a(tagget="_blank",href="xxx",title="zzz") 莫杰雏菊女士淡香氛莫杰雏菊女士淡雏菊女士淡
+												.price_box.clearfix
+													span.price ￥79.00
+												.shelves.clearfix
+													span.ret_box
+														span.yj 佣金
+														span.ret 最高￥15.32
+													span.sj.fr 已上架
+									li
+										.item_box.clearfix
+											img.fl(src="../../images/meidian/lun1.png")
+											div.fl
+												p
+													span.main_tag 自营
+													a(tagget="_blank",href="xxx",title="zzz") 莫杰雏菊女士淡香氛莫杰雏菊女士淡雏菊女士淡
+												.price_box.clearfix
+													span.price ￥79.00
+												.shelves.clearfix
+													span.ret_box
+														span.yj 佣金
+														span.ret 最高￥15.32
+													span.sj.fr 已上架
+									li
+										.item_box.clearfix
+											img.fl(src="../../images/meidian/lun1.png")
+											div.fl
+												p
+													span.main_tag 自营
+													a(tagget="_blank",href="xxx",title="zzz") 莫杰雏菊女士淡香氛莫杰雏菊女士淡雏菊女士淡
+												.price_box.clearfix
+													span.price ￥79.00
+												.shelves.clearfix
+													span.ret_box
+														span.yj 佣金
+														span.ret 最高￥15.32
+													span.sj.fr 已上架
+									li
+										.item_box.clearfix
+											img.fl(src="../../images/meidian/lun1.png")
+											div.fl
+												p
+													span.main_tag 自营
+													a(tagget="_blank",href="xxx",title="zzz") 莫杰雏菊女士淡香氛莫杰雏菊女士淡雏菊女士淡
+												.price_box.clearfix
+													span.price ￥79.00
+												.shelves.clearfix
+													span.ret_box
+														span.yj 佣金
+														span.ret 最高￥15.32
+													span.sj.fr 已上架
+							li
+								ul.clearfix
+									li
+										.item_box.clearfix
+											img.fl(src="../../images/meidian/lun1.png")
+											div.fl
+												p
+													span.main_tag 自营
+													a(tagget="_blank",href="xxx",title="zzz") 莫杰雏菊女士淡香氛莫杰雏菊女士淡雏菊女士淡
+												.price_box.clearfix
+													span.price ￥79.00
+												.shelves.clearfix
+													span.ret_box
+														span.yj 佣金
+														span.ret 最高￥15.32
+													span.sj.fr 已上架
+									li
+										.item_box.clearfix
+											img.fl(src="../../images/meidian/lun1.png")
+											div.fl
+												p
+													span.main_tag 自营
+													a(tagget="_blank",href="xxx",title="zzz") 莫杰雏菊女士淡香氛莫杰雏菊女士淡雏菊女士淡
+												.price_box.clearfix
+													span.price ￥79.00
+												.shelves.clearfix
+													span.ret_box
+														span.yj 佣金
+														span.ret 最高￥15.32
+													span.sj.fr 已上架
+									li
+										.item_box.clearfix
+											img.fl(src="../../images/meidian/lun1.png")
+											div.fl
+												p
+													span.main_tag 自营
+													a(tagget="_blank",href="xxx",title="zzz") 莫杰雏菊女士淡香氛莫杰雏菊女士淡雏菊女士淡
+												.price_box.clearfix
+													span.price ￥79.00
+												.shelves.clearfix
+													span.ret_box
+														span.yj 佣金
+														span.ret 最高￥15.32
+													span.sj.fr 已上架
+									li
+										.item_box.clearfix
+											img.fl(src="../../images/meidian/lun1.png")
+											div.fl
+												p
+													span.main_tag 自营
+													a(tagget="_blank",href="xxx",title="zzz") 莫杰雏菊女士淡香氛莫杰雏菊女士淡雏菊女士淡
+												.price_box.clearfix
+													span.price ￥79.00
+												.shelves.clearfix
+													span.ret_box
+														span.yj 佣金
+														span.ret 最高￥15.32
+													span.sj.fr 已上架
+									li
+										.item_box.clearfix
+											img.fl(src="../../images/meidian/lun1.png")
+											div.fl
+												p
+													span.main_tag 自营
+													a(tagget="_blank",href="xxx",title="zzz") 莫杰雏菊女士淡香氛莫杰雏菊女士淡雏菊女士淡
+												.price_box.clearfix
+													span.price ￥79.00
+												.shelves.clearfix
+													span.ret_box
+														span.yj 佣金
+														span.ret 最高￥15.32
+													span.sj.fr 已上架
+									li
+										.item_box.clearfix
+											img.fl(src="../../images/meidian/lun1.png")
+											div.fl
+												p
+													span.main_tag 自营
+													a(tagget="_blank",href="xxx",title="zzz") 莫杰雏菊女士淡香氛莫杰雏菊女士淡雏菊女士淡
+												.price_box.clearfix
+													span.price ￥79.00
+												.shelves.clearfix
+													span.ret_box
+														span.yj 佣金
+														span.ret 最高￥15.32
+													span.sj.fr 已上架
+							li
+								ul.clearfix
+									li
+										.item_box.clearfix
+											img.fl(src="../../images/meidian/lun1.png")
+											div.fl
+												p
+													span.main_tag 自营
+													a(tagget="_blank",href="xxx",title="zzz") 莫杰雏菊女士淡香氛莫杰雏菊女士淡雏菊女士淡
+												.price_box.clearfix
+													span.price ￥79.00
+												.shelves.clearfix
+													span.ret_box
+														span.yj 佣金
+														span.ret 最高￥15.32
+													span.sj.fr 已上架
+									li
+										.item_box.clearfix
+											img.fl(src="../../images/meidian/lun1.png")
+											div.fl
+												p
+													span.main_tag 自营
+													a(tagget="_blank",href="xxx",title="zzz") 莫杰雏菊女士淡香氛莫杰雏菊女士淡雏菊女士淡
+												.price_box.clearfix
+													span.price ￥79.00
+												.shelves.clearfix
+													span.ret_box
+														span.yj 佣金
+														span.ret 最高￥15.32
+													span.sj.fr 已上架
+									li
+										.item_box.clearfix
+											img.fl(src="../../images/meidian/lun1.png")
+											div.fl
+												p
+													span.main_tag 自营
+													a(tagget="_blank",href="xxx",title="zzz") 莫杰雏菊女士淡香氛莫杰雏菊女士淡雏菊女士淡
+												.price_box.clearfix
+													span.price ￥79.00
+												.shelves.clearfix
+													span.ret_box
+														span.yj 佣金
+														span.ret 最高￥15.32
+													span.sj.fr 已上架
+									li
+										.item_box.clearfix
+											img.fl(src="../../images/meidian/lun1.png")
+											div.fl
+												p
+													span.main_tag 自营
+													a(tagget="_blank",href="xxx",title="zzz") 莫杰雏菊女士淡香氛莫杰雏菊女士淡雏菊女士淡
+												.price_box.clearfix
+													span.price ￥79.00
+												.shelves.clearfix
+													span.ret_box
+														span.yj 佣金
+														span.ret 最高￥15.32
+													span.sj.fr 已上架
+									li
+										.item_box.clearfix
+											img.fl(src="../../images/meidian/lun1.png")
+											div.fl
+												p
+													span.main_tag 自营
+													a(tagget="_blank",href="xxx",title="zzz") 莫杰雏菊女士淡香氛莫杰雏菊女士淡雏菊女士淡
+												.price_box.clearfix
+													span.price ￥79.00
+												.shelves.clearfix
+													span.ret_box
+														span.yj 佣金
+														span.ret 最高￥15.32
+													span.sj.fr 已上架
+									li
+										.item_box.clearfix
+											img.fl(src="../../images/meidian/lun1.png")
+											div.fl
+												p
+													span.main_tag 自营
+													a(tagget="_blank",href="xxx",title="zzz") 莫杰雏菊女士淡香氛莫杰雏菊女士淡雏菊女士淡
+												.price_box.clearfix
+													span.price ￥79.00
+												.shelves.clearfix
+													span.ret_box
+														span.yj 佣金
+														span.ret 最高￥15.32
+													span.sj.fr 已上架
+							li
+								ul.clearfix
+									li
+										.item_box.clearfix
+											img.fl(src="../../images/meidian/lun1.png")
+											div.fl
+												p
+													span.main_tag 自营
+													a(tagget="_blank",href="xxx",title="zzz") 莫杰雏菊女士淡香氛莫杰雏菊女士淡雏菊女士淡
+												.price_box.clearfix
+													span.price ￥79.00
+												.shelves.clearfix
+													span.ret_box
+														span.yj 佣金
+														span.ret 最高￥15.32
+													span.sj.fr 已上架
+									li
+										.item_box.clearfix
+											img.fl(src="../../images/meidian/lun1.png")
+											div.fl
+												p
+													span.main_tag 自营
+													a(tagget="_blank",href="xxx",title="zzz") 莫杰雏菊女士淡香氛莫杰雏菊女士淡雏菊女士淡
+												.price_box.clearfix
+													span.price ￥79.00
+												.shelves.clearfix
+													span.ret_box
+														span.yj 佣金
+														span.ret 最高￥15.32
+													span.sj.fr 已上架
+									li
+										.item_box.clearfix
+											img.fl(src="../../images/meidian/lun1.png")
+											div.fl
+												p
+													span.main_tag 自营
+													a(tagget="_blank",href="xxx",title="zzz") 莫杰雏菊女士淡香氛莫杰雏菊女士淡雏菊女士淡
+												.price_box.clearfix
+													span.price ￥79.00
+												.shelves.clearfix
+													span.ret_box
+														span.yj 佣金
+														span.ret 最高￥15.32
+													span.sj.fr 已上架
+									li
+										.item_box.clearfix
+											img.fl(src="../../images/meidian/lun1.png")
+											div.fl
+												p
+													span.main_tag 自营
+													a(tagget="_blank",href="xxx",title="zzz") 莫杰雏菊女士淡香氛莫杰雏菊女士淡雏菊女士淡
+												.price_box.clearfix
+													span.price ￥79.00
+												.shelves.clearfix
+													span.ret_box
+														span.yj 佣金
+														span.ret 最高￥15.32
+													span.sj.fr 已上架
+									li
+										.item_box.clearfix
+											img.fl(src="../../images/meidian/lun1.png")
+											div.fl
+												p
+													span.main_tag 自营
+													a(tagget="_blank",href="xxx",title="zzz") 莫杰雏菊女士淡香氛莫杰雏菊女士淡雏菊女士淡
+												.price_box.clearfix
+													span.price ￥79.00
+												.shelves.clearfix
+													span.ret_box
+														span.yj 佣金
+														span.ret 最高￥15.32
+													span.sj.fr 已上架
+									li
+										.item_box.clearfix
+											img.fl(src="../../images/meidian/lun1.png")
+											div.fl
+												p
+													span.main_tag 自营
+													a(tagget="_blank",href="xxx",title="zzz") 莫杰雏菊女士淡香氛莫杰雏菊女士淡雏菊女士淡
+												.price_box.clearfix
+													span.price ￥79.00
+												.shelves.clearfix
+													span.ret_box
+														span.yj 佣金
+														span.ret 最高￥15.32
+													span.sj.fr 已上架
+					ol
+						li.on
+						li
+						li
+						li
+						li
+					.sj_btn(data-node="sj_btn") 一键上架
+			.ad
+				a(href="#")
+					img(src="../../images/meidian/lun1.png")
+			.star_street_box.clearfix
+				.street_box.theme_box(data-node="starStreet-box")
+					h1.clearfix
+						span.fl 明星街
+					div.clearfix.star_img.clearfix
+						img(src="../../images/meidian/lun1.png")
+						img(src="../../images/meidian/lun1.png")
+						img(src="../../images/meidian/lun1.png")
+						img(src="../../images/meidian/lun1.png")
+			.star_street_box.clearfix
+				.street_box.theme_box(data-node="starStreet-box")
+					h1.clearfix
+						span.fl 明星街
+					div.clearfix.star_img.clearfix
+						img.spebig(src="../../images/meidian/lun1.png")
+						img.spesmall(src="../../images/meidian/lun1.png")
+						img.spesmall(src="../../images/meidian/lun1.png")
+						img.spesmall(src="../../images/meidian/lun1.png")
+			.rank_shop_box.clearfix
+				.ranking_box.theme_box.fl(data-node="ranking-box")
+					h1.clearfix
+						span.fl 排行榜
+						em 8月1日-8月7日
+					.ranking_main
+						.ranking_pic.clearfix
+							.ranking_pic_left.fl
+								.number_one
+									div.hg
+									img(src="../../images/meidian/lun1.png")
+									span 第1名
+								.number_one_detail
+									h5 巴黎英伦范儿
+									p 销售额：
+										span 3156.45
+									p 订单量：
+										span 3156.45
+									p 返利金额：
+										span 3156.45
+							.ranking_pic_right.fl.not_login
+								.number_one
+									div.hg
+									img(src="../../images/meidian/lun1.png")
+								.number_one_detail
+									input(value="开通美店，赚钱咯!", data-node="kt-meidian-refresh")
+							.ranking_pic_right.fl
+								.number_one.my_ranking
+									div.hg
+									img(src="../../images/meidian/lun1.png")
+									span 第30名
+								.number_one_detail
+									h5 我
+									p 销售额：
+										span 3156.45
+									p 订单量：
+										span 3156.45
+									p 返利金额：
+										span 3156.45
+						.ranking_list
+							ul.clearfix
+								li
+									a(href="#")
+										em 1
+										img(src="https://gfs13.gomein.net.cn/T175LvB4ET1RCvBVdK_120.jpg")
+										span 美丽生活精品店
+											img(src="http://js.dev.meixincdn.com:1314/CDN8088/dist/images/user/level/level1.png")
+				
+								li
+									a(href="#")
+										em 2
+										img(src="https://gfs13.gomein.net.cn/T175LvB4ET1RCvBVdK_120.jpg")
+										span 美丽生活精品店
+											img(src="http://js.dev.meixincdn.com:1314/CDN8088/dist/images/user/level/level1.png")
+											em 姜国强
+												strong 马甸桥国美电器
+								li
+									a(href="#")
+										em 3
+										img(src="https://gfs13.gomein.net.cn/T175LvB4ET1RCvBVdK_120.jpg")
+										span 美丽生活精品店
+											img(src="http://js.dev.meixincdn.com:1314/CDN8088/dist/images/user/level/level1.png")
+				
+								li
+									a(href="#")
+										em 4
+										img(src="https://gfs13.gomein.net.cn/T175LvB4ET1RCvBVdK_120.jpg")
+										span 美丽生活精品店
+											img(src="http://js.dev.meixincdn.com:1314/CDN8088/dist/images/user/level/level1.png")
+								li
+									a(href="#")
+										em 5
+										img(src="https://gfs13.gomein.net.cn/T175LvB4ET1RCvBVdK_120.jpg")
+										span 美丽生活精品店
+											img(src="http://js.dev.meixincdn.com:1314/CDN8088/dist/images/user/level/level1.png")
+				
+								li
+									a(href="#")
+										em 6
+										img(src="https://gfs13.gomein.net.cn/T175LvB4ET1RCvBVdK_120.jpg")
+										span 美丽生活精品店
+											img(src="http://js.dev.meixincdn.com:1314/CDN8088/dist/images/user/level/level1.png")
+								li
+									a(href="#")
+										em 7
+										img(src="https://gfs13.gomein.net.cn/T175LvB4ET1RCvBVdK_120.jpg")
+										span 美丽生活精品店
+											img(src="http://js.dev.meixincdn.com:1314/CDN8088/dist/images/user/level/level1.png")
+				
+								li
+									a(href="#")
+										em 8
+										img(src="https://gfs13.gomein.net.cn/T175LvB4ET1RCvBVdK_120.jpg")
+										span 美丽生活精品店
+											img(src="http://js.dev.meixincdn.com:1314/CDN8088/dist/images/user/level/level1.png")
+								li
+									a(href="#")
+										em 9
+										img(src="https://gfs13.gomein.net.cn/T175LvB4ET1RCvBVdK_120.jpg")
+										span 美丽生活精品店
+											img(src="http://js.dev.meixincdn.com:1314/CDN8088/dist/images/user/level/level1.png")
+				
+								li
+									a(href="#")
+										em 10
+										img(src="https://gfs13.gomein.net.cn/T175LvB4ET1RCvBVdK_120.jpg")
+										span 美丽生活精品店
+											img(src="http://js.dev.meixincdn.com:1314/CDN8088/dist/images/user/level/level1.png")
+				.shopest_box.theme_box.fl
+					h1.clearfix
+						span.fl 最美美店
+					.shopest_list
+						ul.clearfix
+							li
+								a(href="#")
+									img(src="../../images/meidian/lun1.png")
+								.shopest_item_detail.clearfix
+									img.fl(src="http://gfs5.atguat.net.cn/T1htDTBKEv1RCvBVdK")
+									div.fl
+										em dsf3qgw45g
+										img(src="http://js.dev.meixincdn.com:1314/CDN8088/dist/images/user/level/level2.png")
+										p
+											i.up
+											em 333
+											i.star
+											em 345
+							li
+								a(href="#")
+									img(src="../../images/meidian/lun1.png")
+								.shopest_item_detail.clearfix
+									img.fl(src="http://gfs5.atguat.net.cn/T1htDTBKEv1RCvBVdK")
+									div.fl
+										em dsf3qgw45g
+										img(src="http://js.dev.meixincdn.com:1314/CDN8088/dist/images/user/level/level2.png")
+										p
+											i.up
+											em 333
+											i.star
+											em 345
+							li
+								a(href="#")
+									img(src="../../images/meidian/lun1.png")
+								.shopest_item_detail.clearfix
+									img.fl(src="http://gfs5.atguat.net.cn/T1htDTBKEv1RCvBVdK")
+									div.fl
+										em dsf3qgw45g
+										img(src="http://js.dev.meixincdn.com:1314/CDN8088/dist/images/user/level/level2.png")
+										p
+											i.up
+											em 333
+											i.star
+											em 345
+							li
+								a(href="#")
+									img(src="../../images/meidian/lun1.png")
+								.shopest_item_detail.clearfix
+									img.fl(src="http://gfs5.atguat.net.cn/T1htDTBKEv1RCvBVdK")
+									div.fl
+										em dsf3qgw45g
+										img(src="http://js.dev.meixincdn.com:1314/CDN8088/dist/images/user/level/level2.png")
+										p
+											i.up
+											em 333
+											i.star
+											em 345
+			.topic_box.theme_box
+				h1.clearfix
+					span.fl 美店话题
+				.topic_content
+					ul
+						li
+							a(href="#")
+								.personal
+									img(src="../../images/meidian/lun2.png")
+									span 美丽生活精品店
+								h4 来点甜食，冲淡失恋的苦涩
+								p 要说最近娱乐圈的大事，吃瓜群众的第一反应绝对会是这两天讨论度极高的鹿晗、关晓彤公开恋情事件。 对于吃瓜群众，最爱的就是扒扒公开之前两人暗戳戳的小甜蜜这两天讨论度极高的鹿晗、关晓彤公开恋情事件。 对于吃瓜的鹿晗、关晓彤公开恋情事件。 对于吃瓜群众，最爱的…
+								.img_box
+									img(src="../../images/meidian/lun2.png")
+									img(src="../../images/meidian/lun2.png")
+									img(src="../../images/meidian/lun2.png")
+							.topic_detail.clearfix
+								em.fl 浏览量35
+								strong.fr
+									span.up 11
+									span.dialog 11
+									span.star 11
+						li
+							a(href="#")
+								.personal
+									img(src="../../images/meidian/lun2.png")
+									span 美丽生活精品店
+								h4 来点甜食，冲淡失恋的苦涩
+								p 要说最近娱乐圈的大事，吃瓜群众的第一反应绝对会是这两天讨论度极高的鹿晗、关晓彤公开恋情事件。 对于吃瓜群众，最爱的就是扒扒公开之前两人暗戳戳的小甜蜜这两天讨论度极高的鹿晗、关晓彤公开恋情事件。 对于吃瓜的鹿晗、关晓彤公开恋情事件。 对于吃瓜群众，最爱的…
+							.topic_detail.clearfix
+								em.fl 浏览量35
+								strong.fr
+									span.up 11
+									span.dialog 11
+									span.star 11
+						li
+							a(href="#")
+								.personal
+									img(src="../../images/meidian/lun2.png")
+									span 美丽生活精品店
+								h4 来点甜食，冲淡失恋的苦涩
+								p 要说最近娱乐圈的大事，吃瓜群众的第一反应绝对会是这两天讨论度极高的鹿晗、关晓彤公开恋情事件。 对于吃瓜群众，最爱的就是扒扒公开之前两人暗戳戳的小甜蜜这两天讨论度极高的鹿晗、关晓彤公开恋情事件。 对于吃瓜的鹿晗、关晓彤公开恋情事件。 对于吃瓜群众，最爱的…
+								.img_box
+									img(src="../../images/meidian/lun2.png")
+									img(src="../../images/meidian/lun2.png")
+							.topic_detail.clearfix
+								em.fl 浏览量35
+								strong.fr
+									span.up 11
+									span.dialog 11
+									span.star 11
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

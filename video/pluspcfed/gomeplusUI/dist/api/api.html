@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="zh-CN" data-use-rem="750">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+	<meta name="format-detection" content="telephone=no">
+	<meta name="format-detection" content="email=no">
+	<meta http-equiv="expires" content="0">
+	<link type="text/css" rel="stylesheet" href="css/public.css">
+	<link type="text/css" rel="stylesheet" href="css/api.css">
+</head>
+<body class="opg">
+	<script type="text/javascript">
+      (function appVersion() {
+      	window.platform = {};
+      	var ua = window.navigator.userAgent.toLowerCase();
+      	var isIphone = ua.match(/iphone os/i) == 'iphone os';
+      	var isAndroid = ua.match(/android/i) == 'android';
+      	// ipad 也为mobile
+      	var isMobile = ua.match(/mobile/i) == 'mobile';
+      	var isIpad = ua.match(/ipad/) == 'ipad';
+      
+      	platform.isMobile = function () {
+      		return isMobile && !isIpad;
+      	}
+      	if(platform.isMobile()) {
+      		(function(win){var doc=win.document,html=doc.documentElement,option=html.getAttribute("data-use-rem");if(option===null){return}var baseWidth=parseInt(option).toString()==="NaN"?640:parseInt(option);var grids=baseWidth/100;var clientWidth=html.clientWidth||320;html.style.fontSize=clientWidth/grids+"px";var testDom=document.createElement("div");var testDomWidth=0;var adjustRatio=0;testDom.style.cssText="height:0;width:1rem;";doc.body.appendChild(testDom);var calcTestDom=function(){testDomWidth=testDom.offsetWidth;if(testDomWidth!==Math.round(clientWidth/grids)){adjustRatio=clientWidth/grids/testDomWidth;var reCalcRem=clientWidth*adjustRatio/grids;html.style.fontSize=reCalcRem+"px"}else{doc.body.removeChild(testDom)}};setTimeout(calcTestDom,20);var reCalc=function(){var newCW=html.clientWidth;if(newCW===clientWidth){return}clientWidth=newCW;html.style.fontSize=newCW*(adjustRatio?adjustRatio:1)/grids+"px"};if(!doc.addEventListener){return}var resizeEvt="orientationchange" in win?"orientationchange":"resize";win.addEventListener(resizeEvt,reCalc,false);doc.addEventListener("DOMContentLoaded",reCalc,false)})(window);
+      	}
+      })()
+    </script>
+	<ul>
+		<li><a href="html/sass.html">SASS使用</a></li>
+		<li><a href="html/pug.html">PUG使用</a></li>
+		<li><a href="html/wx.html">微信使用</a></li>
+	</ul>
+
+	<!--公用-->
+	<section class="section">
+		<h1 class="h1">H1标题</h1>
+		<p>测试文字测试文字测试文字测试文字测试文字测试文字</p>
+		<h2 class="h2">H2标题</h2>
+		<p>测试文字测试文字测试文字测试文字测试文字测试文字</p>
+		<h3 class="h3">H3标题</h3>
+		<p>测试文字测试文字测试文字测试文字测试文字测试文字</p>
+
+		<p>
+			测试文字测试文字测试文字<code>我是有背景的哦</code>测试文字测试文字测试文字
+		</p>
+
+		<p><b>代码提示</b></p>
+		<pre><code>代码提示样式</code></pre>
+	</section>
+</body>
+</html>
+
+
+
+
+@all
+页面构架组2017-02-10UI校验及修复
+可测试页面完成100%
+	1、首页-100%;
+	2、登录-100%;
+	3、我的订单-100%;
+		a）全部订单
+		b）待支付
+		c）待收货
+	4、商品详情-100%;
+		a）详情主页
+		b）选择规格
+		c）评论列表
+		d）选择地址
+	5、确认订单-100%;
+
+
+下周计划
+	1、待2.13和UI在验证以上修复问题
+	2、支付相关页面待校验（页面可正常访问方可测试）

@@ -1,0 +1,55 @@
+@import "../../base/public.scss";
+
+.live-detail{
+	.live-wrap{
+		.live-goods-box{
+			margin: 0 rem(20) 0 rem(20);
+			.goods-list li {
+				margin-top:rem(40);
+				a{
+					display: block;
+					position: relative;
+					color:#333;
+					img{
+						width:rem(180);
+						height:rem(180);
+						position: absolute;
+						left:0;
+						top:0;
+					}
+					.goods-msg{
+						height:rem(180);
+
+						margin-left: rem(200);
+
+						.goods-title{
+							line-height: rem(40);
+							font-size: rem(28);
+							@include ellipsis(2);
+							overflow: hidden;
+							height:rem(80);
+						}
+
+						.goods-btn{
+							border: 1px solid #EC392A;
+							border-radius: rem(98);
+							height:rem(46);
+							width: rem(130);
+							position: absolute;
+							bottom:1px;
+							right:0;
+							text-align: center;
+							line-height: rem(46);
+							color:#EC392A;
+							font-size:rem(28);
+						}
+						.quan{
+						    background: #EC392A;
+						    color: #fff;
+						}
+					}
+				}
+			}
+		}
+	}
+}

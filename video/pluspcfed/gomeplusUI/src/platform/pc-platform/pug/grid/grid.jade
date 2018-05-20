@@ -1,0 +1,20 @@
+//- extends layout.jade
+extends ../../../widget-platform/pug/layout/layout.jade
+
+//- grid
+block content
+	h2.platform-title grid
+	div.platform-content
+		h3.platform-header grid
+		div.platform-intro 
+			p 积极维护中...
+		//- div.platform-example#grid
+			//- include ../../../../pc-widget/grid/grid.jade
+		//- pre.platform-pre
+			//- code.platform-code#grid_code
+			//- span.platform-jade pug
+			//- span.platform-jade.platform-html.actived html
+	//- js format html code
+	script(type='text/javascript').
+		HtmlFormat.init(['grid'],false,'_code','html','span.platform-jade');
+		$(".platform-grid").parent('li').addClass("actived");

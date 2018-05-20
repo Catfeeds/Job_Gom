@@ -1,0 +1,39 @@
+{
+  "name": "social-editor",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "webpack --config bin/webpack.common.js",
+    "dev": "webpack-dev-server --config bin/webpack.dev.js",
+    "build2": "webpack --config bin/webpack.prod.js",
+    "build": "webpack --config bin/webpack.config.js -d",
+    "prd": "webpack-dev-server --https --config bin/dev.webpack.config.js --env=mx-prd",
+    "dist": "webpack --config bin/dist.webpack.config.js",
+    "online": "webpack-dev-server --https --config bin/dev.webpack.config.js --env=mx-online",
+    "devs": "webpack-dev-server --config bin/dev.webpack.config.js --env=mx-dev",
+    "pres": "webpack  --config bin/pre.webpack.config.js"
+  },
+  "author": "jiyunpeng,linfei",
+  "license": "",
+  "devDependencies": {
+    "clean-webpack-plugin": "^0.1.16",
+    "css-loader": "^0.28.4",
+    "extract-text-webpack-plugin": "^3.0.2",
+    "file-loader": "^1.1.6",
+    "html-webpack-plugin": "^2.30.1",
+    "node-sass": "^4.5.3",
+    "sass-loader": "^6.0.6",
+    "style-loader": "^0.19.1",
+    "tmodjs-loader": "^1.0.1",
+    "transfer-webpack-plugin": "^0.1.4",
+    "url-loader": "^0.6.2",
+    "webpack": "^3.10.0",
+    "webpack-dev-server": "^2.7.1",
+    "webpack-merge": "^4.1.1",
+    "yargs": "^10.0.3"
+  },
+  "dependencies": {
+    "jquery": "^1.12.4"
+  }
+}

@@ -1,0 +1,44 @@
+doctype html
+html(lang="zh-CN")
+	include ../../../../../gomeplusUI/pc/src/jade/head.jade
+	link(type="text/css",rel="stylesheet",href="../../css/public/public.css")
+	link(type="text/css",rel="stylesheet",href="../../css/module/other/404.css")
+	body.opg
+		include ../../../../../gomeplusUI/pc/src/jade/header.jade
+		include ../../../../../gomeplusUI/pc/src/jade/menu.jade
+		.wrong
+			img(src="../../images/public/404-2.png")
+			p
+				span 抱歉！服务器君正在打盹
+				span 请返回
+					a(href="##") 首页
+					| 查看
+		.wrong
+			img(src="../../images/public/404-4.png")
+			p
+				span 抱歉！该话题已被删除
+				span 请返回
+					a(href="##") 首页
+					| 查看
+		.wrong
+			img(src="../../images/public/404-3.png")
+			p
+				span 抱歉！该圈子已被解散
+				span 请返回
+					a(href="##") 首页
+					| 查看
+		.wrong
+			img(src="../../images/public/404-1.png")
+			p
+				span 抱歉！该圈子审核未通过
+				span 请返回
+					a(href="##") 首页
+					| 查看
+		.wrong
+			img(src="../../images/public/404-5.png")
+			p
+				span 抱歉！该话题审核未通过
+				span 请返回
+					a(href="##") 首页
+					| 查看
+		include ../../../../../gomeplusUI/pc/src/jade/footer.jade

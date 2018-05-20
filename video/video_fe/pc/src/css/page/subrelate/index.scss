@@ -1,0 +1,28 @@
+/* subrelate */
+@import "../../base/public.scss";
+@import "../search/index";
+@import "../../components/hotSubscribe";
+@import "../searchnodata/index";
+
+.unslider-item {
+  width: 245px;
+  height: 243px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+/*
+ul {
+  margin-right: -20px;
+}
+*/
+.unslider-ulcontainer{
+  margin-right: -20px;
+  li {
+    margin: 0 20px 26px 0;
+    width: 285px;
+  }
+}
+
+.unslider-item .desc {
+  word-wrap: break-word;
+}

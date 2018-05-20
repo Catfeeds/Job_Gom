@@ -1,0 +1,442 @@
+doctype html
+html(lang="zh-CN")
+	include ../../../pc-widget/head/head.jade
+	link(type="text/css",rel="stylesheet",href="../../css/public/public.css")
+	link(type="text/css",rel="stylesheet",href="../../css/module/circlelist.css")
+	body.opg
+		include ../../../pc-widget/header/header.jade
+		include ../../../pc-widget/menu/menu.jade
+		.wrap-box
+			.title-wrap
+				h2.circle-list-title
+					| 精彩推荐
+					span Popular recommendation
+			.popular-recommendation.clearfix
+				- for (var x = 0; x < 6; x++)
+					dl.recommendation-list
+						dt.list-img
+							a(href="javascript:;")
+								img(src="../../images/public/topic-delete-bg.png")
+						dd.list-txt
+							.list-txt-t
+								span.tag 运动
+								a(href="javascript:;") 健身运动微课堂系列
+								p
+									| 成员
+									span 20
+									| 话题
+									span 150
+							a(href="javascript:;").circle-topic-title 时尚远远或许就是大家严重的特立独行，独一无二。
+							a(href="javascript:;").circle-topic-title 简单大气的穿着才是时尚最独特的代表
+			.title-wrap
+				h2.circle-list-title.discover
+					| 圈子广场
+					span Discover
+				a(href="javascript:;").create-circle 创建圈子
+			.circle-square-nav
+				a(href="javascript:;").more 
+					| 收起
+					// icon替换 icon-down icon-up
+					em.icon.iconn-2.iconn-1
+					// .iconn-2向下箭头 .iconn-1向上箭头
+				ul.h-auto.clearfix
+					li
+						a(href="javascript:;").active 推荐
+					li
+						a(href="javascript:;") 美食
+					li
+						a(href="javascript:;") 奥运
+					li
+						a(href="javascript:;") 宠物
+					li
+						a(href="javascript:;") 数码/家电
+					li
+						a(href="javascript:;") 时尚
+					li
+						a(href="javascript:;") 健身
+					li
+						a(href="javascript:;") DIY
+					li
+						a(href="javascript:;") 文玩
+					li
+						a(href="javascript:;") 摄影
+					li
+						a(href="javascript:;") 旅行
+					li
+						a(href="javascript:;") 玩具
+					li
+						a(href="javascript:;") 健康
+					li
+						a(href="javascript:;") 娱乐
+					li
+						a(href="javascript:;") 生活
+			.circle-square-box.clearfix
+				.circle-square-table.clearfix
+					.circle-big.big-red1.hover
+						img(src="../../images/public/down-ma.png").head
+						p.circle-title 天空是蔚蓝的自由
+						.hover-type-big.hover-mask
+							a(href="javascript:;")
+								h2.circle-type 健身运动微课堂系列
+								span.tag 运动
+								ul.num.clearfix
+									li
+										span.count 121
+										span.name 成员
+									li
+										span.count 1213
+										span.name 话题
+					.small-wrap
+						.circle-small.small-red1.hover
+							img(src="../../images/public/down-ma.png").head
+							p.circle-title 天空是蔚蓝的自由
+							.hover-type-small.hover-mask
+								a(href="javascript:;")
+									h2.circle-type 健身运动微课堂系列
+									span.tag 运动
+									ul.num
+										li
+											span.count 121
+											span.name 成员
+										li
+											span.count 1213
+											span.name 话题
+						.circle-small.small-blue.hover
+							img(src="../../images/public/down-ma.png").head
+							p.circle-title 天空是蔚蓝的自由
+							.hover-type-small.hover-mask
+								a(href="javascript:;")
+									h2.circle-type 健身运动微课堂系列
+									span.tag 运动
+									ul.num
+										li
+											span.count 121
+											span.name 成员
+										li
+											span.count 1213
+											span.name 话题
+					.small-wrap
+						.circle-small.small-green1.hover
+							img(src="../../images/public/down-ma.png").head
+							p.circle-title 天空是蔚蓝的自由
+							.hover-type-small.hover-mask
+								a(href="javascript:;")
+									h2.circle-type 健身运动微课堂系列
+									span.tag 运动
+									ul.num
+										li
+											span.count 121
+											span.name 成员
+										li
+											span.count 1213
+											span.name 话题
+						.circle-small.small-yellow1.hover
+							img(src="../../images/public/down-ma.png").head
+							p.circle-title 天空是蔚蓝的自由
+							.hover-type-small.hover-mask
+								a(href="javascript:;")
+									h2.circle-type 健身运动微课堂系列
+									span.tag 运动
+									ul.num
+										li
+											span.count 121
+											span.name 成员
+										li
+											span.count 1213
+											span.name 话题
+				.circle-square-table.clearfix
+					.small-wrap
+						.circle-small.small-blue.hover
+							img(src="../../images/public/down-ma.png").head
+							p.circle-title 天空是蔚蓝的自由
+							.hover-type-small.hover-mask
+								a(href="javascript:;")
+									h2.circle-type 健身运动微课堂系列
+									span.tag 运动
+									ul.num
+										li
+											span.count 121
+											span.name 成员
+										li
+											span.count 1213
+											span.name 话题
+						.circle-small.small-red2.hover
+							img(src="../../images/public/down-ma.png").head
+							p.circle-title 天空是蔚蓝的自由
+							.hover-type-small.hover-mask
+								a(href="javascript:;")
+									h2.circle-type 健身运动微课堂系列
+									span.tag 运动
+									ul.num
+										li
+											span.count 121
+											span.name 成员
+										li
+											span.count 1213
+											span.name 话题
+					.circle-big.big-yellow1.hover
+						img(src="../../images/public/down-ma.png").head
+						p.circle-title 天空是蔚蓝的自由
+						.hover-type-big.hover-mask
+							a(href="javascript:;")
+								h2.circle-type 健身运动微课堂系列
+								span.tag 运动
+								ul.num.clearfix
+									li
+										span.count 121
+										span.name 成员
+									li
+										span.count 1213
+										span.name 话题
+					.small-wrap
+						.circle-small.small-yellow2.hover
+							img(src="../../images/public/down-ma.png").head
+							p.circle-title 天空是蔚蓝的自由
+							.hover-type-small.hover-mask
+								a(href="javascript:;")
+									h2.circle-type 健身运动微课堂系列
+									span.tag 运动
+									ul.num
+										li
+											span.count 121
+											span.name 成员
+										li
+											span.count 1213
+											span.name 话题
+						.circle-small.small-red2.hover
+							img(src="../../images/public/down-ma.png").head
+							p.circle-title 天空是蔚蓝的自由
+							.hover-type-small.hover-mask
+								a(href="javascript:;")
+									h2.circle-type 健身运动微课堂系列
+									span.tag 运动
+									ul.num
+										li
+											span.count 121
+											span.name 成员
+										li
+											span.count 1213
+											span.name 话题
+				.circle-square-table.clearfix
+					.small-wrap
+						.circle-small.small-blue.hover
+							img(src="../../images/public/down-ma.png").head
+							p.circle-title 天空是蔚蓝的自由
+							.hover-type-small.hover-mask
+								a(href="javascript:;")
+									h2.circle-type 健身运动微课堂系列
+									span.tag 运动
+									ul.num
+										li
+											span.count 121
+											span.name 成员
+										li
+											span.count 1213
+											span.name 话题
+						.circle-small.small-green2.hover
+							img(src="../../images/public/down-ma.png").head
+							p.circle-title 天空是蔚蓝的自由
+							.hover-type-small.hover-mask
+								a(href="javascript:;")
+									h2.circle-type 健身运动微课堂系列
+									span.tag 运动
+									ul.num
+										li
+											span.count 121
+											span.name 成员
+										li
+											span.count 1213
+											span.name 话题
+					.circle-big.big-blue.hover
+						img(src="../../images/public/down-ma.png").head
+						p.circle-title 天空是蔚蓝的自由
+						.hover-type-big.hover-mask
+							a(href="javascript:;")
+								h2.circle-type 健身运动微课堂系列
+								span.tag 运动
+								ul.num.clearfix
+									li
+										span.count 121
+										span.name 成员
+									li
+										span.count 1213
+										span.name 话题
+					.small-wrap
+						.circle-small.small-yellow2.hover
+							img(src="../../images/public/down-ma.png").head
+							p.circle-title 天空是蔚蓝的自由
+							.hover-type-small.hover-mask
+								a(href="javascript:;")
+									h2.circle-type 健身运动微课堂系列
+									span.tag 运动
+									ul.num
+										li
+											span.count 121
+											span.name 成员
+										li
+											span.count 1213
+											span.name 话题
+						.circle-small.small-red2.hover
+							img(src="../../images/public/down-ma.png").head
+							p.circle-title 天空是蔚蓝的自由
+							.hover-type-small.hover-mask
+								a(href="javascript:;")
+									h2.circle-type 健身运动微课堂系列
+									span.tag 运动
+									ul.num
+										li
+											span.count 121
+											span.name 成员
+										li
+											span.count 1213
+											span.name 话题
+				.circle-square-table.clearfix
+					.circle-big.big-red2.hover
+						img(src="../../images/public/down-ma.png").head
+						p.circle-title 天空是蔚蓝的自由
+						.hover-type-big.hover-mask
+							a(href="javascript:;")
+								h2.circle-type 健身运动微课堂系列
+								span.tag 运动
+								ul.num.clearfix
+									li
+										span.count 121
+										span.name 成员
+									li
+										span.count 1213
+										span.name 话题
+					.small-wrap
+						.circle-small.small-red1.hover
+							img(src="../../images/public/down-ma.png").head
+							p.circle-title 天空是蔚蓝的自由
+							.hover-type-small.hover-mask
+								a(href="javascript:;")
+									h2.circle-type 健身运动微课堂系列
+									span.tag 运动
+									ul.num
+										li
+											span.count 121
+											span.name 成员
+										li
+											span.count 1213
+											span.name 话题
+						.circle-small.small-blue.hover
+							img(src="../../images/public/down-ma.png").head
+							p.circle-title 天空是蔚蓝的自由
+							.hover-type-small.hover-mask
+								a(href="javascript:;")
+									h2.circle-type 健身运动微课堂系列
+									span.tag 运动
+									ul.num
+										li
+											span.count 121
+											span.name 成员
+										li
+											span.count 1213
+											span.name 话题
+					.small-wrap
+						.circle-small.small-green2.hover
+							img(src="../../images/public/down-ma.png").head
+							p.circle-title 天空是蔚蓝的自由
+							.hover-type-small.hover-mask
+								a(href="javascript:;")
+									h2.circle-type 健身运动微课堂系列
+									span.tag 运动
+									ul.num
+										li
+											span.count 121
+											span.name 成员
+										li
+											span.count 1213
+											span.name 话题
+						.circle-small.small-yellow1.hover
+							img(src="../../images/public/down-ma.png").head
+							p.circle-title 天空是蔚蓝的自由
+							.hover-type-small.hover-mask
+								a(href="javascript:;")
+									h2.circle-type 健身运动微课堂系列
+									span.tag 运动
+									ul.num
+										li
+											span.count 121
+											span.name 成员
+										li
+											span.count 1213
+											span.name 话题
+				.circle-square-table.clearfix
+					.circle-big.classCreate.hover
+						img(src="../../images/public/circle-default.png").head
+						p.circle-title
+							span 没有感兴趣的圈子？
+							span 去创建一个吧！
+						.hover-type-big.hover-mask
+							a(href="javascript:;")
+								h2.circle-type 创建自己感兴趣的圈子
+								span.pc-btn.create-btn 创建圈子
+					.small-wrap
+						.circle-small.classCreate.hover
+							img(src="../../images/public/circle-default.png").head
+							p.circle-title
+								span 没有感兴趣的圈子？
+								span 去创建一个吧！
+							.hover-type-small.hover-mask
+								a(href="javascript:;")
+									h2.circle-type 健身运动微课堂系列
+									span.pc-btn.create-btn 创建圈子
+						.circle-small.small-blue.hover
+							img(src="../../images/public/down-ma.png").head
+							p.circle-title 天空是蔚蓝的自由
+							.hover-type-small.hover-mask
+								h2.circle-type 健身运动微课堂系列
+								span.tag 运动
+								ul.num
+									li
+										span.count 121
+										span.name 成员
+									li
+										span.count 1213
+										span.name 话题
+					.small-wrap
+						.circle-small.small-green2.hover
+							img(src="../../images/public/down-ma.png").head
+							p.circle-title 天空是蔚蓝的自由
+							.hover-type-small.hover-mask
+								h2.circle-type 健身运动微课堂系列
+								span.tag 运动
+								ul.num
+									li
+										span.count 121
+										span.name 成员
+									li
+										span.count 1213
+										span.name 话题
+						.circle-small.small-yellow1.hover
+							img(src="../../images/public/down-ma.png").head
+							p.circle-title 天空是蔚蓝的自由
+							.hover-type-small.hover-mask
+								h2.circle-type 健身运动微课堂系列
+								span.tag 运动
+								ul.num
+									li
+										span.count 121
+										span.name 成员
+									li
+										span.count 1213
+										span.name 话题
+			.more-comments
+				a(href="##").clearfix
+					span
+						img(src="../../images/circle/small-logo.png")
+						| 点击加载更多
+						// icon替换 icon icon-right
+						em.iconn-9
+			.more-comments
+				a(href="##").disabled.clearfix
+					span
+						img(src="../../images/public/loading.gif")
+						| 正在加载...
+			.more-comments
+				a(href="##").disabled.clearfix
+					span
+						| 没有可加载内容
+		include ../../../pc-widget/footer/footer.jade

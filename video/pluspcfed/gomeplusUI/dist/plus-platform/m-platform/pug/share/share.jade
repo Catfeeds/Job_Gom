@@ -1,0 +1,38 @@
+//- extends layout.jade
+extends ../../../widget-platform/pug/layout/layout-m.jade
+
+//- index
+block content
+	.platform-tipsinfo
+		h5 说明
+		p m-share-bottom 底部分享
+		p m-share-top 顶部分享
+		p 具体查看结构，谢谢~
+		p.maty 有问题沟通-maty
+	//end
+
+	//- share-1
+	div.platform-content
+		h3.platform-header 底部分享
+		//- div.platform-intro
+		//- 	p share-1
+		div.platform-example#share-1
+			include ../../../../plus-widget/share/share-1.jade
+		pre.platform-pre.hide
+			code.platform-code#share-1_code
+			span.platform-jade pug
+			span.platform-jade.platform-html.actived html
+	//- share-2
+	div.platform-content
+		h3.platform-header 顶部分享提示
+		//- div.platform-intro
+		//- 	p share-2
+		div.platform-example#share-2
+			include ../../../../plus-widget/share/share-2.jade
+		pre.platform-pre.hide
+			code.platform-code#share-2_code
+			span.platform-jade pug
+			span.platform-jade.platform-html.actived html
+	script(type='text/javascript').
+		HtmlFormat.init(['share-1','share-2'],false,'_code','html','span.platform-jade');
+		$(".platform-share").parent('li').addClass("actived");

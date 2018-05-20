@@ -1,0 +1,155 @@
+doctype html
+html(lang="zh-CN")
+	include ../../widget/head/head.pug
+	link(type="text/css",rel="stylesheet",href="../../css/public/public.css")
+	link(type="text/css",rel="stylesheet",href="../../css/module/shopSetting.css") 
+	
+	script(type="text/javascript") var dynSite='//g.atguat.com.cn',staSite='//www.atguat.com.cn',gomeplusDomain='.gome.com.cn',contextPath='/ec/homeus',cookieDomain='.atguat.com.cn',imgServer='//app.atguat.net.cn/images',stageJsServer='//js.atguat.com.cn',stageImageServer='//app.atguat.net.cn',stageCssServer='//css.atguat.com.cn',gomeplusCdn='//js.dev.meixincdn.com:1314/CDN8053/',versionData='1709220454';	var BPConfig = {startTime: new Date().valueOf()};var $GLOBAL_CONFIG = {};$GLOBAL_CONFIG['current_url']='aHR0cDovL2dyb3VwLmF0Z3VhdC5jb20uY24vP2ludGNtcD1zeS0xMDAwMDAwMzc4LTI=';$GLOBAL_CONFIG['islogin']='0';$GLOBAL_CONFIG['userId']='0';$GLOBAL_CONFIG['nickName']='';$GLOBAL_CONFIG['main_domain']='http://www.pre.gomeplus.com/';$GLOBAL_CONFIG['passport_domain']='http://passport.pre.gomeplus.com/';$GLOBAL_CONFIG['order_domain']='http://order.pre.gomeplus.com/';$GLOBAL_CONFIG['group_domain']='http://group.atguat.com.cn/';$GLOBAL_CONFIG['i_domain']='http://myhome.atguat.com.cn/';$GLOBAL_CONFIG['mall_domain']='http://mall.pre.gomeplus.com/';$GLOBAL_CONFIG['js_domain']='http://js.dev.meixincdn.com';$GLOBAL_CONFIG['pcjspath']='http://js.dev.meixincdn.com:1314/CDN8148/dist';$GLOBAL_CONFIG['pccsspath']='http://js.dev.meixincdn.com:1314/CDN8148/dist';$GLOBAL_CONFIG['pcimgpath']='http://js.dev.meixincdn.com:1314/CDN8148/dist';$GLOBAL_CONFIG['wap_url']='http://m.uatplus.com/';$GLOBAL_CONFIG['wap_circle_url']='http://circle.m.uatplus.com/';$GLOBAL_CONFIG['prefix']='mx_pc_pre_';$GLOBAL_CONFIG['csrf_token']='';$GLOBAL_CONFIG['ss_service_gome']='//ss.atguat.com.cn/';$GLOBAL_CONFIG['cart_service_gome']='http://cart.atguat.com.cn/';var userId='0';$GLOBAL_CONFIG['dynSite']='//g.atguat.com.cn';$GLOBAL_CONFIG['staSite']='//www.atguat.com.cn/';$GLOBAL_CONFIG['contextPath']='/ec/homeus';$GLOBAL_CONFIG['secureURL']='//g.atguat.com.cn';$GLOBAL_CONFIG['cookieDomain']='.atguat.com.cn';$GLOBAL_CONFIG['stageImageServer']='//img.atguat.net.cn';$GLOBAL_CONFIG['imgServer']='//img.atguat.com.cn/images';$GLOBAL_CONFIG['pictureserver']='//img.atguat.com.cn/image';$GLOBAL_CONFIG['stageCssServer']='//css.atguat.com.cn';$GLOBAL_CONFIG['cssserver']='//css.atguat.com.cn/css';$GLOBAL_CONFIG['stageJsServer']='//js.atguat.com.cn';$GLOBAL_CONFIG['jsserver']='//js.atguat.com.cn/js';$GLOBAL_CONFIG['js_net_server']='http://js.atguat.net.cn/';$GLOBAL_CONFIG['protocol']='http';$GLOBAL_CONFIG['versionData']='1504839973';$GLOBAL_CONFIG['product_search_gome']='http://search.atguat.com.cn';$GLOBAL_CONFIG['shop_search_gome']='http://search.atguat.com.cn';$GLOBAL_CONFIG['product_item_gome']='http://item.atguat.com.cn/';$GLOBAL_CONFIG['ggckgd']='PGGMKCKmd0003';$GLOBAL_CONFIG['ggjzgd']='PGGMKJZmd0004';window.page_id="";
+	
+	script(type="text/javascript",src="http://js.dev.meixincdn.com:1314/CDN8148/dist/js/conf/vendor.js")
+	script(type="text/javascript",src="http://js.dev.meixincdn.com:1314/CDN8148/dist/js/conf/shopSetting.js")
+		
+	body.opg
+		include ../../widget/header/header.pug
+		include ../../widget/menu/menu.pug
+		.meidian-banner
+			.meidian-banner-content
+		.wrap-box.clearfix
+			ul.meidian-naver
+				li
+					a(href="javascript:;" target="_blank").active 我的美店
+				li
+					a(href="javascript:;" target="_blank") 好货推荐
+				li
+					a(href="javascript:;" target="_blank") 美店预览
+			.user-right.J-right-content.mart20
+				.user-shopSetting-top.clearfix
+					.user-shopSetting-tLeft
+						.user-shopSetting-faceBox
+							img(src="https://gfs13.gomein.net.cn/T175LvB4ET1RCvBVdK_120.jpg").J-shopSetting-shopLogo
+						.user-shopSetting-icon &nbsp;
+						.user-shopSetting-editInfo 
+							a(href="javascript:;") 编辑资料
+					.user-shopSetting-center
+						.user-shopSetting-name.J-shopSetting-shopName  翟建喜的美店
+						.user-shopSetting-info.J-shopSetting-shopInfo     大家好，我是翟建喜我是2015年进入北京国美西坝河店担任店长，主要负责全品类销售工作，在国美的18年工作的中，我全面的学习和了解各种电器的性能和功能，希望我对电器的了解能够在您电器选购中为您提供全面服务，让您选购电器简单，便捷.....(100字)
+						.user-shopSetting-levelBox.clearfix
+							.user-shopSetting-levelLeft
+								span 美店等级：
+								span.user-shopSetting-icon
+									img(src="../../images/user/level/level1.png")
+								span.user-shopSetting-line
+									span
+								span 109/200
+							.user-shopSetting-levelRight
+								span.user-shopSetting-love 1234
+								span.user-shopSetting-collect 1234
+								a(href="javascript:;",share-url="https://www.baidu.com").user-shopSetting-share.J-shopSetting-share
+					.user-shopSetting-right
+						.clearfix.alter-bg
+							a(href="javascript:;").user-shopSetting-editbak 修改背景
+							a(href="javascript:;" target="_blank").user-shopSetting-showshop 预览店铺
+							.change-bg(data-node="changeBg")
+								.icon-triangle
+								.change-box
+									ul.default-bg.clearfix
+										li(data-node="defaultBg",data-src="../../images/meidian/bg-big1.png").selected
+											img(src="../../images/meidian/bg-1.png")
+										li(data-node="defaultBg",data-src="../../images/meidian/bg-big2.png")
+											img(src="../../images/meidian/bg-2.png")
+										li(data-node="defaultBg",data-src="../../images/meidian/bg-big3.png")
+											img(src="../../images/meidian/bg-3.png")
+										li(data-node="defaultBg",data-src="../../images/meidian/bg-big4.png")
+											img(src="../../images/meidian/bg-4.png")
+										li(data-node="defaultBg",data-src="../../images/meidian/bg-big5.png")
+											img(src="../../images/meidian/bg-5.png")
+										li(data-node="defaultBg",data-src="../../images/meidian/bg-big6.png")
+											img(src="../../images/meidian/bg-6.png")
+									.upload.clearfix
+										.upload-btn(data-action="uploadBtn") +
+										.upload-txt(data-action="uploadBtn",data-node="uploadTxt") 自定义上传
+										img(src="../../images/meidian/lit-bg.png",data-node="upImg").previewImg
+									.subBox.clearfix
+										.cancel(data-node="cancel") 取消
+										.complete(data-node="complete") 完成
+
+						.user-shopSetting-codewrap.clearfix
+							img(src="https://gfs13.gomein.net.cn/T175LvB4ET1RCvBVdK_120.jpg")
+						.user-shopSetting-codeNotice 扫一扫 手机逛店铺
+				.user-shopSetting-content
+					.clearfix.user-shopSetting-listNotice(data-node="user-list")
+						span 销售中商品数量：
+						span.user-shopSetting-number 50
+						a(href="javascript:;" target="_blank").user-shopSetting-addBtn +添加更多好货商品
+					ul.clearfix.user-shopSetting-list.J-shopSetting-list
+						li
+							.clearfix.user-shopSetting-good
+								a(href="javavscript:;" target="_blank")
+									img(src="https://i3.meixincdn.com/v1/img/T1W6KvBgWQ1RXrhCrK.jpg.600q80.jpg").J-shopSetting-goodsImg
+							.clearfix.user-shopSetting-goods
+								span.user-shopSetting-main 自营
+								a(href="javascript:;" target="_blank").J-shopSetting-goodName 摩羯对方水电费水电费的是否
+							.user-shopSetting-priceBox.clearfix
+								span.user-shopSetting-price ￥633333 
+								span.user-shopSetting-ret 
+									span
+									span.user-shopSetting-rnum 1.2万国美币
+							.user-shopSetting-gnotice 
+								span 近30日销量：999+
+								span.user-shopSetting-date 上架时间：2017-09-09
+							.clearfix
+								a(href="javascript:;").user-shopSetting-delBtn.J-shopSetting-delBtn 删除
+								a(href="javascript:;").user-shopSetting-kindBtn 
+									span.user-shopSetting-maxSize 冰箱冰箱冰箱冰箱冰箱冰箱冰箱
+								a(href="javascript:;",share-url="https://www.baidu.com").user-shopSetting-shareBtn.J-shopSetting-shareBtn  分享
+						li
+							.clearfix.user-shopSetting-good
+								a(href="javavscript:;" target="_blank")
+									img(src="https://i5.meixincdn.com/v1/img/T1HUKvBTbj1RXrhCrK.jpg.600q80.jpg").J-shopSetting-goodsImg
+							.clearfix.user-shopSetting-goods
+								span.user-shopSetting-rival 海外购
+								a(href="javascript:;" target="_blank").J-shopSetting-goodName 摩羯对方水电费水电费的是否
+							.user-shopSetting-priceBox.clearfix
+								span.user-shopSetting-price ￥633333 
+								span.user-shopSetting-ret 
+									span
+									span.user-shopSetting-rnum 1.2万国美币
+							.user-shopSetting-gnotice 
+								span 近30日销量：999+
+								span.user-shopSetting-date 上架时间：2017-09-09
+							.clearfix
+								a(href="javascript:;").user-shopSetting-delBtn.J-shopSetting-delBtn 删除
+								a(href="javascript:;").user-shopSetting-kindBtn 
+									span 冰箱冰
+								a(href="javascript:;",share-url="https://www.baidu.com").user-shopSetting-shareBtn.J-shopSetting-shareBtn  分享
+						li
+							.clearfix.user-shopSetting-good
+								a(href="javavscript:;" target="_blank")
+									img(src="https://i1.meixincdn.com/v1/img/T1UmKvB4hb1RXrhCrK.jpg.600q80.jpg").J-shopSetting-goodsImg
+							.clearfix.user-shopSetting-goods
+								span.user-shopSetting-shop 门店
+								a(href="javascript:;" target="_blank").J-shopSetting-goodName 摩羯对方水电费水电费的是否
+							.user-shopSetting-priceBox.clearfix
+								span.user-shopSetting-price ￥633333 
+								span.user-shopSetting-ret 
+									span
+									span.user-shopSetting-rnum 1.2万国美币
+							.user-shopSetting-gnotice 
+								span 近30日销量：999+
+								span.user-shopSetting-date 上架时间：2017-09-09
+							.clearfix
+								a(href="javascript:;").user-shopSetting-delBtn.J-shopSetting-delBtn 删除
+								a(href="javascript:;").user-shopSetting-grayBtn 
+									span 冰箱冰
+								a(href="javascript:;",share-url="https://www.baidu.com").user-shopSetting-shareBtn.J-shopSetting-shareBtn  分享
+					.user-shopSetting-bottom.clearfix
+						.J-shopSetting-page
+				.share-down.J-share-sWrap
+					span.user-shareBox
+						em.user-shareRole
+						span.user-shareIconBox
+							em.icon-weixin.J-share-weixin
+							em.icon-qq.J-share-qq
+							em.icon-sina.J-share-sina
+							em.icon-qzone.J-share-qzone
+		include ../../widget/footer/footer.pug

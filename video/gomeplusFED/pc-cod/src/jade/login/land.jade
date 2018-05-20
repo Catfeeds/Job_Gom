@@ -1,0 +1,107 @@
+doctype html
+html(lang="zh-CN")
+	include ../../../../../gomeplusUI/pc/src/jade/head.jade
+	body.opg.lg-bg
+		link(type="text/css",rel="stylesheet",href="../../css/public/public.css")
+		link(type="text/css",rel="stylesheet",href="../../css/module/login/login.css")
+		.lg-header
+			.lg-header-in
+				h1.lg-logo
+					a 国美plus
+		.land-main
+			.lg-main.land-bg.clearfix
+				.lg-land-main
+					a(href="javascript:;").lg-saoma
+					h4.lg-land-tl 欢迎登录
+					.lg-error-tip.none.clearfix
+						em.icon &#xe983;
+						span 您已三次输入错误，请输入验证码
+					.land-form
+						.land-form-it.land-error-it
+							em.icon.icon-close.none &#xe92b;
+							label.icon.icon-label &#xe939;
+							input.land-input-md(type="txt" placeholder="手机号 / 国美在线账号")
+						.land-form-it
+							em.icon.icon-close.none &#xe92b;
+							label.icon.icon-label &#xea5b;
+							input.land-input-md(type="password" placeholder="密码")
+						.land-form-cell(style="display:none")
+							input.land-input-short(type="txt" placeholder="请输入验证码")
+							img.code-img(src="https://authcode.jd.com/verify/image?a=0&acid=16df2e7f-bccd-44b1-b2d0-9197b9c3114c&uid=16df2e7f-bccd-44b1-b2d0-9197b9c3114c&srcid=reg&is=232d8947c993ee6abbd1737f36e75c7d&yys=1463892622178")
+							a.chage-code(href="javascript:;") 换一张
+					.land-forget-txt
+						a.forget-ps-word(href="javascript:;") 忘记密码
+						a.rapid-log(href="javascript:;") 立即注册
+					a.pc-btn.pc-btnw300.pc-btnh45(href="javascript:;") 登 录
+					p.land-types
+						span 第三方账号登录：
+						a(href="javascript:;").icon.icon-qq &#xe901;
+						a(href="javascript:;").icon.icon-wx &#xe938;
+						a(href="javascript:;").icon.icon-wb &#xe936;
+					.lg-code-main(style="display:none")
+						a(href="javascript:;").lg-saoma
+						h5.land-title 手机扫码，安全登录
+						.land-code-img
+							img(src="../../images/login/m-code.png")
+							.sm-failed(style="display:block")
+								span 二维码已失效
+								a(href="javascript:;") 点击刷新
+						.land-bottom.clearfix
+							em.icon &#xe929;
+							p 打开 
+								span 国美+app
+									br
+								| 扫一扫登录
+					.lg-code-main(style="display:none")
+						a(href="javascript:;").lg-saoma
+						h5.land-title 手机扫码，安全登录
+						.sm-success
+							img(src="../../images/login/sm-success.jpg").sm-succes-img
+							span 扫描成功
+							p 请在手机上确认登录
+							a(href="javascript:;") 返回二维码登录
+		div.footer.footer-land
+			div.wrap-box.clearfix
+				dl.link-list
+					dt 国美控股
+					dd
+						a(href="#") 国美集团
+					dd
+						a(href="#") 国美家装
+					dd
+						a(href="#") 国美金融
+					dd
+						a(href="#") 国美酒业
+					dd
+						a(href="#") 国美在线
+				dl.link-list
+					dt 商家服务
+					dd
+						a(href="#") 商家入驻
+					dd
+						a(href="#") 商家管理中心
+					dd
+						a(href="#") 帮助中心
+					dd
+						a(href="#") 联系我们
+				dl.link-list
+					dt 关于我们
+					dd
+						a(href="#") 关于美信
+					dd
+						a(href="#") 服务协议
+					dd
+						a(href="#") 美信招聘
+					dd
+						a(href="#") 网站地图
+				div.ma
+					p
+						img(src="../../images/public/ma1.jpg")
+						| 国美+APP
+					p
+						img(src="../../images/public/ma2.jpg")
+						| 国美+微信服务号
+			.copyright 2015-2016 美信网络技术有限公司 版权所有 渝ICP备15012739号
+
+
+

@@ -1,0 +1,239 @@
+@charset "UTF-8";
+/*==============================标准色==========================*/
+/*----主色-----*/
+/*==============================字体大小==========================*/
+/*==============================wrap宽度==========================*/
+/*==============================btn 宽度==========================*/
+/*==============================nav==========================*/
+/*==============================text clolor==========================*/
+.opg .crumbs-box {
+  background: #f6f5ee;
+  width: 1200px;
+  margin: 0 auto; }
+
+.bg-white {
+  background-color: #fff; }
+
+.borb {
+  border-bottom: 1px solid #f6f5ee; }
+
+.borr {
+  border-right: 1px solid #f6f5ee; }
+
+.post-comment-table th {
+  height: 59px;
+  line-height: 59px;
+  font-weight: normal; }
+
+.post-comment-table td {
+  vertical-align: top; }
+
+.post-comment-table .comment-title {
+  width: 165px;
+  font-size: 20px;
+  font-weight: normal;
+  padding-left: 20px; }
+
+.post-comment-table .order-num {
+  padding-left: 37px;
+  text-align: left; }
+  .post-comment-table .order-num .font-grey-normal {
+    color: #666;
+    margin-right: 10px; }
+
+.post-comment-table .product-info {
+  width: 152px;
+  height: 335px;
+  text-align: center;
+  padding: 30px 15px 0 19px; }
+  .post-comment-table .product-info img {
+    width: 78px;
+    height: 78px;
+    border: 1px solid #e9e8e5; }
+  .post-comment-table .product-info .prod-title {
+    display: block;
+    width: 152px;
+    max-height: 38px;
+    padding-top: 10px;
+    word-break: break-all;
+    overflow: hidden; }
+    .post-comment-table .product-info .prod-title:hover {
+      color: #e30d3e; }
+  .post-comment-table .product-info p {
+    margin-top: 10px;
+    word-break: break-all; }
+
+.post-comment-table .comment-box {
+  width: 1013px;
+  padding-top: 10px; }
+  .post-comment-table .comment-box li {
+    margin-bottom: 13px; }
+  .post-comment-table .comment-box .comment-post {
+    padding-left: 36px; }
+  .post-comment-table .comment-box .textarea {
+    height: 160px;
+    position: relative;
+    display: inline-block; }
+    .post-comment-table .comment-box .textarea textarea {
+      width: 805px;
+      height: 116px;
+      padding: 9px 12px;
+      overflow-y: auto;
+      border: 1px solid #e9e8e5; }
+      .post-comment-table .comment-box .textarea textarea:hover {
+        border: 1px solid #c9c8c5; }
+      .post-comment-table .comment-box .textarea textarea:focus {
+        border: #e30d3e solid 1px; }
+    .post-comment-table .comment-box .textarea .txt-count {
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      color: #999; }
+      .post-comment-table .comment-box .textarea .txt-count span {
+        color: #f95353; }
+
+.post-comment-table .feature-title {
+  display: inline-block;
+  color: #666;
+  margin-right: 10px;
+  height: 34px;
+  line-height: 34px;
+  vertical-align: top; }
+
+.post-comment-table .star-box {
+  display: inline-block;
+  height: 34px;
+  line-height: 34px;
+  margin-right: 38px; }
+  .post-comment-table .star-box .iconn-43 {
+    color: #e9e8e5;
+    font-size: 20px;
+    margin-right: 10px;
+    vertical-align: -3px;
+    /* &.five{
+		    	color: $btn-e30d3e;
+		    } */ }
+    .post-comment-table .star-box .iconn-43.active {
+      color: #fc8753; }
+  .post-comment-table .star-box .zero {
+    color: #999;
+    margin-left: 14px; }
+  .post-comment-table .star-box .star-num {
+    display: inline-block;
+    width: 65px;
+    height: 22px;
+    line-height: 22px;
+    text-align: center;
+    margin-left: 6px;
+    color: #fc8753;
+    border: 1px solid #fc8753;
+    position: relative;
+    /* &.five{
+				color: $btn-e30d3e;
+				border: 1px solid $btn-e30d3e;
+				.icon-left{
+					background: url(../../images/shop/comment-score-five.png) no-repeat;
+				}
+			} */ }
+    .post-comment-table .star-box .star-num .icon-left {
+      position: absolute;
+      left: -7px;
+      top: 6px;
+      width: 7px;
+      height: 8px;
+      background: url(../../images/shop/comment-score-sj.png) no-repeat; }
+
+.post-comment-table .pics-list-wrap {
+  display: inline-block; }
+  .post-comment-table .pics-list-wrap .pics-list {
+    width: 450px; }
+    .post-comment-table .pics-list-wrap .pics-list li {
+      float: left;
+      width: 78px;
+      height: 78px;
+      line-height: 76px;
+      text-align: center;
+      border: 1px solid #e9e8e5;
+      margin-right: 10px;
+      margin-bottom: 0;
+      position: relative;
+      cursor: pointer; }
+      .post-comment-table .pics-list-wrap .pics-list li img {
+        width: 78px;
+        height: 78px; }
+      .post-comment-table .pics-list-wrap .pics-list li:hover .iconn-66 {
+        display: block; }
+    .post-comment-table .pics-list-wrap .pics-list .iconn-66 {
+      display: none;
+      position: absolute;
+      top: -7px;
+      right: -7px;
+      font-size: 16px;
+      opacity: 0.6;
+      height: 16px\9;
+      overflow: hidden\9; }
+    .post-comment-table .pics-list-wrap .pics-list .bar-upload-pic {
+      width: 40px;
+      height: 3px;
+      overflow: hidden;
+      background-color: #e9e8e5;
+      margin: 38px 0 0 19px; }
+      .post-comment-table .pics-list-wrap .pics-list .bar-upload-pic span {
+        display: block;
+        width: 0%;
+        height: 3px;
+        background-color: #e60039; }
+    .post-comment-table .pics-list-wrap .pics-list input {
+      display: block;
+      width: 76px;
+      height: 76px;
+      line-height: 76px;
+      opacity: 0;
+      visibility: hidden;
+      cursor: pointer;
+      position: absolute;
+      top: 1px;
+      left: 1px;
+      z-index: 9; }
+    .post-comment-table .pics-list-wrap .pics-list .iconn-50 {
+      font-size: 21px;
+      font-weight: bold;
+      color: #f95353;
+      cursor: pointer;
+      line-height: 80px; }
+    .post-comment-table .pics-list-wrap .pics-list .re-upload {
+      font-size: 12px;
+      color: #f95353; }
+  .post-comment-table .pics-list-wrap .num-pics {
+    margin-top: 13px;
+    color: #666;
+    text-align: left;
+    padding-bottom: 10px; }
+    .post-comment-table .pics-list-wrap .num-pics .link-hover-red {
+      color: #e60039; }
+    .post-comment-table .pics-list-wrap .num-pics .deep-gray {
+      color: #333; }
+
+.post-comment-table .service-score {
+  padding: 17px 0 17px 37px; }
+
+.post-comment-table .submit-comment {
+  float: right;
+  width: 120px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  color: #fff;
+  margin-right: 60px;
+  border-radius: 3px;
+  margin-top: -2px;
+  background-color: #f95353; }
+  .post-comment-table .submit-comment:hover {
+    background-color: #e30d3e; }
+
+.commented-txt {
+  color: #666;
+  text-align: center;
+  padding-top: 120px; }
+  .commented-txt a {
+    color: #e60039; }

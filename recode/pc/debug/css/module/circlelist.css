@@ -1,0 +1,309 @@
+@charset "UTF-8";
+/*==============================标准色==========================*/
+/*----主色-----*/
+/*==============================字体大小==========================*/
+/*==============================wrap宽度==========================*/
+/*==============================btn 宽度==========================*/
+/*==============================nav==========================*/
+/*==============================text clolor==========================*/
+.popular-recommendation .recommendation-list .list-txt .circle-topic-title, .circle-square-box .circle-square-table .circle-big .circle-title, .circle-square-box .circle-square-table .hover-type-big .circle-type, .circle-square-box .circle-square-table .circle-big.classCreate .circle-type, .circle-square-box .circle-square-table .small-wrap .circle-small .circle-title, .circle-square-box .circle-square-table .hover-type-small .circle-type, .circle-square-box .circle-square-table .circle-small.classCreate .circle-type {
+  -webkit-text-overflow: ellipsis;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap; }
+
+.title-wrap {
+  position: relative; }
+
+.circle-list-title {
+  width: 154px;
+  height: 53px;
+  color: #999;
+  font-size: 30px;
+  font-weight: normal;
+  color: #333;
+  margin: 53px auto 19px;
+  text-align: center;
+  text-indent: -9999px;
+  background: url(../../images/public/circle-list-title.png) no-repeat 0 0; }
+  .circle-list-title span {
+    display: block;
+    color: #999;
+    font-size: 14px; }
+
+.discover {
+  width: 116px;
+  height: 50px;
+  background-position: 0 -57px; }
+
+.create-circle {
+  position: absolute;
+  top: 38px;
+  right: 1px;
+  color: #fc8753; }
+
+.tag {
+  background: #ff535c;
+  border-radius: 2px;
+  padding: 2px 9px;
+  font-size: 12px;
+  color: #fff; }
+
+.popular-recommendation {
+  width: 1215px; }
+  .popular-recommendation .recommendation-list {
+    float: left;
+    width: 390px;
+    height: 380px;
+    margin: 0 15px 15px 0;
+    overflow: hidden;
+    background: #fff; }
+    .popular-recommendation .recommendation-list .list-img {
+      width: 390px;
+      height: 250px; }
+      .popular-recommendation .recommendation-list .list-img img {
+        width: 390px;
+        height: 250px;
+        -moz-transition: all .3s ease;
+        -o-transition: all .3s ease;
+        -webkit-transition: all .3s ease;
+        transition: all .3s ease; }
+    .popular-recommendation .recommendation-list:hover {
+      box-shadow: 3px 3px 6px 0 #d2d2d2;
+      -webkit-box-shadow: 3px 3px 6px 0 #d2d2d2;
+      -moz-box-shadow: 3px 3px 6px 0 #d2d2d2; }
+      .popular-recommendation .recommendation-list:hover .list-img img {
+        -moz-transform: scale3d(0.98, 0.98, 1);
+        -ms-transform: scale3d(0.98, 0.98, 1);
+        -webkit-transform: scale3d(0.98, 0.98, 1);
+        transform: scale3d(0.98, 0.98, 1); }
+    .popular-recommendation .recommendation-list .list-txt {
+      width: 332px;
+      padding: 0 29px;
+      margin-top: 16px; }
+      .popular-recommendation .recommendation-list .list-txt a:hover {
+        color: #e60039; }
+      .popular-recommendation .recommendation-list .list-txt .list-txt-t {
+        height: 20px;
+        line-height: 20px;
+        padding-bottom: 11px; }
+        .popular-recommendation .recommendation-list .list-txt .list-txt-t .tag {
+          vertical-align: 1px;
+          margin-right: 9px; }
+        .popular-recommendation .recommendation-list .list-txt .list-txt-t a {
+          font-size: 16px;
+          margin-right: 10px; }
+          .popular-recommendation .recommendation-list .list-txt .list-txt-t a:hover {
+            color: #e60039; }
+        .popular-recommendation .recommendation-list .list-txt .list-txt-t p {
+          float: right;
+          color: #999;
+          font-size: 12px;
+          margin-right: -9px; }
+          .popular-recommendation .recommendation-list .list-txt .list-txt-t p span {
+            margin: 0 9px 0 6px; }
+      .popular-recommendation .recommendation-list .list-txt .circle-topic-title {
+        display: block;
+        padding: 10px 0;
+        line-height: 1;
+        border-top: 1px dashed #f0efeb; }
+
+.circle-square-nav {
+  width: 1200px;
+  position: relative;
+  background-color: #fff;
+  border-bottom: 1px solid #e5e5e5;
+  box-shadow: 0 3px 3px -2px #d2d2d2;
+  -webkit-box-shadow: 0 3px 3px -2px #d2d2d2;
+  -moz-box-shadow: 0 3px 3px -2px #d2d2d2; }
+  .circle-square-nav ul {
+    width: 1020px;
+    height: 53px;
+    overflow: hidden;
+    padding-left: 47px; }
+  .circle-square-nav .h-auto {
+    height: auto; }
+  .circle-square-nav li {
+    float: left;
+    height: 53px; }
+    .circle-square-nav li a {
+      display: block;
+      padding: 15px 27px; }
+      .circle-square-nav li a:hover {
+        color: #e60039; }
+      .circle-square-nav li a.active {
+        color: #e60039;
+        border-bottom: 2px solid #e60039; }
+  .circle-square-nav .more {
+    position: absolute;
+    top: 16px;
+    right: 73px; }
+    .circle-square-nav .more:hover {
+      color: #e60039; }
+  .circle-square-nav .icon {
+    margin-left: 8px; }
+
+.circle-square-box {
+  width: 1206px; }
+  .circle-square-box .circle-square-table {
+    float: left; }
+    .circle-square-box .circle-square-table .circle-big {
+      position: relative;
+      float: left;
+      width: 296px;
+      height: 296px;
+      text-align: center;
+      margin: 5px 5px 0 0;
+      background-color: #fff; }
+      .circle-square-box .circle-square-table .circle-big .head {
+        width: 85px;
+        height: 85px;
+        border-radius: 50%;
+        margin: 80px auto 63px; }
+      .circle-square-box .circle-square-table .circle-big .circle-title {
+        font-size: 16px;
+        padding: 0 20px;
+        width: 256px; }
+    .circle-square-box .circle-square-table .big-red1 {
+      background: url(../../images/circle/red-big1.png) #fff no-repeat center 35px; }
+    .circle-square-box .circle-square-table .big-red2 {
+      background: url(../../images/circle/red-big2.png) #fff no-repeat center 35px; }
+    .circle-square-box .circle-square-table .big-yellow1 {
+      background: url(../../images/circle/yellow-big1.png) #fff no-repeat center 35px; }
+    .circle-square-box .circle-square-table .big-blue {
+      background: url(../../images/circle/blue-big.png) #fff no-repeat center 35px; }
+    .circle-square-box .circle-square-table .hover-type-big {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 296px;
+      height: 296px;
+      color: #fff;
+      text-align: center;
+      background: url(../../images/public/opacity.png) repeat; }
+      .circle-square-box .circle-square-table .hover-type-big a {
+        color: #fff; }
+      .circle-square-box .circle-square-table .hover-type-big .circle-type {
+        font-size: 26px;
+        font-weight: normal;
+        padding: 87px 20px 18px; }
+      .circle-square-box .circle-square-table .hover-type-big .tag {
+        padding: 2px 13px; }
+      .circle-square-box .circle-square-table .hover-type-big .num {
+        width: 188px;
+        margin: 32px auto 0; }
+        .circle-square-box .circle-square-table .hover-type-big .num li {
+          float: left;
+          width: 50%; }
+          .circle-square-box .circle-square-table .hover-type-big .num li span {
+            display: block; }
+          .circle-square-box .circle-square-table .hover-type-big .num li .count {
+            font-size: 30px; }
+    .circle-square-box .circle-square-table .circle-big.classCreate .head {
+      width: 100px;
+      height: 100px;
+      margin: 61px auto 18px; }
+    .circle-square-box .circle-square-table .circle-big.classCreate .circle-title {
+      line-height: 28px; }
+      .circle-square-box .circle-square-table .circle-big.classCreate .circle-title span {
+        display: block; }
+    .circle-square-box .circle-square-table .circle-big.classCreate .create-btn {
+      width: 120px;
+      height: 35px;
+      line-height: 35px; }
+    .circle-square-box .circle-square-table .circle-big.classCreate .circle-type {
+      font-size: 24px;
+      padding: 99px 20px 36px; }
+    .circle-square-box .circle-square-table .small-wrap {
+      float: left; }
+      .circle-square-box .circle-square-table .small-wrap .circle-small {
+        position: relative;
+        width: 146px;
+        height: 146px;
+        text-align: center;
+        margin: 5px 5px 0 0;
+        background-color: #fff; }
+        .circle-square-box .circle-square-table .small-wrap .circle-small .head {
+          width: 50px;
+          height: 50px;
+          border-radius: 50%;
+          margin: 33px auto 24px; }
+        .circle-square-box .circle-square-table .small-wrap .circle-small .circle-title {
+          font-size: 12px;
+          padding: 0 10px;
+          width: 124px; }
+      .circle-square-box .circle-square-table .small-wrap .small-red1 {
+        background: url(../../images/circle/red-small1.png) #fff no-repeat center 18px; }
+      .circle-square-box .circle-square-table .small-wrap .small-red2 {
+        background: url(../../images/circle/red-small2.png) #fff no-repeat center 18px; }
+      .circle-square-box .circle-square-table .small-wrap .small-blue {
+        background: url(../../images/circle/blue-small.png) #fff no-repeat center 18px; }
+      .circle-square-box .circle-square-table .small-wrap .small-green1 {
+        background: url(../../images/circle/green-small1.png) #fff no-repeat center 18px; }
+      .circle-square-box .circle-square-table .small-wrap .small-green2 {
+        background: url(../../images/circle/green-small2.png) #fff no-repeat center 18px; }
+      .circle-square-box .circle-square-table .small-wrap .small-yellow1 {
+        background: url(../../images/circle/yellow-small1.png) #fff no-repeat center 18px; }
+      .circle-square-box .circle-square-table .small-wrap .small-yellow2 {
+        background: url(../../images/circle/yellow-small2.png) #fff no-repeat center 18px; }
+    .circle-square-box .circle-square-table .hover-type-small {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 146px;
+      height: 146px;
+      color: #fff;
+      text-align: center;
+      -webkit-text-size-adjust: none;
+      background: url(../../images/public/opacity.png) repeat; }
+      .circle-square-box .circle-square-table .hover-type-small a {
+        display: blcok;
+        color: #fff; }
+      .circle-square-box .circle-square-table .hover-type-small .circle-type {
+        font-size: 14px;
+        font-weight: normal;
+        padding: 35px 10px 9px; }
+      .circle-square-box .circle-square-table .hover-type-small .tag {
+        -webkit-text-size-adjust: none;
+        font-size: 10px;
+        padding: 1px 8px; }
+      .circle-square-box .circle-square-table .hover-type-small .num {
+        width: 92px;
+        margin: 16px auto 0; }
+        .circle-square-box .circle-square-table .hover-type-small .num li {
+          float: left;
+          width: 50%; }
+          .circle-square-box .circle-square-table .hover-type-small .num li span {
+            display: block;
+            font-size: 8px; }
+          .circle-square-box .circle-square-table .hover-type-small .num li .count {
+            font-size: 16px; }
+    .circle-square-box .circle-square-table .circle-small.classCreate .head {
+      width: 60px;
+      height: 60px;
+      margin: 22px auto 10px; }
+    .circle-square-box .circle-square-table .circle-small.classCreate .circle-title {
+      line-height: 21px; }
+      .circle-square-box .circle-square-table .circle-small.classCreate .circle-title span {
+        display: block; }
+    .circle-square-box .circle-square-table .circle-small.classCreate .create-btn {
+      width: 81px;
+      height: 23px;
+      line-height: 23px;
+      font-size: 10px; }
+    .circle-square-box .circle-square-table .circle-small.classCreate .circle-type {
+      font-size: 14px;
+      padding: 50px 10px 24px; }
+    .circle-square-box .circle-square-table .hover-mask {
+      display: none; }
+      .circle-square-box .circle-square-table .hover-mask a {
+        display: block;
+        height: 100%; }
+    .circle-square-box .circle-square-table .hover:hover .hover-mask {
+      display: block; }
+
+.more-comments {
+  margin-top: 36px; }
+
+.topLy {
+  top: 0; }

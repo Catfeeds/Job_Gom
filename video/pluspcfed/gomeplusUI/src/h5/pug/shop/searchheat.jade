@@ -1,0 +1,52 @@
+doctype html
+html(lang="zh-CN",data-use-rem="750")
+    include ../../../m-widget/head/head.jade
+    link(type="text/css",rel="stylesheet",href="../../css/public/public-wap.css")
+    link(type="text/css",rel="stylesheet",href="../../css/module/search.css")
+    
+    body.opg.search
+        include ../../../m-widget/head/rem.jade
+        
+        .filter-box.showfilter-transition
+            .search-filter
+                header.header
+                    span
+                        a.head-back(href="javascript:;")
+                            em.iconn-1
+                    h1.head-title 筛选
+                    span
+                        a.head-edit(href="javascript:;") 确认
+                .heat-bx
+                    a.head.active(href="javascript:;") 按热度
+                        i.head-line
+                    a(href="javascript:;") 按首字母
+                .heat-box
+                    ul.heat-list
+                        li
+                            span 创维
+                            em.iconn-94
+                        li
+                            span 创维
+                            em.iconn-94
+                        li
+                            span 创维
+                            em.iconn-94
+                        li.active
+                            span 创维
+                            em.iconn-94
+                        -for(var i=0; i<26; i++)
+                            li
+                                span 创维
+                                em.iconn-94
+
+
+
+
+
+
+
+
+
+
+
+

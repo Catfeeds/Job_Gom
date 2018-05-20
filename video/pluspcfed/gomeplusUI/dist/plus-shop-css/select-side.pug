@@ -1,0 +1,167 @@
+extends ../plus-widget/head/head.jade
+block style
+	link(type="text/css",rel="stylesheet",href="rebate.css")
+	script(type="text/javascript",src="../plus-shop-js/src/communal/zepto.min.js")
+	script(type="text/javascript",src="../plus-shop-js/src/communal/zepto.swipe.js")
+	script(type="text/javascript",src="../plus-shop-js/src/rebate/rebate.js")
+block body
+	body.opg.rebate
+		include ../plus-widget/head/rem.jade
+		.m-mask-private(style="display:block")
+		// 筛选页
+		aside.aslider(style="display:block")
+			.m-select
+				ul.option-wrap.module-normal.module-top.bor-b
+					li.active
+						a(href="javascript:;").m-btn-bor.option
+							em.iconn-94
+							span.elli 国美自营
+					li
+						a(href="javascript:;").m-btn-bor.option
+							em.iconn-94
+							span.elli 仅看有货
+				.module-normal.bor-b
+					a(href="javascript:;").flex-box
+						.dsib.title.title-normal 配送至
+						p.flex-bd.elli.selected
+							em.iconn-56
+							| 黑龙江省齐齐哈尔市齐齐哈尔市弗拉基区39号Kitty
+						em.iconn-41
+				.module-normal.bor-b
+					a(href="javascript:;").flex-box
+						.dsib.title.title-normal 价格区间
+						.flex-bd.price-input
+							input(type="number" placeholder="最高价").price-in.fl
+							em.line
+							input(type="number" placeholder="最低价").price-in.fr
+				.module-normal
+					a(href="javascript:;").flex-box
+						.dsib.title.title-normal 所有类目
+						p.flex-bd.elli.selected 全部类目
+						em.iconn-41
+				.module-normal.mgt-20
+					.title.title-normal 返利类型
+					ul.option-wrap
+						li.active
+							a(href="javascript:;").m-btn-bor.option
+								em.iconn-94
+								span.elli 分享返
+						li
+							a(href="javascript:;").m-btn-bor.option
+								em.iconn-94
+								span.elli 购买返
+				// 品牌默认展示6个
+				.module-normal.mgt-20
+					.title.title-normal
+						| 品牌
+						em.unfold.iconn-40
+						em.unfold.iconn-42
+					ul.option-wrap
+						li.active
+							a(href="javascript:;").m-btn-bor.option
+								em.iconn-94
+								span.elli 挂壁式超省电空调
+						// - for(i=0;i<7;i++)
+						li
+							a(href="javascript:;").m-btn-bor.option
+								em.iconn-94
+								span.elli 挂壁式超省电空调
+				// 除品牌外其他默认展示3个
+				.module-normal.mgt-20
+					.title.title-normal
+						| 颜色
+						em.unfold.iconn-40
+						em.unfold.iconn-42
+					ul.option-wrap
+						li.active
+							a(href="javascript:;").m-btn-bor.option
+								em.iconn-94
+								span.elli 挂壁式超省电空调
+						// - for(i=0;i<7;i++)
+						li
+							a(href="javascript:;").m-btn-bor.option
+								em.iconn-94
+								span.elli 挂壁式超省电空调
+			.fixed-btn.flex-box
+				a(href="javascript:;").flex-bd.btn-reset 重置
+				a(href="javascript:;").flex-bd.btn-confirm 确定
+		// 所有类目
+		aside.aslider(style="display:none")
+			.m-select.module-normal
+				.title.fixed-title
+					em.iconn-43
+					| 所有类目
+				.f-t-b
+					.bor-b
+						ul.option-wrap
+							li.active
+								a(href="javascript:;").m-btn-bor.option
+									em.iconn-94
+									span.elli 所有类目
+							// - for(i=0;i<2;i++)
+							li
+								a(href="javascript:;").m-btn-bor.option
+									em.iconn-94
+									span.elli 挂壁式
+					.bor-b
+						.title.title-normal
+							| 灯具光源
+							span.num (14)
+						ul.option-wrap
+							li
+								a(href="javascript:;").m-btn-bor.option
+									em.iconn-94
+									span.elli LED灯
+					.bor-b
+						.title.title-normal
+							| 苹果配件
+							span.num (36)
+						ul.option-wrap
+							li.active
+								a(href="javascript:;").m-btn-bor.option
+									em.iconn-94
+									span.elli 电视挂架挂架
+								li
+									a(href="javascript:;").m-btn-bor.option
+										em.iconn-94
+										span.elli 插线板插线板插线板
+								li
+									a(href="javascript:;").m-btn-bor.option
+										em.iconn-94
+										span.elli 插线板插线板插线板
+		// 历史配送地址
+		aside.aslider(style="display:none")
+			.m-select.module-normal
+				.title.fixed-title
+					em.iconn-43
+					| 配送至
+				ul.f-t-b.address-wrap
+					li.title-normal.flex-box.bor-b.active
+						em.iconn-56
+						p.flex-bd 北京北京市朝阳区高碑店地区大黄庄南里妇联小区10号楼5单元501
+						em.iconn-94
+					- for(i=0;i<10;i++)
+						li.title-normal.flex-box.bor-b
+							em.iconn-56
+							p.flex-bd 北京北京市朝阳区高碑店地区大黄庄南里妇联
+							em.iconn-94
+			.fixed-btn
+				a(href="javascript:;").btn-confirm 选择其他地址
+		// 筛选地区列表
+		aside.aslider(style="display:none")
+			.m-select.module-normal
+				.title.fixed-title
+					em.iconn-43
+					| 配送至
+				ul.address-tab.bor-b
+					li
+						a(href="javascript:;") 北京
+					li.active
+						a(href="javascript:;") 请选择
+				ul.address-wrap.area-list
+					li.title-normal.bor-b.flex-box.active
+						p.flex-bd 朝阳区
+						em.iconn-94
+					li.title-normal.bor-b.flex-box
+						p.flex-bd 昌平区
+						em.iconn-94

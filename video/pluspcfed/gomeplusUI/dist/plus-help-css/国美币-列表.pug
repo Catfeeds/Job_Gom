@@ -1,0 +1,30 @@
+extends ../plus-widget/head/head.jade
+block style
+	link(type="text/css",rel="stylesheet",href="plaintext.css")
+block body
+	body.opg
+		include ../plus-widget/head/rem.jade
+		<!--header-->
+		header.header
+			.h-left
+				a.h-back(href="javascript:;")
+					em.iconn-1
+			.h-cnt.flex-cell
+				h1.h-tit 说明
+		section.im-items
+			ul
+				li
+					a(href="#") 什么是国美币？
+					em.iconn-41
+				li
+					a(href="#") 支付红包提示笔数超过限制怎么办？
+					em.iconn-41
+				li
+					a(href="#") 怎么查我的红包发送和领取记录？
+					em.iconn-41
+				li
+					a(href="#") 国美币是否可以提现？
+					em.iconn-41
+				li
+					a(href="#") 实名认证
+					em.iconn-41

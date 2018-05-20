@@ -1,0 +1,85 @@
+//- extends layout.jade
+extends ../public/layout.jade
+
+block title
+	title 现金账户明细-充值记录
+//- block link-theme
+//- 	link(rel='stylesheet' type="text/css" href="../../css/module/account.css")
+
+//- account
+block content
+	include ../public/menu.jade
+	div.content-main
+		div.amp-account
+			// crumbs
+			div.crumbs
+				a(href="javascript:void(0);")
+					span 我的账户
+					em >
+				a(href="javascript:void(0);").actived
+					span 现金账户明细
+					em >
+			// account-main
+			div.account-main
+				div.tabs
+					ul
+						li
+							a(href="#") 消费记录
+						li.actived
+							a(href="#") 充值记录
+				div.main-wrap
+					// 消费记录
+					div.record-consume
+						// 查询
+						div.set-fn
+							div.fn-plan
+								span.plan-title 日期：
+								div.ele-input
+									input(type="text",value="")
+							div.fn-plan
+								span.plan-title 状态：
+								div.ele-select
+									span.select-text 全部
+							div.fn-search
+								a(href="#").btn.btn-primary 查询
+						// 列表
+						div.cont-list
+							table.table
+								tr
+									th
+										span 充值日期
+									th
+										span 名称
+									th
+										span 状态
+									th
+										span 流水单号
+									th
+										span 金额（元）
+								tr
+									td
+										span
+											a(href="#") 2016/12/23
+									td
+										span 充值-普通充值
+									td
+										span 处理中
+									td
+										span 21516333218
+									td
+										span 10,000
+								- for (var i =0;i<8;i++)
+									tr
+										td
+											span
+												a(href="#") 2016/12/23
+										td
+											span 充值-普通充值
+										td
+											span 成功
+										td
+											span 21516333218
+										td
+											span 10,000
+						
+			

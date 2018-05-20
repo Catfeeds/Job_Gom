@@ -1,0 +1,147 @@
+/* reset */
+@import "../../base/public.scss";
+
+
+.bg-fff{
+    background: $white!important;
+}
+.reset-step{
+    width: 790px;
+    height: 70px;
+    margin: 0 auto 65px;
+    font-size: 22px;
+    position: relative;
+    &:after{
+        content: "";
+        position: absolute;
+        left: 69px;
+        bottom: 13px;
+        height: 4px;
+        line-height: 0;
+        font-size: 0;
+        width: 660px;
+        background: $border;
+        border-radius: 2px;
+        z-index: 1;
+    }
+    .step{
+        float: left;
+        width: 5em;
+        text-align: center;
+        position: relative;
+        p{
+            line-height: 1;
+            padding-bottom: 18px;
+        }
+        span{
+            display: inline-block;
+            width: 30px;
+            height: 30px;
+            line-height: 30px;
+            border-radius: 50%;
+            background: $border;
+            color: #fff;
+            position: relative;
+            z-index: 3;
+        }
+        &.active{
+            span{
+                background: $success;
+            }
+        }
+    }
+    .step1{
+        padding-right: 123px;
+        &.active:after{
+            content: "";
+            position: absolute;
+            left: 69px;
+            bottom: 13px;
+            height: 4px;
+            line-height: 0;
+            font-size: 0;
+            width: 165px;
+            background: $success;
+            border-radius: 2px;
+            z-index: 2;
+        }
+    }
+    .step2{
+        padding: 0 118px;
+        &.active:after{
+            content: "";
+            position: absolute;
+            left: 0;
+            bottom: 13px;
+            height: 4px;
+            line-height: 0;
+            font-size: 0;
+            width: 345px;
+            background: $success;
+            border-radius: 2px;
+            z-index: 2;
+        }
+    }
+    .step3{
+        float: right;
+        &.active:after{
+            content: "";
+            position: absolute;
+            left: -103px;
+            bottom: 13px;
+            height: 4px;
+            line-height: 0;
+            font-size: 0;
+            width: 150px;
+            background: $success;
+            border-radius: 2px;
+            z-index: 2;
+        }
+    }
+}
+
+
+.reset{
+    .form-group,.form-btn{
+        width: 350px;
+        margin: 0 auto;
+    }
+    .reset-state{
+        font-size: 30px;
+        line-height: 40px;
+        .icon-2{
+            font-size: 40px;
+            margin-right: 18px;
+            color: $success;
+            vertical-align: -5px;
+        }
+        p{
+            font-size: 14px;
+            line-height: 1;
+            padding-top: 40px;
+            a{
+                color: $primary;
+            }
+        }
+    }
+}
+
+.reset-wrap{
+    height: calc(100vh - 170px);
+    overflow: auto;
+    display: table;
+    width: 100%;
+    .login-box{
+        display: table-cell;
+        vertical-align: middle;
+        text-align: center;
+    }
+}
+.reset-wrap .form-group .form-input .input-text{
+    width: 350px!important;
+    max-width: 350px!important;
+}
+.reset-wrap .form-group .form-input .input-code{
+    width: 250px!important;
+    max-width: 250px!important;
+}

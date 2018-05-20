@@ -1,0 +1,64 @@
+doctype html
+html(lang="zh-CN",data-use-rem="750")
+	include ../../../m-widget/head/head.jade
+	link(type="text/css",rel="stylesheet",href="../../css/public/public-wap.css")
+	link(type="text/css",rel="stylesheet",href="../../css/module/usercenter-new.css")
+	
+	body(style="background-color: #fff;").opg.user-center
+		include ../../../m-widget/head/rem.jade
+
+		header.header
+			span
+				a.head-back(href="javascript:;")
+					em.iconn-1
+			h1.head-title 达人招募
+		// /header
+
+		.daren-wrap
+			.dr-6
+			.dr-7
+			.dr-9.dr-process
+				ul
+					li.active
+						.step-num 1
+						span.step-txt 填写资料
+					li.active
+						.step-num 2
+						span.step-txt 审核
+					li.fail
+						.step-num 3
+						span.step-txt 填写资料
+				p.fail-txt
+					span 不好意思哦，小主！
+					span 您的身份证号信息填写有误，请重新填写！
+				a(href="##" disabled="disabled").btn-shadow
+					span.orange-btn 修改
+			.dr-table.dr-fail
+				ul
+					li
+						label 真实姓名:
+						.input-box
+							input(type="text" placeholder="请输入姓名（必填）" value="JOJOK")
+					li
+						label 身份证号:
+						.input-box
+							input(type="text" placeholder="请输入身份证号（必填）" value="342221199302046688")
+					li
+						label 实名认证:
+						span.gray （身份证正反面照、手持身份证照）
+						.idpics
+							img(src="../../images/coupon_share_logo.jpg")
+							img(src="../../images/coupon_share_logo.jpg")
+							img(src="../../images/coupon_share_logo.jpg")
+					li
+						label 达人类别:
+						.input-box
+							a(href="##").select-box 时尚达人
+							em.iconn-42
+					li
+						label 个人介绍:
+						.text-area
+							textarea(placeholder="请填写简单的文字介绍，包括您的微博、微信等其它平台的个人账号，是否与其他品牌有过合作等。")
+							span.limit 0/200
+				a(href="##").btn-shadow
+					span.orange-btn 申请达人

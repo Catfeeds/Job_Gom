@@ -1,0 +1,63 @@
+doctype html
+html(lang="zh-CN" data-use-rem="750")
+	include ../../../m-widget/head/head.jade
+	link(type="text/css",rel="stylesheet",href="../../css/public/public-wap.css")
+	link(type="text/css",rel="stylesheet",href="../../css/module/order.css")
+
+	body.opg.store-order
+		include ../../../m-widget/head/rem.jade
+		header.header
+			span
+				a.head-back(href="javascript:;")
+					em.iconn-1
+			h1.head-title 订单详情
+			span
+				a.head-icn(href="javascript:;")
+					em.iconn-4
+		/// header
+		.loading-bj
+		section.pay-sec.mb10
+			strong.cuss-txt 支付成功
+			div.succ-it
+				| 订单金额：
+				strong.money ¥9999.89
+			div.succ-it
+				| 订单编号：
+				span 2657
+		section.sec.mb10
+			h3.pay-tl 
+				em.iconn-64
+				| 国美西坝河门店
+			div.pay-sec
+				p.infor
+					| 会专用100mm紫色亮片高跟鞋宴会专用宴会专100mm紫色亮片高跟鞋紫色
+				div.detail
+					span.d-nomey ¥2929.00
+					em.num x1
+		section.pay-sec
+			ul.menu
+				li.mn-it
+					span 商品总金额:
+					em ¥9892.00
+				li.mn-it
+					span 红卡:
+					em ¥5.00
+				li.mn-it
+					span 蓝卡:
+					em ¥5.00
+				li.mn-it
+					span 积分:
+					em ¥5.00
+				li.mn-it
+					span 商品总金额:
+					em ¥5.00
+				li.mn-it
+					span 商银卡:
+					em ¥5.00
+				li.mn-it
+					span 支付方式：
+					strong 在线支付
+				li.mn-it
+					span 实付款(含运费)：
+					em ¥999989
+

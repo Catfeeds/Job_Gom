@@ -1,0 +1,52 @@
+doctype html
+html(lang='en', data-use-rem='750')
+    head
+        meta(charset='UTF-8')
+        meta(name='viewport', content='width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no')
+        meta(name='format-detection', content='telephone=no')
+        meta(name='format-detection', content='email=no')
+        title Title
+        link(rel='stylesheet',type="text/css",href='../../css/public/gomeplusUI.css')
+        link(rel='stylesheet',type="text/css",href='../../css/module/issueTopic/issuetopic.css')
+    body.opg.issuetopic
+        script.
+            (function(win){var doc=win.document,html=doc.documentElement,option=html.getAttribute("data-use-rem");if(option===null){return}var baseWidth=parseInt(option).toString()==="NaN"?640:parseInt(option);var grids=baseWidth/100;var clientWidth=html.clientWidth||320;html.style.fontSize=clientWidth/grids+"px";var testDom=document.createElement("div");var testDomWidth=0;var adjustRatio=0;testDom.style.cssText="height:0;width:1rem;";doc.body.appendChild(testDom);var calcTestDom=function(){testDomWidth=testDom.offsetWidth;if(testDomWidth!==Math.round(clientWidth/grids)){adjustRatio=clientWidth/grids/testDomWidth;var reCalcRem=clientWidth*adjustRatio/grids;html.style.fontSize=reCalcRem+"px"}else{doc.body.removeChild(testDom)}};setTimeout(calcTestDom,20);var reCalc=function(){var newCW=html.clientWidth;if(newCW===clientWidth){return}clientWidth=newCW;html.style.fontSize=newCW*(adjustRatio?adjustRatio:1)/grids+"px"};if(!doc.addEventListener){return}var resizeEvt="orientationchange" in win?"orientationchange":"resize";win.addEventListener(resizeEvt,reCalc,false);doc.addEventListener("DOMContentLoaded",reCalc,false)})(window);
+
+
+        .mdou-bx
+            ul
+                li
+                    a.explain-btn 奖励说明
+                    img(src='../../images/issuetopic/mdou-bj_01.jpg', alt='')
+                li
+                    p.activi-time
+                        span 活动时间：
+                        | 2017年6月19日-2017年6月25日
+                    img(src='../../images/issuetopic/mdou-bj_02.jpg', alt='')
+                li
+                    img(src='../../images/issuetopic/mdou-bj_03.jpg', alt='')
+                li
+                    .download-btn
+                    .issued-btn
+                    a.tips-txt 发话题小贴士         
+                    img(src='../../images/issuetopic/mdou-bj_04.jpg', alt='')
+                li
+                    img(src='../../images/issuetopic/mdou-bj_05.jpg', alt='')
+                li
+                    img(src='../../images/issuetopic/mdou-bj_06.jpg', alt='')
+                li
+                    .rule-box
+                        .rule-txt
+                            span.numb 1
+                            span 发布你想要表达的内容（可发布在任意圈子内）就能参加活动喽~赶
+                                | 紧动起来吧！
+                        .rule-txt
+                            span.numb 2
+                            span 发布你想要表达的内容（可发布在任意圈子内）就能参加活动喽~赶
+                                | 紧动起来吧！
+
+
+                    img(src='../../images/issuetopic/mdou-bj_07.jpg', alt='')
+                li
+                    img(src='../../images/issuetopic/mdou-bj_08.jpg', alt='')
+

@@ -1,0 +1,103 @@
+doctype html
+html(lang="zh-CN")
+	include ../../widget/head/head.pug
+	link(type="text/css",rel="stylesheet",href="../../css/public/public.css")
+	link(type="text/css",rel="stylesheet",href="../../css/module/usercenter.css")
+	body.opg
+		include ../../widget/header/header.pug
+		include ../../widget/menu/menu.pug
+		.wrap-box.mart20.clearfix
+			include ../../widget/slider/slider.pug
+			.order-right
+				.set-personal-title
+					a(href="javascript:;").active 基本信息
+					a(href="javascript:;") 头像照片
+				.personal-info(style="display:block")
+					p.prompt 此昵称太受欢迎了，已经有人抢了
+					ul
+						li.clearfix
+							span.info-label.lh65 头像：
+							.head-img.fl
+								img(src="../../images/public/head-default.png")
+								span.change-img 更换头像
+						li.clearfix
+							span.info-label.lh45 昵称：
+							.nickname.nicknerror.fl
+								input(type="text")
+								p.error 请输入6-20位英文字母,数字或符号
+						li.clearfix
+							span.info-label 性别：
+							.sex-radios.fl
+								input(type="radio")
+								label 男
+								input(type="radio")
+								label 女
+								input(type="radio")
+								label 保密
+						li.clearfix
+							span.info-label.lh45 生日：
+							.nickname.fl
+								input(type="text" value="1991-09-29").fl
+								p.tip 提示：生日只能修改一次！
+						li.clearfix
+							span.info-label 二维码：
+							.qr-code.fl
+								.code-box
+									img(src="../../images/public/down-ma.png")
+								p 扫一扫  加好友  互关注
+						li.clearfix
+							span.info-label 我的推荐码：
+							p.fl 65849579572
+						li.clearfix
+							span.info-label 推荐人：
+							p.fl 65849579572
+					a(href="javascript:;").personal-save-btn.active 保存
+				.upload-head
+					.upload-pic.clearfix
+						a(href="#").pc-btn.pc-bj-fc8753.pc-btnw155.pc-btnh40.upload-picture
+							span +
+							| 上传头像
+							input(type="file")
+						span.note 请上传JPG/PNG/JPEG格式的图片（选填）
+					.circle-head
+						.upload-head-bx
+							.picture-bj-img.load-ing
+								.position-abso
+									.picture-bx
+									.load-failed-bx
+										span.top-left
+										span.top-right
+										span.bottom-left
+										span.bottom-right
+										span.opacity-all
+									.load-failed-txt.failure 图片加载失败！
+										// icon替换 .icon
+										em.iconn-24
+										a(href="#") 点击刷新
+									.load-failed-txt.image-load
+										p 图片加载中
+										.progress-bar-bx
+											span
+								.circle-default-head
+									img.img250(src="../../images/public/circle-default-head.jpg")
+								span.error ＊ 图片格式有误 请重新上传
+						div.head-preview-bx
+							p.head-title 效果预览
+							p.head-size 你上传的图片会自动生成3种尺寸，请注意小尺寸的头像是否清晰
+							div.picture2-bx.clearfix
+								.picture-bx2
+									div.default-img1
+										img(src="../../images/public/default-img1.jpg")
+									p.p-size 160*160px
+								.picture-bx3
+									div.picture-bx4
+										div.default-img2
+											img(src="../../images/public/default-img2.jpg")
+										p.p-size 60*60px
+									div.picture-bx5
+										div.default-img3
+											img(src="../../images/public/default-img3.jpg")
+										p.p-size 30*30px
+					a(href="javascript:;").personal-save-btn.active 保存
+
+		include ../../widget/footer/footer.pug

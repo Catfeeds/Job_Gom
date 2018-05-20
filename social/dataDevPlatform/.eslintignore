@@ -1,0 +1,4 @@
+build/*.js
+config/*.js
+support/*.js
+src/components/component/private-current/resData/*.js

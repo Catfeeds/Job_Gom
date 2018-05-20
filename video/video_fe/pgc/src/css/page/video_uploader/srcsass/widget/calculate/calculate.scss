@@ -1,0 +1,3 @@
+/* 计算pxToRem 1500UI*/
+
+@function r($px){ @return $px / (40 * 2) * 1rem; }

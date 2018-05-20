@@ -1,0 +1,58 @@
+doctype html
+html(lang="zh-CN")
+	include ../../widget/head/head.pug
+	link(type="text/css",rel="stylesheet",href="../../css/public/public.css")
+	link(type="text/css",rel="stylesheet",href="../../css/module/editInfo.css") 
+	//- script(type="text/javascript",src="http://js.dev.meixincdn.com:1314/CDN8148/dist/js/conf/vendor.js")
+	//- script(type="text/javascript",src="http://js.dev.meixincdn.com:1314/CDN8148/dist/js/conf/shopSetting.js")
+		
+	body.opg
+		include ./header-new.pug
+		.editBox.clearfix
+			.nav-box
+				ul.meidian-naver
+					li
+						a(href="javascript:;" target="_blank").active 我的美店
+					li
+						a(href="javascript:;" target="_blank") 好货推荐
+					li
+						a(href="javascript:;" target="_blank") 美店预览
+			.open-shop
+				.edit-title-box.clearfix
+					.edit-title 编辑资料
+					.back-btn 
+						a(href="javascript:void(0)",data-node="backBtn") 返回
+				.info-box
+					.open-name
+						span.title 美店名称：
+						input(placeholder="杨春的美店",data-node="nameIpt").red-border
+						span(data-node="nameErr").error-tip 错误提示区域
+					.open-logo.clearfix
+						.title.fl 美店LOGO：
+						img(src="../../images/meidian/avatar.png",data-node="avatar").fl
+						div.logo-right.fl
+							div(data-node="uploadAvatar")
+								a(href="javascript:void(0)") 点击上传
+							span 仅支持JPG、JPEG、PNG图片文件，且文件小于2M。
+					.open-des.clearfix
+						span.title.fl 描述文字：
+						textarea(placeholder="给小店一个描述吧~",data-node="desIpt").fl
+						span.text-num 0/100
+					.open-type.clearfix
+						.title.fl 主营类目：
+						.type-box.fl.clearfix(data-node="typeBox")
+							span(data-node="typeItem").red-border 分类
+								em(data-node="delBtn")
+							span(data-node="typeItem").red-border 分类分
+								em(data-node="delBtn")
+							span(data-node="typeItem") 分类分类
+							span(data-node="typeItem") 分类分类分类
+							span(data-node="typeItem") 分类分类
+							span(data-node="typeItem") 分类分类
+							span(data-node="typeItem") 分类分类
+							span(data-node="typeItem") 分类分类
+							span(data-node="typeItem") 分类分类
+							span.no-type 无类目
+					.open-btn
+						a(href="javascript:void(0);",data-node="saveBtn").create 保存
+		include ../../widget/footer/footer.pug

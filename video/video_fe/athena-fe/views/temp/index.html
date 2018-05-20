@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>首页</title>
+
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css">
+</head>
+<style>
+    th,td {
+        padding:15px;
+    }
+    body {
+        padding-top:70px;
+    }
+
+</style>
+<body>
+<div class="container">
+    <div class="row">
+        <nav class="navbar navbar-default navbar-fixed-top">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <a style="padding: 9px;display:block;" href="#">
+                        <img alt="Brand" src="../src/assets/img/navbarLogo.png">
+                    </a>
+                </div>
+                <ul class="nav navbar-nav">
+                    <!-- add "active" to any li tag to control active state-->
+                    <li class="nav-item active"><a href="#" class="index" @click="makeActive('index')">项目</a></li>
+                    <li class="nav-item"><a href="#" class="reports" @click="makeActive('reports')">报表</a></li>
+                    <li class="nav-item"><a href="#" class="components" @click="makeActive('components')">组件</a></li>
+                    <li class="nav-item"><a href="#" class="data" @click="makeActive('data')">数据</a></li>
+                    <li class="nav-item"><a href="#" class="tools" @click="makeActive('tools')">工具</a></li>
+                    <li class="nav-item"><p class="navbar-text navbar-right">用户名： <a href="#" class="navbar-link">abc </a>
+                        <a href="javascript:">登出</a></p>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+    <div class="row">
+        <div class="col-md-3">
+            <div id="accordion" role="tablist" aria-multiselectable="true">
+
+                <div class="panel panel-default">
+                    <div>∧上滚</div>
+
+                    <div class="panel-heading" role="tab" id="headingOne">
+                        <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                            项目1
+                        </a>
+                    </div>
+                    <!-- 在下边这个div的 class 上添加/去除 "in" 来控制其展开/关闭 -->
+                    <div id="collapseOne" class="panel-collapse collapse in">
+                        <div class="panel-body">
+                            <table class="table table-hover">
+                                <tr><td><a href="#">报表1</a></td></tr>
+                                <tr><td><a href="#">报表2</a></td></tr>
+                                <tr><td><a href="#">报表3</a></td></tr>
+                                <tr><td><a href="#">报表4</a></td></tr>
+                            </table>
+                        </div>
+                    </div>
+
+                    <div class="panel-heading" role="tab" id="headingTwo">
+                        <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+                            项目2
+                        </a>
+                    </div>
+                    <div id="collapseTwo" class="panel-collapse collapse">
+                        <div class="panel-body">
+                            <ul>
+                                <li><a href="#">报表1</a></li>
+                                <li><a href="#">报表2</a></li>
+                                <li><a href="#">报表3</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="panel-heading" role="tab" id="headingThree">
+                        <a data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="true" aria-controls="collapseThree">
+                            项目3
+                        </a>
+                    </div>
+                    <div id="collapseThree" class="panel-collapse collapse">
+                        <div class="panel-body">
+                            <ul>
+                                <li><a href="#">报表1</a></li>
+                                <li><a href="#">报表2</a></li>
+                                <li><a href="#">报表3</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="panel-heading" role="tab" id="headingFour">
+                        <a data-toggle="collapse" data-parent="#accordion" href="#collapseFour" aria-expanded="true" aria-controls="collapseFour">
+                            项目4
+                        </a>
+                    </div>
+                    <div id="collapseFour" class="panel-collapse collapse">
+                        <div class="panel-body">
+                            <ul>
+                                <li><a href="#">报表1</a></li>
+                                <li><a href="#">报表2</a></li>
+                                <li><a href="#">报表3</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="panel-heading" role="tab" id="headingFive">
+                        <a data-toggle="collapse" data-parent="#accordion" href="#collapseFive" aria-expanded="true" aria-controls="collapseFive">
+                            项目5
+                        </a>
+                    </div>
+                    <div id="collapseFive" class="panel-collapse collapse">
+                        <div class="panel-body">
+                            <ul>
+                                <li><a href="#">报表1</a></li>
+                                <li><a href="#">报表2</a></li>
+                                <li><a href="#">报表3</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div>∨下滚</div>
+                </div>
+            </div>
+        </div>
+
+        <div>
+            <table>
+                <tr>
+                    <th colspan="5">
+                        <form><input class="btn btn-primary" type="submit" value="新增项目"></form>
+                    </th>
+                </tr>
+                <tr>
+                    <td><a class="btn btn-lg btn-default" href="javascript:">项目1</a></td>
+                    <td><a class="btn btn-lg btn-default" href="javascript:">项目2</a></td>
+                    <td><a class="btn btn-lg btn-default" href="javascript:">项目3</a></td>
+                    <td><a class="btn btn-lg btn-default" href="javascript:">项目4</a></td>
+                    <td><a class="btn btn-lg btn-default" href="javascript:">项目5</a></td>
+                </tr>
+                <tr>
+                    <th colspan="5">
+                        <form><input class="btn btn-primary" type="submit" value="新增报表"></form>
+                    </th>
+                </tr>
+                <tr>
+                    <td><a class="btn btn-lg btn-default" href="javascript:">报表1</a></td>
+                    <td><a class="btn btn-lg btn-default" href="javascript:">报表2</a></td>
+                    <td><a class="btn btn-lg btn-default" href="javascript:">报表3</a></td>
+                    <td><a class="btn btn-lg btn-default" href="javascript:">报表4</a></td>
+                    <td><a class="btn btn-lg btn-default" href="javascript:">报表5</a></td>
+                </tr>
+                <tr>
+                    <th colspan="5">
+                        <form><input class="btn btn-primary" type="submit" value="新增数据"></form>
+                    </th>
+                </tr>
+                <tr>
+                    <td><a class="btn btn-lg btn-default" href="javascript:">数据1</a></td>
+                    <td><a class="btn btn-lg btn-default" href="javascript:">数据2</a></td>
+                    <td><a class="btn btn-lg btn-default" href="javascript:">数据3</a></td>
+                    <td><a class="btn btn-lg btn-default" href="javascript:">数据4</a></td>
+                    <td><a class="btn btn-lg btn-default" href="javascript:">数据5</a></td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</div>
+</body>
+<script src="../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+</html>

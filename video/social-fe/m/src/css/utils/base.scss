@@ -1,0 +1,146 @@
+/* @import 'backTop.scss';
+@import 'share-bottom.scss';
+@import 'dialog.scss';
+@import 'toast.scss';
+@import 'toast-logo.scss'; */
+
+@charset "utf-8";
+html, body, div, p, ul, li,ol, dl, dt, dd, h1, h2, h3, h4, h5, h6, form, input, select, button, textarea, iframe, table, th, td, a, img { margin: 0; padding: 0;}
+body { background: #f6f6f6; color: #363636;font-family: 'Microsoft Yahei'; font-size: .28rem;}
+h1, h2, h3, h4, h5, h6{font-weight: normal;}
+ul,ol,li,dl,dd,dt{list-style: none;}
+a img,img { border: 0 none; vertical-align: top; }
+a:focus { outline: none; }
+i, em, cite { font-style: normal; }
+button { cursor: pointer; }
+a{text-decoration: none;outline: none;color: #333;}
+a:link,a:visited,a:hover,a:active {
+    text-decoration: none;
+    outline: 0;
+}
+textarea{
+  outline: none;
+}
+.hide{display: none;}
+.fl{float: left;}
+.fr{float: right;}
+.clearfix:after{display: block;clear: both;content: '';}
+.clearfix{zoom:1;}
+body,html{width: 100%;-webkit-tap-highlight-color: transparent;}
+
+.m-prompt {
+    text-align: center;
+    padding: 2.16rem 0;
+    .pro-img {
+      max-width: 2.45rem;
+      margin: 0 auto;
+      img{
+        width: 100%;
+        height: 100%;
+      }
+  }
+    .pro-txt {
+      color: #999;
+      font-size: 0.26rem;
+      line-height: 0.4rem;
+      margin-top: 0.4rem;
+  }
+}
+
+
+@font-face {
+  font-family: 'iconwap';
+  src:
+    url('../../../fonts/iconwap.ttf') format('truetype'),
+    url('../../../fonts/iconwap.woff') format('woff'),
+    url('../../../fonts/iconwap.svg') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'iconwap' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+
+.icon-1:before {
+  content: "\eb20";
+}
+.icon-2:before {
+  content: "\eafa";
+}
+.icon-3:before {
+  content: "\eb05";
+}
+.icon-4:before {
+  content: "\eaf6";
+}
+
+.icon-5:before {
+  content: "\eb11";
+}
+
+.icon-6:before {
+  content: "\eaf9";
+}
+.icon-7:before {
+  content: "\eb1e";
+}
+.icon-8:before {
+  content: "\eb6b";
+}
+.icon-9:before {
+  content: '\e903';
+}
+.icon-10:before {
+  content: '\e912';
+}
+.icon-flow:before {
+  content: "\e90c";
+}
+.icon-move:before {
+  content: "\eb06";
+}
+.icon-timer:before {
+  content: "\e913";
+}
+.icon-shopping:before {
+  content: "\e91c";
+}
+.icon-praiseWin:before {
+  content: "\eb13";
+}
+.icon-collect:before {
+  content: "\eb76";
+}
+.icon-article:before {
+  content: "\e91e";
+}
+.icon-close:before {
+  content: "\e900";
+}
+.overflow-one{
+  overflow: hidden;
+  text-overflow:ellipsis;
+  white-space: nowrap;
+}
+.overflow-two{
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+}
+.ff5{
+  color: #FF5C5C;
+}

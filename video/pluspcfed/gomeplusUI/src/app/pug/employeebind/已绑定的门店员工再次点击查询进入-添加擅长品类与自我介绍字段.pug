@@ -1,0 +1,38 @@
+extends ../public/head.jade
+block title
+	title 已绑定的门店员工再次点击查询进入-添加擅长品类与自我介绍字段
+block link-theme
+	link(rel='stylesheet' type="text/css" href="../../css/module/employeebind/employeebind.css")
+block content
+	//- js
+	include ../public/mobileJs.jade
+	.banner 国美 Plus 邀请你来赚大钱
+	.bind-infor
+		.header-module.header-module_gray
+			span 员工信息查询
+		ul.form-list
+			li.list-item.list-item_color
+				em.icon.icon-person
+				.item-text 姚丽丽
+			li.list-item.list-item_color
+				em.icon.icon-id
+				.item-text 00345
+			li.list-item
+				em.icon.icon-first
+				.item-text 一级分部
+			li.list-item
+				em.icon.icon-second
+				.item-text  二级分部
+			li.list-item
+				em.icon.icon-part
+				.item-text  北京大中劲松店
+		ul.form-personal.form-list_mb.form-validate
+			li.personal-item
+				span.item-company 擅长品类
+				.item-text
+					| 未填写
+			li.personal-item
+				span.item-company 自我介绍
+				.item-text
+					| 未填写
+		a.button.button-primary(href="javascript:;") 修改资料

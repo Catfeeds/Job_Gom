@@ -1,0 +1,80 @@
+@charset "UTF-8";
+// @ Css name：超级返利
+// @ Author： kanjingjing
+// @ Date： 2017-04-18
+// @ Last Modified by： kanjingjing
+// @ Last Modified time：2017-04-18
+//==========================
+
+@import "../../../../sasscore/_configure.scss";
+@import "../../../../m-widget/grid/grid.scss";
+
+.fanli{
+	.sec-title{
+		line-height: rem(83);
+		text-align: center;
+		position: relative;
+		h3{
+			display: inline-block;
+			font-size: rem(30);
+			color: #383838;
+		}
+		.icon{
+			display: inline-block;
+			width: rem(38);
+			height: rem(30);
+			vertical-align: -2px;
+			background: url(../../../images/fanli/fan-sprite.png) no-repeat;
+			background-size: rem(122) rem(30);
+		}
+		.icon-coupon{
+			background-position: 0 0;
+		}
+		.icon-fan{
+			background-position: rem(-44) 0;
+		}
+		.icon-extra{
+			background-position: rem(-90) 0;
+		}
+		.more-btn{
+			font-size: rem(24);
+			color: #999;
+			float: right;
+			position: absolute;
+			top: 0;
+			right: rem(20);
+		}
+		em{
+			color: #999;
+		}
+	}
+	.fan-title{
+		background-color: #fff;
+	}
+	.fan-list{
+		background-color: #fff;
+		overflow: hidden;
+		li{
+			float: left;
+			width: rem(250);
+			height: rem(300);
+			&:nth-child(3n){
+				&:before{
+					display: none;
+				}
+			}
+		}
+	}
+	.main-list{
+		.fan-txt{
+		    margin: rem(22) rem(15) 0;
+			span{
+				display: inline-block;
+				vertical-align: rem(2);
+				color: #ff5c5c;
+				font-size: rem(22);
+				padding-left: rem(6);
+			}
+		}
+	}
+}

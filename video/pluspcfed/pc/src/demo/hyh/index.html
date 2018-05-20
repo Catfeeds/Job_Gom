@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>封面</title>
+</head>
+<script type="text/javascript">
+		var BPConfig = {
+			startTime: new Date().valueOf()
+		};
+		var $GLOBAL_CONFIG = {};
+		$GLOBAL_CONFIG['current_url']= 'aHR0cDovL2dyb3VwLmF0Z3VhdC5jb20uY24vaW5kZXgvY3JlYXRl';//当前url
+		$GLOBAL_CONFIG['islogin']= '1';//是否登录
+		$GLOBAL_CONFIG['userId'] = '100011907278';
+		$GLOBAL_CONFIG['nickName'] = '150^_^0715';
+		$GLOBAL_CONFIG['main_domain']= 'http://www.pre.gomeplus.com/';//主域名
+		$GLOBAL_CONFIG['passport_domain']= 'http://passport.pre.gomeplus.com/';//登录注册域名
+		$GLOBAL_CONFIG['order_domain']= 'http://order.pre.gomeplus.com/';//订单域名
+		$GLOBAL_CONFIG['group_domain']= 'http://group.atguat.com.cn/';//社交
+		$GLOBAL_CONFIG['i_domain']= 'http://myhome.atguat.com.cn/';//用户中心
+		$GLOBAL_CONFIG['mall_domain']= 'http://mall.pre.gomeplus.com/';//商城
+		$GLOBAL_CONFIG['js_domain'] = 'http://js.dev.meixincdn.com';
+		$GLOBAL_CONFIG['pcjspath'] = 'http://js.dev.meixincdn.com:1314/CDN8053/dist';
+		$GLOBAL_CONFIG['pccsspath'] = 'http://js.dev.meixincdn.com:1314/CDN8053/dist';
+		$GLOBAL_CONFIG['pcimgpath'] = 'http://js.dev.meixincdn.com:1314/CDN8053/dist';
+		$GLOBAL_CONFIG['wap_url'] = 'http://m.uatplus.com/';
+		$GLOBAL_CONFIG['wap_circle_url'] = 'http://circle.m.uatplus.com/';
+		$GLOBAL_CONFIG['prefix'] = 'mx_pc_pre_';
+		$GLOBAL_CONFIG['csrf_token'] = '';
+        $GLOBAL_CONFIG['ss_service_gome'] = '//ss.atguat.com.cn/';
+        $GLOBAL_CONFIG['cart_service_gome'] = 'http://cart.atguat.com.cn/';
+		var userId = '100011907278';
+		$GLOBAL_CONFIG['dynSite']='//g.atguat.com.cn';
+	    $GLOBAL_CONFIG['staSite']='//www.atguat.com.cn/';
+	    $GLOBAL_CONFIG['contextPath']='/ec/homeus';
+	    $GLOBAL_CONFIG['secureURL']='//g.atguat.com.cn';
+	    $GLOBAL_CONFIG['cookieDomain']='.atguat.com.cn';
+	    $GLOBAL_CONFIG['stageImageServer']= '//img.atguat.net.cn';
+	    $GLOBAL_CONFIG['imgServer']='//img.atguat.com.cn/images';
+	    $GLOBAL_CONFIG['pictureserver']='//img.atguat.com.cn/image';
+	    $GLOBAL_CONFIG['stageCssServer']='//css.atguat.com.cn';
+	    $GLOBAL_CONFIG['cssserver']='//css.atguat.com.cn/css';
+	    $GLOBAL_CONFIG['stageJsServer']='//js.atguat.com.cn';
+	    $GLOBAL_CONFIG['jsserver']='//js.atguat.com.cn/js';
+		$GLOBAL_CONFIG['js_net_server']='http://js.atguat.net.cn/';
+	    $GLOBAL_CONFIG['protocol']='http';
+		$GLOBAL_CONFIG['versionData']='1507601062';
+		$GLOBAL_CONFIG['product_search_gome']='http://search.atguat.com.cn';
+		$GLOBAL_CONFIG['shop_search_gome']='http://search.atguat.com.cn';
+		$GLOBAL_CONFIG['product_item_gome']='http://item.atguat.com.cn/';
+		$GLOBAL_CONFIG['ggckgd'] = 'PGGMKCKmd0003';  //埋点查看更多标示
+		$GLOBAL_CONFIG['ggjzgd'] = 'PGGMKJZmd0004';  //埋点加载更多标示
+		window.page_id = "";
+</script>
+
+<link rel="stylesheet" type="text/css" href="http://js.dev.meixincdn.com:1314/CDN8053/dist/css/public/public.css?version=1507601062">
+<link rel="stylesheet" type="text/css" href="http://js.dev.meixincdn.com:1314/CDN8053/dist/css/module/createcircle.css?version=1507601062">
+<link rel="stylesheet" type="text/css" href="http://js.dev.meixincdn.com:1314/CDN8053/dist/css/public/cropper.css">
+<style type="text/css">
+body{
+	background: #fff;
+}
+	*{
+		padding: 0;margin: 0;
+	}
+	.preview-layer{
+		width: 900px;height: 620px;
+		position: fixed;top: 50%;left:50%;margin: -310px 0 0 -450px;
+		background: #fff;
+		border-radius: 6px;
+	}
+	.preview-title{
+		font-size: 20px;
+		color: #333333;
+		height: 54px;
+		line-height: 54px;
+		padding-left: 20px;
+		border-bottom: 1px solid #E4E4E4;
+	}
+	.wrap{
+		position: relative;
+	}
+	.preview-content{
+		width: 844px;
+		height: 422px;
+		margin: 34px auto 38px auto;
+		/*background: rgba(0,0,0,.6)*/
+	}
+	.cropWrap{
+		width: 250px;height: 250px;
+		position: relative;
+		z-index: 1;
+	}
+	/*.picker,.preview-layer-content img{
+		width:250px;height: 250px;position: absolute;top: 0;left: 0;z-index: 0;
+		overflow: hidden;
+	}*/
+	.webuploader-pick {
+	    width: 100%;
+	    height: 100%;
+	    text-align: center;
+	    line-height: 250px;
+	    font-size: 16px;
+	    color: #fff;
+	}
+	/*input{
+		display: block;width: 250px;height: 250px;
+		outline: none;
+		opacity: 0;
+	}*/
+	.preview-btns{
+		height: 36px;
+		width: 180px;
+		margin: 0 auto;
+	}
+	.preview-btns a{
+		display: block;
+		float: left;
+		width: 80px;
+		height: 36px;
+		line-height: 36px;
+		text-align: center;
+		color:#333;
+		font-size: 14px;
+	}
+	.preview-btns a.preview-btns-submit{
+		margin-right: 20px;
+		background: #F95353;
+		border-radius: 2px;
+		color: #fff;
+	}
+	.pop-box-backdrop{
+		 display:none;
+		 background: rgba(0, 0, 0,.6);
+		 position: fixed;
+		 left: 0px; top: 0px; width: 100%; height: 100%; overflow: hidden; user-select: none; z-index: 1024;
+	}
+</style>
+<body>
+	<div class="pop-box-backdrop">
+		<div class="preview-layer">
+			<p class="preview-title">上传封面</p>
+			<div class="preview-content">
+				<div class="position-abso load-ing" data-node="noticeBox" style="display: none;">
+	            <div class="picture-bx"></div>
+	            <div class="load-failed-bx">
+	              <span class="opacity-all"></span>
+	              <span class="top-left"></span>
+	              <span class="top-right"></span>
+	              <span class="bottom-left"></span>
+	              <span class="bottom-right"></span>
+	            </div>
+	            <div class="load-failed-txt failure"><span data-node="noticeInfo">图片上传失败！<span><em class="icon iconn-24"></em><a href="javascript:;" data-action="retry" class="active">重新上传</a></span></span></div>
+	            <div class="load-failed-txt image-load">
+	              <p data-node="loadNotice">图片上传中</p>
+	              <div class="progress-bar-bx"><span data-node="uploadProgress" style="width: 100%;"></span></div>
+	              <!--img.img250(src="../../images/public/circle-default-head.jpg")-->
+	            </div>
+	        </div>
+				<img src="http://js.dev.meixincdn.com:1314/CDN8053/dist/images/public/circle-default-head.jpg" alt="" data-default="http://js.dev.meixincdn.com:1314/CDN8053/dist/images/public/circle-default-head.jpg" data-edit="btn"/>
+			</div>
+			<div class="preview-btns">
+				<a data-action="avatarSave" class="preview-btns-submit" href="javascript:;">确定</a>
+				<a data-action="cancel" class="preview-btns-cancel" href="javascript:;">取消</a>
+			</div>
+		</div>
+	</div>
+	<div class="upload-img">
+		<div class="picker" data-defaultAddFile="picker">
+    	</div>
+    	<img src="" style="display: none">
+	</div>
+
+
+	<script src="http://js.dev.meixincdn.com:1314/CDN8053/dist/js/conf/vendor.js?version=1507601062" crossorigin=""></script>
+	<script type="text/javascript" src="../../js/plugin/jquery.cropper.js"></script>
+	<script type="text/javascript" src="../../js/plugin/webuploader/webuploader.js"></script>
+	<script type="text/javascript">
+		var $webUpLoader;
+		var $noticeBox = $('[data-node="noticeBox"]');
+		// var $noticeInfo = $noticeBox.find('[data-node="noticeInfo"]');
+		var $wrap = $('.preview-layer');
+		var $cropImg = $wrap.find('img');
+		var $preview = $('[data-node="avatrSelector"]');
+		var $avatarSave = $('[data-action="avatarSave"]')
+		var $progress = $wrap.find('[data-node="uploadProgress"]');
+		var $error = $('[data-node="error"]');
+		var $loadNotice = $wrap.find('[data-node="loadNotice"]');
+		var $cancel = $wrap.find('[data-action="cancel"]');
+
+		var avatarData = {};
+		var files;
+		var defaultImage = $cropImg.attr('data-default');
+		var isUpload = false;
+		var link = '';
+		var isIE8 = !window.FormData;
+		var key = false;
+
+		var startCrop = function() {
+			isUpload = true;
+			$cropImg.cropper({
+				aspectRatio: 2/1,
+				background: false,
+				guides: false,
+				autoCropArea:1,
+				dragCrop:false
+			});
+		};
+
+		var preview = function(upload, cropper, callback) {
+			$webUpLoader = WebUploader.create(upload);
+			$webUpLoader.on('beforeFileQueued', function() {
+				isUpload = false;
+				$cropImg.cropper('destroy');
+				$error.hide();
+				files !== undefined && $webUpLoader.removeFile(files.id);
+			});
+
+			$webUpLoader.on('fileQueued', function(file) {
+					files = file;
+					if (isIE8 && !key) {
+						$webUpLoader.upload(files);
+
+						key = true;
+					} else {
+						$webUpLoader.makeThumb(file, function(error, ret) {
+							if (error) {
+								$webUpLoader.removeFile(files.id);
+								$noticeBox.removeClass('load-ing').show();
+							} else {
+								$cropImg.attr('src', ret);
+								startCrop(cropper);
+								$avatarSave.addClass('active');
+								if ($cropImg.attr('data-edit')) {
+									$('[data-defaultAddFile=picker]').hide();
+									$webUpLoader.addButton({
+										id: '[data-action="upload-edit"]',
+										innerHTML: '修改'
+									});
+								}
+
+							}
+						});
+					}
+					$webUpLoader.md5File(file)
+						// 及时显示进度
+						.progress(function(percentage) {
+							$loadNotice.text('图片加载中');
+							$noticeBox.addClass('load-ing').show();
+							$progress.css('width', percentage * 100 + '%');
+						})
+						// 完成
+						.then(function( /*val*/ ) {
+							$('.pop-box-backdrop').show();
+							$noticeBox.hide();
+							$progress.css('width', 0);
+						});
+				})
+				//报错
+			$webUpLoader.on('error', function( /*type*/ ) {
+				/*var errNotice = {
+				    Q_EXCEED_NUM_LIMIT: '文件个数超出限制',
+				    Q_EXCEED_SIZE_LIMIT: '总文件大小超出限制',
+				    Q_TYPE_DENIED: '文件类型错误',
+				    F_EXCEED_SIZE: '请上传jpg、png格式且小于4M的图片！'
+				}*/
+				$cropImg.attr('src', defaultImage);
+				$preview.find('img').attr('src', defaultImage);
+				$error.show().find('span').text('请上传小于4M的图片，支持格式jpg、jpeg、png、gif！');
+				$avatarSave.removeClass('active');
+			});
+
+			//上传成功
+			$webUpLoader.on('uploadSuccess', function(file, response) {
+
+				if (response.success && response.code === 200) {
+					if (key) {
+						$('.upload-img').attr('src', response.data[0]);
+						startCrop();
+						$noticeBox.hide();
+						key = false;
+						$avatarSave.addClass('active');
+					} else {
+						$('.upload-img').attr('src', response.data[0]);
+						$noticeBox.hide();
+						$cropImg.cropper('destroy');
+						$preview.find('img').attr('src', response.data[0]);
+						$webUpLoader.removeFile(files);
+						link = response.data[0];
+						callback.call(null, response.data[0]);
+						$avatarSave.removeClass('active');
+						files = undefined;
+					}
+				} else {
+					console.log(2)
+					$('.cropper-crop-box').hide();
+					$noticeBox.removeClass('load-ing').show();
+					isUpload = true;
+				}
+			});
+			//上传失败
+			$webUpLoader.on('uploadError', function( /*file, reason*/ ) {
+				$('.cropper-crop-box').hide();
+				$noticeBox.removeClass('load-ing').show();
+				isUpload = true;
+			});
+
+			//上传时
+			$webUpLoader.on('uploadProgress', function(file, percentage) {
+				$('.cropper-crop-box').hide();
+				$loadNotice.text('图片上传中');
+				$noticeBox.addClass('load-ing').show();
+				$progress.css('width', percentage * 100 + '%');
+				isUpload = false;
+			});
+
+		}
+
+		var submit = function() {
+			$avatarSave.on('click', function() {
+				if (isUpload && $(this).hasClass('active')) {
+					isUpload = false;
+					avatarData = $cropImg.cropper('getData');
+					avatarData.type = 'crop';
+					$webUpLoader.on('uploadBeforeSend', function(object, data) {
+						$.extend(data, avatarData);
+					});
+					$webUpLoader.upload(files);
+				}
+				$cancel.addClass('active');
+			});
+			$cancel.on('click', function() {
+				$('.pop-box-backdrop').hide();
+				$('[data-defaultAddFile=picker]').show();
+				/*if (isUpload && $(this).hasClass('active')) {
+					isUpload = false;
+					avatarData = $cropImg.cropper('getData');
+					avatarData.type = 'crop';
+					$webUpLoader.on('uploadBeforeSend', function(object, data) {
+						$.extend(data, avatarData);
+					});
+					$webUpLoader.retry(files);
+				}*/
+
+			});
+		}
+
+		var init = function(callback, uploadOptions, cropperOptions) {
+			$noticeBox = $('[data-node="noticeBox"]');
+			// $noticeInfo = $noticeBox.find('[data-node="noticeInfo"]');
+			$wrap = $('.preview-layer');
+			$cropImg = $wrap.find('img');
+			$preview = $('[data-node="avatrSelector"]');
+			$avatarSave = $('[data-action="avatarSave"]')
+			$progress = $noticeBox.find('[data-node="uploadProgress"]');
+			$error = $('[data-node="error"]');
+			$loadNotice = $noticeBox.find('[data-node="loadNotice"]');
+			$cancel = $wrap.find('[data-action="cancel"]');
+			defaultImage = $cropImg.attr('data-default');
+			var fn = callback || function() {};
+			var defaultUpload = {
+				pick: {
+					id: '[data-defaultAddFile=picker]',
+					innerHTML: '<span>+</span>上传头像',
+					multiple: false
+				},
+				thumb: false,
+				compress: false,
+				accept: {
+					title: 'Images',
+					extensions: 'jpg,jpeg,png',
+					mimeTypes: 'image/jpg,image/jpeg,image/png,image/gif'
+				},
+				method: 'post',
+				// swf文件路径
+				swf: $GLOBAL_CONFIG.imgpath + '/images/swf/Uploader.swf',
+				disableGlobalDnd: true,
+				duplicate: true,
+				prepareNextFile: true,
+				chunked: true,
+				width:2000,
+				height:800,
+				fileVal: 'avatar_file',
+				server: '/ajax/crop/crop_img',
+				fileNumLimit: 1,
+				fileSizeLimit: 4 * 1024 * 1024,
+				fileSingleSizeLimit: 4 * 1024 * 1024
+			};
+			var defaultCropper = {
+				aspectRatio: 2/1,
+				background: false,
+				guides: false,
+				autoCropArea:1,
+				dragCrop:false
+			};
+			var upload = $.extend(true, defaultUpload, uploadOptions);
+			var copper = $.extend(true, defaultCropper, cropperOptions);
+			preview(upload, copper, fn);
+
+			submit();
+
+			return {
+				webUpLoader: $webUpLoader, //webuploader实例对象
+
+				cropper: $cropImg //cropper实例对象
+			}
+		}
+
+		var destroy = function(callback) {
+			callback = callback || function() {};
+			callback.call(null, {
+				webUpLoader: $webUpLoader, //webuploader实例对象
+				cropper: $cropImg //cropper实例对象
+			});
+			files = undefined;
+			$webUpLoader.destroy();
+			$cropImg.cropper('destroy');
+		}
+
+		var getData = function() {
+			return link;
+		}
+		init();
+		/*module.exports = {
+			init: init,
+			getData: getData,
+			destroy: destroy
+		}*/
+	</script>
+</body>
+</html>

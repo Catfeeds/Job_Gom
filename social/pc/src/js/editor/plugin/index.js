@@ -1,0 +1,15 @@
+require('./picture');
+require('./goods');
+require('./emoji');
+//屏蔽快捷键
+require('./metakey');
+//删除图片
+require('./beforeInput');
+//过滤粘贴
+require('./grepPaste');
+//过滤拖拽
+require('./grepDrop');
+//修复选中图片
+require('./selectImg')
+//插入后重新计算高度
+require("./autoHeight");

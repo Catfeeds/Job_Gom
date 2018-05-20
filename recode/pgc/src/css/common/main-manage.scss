@@ -1,0 +1,43 @@
+/**
+ * [内容区管理列表公共样式]
+ * @Author: Fu Xiaochun
+ * @Email:  fuzhengchun@gomeplus.com
+ */
+
+@import "../base/public.scss";
+
+/* 面包屑导航 */
+.crumbsNav{
+	background: #f0f0f0;
+	ul{
+		padding-bottom:20px;
+		li{
+			a{
+				margin:0 3px;
+				&.mySub-link{
+					cursor: pointer;
+		   			&:hover{
+		    			color:$option-hover;
+					}
+				}
+			}
+			&.current a{
+				color:$option-hover;
+				padding-left:3px;
+			}
+		}
+	}
+}
+
+.main-manage{
+	.main-manage-box{
+		padding: 0 24px;
+		.manage-list-table{
+			tbody{
+				tr.hoverC:hover{
+					background-color: #fff;
+				}
+			}
+		}
+	}
+}

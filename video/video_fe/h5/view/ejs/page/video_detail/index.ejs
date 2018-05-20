@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="zh-CN" data-use-rem="750">
+<head>
+	<meta charset="utf-8">
+	<title></title>
+	<meta name="keywords" content="GomePlus视频频道" />
+	<meta name="description" content="" />
+	<meta name="format-detection" content="telephone=no">
+	<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no,minimal-ui" />
+	<meta name="x5-page-mode" content="no-title"/>
+	<link rel="stylesheet" href="/m/vh5/dist/css/video_detail.css">
+</head>
+<body>
+<div data-id="wrap">
+	<%- include('../../common/rem.ejs')%>
+	<div class="player" id="videoContainer"></div>
+	<script type="text/javascript" src="https://player-pre.gomeplus.com/gvs-player/dist/vod/js/meixinplayer-min.js"></script>
+	<script>
+		// var v = new MeixinPlayer();
+		// v.init(428, 'videoContainer', {
+		// 	type: 'vod', // 直播：live，点播：vod
+		// 	poster: '', // 播放器封面图
+		// 	env: 'dev', // dev, pre, dist
+	    // });
+        var $CONFIG = {
+            userId: 10,//用户id，为0标识未登录
+            nickName:"1",
+            avatar:"",
+            domain:"http://h5.v.dev.gomeplus.com/",
+        };
+	</script>
+	<script type="text/javascript">
+    var $CONFIG = {
+        userId: 0,//用户id，为0标识未登录
+        nickName:"",
+        avatar:"",
+//      domain:"http://h5.v.uatplus.com/",
+//      mdomain:"http://m.v.uatplus.com/",
+        appType:"gomeplus",
+    };
+        window.GomeBridgePreConfig = {
+        env: {
+            live: false,
+            uat: true
+        }
+    };
+    </script>
+	<div class="article">
+		<h1 class="title">了解红酒从这10个词开始，让你从此不是红酒小白</h1>
+		<div class="subtitle">
+			<span>秋小墨</span>
+			<span class="date">2017-02-20</span>
+		</div>
+		<div class="section">各种测试文章各种家庭聚会，章各种家庭聚会章各种家庭聚会章各种家庭聚会章各种家庭聚会章各种家庭聚会章各种家庭聚会</div>
+		<div class="section">各种测试文章各种家庭聚会，章各种家庭聚会章各种家庭聚会章各种家庭聚会章各种家庭聚会章各种家庭聚会章各种家庭聚会</div>
+		<div class="section">各种测试文章各种家庭聚会，章各种家庭聚会章各种家庭聚会章各种家庭聚会章各种家庭聚会章各种家庭聚会章各种家庭聚会<img src="https://i3.meixincdn.com/v1/img/T1PyYTBmdv1RXrhCrK.jpg" /></div>
+		<div class="section">各种测试文章各种家庭聚会，章各种家庭聚会章各种家庭聚会章各种家庭聚会章各种家庭聚会章各种家庭聚会章各种家庭聚会</div>
+		<a class="product clearfix">
+			<div class="img"><img src="https://i3.meixincdn.com/v1/img/T1PyYTBmdv1RXrhCrK.jpg"/></div>
+			<div class="desc">
+				<p class="head">适合女生喝的葡萄酒</p>
+				<p class="sub">圣旨红酒 意大利进口桃红水电费是否水电费水电费水电费水电费</p>
+			</div>
+		</a>
+		<div class="tag">
+			<div class="title">标签</div>
+			<div class="clearfix">
+				<a href="javascript:;" class="btn btn-text">酒</a>
+				<a href="javascript:;" class="btn btn-text">美食</a>
+				<a href="javascript:;" class="btn btn-text">评测</a>
+			</div>
+		</div>
+	</div>
+	<div class="share clearfix">
+		<div class="title">分享到</div>
+		<div class="iconbox">
+			<em class="icon-5"></em>
+			<span>|</span>
+			<em class="icon-7"></em>
+			<span>|</span>
+			<em class="icon-3"></em>
+		</div>
+	</div>
+	<!--<div class="back-top">
+		<em class="icon-2"></em>
+	</div>-->
+	<!-- <%- include('../../common/footer.ejs')%> -->
+	<div class="shareMask click">
+		<div class="share-h">
+			<!-- <img src="../../../src/imgs/public/share-h.png"> -->
+		</div>
+		<div class="share-h-app">
+			<!-- <img src="../../../src/imgs/public/share-h.png"> -->
+		</div>
+		<div class="share-h-gome">
+			<!-- <img src="../../../src/imgs/public/share-h.png"> -->
+		</div>
+		<div class="share-x">
+			<em class="icon-8"></em>
+		</div>
+	</div>
+	<div data-id="commentComponent"></div>
+</div>
+	<script src=" https://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
+	<script type="text/javascript" src="/m/vh5/dist/js/vendor.js"></script>
+	<script type="text/javascript" src="/m/vh5/dist/js/video_detail.js"></script>
+</body>
+</html>

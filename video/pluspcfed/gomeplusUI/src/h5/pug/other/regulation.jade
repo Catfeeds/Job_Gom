@@ -1,0 +1,34 @@
+doctype html
+html(lang="zh-CN" data-use-rem="750")
+    include ../../../m-widget/head/head.jade
+    link(type="text/css",rel="stylesheet",href="../../css/module/other/regulation.css")
+    body
+        include ../../../m-widget/head/rem.jade
+        .invite-mask
+        header.banner
+            a.rule-btn(href="javascirpt:;") 规则 >
+            a.ban-btn(href="javascirpt:;") 收益明细
+        .step-list
+            dl.step-it
+                dt
+                dd
+                    h4.step-tl 1. 分享
+                    p.step-para 分享给你的好友
+            dl.step-it
+                dt
+                dd
+                    h4.step-tl 2. 注册支付
+                    p.step-para
+                        | 好友通过分享的链接
+                        br
+                        | 登录/注册并买买买
+            dl.step-it
+                dt
+                dd
+                    h4.step-tl 3. 赚
+                    p.step-para
+                        | 好友确认收货后，
+                        br
+                        |  可赚返利
+            a.btn-red(href="javascript:;") 邀请好友赚返利
+

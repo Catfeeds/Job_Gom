@@ -1,0 +1,87 @@
+doctype html
+html(lang="zh-CN" data-use-rem="750")
+	include ../../../m-widget/head/head.jade
+	//- link(type="text/css",rel="stylesheet",href="../../css/public/public-wap.css")
+	link(type="text/css",rel="stylesheet",href="../../css/module/wechat-usercenter.css")
+
+	body.opg.userhome
+		include ../../../m-widget/head/rem.jade
+
+		.user-wrap
+			a.go-index(href="#")
+			.user-tbg
+			.user-head
+				.head-face
+					img(src='../images/_temp/face.jpg')
+					em
+				.head-nick 用户名最多二十个字符
+			section.order-entry
+				.entry-item.item-first
+					a(href='##')
+						.title
+							p 我的订单
+						.tips 查看全部订单
+						.arrow
+							em.iconn-41
+				ul.entry-list
+					li
+						a(href='##')
+							em.iconn-61
+							p 待付款
+					li
+						a(href='##')
+							em.iconn-63
+							p 待收货
+					li
+						a(href='##')
+							em.iconn-62
+							p 待评价
+					li
+						a(href='##')
+							em.iconn-88
+							p 退款/售后
+			section.order-entry
+				.entry-item
+					a(href='##')
+						.icn
+							em.iconn-33
+						.title 我的购物车
+						.arrow
+							em.iconn-41
+				.entry-item
+					a(href='##')
+						.icn
+							em.iconn-70
+						.title 国美币
+						.arrow
+							em.iconn-41
+				.entry-item
+					a(href='##')
+						.icn
+							em.iconn-49
+						.title 优惠券
+						.arrow
+							em.iconn-41
+				.entry-item
+					a(href='##')
+						.icn
+							em.iconn-47
+						.title 我的收藏
+						.arrow
+							em.iconn-41
+				.entry-item
+					a(href='##')
+						.icn
+							em.iconn-57
+						.title 收货地址
+						.arrow
+							em.iconn-41
+				.entry-item
+					a(href='##')
+						.icn
+							em.iconn-96
+						.title 门店订单
+						.arrow
+							em.iconn-41
+				
+		// /content

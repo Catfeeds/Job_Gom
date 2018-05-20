@@ -1,0 +1,113 @@
+@import '../../../../../../gomeplusUI/pc/src/sass/common/basic/_base.scss';
+@import '../../../../../../gomeplusUI/pc/src/sass/common/basic/_mixins.scss';
+body{
+    background: #f6f5ee;
+}
+.opg{
+    .marg-t20{
+        margin-top: 20px;
+        overflow: hidden;
+    }
+    .ship-addr-left{
+        float: left;
+        width: 300px;
+        background: $bg-fff;
+        padding-bottom: 99999px;
+        margin-bottom: -99999px;
+        .ship-addr-setting{
+            width: auto;
+            height: 50px;
+            line-height: 50px;
+            border-bottom: 1px solid $color-bor;
+            font-weight: normal;
+            font-size: $text14;
+            padding-left: 20px;
+        }
+        .ship-addr-manage{
+            color: $link-hover;
+            font-size: $text14;
+            padding-left: 35px;
+            line-height: 44px;
+        }
+    }
+    .ship-addr-right{
+        overflow: hidden;
+        background: $bg-fff;
+        float: right;
+        width: 845px;
+        padding: 20px;
+        .ship-addr-table{
+            width: 100%;
+            margin-top: 20px;
+            tr{
+                &:hover{
+                    background: $color-bor;
+                    cursor: pointer;
+                }
+            }
+            th{
+                height: 50px;
+                line-height: 50px;
+                background: #fff8e7;
+                text-align: left;
+                padding-left: 20px;
+                color: $color-default;
+                font-size: $text14;
+                font-weight: normal;
+            }
+            td{
+                position: relative;
+                .default-addr{
+                    width: 60px;
+                    height: 20px;
+                    border-radius: 4px;
+                    position: absolute;
+                    top: 4px;
+                    right: 2px;
+                    background: $link-hover;
+                    display: block;
+                    color: $color-txt;
+                    font-size: $text12;
+                    text-align: center;
+                    top:14px;
+                        a.set-default-addr{
+                            color: $color-txt;
+                            background: $color-important-txt;
+                            display: block;
+                            height: 20px;
+                            border-radius: 4px;
+                        }
+                }
+                .set-default-hide{
+                    display: none;
+                }
+                text-align: left;
+                padding-left: 20px;
+                height: auto;
+                padding:15px 0 15px 20px;
+                border-bottom: 1px dotted $color-bor;
+                .detailed-addr{
+                    line-height: 24px;
+                }
+                a{
+                    color: $font-blue-normal;
+                    &.amend-link{
+                        padding-right: 6px;
+                    }
+                    &.delete-link{
+                        padding-left: 6px;
+                    }
+                }
+            }
+        }
+        .new-add-addr{
+            width: auto;
+            height: 35px;
+            line-height:35px;
+            color: $color-gray;
+            span{
+                color: $link-hover;
+            }
+        }
+    }
+}

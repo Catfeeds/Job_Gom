@@ -1,0 +1,69 @@
+.container {
+    padding:0rpx
+}
+
+.header{
+    width:100%;
+    height: 600rpx;
+    background: red;
+    position: relative;
+}
+
+.header .content {
+    position: absolute;
+    width: 100%;
+    bottom:150rpx;
+}
+
+.search-logo{
+  width:300rpx;
+  height:106rpx;
+  margin:80rpx auto;
+}
+
+.search-logo image {
+    width:100%;
+    height: 100%;
+}
+
+.btn-search {
+    width:90%;
+    border-radius:50rpx 50rpx 50rpx 50rpx;
+    font-size: 32rpx;
+}
+
+.erweima {
+    width:100%;
+    height:200rpx;
+    text-align:center;
+    padding-top:20rpx;
+}
+
+.erweima icon {
+    font-size: 32rpx;
+}
+
+.navigator-hover {
+    color:blue;
+}
+/** 自定义其他点击态样式类 **/
+.other-navigator-hover {
+    color:red;
+}
+.btn-area {
+    position: fixed;
+    bottom: 0rpx;
+    display:flex;
+    flex-direction:row;
+    justify-content:center;
+    width:750rpx;
+}
+
+.btn-area navigator {
+    flex:1;
+    text-align:center;
+    height:120rpx;
+    line-height:120rpx;
+    border-top: solid 1rpx #ccc;
+}
+

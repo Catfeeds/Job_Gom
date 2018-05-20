@@ -1,0 +1,30 @@
+.user-home-nav{
+	width: 265px;
+	background-color: #f8f8f8;
+	padding-top: 50px;
+	li{
+		margin-left: 56px;
+		margin-bottom: 40px;
+		font-size: 16px;
+		color: #333;
+		position: relative;
+		a:hover{
+            color: #ec392a;
+        }
+		&.active{
+			a{
+				color: #ec392a;
+				font-size: 20px;
+			}
+			&:before{
+				position: absolute;
+				left: -56px;
+				top: 5px;
+				width: 4px;
+				height: 16px;
+				content: "";
+				background-color: #ec392a;
+			}
+		}
+	}
+}

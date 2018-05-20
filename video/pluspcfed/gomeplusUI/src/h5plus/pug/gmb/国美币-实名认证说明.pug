@@ -1,0 +1,66 @@
+doctype html
+html(lang="zh-CN", data-use-rem="750")
+	include ../../../m-widget/head/head.jade
+	link(type="text/css",rel="stylesheet",href="../../css/public/gomeplusUI.css")
+	link(type="text/css",rel="stylesheet",href="../../css/module/gmb/gmb.css")
+	body.opg.gmb
+		include ../../../m-widget/head/rem.jade
+	
+	.explain-box
+		.e-hd
+			.img-box
+				img(src="../../images/gmb/_img.png")
+				em.iconn-39
+			.txt-box 已实名认证
+		.e-bd.e-info
+			.flex-boxs.bor-b
+				.flex-box
+					.flex-bd
+						p 账户安全等级：
+					.flex-ft
+						p.c-f0 v1
+				.flex-box
+					.flex-bd
+						p 真实姓名：
+					.flex-ft
+						p *三
+				.flex-box
+					.flex-bd
+						p 身份帐号：
+					.flex-ft
+						p 12345*****0099
+				.flex-box
+					.flex-bd
+						p 认证时间：
+					.flex-ft
+						p 2017-03-01
+				.flex-box
+					.flex-bd
+						p 身份证照片：
+					.flex-ft
+						span.c-79 立即上传
+						em.iconn-41.c-79
+				.flex-box
+					.flex-bd
+						p 身份证照片：
+					.flex-ft
+						span 审核中
+				.flex-box
+					.flex-bd
+						p 身份证照片：
+					.flex-ft
+						em.iconn-39
+						span 审核通过
+				.flex-box
+					.flex-bd
+						p 身份证照片：
+					.flex-ft
+						span.c-79 重新上传
+						em.iconn-41.c-79
+			.fail.c-9 审核失败
+		.e-ft.btn-box
+			a.m-btn-big(href="javascript:;") 立即实名认证
+			p.c-9
+				| 同意
+				a.c-79(href="javascript:;") 《协议》
+	//- 结束

@@ -1,0 +1,94 @@
+extends ../plus-widget/head/head.jade
+block style
+	link(type="text/css",rel="stylesheet",href="ranklist.css")
+block body
+	body.opg.ranklist
+		include ../plus-widget/head/rem.jade
+		//- rankCup
+		.rankCup
+		.rank-show
+			.rank-data#general-oneself
+				ul
+					li.bor-b.flex-box
+						.flex-hd.rank-number
+							span.rank-number-long 99999+
+						.flex-ft.rank-face
+							img(src="default.png")
+						.flex-bd.rank-content
+							h2
+								a(href="#") 新疆美味特产小店
+			//- list
+			.rank-data#general-others
+				ul
+					li.bor-b.flex-box.rank-gold
+						.flex-hd.rank-number
+							span 1
+						.flex-ft.rank-face
+							img(src="default.jpg")
+						.flex-bd.rank-content
+							h2
+								a(href="#") 艺尚时尚服装品牌店
+					li.bor-b.flex-box.rank-silver
+						.rank-number
+							span 2
+						.rank-face
+							img(src="_face01.jpg")
+						.rank-content
+							h2
+								a(href="#") 梧桐语雨的美店
+					li.bor-b.flex-box.rank-broze
+						.rank-number
+							span 3
+						.rank-face
+							img(src="_face02.jpg")
+						.rank-content
+							h2
+								a(href="#") 格力空调旗舰店
+					li.bor-b.flex-box
+						.rank-number
+							span 4
+						.rank-face
+							img(src="_face03.jpg")
+						.rank-content
+							h2
+								a(href="#") 苏泊尔专卖店
+					li.bor-b.flex-box
+						.rank-number
+							span 5
+						.rank-face
+							img(src="_face04.jpg")
+						.rank-content
+							h2
+								a(href="#") 欧莱雅美妆
+					li.bor-b.flex-box
+						.rank-number
+							span 6
+						.rank-face
+							img(src="_face05.jpg")
+						.rank-content
+							h2
+								a(href="#") 格力空调旗舰店
+					li.bor-b.flex-box
+						.rank-number
+							span 72
+						.rank-face
+							img(src="_face05.jpg")
+						.rank-content
+							h2
+								a(href="#") Mrmian服装店
+					li.bor-b.flex-box
+						.rank-number
+							span 192
+						.rank-face
+							img(src="_face06.jpg")
+						.rank-content
+							h2
+								a(href="#") 艺尚时尚服装品牌店
+		//- 加载更多
+		.m-load-more
+		//- 返回顶部
+		a.go-top(href="#")
+		//- 我是有底线的
+		.page-no
+			span
+			| 我是有底线的~

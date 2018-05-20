@@ -1,0 +1,169 @@
+doctype html
+html(lang="zh-CN")
+	include ../../../pc-widget/head/head.jade
+	link(type="text/css",rel="stylesheet",href="../../css/public/public.css")
+	link(type="text/css",rel="stylesheet",href="../../css/module/usercenter.css")
+	body.opg
+		include ../../../pc-widget/header/header.jade
+		include ../../../pc-widget/menu/menu.jade
+		.wrap-box.mart20.clearfix
+			include ../../../pc-widget/slider/slider.jade
+			.user-right
+				.usershop-title
+					.left-tab
+						a(href="javascritp:;").active 商品
+						a(href="javascritp:;") 店铺
+						a(href="javascritp:;") 话题
+					.right-edit
+						a(href="javascritp:;") 批量管理
+					.right-edit
+						label
+							input(type="checkbox")
+							| 全选
+						a(href="javascritp:;")
+							// icon替换 
+							em.iconn-72
+							| 删除
+						a(href="javascritp:;") 取消管理
+				.circle-index-list
+					.clearfix
+						//圈子-无图
+						.circle-box.no-pic
+							// icon替换
+							em.iconn-72.icon-del
+							.mg-negative
+								span.topic-tag.topic-tag-static
+									em.icon-lysy
+										img(src="https://i6.meixincdn.com/v1/img/T1GRYTB7KT1R4cSCrK.png" alt="")
+									| 旅游摄影
+								.list-title
+									p.list-title-content
+										a(href="##") 婚纱也可以这么拍婚纱也可以这么拍婚纱也可以这么拍
+										span.list-title-time 2015.06.06
+							.del-btn
+								.del-text
+									p 确定要删除？
+									.text-center
+										a(href="javascritp:;").pc-btn.pc-bj-fff 取消
+										a(href="javascritp:;").pc-btn 确定
+						//圈子
+						.circle-box.remove-del
+							// icon替换
+							em.iconn-72.icon-del
+							.mg-negative
+								span.topic-tag
+									em.icon-lysy
+										img(src="https://i6.meixincdn.com/v1/img/T1GRYTB7KT1R4cSCrK.png" alt="")
+									| 旅游摄影
+								span.topic-num 19
+								.list-img
+									em.icon-play
+									a(href="##")
+										img(src="https://i6.meixincdn.com/v1/img/T1GRYTB7KT1R4cSCrK.png" alt="")
+								.list-title
+									p.list-title-content
+										em.set-access 专访
+										a(href="##") 婚纱也可以这么拍婚纱也可以这么拍婚纱也可以这么拍
+										span.list-title-time 2015.06.06
+							.del-all
+								//active为选中
+								em.icon-check
+						//圈子、置顶
+						.circle-box
+							// icon替换
+							em.iconn-72.icon-del
+							.mg-negative
+								span.topic-tag
+									em.icon-lysy
+										img(src="https://i6.meixincdn.com/v1/img/T1GRYTB7KT1R4cSCrK.png")
+									| 旅游摄影
+								.list-img
+									a(href="##")
+										img(src="https://i6.meixincdn.com/v1/img/T1GRYTB7KT1R4cSCrK.png" alt="")
+								.list-title
+									p.list-title-content
+										em.set-top 置顶
+										a(href="##") 婚纱也可以这么拍婚纱也可以这么拍婚纱也可以这么拍
+										span.list-title-time 2015.06.06
+						//圈子、加精
+						.circle-box
+							// icon替换
+							em.iconn-72.icon-del
+							.mg-negative
+								span.topic-tag
+									em.icon-lysy
+										img(src="https://i6.meixincdn.com/v1/img/T1GRYTB7KT1R4cSCrK.png" alt="") 
+									| 旅游摄影
+								.list-img
+									a(href="##")
+										img(src="https://i6.meixincdn.com/v1/img/T1GRYTB7KT1R4cSCrK.png" alt="")
+								.list-title
+									p.list-title-content
+										em.set-spark 加精
+										a(href="##") 婚纱也可以这么拍
+										span.list-title-time 2015.06.06
+						//商品、返
+						.circle-box
+							// icon替换
+							em.iconn-72.icon-del
+							.mg-negative
+								span.topic-tag
+									em.icon-lysy
+										img(src="../../images/circle/lvsy.jpg" alt="") 
+									| 旅游摄影
+								.list-img
+									a(href="##")
+										img(src="https://i6.meixincdn.com/v1/img/T1GRYTB7KT1R4cSCrK.png" alt="")
+								p.list-price
+									| ￥
+									span 199.00
+									em.fan-tag 返
+								.list-title
+									p.list-title-content
+										a(href="##") 婚纱也可以这么拍纱也可以这么拍也可以这么拍
+										span.list-title-time 2015.06.06
+						//店铺、优惠券
+						.circle-box.shop
+							// icon替换
+							em.iconn-72.icon-del
+							.mg-negative
+								span.topic-tag.topic-tag-static
+									em.icon-lysy
+										img(src="../../images/circle/lvsy.jpg" alt="") 
+									| 旅游摄影
+								dl.list-shop
+									dt
+										a(href="##")
+											img(src="https://i6.meixincdn.com/v1/img/T1GRYTB7KT1R4cSCrK.png" alt="")
+									dd
+										a(href="##") 国美国际酒业际酒业
+										em.coupon-tag 优惠券
+								.list-title
+									p.list-title-content
+										a(href="##") 婚纱也可以这么拍纱也可以这么拍也可以这么拍
+										span.list-title-time 2015.06.06
+				.more-comments
+					a(href="##").clearfix
+						span
+							img(src="../../images/circle/small-logo.png")
+							| 点击加载更多
+							// icon替换 
+							em.iconn-9
+				.more-comments
+					a(href="##").disabled.clearfix
+						span
+							img(src="../../images/public/loading.gif")
+							| 正在加载...
+				.more-comments
+					a(href="##").disabled.clearfix
+						span
+							| 没有可加载内容
+				.no-topic
+					.txt.clearfix
+						em.iconn-55
+						p 
+							span
+								| 你还没收藏过宝贝哦,赶快去 
+								a(href="#") 添加宝贝 
+								| 吧
+		include ../../../pc-widget/footer/footer.jade

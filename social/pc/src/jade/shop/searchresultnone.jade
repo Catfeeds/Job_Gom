@@ -1,0 +1,24 @@
+doctype html
+html(lang="zh-CN")
+	include ../../../../../gomeplusUI/pc/src/jade/head.jade
+	link(type="text/css",rel="stylesheet",href="../../css/public/public.css")
+	link(type="text/css",rel="stylesheet",href="../../css/module/shop/searchresultnone.css")
+	body.opg
+		include ../../../../../gomeplusUI/pc/src/jade/header.jade
+		include ../../../../../gomeplusUI/pc/src/jade/menu.jade
+		.wrap-box
+			.shop-title.clearfix
+				include ../../../../../gomeplusUI/pc/src/jade/crumbs.jade
+				include ../../../../../gomeplusUI/pc/src/jade/sort.jade
+			.search-result
+				.result-text.clearfix
+					em.icon &#xe960;
+					p
+						| 抱歉，没有找到“
+						span 关键词
+						| ”相关的结果
+						br
+						| 建议您尝试其他关键词
+		include ../../../../../gomeplusUI/pc/src/jade/footer.jade
+			
+		

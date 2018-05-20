@@ -1,0 +1,161 @@
+doctype html
+html(lang="zh-CN")
+	include ../../widget/head/head.pug
+	link(type="text/css",rel="stylesheet",href="../../css/public/public.css")
+	link(type="text/css",rel="stylesheet",href="../../css/module/usercenter.css")
+	body.opg
+		include ../../widget/header/header.pug
+		include ../../widget/menu/menu.pug
+		.wrap-box.collect-topic.clearfix
+			include ../../widget/slider/slider.pug
+			.user-right
+				.crumbs
+					span 您的位置：
+					span
+						a(href="#") 我的国美
+					em >
+					span.topic-title 我的收藏
+				.user-content
+					.usershop-title
+						.left-tab
+							a(href="javascritp:;") 商品
+							a(href="javascritp:;") 店铺
+							a(href="javascritp:;").active 话题
+					.circle-index-list
+						.topic-del.clearfix
+							.right-edit
+								a.btn-batch(href="javascritp:;") 批量管理
+							.right-edit
+									a.btn-check(href="javascritp:;")
+										span.checkbox
+										|全选
+									a.btn-del(href="javascritp:;") 删除
+									a.btn-cancel(href="javascritp:;") 取消
+						.topic-list.clearfix
+							//圈子-无图
+							.circle-box.no-pic
+								.mg-negative
+									em.icon-del
+									.list-box
+										p.list-title
+											em.set-top 置顶
+											a(href="##") 标题标题标题标题标题标题标题标题标题标题标题
+										p.text-icon.clearfix
+											span
+												em.icon-like
+												| 11
+											span
+												em.icon-discuss
+												| 11
+										p.list-description 内容婚纱也可以这么拍婚纱也可以这么拍婚纱也可以这么拍
+										p.list-time 2015-06-06 18:35:20
+										p.list-tag 来自圈子：
+												a 旅游摄影
+								.del-btn
+									.del-text
+										a.btn-close(href="#")
+										p 确定要删除此话题吗？
+										.text-center
+											a(href="javascritp:;").pc-btn 确定
+											a(href="javascritp:;").pc-btn.pc-bj-fff 取消
+							//圈子
+							.circle-box.remove-del
+								.mg-negative
+									em.icon-del
+									.list-img
+										a(href="##")
+											img(src="https://i6.meixincdn.com/v1/img/T1GRYTB7KT1R4cSCrK.png" alt="")
+									.list-box
+										p.list-title
+											em.set-top 置顶
+											a(href="##") 标题标题标题标题标题标题标题标题标题标题标题
+										p.text-icon.clearfix
+											span
+												em.icon-like
+												| 11
+											span
+												em.icon-discuss
+												| 11
+										p.list-description 内容婚纱也可以这么拍婚纱也可以这么拍婚纱也可以这么拍
+										p.list-time 2015-06-06 18:35:20
+										p.list-tag 来自圈子：
+												a 旅游摄影
+								.del-all
+									//active为选中
+									em.icon-check
+							//圈子、置顶
+							.circle-box
+								.mg-negative
+									em.icon-del
+									span.topic-tag
+										em.icon-lysy
+											img(src="https://i6.meixincdn.com/v1/img/T1GRYTB7KT1R4cSCrK.png" alt="")
+										| 用户名称
+									.list-img
+										a(href="##")
+											img(src="https://i6.meixincdn.com/v1/img/T1GRYTB7KT1R4cSCrK.png" alt="")
+									.list-box
+										p.list-title
+											em.set-top 置顶
+											a(href="##") 标题标题标题标题标题标题标题标题标题标题标题
+										p.text-icon.clearfix
+											span
+												em.icon-like
+												| 11
+											span
+												em.icon-discuss
+												| 11
+										p.list-description 内容婚纱也可以这么拍婚纱也可以这么拍婚纱也可以这么拍
+										p.list-time 2015-06-06 18:35:20
+										p.list-tag 来自圈子：
+												a 旅游摄影
+							//圈子、加精
+							.circle-box
+								.mg-negative
+									em.icon-del
+									.list-img
+										a(href="##")
+											img(src="https://i6.meixincdn.com/v1/img/T1GRYTB7KT1R4cSCrK.png" alt="")
+									.list-box
+										p.list-title
+											em.set-spark 加精
+											a(href="##") 标题标题标题标题标题标题标题标题标题标题标题
+										p.text-icon.clearfix
+											span
+												em.icon-like
+												| 11
+											span
+												em.icon-discuss
+												| 11
+										p.list-description 内容婚纱也可以这么拍婚纱也可以这么拍婚纱也可以这么拍
+										p.list-time 2015-06-06 18:35:20
+										p.list-tag 来自圈子：
+												a 旅游摄影
+									.del-btn
+										.del-text
+											a.btn-close(href="#")
+											p 确定要删除此话题吗？
+											.text-center
+												a(href="javascritp:;").pc-btn 确定
+												a(href="javascritp:;").pc-btn.pc-bj-fff 取消
+					.no-topic
+						.txt.clearfix
+							p
+								span
+									| 这里空空的~快去
+									a(href="#") 收藏话题
+									| 吧
+					.more-loading
+						a(href="##").clearfix
+							img(src="../../images/public/loading.gif")
+							span 下拉加载更多话题
+					.more-loading
+						a(href="##").clearfix
+							img(src="../../images/public/loading.gif")
+							span 正在加载更多话题…
+					.more-loading
+						a(href="##").clearfix
+							img(src="../../images/public/loading.gif")
+							span 无更多加载项
+
+		include ../../widget/footer/footer.pug

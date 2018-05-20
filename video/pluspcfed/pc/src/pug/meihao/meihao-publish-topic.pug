@@ -1,0 +1,63 @@
+doctype html 
+doctype html 
+html(lang="zh-CN") 
+    meta(charset="utf-8")
+    link(type="text/css",rel="stylesheet",href="../../css/public/public.css")
+    link(type="text/css",rel="stylesheet",href="../../css/module/meihaoPublishTopic.css")
+    link(type="text/css",rel="stylesheet",href="../../css/module/ueditor.css")
+    body.opg  
+        include ../../widget/header/header-meihao.pug
+        .meihao.clearfix
+            include ../../widget/aside/meihao.pug
+            .meihao-publish-topic  
+                .nav
+                    a(href="#") 文章管理>
+                    span 新建文章
+                .edit-wrap
+                    #editor
+script.
+        var $GLOBAL_CONFIG = {};
+        $GLOBAL_CONFIG['current_url']= 'aHR0cHM6Ly9teWhvbWUuZ29tZS5jb20uY24vZXhwZXJ0L3B1Ymxpc2g/dGlkPTU5NTlhNWQ2MzRlMGVhMTdjYmUwOTQ3NSZmcm9tPTE=';//当前url
+        $GLOBAL_CONFIG['islogin']= '1';//是否登录
+        $GLOBAL_CONFIG['userId'] = '72096119146';
+        $GLOBAL_CONFIG['nickName'] = '修云524';
+        $GLOBAL_CONFIG['main_domain']= 'https://group.gome.com.cn/';//主域名
+        $GLOBAL_CONFIG['passport_domain']= 'https://passport.gome.com.cn/';//登录注册域名
+        $GLOBAL_CONFIG['order_domain']= 'https://order.gome.com.cn/';//订单域名
+        $GLOBAL_CONFIG['group_domain']= 'https://group.gome.com.cn/';//社交
+        $GLOBAL_CONFIG['i_domain']= 'https://myhome.gome.com.cn/';//用户中心
+        $GLOBAL_CONFIG['mall_domain']= 'https://jingpin.gome.com.cn/';//商城
+        $GLOBAL_CONFIG['js_domain'] = 'https://js.meixincdn.com';
+        $GLOBAL_CONFIG['pcjspath'] = 'https://js.meixincdn.com/m/pc/dist';
+        $GLOBAL_CONFIG['pccsspath'] = 'https://css.meixincdn.com/m/pc/dist';
+        $GLOBAL_CONFIG['pcimgpath'] = 'https://js.meixincdn.com/m/pc/dist';
+        $GLOBAL_CONFIG['wap_url'] = 'https://m.gomeplus.com/';
+        $GLOBAL_CONFIG['wap_circle_url'] = 'https://circle.m.gomeplus.com/';
+        $GLOBAL_CONFIG['prefix'] = 'mx_pc_';
+        $GLOBAL_CONFIG['csrf_token'] = '';
+        $GLOBAL_CONFIG['ss_service_gome'] = '//ss.gome.com.cn/';
+        $GLOBAL_CONFIG['cart_service_gome'] = '//cart.gome.com.cn/';
+        var userId = '72096119146';
+        $GLOBAL_CONFIG['dynSite']='https://g.gome.com.cn:443';
+        $GLOBAL_CONFIG['staSite']='//www.gome.com.cn/';
+        $GLOBAL_CONFIG['contextPath']='/ec/homeus';
+        $GLOBAL_CONFIG['secureURL']='https://g.gome.com.cn:443';
+        $GLOBAL_CONFIG['cookieDomain']='.gome.com.cn';
+        $GLOBAL_CONFIG['stageImageServer']= '//img.gomein.net.cn/';
+        $GLOBAL_CONFIG['imgServer']='//img.gome.com.cn/images';
+        $GLOBAL_CONFIG['pictureserver']='//img.gome.com.cn/image';
+        $GLOBAL_CONFIG['stageCssServer']='//css.gome.com.cn';
+        $GLOBAL_CONFIG['cssserver']='//css.gome.com.cn/css';
+        $GLOBAL_CONFIG['stageJsServer']='//js.gome.com.cn';
+        $GLOBAL_CONFIG['jsserver']='//js.gome.com.cn/js';
+        $GLOBAL_CONFIG['js_net_server']='https://js.gomein.net.cn/';
+        $GLOBAL_CONFIG['protocol']='https';
+        $GLOBAL_CONFIG['versionData']='2.2.8';
+        $GLOBAL_CONFIG['product_search_gome']='https://search.gome.com.cn';
+        $GLOBAL_CONFIG['shop_search_gome']='https://search.gome.com.cn';
+        $GLOBAL_CONFIG['product_item_gome']='https://item.gome.com.cn/';
+        $GLOBAL_CONFIG['ggckgd'] = 'PGGMKCKmd0003';  //埋点查看更多标示
+        $GLOBAL_CONFIG['ggjzgd'] = 'PGGMKJZmd0004';  //埋点加载更多标示
+        window.page_id = ""; 
+script(type="text/javascript",src="http://js.dev.meixincdn.com:1314/debug/js/conf/vendor.js") 
+script(type="text/javascript",src="../../js/conf/editor.js") 

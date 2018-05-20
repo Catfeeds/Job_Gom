@@ -1,0 +1,115 @@
+@import '../../widget/config/_base.scss';
+@import '../../widget/config/_mixins.scss';
+@import '../../widget/header/header-meihao.scss';
+body.opg {
+  font-family: "Microsoft YaHei";
+  background:#e7e7e7;
+}
+.beauty-band{
+  width: 1198px;
+  border:1px solid #d9dadc;
+  height: 750px;
+  background-color: #fff;
+  margin: 39px auto 60px;
+  overflow: hidden;
+
+  h2.beauty-b-title{
+    //margin-top: 51px;
+    font-size: 24px;
+    line-height: 184px;
+    text-align: center;
+  }
+
+  .beauty-aboard{
+    width: 680px;
+    height: 400px;
+    //margin-top: 35px;
+    padding: 0px 260px 50px;
+    a{
+      display:block;
+      float: left;
+    }
+    a:hover{
+      background-color: #f7f8f9;
+
+    }
+    .beauty-personal{
+      .beauty-p-avator{
+        width: 80px;
+        height: 80px;
+        margin: 32px auto 0px;
+        background: url(../../images/meihao/type/beauty-p-avator.png) no-repeat;
+      }
+    }
+
+    .beauty-company{
+      float:right;
+      .beauty-c-avator{
+        width: 80px;
+        height: 80px;
+        margin: 32px auto 0;
+        background: url(../../images/meihao/type/beauty-c-avator.png) no-repeat;
+      }
+    }
+
+   .beauty-c-name{
+     font-size: 20px;
+     line-height:52px; 
+     text-align: center;
+   }
+
+   .beauty-c-detail{
+     padding: 0 40px;
+     height: 186px;
+     font-size: 14px;
+     line-height: 24px;
+     color: #888;
+   }
+
+   .beauty-c-btn{
+     display: block;
+     width: 100px;
+     height: 30px;
+     line-height: 30px;
+     margin: 0 auto;
+     background-color: #107eee;
+     color: #fff;
+     text-align: center;
+     overflow:hidden;
+     border-radius: 2px;
+     .beauty-c-btn-a{
+       display: block;
+       float: left;
+       width: 100px;
+       height: 30px;
+       line-height: 30px;
+       background-color: #107eee;
+       color: #fff;
+       text-align: center;
+     }
+   }
+  }
+
+  .beauty-footer{
+    width: 100%;
+    line-height: 14px;
+    text-align: center;
+    .beauty-f-font{
+      font-style: normal;
+      font-size: 14px;
+      color: #888;
+    }
+    .beauty-f-link{
+      color: #0066cc;
+    }
+  }
+}
+
+.cube{
+  display: block;
+  float: left;
+  width: 298px;
+  height: 398px;
+  border: 1px solid #d9dadc;
+  border-radius: 1px;
+}

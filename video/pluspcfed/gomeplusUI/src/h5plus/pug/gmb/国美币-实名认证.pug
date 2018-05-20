@@ -1,0 +1,72 @@
+doctype html
+html(lang="zh-CN", data-use-rem="750")
+	include ../../../m-widget/head/head.jade
+	link(type="text/css",rel="stylesheet",href="../../css/public/gomeplusUI.css")
+	link(type="text/css",rel="stylesheet",href="../../css/module/gmb/gmb.css")
+	body.opg.gmb
+		include ../../../m-widget/head/rem.jade
+	
+	.account-box
+		.flex-boxs.bor-t
+			.flex-box
+				.flex-bd
+					p.c-3 账户安全
+				.flex-ft
+					span.c-9 安全等级：
+					span.c-ff8000 高
+					span.u-sj
+			.flex-box
+				.flex-bd 实名认证
+				.flex-ft
+					span.c-9 未认证
+					span.u-sj
+			.flex-box
+				.flex-bd 实名认证
+				.flex-ft
+					span.c-9
+						| 已认证：
+						span.c-ff8000 V1
+					span.u-sj
+		.flex-boxs.bor-t
+			.flex-box
+				.flex-bd
+					p.c-3 只能省能量
+				.flex-ft
+					span.m-switch
+			.flex-box
+				.flex-bd 清除缓存
+				.flex-ft
+					span.c-9 10.9mb
+					span.u-sj
+		.flex-boxs.bor-t
+			.flex-box
+				.flex-bd
+					p.c-3 接受新消息通知
+				.flex-ft
+					span.m-switch.active
+		.flex-boxs.bor-t
+			.flex-box
+				.flex-bd
+					p.c-3 关于我们
+				.flex-ft
+					span.u-sj
+			.flex-box
+				.flex-bd
+					p.c-3 帮助反馈
+				.flex-ft
+					span.c-9 10.9mb
+					span.u-sj
+			.flex-box
+				.flex-bd
+					p.c-3 给国美在线评分
+				.flex-ft
+					span.u-sj
+			.flex-box
+				.flex-bd
+					p.c-3 客服电话 400-820-8830
+				.flex-ft
+					em.iconn-98
+		.btn-box
+			a.m-btn-big(href="javascript:;") 退出
+	//- 结束
+		

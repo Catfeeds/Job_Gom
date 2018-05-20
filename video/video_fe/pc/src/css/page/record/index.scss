@@ -1,0 +1,36 @@
+/* record */
+@import "../../base/public.scss";
+@import "../../components/scroll-load.scss";
+// @import "../../components/button.scss";
+@import "../../widgets/user/home-banner.scss";
+@import "../../widgets/user/home-nav.scss";
+@import "../../widgets/list-card.scss";
+
+@import "../../components/indicator.scss";
+@import "../../components/uc-nodata.scss";
+@import "../../components/click-load.scss";
+
+.content{
+	margin-top: 40px;
+	margin-bottom: 50px;
+	.main{
+		width: 895px;
+		margin-left: 40px;
+		.indicator{
+            margin-top: 80px;
+        }
+		.list-card li{
+			margin-bottom: 24px;
+		}
+		.title{
+			font-size: 22px;
+			color: #333;
+			margin-bottom: 20px;
+			font-weight: normal;
+		}
+		.no-data.record{
+            background: url(../../../imgs/public/no-data-record.png) 50% 50% no-repeat;
+        }
+	}
+}
+

@@ -1,0 +1,11 @@
+1. 通用导航 menu ，把“ / ”改成“ | ”，将  <em class="icon icon-user">&#xe939;<em> 删除
+	<div class="index-regist">                  *
+		<a href="##" rel="nofollow">注册</a>|<a href="##" rel="nofollow">登录</a>
+	</div>                                      *
+2. html/usercenter/returngoods.html/changegoods.html
+	实时付款、运费：外面加span标签，class: price-l
+	<p class="price"><span class="price-l">实时付款：</span><span>￥560.00</span></p>
+	<p class="price"><span class="price-l">运费：</span><span>￥5.00</span></p>
+					*
+3.html/usercenter/postcomment.html
+	<span class="font-grey-normal">订单号：</span> 订单号后加 “ ： ”

@@ -1,0 +1,81 @@
+@charset "UTF-8";
+[class^="iconn-"],
+[class*="iconn-"] {
+    vertical-align: -1px;
+}
+
+//font-family
+@include font-face(jirafonts, 688010)
+
+.iconn-1 {
+  &:before {
+    content: "\e900";
+    color: #fff;
+  }
+}
+.iconn-2 {
+  &:before {
+    content: "\e901";
+    color: #d63333;
+  }
+}
+.iconn-3 {
+  &:before {
+    content: "\e90d";
+    color: #999;
+  }
+}
+.iconn-4 {
+  &:before {
+    content: "\e90e";
+    color: #666;
+  }
+}
+.iconn-5 {
+  &:before {
+    content: "\e90f";
+    color: #d63333;
+  }
+}
+.iconn-6 {
+  &:before {
+    content: "\e910";
+    color: #d63333;
+  }
+}
+.iconn-7 {
+  &:before {
+    content: "\e911";
+    color: #d63333;
+  }
+}
+.iconn-8 {
+  &:before {
+    content: "\e912";
+    color: #d63333;
+  }
+}
+.iconn-9 {
+  &:before {
+    content: "\e913";
+    color: #d63333;
+  }
+}
+.iconn-10 {
+  &:before {
+    content: "\e914";
+    color: #d63333;
+  }
+}
+.iconn-11 {
+  &:before {
+    content: "\e902";
+    color: #ddd;
+  }
+}
+.iconn-12 {
+  &:before {
+    content: "\e90c";
+    color: #ddd;
+  }
+}

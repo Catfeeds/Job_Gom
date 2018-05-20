@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="zh-CN" data-use-rem="750">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+	<meta name="format-detection" content="telephone=no">
+	<meta name="format-detection" content="email=no">
+	<meta http-equiv="expires" content="0">
+	<link type="text/css" rel="stylesheet" href="../css/public.css">
+	<link type="text/css" rel="stylesheet" href="../css/api.css">
+	<link type="text/css" rel="stylesheet" href="../css/html.css">
+</head>
+<body class="opg">
+	<script type="text/javascript">
+		(function appVersion() {
+	      	window.platform = {};
+	      	var ua = window.navigator.userAgent.toLowerCase();
+	      	var isIphone = ua.match(/iphone os/i) == 'iphone os';
+	      	var isAndroid = ua.match(/android/i) == 'android';
+	      	// ipad 也为mobile
+	      	var isMobile = ua.match(/mobile/i) == 'mobile';
+	      	var isIpad = ua.match(/ipad/) == 'ipad';
+	      
+	      	platform.isMobile = function () {
+	      		return isMobile && !isIpad;
+	      	}
+	      	if(platform.isMobile()) {
+	      		(function(win){var doc=win.document,html=doc.documentElement,option=html.getAttribute("data-use-rem");if(option===null){return}var baseWidth=parseInt(option).toString()==="NaN"?640:parseInt(option);var grids=baseWidth/100;var clientWidth=html.clientWidth||320;html.style.fontSize=clientWidth/grids+"px";var testDom=document.createElement("div");var testDomWidth=0;var adjustRatio=0;testDom.style.cssText="height:0;width:1rem;";doc.body.appendChild(testDom);var calcTestDom=function(){testDomWidth=testDom.offsetWidth;if(testDomWidth!==Math.round(clientWidth/grids)){adjustRatio=clientWidth/grids/testDomWidth;var reCalcRem=clientWidth*adjustRatio/grids;html.style.fontSize=reCalcRem+"px"}else{doc.body.removeChild(testDom)}};setTimeout(calcTestDom,20);var reCalc=function(){var newCW=html.clientWidth;if(newCW===clientWidth){return}clientWidth=newCW;html.style.fontSize=newCW*(adjustRatio?adjustRatio:1)/grids+"px"};if(!doc.addEventListener){return}var resizeEvt="orientationchange" in win?"orientationchange":"resize";win.addEventListener(resizeEvt,reCalc,false);doc.addEventListener("DOMContentLoaded",reCalc,false)})(window);
+	      	}
+        })()
+	</script>
+	<section class="section">
+		<p><a href="https://pugjs.org/api/getting-started.html" target="_blank">pug官方英文文档</a></p>
+		<p>Pug源于 Node.js 的 HTML 模板引擎，HTML预处理语言，非常类似 Sass 之于 CSS</p>
+		<p>例：在 Jade 中创建一个列表：</p>
+		<pre><code>
+<span>ul.wrap#id</span>
+<span class="son">li Item A</span>
+<span class="son">li Item B</span>
+<span class="son">li Item C</span>
+			</code>
+生成的 HTML：<code>
+
+&lt;<span>ul class="wrap" id="id"</span>&gt;
+<span class="son">&lt;<span>li</span>&gt;Item A&lt;/<span>li</span>&gt;</span>
+<span class="son">&lt;<span>li</span>&gt;Item B&lt;/<span>li</span>&gt;</span>
+<span class="son">&lt;<span>li</span>&gt;Item C&lt;/<span>li</span>&gt;</span>
+&lt;/<span>ul</span>&gt;
+			</code>
+		</pre>
+		<p><a href="http://naltatis.github.io/jade-syntax-docs/" target="_blank">点击这里，试玩一下</a></p>
+		<p>提示：如果环境已经正确安装，那么大多数情况下的错误都是缩进惹的祸，一定要保持一致的缩进格式，建议统一将 tab 键输出为空格，并采用 4 个空格作为标准缩进。</p>
+		<p><a href="https://segmentfault.com/a/1190000000357534">可参考中文文章</a></p>
+	</section>
+</body>
+</html>

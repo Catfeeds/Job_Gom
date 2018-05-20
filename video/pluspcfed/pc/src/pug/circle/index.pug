@@ -1,0 +1,449 @@
+doctype html
+html(lang="zh-CN")
+	include ../../widget/head/head.pug
+	link(type="text/css",rel="stylesheet",href="../../css/public/public.css")
+	link(type="text/css",rel="stylesheet",href="../../css/module/circle_index.css")
+	body.opg.screen-lit
+		include ../../widget/header/header.pug
+		.container-box
+			.container
+				.top-list
+					.banner
+						ul
+							-for(var i = 0;i < 5;i++)
+								li
+									a(href='#')
+										img(src="../../images/circle/index/big_banner.png")
+										span 所有菇凉的梦想都在这里
+						.banner-tags
+							-for(var i = 0;i < 5;i++)
+								.banner-tags-item
+					.hot-content
+						h2 热门内容
+						.tab-control
+							.tab-tags
+								ul(data-node='hotConTagsBox')
+									li.tab-li 话题
+									li 视频
+									li 活动
+									li 游戏
+									li 购物
+							.tab-contents(data-node='tabConBox')
+								.tab-contents-item(data-node='topicTag')
+									.tab-top
+										.item-img-text
+											a(href='#')
+												img(src="../../images/circle/index/hot_content.png")
+												span.hot-content-text.overflow-one 冬日爱尔兰
+											span.icon-video
+										.item-img-text
+											a(href='#')
+												img(src="../../images/circle/index/hot_content.png")
+												span.hot-content-text.overflow-one 冬日爱尔兰
+											span.icon-video
+										.item-img-text
+											a(href='#')
+												img(src="../../images/circle/index/hot_content.png")
+												span.hot-content-text.overflow-one 冬日爱尔兰
+											span.icon-video
+							.tab-bottom
+								ul
+									-for(var i = 0 ;i < 4;i++)
+										li.overflow-one
+											a(href='#')
+												em
+												span.overflow-one 剁手篇—你要控几你几个啊
+
+
+								//- .tab-contents-item(data-node='videoTag')
+								//- 	.tab-top
+								//- 		.item-img-text.item-video
+								//- 			a(href="#")
+								//- 				img(src="../../images/circle/index/hot_content_video.png")
+								//- 				span.hot-content-text.overflow-one 冬日爱尔兰
+								//- 				span.zhibo-label 直播中
+								//- 		.item-img-text.item-video
+								//- 			a(href="#")
+								//- 				img(src="../../images/circle/index/hot_content_video.png")
+								//- 				span.hot-content-text.overflow-one 冬日爱尔兰
+								//- 				span.zhibo-label 直播中
+								//- 	.tab-bottom
+								//- 		.tab-bottom-left
+								//- 			p
+								//- 				a(href="#")
+								//- 					em
+								//- 					span.overflow-one 剁手篇—你要控几你几个啊
+								//- 			p
+								//- 				a(href="#")
+								//- 					em
+								//- 					span.overflow-one 逃离北上广一共分几步
+								//- 		.tab-bottom-right
+								//- 			p
+								//- 				a(href="#")
+								//- 					em
+								//- 					span.overflow-one 剁手篇—你要控几你几个啊
+								//- 			p
+								//- 				a(href="#")
+								//- 					em
+								//- 					span.overflow-one 逃离北上广一共分几步
+				.recommend-circle
+					h2.title-h2 推荐圈子
+					ul.circle-item
+						- for (var x = 0; x < 4; x++)
+							li
+								.rec-circle-top
+									a(href="#")
+										img(src="../../images/circle/index/rec_circle.png")
+										.r-c-t-block   跟着《你的名字》去旅行
+									span.babel.overflow-one 旅游旅游旅游
+								.rec-circle-bottom
+									p.r-c-b-p1
+										a(href="#")
+											span.r-c-b-title.overflow-one 国美票据
+										span.r-c-b-member.last 话题
+											i.r-c-b-i 400
+										span.r-c-b-member 成员
+											i.r-c-b-i 230
+									p.r-c-b-p2
+										a(href="#").overflow-one [话题]试用004期：国美让您独“具”匠心
+									p.r-c-b-p2
+										a(href="#").overflow-one [话题]试用004期：国美让您独“具”匠心
+									a(href="#",data-action='joinCircle').add-circle.none
+										em
+										span 加入圈子
+									a(href="#",data-node='joinCircleSuc').ok-add-circle.none
+										em
+										span 已加入
+									a(href="#",data-node='joinCircleChk').add-circle.check-add-circle.none
+										em
+										span 审核中
+									a(href="#",data-node='joinCircleRef').add-circle.refuse-add-circle
+										em
+										span 加入圈子
+				.topic-content
+					h2.title-h2 话题内容
+					ul
+						- for (var x = 0; x < 10; x++)
+							li
+								div
+									a(href="#")
+										.topic-content-top
+											img(src="../../images/circle/index/topic-cont.png")
+										.topic-content-bottom
+											p.t-c-b-tit.overflow-one 2017值得看的风景
+											p.t-c-b-icon
+												span.ticon-like
+													i 55
+												span.ticon-speak
+													i 66
+								.avatar
+									a(href="#")
+										em
+											img(src='../../images/circle/small-logo.png')
+										span 我的头像
+				.daren-recommend
+					h2.title-h2 品质生活
+					ul.clearfix
+						- for (var x = 0; x < 4; x++)
+							li
+								.mg-negative
+									.img
+										a(href="#")
+											img(src="../../images/circle/index/rec_circle.png").img-img
+										.avatar
+											a(href="#")
+												em
+													img(src='../../images/circle/small-logo.png')
+												span 我的头像
+									.img-box
+										a(href="#")
+											img(src="../../images/circle/index/rec-goods-small.png")
+											p
+												| ¥
+												span 54000.00
+										a(href="#")
+											img(src="../../images/circle/index/rec-goods-small.png")
+											p
+												| ¥
+												span 54000.00
+										a(href="#")
+											img(src="../../images/circle/index/rec-goods-small.png")
+											p
+												| ¥
+												span 54000.00
+										a(href="#")
+											img(src="../../images/circle/index/rec-goods-small.png")
+											p
+												| ¥
+												span 54000.00
+									.text
+										a(href="#").list-title.overflow-one 旅游出行摄影必备
+										p.gray 一双能助你奔波而又不累的运动战靴，相机架加单反相机架加单反相机架加单反相机架加单反
+										.text-icon
+											span.ticon-like
+												i 55
+											span.ticon-speak
+												i 66
+				.travel-circle
+					h2.title-h2 旅游圈子
+					.tra-circle-box.circle-color-fen
+						.tra-cir-tags
+							.tags-tab(data-node='travelTagsBox')
+								.tags-tab-container(data-node='travelTags')
+									a(href='#').hoverCls 旅行
+									-var travelAry =['电影票','机票','帐篷']
+									each val,idx in travelAry
+										a(href="#") #{val}
+								.more(data-node='moreTags')
+									a(href="#") 更多
+							.tags-box(data-node='travelTabsBox')
+								.tags-item-container(data-node='travelTab')
+									.tags-box-item
+										ul.circle-item
+											- for (var x = 0; x < 4; x++)
+												li
+													.rec-circle-top
+														a(href="#")
+															img(src="../../images/circle/index/rec_circle.png")
+															.r-c-t-block   跟着《你的名字》去旅行
+														span.babel 旅游
+													.rec-circle-bottom
+														p.r-c-b-p1
+
+															a(href="#")
+																span.r-c-b-title.overflow-one 国美票据
+															span.r-c-b-member.last 话题
+																i.r-c-b-i 400
+															span.r-c-b-member 成员
+																i.r-c-b-i 230
+														p.r-c-b-p2
+															a(href="#").overflow-one [话题]试用004期：国美让您独“具”匠心
+														p.r-c-b-p2
+															a(href="#").overflow-one [话题]试用004期：国美让您独“具”匠心
+														a(href="#",data-action='joinCircle').add-circle
+															em
+															span 加入圈子
+														a(href="#",data-node='joinCircleSuc').ok-add-circle.none
+															em
+															span 已加入
+							.tra-cir-activity
+								.tra-cir-act-title
+									h3 热门活动
+									span.line-red
+								.tra-cir-act-box
+									ul
+										- for (var x = 0; x < 8; x++)
+											li
+												a(href="#")
+													img(src="../../images/circle/index/act-box-img.png")
+													p.overflow-one 普吉岛旅游攻略
+				.beauty-circle
+					h2.title-h2 美妆圈子
+					.tra-circle-box.circle-color-ju
+						.tra-cir-tags
+							.tags-tab(data-node='beautyTagsBox')
+								.tags-tab-container(data-node='beautyTags')
+									a(href="#").hoverCls 美妆视频
+									-var beautyAry =['沐浴','海外购','纤体']
+									each val,idx in beautyAry
+										a(href="#") #{val}
+								.more(data-node='moreTags')
+									a(href="#") 更多
+							.tags-box(data-node='beautyTabsBox')
+								.tags-item-container(data-node='beautyTab')
+									.tags-box-item
+										ul.circle-item
+											- for (var x = 0; x < 4; x++)
+												li
+													.rec-circle-top
+														a(href="#")
+															img(src="../../images/circle/index/rec_circle.png")
+															.r-c-t-block   跟着《你的名字》去旅行
+														span.babel 旅游
+													.rec-circle-bottom
+														p.r-c-b-p1
+
+															a(href="#")
+																span.r-c-b-title.overflow-one 国美票据
+															span.r-c-b-member.last 话题
+																i.r-c-b-i 400
+															span.r-c-b-member 成员
+																i.r-c-b-i 230
+														p.r-c-b-p2
+															a(href="#").overflow-one [话题]试用004期：国美让您独“具”匠心
+														p.r-c-b-p2
+															a(href="#").overflow-one [话题]试用004期：国美让您独“具”匠心
+														a(href="#",data-action='joinCircle').add-circle
+															em
+															span 加入圈子
+														a(href="#",data-node='joinCircle').ok-add-circle.none
+															em
+															span 已加入
+							.tra-cir-activity
+								.tra-cir-act-title
+									h3 热门活动
+									span.line-red
+								.tra-cir-act-box
+									ul
+										- for (var x = 0; x < 8; x++)
+											li
+												a(href="#")
+													img(src="../../images/circle/index/act-box-img.png")
+													p.overflow-one 普吉岛旅游攻略
+				//- .home-circle
+				//- 	h2.title-h2 家居圈子
+				//- 	.tra-circle-box
+				//- 		.tra-cir-tags
+				//- 			.tags-tab(data-node='homeTagsBox')
+				//- 				.tags-tab-container(data-node='homeTags')
+				//- 					a(href="#").tagHover 国美家居
+				//- 					-var homeAry =['国美家居','冰箱','电视','洗衣机']
+				//- 					each val,idx in homeAry
+				//- 						a(href="#") #{val}
+				//- 				.more(data-node='moreTags')
+				//- 					a(href="#") 更多
+				//- 			.tags-box(data-node='homeTabsBox')
+				//- 				.tags-item-container(data-node='homeTab')
+				//- 					.tags-box-item
+				//- 						ul.circle-item
+				//- 							- for (var x = 0; x < 4; x++)
+				//- 								li
+				//- 									.rec-circle-top
+				//- 										a(href="#")
+				//- 											img(src="../../images/circle/index/rec_circle.png")
+				//- 											.r-c-t-block   跟着《你的名字》去旅行
+				//- 									.rec-circle-bottom
+				//- 										p.r-c-b-p1
+				//- 											span.babel 旅游
+				//- 											a(href="#")
+				//- 												span.r-c-b-title 国美票据
+				//- 											span.r-c-b-member.last 话题
+				//- 												i.r-c-b-i 400
+				//- 											span.r-c-b-member 成员
+				//- 												i.r-c-b-i 230
+				//- 										p.r-c-b-p2
+				//- 											a(href="#").overflow-one [话题]试用004期：国美让您独“具”匠心
+				//- 										p.r-c-b-p2
+				//- 											a(href="#").overflow-one [话题]试用004期：国美让您独“具”匠心
+				//- 										a(href="#").add-circle(data-action='joinCircle')
+				//- 											em
+				//- 											span 加入圈子
+				//- 										a(href="#").ok-add-circle(data-node='joinCircleSuc')
+				//- 											em
+				//- 											span 已加入
+				//- 			.tra-cir-activity
+				//- 				.tra-cir-act-title
+				//- 					h3 热门活动
+				//- 					span.line-red
+				//- 				.tra-cir-act-box
+				//- 					ul
+				//- 						- for (var x = 0; x < 8; x++)
+				//- 							li
+				//- 								a(href="#")
+				//- 									img(src="../../images/circle/index/act-box-img.png")
+				//- 									p.overflow-one 普吉岛旅游攻略
+				.video-circle
+					h2.title-h2 视频圈子
+					.tra-circle-box
+						.tra-cir-tags
+							.tags-box(data-node='videoTabsBox')
+								.tags-item-container(data-node='videoTab')
+									.tags-box-item
+										ul.circle-item
+											- for (var x = 0; x < 4; x++)
+												li
+													.rec-circle-top
+														a(href="#")
+															img(src="../../images/circle/index/video.png")
+															.r-c-t-block   跟着《你的名字》去旅行
+														span.zhibo-label 视频
+							.video-circle-right
+								.video-cir-act-box
+									ul
+										- for (var x = 0; x < 8; x++)
+											li
+												a(href="#")
+													img(src="../../images/circle/index/act-box-img.png")
+													p.overflow-one 普吉岛旅游攻略
+												span.icon-video
+				.money-circle
+					h2.title-h2 赚钱圈子
+					.tra-circle-box.circle-color-lan
+						.tra-cir-tags
+							.tags-tab(data-node='moneyTagsBox')
+								.tags-tab-container(data-node='moneyTags')
+									a(href="#").hoverCls 返利赚钱
+									-var moneyAry =['手机','股票基金','数码']
+									each val,idx in moneyAry
+										a(href="#") #{val}
+								.more(data-node='moreTags')
+									a(href="#") 更多
+							.money-tags-box(data-node='moneyTabsBox')
+								.money-tags-box-item(data-node='moneyTab')
+										.item-big-one
+											ul.slider-container
+												-for(var i = 0; i< 5;i++)
+													li.slider-item-container
+														a(href="#")
+															img(src="../../images/circle/index/guang.png")
+														.item-big-one-bottom
+															p
+																a(href="#")
+																	span.item-b-o-title.overflow-one 飞利浦空气净化器
+															p.item-b-o-p
+																span.item-b-o-price ¥599.00
+																span.item-b-o-rebate
+																	i 返利
+											.slider-pager
+												.slider-pager-box
+													-for(var i = 0;i< 5;i++)
+														.slider-pager-item
+
+										.item-small-four
+											ul
+												-for(var i=0; i<4;i++)
+													li
+														a(href="#")
+															img(src="../../images/circle/index/guang-right.png")
+														a(href="#").item-s-f-a.overflow-one DIY教程 送给自己的礼物
+														p.item-s-f-money
+															span.item-b-o-price ¥599.00
+															span.item-b-o-rebate
+																i 返利
+				.index-circle.go-on(data-node='goOn')
+					.index-title.clearfix
+						h2.title-h2 不断寻觅
+					.index-circle-list
+						ul.clearfix
+							- for (var x = 0; x < 10; x++)
+								li
+									a(href='#')
+										.mg-negative
+											.img.scale-small
+												img(src="https://i6.meixincdn.com/v1/img/T1GRYTB7KT1R4cSCrK.png")
+											.text
+												span(href="#").list-title 旅游出行摄影必备旅游出行摄影必备旅游出行摄影必备旅游出行摄影必备旅游出行摄影必备旅游出行摄影必备旅游出行摄影必备
+												span.from-title 来自摄影
+												.text-icon
+													span.ticon-like
+														i 55
+													span.ticon-speak
+														i 66
+													span.ticon-star
+														i 66
+		.circle-pop
+			.join-success
+				.j-s-suc
+					em.pop_cha
+					p
+						img(src="../../images/circle/index/icon_join_yes.png")
+						| 成功加入圈子
+				.mask
+			.join-fail
+				.j-s-fail
+					em.pop_cha
+					p
+						img(src="../../images/circle/index/icon_join-fail.png")
+						| 出问题了，请重新加入圈子！
+				.mask
+	include ../../widget/footer/footer.pug

@@ -1,0 +1,144 @@
+//- extends layout.jade
+extends ../public/layout.jade
+
+block title
+	title 投放单元列表页
+//- block link-theme
+//- 	link(rel='stylesheet' type="text/css" href="../../css/module/unit.css")
+
+//- unit
+block content
+	include ../public/menu-generalize.jade
+	div.content-main
+		div.amp-account.amp-unit
+			include ../public/crumbs.jade
+			div.amp-path
+				span.path-col
+					| 单元名称：
+					b 十一活动广告
+				span.path-col
+					| 有效期：
+					b 2016/11/10-2016/12/01
+				span.path-col
+					| 状态：
+					b 有效
+			div.account-set
+				div.set-option
+					a(href="#").btn.btn-normal.btn-back-up
+						em.icon.icon-prev
+						| 返回
+					a(href="#").btn.btn-normal 新建投放单元
+					a(href="#").btn.btn-normal 启用
+					a(href="#").btn.btn-normal 暂停
+					a(href="#").btn.btn-normal 删除
+				div.set-fn.set-fn-new
+					div.fn-plan
+						span.plan-title 单元名称：
+						div.ele-input
+							input(type="text",value="")
+					div.fn-plan
+						span.plan-title 选择时间：
+						div.ele-select.ele-selected
+							span.select-text 2016/12/13
+						span.plan-title.plan-title-gray -
+						div.ele-select
+							span.select-text 年/月/日
+					div.fn-plan.fn-plan-new
+						span.plan-title 状态：
+						div.ele-select
+							span.select-text 全部
+					div.fn-plan
+						span.plan-title 设备类型：
+						div.ele-select.ele-selected
+							span.select-text 全部
+							//- dialog
+							div.dialog.dialog-white.dialog-select
+								ul
+									li
+										a(href="#",title="") 全部
+									li
+										a(href="#",title="") 暂停
+									li
+										a(href="#",title="") 有效
+									li
+										a(href="#",title="") 过期
+									li
+										a(href="#",title="") 未开启
+					div.fn-search
+						a(href="#").btn.btn-primary 查询
+			div.amp-data
+				div.data-table
+					div.table-list
+						div.list-header.actived
+							span.span-col-1
+								em.icon.icon-select
+								i.data-id 投放单元ID
+							span.span-col-2 投放单元名称
+							span.span-col-3 定向（地域 | 时间段）
+							span.span-col-4 设备类型
+							span.span-col-5 状态
+							span.span-col-6 展现数
+							span.span-col-7 点击数
+							span.span-col-8 点击率(%)
+							span.span-col-9 广告总花费
+							span.span-col-10 返利总花费
+							span.span-col-11 操作
+						div.list-body
+							div.body-row.actived
+								span.span-col-1
+									em.icon.icon-select
+									i.ellipsis 02345678
+								span.span-col-2 
+									i.ellipsis
+										a.ellipsis(href="#") 十一活动广告推广系列信息
+								span.span-col-3 
+									i.ellipsis 全国 | 全日程
+								span.span-col-4 
+									i.ellipsis WAP
+								span.span-col-5 
+									i.ellipsis 有效
+								span.span-col-6 
+									i.ellipsis 10000
+								span.span-col-7 
+									i.ellipsis 10000
+								span.span-col-8 
+									i.ellipsis 10000
+								span.span-col-9 
+									i.ellipsis 0,25
+								span.span-col-10 
+									i.ellipsis 10000
+								span.span-col-11 
+									b.operat-link
+										a(href="#",title="") 修改
+										a(href="#",title="") 复制单元
+										a(href="#",title="") 新建创意
+							- for (var i =0;i<8;i++)
+								div.body-row
+									span.span-col-1
+										em.icon.icon-select
+										i.ellipsis 02345678
+									span.span-col-2 
+										i.ellipsis
+											a.ellipsis(href="#") 十一活动广告推广系列信息
+									span.span-col-3 
+										i.ellipsis 全国 | 全日程
+									span.span-col-4 
+										i.ellipsis APP
+									span.span-col-5 
+										i.ellipsis 暂停
+									span.span-col-6 
+										i.ellipsis 10000
+									span.span-col-7 
+										i.ellipsis 10000
+									span.span-col-8 
+										i.ellipsis 10000
+									span.span-col-9 
+										i.ellipsis 0,25
+									span.span-col-10 
+										i.ellipsis 10000
+									span.span-col-11 
+										b.operat-link
+											a(href="#",title="") 修改
+											a(href="#",title="") 复制单元
+											a(href="#",title="") 新建创意
+			include ../public/page.jade

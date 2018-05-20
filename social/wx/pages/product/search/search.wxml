@@ -1,0 +1,28 @@
+<view>
+
+    <!--搜索框-->
+    <view class="search pd20">
+        <view>
+            <input placeholder="搜索商品" bindinput="queryProduct" bindconfirm="inputDone"/>
+            <button bindtap="backToHome">取消</button>
+        </view>
+    </view>
+
+    <!--历史搜索-->
+    <view class="history mt20 pd20">
+        <view>
+            <text>历史搜索</text>
+            <text class="fr">清除</text>
+        </view>
+        
+    </view>
+
+    <!--热门搜索-->
+    <view class="hot pd20">
+        <view>
+            <text>热门搜索</text>
+            <text class="fr">换一批</text>
+        </view>
+    </view>
+
+</view>

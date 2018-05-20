@@ -1,0 +1,238 @@
+body {
+  position: static;
+  background: #ffc02b; }
+
+.invite .invite-rule,
+.invite .invite-myself,
+.invite .invite-erro {
+  display: none; }
+.invite .invite-theme {
+  position: relative; }
+  .invite .invite-theme img {
+    display: block;
+    width: 100%; }
+  .invite .invite-theme .invite-icon {
+    position: absolute;
+    left: 50%;
+    bottom: 0.28rem;
+    width: 5.58rem;
+    height: 1.18rem;
+    -webkit-transform: translate(-50%);
+    -moz-transform: translate(-50%);
+    transform: translate(-50%); }
+    .invite .invite-theme .invite-icon img {
+      width: 5.58rem;
+      height: 1.18rem; }
+.invite .invite-content {
+  position: relative;
+  padding: 0rem 0.3rem;
+  margin: 0.5rem 0rem 0.4rem; }
+.invite .invite-main {
+  background: #fff; }
+.invite .invite-tabs ul {
+  position: relative;
+  height: 0.9rem;
+  margin-left: -0.09rem; }
+.invite .invite-tabs li {
+  float: left;
+  margin-left: 0.09rem;
+  width: 2.24rem;
+  height: 0.9rem;
+  line-height: 0.9rem;
+  font-size: 0.34rem;
+  color: #fdda89;
+  background: rgba(0, 0, 0, 0.1);
+  text-align: center;
+  border-radius: 0.1rem 0.1rem 0 0;
+  cursor: pointer;
+  font-weight: bold; }
+  .invite .invite-tabs li.actived {
+    background: #fff;
+    color: #f39800; }
+.invite .invite-rule {
+  padding: 0.25rem 0.4rem 0.23rem; }
+.invite .rule-steps {
+  margin: 0.3rem 0rem 0.54rem; }
+  .invite .rule-steps img {
+    display: block;
+    width: 100%; }
+.invite .rule-infor {
+  font-size: 0.26rem;
+  line-height: 0.36rem;
+  color: #333; }
+  .invite .rule-infor dt {
+    margin-bottom: 0.13rem;
+    font-size: 0.3rem;
+    line-height: 0.48rem;
+    font-weight: bold; }
+  .invite .rule-infor dd {
+    text-align: justify; }
+.invite .myself-static {
+  height: 2.18rem;
+  position: relative; }
+  .invite .myself-static:before {
+    content: '';
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    width: 1px;
+    display: block;
+    border-right: 1px solid #eee;
+    -webkit-transform-origin: 100% 0;
+    transform-origin: 100% 0; }
+  @media (-webkit-min-device-pixel-ratio: 1.5) {
+    .invite .myself-static:before {
+      -webkit-transform: scale(0.5, 1);
+      transform: scale(0.5, 1); } }
+  @media (min-device-pixel-ratio: 1.5) {
+    .invite .myself-static:before {
+      -webkit-transform: scale(0.5, 1);
+      transform: scale(0.5, 1); } }
+  @media (-webkit-min-device-pixel-ratio: 3) {
+    .invite .myself-static:before {
+      -webkit-transform: scale(0.3, 1);
+      transform: scale(0.3, 1); } }
+  @media (min-device-pixel-ratio: 3) {
+    .invite .myself-static:before {
+      -webkit-transform: scale(0.3, 1);
+      transform: scale(0.3, 1); } }
+  .invite .myself-static:before {
+    left: 50%;
+    top: 0.7rem;
+    bottom: 0.7rem; }
+  .invite .myself-static .static-item {
+    position: relative;
+    float: left;
+    margin-top: 0.51rem;
+    width: 50%;
+    font-size: 0.24rem;
+    line-height: 1.1;
+    text-align: center;
+    color: #666; }
+    .invite .myself-static .static-item span {
+      display: inline-block;
+      vertical-align: bottom; }
+  .invite .myself-static .item-num {
+    color: #ff5c5c;
+    font-size: 0.6rem; }
+  .invite .myself-static .item-float {
+    color: #ff5c5c;
+    font-size: 0.48rem;
+    line-height: 1.2; }
+  .invite .myself-static .item-unit {
+    margin-left: 0.11rem;
+    line-height: 1.8; }
+  .invite .myself-static .item-text {
+    margin-top: 0.2rem; }
+.invite .row-01,
+.invite .row-02,
+.invite .row-03,
+.invite .row-04 {
+  float: left;
+  position: relative;
+  width: 33.3%; }
+  .invite .row-01 a,
+  .invite .row-02 a,
+  .invite .row-03 a,
+  .invite .row-04 a {
+    color: #666; }
+.invite .module-tip {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0.06rem;
+  font-size: 0.2rem;
+  line-height: 1;
+  color: #999;
+  text-align: center; }
+.invite .module-ellipsis {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  empty-cells: show;
+  display: block;
+  margin: 0rem 0.15rem; }
+.invite .module-price {
+  margin-right: 0.02rem;
+  font-size: 0.3rem;
+  color: #ff5c5c; }
+.invite .module-date {
+  display: block; }
+.invite .list-module dl {
+  padding-bottom: 0.3rem; }
+.invite .list-module dt,
+.invite .list-module dd {
+  height: 1rem;
+  line-height: 1rem;
+  text-align: center;
+  overflow: hidden; }
+.invite .list-module dt {
+  padding: 0rem 0.1rem;
+  color: #333;
+  background: #f8f8f8;
+  font-size: 0.3rem; }
+.invite .list-module dd {
+  position: relative;
+  margin: 0rem 0.1rem;
+  color: #666;
+  font-size: 0.24rem;
+  position: relative; }
+  .invite .list-module dd:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 1px;
+    display: block;
+    border-bottom: 1px solid #eee;
+    -webkit-transform-origin: 100% 100%;
+    transform-origin: 100% 100%; }
+  @media (-webkit-min-device-pixel-ratio: 1.5) {
+    .invite .list-module dd:before {
+      -webkit-transform: scale(1, 0.5);
+      transform: scale(1, 0.5); } }
+  @media (min-device-pixel-ratio: 1.5) {
+    .invite .list-module dd:before {
+      -webkit-transform: scale(1, 0.5);
+      transform: scale(1, 0.5); } }
+  @media (-webkit-min-device-pixel-ratio: 3) {
+    .invite .list-module dd:before {
+      -webkit-transform: scale(1, 0.3);
+      transform: scale(1, 0.3); } }
+  @media (min-device-pixel-ratio: 3) {
+    .invite .list-module dd:before {
+      -webkit-transform: scale(1, 0.3);
+      transform: scale(1, 0.3); } }
+.invite .invite-line {
+  display: none; }
+  .invite .invite-line .row-01 {
+    width: 1rem; }
+  .invite .invite-line .row-02,
+  .invite .invite-line .row-03,
+  .invite .invite-line .row-04 {
+    width: 1.9rem; }
+  .invite .invite-line dd {
+    font-size: 0.3rem; }
+.invite .invite-erro {
+  padding-top: 0.45rem; }
+  .invite .invite-erro .erro-img {
+    display: block;
+    margin: 0 auto;
+    width: 2.34rem;
+    height: 2.28rem;
+    background-image: url("../../../images/invite-v2/invite-erro.png");
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    background-size: cover; }
+  .invite .invite-erro .erro-text {
+    display: block;
+    padding: 0.62rem 0rem 0.77rem;
+    text-align: center;
+    font-size: 0.26rem;
+    line-height: 1.1;
+    color: #999;
+    text-align: center; }
+
+

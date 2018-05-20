@@ -1,0 +1,116 @@
+@charset "utf-8";
+
+// AMP configure
+@import "_configure.scss";
+
+// Defined header stylesheet
+// ##------------------------------------------
+.amp-header{
+	$header-height:              60px;
+	position:relative;
+	background:$bg-header;
+	a{
+		font-size:18px;
+		color:nth($link-header-color,1);
+		&:hover{
+			color:nth($link-header-color,2);
+		}
+	}
+	// header-logo
+	.header-logo{
+		float:left;
+		width:180px;
+		height:$header-height;
+		background:$bg-red;
+		a{
+			display:block;
+			height:100%;
+			width:100%;
+			text-indent:-99999px;
+			@include img('logo.png',center center);
+		}
+	}
+	// header-nav
+	.header-nav{
+		overflow:hidden;
+		zoom:1;
+		ul{
+			@extend %clearfix;
+			margin-left:71px;
+			li{
+				float:left;
+				margin:0px 27px;
+				height:$header-height;
+				a{
+					float:left;
+					display:block;
+					padding:0 14px;
+					height:$header-height;
+					line-height:$header-height;
+					@include box-sizing(border);
+					&:hover{
+						border-bottom:4px solid $bg-red;
+					}
+				}
+			}
+			li.actived{
+				a,
+				a:hover{
+					color:nth($link-header-color,2);
+					border-bottom:4px solid $bg-red;
+				}
+			}
+		}
+	}
+	// header-login
+	.header-login{
+		position:absolute;
+		right:80px;
+		top:15px;
+		.login-after{
+			position:relative;
+			padding:0px 0px 0px 20px;
+			display:inline-block;
+			height:30px;
+			line-height:30px;
+			vertical-align: middle;
+			font-size:16px;
+			cursor:pointer;
+			border-left:1px solid $border-header;
+			span{
+				display:inline-block;
+				height:30px;
+				vertical-align:middle;
+				line-height:30px;
+			}
+			.icon-arrow{
+				font-size:10px;
+				margin-left:24px;
+			}
+			.after-face{
+				overflow:hidden;
+				margin-right:10px;
+				width:30px;
+				height:30px;
+				text-align:center;
+				background:#65686c;
+				font-size:0;
+				line-height:30px;
+				@include prefix(border-radius,30px);
+				&:hover{
+					background-color:lighten(#65686c,5%);
+				}
+				img{
+					display:inline-block;
+				}
+			}
+		}
+		// dialog
+		.dialog{
+			position:absolute;
+			right:0;
+			left:auto;
+			top:56px;
+		}
+	}
+}

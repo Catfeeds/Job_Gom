@@ -1,0 +1,69 @@
+//- extends layout.jade
+extends ../public/layout.jade
+
+block title
+	title 现金账户明细-消费记录
+//- block link-theme
+//- 	link(rel='stylesheet' type="text/css" href="../../css/module/account.css")
+
+//- account
+block content
+	include ../public/menu.jade
+	div.content-main
+		div.amp-account
+			// crumbs
+			div.crumbs
+				a(href="javascript:void(0);")
+					span 我的账户
+					em >
+				a(href="javascript:void(0);").actived
+					span 现金账户明细
+					em >
+			// account-main
+			div.account-main
+				div.tabs
+					ul
+						li.actived
+							a(href="#") 消费记录
+						li
+							a(href="#") 充值记录
+				div.main-record
+					// 消费记录
+					div.record-consume
+						// 查询
+						div.set-fn
+							div.fn-plan
+								span.plan-title 日期：
+								div.ele-input
+									input(type="text",value="")
+							div.fn-search
+								a(href="#").btn.btn-primary 查询
+						// 列表
+						div.cont-list.scroll-x
+							table.table
+								tr
+									th
+										span 日期
+									th
+										span 帐户
+									th
+										span 支出（元）
+								tr.actived
+									td
+										span
+											a(href="#") 2016/12/23
+									td
+										span 普通账户
+									td
+										span 342
+								- for (var i =0;i<8;i++)
+									tr
+										td
+											span
+												a(href="#") 2016/10/15
+										td
+											span 广告帐户
+										td
+											span 156
+						
+			

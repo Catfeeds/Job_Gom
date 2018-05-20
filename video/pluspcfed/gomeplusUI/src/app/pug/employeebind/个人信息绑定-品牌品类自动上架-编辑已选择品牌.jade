@@ -1,0 +1,71 @@
+extends ../public/head.jade
+block title
+	title 个人信息绑定-品牌品类自动上架-编辑已选择品牌
+block link-theme
+	link(rel='stylesheet' type="text/css" href="../../css/module/employeebind/employeebind.css")
+block content
+	//- js
+	include ../public/mobileJs.jade
+	.banner 国美邀请你来赚大钱
+	.bind-infor
+		.header-module.header-module_gray
+			span 员工信息绑定
+		ul.form-list
+			li.list-item.list-item_color
+				em.icon.icon-person
+				.item-text 姚丽丽
+			li.list-item.list-item_color
+				em.icon.icon-id
+				.item-text 00345
+			li.list-item
+				em.icon.icon-first
+				em.icon.iconn-41
+				input.input-style(type="text" placeholder="请选择一级分部")
+			li.list-item
+				em.icon.icon-second
+				em.icon.iconn-41
+				input.input-style(type="text" placeholder="请选择二级分部")
+			li.list-item
+				em.icon.icon-part
+				em.icon.iconn-41
+				input.input-style(type="text" placeholder="请选择门店")
+			li.list-item.list-item-line
+				.brand-inpt
+					em.icon.icon-company
+					.item-text
+						| 请选择负责品类或品牌
+				em.icon.iconn-41.top30
+				a.finish-btn(href="#") 完成
+				.brand-list
+					span.actived 
+						i 海尔平板电视
+						em.close-btn
+					span.actived 
+						i 海尔冰箱
+						em.close-btn
+					span.actived 
+						i 洗衣机
+						em.close-btn
+					span.actived 
+						i 电脑
+						em.close-btn
+					span#add-tag.add-tag-gray
+		ul.form-personal.form-validate.personal-only
+			//- li.personal-item
+			//- 	span.item-company 擅长品类
+			//- 	.item-show
+			//- 		textarea.textarea-style(maxlength="30",placeholder="例如：手机、电脑、冰箱等")
+			//- 		span.work-count
+			//- 			<i>10</i>/30
+			li.personal-item
+				span.item-company 自我介绍
+				.item-show
+					textarea.textarea-style(maxlength="140")
+					span.work-count
+						<i>0</i>/140
+		.notice.notice-line
+			span *
+			| 总部将通过此账号考核您的业绩，并根据您填写的品类和品牌为您自动上架门店商品，请认真填写。如因信息错误产生的后果，请自行承担。
+		a.button.button-primary.submit-btn-fixed 提交
+
+	

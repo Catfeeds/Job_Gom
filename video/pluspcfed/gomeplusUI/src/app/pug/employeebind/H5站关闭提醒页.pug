@@ -1,0 +1,27 @@
+extends ../public/head.jade
+block title
+	title H5站关闭提醒页
+block link-theme
+	link(rel='stylesheet' type="text/css" href="../../css/module/employeebind/employeebind.css")
+block content
+	//- js
+	include ../public/mobileJs.jade
+	<!--下载国美APP-->
+	.download-app
+		.section-logo
+			img(src="../../images/employeebind/app-logo.png",alt="")
+		.section-infor
+			p 下载国美Plus APP
+			p 领3元新人礼包
+		.app-button
+			a.button.button-white(href="#") 戳我打开
+		em.iconn.iconn-25
+	<!--提醒-->
+	.message-tip
+		.header-module
+			span 提醒
+		.tip-infor
+			p
+				| 尊敬的同事，您好！<br>
+				| 员工信息绑定已全部统一在PlusAPP完成，请您下载国美PlusAPP，开通美店，完成员工信息绑定，开启属于您自己的美店！
+

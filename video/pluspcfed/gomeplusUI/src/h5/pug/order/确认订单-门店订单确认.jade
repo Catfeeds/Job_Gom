@@ -1,0 +1,38 @@
+doctype html
+html(lang="zh-CN" data-use-rem="750")
+	include ../../../m-widget/head/head.jade
+	link(type="text/css",rel="stylesheet",href="../../css/public/public-wap.css")
+	link(type="text/css",rel="stylesheet",href="../../css/module/order.css")
+
+	body.opg.store-order
+		include ../../../m-widget/head/rem.jade
+		header.header
+			span
+				a.head-back(href="javascript:;")
+					em.iconn-1
+			h1.head-title 确认订单
+			span
+				a.head-icn(href="javascript:;")
+					em.iconn-4
+		/// header
+
+		section.sec.mb10
+			h3.pay-tl 
+				em.iconn-64
+				| 国美西坝河门店
+			div.pay-sec.bor
+				p.infor
+					| 会专用100mm紫色亮片高跟鞋宴会专用宴会专100mm紫色亮片高跟鞋紫色
+				div.detail
+					span.d-nomey ¥2929.00
+					em.num x1
+			.goods
+				span.gd-num 共1件商品
+				em.gd-pay
+					| 合计: 
+					strong ¥2929.00
+		.bar
+			span.bar-money
+				| 应付金额：
+				strong ¥1999.98
+			a.m-btn(href="javascript:;") 提交订单

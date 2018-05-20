@@ -1,0 +1,286 @@
+@charset "UTF-8";
+// @ Css name：邀好友赚返利
+// @ Author：majd
+// @ Date：2017-04-05 09:37
+// @ Last Modified by：majd
+// @ Last Modified time：2017-05-10 14:28
+
+// configure
+// ## include scsscore API
+@import "../../../../sasscore/_configure.scss";
+
+// variable
+$primary-color:          #ff5c5c;
+
+// invite style
+// ## defined invite stylesheet
+body{
+	position:static;
+	background:#ffc02b;
+}
+// invite
+.invite{
+	// display none
+	.invite-rule,
+	.invite-myself,
+	.invite-erro{
+		display:none;
+	}
+	// invite-theme
+	.invite-theme{
+		position:relative;
+		img{
+			display:block;
+			width:100%;
+		}
+		.invite-icon{
+			position:absolute;
+			left:50%;
+			bottom:rem(28);
+			width:rem(558);
+			height:rem(118);
+			@include translate(-50%,webkit moz);
+			img{
+				width:rem(558);
+				height:rem(118);
+			}
+		}
+	}
+	// invite-content
+	.invite-content{
+		position:relative;
+		padding:rem(0) rem(30);
+		margin:rem(50 0 40);
+	}
+	// invite-main
+	.invite-main{
+		background:#fff;
+	}
+	// invite-tabs
+	.invite-tabs{
+		ul{
+			position:relative;
+			height:rem(90);
+			margin-left:rem(-9);
+		}
+		li{
+			float:left;
+			margin-left:rem(9);
+			width:rem(224);
+			height:rem(90);
+			line-height:rem(90);
+			font-size:rem(34);
+			color:#fdda89;
+			background:rgba(0,0,0,0.1);
+			text-align:center;
+			border-radius:rem(10) rem(10) 0 0;
+			cursor:pointer;
+			font-weight:bold;
+			&.actived{
+				background:#fff;
+				color:#f39800;
+			}
+		}
+	}
+	// invite-rule
+	.invite-rule{
+		padding:rem(25 40 23);
+	}
+	.rule-steps{
+		margin:rem(30 0 54);
+		img{
+			display:block;
+			width:100%;
+		}
+	}
+	.rule-infor{
+		font-size:rem(26);
+		line-height:rem(36);
+		color:#333;
+		dt{
+			margin-bottom:rem(13);
+			font-size:rem(30);
+			line-height:rem(48);
+			font-weight:bold;
+		}
+		dd{
+			text-align:justify;
+		}
+	}
+	// myself-static
+	.myself-static{
+		height:rem(218);
+		@include line(right,#eee);
+		&:before{
+			left:50%;
+			top:rem(70);
+			bottom:rem(70);
+		}
+		.static-item{
+			position:relative;
+			float:left;
+			margin-top:rem(51);
+			width:50%;
+			font-size:rem(24);
+			line-height:1.1;
+			text-align:center;
+			color:#666;
+			span{
+				display:inline-block;
+				vertical-align: bottom;
+			}
+		}
+		.item-num{
+			color:$primary-color;
+			font-size:rem(60);
+		}
+		.item-float{
+			color:$primary-color;
+			font-size:rem(48);
+			line-height:1.2;
+		}
+		.item-unit{
+			margin-left:rem(11);
+			line-height:1.8;
+		}
+		.item-text{
+			margin-top:rem(20);
+		}
+	}
+	// list-module
+	.row-01,
+	.row-02,
+	.row-03,
+	.row-04{
+		float:left;
+		position:relative;
+		width:33.3%;
+		a{
+			color:#666;
+		}
+	}
+	.module-tip{
+		position:absolute;
+		left:0;
+		right:0;
+		bottom:rem(6);
+		font-size:rem(20);
+		line-height:1;
+		color:#999;
+		text-align:center;
+	}
+	.module-ellipsis{
+		@include ellipsis(pc);
+		display:block;
+		margin:rem(0 15);
+	}
+	.module-price{
+		margin-right:rem(2);
+		font-size:rem(30);
+		color:$primary-color;
+	}
+	.module-date{
+		display:block;
+	}
+	.list-module{
+		dl{
+			padding-bottom:rem(30);
+		}
+		dt,
+		dd{
+			height:rem(100);
+			line-height:rem(100);
+			text-align:center;
+			overflow:hidden;
+		}
+		dt{
+			padding:rem(0 10);
+			color:#333;
+			background:#f8f8f8;
+			font-size:rem(30);
+		}
+		dd{
+			position:relative;
+			margin:rem(0 10);
+			color:#666;
+			font-size:rem(24);
+			@include line(bottom,#eee);
+		}
+	}
+	// invite-line
+	.invite-line{
+		display:none;
+		.row-01{
+			width:rem(100);
+		}
+		.row-02,
+		.row-03,
+		.row-04,{
+			width:rem(190);
+		}
+		dd{
+			font-size:rem(30);
+		}
+	}
+	// invite-erro
+	.invite-erro{
+		padding-top:rem(45);
+		.erro-img{
+			display:block;
+			margin:0 auto;
+			width:rem(234);
+			height:rem(228);
+			background-image:url('../../../images/invite-v2/invite-erro.png');
+			background-repeat:no-repeat;
+			@include background-size(cover,webkit);
+		}
+		.erro-text{
+			display:block;
+			padding:rem(62 0 77);
+			text-align:center;
+			font-size:rem(26);
+			line-height:1.1;
+			color:#999;
+			text-align:center;
+		}
+	}
+	// myself ranking
+	.module-ranking .module-ellipsis{
+		margin-top:rem(15);
+		height:rem(48);
+		line-height:rem(48);
+	}
+	.ranking-sort{
+		position:relative;
+		margin-top:rem(-2);
+		display:block;
+		line-height:1;
+		color:#838383;
+		font-size:rem(20);
+	}
+	.list-module{
+		padding-bottom:rem(30);
+	}
+}
+// master
+.invite-mask{
+	display:none;
+	background:rgba(0,0,0,.7);
+	position:fixed;
+	top:0;
+	left:0;
+	bottom:0;
+	right:0;
+	z-index:200;
+}
+.invite-mask:before {
+	content:"";
+	position:absolute;
+	top:0;
+	right:0;
+	width:6.8rem;
+	height:4.04rem;
+	background:url('../../../images/invite-v2/guide-img.png') no-repeat;
+	-webkit-background-size:cover;
+	background-size:cover;
+}

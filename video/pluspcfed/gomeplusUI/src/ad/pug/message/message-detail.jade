@@ -1,0 +1,31 @@
+//- extends layout.jade
+extends ../public/layout.jade
+
+block title
+	title 站内信-消息详情
+//- block link-theme
+//- 	link(rel='stylesheet' type="text/css" href="../../css/module/message.css")
+
+//- message
+block content
+	include ../public/menu.jade
+	div.content-main
+		div.amp-account.amp-message
+			// crumbs
+			div.crumbs
+				a(href="javascript:void(0);").actived
+					span 站内信
+					em >
+			// account-main
+			div.account-main
+				// 详情
+				div.msg-detail
+					h2.detail-header 帐户余额不足100元，请尽快充值！
+					div.detail-time 2016-10-13  14:27:28
+					div.detail-infor
+						p 作为世界网民数量第一的网络大国和拥有强大网络资源的世界第一网络强国之间，注定要思考新型大国网络关系问题。习主席提出的“不冲突、不对抗，相互尊重、合作共赢”的思想适用于中美在这一领域的互动。
+						p 2015年，习近平主席在与美国总统奥巴马会面时提出，要将网络安全打造成中美合作的新亮点。目前，中美之间也有多个层次的交流沟通，但总体来看，中国依然处于被美国各个击破和准备不足的被动局面，亟待从机制、力量、资源等多个方面，聚焦网络安全、网络失序、数字鸿沟等重大问题，有礼有节，寻找可行的合作点，提升网络空间国际规则体系制定的实际操作能力。
+						p 伴随着网络安全问题从一个技术性问题上升到事关国家安全的战略性问题，网络空间国际规则体系也面临着重新构建的挑战。在这个过程中，发展中国家与发达国家的分歧是规则制定的最大障碍。中美两国不仅成为两个阵营具有代表性的观点立场，同时也对中美新型大国关系的建立产生了重要影响。
+							
+						
+			

@@ -1,0 +1,82 @@
+@charset "UTF-8";
+// @ Css name： 纯文本内容公用样式
+// @ Author： matianye@
+// @ Date： 2017-03-20 14:00
+// @ Last Modified by： majd
+// @ Last Modified time：2017-04-18 15:29
+//==========================
+@import "../../../../sasscore/_configure.scss";
+
+body.plaintext{
+	padding: 0;
+	background-color: #f9f9f9;
+}
+.plaintext{
+	padding: rem(40 30 20);
+	color: #999;
+	font-size: rem(28);
+	line-height: rem(40);
+
+	h1,h2,h3{
+		margin-top: rem(20);
+		margin-bottom: rem(20);
+		color:#333;
+	}
+	// 一级标题
+	h1{
+		margin-top: rem(40);
+		font-size: rem(34);
+		&:first-child{
+			margin-top: 0;
+		}
+	}
+
+	// 二级标题
+	h2{
+		font-size: rem(30);
+	}
+
+	// 三级标题
+	h3{
+		font-size:rem(28);
+	}
+
+	// 文本样式
+	p{
+		padding-bottom:rem(20);
+	}
+
+	// 等级展示
+	.flex-boxs{
+		margin-top: rem(20);
+		em{
+			background-image: url(../../../images/public/m-vip.png?version=20170320);
+		}
+	}
+}
+// im-packet
+.im-items{
+	background-color:#fff;
+	li{
+		position:relative;
+		@include line(bottom,#ddd);
+		&:after{
+			@include prefix(transform,scaleY(0.5));
+		}
+		a{
+			position:relative;
+			display:block;
+			padding:rem(20 60 20 30);
+			font-size:rem(30);
+			line-height:rem(36);
+		}
+		em[class^="iconn"]{
+			position:absolute;
+			right:rem(30);
+			top:50%;
+			margin-top:rem(-15);
+			font-size:rem(28);
+			color:#ccc;
+		}
+	}
+}

@@ -1,0 +1,20 @@
+//- extends layout.jade
+extends ../../../widget-platform/pug/layout/layout.jade
+
+//- tab
+block content
+	h2.platform-title tab
+	div.platform-content
+		h3.platform-header tab
+		div.platform-intro 
+			p 积极维护中...
+		//- div.platform-example#tab
+			//- include ../../../../pc-widget/tab/tab.jade
+		//- pre.platform-pre
+			//- code.platform-code#tab_code
+			//- span.platform-jade pug
+			//- span.platform-jade.platform-html.actived html
+	//- js format html code
+	script(type='text/javascript').
+		HtmlFormat.init(['tab'],false,'_code','html','span.platform-jade');
+		$(".platform-tab").parent('li').addClass("actived");

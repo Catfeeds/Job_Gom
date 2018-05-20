@@ -1,0 +1,207 @@
+@charset "UTF-8";
+@import '../../../../m-widget/reset/_base.scss';
+@import '../../../../m-widget/reset/_mixin.scss';
+
+
+/*确认订单-门店订单列表*/
+.loading-bj{
+    position: fixed;
+    background: rgba(0,0,0,.5);
+    top:0;
+    right: 0;
+    left:0;
+    bottom: 0;
+    z-index: 100;
+    @include prefix(display,flex);
+    @include flex(center,center);
+    &:before{
+        content: "";
+        background: url("../../images/common/waiting-icon.gif") no-repeat;
+        width:rem(220);
+        height: rem(220);
+        background-size: cover;
+    }
+}
+.store-order{
+    .mb10{
+            margin-bottom: rem(10);
+    }
+    .menu-list{
+        margin-bottom: 0;
+    }
+    .pay-sec{
+        background-color: #fff;
+        position: relative;
+        padding: rem(28 20);
+        .cuss-txt{
+            position: absolute;
+            font-size: $fs34;
+            color: nth($color,6);
+            top: rem(24);
+            right: rem(20);
+            line-height: rem(48);
+            font-weight: normal;
+        }
+        .succ-it{
+            line-height: .4rem;
+            height: .4rem;
+            color: nth($color,5);
+            font-size: .28rem;
+            &:last-child{
+                margin-top: .1rem;
+            }
+            .money{
+                font-size: .34rem;
+                color: nth($color,6);
+                font-weight: bold;
+            }
+        }
+        .infor{
+            color: nth($color,5);
+            font-size: .28rem;
+            line-height: .4rem;
+            @include ellipsis(mobile,2);
+        }
+        .detail{
+            height: .4rem;
+            line-height: .4rem;
+            margin-top: .1rem;
+            .d-nomey{
+                float: left;
+                color: nth($color,6);
+                font-size: .28rem;
+            }
+            .num{
+                color: nth($color,4);
+                font-size: .28rem;
+                float: right;
+                font-style: normal;
+            }
+        }
+    }
+    .sec{
+        background-color: #fff;
+    }
+    .pay-tl{
+        line-height: rem(80);
+        font-size: $fs28;
+        color: nth($color,5);
+        padding: rem(0 20);
+        position: relative;
+        &:after{
+            @include border(bottom,1px,#E4E4E4);
+        }
+        .iconn-64:before{
+            margin-right: .1rem;
+        }
+    }
+    .menu{
+        .mn-it{
+            height: .4rem;
+            line-height: .4rem;
+            font-size: .28rem;
+            &:not(:last-child){
+                margin-bottom: .16rem;
+            }
+            span{
+                float: left;
+                color: nth($color,5);
+            }
+            em{
+                color: nth($color,6);
+                float: right;
+                font-style: normal;
+                
+            }
+            strong{
+                float: right;
+                font-weight: normal;
+            }
+        }
+    }
+    .zone{
+        position: relative;
+        .a-link{
+            @include link;
+        }
+    }
+    .zone + .zone{
+        margin-top: rem(20);
+    }
+    .code{
+        overflow: hidden;
+        font-size: .28rem;
+        &:after{
+            @include border(bottom,1px,#e4e4e4);
+        }
+        .code-num{
+            float: left;
+            em{
+                font-style: normal;
+            }
+        }
+        .state{
+            color: nth($color,6);
+            // font-size: rem(34);
+            // font-weight: 400;
+            float: right;
+            font-weight: normal;
+        }
+    }
+    .bor{
+         &:after{
+            @include border(bottom,1px,#e4e4e4);
+        }
+    }
+    .goods{
+        background-color: #fff;
+        line-height: rem(88);
+        text-align: right;
+        padding:0 rem(20);
+        color: nth($color,4);
+        // font-size: rem(28);
+        // strong{
+        //     font-size: rem(34);
+        //     color: nth($color,6);
+        //     font-weight: 400;
+        //     vertical-align: middle;
+        font-size: $fs28;
+        .gd-pay{
+            font-style: normal;
+            margin-left: rem(30);
+            strong{
+                color: nth($color,6);
+                font-size: rem(34);
+                font-weight: normal;
+         }
+        }
+    }
+    .bar{
+        position: fixed;
+        width: 100%;
+        left: 0;
+        bottom: 0;
+        background-color: #fff;
+        height: rem(98);
+        padding: 0 rem(20);
+        .bar-money{
+            float: left;
+            line-height: rem(98);
+            color: nth($color,4);
+            font-size: rem(28);
+            strong{
+                font-size: rem(34);
+                color: nth($color,6);
+                vertical-align: middle;
+            }
+        }
+        .m-btn{
+            float: right;
+            margin-top: rem(16);
+        }
+    }
+}
+
+
+
+

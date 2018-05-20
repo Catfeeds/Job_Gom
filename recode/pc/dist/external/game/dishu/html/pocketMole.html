@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="robots" content="noarchive">
+    <meta name="Baiduspider" content="noarchive">
+    <meta http-equiv="Cache-Control" content="no-transform"/>
+    <meta http-equiv="Cache-Control" content="no-siteapp"/>
+    <meta name="applicable-device" content="pc,mobile">
+    <meta name="MobileOptimized" content="width"/>
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" >
+    <title>打地鼠</title>
+    <link rel="stylesheet" href="http://js.dev.meixincdn.com:1314/CDN8176/dist/external/game/dishu/css/pocketMole.css">
+    <script src="http://js.dev.meixincdn.com:1314/CDN8176/dist/external/game/dishu/js/login.js"></script>
+    <script src="http://js.gomein.net.cn/??/eccms/js/topics_js/174/4011206279.min.js"></script>
+    <script src="https://js.gomein.net.cn/mobile/cms/prom/hybrid/??b/components/src/vendor/GomeJSBridge.min.js?v=2017101202"></script>
+    <script src="https://js.gomein.net.cn/mobile/cms/prom/hybrid/p/cms/src/utils/gomeBridge.js?v=2017101202"></script>
+</head>
+<body>
+<script src = "http://js.dev.meixincdn.com:1314/CDN8176/dist/external/game/dishu/js/pocketMole.js"></script>
+<div class="cont">
+    <!-- loading -->
+    <div id="loading" class="loading">
+        <div class="loadBg"></div>
+        <div class="loadBox">
+            <div class="load"></div>
+            <div class="load-plan">
+                <div id="plan" class="plan">
+                    <div class="plan-percent">
+                        <div class="percent"></div>
+                        <div class="percent-pic"></div>
+                    </div>
+                </div>
+                <div class="load-num">
+                    <span id="planNum" class="num">50</span>%
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 首页 -->
+    <div id="home" class="home" >
+        <div class="homeBg"></div>
+        <div class="homeTitle"></div>
+        <a href="javascript:;" class="start-game" onclick="game.GameStart()"></a>
+        <a href="javascript:;" class="rule-game" onclick="game.ruleShow()"></a>
+        <a href="javascript:;" class="back"></a>
+    </div>
+    <!-- 规则 -->
+    <div id="rule" class="rule layer">
+        <div class="ruleBg">
+            <div class="rule-item">
+                <div class="item-cont">
+                    <p>1.本活动仅限国美互联网用户参与；</p>
+                    <p>2.活动时间：2017年11月1日-2017年11月11日；</p>
+                    <p>3.用户点击“开始游戏”按钮，即可参与此活动；</p>
+                    <p>4.每轮游戏时间为60秒钟，最多20个锤子机会；</p>
+                    <p>5.用户在60秒时间内，打中一个目标物可获得10享乐值，全部打中可获得200享乐值；</p>
+                    <p>6.若用户在60秒内未打中任何一个目标物，则挑战失败，或不满意挑战成绩，用户可点击提示弹窗中的再次挑战按钮或重新进入游戏页，重新挑战；</p>
+                    <p>7.活动奖励：打中一个目标物可获得10享乐值，每200享乐值可获得一次拆红包的机会，随机抽取0.1-111</p>
+                    <p>1元不等额红包，活动期间可累计所得红包，随时兑换整额国美双十一优惠券；</p>
+                    <p>8.每日仅有一次上传享乐值的机会，上传成功后，可继续挑战，但不记录；</p>
+                    <p>9.在国美APP或微信端参与分享游戏可额外获得100享乐值（每个游戏每日仅限一次）。</p>
+                </div>
+                <div class="close" onclick="game.ruleClose()"></div>
+            </div>
+            <div class="back" onclick="game.ruleClose()"></div>
+        </div>
+    </div>
+    <!-- 未登录弹层 -->
+    <div id="toLoad" class="toLoad layer">
+        <div class="smallHintBg">
+            <div class="close"></div>
+            <div class="smallHint-cont">
+               抱歉，您还未登录，请登录后再玩游戏。
+            </div>
+            <div class="toLoad-btn"></div>
+        </div>
+    </div>
+    <!-- game -->
+    <div id="game" class="game" >
+        <div class="state clearfix">
+            <div class="countDown fl clearfix">
+                <div class="fl">倒计时</div>
+                <div id="time" class="time fr">
+                    <span class="minute">00</span> :
+                    <span id="secondTime" class="second">01</span> :
+                    <span id="milliseTime" class="millisecond">00</span>
+                </div>
+            </div>
+            <div class="amount fr clearfix">
+                <div class="fl">打中数量</div>
+                <div id="knock" class="num fr">60</div>
+            </div>
+        </div>
+        <div class="surplus">剩余<span id="surplus">20</span>个</div>
+        <div class="hole-box clearfix">
+            <div class="hole nullHit">
+                <div class="hole-top"></div>
+                <div class="ratting-box move">
+                    <div id="rat_0" class="ratting ">
+                        <div class="star"></div>
+                        <div class="pic hit-ratting"></div>
+                    </div>
+                </div>
+                <div class="hole-bottom"></div>
+            </div>
+            <div class="hole nullHit">
+                <div class="hole-top"></div>
+                <div class="ratting-box  move">
+                    <div id="rat_1" class="ratting">
+                        <div class="star"></div>
+                        <div class="pic hit-ratting"></div>
+                    </div>
+                </div>
+                <div class="hole-bottom"></div>
+            </div>
+            <div class="hole hit">
+                <div class="hole-top"></div>
+                <div class="ratting-box move">
+                    <div id="rat_2" class="ratting">
+                        <div class="star"></div>
+                        <div class="pic hit-ratting"></div>
+                    </div>
+                </div>
+                <div class="hole-bottom"></div>
+            </div>
+            <div class="hole nullHit">
+                <div class="hole-top"></div>
+                <div class="ratting-box  move">
+                    <div id="rat_3" class="ratting hide">
+                        <div class="star"></div>
+                        <div class="pic hit-ratting"></div>
+                    </div>
+                </div>
+                <div class="hole-bottom"></div>
+            </div>
+            <div class="hole nullHit">
+                <div class="hole-top"></div>
+                <div class="ratting-box  move">
+                    <div id="rat_4" class="ratting hide">
+                        <div class="star"></div>
+                        <div class="pic hit-ratting"></div>
+                    </div>
+                </div>
+                <div class="hole-bottom"></div>
+            </div>
+            <div class="hole nullHit">
+                <div class="hole-top"></div>
+                <div class="ratting-box  move">
+                    <div id="rat_5" class="ratting">
+                        <div class="star"></div>
+                        <div class="pic hit-ratting"></div>
+                    </div>
+                </div>
+                <div class="hole-bottom"></div>
+            </div>
+        </div>
+        <div id="hammer" class="hammer  rotateInDownRight"></div>
+        <div id="addOne" class="addOne"></div>
+    </div>
+    <!-- 游戏结束 -->
+    <div id="gameover" class="gameOver layer">
+        <div class="game-grade">
+            <div class="grade">
+                <div>击中数量:</div>
+                <p id="overnum" class="num">12345</p>
+                <div>获得享乐值:</div>
+                <p id="overscore" class="score">12345</p>
+            </div>
+            <div class="close"></div>
+            <div class="btn clearfix">
+                <div class="upload fl" onclick="game.certain()"></div>
+                <div id="gameagain" class="again fr" onclick="game.GameStart()"></div>
+            </div>
+        </div>
+    </div>
+    <!-- 错误弹层 -->
+    <div id="hint" class="hint layer">
+        <div class="smallHintBg">
+            <div class="close"></div>
+            <div class="smallHint-cont">
+               抱歉，发生错误！
+            </div>
+            <div id="hint-btn" class="hint-btn"></div>
+        </div>
+    </div>
+    <!-- 确定上传享乐值 -->
+    <div id="certain" class="certain layer" >
+        <div class="bigHintBg">
+            <div class="close"></div>
+            <div class="certain-upload">
+                亲，每天只能上传一次享乐值，确定上传吗？
+            </div>
+            <div class="hint-btn" onclick="game.curity();"></div>
+        </div>
+    </div>
+    <!-- 验证码 -->
+    <div id="security" class="security">
+        <div class="bg"></div>
+        <div class="security-bg">
+            <div class="security-title"></div>
+            <div class="import clearfix">
+                <div class="fl import-text">
+                    <input id="curitytext" type="text">
+                </div>
+                <div class="fr import-img">
+                    <img id="curityimg" src="../images/pic.png" height="45" width="154" alt="">
+                </div>
+            </div>
+            <div class="security-btn clearfix">
+                <div class="cancel fl"></div>
+                <div id="ensure" class="ensure fr"></div>
+            </div>
+        </div>
+    </div>
+    <!-- 上传失败 -->
+    <div id="failure" class="failure layer">
+        <div class="bigHintBg">
+            <div class="close"></div>
+            <div class="upload-failure ">
+                上传享乐值失败
+                <span></span>
+            </div>
+            <div class="anew">请重新上传～～～</div>
+            <div class="time">
+                <span>3</span>s后自动返回上一级页面
+            </div>
+            <div class="failure-back"></div>
+        </div>
+        <div class="back">&lt;返回活动页面</div>
+    </div>
+    <!-- 上传成功！ -->
+    <div id="succeed" class="succeed layer">
+        <div class="bigHintBg">
+            <div class="close"></div>
+            <div class="upload-succeed ">上传享乐值成功！</div>
+            <div class="extra">分享可额外获得<span>100享乐值</span>哦~~~</div>
+            <div class="btn clearfix">
+                <div id="share-btn" class="share-btn" onclick="game.share();"></div>
+                <a href="#"><div class="lotto-btn"></div></a>
+                <div class="palyAgain-btn" onclick="game.GameStart();"></div>
+            </div>
+        </div>
+    </div>
+    <!-- 享乐成功弹层 -->
+    <div id="happy" class="happy layer">
+        <div class="smallHintBg">
+            <div class="close"></div>
+            <div class="smallHint-cont">
+               分享成功！
+            </div>
+            <div class="btn clearfix">
+                <div class="lotto-btn fl"></div>
+                <div class="palyAgain-btn fr"></div>
+            </div>
+        </div>
+        <a href="#"><div class="back">&lt;返回活动页面</div></a>
+    </div>
+    <!-- 分享成功弹层 -->
+    <div id="share" class="share layer">
+        <div class="smallHintBg">
+            <div class="close"></div>
+            <div class="smallHint-cont">
+               分享成功！
+            </div>
+            <div class="btn clearfix">
+                <a href="#"><div class="lotto-btn fl"></div></a>
+                <div class="palyAgain-btn fr" onclick="game.GameStart();"></div>
+            </div>
+        </div>
+    </div>
+    <!-- 微信分享 -->
+    <div id="wShare">
+        <div class="wShare"></div>
+    </div>
+</div>
+<script src = "http://js.dev.meixincdn.com:1314/CDN8176/dist/external/game/dishu/js/zepto.js"></script>
+<script src = "http://js.dev.meixincdn.com:1314/CDN8176/dist/external/game/dishu/js/fastclick.js"></script>
+<script src = "http://js.dev.meixincdn.com:1314/CDN8176/dist/external/game/dishu/js/axios.min.js"></script>
+<script src = "http://js.dev.meixincdn.com:1314/CDN8176/dist/external/game/dishu/js/pocketMoleGame.js"></script>
+</body>
+</html>

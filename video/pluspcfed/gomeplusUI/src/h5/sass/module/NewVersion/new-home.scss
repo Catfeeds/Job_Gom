@@ -1,0 +1,317 @@
+﻿@charset "UTF-8";
+@import"../new-index/coupons-pop.scss";// 首页优惠券弹窗
+
+html{
+    -webkit-tap-highlight-color:rgba(0,0,0,0);
+}
+.all-margin-top {
+    margin-top: .2rem
+}
+
+.all-padding20 {
+    padding: .2rem 0
+}
+
+.list-mt {
+    margin-top: -2%
+}
+
+
+
+.opg .xin-header .xin-header-tip .xin-icon-cart {
+    margin-top: 0.08rem;
+    background: url(../../../images/newHome/xin-buy-cart.png?version=1463567083490) no-repeat;
+    background-size: contain
+}
+
+
+
+.opg .time-box span:nth-child(2) {
+    background: url(../../../images/newHome/icon-tips.png?version=1463567083481) left no-repeat;
+    background-size: .36rem .31rem
+}
+
+.opg .xin-hot-zone>li>a {
+    display: block
+}
+
+.opg .xin-hot-zone>li:last-child dd {
+    border: none
+}
+
+.opg .section-box>a {
+    display: block
+}
+
+.opg .product-img a {
+    display: block;
+    position: relative;
+    float: left;
+    width: 33%;
+    height: 2.47rem;
+    margin-right: .5%;
+    overflow: hidden
+}
+
+.opg .product-img a img {
+    width: 100%;
+    height: 2.47rem
+}
+
+.opg .product-img a:nth-child(3) {
+    margin-right: 0
+}
+
+.opg .xin-header .xin-search .xin-icon-go {
+    background: url(../../../images/newHome/xin-search-sm.png?version=1463567083488) center 0 no-repeat;
+    background-size: 100% 100%
+}
+
+.opg .xin-header {
+    position: fixed;
+    width: 100%;
+    left: 0;
+    top: 0;
+    z-index: 100
+}
+
+.opg .xin-carousel {
+    margin-top: .88rem
+}
+
+.amazing .btn-close {
+    width: .58rem;
+    height: .58rem;
+    background: 0 0
+}
+
+.opg .amazing .btn-close:before {
+    content: "";
+    width: .48rem;
+    height: .48rem;
+    position: absolute;
+    top: .05rem;
+    left: .05rem;
+    background: url(../../../images/newHome/btn-caid.png?version=1463998213396) center center no-repeat;
+    background-size: cover
+}
+
+.opg .xin-ad a,.opg .xin-ad a img {
+    width: 100%;
+    height: 100%
+}
+
+.opg .new-nav00 .high .all-good-icon {
+    background: url(../../../images/newHome/icon-category.png?version=1463567083507) no-repeat;
+    background-size: contain
+}
+
+.opg .level-gold-medal {
+    background: url(../../../images/newHome/gold-medal.png?version=1464317571938) no-repeat;
+    background-size: contain
+}
+
+.opg .level-bronze-medal {
+    background: url(../../../images/newHome/bronze-medal.png?version=1464317571938) no-repeat;
+    background-size: contain
+}
+
+.opg .level-silver-medal {
+    background: url(../../../images/newHome/silver-medal.png?version=1464317571953) no-repeat;
+    background-size: contain
+}
+
+
+.opg .xin-ad {
+    margin-top: .2rem;
+    padding-bottom: 29%;
+    position: relative
+}
+
+.opg .xin-ad a {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0
+}
+
+.opg .xin-mask-home {
+    display: none;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(0,0,0,.6);
+    line-height: 1.5;
+    z-index: 1000;
+}
+/*
+.opg .product-img span em {
+    background: url(../../../images/newHome/corner-bj.png) no-repeat;
+    background-size:.42rem .42rem
+}
+.opg .shop-stars .icon2.gold{
+    background: url("../../../images/goldmedal.png") no-repeat;
+    background-size: 14px auto;
+}
+.opg .shop-stars .icon2.silver{
+    background: url("../../../images/silvermedal.png") no-repeat;
+    background-size: 14px auto;
+}
+.opg .shop-stars .icon2.copper{
+    background: url("../../../images/coppermedal.png") no-repeat;
+    background-size: 14px auto;
+}*/
+/*搜索弹层 start*/
+.history-layer{
+    display: none;
+    background: #ececec;
+}
+.opg .history-layer .header{
+    position: absolute;
+    left: 0;
+    right: 0;
+}
+.opg .history-layer .header input{
+    border: none;
+    background: none;
+}
+.opg .history-layer .search-list{
+    padding-top: .88rem;
+}
+.opg .search-history {
+    font-size: .3rem;
+    margin-top: .88rem;
+    background: #fff;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0
+}
+.opg .search-history .h4-tit {
+    color: #adadad;
+    font-size: .3rem;
+    padding: .3rem .2rem;
+    border-bottom: 1px solid #e4e4e4
+}
+
+.opg .search-history .history-list a {
+    display: block;
+    padding-left: .2rem;
+    -webkit-text-overflow: ellipsis;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.opg .search-history .history-list a.active {
+    background: #f4f4f4
+}
+
+.opg .search-history .history-list p {
+    height: .9rem;
+    color: #333;
+    line-height: .9rem;
+    border-bottom: 1px solid #e4e4e4
+}
+
+.opg .search-history .history-del {
+    line-height: .3rem;
+    text-align: center;
+    padding: .4rem
+}
+.opg .xin-drops-md {
+    position: absolute;
+    top: .7rem;
+    left: 0.6rem;
+    background-color: rgba(0,0,0,.8);
+    color: #fff;
+    border-radius: .12rem;
+    padding: .1rem .2rem;
+    z-index: 100
+}
+.opg .xin-drops-md:before {
+    content: '';
+    width: 0;
+    height: 0;
+    position: absolute;
+    top: -.18rem;
+    left: 50%;
+    -webkit-transform: translate(-50%,0);
+    transform: translate(-50%,0);
+    border-style: dashed dashed solid;
+    border-color: transparent transparent rgba(0,0,0,.8);
+    border-width: .1rem
+}
+
+.opg .xin-drops-md li {
+    border-bottom: 1px solid #6a6a6a;
+    line-height: .4rem;
+    padding: .05rem 0
+}
+
+.opg .xin-drops-md li:last-child {
+    border: none
+}
+
+.opg .xin-drops-md li .iconmoon {
+    font-size: .36rem;
+    color: #fff;
+    margin-right: .05rem;
+    vertical-align: -.02rem
+}
+.opg .xin-header .xin-search .xin-icon-close {
+    right: .2rem;
+    background: url(../../../images/xin-icon-close.png) center 0 no-repeat;
+    background-size: contain
+}
+.xin-search .search-text{
+    color: #ccc;
+    width: 88%;
+    float: left;
+    margin-left: 0.6rem;
+    line-height: 0.6rem;
+}
+.opg .xin-header .xin-header-tip a.color666 {
+    color: #666;
+}
+.opg .search-history .history-list p{
+    height: 0.8rem;
+    line-height: 0.8rem;
+    -webkit-text-overflow: ellipsis;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+.opg .xin-header .xin-search .xin-header-select{
+    margin-right: 6px;
+}
+
+/*搜索end*/
+.opg .xin-header .xin-header-back1 {
+    position: absolute;
+    left:.2rem;
+    top:.26rem;
+    width:.4rem;
+    height:.4rem
+}
+
+
+/*首页未打开神秘红包*/
+.packet-keep {
+    background: url(../../../images/newindex/packet-keep.gif) no-repeat;
+    background-size: cover;
+}
+.packet-my {
+    background: url(../../../images/newindex/packet-my.gif) no-repeat;
+    background-size: cover;
+}
+.packet-my, .packet-keep {
+    width: 1.88rem;
+    height: 2.22rem;
+    position: fixed;
+    right: .15rem;
+    bottom: 1.8rem;
+    z-index: 10000;
+}

@@ -1,0 +1,264 @@
+.pluspc-mygomeTopic-box{
+	background: #fff;
+	width: 756px;
+	font-family: '微软雅黑',sans-serif;
+}
+.pluspc-left-tab {
+	float: left;
+	margin: 6px 0 0 0;
+}
+.pluspc-right-tab {
+	display: none;
+	float: right;
+	margin: 0 0 6px 0;
+}
+.pluspc-right-tab a {
+	display: block;
+	width: 76px;
+	height: 26px;
+	color: #fff;
+	line-height: 26px;
+	text-align: center;
+	background: #ff5757;
+	border-radius: 3px;
+	text-decoration: none;
+}
+.pluspc-right-tab a:hover {
+	background: #f5323f;
+}
+.pluspc-left-tab a,
+.pluspc-topic-box a{
+	color: #333;
+	text-decoration: none;
+	font-size: 13px;
+}
+
+.pluspc-left-tab a:hover,
+.pluspc-topic-box a:hover,
+.pluspc-goods-box a:hover p{
+	color: #f5323f;
+	text-decoration: none;
+}
+.pluspc-goods-box a:hover .pluspc-goods-img{
+	background: #fff;
+	opacity: 0.9;
+}
+.pluspc-mygomeTopic-cont {
+	padding: 12px 20px 20px;
+}
+
+/*icon图标*/
+.pluspc-topic-title em {
+	  float: left;
+      width: 30px;
+      height: 16px;
+      line-height: 18px;
+      text-align: center;
+      font-size: 12px;
+      font-style: normal;
+      border-radius: 3px;
+      margin-right: 10px;
+}
+.pluspc-topic-box .set-top {
+	  background-color: #e0eefd;
+      color: #6699fd;
+}
+.pluspc-topic-box .set-spark {
+	  background-color: #fedccb;
+      color: #f87480;
+}
+.pluspc-topic-box .set-access {
+	  background-color: #ffa60c;
+	  color: #ffa60c;
+}
+
+.pluspc-mygomeTopic-box .icon-like{
+	padding-left: 20px;
+	margin: 0 10px 0 0;
+	background: url('../images/like.png') no-repeat left 1px;
+}
+.pluspc-mygomeTopic-box .icon-discuss{
+	padding-left: 24px;
+	background: url('../images/discuss.png') no-repeat left 2px;
+}
+
+/*pluspcTab*/
+.pluspc-mygomeTopic-tab {
+	height: 32px;
+	border-bottom: 1px solid #eee;
+	margin: 0 0 20px 0;
+	overflow: hidden;
+}
+.pluspc-left-tab a {
+	float: left;
+	margin: 0 40px 0 0;
+	height: 24px;
+	color: #5e5e5e;
+}
+.pluspc-left-tab a.active {
+	border-bottom: 2px solid #ff5757;
+    color: #ff5757;
+}
+
+/*pluspcList*/
+.pluspc-mygomeTopic-list {
+	display: none;
+	margin: 0 -13px 0 0;
+	overflow: hidden;
+	_zoom: 1;
+}
+.pluspc-topic-list {
+	float: left;
+	width: 243px;
+}
+.pluspc-topic-box {
+	border: 1px solid #ddd;
+	width: 230px;
+	margin: 0 0 13px 0;
+}
+.pluspc-topic-img {
+	cursor: pointer;
+	position: relative;
+}
+.pluspc-topic-img img {
+	width: 230px;
+    background:url(../images/loading-sm.png) 50% 50% no-repeat;
+}
+.pluspc-topic-img a:hover {
+	background: #fff;
+	opacity: 0.9;
+}
+
+.pluspc-topic-img-bg{
+	display: none;
+	position:absolute;
+	top:0;
+	left:0;
+	width:100%;
+	height:100%;
+	background:#000;
+	opacity:0.3;
+	z-index:1;
+	filter:alpha(opacity=30);
+}
+.pluspc-topic-title {
+	padding: 20px 20px 0;
+	margin: 0 0 10px;
+}
+.pluspc-topic-title a {
+	display: block;
+	height: 38px;
+	overflow: hidden;
+	word-wrap:break-word;
+}
+.pluspc-topic-icon {
+	color: #888;
+	padding: 0 20px 10px;
+}
+.pluspc-topic-description {
+	padding: 0 20px 10px;
+}
+.pluspc-topic-description a {
+	display: block;
+	color: #777;
+	max-height: 36px;
+	font-size: 12px;
+	overflow: hidden;
+	word-wrap:break-word;
+}
+
+/*商品*/
+.pluspc-goods-list {
+	padding: 0 13px;
+}
+
+.pluspc-goods-box {
+	height: 60px;
+	padding: 10px 0;
+	border-top: 1px dashed #dedede;
+}
+.pluspc-goods-img{
+	float: left;
+	width: 60px;
+	height: 60px;
+	overflow: hidden;
+}
+.pluspc-goods-img img {
+	width: 60px;
+	height: 60px;
+	background: url(../images/goods-default.png) no-repeat;
+    border: none;
+    vertical-align: middle;
+}
+.pluspc-goods-title {
+	max-height: 40px;
+	overflow: hidden;
+	font-size: 12px;
+	margin: 0 0 3px 0;
+	color: #5e5e5e;
+	word-wrap:break-word;
+}
+.pluspc-goods-price {
+	color: #ff5757;
+	font-size: 14px;
+	font-weight: 700;
+	font-family: 'arial';
+}
+.pluspc-goods-text{
+   margin: 0 0 0 70px;
+}
+
+
+/*无话题*/
+.pluspc-noTopic {
+	background: #fff;
+	height: 300px;
+	display: none;
+}
+.pluspc-noTopic p {
+	line-height: 300px;
+	color: #a5a5a5;
+	font-size: 13px;
+	text-align: center;
+}
+.pluspc-noTopic a,
+.pluspc-noTopic a:hover{
+	color: #0061ba;
+}
+
+/*更多话题*/
+.pluspc-moreTopic {
+	display: none;
+	border-top: 1px solid #eee;
+	margin: 18px 0 0 0;
+}
+.pluspc-moreTopic p {
+	color: #a5a5a5;
+	font-size: 13px;
+	text-align: center;
+	margin: 18px 0 0 0;
+}
+.pluspc-moreTopic a,
+.pluspc-moreTopic a:hover{
+	color: #0061ba;
+}
+
+.pluspc-mygomeTopic-box .pluspc-mygomeTopic-show {
+	display: block;
+}
+/*窄屏*/
+.w1000 .pluspc-mygomeTopic-list {
+	margin: 0 -56px 0 0;
+}
+.w1000 .pluspc-topic-list {
+	width: 285px;
+}
+.pluspc-topic-loading{
+	text-align: center;
+	line-height: 300px;
+}
+.pluspc-topic-loading span{
+	color:#a5a5a5;
+	padding: 16px 0 16px 40px;
+	background:url(http://img.gomein.net.cn/gmlib/ui/loading/2.0.0/loading.gif) 0 50% no-repeat ;
+}

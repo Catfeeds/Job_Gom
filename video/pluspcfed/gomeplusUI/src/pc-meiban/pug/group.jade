@@ -1,0 +1,209 @@
+extends ../../pc-widget/head/head-set.jade
+block css-file
+	link(type="text/css",rel="stylesheet",href="../css/public/public.css")
+	link(type="text/css",rel="stylesheet",href="../css/module/group.css")
+block body
+	body.opg
+		.wrap-im
+			.im-left
+				.im-name 白露
+				//.active为选中效果
+				a(href="javascript:;").im-chat.active
+					em.iconn-33
+					span.num 999
+				a(href="javascript:;").im-contact
+					em.iconn-23
+				a(href="javascript:;").im-set
+					em.iconn-15
+			.im-right
+				.right-top
+					.fl
+						.search-val
+							em.iconn-21
+							input(type="text")
+						a(href="javascript:;").search-btn.iconn-39
+					.fr
+						a(href="javascript:;").iconn-3
+						a(href="javascript:;").iconn-45
+						a(href="javascript:;").iconn-11
+				.right-list
+					//没有会话记录,右侧也可以用
+					.no-record
+						img(src="../images/public/no-record.jpg")
+						p 没有会话记录
+						span 快联系你的小伙伴吧
+					ul.clearfix.group-list
+						li
+							a(href="javascript:;")
+								em.iconn-24
+								p 我的群组
+								span.num 20
+							ul.group-my
+								//active为选中样式，
+								li.active
+									a(href="javascript:;")
+										.im-name
+											span.iconn-46
+										p 白露
+								li
+									a(href="javascript:;")
+										.im-name
+											span.iconn-46
+										p 白露
+								li
+									a(href="javascript:;")
+										.im-name
+											span.iconn-46
+										p 白露
+						li
+							a(href="javascript:;")
+								em.iconn-24
+								p 常用联系人
+								span.num 20
+							ul.group-my
+								li
+									a(href="javascript:;")
+										.im-name 白露
+										p 白露
+								li
+									a(href="javascript:;")
+										.im-name 白露
+										p 白露
+								li
+									a(href="javascript:;")
+										.im-name 白露
+										p 白露
+						li
+							a(href="javascript:;")
+								//添加iconn-26为下箭头样式
+								em.iconn-24.iconn-26
+								p 国美互联网生态（分享）科技有限公司
+							ul.clearfix
+								li
+									a(href="javascript:;")
+										p 互联网
+								li
+									a(href="javascript:;")
+										em.iconn-24
+										p 互联网
+								li
+									a(href="javascript:;")
+										em.iconn-24.iconn-26
+										p 互联网
+									ul.clearfix
+										li
+											a(href="javascript:;")
+												em.iconn-24.iconn-26
+												p 互联网
+											ul.clearfix
+												li
+													a(href="javascript:;")
+														p 互联网
+												li.active
+													a(href="javascript:;")
+														p 互联网
+												li
+													a(href="javascript:;")
+														p 互联网
+										li
+											a(href="javascript:;")
+												em.iconn-24
+												p 互联网
+				.right-con
+					//加载失败
+					.load-fail
+						em.iconn-6
+						span 抱歉，加载失败。
+						a(href="javascript:;") 重新加载
+					.load-fail
+						img(src="../images/public/loading.gif")
+					//通讯录
+					.group-detail(style="display:none")
+						.detail-title 企业云办公设计组 (8人)
+						.detail-table.clearfix
+							.table-head 姓名
+							.table-head 职务
+							.table-head 手机
+						.detail-scroll
+							table.detail-table
+								tbody
+									- for (var x = 0; x < 7; x++)
+										tr
+											td
+												.im-name 白露
+												p
+													| 白露
+													span 未激活
+											td
+												.cut 高级视觉设计师
+											td 131xxxx8827
+						a(href="javascript:;").more 加载更多
+						a(href="javascript:;").more
+							| 加载失败，
+							span 重新加载
+						a(href="javascript:;").more
+							img(src="../images/public/loading.gif")
+					//我的群组
+					.my-detal
+						.detail-title
+							.im-name
+								em.iconn-46
+							p
+								| 周昊，王伟伟，张鑫，孟非（8人）
+								em.iconn-5
+							span.un-active 未激活
+						.detail-tab
+							.fl
+								a(href="javascript:;").active 资料
+							.fr
+								a(href="javascript:;") 成员
+						.detail-name
+							.gray 群名称
+							p 周昊,王伟伟,张鑫,孟非,董丽,王娜娜
+							.gray 群公告
+							p 文能挂机喷队友，武能越塔送人头。进可孤身一挑五，退可坐等二十投。前能飞脚救残敌，后能放墙堵队友。静则百年不见人，动则千里送超神。英勇闪现送一血，卖起队友不回头。顺风浪，逆风投。问君能有几多愁，恰似五人四坑20投。
+							.gray 群主
+							p
+								| 周昊
+								em.iconn-44
+								a(href="javascript:;") 转让群主
+						.detail-members
+							ul.clearfix
+								li.add
+									a(href="javascript:;")
+										.im-name
+											em.iconn-11
+										p 添加
+								li.del
+									a(href="javascript:;")
+										.im-name
+											em.iconn-3
+										p 删除
+								- for (var x = 0; x < 10; x++)
+									li
+										a(href="javascript:;")
+											.im-name
+												| 笑笑
+											p 笑笑
+						
+						//个人信息
+						.detail-message
+							.gray 个人信息
+							p
+								em.iconn-20
+								| 13634569879
+							p
+								em.iconn-42
+								| wanghui@gomeplus.com
+							p
+								em.iconn-4
+								| 技术中心-无线研发部-企业办公客户端-全国销售及市场部-华北大区-大客户销售1部-销售3组-高级销售经理
+							p
+								em.iconn-43
+								| 开发工程师
+							.gray 兼任信息
+							p
+								em.iconn-4
+								| 技术中心-无线研发部-企业办公客户端
+						//.disabled为禁用样式
+						a(href="javascript:;").btn-send 发起会话

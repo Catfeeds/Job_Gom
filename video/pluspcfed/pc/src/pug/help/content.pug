@@ -1,0 +1,88 @@
+doctype html
+html(lang="zh-CN")
+	include ../../widget/head/head.pug
+	link(rel='stylesheet', type='text/css', href='../../css/public/public.css')
+	link(rel='stylesheet', type='text/css', href='../../css/module/help.css')
+	body.opg
+		include ../../widget/header/header.pug
+		include ../../widget/menu/menu.pug
+		.gome-about.gome-wrap
+			.headmap
+			.about-container
+				main
+					//
+						<div class="about-tab" id="about-tab">
+						<a href="#">美信公司简介</a>
+						<a href="#">企业文化</a>
+						<a href="#" class="active">联系我们</a>
+						</div>
+					.about-introduction.hide.tab-num
+						.about-in-img
+							img(src='../images/meixin.jpg')
+						.about-text
+							p
+								| 美信网络技术有限公司（www.gomeplus.com）是国美集团旗下全资子公司注册资本500万，基于社交电商的综合购物平台，是集合圈子、购物、分销、返利购物平台。商品经营范围涵盖传统大家电、3C数码、家居、图书、母婴、食品、酒水、服饰、化妆、黄金、文化艺术品等品类，网站商品总量已突破300万。
+							p
+								| 依托国美每年千亿规模的低价采购能力、积淀多年的品牌影响力、领先的信息化后台处理系统优势，平台以兴趣为互联，紧密链接人与人、人与物、人与服务之间的关系；以多元化商品+达人组合模式，超越人与商品的简单连接；平台倡导用户分享品质生活，以打造高品质的用户圈子文化。用户亦可在平台内开设店铺，无需进货、积压资金，成就事业高峰。
+						h2.about-add 发展历程
+						.about-fa
+							.pa
+								.gome-wrap
+									img(src='../images/about-fa.jpg')
+						h2.about-add 公司优势
+						.about-componey
+							ul.clearfix
+								li
+									img(src='../images/comp1.jpg')
+									p 国美集团全国20万员工
+									span 保证国美 APP种子用户数量
+								li
+									img(src='../images/comp2.jpg')
+									p 国美电器全国1700多家线下门店
+									span 高效的地推优势
+								li
+									img(src='../images/comp3.jpg')
+									p 国美8000万会员
+									span 强大的会员导流
+					.about-culture.hide.tab-num
+						ul.clearfix.culture-list
+							li
+								img(src='../images/culture1.jpg')
+								p 勇于创新  打破束缚
+							li
+								img(src='../images/culture2.jpg')
+								p 吾真务本  实事求是
+							li
+								img(src='../images/culture3.jpg')
+								p 团结共赢  合力共进
+							li
+								img(src='../images/culture4.jpg')
+								p 卓尔不群  越众而出
+					.about-content.tab-num
+						.about-map
+							img(src='../images/map.jpg')
+						h2.about-add 美信网络技术有限公司
+						table(width='100%')
+							tr
+								th(width='50%') 联系方式
+								th 商务合作
+							tr
+								td
+									| 客服电话：010-57950679 (周一至周日   09：00-21：00）
+									br
+									| 							客服邮箱：mxixm@gomeplus.com
+									br
+									| 							官方网址：www.gomeplus.com
+									br
+									| 							公司地址：北京市朝阳区霄云路26号鹏润大厦A座33层
+								td
+									| 联  系 人：缪先生
+									br
+									| 							Q　　  Q：553233997
+									br
+									| 							联系电话：18511931580
+									br
+									| 							邮　　箱：miaotianhang@gomeplus.com
+			.footmap
+		include ../../widget/footer/footer.pug
+

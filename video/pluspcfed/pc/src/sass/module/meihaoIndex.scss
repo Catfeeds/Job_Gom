@@ -1,0 +1,149 @@
+@charset "utf-8";
+@import '../../widget/config/_base.scss';
+@import '../../widget/header/header-meihao.scss';
+@import '../../widget/aside/meihao.scss';
+@import '../../widget/list/meihao-content.scss';
+
+#meihao-home{
+	float:left;
+	padding:35px 20px;
+	width:948px;
+
+	.notice{
+		margin-bottom:35px;
+		a{
+			font-size:14px;
+			height:20px;
+			line-height:20px;
+			&:hover{
+				text-decoration: underline;
+			}
+		}
+		.left{
+			float:left;
+			padding-left:30px;
+			color:#5e5e5e;
+			background: url("../../images/meihao/sprite.png")  0px 2px no-repeat
+		}
+		.right{
+			float:right;
+			padding:0 20px;
+			border-left:1px solid #e1e1e1;
+			color:#107eee;
+			padding-left:10px;
+		}
+	}
+
+	.con-title{
+		padding-left:20px;
+		margin-bottom:25px;
+		height:60px;
+		line-height:60px;
+		color:#333;
+		font-size:18px;
+
+		background: #f6f8f9;
+	}
+
+	.count-data{
+
+		.box{
+			margin-bottom: 24px;
+			dl{
+				float:left;
+				padding-left:30px;
+				padding-top:10px;
+			}
+
+			dt{
+				padding-left:45px;
+				height:40px;
+				line-height: 40px;
+				font-size: 16px;
+				background:url("../../images/meihao/sprite.png") no-repeat;
+			}
+			dd{
+				padding-left:45px;
+				height:60px;
+				line-height: 60px;
+				font-size: 38px;
+			}
+			.con{
+				width:179px;
+
+				border-right:1px solid #e1e1e1;
+
+				dt{
+					background-position: 3px -34px;
+					color:#601986;
+				}
+				dd{
+					color:#601986;
+				}
+			}
+			.prev{
+				width:219px;
+				border-right:1px solid #e1e1e1;
+				dt{
+					background-position: 3px -101px;
+					color:#ec6941;
+				}
+				dd{
+					color:#ec6941;
+				}
+			}
+			.member{
+				width:300px;
+				dt{
+					background-position: 3px -176px;
+					color:#e4007f;
+				}
+				dd{
+					color:#e4007f;
+				}
+			}
+
+		}
+
+	}
+
+	.con-data{
+		padding:0 20px;
+	}
+
+	.create-msg{
+		padding-top:200px;
+		padding-bottom:90px;
+	}
+	.view-more{
+		height:30px;
+		line-height:30px;
+		text-align:right;
+		a{
+			cursor:pointer;
+			color:#107eee;
+			font-size:14px;
+		}
+	}
+
+}
+
+
+.ban{
+	margin:0 auto 60px;
+	width:1198px;
+	border:1px solid #e1e1e1;
+	background:#fff;
+	padding:300px 0;
+	text-align:center;
+	p{
+		display:inline-block;
+		padding-left:50px;
+		margin:0 auto;
+		height:44px;
+		line-height:44px;
+		background: url("../../images/meihao/sprite.png")  0px -242px no-repeat;
+		font-size:18px;
+		color:#ff9966;
+	}
+}

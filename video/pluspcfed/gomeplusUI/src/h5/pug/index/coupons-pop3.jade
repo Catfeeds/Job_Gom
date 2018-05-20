@@ -1,0 +1,27 @@
+doctype html
+html(lang="zh-CN" data-use-rem="750")
+    include ../../../m-widget/head/head.jade
+    link(type="text/css",rel="stylesheet",href="../../css/public/site-public.css")
+    link(type="text/css",rel="stylesheet",href="../../css/module/NewVersion/new-home.css")
+    body.opg.coupons-pop
+        include ../../../m-widget/head/rem.jade
+            .m-mask
+            .coupon-box2
+                .coupon-bg3
+                    .tips-txt3
+                        img(src="../../images/newHome/coupon-tipstxt2.png")
+                    p.tips-txt4
+                        | 送您180元国美Plus新人红包,
+                        br
+                        |可在我的帐户>优惠券中查看!
+                ul.coupon-list-bx
+                    - for (var i=1;i<9;i++)
+                        li
+                            a(href="#")
+                                p
+                                    span ￥
+                                    | 50
+                                p 订单满200.00元可用
+                a.coupon-close
+
+

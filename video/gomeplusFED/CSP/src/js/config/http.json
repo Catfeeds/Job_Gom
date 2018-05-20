@@ -1,0 +1,8 @@
+{
+	"localdev": "http://10.69.205.26:9090/mock/5742c66eb094235129ee29b5",
+	"localtest": "http://10.125.2.10:8093/venus-crm-rest",
+	"development":"http://10.69.201.13:8080/venus-crm-rest",
+	"test": "http://10.125.2.43:6080/venus-crm-rest",
+	"pre-production": "http://10.125.2.10:8093/venus-crm-rest",
+	"production": "http://crm.intra.gomeplus.com:8080/venus-crm-rest"
+}

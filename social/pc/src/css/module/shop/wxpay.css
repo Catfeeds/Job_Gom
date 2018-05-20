@@ -1,0 +1,91 @@
+@charset "UTF-8";
+/*==============================标准色==========================*/
+/*----主色-----*/
+/*==============================字体大小==========================*/
+/*==============================wrap宽度==========================*/
+/*==============================btn 宽度==========================*/
+/*==============================nav==========================*/
+/*==============================text clolor==========================*/
+.wxpay-header {
+  width: 100%;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  font-size: 16px;
+  color: #fff;
+  background-color: #333840; }
+  .wxpay-header img {
+    margin-right: 8px; }
+
+.wrap-box {
+  margin: 30px auto 0; }
+
+.code-content {
+  width: 580px;
+  margin: 0 auto;
+  padding: 43px 0 15px;
+  text-align: center;
+  border-bottom: 1px solid #e9e8e5; }
+  .code-content img {
+    display: block;
+    width: 260px;
+    height: 260px;
+    margin: 0 auto 25px; }
+  .code-content .tip {
+    width: 260px;
+    padding: 11px 0 15px;
+    line-height: 24px;
+    text-align: center;
+    font-size: 16px;
+    color: #fff;
+    background-color: #456083;
+    margin: 0 auto 47px; }
+  .code-content .bar {
+    width: 580px;
+    height: 41px; }
+    .code-content .bar span {
+      display: block;
+      width: 247px;
+      height: 3px;
+      margin-top: 16px;
+      background-color: #e0e3eb; }
+    .code-content .bar .bar-l {
+      float: left; }
+    .code-content .bar .bar-r {
+      float: right; }
+    .code-content .bar .icon-car {
+      font-size: 41px;
+      font-weight: bold;
+      color: #d5d6dd;
+      float: left;
+      margin-left: 22px; }
+  .code-content .price {
+    font-size: 30px;
+    text-align: center;
+    display: block;
+    margin-top: 28px; }
+
+.order-content {
+  width: 853px;
+  margin: 0 auto;
+  text-align: center;
+  padding-bottom: 30px; }
+  .order-content h2 {
+    font-size: 30px;
+    line-height: 30px;
+    font-weight: normal;
+    margin: 19px 0 11px; }
+  .order-content p {
+    color: #999;
+    margin-bottom: 30px; }
+  .order-content div {
+    margin-bottom: 10px; }
+  .order-content .span-l {
+    float: left;
+    color: #999; }
+  .order-content .span-r {
+    width: 224px;
+    text-align: left;
+    float: right; }
+
+

@@ -1,0 +1,32 @@
+/**
+ * [图文管理]
+ * @Author: Fu Xiaochun
+ * @Email:  fuzhengchun@gomeplus.com
+ */
+
+ // 图文管理
+
+.subscribe-manage-box.articleManage{
+	.article-msg{
+		position:relative;
+		height:97px;
+ 		.article-detail{
+			padding-left:20px;
+			.name{
+				font-size:18px;
+				line-height:40px;
+				color:#111;
+			}
+			.build-time{
+				font-size:14px;
+				line-height:40px;
+				color:#999;
+			}
+		}
+	}
+	.vm-sub {
+		position: absolute;
+		left: 7px;
+		top: 30px;
+	}
+}

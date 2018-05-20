@@ -1,0 +1,30 @@
+@charset "utf-8";
+
+// _configure.scss
+@import "../public/_configure.scss";
+
+// amp-remain
+.amp-remain{
+	.group-detail{
+		margin:0px 32px;
+	}
+	.ele-input{
+		width:222px;
+		margin-right:10px;
+	}
+	.main-wrap{
+		padding-bottom:11px;
+	}
+	.main-wrap02{
+		.row-check{
+			width:100px;
+			margin-right:10px;
+		}
+	}
+	.amp-path-bd{
+		border-top:1px solid $border-table-col;
+	}
+	.submit-wrap{
+		padding:10px 0px 33px 190px;
+	}
+}

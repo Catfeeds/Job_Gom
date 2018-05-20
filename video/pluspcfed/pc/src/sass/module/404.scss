@@ -1,0 +1,25 @@
+@import '../../widget/config/_base.scss';
+@import '../../widget/config/_mixins.scss';
+@mixin txtcenter{
+	text-align: center;
+}
+.wrong p{
+	line-height: 40px;
+	font-size: $text24;
+	color: #626262;
+	margin-top: 26px;
+	span{
+		display: block;
+	}
+	a{
+		color: $color-danger;
+	}
+}
+.wrong{
+	@include txtcenter;
+	padding: 50px 0;
+	img{
+		width: 280px;
+		height: 280px;
+	}
+}

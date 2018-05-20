@@ -1,0 +1,130 @@
+@import '../config/_base.scss';
+@import '../config/_mixins.scss';
+.opg-editor{
+  .mar-ginb20{
+    margin-bottom: 20px;
+  }
+  .pc-btn{
+    display: inline-block;
+    color: $color-txt;
+    background: nth($bg-btnclor,1);
+    font-size: $text14;
+    width:auto;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 3px;
+  }
+  .pc-bj-fc8753{
+    background: nth($bg-btnclor,2);
+  }
+  .pc-bj-fff{
+    background: nth($bg-btnclor,3);
+    color: $color-default;
+  }
+  .pc-no-radius{
+    border-radius: 0;
+  }
+  .pc-btnw{
+    width:100%;
+  }
+  .pc-btnw75{
+    width:$btnw75;
+  }
+  .pc-btnw80{
+    width:$btnw80;
+  }
+  .pc-btnw105{
+    width:$btnw105;
+  }
+  .pc-btnw120{
+    width:$btnw105+15;
+  }
+  .pc-btnw130{
+    width:$btnw130;
+  }
+  .pc-btnw155{
+    width:$btnw155;
+  }
+  .pc-btnw300{
+    width:$btnw300;
+    font-size: $text16;
+  }
+  .pc-btnh30{
+    height: $btnh30;
+    line-height:$btnh30 ;
+  }
+  .pc-btnh40{
+    height: $btnh30+10;
+    line-height:$btnh30+10;
+  }
+  .pc-btnh35{
+    height: $btnh30+5;
+    line-height:$btnh30+5;
+  }
+  .pc-btnh36{
+    height: $btnh36;
+    line-height:$btnh36;
+  }
+  .pc-btnh45{
+    height: $btnh45;
+    line-height:$btnh45;
+  }
+  .pc-btn-wauto{
+    padding:0 $text20+5;
+  }
+  .btn-default{
+    background: $color-gray;
+  }
+}
+.w98-h30{
+  width: 98px;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+  border-radius: 3px;
+  display: inline-block;
+}
+.w120-h40{
+  width: 118px;
+  height: 38px;
+  line-height: 38px;
+  text-align: center;
+  border-radius: 3px;
+  display: inline-block;
+}
+.opg-editor{
+    .order-btn-blank{
+      border: 1px solid #e9e8e5;
+      &:hover{
+        color: #fff;
+        background-color: #e30d3e;
+        border: 1px solid #e30d3e;
+      }
+    }
+    .order-btn-orange{
+      color: #fff;
+      border: 1px solid #fc8753;
+      background-color: #fc8753;
+      &:hover{
+        border: 1px solid #eb5f24;
+        background-color: #eb5f24;
+      }
+    }
+    .order-btn-red{
+      color: #fff;
+      border: 1px solid #f95353;
+      background-color: #f95353;
+      &:hover{
+        background-color: #e30d3e;
+        border: 1px solid #e30d3e;
+      }
+    }
+    .order-btn-gray{
+      border: 1px solid #e9e8e3;
+      background-color: #e9e8e3;
+      &:hover{
+        background-color: #dbdbd3;
+        border: 1px solid #dbdbd3;
+      }
+    }
+}

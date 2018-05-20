@@ -1,0 +1,29 @@
+// gomeplusUI sasscore
+@import "../../../../sasscore/_configure.scss";
+
+// variables
+// ------------------------------------
+$primary-color:     #2372ce;
+$warning-color:     #8a6d3b;
+$danger-color:      #a94442;
+
+$bg-blue:           #d2303f;
+$bg-blue-light:     #d2303e;
+$bg-gray:           #f7f7f9;
+
+$link-color:        #fff #fff;
+
+$text-darker:       #000;
+$text-dark:         #333;
+$text-gray:         #999;
+
+$border-blue-color: darken($bg-blue,5%);
+$border-gray-color: #d7d7d7;
+
+// grid
+$gap:               240px;
+$space:             20px;
+$navHeight:         60px;
+
+// font-family
+$font-family:       'PingFang SC','Myriad Pro','Hiragino Sans GB','Microsoft YaHei',sans-serif;

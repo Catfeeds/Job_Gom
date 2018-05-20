@@ -1,0 +1,166 @@
+doctype html
+html(lang="zh-CN", data-use-rem="750")
+	include ../../../m-widget/head/head.jade
+	link(type="text/css",rel="stylesheet",href="../../css/public/gomeplusUI.css")
+	link(type="text/css",rel="stylesheet",href="../../css/module/meidian/meidian.css")
+	
+	body.opg.meidian
+		include ../../../m-widget/head/rem.jade
+		header.header
+			.h-left
+				a.h-back(href="javascript:;")
+					em.iconn-1
+			.h-cnt.flex-cell
+				h1.h-tit 我的店铺
+			.h-right
+				a.h-btn(href="javascript:;")
+					em.iconn-3
+		// /header
+
+		section.md-header(style="background-image: url(../../images/shop/shopbj6.png);")
+			.flex-box.flex-start
+				.flex-hd
+					a.logo(href="javascript:;")
+						//- input.file(type="file")
+						img(src="https://i6.meixincdn.com/v1/img/T1ntKTB4_T1RXrhCrK.jpg")
+				.flex-bd
+					h3.c-f 心爱的小孩的小店
+					.flex-box.grade
+						span.c-f 店铺等级：
+						img.m-vip(src="")
+						a.c-f(href="##") 评分规则
+					.flex-box.slider
+						.inner
+							p.track(style="width: 60%;")
+							p.spot(style="left: 60%;")
+						p.c-f.num 10/6
+				.flex-ft
+					a.link(href="javascript:;")
+						em.iconn-28
+						p 2357
+					a.link(href="javascript:;")
+						em.iconn-22
+						p 2.1万
+			.renz
+		//- 店铺信息
+
+		section.md-header(style="background-image: url(http://css.meixincdn.com/m/h5/dist/images/shopbj4.png);")
+			.flex-box.flex-start
+				.flex-hd
+					a.logo(href="javascript:;")
+						img(src="https://i6.meixincdn.com/v1/img/T1ntKTB4_T1RXrhCrK.jpg")
+				.flex-bd
+					h3
+						a.c-f(href="javascript:;") 心爱的小孩的小店
+					.c-f.hint#shopDesc 2月5号放假，14号开店,2月5号放假，14号开店,2月5号放假，14号开店,2月5号放假，14号开店2月5号放假，14号开店
+					.flex-box.grade
+						span.c-f 店铺等级：
+						img.m-vip(src="")
+				.flex-ft
+					a.link.active(href="javascript:void(0)" data-ischecked="0" id="like")
+						em.iconn-28
+						p(data-num="2357") 2357
+					a.link.active(href="javascript:void(0)" data-ischecked="0" id="collect")
+						em.iconn-22
+						p(data-num="2357") 2.1万
+			.renz
+		//- 店铺预览
+
+		section.md-header(style="background-image: url(http://css.meixincdn.com/m/h5/dist/images/shopbj4.png);")
+			.flex-box.flex-start
+				.flex-hd
+					a.logo(href="javascript:;")
+						img(src="https://i6.meixincdn.com/v1/img/T1ntKTB4_T1RXrhCrK.jpg")
+				.flex-bd
+					h3
+						a.c-f(href="javascript:;") 心爱的小孩的小店心爱的小孩的小
+					.c-f.hint#shopDesc 2月5号放假，14号开店,2月5号放假，14号开店,2月5号放假，14号开店,2月5号放假，14号开店2月5号放假，14号开店
+					.flex-box.grade
+						span.c-f 店铺等级：
+						img.m-vip(src="")
+				.flex-ft
+					a.link.active(href="javascript:void(0)" data-ischecked="0" id="like")
+						em.iconn-28
+						p(data-num="2357") 2357
+					a.link.active(href="javascript:void(0)" data-ischecked="0" id="collect")
+						em.iconn-22
+						p(data-num="2357") 2.1万
+			.renz
+		//- 店铺预览
+
+		section.flex-boxs.md-score
+			.flex-box
+				.flex-bd
+					p.c-3.tit 动态评分
+			.flex-box
+				.flex-bd
+					p.c-3.tit 商品评价
+				.flex-ft
+					p.c-f5c 4.58高于同行4.57%
+			.flex-box
+				.flex-bd
+					p.c-3.tit 描述相符
+				.flex-ft
+					p.c-f5c 4.58高于同行4.57%
+			.flex-box
+				.flex-bd
+					p.c-3.tit 发货速度
+				.flex-ft
+					p.c-f5c 4.58高于同行4.57%
+			.flex-box
+				.flex-bd
+					p.c-3.tit 服务态度
+				.flex-ft
+					p.c-79 4.58高于同行4.57%
+
+		section.flex-boxs.bor-b.md-describe
+			.flex-box.flex-start
+				.flex-hd
+					p.c-3.tit 店铺描述
+				.flex-bd
+					p.c-9 地球是我们的家园，正义是我们的化身，我们翻江倒海的威龙，我们是穿越雷雨的海艳，地球是我们的家园，正义是我们的化身，我们翻江倒海的威龙，我们是穿越雷雨的海艳。
+			.flex-box
+				.flex-bd
+					p.c-3.tit 开店时间
+				.flex-ft
+					p.c-9 2017-2-22
+			.flex-box
+				.flex-bd
+					p.c-3.tit 二维码
+				.flex-ft
+					em.iconn-99
+			//- 内嵌
+			.flex-box
+				.flex-hd
+					p.c-3.tit 美店店主
+				.flex-bd
+					p.c-9 心爱的小孩
+				.flex-ft
+					em.iconn-100
+			// /内嵌
+			//- wap
+			.flex-box
+				.flex-bd
+					p.c-3.tit 美店店主
+				.flex-ft
+					p.c-9 心爱的小孩
+			// /wap
+		//- 标签
+		ul.tag-box
+			li.bor-all qwertyuiop
+			-for(i=0; i<7; i++)
+				li.bor-all 时尚教主哦
+
+		//- 二维码
+		.qr-code
+			.inner-box
+				a.close(heref="javascript:;")
+					em.iconn-25
+				img(src="../../images/shop/qr.png")
+
+
+
+
+
+
+

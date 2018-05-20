@@ -1,0 +1,50 @@
+.totop{
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    z-index: 999;
+    display: none;
+    a{
+        display: block;
+        width: 40px;
+        height: 40px;
+        line-height: 40px;
+        background: #fc8752;
+        color: $bg-fff;
+        margin-bottom: 1px;
+        em{
+            font-size: 16px;
+            display: block;
+            height: 40px;
+            line-height: 40px;
+        }
+        span{
+            display: none;
+            width: 30px;
+            height: 36px;
+            font-size: $text12;
+            padding: 7px 5px 0;
+            line-height: 14px;
+        }
+        &:hover{
+            background-color: #fda984;
+            em{
+                display: none;
+            }
+            span{
+                display: block;
+            }
+        }
+    }
+    &.totop-link{
+        display: block;
+        bottom: 41px;
+    }
+    &.totop-kefu{
+        display: block;
+        bottom: 82px;
+    }
+}

@@ -1,0 +1,315 @@
+.pluspc-drinks{
+    margin-top: 40px;
+    background:#fff url(../images/back1.jpg) 50% 0 no-repeat;
+    font: 12px/18px '微软雅黑', sans-serif;
+    padding-bottom: 56px;
+}
+.pluspc-drinks a:hover,.pluspc-drinks a:hover span{
+    text-decoration: none;
+}
+
+.pluspc-drinks-content{
+    width: 1200px;
+    margin: 0 auto;
+    position: relative;
+}
+.pluspc-drinks-content li {
+    zoom:1;
+    vertical-align: top;
+}
+.pluspc-drinks-left li{
+    float:left;
+    width:292px;
+    background: #fff;
+    margin-right: 10px;
+}
+.pluspc-drinks-leftitle{
+    padding-top:27px;
+    line-height: 53px;
+    color: #fff;
+    font-size:28px;
+}
+.pluspc-drinks-list{
+    _margin-top:-1px;
+    position: relative;
+    height: 190px;
+    overflow: hidden;
+}
+.pluspc-drinks-img{
+    position: relative;
+    overflow: hidden;
+    height: 100%;
+}
+.pluspc-drinks-img a{
+    position: absolute;
+    left:50%;
+    margin-left: -146px;
+    top:0;
+}
+.pluspc-drinks-img a img{
+    width: 292px;
+    height: 190px;
+    background:url(../images/loading-sm.png) 50% 50% no-repeat;
+}
+.pluspc-drinks-user{
+    position: absolute;
+    left:20px;
+    top:10px;
+    padding:2px;
+    background:rgba(0,0,0,.5);
+    background:#000\9;
+    background:rgba(0,0,0,.5)\9\0;
+    border-radius: 11px;
+}
+.pluspc-drinks-user a{
+    color:#fff;
+}
+.pluspc-drinks-user img{
+    float: left;
+    width: 18px;
+    height: 18px;
+    overflow: hidden;
+    border-radius: 50%;
+}
+.pluspc-drinks-user .pluspc-drinks-topic{
+    color:#fff;
+    max-width: 0px;
+    overflow: hidden;
+    float: left;
+    height: 18px;
+
+}
+.pluspc-drinks-topic span{
+    padding: 0 10px 0 3px;
+    display: none;
+}
+.pluspc-drinks-listcon{
+    padding: 15px 30px 8px;
+    color:#888;
+}
+.pluspc-drinks-listitle{
+    font-size: 18px;
+    height: 38px;
+    overflow: hidden;
+    line-height: 38px;
+}
+.pluspc-drinks-listitle a{
+    color:#333;
+}
+.pluspc-drinks a:hover{
+    color:#ee3b3b;
+}
+.pluspc-drinks-listcon p {
+    height: 36px;
+    overflow: hidden;
+}.pluspc-drinks-listcon p a {
+    color:#888;
+}
+.pluspc-love-icon,.pluspc-discuss-icon{
+    line-height: 38px;
+    padding-left: 19px;
+    font-size: 12px;
+    font-family: arial, sans-serif;
+    color:#333;
+    background: url(../images/love.gif) 0 50% no-repeat;
+    margin-right: 17px;
+}
+.pluspc-discuss-icon{
+    background-image: url(../images/discuss.gif);
+}
+.pluspc-drinks-right{
+    position: absolute;
+    width:274px;
+    height:380px;
+    overflow: hidden;
+    top:-10px;
+    right:0;
+    background: url(../images/back2.jpg) 50% 0 no-repeat;
+    padding: 37px 10px 54px;
+}
+.pluspc-drinks-rightitle{
+    font-size: 28px;
+    color:#fff;
+    line-height: 53px;
+}
+.pluspc-drinks-tab{
+    position: relative;
+}
+.pluspc-slider-tabbox{
+    background: #fff;
+    height: 325px;
+    overflow: hidden;
+    position: relative;
+}
+.pluspc-slider-tabcon{
+    position: absolute;
+    width: 10000px;
+    left: 0;
+    top:0;
+    -webkit-transition: all .5s linear;
+    -moz-transition: all .5s linear;
+    -ms-transition: all .5s linear;
+    -o-transition: all .5s linear;
+    transition: all .5s linear;
+    -webkit-backface-visibility: hidden;
+    -moz--webkit-backface-visibility: hidden;
+    -ms-backface-visibility: hidden;
+    -o-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+.pluspc-drinks-tab ul li{
+    -webkit-backface-visibility: hidden;
+    -moz--webkit-backface-visibility: hidden;
+    -ms-backface-visibility: hidden;
+    -o-backface-visibility: hidden;
+    backface-visibility: hidden;
+    _margin-top:-1px;
+    float: left;
+    width: 274px;
+    overflow: hidden;
+}
+.pluspc-drinks-group{
+    position: relative;
+    height: 192px;
+}
+.pluspc-drinks-group a{
+    position: absolute;
+    width: 274px;
+    height: 192px;
+    left:50%;
+    top:0;
+    margin-left:-137px;
+}
+.pluspc-drinks-group a img{
+    width: 274px;
+    height: 192px;
+    overflow: hidden;
+    background:url(../images/loading-sm.png) 50% 50% no-repeat;
+}
+.pluspc-drinks-rightcon{
+    padding:14px 20px 0;
+    color:#888;
+}
+.pluspc-drinks-groupkind{
+    line-height: 40px;
+    font-size:18px;
+    color:#fff;
+    height:40px;
+    overflow: hidden;
+}
+.pluspc-drinks-groupkind a{
+    color:#333;
+}
+.pluspc-drinks-groupkind span{
+    display: inline-block;
+    height: 18px;
+    font-size: 12px;
+    padding: 0 2px 0 3px;
+    background:#ff7f23;
+    border-radius: 3px;
+    line-height: 18px;
+    margin: 0 4px 0 0;
+    position: relative;
+    top: -2px;
+    left:0;
+}
+.pluspc-slider-tabcon ol li{
+    float: none;
+    height: 18px;
+    overflow: hidden;
+    width: auto;
+}
+.pluspc-slider-tabcon ol li a{
+    color: #888;
+}
+.pluspc-drinks-rightbottom{
+    color:#a5a5a5;
+    line-height: 34px;
+}
+.pluspc-drinks-rightbottom  span{
+    margin-right: 6px;
+}
+.pluspc-drinks-rightbottom  span span{
+    color:#333;
+    font: 12px/34px arial ,sans-serif;
+}
+.pluspc-slider-iconbox{
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    left: 0;
+    line-height: 4px;
+    top:347px;
+}
+.pluspc-slider-iconbox span{
+    cursor: pointer;
+    display: inline-block;
+    height:4px;
+    width: 18px;
+    overflow: hidden;
+    margin: 0 1px;
+    background:#e6e6e6;
+    *margin: 0 1px;
+}
+.pluspc-slider-iconbox .active{
+    background: #9b5c55;
+}
+.w1000 .pluspc-drinks-content{
+    width: 1000px;
+}
+.w1000 .pluspc-drinks-left li{
+    width:242px;
+}
+.w1000 .pluspc-drinks-listcon{
+    padding:15px 10px 8px;
+}
+.w1000 .pluspc-drinks-right,.w1000 .pluspc-slider-tabcon ul li{
+    width: 224px;
+}
+.w1000 .pluspc-drinks-rightcon{
+    padding: 14px 10px 0;
+}
+.w1000 .pluspc-drinks-tab ul li{
+    width: 224px;
+}
+.w1000 .pluspc-drinks-tab ul li li{
+    width: auto;
+}
+
+.pluspc-drinks-img a:hover,.pluspc-drinks-group a:hover{
+    zoom:1;
+}
+.pluspc-drinks-img a:hover img,.pluspc-drinks-group a:hover img{
+    -webkit-animation: blink 1s;
+    -moz-animation: blink 1s;
+    -ms-animation: blink 1s;
+    -o-animation: blink 1s;
+    animation: blink 1s;
+    opacity:.9\9;
+    filter:alpha(opacity=90)\9;
+}
+@-moz-keyframes blink{
+    0%{opacity: 1}
+    50%{opacity: .9}
+    100%{opacity: 1}
+}
+@-ms-keyframes blink{
+    0%{opacity: 1}
+    50%{opacity: .9}
+    100%{opacity: 1}
+}
+@-webkit-keyframes blink{
+    0%{opacity: 1}
+    50%{opacity: .9}
+    100%{opacity: 1}
+}
+@-o-keyframes blink{
+    0%{opacity: 1}
+    50%{opacity: .9}
+    100%{opacity: 1}
+}
+@keyframes blink{
+    0%{opacity: 1}
+    50%{opacity: .9}
+    100%{opacity: 1}
+}

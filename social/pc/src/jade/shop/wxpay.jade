@@ -1,0 +1,32 @@
+doctype html
+html(lang="zh-CN")
+	include ../../../../../gomeplusUI/pc/src/jade/head.jade
+	link(type="text/css",rel="stylesheet",href="../../css/public/public.css")
+	link(type="text/css",rel="stylesheet",href="../../css/module/shop/shoppublic.css")
+	link(type="text/css",rel="stylesheet",href="../../css/module/shop/wxpay.css")
+	body.opg
+		.wxpay-header 
+			img(src="../../images/public/wxpay.png")
+			| 微信支付
+		.wrap-box
+			.code-content
+				img(src="../../images/public/wxpay-code.png")
+				.tip
+					| 扫一扫
+					br
+					| 二维码以完成支付
+				.bar.clearfix
+					span.bar-l
+					em.icon.icon-car &#xe915;
+					span.bar-r
+				span.price ￥81.00
+			.order-content
+				h2 美信
+				p 美信－订单12035821112
+				div.clearfix
+					span.span-l 交易单号
+					span.span-r 348781222222888858888834211
+				div.clearfix
+					span.span-l 创建时间
+					span.span-r 2016-06-07
+		include ../../../../../gomeplusUI/pc/src/jade/footer.jade

@@ -1,0 +1,32 @@
+doctype html
+html(lang="zh-CN")
+	include ../../../pc-widget/head/head.jade
+	link(type="text/css",rel="stylesheet",href="../../css/public/public.css")
+	link(type="text/css",rel="stylesheet",href="../../css/module/searchresultnone.css")
+	body.opg
+		include ../../../pc-widget/header/header.jade
+		include ../../../pc-widget/menu/menu.jade
+		.wrap-box
+			.search-result.top30
+				.result-text.clearfix
+					// icon替换 icon
+					em.iconn-5
+					p.text-left
+						| 您的购物车还是空的，去看看心仪的商品吧~
+						br
+						a(href="#") 去购物
+			h2.title 为您推荐
+			.shop-list
+				ul.clearfix
+					- for (var x = 0; x < 15; x++)
+						li
+							a(href="#")
+								em.icon-fan 返
+								img(src="https://i6.meixincdn.com/v1/img/T1GRYTB7KT1R4cSCrK.png")
+								.text
+									| ￥
+									span 259.00
+									p 我新依旧心潮澎湃要你命300湃要你命300
+		include ../../../pc-widget/footer/footer.jade
+			
+		

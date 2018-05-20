@@ -1,0 +1,42 @@
+doctype html
+html(lang="zh-CN")
+    include ../../../pc-widget/head/head.jade
+    body.opg.lg-bg
+        link(type="text/css",rel="stylesheet",href="../../css/public/public.css")
+        link(type="text/css",rel="stylesheet",href="../../css/module/login.css")
+        .lg-header
+            .lg-header-in
+                h1.lg-logo
+                    a 国美plus
+        .lg-main
+            //步骤 开始
+            ul.lg-steps.clearfix
+                li.active
+                    em 1
+                    | 设置帐号、密码
+                li.active
+                    em 2
+                    | 完善个人信息
+                li.active
+                    em 3
+                    | 注册完成
+            //步骤 结束
+            div.lg-form.clearfix
+                .lg-succ-left
+                    img(src="../../images/login/code-erw.jpg")
+                    p.lg-scan 扫描下载 
+                        a 国美Plus
+                        | 手机客户端
+                .lg-succ-right
+                    // icon替换
+                    h4.lg-succ-tl
+                        // icon替换
+                        em.iconn-20
+                        | 注册成功！
+                    p.lg-succ-para 恭喜您，您的国美Plus账号：
+                        span 18046668087 
+                            br
+                        | 可用于登录国美PlusAPP / wap / pc端 
+                    a.lg-btn-bor(href="javascript:;") 进入国美Plus
+        include ../../../pc-widget/footer/footer.jade
+

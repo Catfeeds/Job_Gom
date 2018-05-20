@@ -1,0 +1,2 @@
+<a href="{{i_domain}}order/showDataInfo?orderid={{orderid}}&skuid={{skuid}}&optype=1&goodid={{goodsid}}" >退货</a>
+<a href="{{i_domain}}order/showDataInfo?orderid={{orderid}}&skuid={{skuid}}&optype=2&goodid={{goodsid}}" >换货</a>

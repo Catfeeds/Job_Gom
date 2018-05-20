@@ -1,0 +1,42 @@
+/* 加载效果indicator */
+.indicator{
+	    width: 90px;
+    height: 90px;
+    margin: 0 auto;
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 10px;
+    text-align: center;
+    font-size: 34px;
+    font-family: 'icomoon' !important;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+	span{
+		display: inline-block;
+		font-size: 12px;
+		margin-top: 58px;
+	}
+	&:before{
+        content: "\E930";
+        position: absolute;
+        left: 28px;
+        top: 15px;
+        height: 34px;
+        width: 34px;
+        line-height: 1;
+        animation: zhuan 1s linear infinite;
+	}
+}
+@keyframes zhuan{
+    from {
+        transform:rotate(0);
+    }
+    to {
+        transform:rotate(360deg);
+    }
+}

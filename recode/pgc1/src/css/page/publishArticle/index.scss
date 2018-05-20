@@ -1,0 +1,130 @@
+/* subscribe */
+@import "../../base/public.scss";
+
+.video-update-wrap.article-update-wrap{
+  background:#f6f5ee;
+  .article-update{
+    overflow: auto;
+    background: #FFF;
+  }
+}
+
+.article-update{
+  .form-group{
+    .form-textarea{
+      border-color:#e1e1e1;
+      width:738px;
+      min-height:200px;
+      margin-left: 0;
+      margin-bottom: 8px;
+    }
+  }
+  .article-update-btns{
+    padding: 0 0 50px 0;
+    text-align:center;
+    .au-btn{
+      margin: 0 20px;
+      width: 120px;
+      height: 40px;
+      line-height: 40px;
+      font-size: 16px;
+      border-radius: 5px;
+      cursor: pointer;
+      text-align: center;
+      border: none;
+
+      &:hover {
+        background: #75b8f9;
+      }
+    }
+    .article-if-submit{
+      width: 180px;
+    }
+    .article-update-submit{
+      color: #FFF;
+      background: #53a6f8;
+    }
+
+    .article-update-cancel{
+      color: #666;
+      background: #FFF;
+      border: 1px solid #CCC;
+      display: inline-block;
+      &:hover{
+        background: #FFF;
+        border-color:#999;
+      }
+    }
+  }
+}
+
+.submit-success{
+  width: 330px;
+  height: 250px;
+  margin: 120px auto 0;
+
+
+  .success-icon-img{
+    width: 80px;
+    height: 80px;
+    margin: 0 auto 0;
+    background: url('../../../imgs/public/pub-success.png') no-repeat;
+  }
+
+  .success-title{
+    margin-top: 20px;
+    font-size: 24px;
+    line-height: 24px;
+    text-align: center;
+  }
+
+  .success-detail{
+    color: #999;
+    font-size: 14px;
+    line-height: 14px;
+    padding: 18px 0 20px;
+    text-align: center;
+  }
+
+  .btn {
+    float: left;
+    outline: none;
+    text-align: center;
+    border-radius: 3px;
+    margin: 0 10px;
+    overflow: hidden;
+  }
+
+  .submit-goon{
+    margin-left: 36px;
+    width: 116px;
+    height: 38px;
+    line-height: 38px;
+    border: 1px solid #53a6f8;
+    background: #fff;
+    color: #53a6f8;
+    &:hover{
+        background: #f0f0f0;
+    }
+  }
+
+  .submit-backs{
+    width: 114px;
+    height: 36px;
+    line-height: 36px;
+    border: 1px solid #e1e1e1;
+    background: #f0f0f0;
+    color: #000;
+    &:hover{
+        background: #e1e1e1;
+    }
+  }
+}
+
+.form-outside {
+  overflow: hidden;
+  .form-textarea-wrap {
+    width: 100%;
+    overflow: hidden;
+  }
+}

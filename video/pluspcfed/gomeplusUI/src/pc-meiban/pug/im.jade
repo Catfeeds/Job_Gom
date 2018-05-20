@@ -1,0 +1,180 @@
+extends ../../pc-widget/head/head-set.jade
+block css-file
+	link(type="text/css",rel="stylesheet",href="../css/public/public.css")
+	link(type="text/css",rel="stylesheet",href="../css/module/im.css")
+block body
+	body.opg
+		.wrap-im
+			.im-left
+				.im-name 白露
+				//.active为选中效果
+				a(href="javascript:;").im-chat.active
+					em.iconn-33
+					span.num 999
+				a(href="javascript:;").im-contact
+					em.iconn-23
+				a(href="javascript:;").im-set
+					em.iconn-15
+			.im-right
+				.right-top
+					.fl
+						.search-val
+							em.iconn-21
+							input(type="text")
+						a(href="javascript:;").search-btn.iconn-39
+					.fr
+						a(herf="javascript:;").iconn-3
+						//删除.iconn-45为最小化，有则为最大化
+						a(herf="javascript:;").iconn-38.iconn-45
+						a(herf="javascript:;").iconn-11
+				.right-list
+					.no-wifi
+						em.iconn-28
+						| 当前网络不可用
+					ul.clearfix.name-list
+						li.active
+							//置顶
+							span.top
+							.list-name 白露
+							.list-text
+								h2
+									| 白露
+									span.time 13:50
+								p 知道了
+						li
+							//数量
+							span.num 99+
+							.list-name
+								em.iconn-46
+							.list-text
+								h2
+									| 白露
+									span.time 13:50
+								p
+									span.red [草稿]
+									| 知道了
+									em.iconn-36.fr
+						li
+							//未读
+							span.no
+							.list-name 白露
+							.list-text
+								h2
+									| 白露
+									span.time 13:50
+								p
+									span [12条]
+									| 知道了
+						li
+							.list-name 白露
+							.list-text
+								h2
+									| 白露
+									span.time 13:50
+								p
+									em.iconn-34
+									span [语音]
+						li
+							.list-name 白露
+							.list-text
+								h2
+									| 白露
+									span.time 13:50
+								p
+									em.iconn-35
+									span [图片]
+						li
+							.list-name 白露
+							.list-text
+								h2
+									| 白露
+									span.time 13:50
+								p
+									span [位置]
+						li
+							.list-name 白露
+							.list-text
+								h2
+									| 白露
+									span.time 13:50
+								p
+									span.yuan
+				.right-con
+					.con-title 项目联调群 (60人)
+					.con-list
+						.list-new 20条新消息
+						.list-time 昨天 13:50
+						.list-more
+							a(href="javascript:;") 查看更多消息
+						.tc
+							.list-back 晓晓撤回了一条消息
+						//.list-left他人消息
+						.list-left.clearfix
+							.list-name 韵脚
+							.list-text
+								p 韵脚韵脚韵脚韵脚韵脚韵脚韵脚
+						//.list-right我的消息
+						.list-right.clearfix
+							.list-name 韵脚
+							.list-text
+								p 韵脚韵脚韵脚韵脚韵脚韵脚韵脚韵脚韵脚韵脚韵脚韵脚韵脚韵脚韵脚韵脚韵脚韵脚韵脚韵脚韵脚
+						.list-left.clearfix
+							.list-name 韵脚
+							.list-text
+								p
+									img(src="https://i6.meixincdn.com/v1/img/T1CzhTBXCT1RXrhCrK.jpg",width="150")
+						.list-right.clearfix
+							.list-name 韵脚
+							.list-text
+								p
+									img(src="https://i6.meixincdn.com/v1/img/T1CzhTBXCT1RXrhCrK.jpg",width="150")
+								em.iconn-34
+						.list-left.clearfix
+							.list-name 韵脚
+							.list-text
+								.map
+									img(src="https://i6.meixincdn.com/v1/img/T1CzhTBXCT1RXrhCrK.jpg",width="150")
+									p 朝阳区朝阳区朝阳区朝阳区朝阳区朝阳区朝阳区朝阳区朝阳区
+						.list-right.clearfix
+							.list-name 韵脚
+							.list-text
+								p
+									img(src="https://i6.meixincdn.com/v1/img/T1CzhTBXCT1RXrhCrK.jpg",width="150")
+								em.loading
+									img(src="../images/public/loading-ms.gif")
+						.list-left.clearfix
+							.list-name 韵脚
+							//.voice语音消息，.new-m未读状态
+							.list-text.voice
+								//width控制语音长度
+								.clearfix(style="width:50px")
+									em.iconn-2
+									span 2"
+								.new-m
+						.list-right.clearfix
+							.list-name 韵脚
+							//.voice语音消息，.new-m未读状态
+							.list-text.voice
+								//width控制语音长度
+								.clearfix(style="width:200px")
+									em.iconn-2
+									span 20"
+					.con-val
+						.val-title
+							em.iconn-1
+							em.iconn-22
+							.emoji
+								.emoji-list
+									ul.clearfix
+										- for (var x = 0; x < 32; x++)
+											li
+												img(src="../images/face/白眼.png")
+								.emoji-tab
+									.tab-default
+										em.iconn-1
+						pre(contenteditable="true").edit-box
+							img(src="https://i6.meixincdn.com/v1/img/T1CzhTBXCT1RXrhCrK.jpg",width="50")
+							| 11
+							img(src="../images/face/白眼.png")
+						.btn-box
+							a(href="javascript:;").btn-send 发送

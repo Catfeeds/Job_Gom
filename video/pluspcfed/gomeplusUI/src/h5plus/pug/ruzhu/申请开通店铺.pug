@@ -1,0 +1,61 @@
+doctype html
+html(lang="zh-CN", data-use-rem="750")
+	include ../../../m-widget/head/head.jade
+	link(type="text/css",rel="stylesheet",href="../../css/public/gomeplusUI.css")
+	link(type="text/css",rel="stylesheet",href="../../css/module/ruzhu/ruzhu.css")
+	link(type="text/css",rel="stylesheet",href="../../css/module/plaintext/plaintext.css")
+	body.opg.ruzhu
+		include ../../../m-widget/head/rem.jade
+		<!--header-->
+		header.header
+			.h-left
+				a.h-back(href="javascript:;")
+					em.iconn-1
+			.h-cnt.flex-cell
+				h1.h-tit 申请开通店铺
+		<!--表单-->
+		.flex-boxs.form-item.bor-b
+			.flex-box.flex-start
+				.flex-hd.c-3
+					span.c-f5c *
+					| 公司名称
+				.flex-bd
+					input.form-input(type="text",placeholder="请输入公司名称（25字以内）")
+			.flex-box.flex-start
+				.flex-hd.c-3
+					span.c-f5c *
+					| 主营类目
+				.flex-bd
+					input.form-input(type="text",placeholder="选择公司主营类目")
+					p.form-erro
+						em.iconn-103
+						span.c-f5c 错误提示语位置
+				.flex-ft
+					em.iconn-41.c-d
+			.flex-box.flex-start
+				.flex-hd.c-3
+					span.c-f5c *
+					| 联系人姓名
+				.flex-bd
+					input.form-input(type="text",placeholder="请输入联系人姓名")
+			.flex-box.flex-start
+				.flex-hd.c-3
+					span.c-f5c *
+					| 联系人电话
+				.flex-bd
+					input.form-input(type="tel",placeholder="请输入联系电话/手机")
+			.flex-box.flex-start
+				.flex-hd.c-3
+					span.c-f5c *
+					| 联系人邮箱
+				.flex-bd
+					input.form-input(type="email",placeholder="请输入业务负责人邮箱")
+			.flex-box.flex-start
+				.flex-hd.c-3
+					| 推荐码
+				.flex-bd
+					input.form-input(type="text",placeholder="请输入推荐码（非必填）")
+				.flex-ft
+					a.c-79(href="#") 帮助
+					em.iconn-41.c-d
+	a.m-btn-big(href="javascript:;") 完成

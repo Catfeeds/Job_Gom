@@ -1,0 +1,1380 @@
+html, body, div, p, ul, li, ol, dl, dt, dd, h1, h2, h3, h4, h5, h6, form, input, select, button, textarea, iframe, table, th, td, a, img {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: #fff;
+    color: #363636;
+    font-family: 'Microsoft Yahei';
+    font-size: 14px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: normal;
+}
+
+ul, ol, li, dl, dd, dt {
+    list-style: none;
+}
+
+a img, img {
+    border: 0 none;
+    vertical-align: top;
+}
+
+a:focus {
+    outline: none;
+}
+
+i, em, cite {
+    font-style: normal;
+}
+
+button {
+    cursor: pointer;
+}
+
+a {
+    text-decoration: none;
+    outline: none;
+    color: #333;
+}
+
+a:focus {
+    outline: none;
+}
+
+.fl {
+    float: left;
+}
+
+.fr {
+    float: right;
+}
+
+.clearfix:after {
+    display: block;
+    clear: both;
+    content: '';
+}
+
+.clearfix {
+    zoom: 1;
+}
+
+body, html {
+    width: 100%;
+    height: 100%;
+}
+
+.back {
+    position: absolute;
+    width: .61rem;
+    height: .68rem;
+}
+
+.back a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: url("../images/back.png") no-repeat;
+    background-size: cover;
+}
+
+.head {
+    margin: 0 auto;
+    border-radius: 50%;
+    border: .05rem solid #4c63b1;
+    overflow: hidden;
+    border: .05rem solid #4c63b1;
+}
+
+.head img {
+    width: 100%;
+    height: 100%;
+}
+
+.pitch {
+    border: .05rem solid #fa6193;
+}
+
+.btn a {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.hide {
+    display: none;
+}
+
+.pic img {
+    width: 100%;
+    height: 100%;
+}
+
+.bg {
+    position: absolute;
+    left: 50%;
+    width: 5.98rem;
+    margin-left: -2.99rem;
+}
+
+.outer, .loading {
+    width: 100%;
+    height: 100%;
+    background: url("../images/bg.jpg") no-repeat;
+    background-size: cover;
+}
+
+.loading {
+    position: absolute;
+    color: #fff;
+    font-size: 0.34rem;
+    line-height: 0.66rem;
+}
+
+.loading .loading-cont {
+    position: absolute;
+    top: 50%;
+    margin-top: -.8rem;
+    width: 100%;
+    height: 1.6rem;
+    text-align: center;
+}
+
+.loading .loading-cont .cont-img {
+    position: relative;
+    width: 0.9rem;
+    height: 0.99rem;
+    margin: 0 auto;
+    background: url("../images/loadImg2.png") no-repeat;
+    background-size: cover;
+}
+
+.loading .loading-cont .cont-img .img-box {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 50%;
+    overflow: hidden;
+}
+
+.loading .loading-cont .cont-img .img-box .box-up {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 0.99rem;
+    background: url("../images/loadImg.png") no-repeat;
+    background-size: cover;
+}
+
+.outer {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: url("../images/bg.jpg") no-repeat;
+    background-size: cover;
+    color: #fff;
+}
+
+.outer input {
+    -webkit-box-sizing: content-box;
+    box-sizing: content-box;
+}
+
+.outer > div {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+
+.outer > .music {
+    position: absolute;
+    top: .46rem;
+    left: 5.44rem;
+    width: .79rem;
+    height: .72rem;
+}
+
+.open {
+    background: url("../images/musicOpen.png") no-repeat;
+    background-size: cover;
+}
+
+.close {
+    background: url("../images/musicClose.png") no-repeat;
+    background-size: cover;
+}
+
+.home .home-text {
+    position: absolute;
+    top: 1.5rem;
+    left: 50%;
+    margin-left: -2.895rem;
+    width: 5.79rem;
+    height: 5.01rem;
+    background: url("../images/homeText.png") no-repeat;
+    background-size: cover;
+}
+
+.home .home-btn {
+    position: absolute;
+    bottom: 0.5rem;
+    left: 50%;
+    margin-left: -1.3rem;
+    width: 2.6rem;
+}
+
+.home .home-btn a {
+    display: block;
+    width: 2.6rem;
+    height: .98rem;
+}
+
+.home .home-btn .warmBtn {
+    background: url("../images/warmBtn.png") no-repeat;
+    background-size: cover;
+    margin-bottom: 0.2rem;
+}
+
+.home .home-btn .ruleBtn {
+    background: url("../images/ruleBtn.png") no-repeat;
+    background-size: cover;
+}
+
+.rule .bg {
+    top: .9rem;
+    width: 4.98rem;
+    height: 7.91rem;
+    padding: 0 .5rem;
+    background: url("../images/ruleBg.png") no-repeat;
+    background-size: cover;
+    box-sizing: content-box;
+    -webkit-box-sizing: content-box;
+}
+
+.rule .back {
+    top: -.08rem;
+    left: .42rem;
+}
+
+.rule .rule-cont {
+    margin-top: .87rem;
+    overflow: auto;
+    height: 5.9rem;
+}
+
+.rule .rule-cont .cont-text {
+    font-size: .24rem;
+    line-height: .56rem;
+}
+
+.rule .rule-cont .cont-text .text-title {
+    font-size: .4rem;
+    line-height: .4rem;
+    text-align: center;
+    padding-bottom: .48rem;
+}
+
+.info {
+    font-size: .28rem;
+    line-height: .28rem;
+    text-align: center;
+    min-height: 9.82rem;
+    background: url("../images/bg.jpg") no-repeat;
+    background-size: cover;
+}
+
+.info .bg {
+    top: .4rem;
+    margin-left: -2.995rem;
+    width: 5.99rem;
+    height: 9.42rem;
+    background: url("../images/infoBg.png") no-repeat;
+    background-size: cover;
+}
+
+.info .bg .back {
+    top: -.08rem;
+    left: 0;
+}
+
+.info .sex-title {
+    padding: .68rem 0 .4rem;
+}
+
+.info .sex-btn {
+    width: 4.76rem;
+    height: 1.84rem;
+    margin: 0 auto;
+}
+
+.info .sex-btn div {
+    width: 1.82rem;
+}
+
+.info .sex-btn .head {
+    width: 1rem;
+    height: 1rem;
+    margin-bottom: .06rem;
+}
+
+.info .sex-btn .btn {
+    width: 1.79rem;
+    height: .67rem;
+}
+
+.info .sex-btn .btn .btn-man {
+    background: url("../images/manBtn.png") no-repeat;
+    background-size: cover;
+}
+
+.info .sex-btn .btn .btn-woman {
+    background: url("../images/womanBtn.png") no-repeat;
+    background-size: cover;
+}
+
+.info .nickname {
+    position: absolute;
+    top: 3.46rem;
+    left: 50%;
+    margin-left: -2.72rem;
+    width: 5.44rem;
+    height: 1.04rem;
+}
+
+.info .nickname input {
+    width: 2.04rem;
+    height: .52rem;
+    color: #172555;
+    border: none;
+    padding: .26rem 1.7rem;
+    background: url("../images/importNo.png") no-repeat;
+    background-size: cover;
+    -webkit-box-sizing: content-box;
+    box-sizing: content-box;
+}
+
+.info .nickname input:-ms-input-placeholder {
+    color: #172555;
+    opacity: 1;
+}
+
+.info .nickname input::-webkit-input-placeholder {
+    color: #172555;
+    opacity: 1;
+}
+
+.info .nickname .pitch {
+    background: url("../images/import.png") no-repeat;
+    background-size: cover;
+}
+
+.info .picture {
+    position: absolute;
+    bottom: .98rem;
+    left: 50%;
+    margin-left: -1.215rem;
+    width: 2.43rem;
+    height: 3.52rem;
+}
+
+.info .picture .head {
+    width: 1.34rem;
+    height: 1.34rem;
+    margin: .46rem auto .5rem;
+}
+
+.info .picture .picture-btn {
+    width: 2.43rem;
+    height: .82rem;
+    background: url("../images/photoBtn.png") no-repeat;
+    background-size: cover;
+}
+
+.adjust {
+    text-align: center;
+    font-size: .28rem;
+    line-height: .28rem;
+}
+
+.adjust .bg {
+    top: .75rem;
+    height: 8.75rem;
+    background: url("../images/adjustBg.png") no-repeat;
+    background-size: cover;
+}
+
+.adjust .bg .back {
+    top: -.18rem;
+    left: .1rem;
+}
+
+.adjust .bg .adjust-title {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    padding: 1.68rem 0 .86rem;
+}
+
+.adjust .bg .head {
+    width: 2.48rem;
+    height: 2.48rem;
+}
+
+.adjust .bg .btn {
+    position: fixed;
+    z-index: 9999;
+    bottom: 0.84rem;
+    left: 50%;
+    margin-left: -1.215rem;
+    width: 2.43rem;
+    height: .91rem;
+    background: url("../images/confirm.png") no-repeat;
+    background-size: cover;
+}
+
+.adjust .bg .btn a {
+    position: relative;
+    z-index: 9999;
+    background: url("../images/confirm.png") no-repeat;
+    background-size: cover;
+}
+
+.choice {
+    text-align: center;
+    font-size: .28rem;
+    line-height: .28rem;
+}
+
+.choice .bg {
+    top: .75rem;
+    height: 7.69rem;
+    background: url("../images/choiceBg.png") no-repeat;
+    background-size: cover;
+}
+
+.choice .bg .back {
+    top: .25rem;
+    left: .42rem;
+}
+
+.choice .choice-pic {
+    position: absolute;
+    top: .44rem;
+    left: 50%;
+    margin-left: -1.4rem;
+    width: 2.8rem;
+    height: 3.5rem;
+}
+
+.choice .choice-pic .pic {
+    position: absolute;
+    top: .94rem;
+    left: 50%;
+    margin-left: -.65rem;
+    width: 1.3rem;
+    height: 1.3rem;
+}
+
+.choice .choice-pic .choice-woman, .choice .choice-pic .choice-man {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 2.8rem;
+    height: 3.5rem;
+}
+
+.choice .choice-pic .choice-woman {
+    background: url("../images/choiceWoman.png") no-repeat;
+    background-size: cover;
+}
+
+.choice .choice-pic .choice-man {
+    background: url("../images/choiceMan.png") no-repeat;
+    background-size: cover;
+}
+
+.choice .choice-text {
+    position: absolute;
+    width: 100%;
+    height: .28rem;
+    top: 4.06rem;
+}
+
+.choice .choice-btn {
+    position: absolute;
+    bottom: .96rem;
+    left: 50%;
+    margin-left: -2.33rem;
+    width: 4.66rem;
+    height: 1.92rem;
+}
+
+.choice .choice-btn .btn {
+    position: absolute;
+    width: 1.97rem;
+}
+
+.choice .choice-btn .choice1 {
+    top: 0;
+    left: 0;
+    height: .74rem;
+}
+
+.choice .choice-btn .choice1 a {
+    background: url("../images/choice1.png") no-repeat;
+    background-size: cover;
+}
+
+.choice .choice-btn .choice1 .pitch-btn {
+    background: url("../images/pitch1.png") no-repeat;
+    background-size: cover;
+}
+
+.choice .choice-btn .choice2 {
+    top: 0;
+    right: 0;
+    height: .75rem;
+}
+
+.choice .choice-btn .choice2 a {
+    background: url("../images/choice2.png") no-repeat;
+    background-size: cover;
+}
+
+.choice .choice-btn .choice2 .pitch-btn {
+    background: url("../images/pitch2.png") no-repeat;
+    background-size: cover;
+}
+
+.choice .choice-btn .choice3 {
+    bottom: 0;
+    left: 0;
+    height: .75rem;
+}
+
+.choice .choice-btn .choice3 a {
+    background: url("../images/choice3.png") no-repeat;
+    background-size: cover;
+}
+
+.choice .choice-btn .choice3 .pitch-btn {
+    background: url("../images/pitch3.png") no-repeat;
+    background-size: cover;
+}
+
+.choice .choice-btn .choice4 {
+    bottom: 0;
+    right: 0;
+    height: .79rem;
+}
+
+.choice .choice-btn .choice4 a {
+    background: url("../images/choice4.png") no-repeat;
+    background-size: cover;
+}
+
+.choice .choice-btn .choice4 .pitch-btn {
+    background: url("../images/pitch4.png") no-repeat;
+    background-size: cover;
+}
+
+.choice .ok-btn {
+    position: absolute;
+    bottom: .78rem;
+    left: 50%;
+    margin-left: -1.215rem;
+    width: 2.43rem;
+    height: .91rem;
+    background: url("../images/ok.png") no-repeat;
+    background-size: cover;
+}
+
+.equip {
+    font-size: .28rem;
+    line-height: .58rem;
+}
+
+.equip .bg {
+    top: .75rem;
+    height: 7.91rem;
+    background: url("../images/choiceBg.png") no-repeat;
+    background-size: cover;
+}
+
+.equip .bg .equip-text {
+    position: absolute;
+    width: 2.2rem;
+    top: .9rem;
+    left: 50%;
+    margin-left: -1.1rem;
+    text-align: center;
+}
+
+.equip .bg .equip-pic {
+    position: absolute;
+    bottom: .22rem;
+    left: 50%;
+    margin-left: -2.55rem;
+    width: 5.1rem;
+    height: 4.62rem;
+}
+
+.equip .bg .pic-title {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 5.1rem;
+    height: 2.03rem;
+    background: url("../images/equipTitle.png") no-repeat;
+    background-size: cover;
+}
+
+.equip .bg .pic-head {
+    position: absolute;
+    bottom: .66rem;
+    left: 50%;
+    margin-left: -1.425rem;
+    width: 2.85rem;
+    height: 3.23rem;
+}
+
+.equip .bg .pic {
+    position: absolute;
+    top: .8rem;
+    left: 50%;
+    margin-left: -.6rem;
+    width: 1.2rem;
+    height: 1.2rem;
+}
+
+.equip .bg .head-woman, .equip .bg .head-man {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 2.85rem;
+    height: 3.23rem;
+}
+
+.equip .bg .head-woman {
+    background: url("../images/equipWoman.png") no-repeat;
+    background-size: cover;
+}
+
+.equip .bg .head-man {
+    background: url("../images/equipMan.png") no-repeat;
+    background-size: cover;
+}
+
+.equip .bg .pic-equip1 {
+    position: absolute;
+    right: -.32rem;
+    bottom: -.35rem;
+    width: 1.22rem;
+    height: 1.55rem;
+    background: url("../images/equip1.png") no-repeat;
+    background-size: cover;
+}
+
+.equip .bg .pic-equip2 {
+    position: absolute;
+    left: -.08rem;
+    bottom: -.68rem;
+    width: 1.93rem;
+    height: 1.19rem;
+    background: url("../images/equip2.png") no-repeat;
+    background-size: cover;
+}
+
+.equip .bg .pic-equip3 {
+    position: absolute;
+    left: .32rem;
+    bottom: .16rem;
+    width: 1.16rem;
+    height: .83rem;
+    background: url("../images/equip3.png") no-repeat;
+    background-size: cover;
+}
+
+.equip .bg .pic-equip4 {
+    position: absolute;
+    right: -.45rem;
+    bottom: -.55rem;
+    width: 1.48rem;
+    height: .98rem;
+    background: url("../images/equip4.png") no-repeat;
+    background-size: cover;
+}
+
+.equip .equip-btn ,.equip .android-btn{
+    position:absolute;
+    bottom:.62rem;
+    left:50%;
+    height:.91rem;
+    width:2.43rem;
+    margin-left: -1.215rem;
+}
+.equip .android-btn a{
+    background:url("../images/share.png") no-repeat;
+    background-size: cover;
+}
+.equip .equip-btn {
+    margin-left: -2.6rem;
+    width: 5.2rem;
+}
+
+.equip .equip-btn .btn {
+    width: 2.43rem;
+    height: .91rem;
+}
+
+.equip .equip-btn .poster {
+    float: left;
+}
+
+.equip .equip-btn .poster a {
+    background: url("../images/poster.png") no-repeat;
+    background-size: cover;
+}
+
+.equip .equip-btn .share {
+    float: right;
+}
+
+.equip .equip-btn .share a {
+    background: url("../images/share.png") no-repeat;
+    background-size: cover;
+}
+
+.friend {
+    font-size: .28rem;
+    line-height: .58rem;
+    text-align: center;
+}
+
+.friend .bg {
+    top: .42rem;
+    height: 7.64rem;
+    background: url("../images/friendBg.png") no-repeat;
+    background-size: cover;
+}
+
+.friend .bg .back {
+    top: .32rem;
+    left: .32rem;
+}
+
+.friend .friend-text {
+    position: absolute;
+    top: 1.1rem;
+    left: 50%;
+    margin-left: -2.65rem;
+    width: 5.3rem;
+}
+
+.friend .friend-head {
+    position: absolute;
+    bottom: .7rem;
+    left: 50%;
+    margin-left: -1.535rem;
+    width: 3.07rem;
+    height: 3.65rem;
+}
+
+.friend .friend-head .pic {
+    position: absolute;
+    top: .9rem;
+    left: 50%;
+    margin-left: -.68rem;
+    width: 1.36rem;
+    height: 1.36rem;
+}
+
+.friend .friend-head .friend-woman, .friend .friend-head .friend-man {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 3.07rem;
+    height: 3.65rem;
+}
+
+.friend .friend-head .friend-woman {
+    background: url("../images/friendWoman.png") no-repeat;
+    background-size: cover;
+}
+
+.friend .friend-head .friend-man {
+    background: url("../images/friendMan.png") no-repeat;
+    background-size: cover;
+}
+
+.friend .btn {
+    position: absolute;
+    bottom: .62rem;
+    left: 50%;
+    margin-left: -1.215rem;
+    width: 2.43rem;
+    height: .91rem;
+}
+
+.friend .btn a {
+    background: url("../images/manual.png") no-repeat;
+    background-size: cover;
+}
+
+.flame {
+    text-align: center;
+}
+
+.flame .bg {
+    top: .72rem;
+    height: 7.64rem;
+    background: url("../images/friendBg.png") no-repeat;
+    background-size: cover;
+}
+
+.flame .bg .back {
+    top: -.15rem;
+    left: .25rem;
+}
+
+.flame .bg .time {
+    position: absolute;
+    top: -.3rem;
+    left: 50%;
+    margin-left: -.7rem;
+    width: 1.4rem;
+    height: .57rem;
+    font-size: .36rem;
+    line-height: .52rem;
+    background: url("../images/time.png") no-repeat;
+    background-size: cover;
+}
+
+.flame .flame-text {
+    position: absolute;
+    bottom: .2rem;
+    left: 50%;
+    margin-left: -1.5rem;
+    width: 3rem;
+}
+
+.flame .text {
+    font-size: .24rem;
+    line-height: .46rem;
+}
+
+.flame .text-pic {
+    position: absolute;
+    bottom: .75rem;
+    left: 50%;
+    margin-left: -.85rem;
+    width: 1.7rem;
+    height: 1.67rem;
+    background: url("../images/flame.png") no-repeat;
+    background-size: cover;
+}
+
+.flame .flame-figure, .flame .flame-woman, .flame .flame-man {
+    position: absolute;
+    width: 4rem;
+    height: 4.77rem;
+}
+
+.flame .flame-figure {
+    bottom: .72rem;
+    left: 50%;
+    margin-left: -2rem;
+}
+
+.flame .flame-woman {
+    bottom: 0;
+    background: url("../images/flameWoman.png") no-repeat;
+    background-size: cover;
+}
+
+.flame .flame-man {
+    bottom: 0;
+    background: url("../images/flameMan.png") no-repeat;
+    background-size: cover;
+}
+
+.flame .flame-popup {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 6.4rem;
+    z-index: 999;
+}
+
+.result .bg {
+    top: .46rem;
+    height: 7.6rem;
+    background: url("../images/resultBg.png") no-repeat;
+    background-size: cover;
+}
+
+.result .bg .back {
+    top: .27rem;
+    left: .25rem;
+}
+
+.result .result-text {
+    position: absolute;
+    top: .7rem;
+    width: 100%;
+    text-align: center;
+    font-size: .28rem;
+    line-height: .68rem;
+}
+
+.result .result-text span {
+    color: #feb938;
+    font-size: .52rem;
+}
+
+.result .result-figure, .result .result-woman, .result .result-man {
+    position: absolute;
+    width: 4.1rem;
+    height: 4.13rem;
+}
+
+.result .result-figure {
+    left: 50%;
+    margin-left: -2.05rem;
+    bottom: .46rem;
+}
+
+.result .result-woman {
+    bottom: 0;
+    background: url("../images/resultWoman.png") no-repeat;
+    background-size: cover;
+}
+
+.result .result-man {
+    bottom: 0;
+    background: url("../images/resultMan.png") no-repeat;
+    background-size: cover;
+}
+
+.common-btn {
+    position: absolute;
+    bottom: .62rem;
+    left: 50%;
+    margin-left: -2.6rem;
+    width: 5.2rem;
+    height: .91rem;
+}
+
+.common-btn .btn {
+    width: 2.43rem;
+    height: .91rem;
+}
+
+.common-btn .also {
+    background: url("../images/also.png") no-repeat;
+    background-size: cover;
+}
+
+.common-btn .stroll {
+    background: url("../images/stroll.png") no-repeat;
+    background-size: cover;
+}
+
+.cruel .bg {
+    top: .52rem;
+    width: 5.98rem;
+    height: 7.69rem;
+    background: url("../images/cruelBg.png") no-repeat;
+    background-size: cover;
+}
+
+.cruel .bg .back {
+    top: -.06rem;
+    left: .28rem;
+}
+
+.cruel .cruel-cont {
+    position: absolute;
+    top: .64rem;
+    left: 50%;
+    margin-left: -2.68rem;
+    width: 5.36rem;
+    height: 6.2rem;
+}
+
+.cruel .cont-title {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 5.36rem;
+    padding-top: .68rem;
+    height: 2.23rem;
+    background: url("../images/cruelTitle.png") no-repeat;
+    background-size: cover;
+    color: #151d5d;
+    font-size: .26rem;
+    line-height: .38rem;
+    text-align: center;
+}
+
+.cruel .cont-head {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    margin-left: -2.095rem;
+    width: 4.19rem;
+    height: 3.68rem;
+}
+
+.cruel .pic {
+    position: absolute;
+    top: .9rem;
+    left: 50%;
+    margin-left: -.7rem;
+    width: 1.4rem;
+    height: 1.4rem;
+}
+
+.cruel .cruel-woman, .cruel .cruel-man {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 4.19rem;
+    height: 3.68rem;
+}
+
+.cruel .cruel-woman {
+    background: url("../images/cruelWoman.png") no-repeat;
+    background-size: cover;
+}
+
+.cruel .cruel-man {
+    background: url("../images/cruelMan.png") no-repeat;
+    background-size: cover;
+}
+
+.flame-temp, .present-temp {
+    position: absolute;
+    left: .08rem;
+    bottom: .8rem;
+    width: .6rem;
+    height: 4.55rem;
+}
+
+.flame-temp .temp, .present-temp .temp {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: .45rem;
+    height: 4.55rem;
+    background: url("../images/temp.png") no-repeat;
+    background-size: cover;
+}
+
+.flame-temp .current, .present-temp .current {
+    position: absolute;
+    left: 0;
+    top: 85%;
+    width: .53rem;
+    height: .32rem;
+    background: url("../images/current.png") no-repeat;
+    background-size: cover;
+}
+
+.present {
+    text-align: center;
+}
+
+.present .bg {
+    top: .46rem;
+    height: 7.72rem;
+    background: url("../images/presentBg.png") no-repeat;
+    background-size: cover;
+}
+
+.present .bg .back {
+    top: .3rem;
+    left: .22rem;
+}
+
+.present .present-title {
+    position: absolute;
+    top: .86rem;
+    width: 100%;
+    font-size: .28rem;
+    line-height: .6rem;
+}
+
+.present .present-title .num {
+    color: #feb938;
+    font-size: .44rem;
+}
+
+.present .present-temp {
+    bottom: .87rem;
+}
+
+.present .current {
+    top: 50%;
+}
+
+.present .present-figure {
+    position: absolute;
+    right: .94rem;
+    bottom: 1rem;
+    width: 3.9rem;
+    height: 4.13rem;
+}
+
+.present .present-woman, .present .present-man {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 3.9rem;
+    height: 4.13rem;
+}
+
+.present .present-woman {
+    background: url("../images/presentWoman.png") no-repeat;
+    background-size: cover;
+}
+
+.present .present-man {
+    background: url("../images/presentMan.png") no-repeat;
+    background-size: cover;
+}
+
+.present .numerical {
+    background: url("../images/numerical.png") no-repeat;
+    background-size: cover;
+}
+
+.present .common-hint {
+    position: absolute;
+    width: 100%;
+    bottom: .2rem;
+    font-size: .2rem;
+    line-height: .24rem;
+}
+
+.exchange .bg {
+    top: .52rem;
+    height: 8.99rem;
+    background: url("../images/exchangeBg.png") no-repeat;
+    background-size: cover;
+}
+
+.exchange .bg .back {
+    top: .3rem;
+    left: .42rem;
+}
+
+.exchange ul {
+    position: absolute;
+    top: .68rem;
+    left: 50%;
+    margin-left: -2.5rem;
+    width: 5rem;
+}
+
+.exchange li {
+    width: 100%;
+    padding-top: .36rem;
+    height: 1.12rem;
+    border-bottom: 1px solid #fff;
+}
+
+.exchange li .btn {
+    width: 1.57rem;
+    height: .72rem;
+}
+
+.exchange li .btn a {
+    background: url("../images/unclaimed.png") no-repeat;
+    background-size: cover;
+}
+
+.exchange li .btn .already {
+    background: url("../images/already.png") no-repeat;
+    background-size: cover;
+}
+
+.exchange .title {
+    text-align: center;
+    font-size: .36rem;
+    padding: 0 0 .36rem;
+}
+
+.exchange .title .name {
+    line-height: .36rem;
+    padding-bottom: .2rem;
+}
+
+.exchange .exchange-num {
+    width: 3.4rem;
+    margin: 0 auto;
+}
+
+.exchange .exchange-num .num {
+    font-size: .66rem;
+    color: #feb938;
+    line-height: .66rem;
+    margin-top: -.1rem;
+}
+
+.exchange .ticket {
+    width: 3.4rem;
+}
+
+.exchange .ticket p {
+    font-size: .2rem;
+    line-height: .3rem;
+    color: #33f8fe;
+}
+
+.exchange .ticket .ticket-money {
+    font-size: .36rem;
+    line-height: .46rem;
+    color: #feb938;
+}
+
+.exchange .hint {
+    position: absolute;
+    width: 100%;
+    bottom: 1.1rem;
+    text-align: center;
+    font-size: .2rem;
+    line-height: .46rem;
+}
+
+.exchange .more-btn {
+    position: absolute;
+    left: 50%;
+    bottom: -.2rem;
+    margin-left: -1.295rem;
+    width: 2.59rem;
+    height: .81rem;
+    background: url("../images/more.png") no-repeat;
+    background-size: cover;
+}
+
+.successful .bg {
+    top: .48rem;
+    height: 7.43rem;
+    background: url("../images/successfulBg.png") no-repeat;
+    background-size: cover;
+}
+
+.successful .bg .back {
+    top: .32rem;
+    left: .4rem;
+}
+
+.successful .title {
+    text-align: center;
+    width: 100%;
+    margin: 0 auto;
+    font-size: .36rem;
+    line-height: .36rem;
+    padding: .9rem 0 .4rem;
+    border-bottom: 1px solid #fff;
+}
+
+.successful .title .successful-title {
+    padding-bottom: .38rem;
+}
+
+.successful .title .num {
+    color: #feb938;
+    font-size: .68rem;
+}
+
+.successful .successful-coupon {
+    position: absolute;
+    bottom: 1.16rem;
+    left: 50%;
+    margin-left: -2.06rem;
+    width: 4.12rem;
+    height: 3.23rem;
+}
+
+.successful .successful-coupon div {
+    width: 4.12rem;
+    height: 3.23rem;
+}
+
+.successful .coupon1{
+    background:url("../images/coupon2.png") no-repeat;
+    background-size: cover;
+}
+.successful .coupon2{
+    background:url("../images/coupon5.png") no-repeat;
+    background-size: cover;
+}
+.successful .coupon3{
+    background:url("../images/coupon121.png") no-repeat;
+    background-size: cover;
+}
+.successful .continue {
+    background: url("../images/continue.png") no-repeat;
+    background-size: cover;
+}
+
+.successful .vsenue {
+    background: url("../images/vsenue.png") no-repeat;
+    background-size: cover;
+}
+
+.shareWx .share-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #000;
+    opacity: .8;
+}
+
+.shareWx .share-title {
+    position: absolute;
+    top: .37rem;
+    right: .48rem;
+    width: 4.36rem;
+    height: 2.82rem;
+    background: url("../images/shareTitle.png") no-repeat;
+    background-size: cover;
+}
+.outer > .poster-hint{
+    position:fixed;
+    width:100%;
+    height:.5rem;
+    line-height:.5rem;
+    z-index: 99999;
+    left:0;
+    bottom:0;
+    top: 100%;
+    margin-top: -0.5rem;
+    font-size: .22rem;
+    color:#fff;
+    text-align: center;
+    .hint-bg,.hint-text{
+        position:absolute;
+        top:0;
+        left:0;
+        width:100%;
+        height:100%;
+    }
+    .hint-bg{
+        background:#000;
+        opacity:.7;
+    }
+}

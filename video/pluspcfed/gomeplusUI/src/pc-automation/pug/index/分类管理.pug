@@ -1,0 +1,163 @@
+//- head.jade
+extends ../../../pc-widget/head/head-set.jade
+block title
+	title 自动化管理平台-新建分类
+	meta(name="author",content="国美plus")
+block css-file 
+	link(type="text/css",rel="stylesheet",href="../../css/public/public.css")
+	link(type="text/css",rel="stylesheet",href="../../css/module/page.css")
+	script(type="javascript" src="http://code.jquery.com/jquery-1.4.2.js")
+block body
+	body.opg
+		.header
+			img(src="../../images/log.jpg").log
+			div.head-right
+		.con-box
+			.sider
+				ul.list
+					li.curr
+						em.icon-1
+						span.name 分类管理
+						em.icon-2
+						ol.sub 
+							li
+								a(href="#") 项目1
+							li
+								a(href="#") 项目1
+							li
+								a(href="#") case
+					li 
+						em.icon-1
+						span.name 分类管理2
+						em.icon-2
+						ol.sub 
+							li
+								a(href="#") 项目1
+							li
+								a(href="#") 项目1
+							li
+								a(href="#") 项目3
+					li 
+						em.icon-1
+						span.name 分类管理2
+						em.icon-2
+						ol.sub 
+							li
+								a(href="#") 项目1
+							li
+								a(href="#") 项目1
+							li
+								a(href="#") 项目3
+					li 
+						em.icon-1
+						span.name 分类管理2
+						em.icon-2
+						ol.sub 
+							li
+								a(href="#") 项目1
+							li
+								a(href="#") 项目1
+							li
+								a(href="#") 项目3
+			.right-content
+				.right-box
+					div.seach-box
+						input(type="input" placeholder="三级分类" size="50").ipt-txt
+						button.btn-normal 搜索
+						button.btn-normal 清空
+					div.new-class
+						em.btn-normal.btn-add 新建二级分类
+					div.table-box
+						table.tbl.tabl-class
+							tr
+								th 分类编号
+								th 二级分类名称
+								th(width="310") 操作
+							tr.hover
+								td 11101
+								td 分类编号
+								td.btn-link
+									a.btn-normal 修改名称
+									a.btn-normal.btn-hover 删除分类2
+									a.btn-normal 三级分类查看
+							tr 
+								td 11101
+								td 分类编号
+								td.btn-link
+									a.btn-normal 修改名称
+									a.btn-normal 删除分类
+									a.btn-normal 三级分类查看
+							tr 
+								td 11101
+								td 分类编号
+								td.btn-link
+									a.btn-normal 修改名称
+									a.btn-normal 删除分类
+									a.btn-normal 三级分类查看
+							tr 
+								td 11101
+								td 分类编号
+								td.btn-link
+									a.btn-normal 修改名称
+									a.btn-normal 删除分类
+									a.btn-normal 三级分类查看
+							tr 
+								td 11101
+								td 分类编号
+								td.btn-link
+									a.btn-normal 修改名称
+									a.btn-normal 删除分类
+									a.btn-normal 三级分类查看
+							tr 
+								td 11101
+								td 分类编号
+								td.btn-link
+									a.btn-normal 修改名称
+									a.btn-normal 删除分类
+									a.btn-normal 三级分类查看
+						div.fenye
+							a 首页
+							a 上一页
+							span.curr 4
+							a(href="#") 下一页
+							a(href="#") 尾页
+							span 当前11页
+							span 共11页
+		div.mark
+		div.dlg-box#dlg-1 
+			div.hd
+				em.close
+			div.bd
+				div.select-box
+					.span.ipt-bg
+						input(type="text" value="" placeholder="请输入").ipt-txt
+				div.btn-box
+					button.btn-normal.btn-submit 提交
+
+		div.dlg-box.dlg-alert 
+			div.hd
+				em.close
+			div.bd
+				p.t-c 是否确定要删除？
+				div.btn-box
+					button.btn-normal.btn-cancel 取消
+					button.btn-normal.btn-sure 确定
+		div.dlg-box#dlg-2
+			div.hd
+				em.close
+			div.bd
+				div.select-box
+					select 
+						option 选择项目
+					select 
+						option 选择一级分类
+					select 
+						option 选择二级分类
+					select 
+						option 选择三级分类
+				div.btn-box
+					button.btn-normal 提交
+
+
+
+		

@@ -1,0 +1,98 @@
+//- extends layout.jade
+extends ../public/layout.jade
+
+block title
+	title 我的账户-充值
+//- block link-theme
+//- 	link(rel='stylesheet' type="text/css" href="../../css/module/account.css")
+
+//- account
+block content
+	include ../public/menu.jade
+	div.content-main
+		div.amp-account
+			// crumbs
+			div.crumbs
+				a(href="javascript:void(0);")
+					span 我的账户
+					em >
+				a(href="javascript:void(0);").actived
+					span 账户概况
+					em >
+			// amp-module
+			div.amp-module
+				div.module-statis
+					div.statis-infor
+						div.infor-name
+							p
+								span.name-icon
+								span.name-title 现金账户
+						div.infor-data
+							ul
+								li
+									p
+										strong 广告帐户余额
+										span ¥80000
+								li
+									p
+										strong 今日广告花费
+										span ¥80000
+								li
+									p
+										strong 返利帐户余额
+										span ¥80000
+								li
+									p
+										strong 今日返利花费
+										span ¥80000
+					div.statis-fn
+						a(href="#").btn.btn-primary 充值
+						a(href="#").btn.btn-base-gray 设置余额提醒
+						a(href="#").btn.btn-base-gray 资金划拔
+	// 遮罩
+	div.master
+	// 现金帐户充值
+	div.amp-drawer
+		div.drawer-part
+			h2.part-header
+				span.header-text 现金帐户充值
+				span.header-fn
+					em.icon.icon-close
+			div.money-cont
+				div.form-column
+					div.column-group
+						div.group-aside
+							i.group-tip *
+							| 充值金额：
+						div.group-detail
+							div.detail-row 
+								div.money-classify
+									a(href="#").btn-square 5000
+									a(href="#").btn-square 8000
+									a(href="#").btn-square 10000
+									a(href="#").btn-square 20000
+									a(href="#").btn-square 50000
+									a(href="#").btn-square.actived 其它金额
+								div.money-other
+									span.form-text 其他金额
+									div.ele-input
+										input(type="text")
+									span.form-text 元
+									div.form-gray-text 请输入1000以上的整数
+				div.column-group
+					div.group-aside
+						| 充值方式：
+					div.group-detail
+						div.detail-row 
+							div.money-classify
+								a(href="#").btn-square.btn-square-large.actived 网银充值
+								a(href="#").btn-square.btn-square-large 钱包充值
+				div.column-group
+					div.group-aside
+						| 支付方式：
+					div.group-detail
+						div.detail-row 
+							span.form-infor 银联
+		div.drawer-btn
+			a(href="#").btn.btn-primary 充值
+			a(href="#").btn.btn-gray 关闭

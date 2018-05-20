@@ -1,0 +1,50 @@
+.aside-talent{
+    float: left;
+    //margin-right: 20px;
+    width: 200px;
+    height: 1300px;
+    background:#fff;
+    font-family: 'PingFangSC-Regular';
+    .talent-list{
+        width:100%;
+        font-size: 16px;
+        color:#333;
+        padding: 18px 0;
+        dt,dd{
+            height:40px;
+            line-height: 40px;
+        }
+        
+        .list-title{
+            padding-bottom: 16px;
+        }
+        dd,dt{
+            a{
+                color:#666;
+                display:block;                
+                width:170px;
+                padding-left: 30px;
+                &:hover{
+                    background:#5D637F;
+                    color:#fff;
+                }
+            }
+            .active{
+                border:none;
+                background:#5D637F;
+                color:#fff;
+            }
+        }
+        dt{
+            a{
+                color:#333;              
+            }
+        }
+        .list-protocol{
+            margin-top: 1050px;
+        }
+    }
+}
+.talent{    
+    _width:expression((document.documentElement.clientWidth||document.body.clientWidth)<1280?"1280px":"");
+}

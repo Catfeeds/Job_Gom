@@ -1,0 +1,99 @@
+@import "reset";
+@import "../components/_app.scss";
+.clearfix:after {
+    content: "";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+
+.back-top{
+    display: none;
+    position: fixed;
+    right: rem(20);
+    bottom: rem(123);
+    width: rem(80);
+    height: rem(80);
+    line-height: rem(80);
+    text-align: center;
+    font-size: rem(38);
+    color: #fff;
+    background: rgba(41,41,41,0.3);
+    border-radius: rem(40);
+    z-index: 999;
+}
+
+.head-bar{
+    height: rem(88px);
+    line-height: rem(44px);
+    padding: rem(22) rem(10) rem(22) 0;
+    position: relative;
+    z-index: 100;
+    border-bottom: rem(1px) solid #ddd;
+    text-align: center;
+    background: #fff;
+    font-size: rem(36);
+    a{
+      display: block;
+      color: #202020;
+    }
+    .icon-logo{
+        display: inline-block;
+        width: rem(42px);
+        height: rem(44px);
+        background: url(../../../imgs/public/icon-logo.png) no-repeat;
+        background-size: cover;
+        vertical-align: rem(-5px);
+    }
+}
+
+//icon图标
+@font-face {
+  font-family: 'icomoon';
+  src:  url('../../../fonts/icomoon.eot');
+  src:  url('../../../fonts/icomoon.eot') format('embedded-opentype'),
+    url('../../../fonts/icomoon.ttf') format('truetype'),
+    url('../../../fonts/icomoon.woff') format('woff'),
+    url('../../../fonts/icomoon.svg') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-1:before {
+  content: "\e900";
+}
+.icon-2:before {
+  content: "\e901";
+}
+.icon-3:before {
+  content: "\e902";
+}
+.icon-4:before {
+  content: "\e903";
+}
+.icon-5:before {
+  content: "\e904";
+}
+.icon-6:before {
+  content: "\e905";
+}
+.icon-7:before {
+  content: "\e906";
+}
+.icon-8:before {
+  content: "\e907";
+}

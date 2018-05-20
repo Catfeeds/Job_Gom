@@ -1,0 +1,15 @@
+doctype html
+html(lang="zh-CN")
+	include ../common/head.jade
+	link(type="text/css",rel="stylesheet",href="../../css/public/public.css")
+	body.opg
+		.wrap-box.clearfix
+			.password.login
+				.img
+					img(src="../../images/login-logo.png")
+				input(type="text",value="",placeholder="用户名戳这里")
+				input(type="text",value="",placeholder="接下来是密码")
+				.error-box
+					p.error 密码输入错误！
+				.btn-password
+					a(href="#").btn.btn-big.btn-block.btn-blue 登  录

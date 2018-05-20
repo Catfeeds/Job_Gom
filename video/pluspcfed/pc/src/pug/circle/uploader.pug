@@ -1,0 +1,47 @@
+doctype html
+html(lang="zh-CN")
+	meta(charset="utf-8")
+	title 国美圈子
+	meta(http-equiv="Content-Type",content="text/html,charset=UTF-8")
+	meta(http-equiv="X-UA-Compatible",content="IE=edge")
+	meta(http-equiv="Expires",content="0")
+	meta(http-equiv="Pragma",content="no-cache")
+	meta(http-equiv="Cache-control",content="no-cache")
+	meta(http-equiv="Cache",content="no-cache")
+	//- IOS中Safari允许全屏浏览：
+	meta(content="yes",name="apple-mobile-web-app-capable")
+	//- IOS中Safari顶端状态条样式：
+	meta(content="black",name="apple-mobile-web-app-status-bar-style")
+	//- 忽略将数字变为电话号码：
+	meta(content="telephone=no",name="format-detection")
+	//- meta(name="viewport",content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no")
+	script(type="text/javascript") (function(win,lib){var doc=win.document;var docEl=doc.documentElement;var metaEl=doc.querySelector('meta[name="viewport"]');var flexibleEl=doc.querySelector('meta[name="flexible"]');var dpr=0;var scale=0;var tid;var flexible=lib.flexible||(lib.flexible={});if(metaEl){//console.warn('将根据已有的meta标签来设置缩放比例');var match=metaEl.getAttribute('content').match(/initial\-scale=([\d\.]+)/);if(match){scale=parseFloat(match[1]);dpr=parseInt(1/scale)}}else if(flexibleEl){var content=flexibleEl.getAttribute('content');if(content){var initialDpr=content.match(/initial\-dpr=([\d\.]+)/);var maximumDpr=content.match(/maximum\-dpr=([\d\.]+)/);if(initialDpr){dpr=parseFloat(initialDpr[1]);scale=parseFloat((1/dpr).toFixed(2))}if(maximumDpr){dpr=parseFloat(maximumDpr[1]);scale=parseFloat((1/dpr).toFixed(2))}}}if(!dpr&&!scale){var isAndroid=win.navigator.appVersion.match(/android/gi);var isIPhone=win.navigator.appVersion.match(/iphone/gi);var devicePixelRatio=win.devicePixelRatio;if(isIPhone){if(devicePixelRatio>=3&&(!dpr||dpr>=3)){dpr=3}else if(devicePixelRatio>=2&&(!dpr||dpr>=2)){dpr=2}else{dpr=1}}else{dpr=1}scale=1/dpr}docEl.setAttribute('data-dpr',dpr);if(!metaEl){metaEl=doc.createElement('meta');metaEl.setAttribute('name','viewport');metaEl.setAttribute('content','initial-scale='+scale+', maximum-scale='+scale+', minimum-scale='+scale+', user-scalable=no');if(docEl.firstElementChild){docEl.firstElementChild.appendChild(metaEl)}else{var wrap=doc.createElement('div');wrap.appendChild(metaEl);doc.write(wrap.innerHTML)}}var docEl=doc.documentElement;var width=docEl.getBoundingClientRect().width;var rem=width/18.75;docEl.style.fontSize=rem+'px';flexible.rem=win.rem=rem})(window,window['lib']||(window['lib']={}));
+	link(type="text/css",rel="stylesheet",href="../../css/module/uploader.css")
+	body.opg
+		div.wrap-mobox
+			.box-topic
+				a(href="javascript:")
+					img(src="../../images/uploader/home-icon.png").home-icon
+				span.gome-plus.title 国美
+			.box-main
+				.main-topic.clearfix
+					ol.main-list.clearfix
+						//- li.main-list-cube
+							img(src="../../images/uploader/up-icon-ed.png").cube-up-pic
+							input.touch-up-pic(type="file",multiple,accept="image/jpg,image/jpeg,image/png,image/gif,image/JPEG")#up_icon_more
+					.main-touch-btn
+						.touch-btn-icon
+							img(src="../../images/uploader/up-icon.png").touch-pic-icon
+							input.touch-input-icon(type="file",multiple,accept="image/jpg,image/jpeg,image/png,image/gif,image/JPEG")#up_icon
+						p.touch-btn-cell 上传手机图片
+						p.touch-btn-lit 最多可同时上传20张照片
+				.main-down
+					.main-toast
+
+		div.main-down
+			span.main-prompt 您本次还可以上传
+			i.main-photo-number 0
+			span.main-prompt 张
+	script(type="text/javascript",src="../../js/conf/vendor.js")
+	script(type="text/javascript",src="../../js/conf/uploader.js")
+

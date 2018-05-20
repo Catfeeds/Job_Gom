@@ -1,0 +1,105 @@
+doctype html
+html(lang="zh-CN")
+	include ../../widget/head/head.pug
+	link(type="text/css",rel="stylesheet",href="../../css/public/public.css")
+	link(type="text/css",rel="stylesheet",href="../../css/module/returns.css")
+	body.opg
+		include ../../widget/header/header.pug
+		include ../../widget/menu/menu.pug
+		.crumbs-box
+			a(href="javascript:;") 退款售后
+			em >
+			a(href="javascript:;") 退款管理
+			em >
+			a(href="javascript:;") 申请的退换货
+			em >
+			span.crnmb-activ 查看详情
+		.wrap-box
+			.bg-white
+				.order-detail-box
+					h2.order-detail-title 订单详情
+					ul.order-detail.clearfix
+						li
+							label 退款类型：
+							p 换货申请
+						li
+							label 退款原因：
+							p 尺寸问题
+						li
+							label 退款编号：
+							p 6666666666
+						li
+							label 退款金额：
+							p ￥197.00
+						li
+							label 处理进度：
+							p.order-state 卖家已收货
+						li.refund
+							label 退款说明：
+							p 您的退货单由于退回商品不符合验收发生了扣款XX元，实际退款XX元，如有疑问请联系客服
+						li.no-float
+							label 寄回地址：
+							p 卖家已收货卖家已收货卖家已收货卖家已收货
+						li.no-float.message
+							label 退换货提示：
+							p
+								| 您的商品需要商家上门取货。取货前会短信通知您取货时间。有问题请联系国美小美。
+								em
+									| 商家取货后，请点击“
+									strong 确认已取货
+									| ”按钮，以免 耽误您的退款。
+						
+					.tc
+						a(href="#").w120-h40.order-btn-orange 发货
+			table.shop-car-list.order-information
+				tr.bor-none
+					th.width660
+						.merchandise-news.margi-left20 商品信息
+					th 单价 (元)
+					th 数量
+					th 优惠
+					th 运费
+			table.shop-car-list.order-information
+				tr
+					td.align-left(colspan="5")
+						.check-all
+							div.shop-arl-check.icon-fontsize
+								em.iconn-64
+							a(href="javascript:;").store-name-text 1qq马克华妃旗舰店
+							a(href="javascript:;").connect-shop 联系商家
+				tr
+					td(colspan="3")
+						.products-by
+							.graphic.clearfix
+								a(href="javascript:;")
+									.product-bx
+										img(src="../../images/public/default-img2.jpg")
+									.product-name
+										a(href="javascript:;").product-title 洗颜专科矿物质水清透防晒乳液洗颜专科矿物质水清透防晒乳液防晒乳液洗颜专科矿物质水清透防晒乳液洗颜专科矿物质水清透防晒乳液防晒乳液
+										p.product-color 颜色：SPF30 .PA 40ml
+										p.product-source
+											span 来自美店
+							span.price-count ￥500.00
+							span.price-count 20
+					td.bor-r
+						.new-border-bom ￥12.00
+					td
+						.new-border-bom ￥1122.00
+			div.items-total
+				p
+					span.goods-together
+						strong.numb 4 
+						| 件商品，商品合计：
+					span ￥300.00
+				p
+					span.goods-together 运费：
+					span ￥30.00
+				p
+					span.goods-together 使用优惠券：
+					span ￥300.00
+				p
+					span.goods-together 使用国美币：
+					span ￥0.00
+		include ../../widget/footer/footer.pug
+			
+		

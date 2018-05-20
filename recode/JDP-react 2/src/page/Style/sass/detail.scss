@@ -1,0 +1,88 @@
+.detailMain{
+  width: 100%;
+
+  .detailtitle{
+    width: 100%;
+    padding: .52rem .3rem 0;
+    text-align: center;
+
+    .detailflag{
+      float: left;
+      width: .08rem;
+      height: .24rem;
+      margin: .14rem 0;
+      background-color: #d63333;
+    }
+    .detailname{
+      float: left;
+      width: 90%;
+      text-indent: .06rem;
+      line-height: .5rem;
+      font-size: .36rem;
+      text-align: center;
+    }
+  }
+
+  .detailcontainer{
+    width: 7rem;
+    padding: .22rem .36rem 0;
+    ol li {
+      .detailItems{
+        line-height: .7rem;
+        font-size: .28rem;
+        color: #666;
+      }
+
+      .fl{
+        float: left;
+      }
+
+      .detailexplainItems{
+        line-height: .7rem;
+        font-size: .28rem;
+        color: #151515;
+      }
+
+      .detailmemberItems{
+        float: left;
+        line-height: .7rem;
+        font-size: .28rem;
+        color: #4990e2;
+      }
+
+      .detailprogressCount{
+        float: left;
+        line-height: .7rem;
+        font-size: .28rem;
+        color: #f6a623;
+        margin-left: .13rem;
+      }
+
+      .detailprogressItems{
+        width: 50%;
+        height: .1rem;
+        margin: .28rem 0;
+        background-color: #fff;
+        display: inline-block;
+        border: 1px solid #f6a623;
+        color: #f6a623; /*IE10*/
+      }
+      /*ie6-ie9*/
+      progress ie {
+          display:block;
+          height: 100%;
+          background: #f6a623;
+      }
+
+      progress::-moz-progress-bar { background: #f6a623; }
+      progress::-webkit-progress-bar { background: #fff; }
+      progress::-webkit-progress-value  { background: #f6a623; }
+    }
+
+
+    .detaildrawing{
+      width: 6.5rem;
+      height: 5.03rem;
+    }
+  }
+}

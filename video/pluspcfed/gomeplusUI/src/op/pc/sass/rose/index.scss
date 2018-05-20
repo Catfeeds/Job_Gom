@@ -1,0 +1,42 @@
+@import '../../../../pc/sass/public/public.scss';
+body {
+	background: url('../../images/rose/bg.jpg') repeat;
+}
+body div {
+	text-align: center;
+}
+.bg {
+	background: url('../../images/rose/banner_bg.png') no-repeat center 0; 
+}
+.banner {
+	background: url('../../images/rose/banner.png') no-repeat center 88px;
+	height: 513px; 
+}
+.play-method {
+	background: url('../../images/rose/method.png') no-repeat center 0;
+	height: 359px; 
+	margin: 0 0 52px 0;
+}
+.play-rule {
+	background: url('../../images/rose/rule.png') no-repeat center 0;
+	height: 787px;
+	margin: 0 0 65px 0;
+}
+.code {
+    position: fixed;
+    right: 0;
+    bottom: 100px;
+	background: url('../../images/rose/code_bg.png') no-repeat;
+	width: 289px;
+	height: 419px;
+}
+.code p {
+	background: url('../../images/rose/code.png') no-repeat;
+	width: 280px;
+	height: 280px;
+	background-size: 63%;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin: -94px 0 0 -92px;
+}

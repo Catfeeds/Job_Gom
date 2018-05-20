@@ -1,0 +1,89 @@
+html {
+    height: 100%;
+}
+
+body {
+    padding: 0px;
+    height: 100%;
+    position: relative;
+    margin: 0px;
+}
+
+* {
+    outline: none;
+}
+
+/* invite */
+.invite-box {
+    position: relative;
+    background: url(../img/invite/bg.png) no-repeat;
+    background-size: cover;
+}
+.invite-card {
+    position: absolute;
+    bottom: 16%;
+    left: 50%;
+    width: 7.5rem;
+    height: 4.9rem;
+    background: url(../img/invite/invite-bg.png) no-repeat;
+    background-size: cover;
+    text-align: center;
+    margin: 0 0 0 -3.75rem;
+}
+.invite-card h4 {
+    font-family: PingFangSC-Medium;
+    font-size: 0.40rem;
+    color: #4F4D5C;
+    margin: 0;
+}
+.invite-card p.code {
+    font-family: MicrosoftYaHei;
+    font-size: 0.72rem;
+    color: #FFBF05;
+    margin: 0.7rem 0 0.26rem 0;
+    font-weight: normal;
+}
+.invite-card p {
+    font-family: MicrosoftYaHei;
+    font-size: 0.24rem;
+    color: #999;
+    font-style: normal;
+}
+.card-head img {
+    display: block;
+    margin: -0.2rem auto 0.1rem;
+    width: 0.84rem;
+    height: 0.84rem;
+    border-radius: 50%;
+    border: 4px solid #fff;
+}
+.card-head p {
+    font-family: PingFangSC-Regular;
+    color: #5844D7;
+    font-size: 0.3rem;
+    margin: 0 0 0.2rem 0;
+}
+.invite-download {
+    position: absolute;
+    bottom: 5%;
+    width: 100%;
+    margin: 0 auto;
+}
+.invite-download a {
+    display: block;
+    font-family: PingFangSC-Medium;
+    background: url(../img/invite/btn-download.png) no-repeat;
+    width: 4.8rem;
+    height: 1.2rem;
+    font-size: 0.36rem;
+    color: #6E1D11;
+    text-align: center;
+    line-height: 1.04rem;
+    margin: 0 auto;
+    background-size: cover;
+    text-decoration: none;
+}
+.invite-download a:active {
+    background: url(../img/invite/btn-download-active.png) no-repeat;
+    background-size: cover;
+}

@@ -1,0 +1,17 @@
+{
+    "name": "gomeplus_pc_video",
+    "version": "1.0.0",
+    "description": "国美+",
+    "main": "index.js",
+    "scripts": {
+        "build": "webpack"
+    },
+    "author": "jiyunpeng",
+    "license": "",
+    "dependencies": {},
+    "devDependencies": {
+        "clean-webpack-plugin": "^0.1.8",
+        "transfer-webpack-plugin": "^0.1.4",
+        "webpack": "^1.13.1"
+    }
+}

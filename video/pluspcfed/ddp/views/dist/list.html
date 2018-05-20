@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<link rel="stylesheet" type="text/css" href="../../node_modules/bootstrap/dist/css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="../../node_modules/font-awesome/css/font-awesome.css">
+	<link rel="stylesheet" type="text/css" href="../css/global.css">
+</head>
+
+<body>
+	<div id="wrapper">
+		<nav class="navbar navbar-inverse navbar-fixed-top">
+			<!-- logo begin-->
+			<div class="navbar-header">
+				<a class="navbar-brand" href="index.html">美信数据开放平台</a>
+			</div>
+			<style type="text/css">
+			.navbar-header {
+				width: 180px;
+			}
+			
+			.navbar-brand {
+				width: 100%;
+			}
+			</style>
+			<!-- logo end-->
+			<!-- nav-title begin -->
+			<!-- <div class="nav-title">
+	<a href="javascript:void(0)">项目</a>
+</div> -->
+			<!-- nav-title begin -->
+			<style type="text/css">
+			.nav-title {
+				float: left;
+				text-indent: 10px;
+			}
+			
+			.nav-title a {
+				line-height: 50px;
+				font-size: 22px;
+				color: #9d9d9d;
+			}
+			
+			.nav-title a:hover {
+				color: #fff;
+			}
+			</style>
+			<!-- nav-right bigin -->
+			<ul class="nav navbar-right top-nav">
+				<li class="dropdown">
+					<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-user"></i>骆也<b class="caret"></b></a>
+					<ul class="dropdown-menu" style="display: block;">
+						<li>
+							<a href="#"><i class="fa fa-fw fa-power-off"></i>退出登录</a>
+						</li>
+					</ul>
+				</li>
+			</ul>
+			<style type="text/css">
+			.top-nav {
+				padding: 0 15px;
+			}
+			
+			.top-nav>li {
+				display: inline-block;
+				float: left;
+			}
+			
+			.top-nav>li>a {
+				padding-top: 15px;
+				padding-bottom: 15px;
+				line-height: 20px;
+				color: #999;
+			}
+			
+			.top-nav>li>a:hover,
+			.top-nav>li>a:focus,
+			.top-nav>.open>a,
+			.top-nav>.open>a:hover,
+			.top-nav>.open>a:focus {
+				color: #465173;
+				background-color: #e8e8e8;
+			}
+			
+			.top-nav>.open>.dropdown-menu {
+				float: left;
+				position: absolute;
+				margin-top: 0;
+				border: 1px solid rgba(0, 0, 0, .15);
+				border-top-left-radius: 0;
+				border-top-right-radius: 0;
+				background-color: #fff;
+				-webkit-box-shadow: 0 6px 12px rgba(0, 0, 0, .175);
+				box-shadow: 0 6px 12px rgba(0, 0, 0, .175);
+			}
+			
+			.top-nav>.open>.dropdown-menu>li>a {
+				white-space: normal;
+			}
+			</style>
+			<!-- nav-right end -->
+			<!-- nav-side begin -->
+			<ul class="nav navbar-nav side-nav">
+				<li class="active">
+					<a href="javascript:void(0)"><i class="fa fa-fw fa-cubes"></i>项目</a>
+				</li>
+				<li>
+					<a href="javascript:void(0)"><i class="fa fa-fw fa-table"></i>报表</a>
+				</li>
+				<li>
+					<a href="javascript:void(0)"><i class="fa fa-fw fa-plug"></i>组件</a>
+				</li>
+				<li>
+					<a href="javascript:void(0)"><i class="fa fa-fw fa-bar-chart"></i>数据</a>
+				</li>
+				<li>
+					<a href="javascript:void(0)"><i class="fa fa-fw fa-legal"></i>工具</a>
+				</li>
+			</ul>
+			<style type="text/css">
+			@media(min-width:768px) {
+				.side-nav {
+					position: fixed;
+					top: 51px;
+					left: 180px;
+					width: 180px;
+					margin-left: -180px;
+					border: none;
+					border-radius: 0;
+					overflow-y: auto;
+					background-color: #3d454d;
+					bottom: 0;
+					overflow-x: hidden;
+					padding-bottom: 40px;
+				}
+				.side-nav>li>a {
+					width: 180px;
+				}
+				.side-nav li a:hover,
+				.side-nav li a:focus {
+					outline: none;
+					background-color: #353b41 !important;
+				}
+			}
+			
+			.side-nav>li>ul {
+				padding: 0;
+			}
+			
+			.side-nav>li>ul>li>a {
+				display: block;
+				padding: 10px 15px 10px 38px;
+				text-decoration: none;
+				color: #999;
+			}
+			
+			.side-nav>li>ul>li>a:hover {
+				color: #fff;
+			}
+			</style>
+			<!-- nav-side end -->
+		</nav>
+		<div id="page-wrapper">
+			<div class="container-fluid">
+				<!-- list begin -->
+				<!-- top-area begin -->
+				<div class="top-area">
+					<ul class="nav-links">
+						<li class="active"><a href="javascript:void(0)">我的</a></li>
+						<li class=""><a href="javascript:void(0)">所有</a></li>
+						<li class=""><a href="javascript:void(0)">近期打开</a></li>
+						<li class=""><a href="javascript:void(0)">已删除</a></li>
+					</ul>
+					<div class="nav-controls">
+						<form class="project-filter-form">
+							<input type="search" placeholder="Filter by name..." class="form-control input-short input-sm">
+						</form>
+						<div class="dropdown inline">
+							<button class="dropdown-toggle btn btn-sm btn-default" type="button">
+								<span class="light">时间顺序</span>
+								<b class="caret"></b>
+							</button>
+							<ul class="dropdown-menu dropdown-menu-align-right dropdown-menu-selectable" style="display: block">
+								<li class="dropdown-header">排序</li>
+								<li><a href="javascript:void(0)">名称</a></li>
+								<li><a href="javascript:void(0)">时间顺序</a></li>
+								<li><a href="javascript:void(0)">时间倒序</a></li>
+							</ul>
+						</div>
+						<a class="btn btn-sm btn-success" href="javascript:void(0)"><i class="fa fa-plus"></i>新建项目</a>
+					</div>
+				</div>
+				<style type="text/css">
+				.top-area {
+					border-bottom: 1px solid #eee;
+				}
+				
+				.top-area:before,
+				.top-area:after {
+					content: " ";
+					display: table;
+				}
+				
+				.top-area:after {
+					clear: both;
+				}
+				
+				.top-area .nav-links {
+					display: inline-block;
+					margin-bottom: 0;
+					border-bottom: none;
+				}
+				
+				.top-area .nav-controls {
+					display: inline-block;
+					float: right;
+					text-align: right;
+					padding: 11px 0;
+					margin-bottom: 0;
+				}
+				
+				.top-area .nav-controls>.dropdown {
+					margin-right: 10px;
+					display: inline-block;
+				}
+				
+				.dropdown-menu-align-right {
+					left: auto;
+					right: 0;
+				}
+				
+				.top-area .nav-controls>.dropdown:last-child,
+				.top-area .nav-controls>.btn:last-child {
+					margin-right: 0;
+				}
+				
+				.top-area .nav-controls>form {
+					display: inline-block;
+					margin-right: 10px;
+				}
+				
+				.top-area .nav-controls .project-filter-form input {
+					background-color: #fafafa;
+					width: 200px;
+				}
+				</style>
+				<!-- top-area end -->
+				<ul class="list-ul content-list">
+					<li>
+						<div class="btn-group">
+							<button type="button" class="btn btn-sm btn-info">详情</button>
+							<button type="button" class="btn btn-sm btn-success">编辑</button>
+							<button type="button" class="btn btn-sm btn-danger">删除</button>
+						</div>
+						<div class="title">
+							<a href="javascript:void(0)">
+								<div class="list-item-avatar-con">
+									<img alt="" class="list-item-avatar" src="http://gitlab.intra.gomeplus.com/uploads/project/avatar/54/txtLogo.png">
+								</div>
+								<span>gomeplusFED/data-dev-platform</span>
+							</a>
+						</div>
+						<div class="description">
+							<p>dataDevPlatform 数据开放平台 前端代码</p>
+						</div>
+					</li>
+					<li>
+						<div class="btn-group">
+							<button type="button" class="btn btn-sm btn-info">详情</button>
+							<button type="button" class="btn btn-sm btn-success">编辑</button>
+							<button type="button" class="btn btn-sm btn-danger">删除</button>
+						</div>
+						<div class="title">
+							<a href="javascript:void(0)">
+								<div class="list-item-avatar-con" style="background-color: #FBE9E7; color: #555">P</div>
+								<span>gomeplusFED/data-dev-platform</span>
+							</a>
+						</div>
+						<div class="description">
+							<p>dataDevPlatform 数据开放平台 前端代码</p>
+						</div>
+					</li>
+				</ul>
+				<style type="text/css">
+				ul.content-list>li:before,
+				ul.content-list>li:after {
+					content: " ";
+					display: table
+				}
+				
+				ul.content-list>li:after {
+					clear: both
+				}
+				
+				ul.content-list>li:last-child {
+					border-bottom: none
+				}
+				
+				ul.content-list>li {
+					border-color: #f0f0f0;
+					font-size: 15px;
+					color: #5c5c5c
+				}
+				
+				ul.content-list>li .title {
+					font-weight: 600
+				}
+				
+				ul.content-list>li a {
+					color: #333
+				}
+				
+				ul.content-list>li .description p {
+					display: inline-block;
+					overflow: hidden;
+					text-overflow: ellipsis;
+					vertical-align: top;
+					white-space: nowrap;
+					max-width: 82%;
+					margin-bottom: 0
+				}
+				
+				ul.content-list>li .btn-group {
+					padding-top: 1px;
+					float: right
+				}
+				
+				.list-ul {
+					margin: 5px 0;
+					padding: 0;
+					list-style: none
+				}
+				
+				.list-ul>li {
+					padding: 10px 0;
+					border-bottom: 1px solid #eee;
+					display: block;
+					margin: 0
+				}
+				
+				.list-ul>li:before,
+				.list-ul>li:after {
+					content: " ";
+					display: table
+				}
+				
+				.list-ul>li:after {
+					clear: both
+				}
+				
+				.list-ul>li:last-child {
+					border-bottom: none
+				}
+				
+				.list-item-avatar-con {
+					float: left;
+					margin-right: 15px;
+					width: 40px;
+					height: 40px;
+					padding: 0;
+					line-height: 40px;
+					text-align: center;
+					border-radius: 50%
+				}
+				
+				.list-item-avatar {
+					width: 40px;
+					height: 40px;
+					padding: 0;
+					border-radius: 50%
+				}
+				</style>
+				<!-- list end -->
+			</div>
+		</div>
+	</div>
+</body>
+
+</html>

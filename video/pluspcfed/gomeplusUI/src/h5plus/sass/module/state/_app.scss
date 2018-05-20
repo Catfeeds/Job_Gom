@@ -1,0 +1,147 @@
+@charset "UTF-8";
+// @ Css 客户端下载
+// @ Author： matianye@
+// @ Date： 2017-03-24 15:00
+// @ Last Modified by： maty
+// @ Last Modified time：2017-03-24 15:00
+//==========================
+
+@import "../../../../sasscore/_configure.scss";
+
+// 顶部提示
+.app-mask{
+	position: fixed;
+    top:0;
+    left:0;
+    right: 0;
+    z-index: 10;
+    overflow: hidden;
+    padding: rem(20 30);
+    background: rgba(0,0,0,.6);
+    p{
+    	color: #fff;
+        font-size: rem(28);
+        line-height: rem(40);
+        
+    }
+}
+
+// 主体内容
+.app-download{
+    background-color:#ffd200;
+    .banner{
+    	padding-top:rem(373);
+        width: rem(750);
+        height: rem(766);
+        text-align: center;
+        background: url("../../../images/state/app-banner.jpg") top center no-repeat;
+        background-size: 100% auto;
+        .logo{
+            display: block;
+            width: rem(180);
+            height: rem(180);
+            background:#fff;
+            margin:0 auto;
+            border-top:1px solid #e7e7e7;
+            @include prefix(border-radius, rem(20));
+            img{
+                width: rem(180);
+                height: rem(180);
+                @include prefix(border-radius, rem(20));
+            }
+        }
+        .title{
+            margin-top: rem(10);
+            font-size: rem(50);
+            color: #7a4c20;
+            line-height: rem(80);
+            span{
+                font-size: rem(45);
+            }
+        }
+    }
+    // 下载按钮
+    a{
+    	display: block;
+        position: relative;
+        width: rem(540);
+        height: rem(110);
+        line-height: rem(110);
+        text-align: left;
+        font-size: rem(36);
+        color: #fabe00;
+        background: #fff;
+        @include prefix(border-radius,rem(50));
+        margin: rem(45) auto;
+        text-align: center;
+        em{
+            background: url("../../../images/state/app-bg.png");
+            background-size: rem(102) rem(50);
+            width: rem(44);
+            height:rem(50);
+            display: inline-block;
+            vertical-align: middle;
+            margin-right: rem(30);
+        }
+        &.ios-btn{
+	        .ios-icon{
+	            background-position: 0 0;
+	        }
+	    }
+	    &.and-btn{
+	        .and-icon{
+	            background-position: rem(-60) 0;
+	        }
+	    }
+    }
+    .line{
+        @include line(bottom,#ffe980);
+        margin-bottom: rem(90);
+        width: rem(540);
+        display: block;
+        margin-left: rem(-270);
+        left: 50%;
+    }
+    .introduce-txt{
+        padding: rem(50);
+        color: #6a3b0f;
+        h3{
+            height: rem(45);
+            line-height: rem(45);
+            font-size: rem(30);
+            margin-top: rem(30);
+        }
+        p{
+            font-size: rem(24);
+            line-height: rem(42);
+            margin-top: rem(20);
+        }
+    }
+}
+// 返回首页
+.return-home{
+    position:fixed;
+    top:rem(30);
+    right:rem(30);
+    z-index:12;
+    padding:0 rem(22) 0 rem(58);
+    height:rem(54);
+    line-height:rem(54);
+    background:rgba(0,0,0,0.26);
+    font-size:rem(24);
+    @include border-radius(rem(100));
+    color:#fff;
+    &:before{
+        content:'';
+        display:block;
+        position:absolute;
+        left:rem(22);
+        top:50%;
+        width:rem(30);
+        height:rem(22);
+        background-image: url("../../../images/state/return-home.png");
+        background-repeat:no-repeat;
+        background-size:rem(30 22);
+        @include translate((-50%,y),webkit moz);
+    }
+}

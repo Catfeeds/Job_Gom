@@ -1,0 +1,69 @@
+/* publish article */
+@import "../../base/public.scss";
+
+.publish-article{
+	display: table;
+	width: 100%;
+	height: 100%;
+	.upload-form{
+		.form{
+			width: 840px;
+			margin: 50px auto 0;
+			.submit{
+				width: 210px;
+				height: 48px;
+				display: block;
+				margin: 50px auto 50px;
+			}
+		}
+	}
+	.form-group{
+		.form-input{
+			.tag-input-wrap{
+				width: 740px;
+				border: 1px solid $border;
+				border-radius: 3px;
+				padding: 4px 10px 0;
+				box-sizing: border-box;
+				.tag-item{
+					float: left;
+					height: 30px;
+					margin-right: 15px;
+					margin-bottom: 4px;
+					padding: 5px 10px;
+					position: relative;
+					background-color: #e4e4e4;
+					box-sizing: border-box;
+					border-radius: 3px;
+					.del{
+						font-size: 12px;
+					    color: #f55050;
+					    position: absolute;
+					    right: -6px;
+					    top: -2px;
+					    height: 18px;
+					    cursor: pointer;
+					}
+					.red{
+						color: #df4242;
+					}
+					.gray{
+						color:#999;
+					}
+				}
+				.tag-input{
+					width: auto;
+					border: none;
+					height: 26px;
+					padding-bottom: 4px;
+				}
+			}
+			.input-text{
+				width: 740px;
+			}
+		}
+		.tag-error{
+			padding-top: 8px;
+		}
+	}
+}

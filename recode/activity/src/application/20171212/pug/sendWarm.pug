@@ -1,0 +1,114 @@
+doctype html
+html(lang="zh-CN")
+    head
+        meta(charset='UTF-8')
+        meta(name='robots', content='noarchive')
+        meta(name='Baiduspider', content='noarchive')
+        meta(http-equiv='Cache-Control', content='no-transform')
+        meta(http-equiv='Cache-Control', content='no-siteapp')
+        meta(name='applicable-device', content='pc,mobile')
+        meta(name='MobileOptimized', content='width')
+        meta(name='HandheldFriendly', content='true')
+        title 送温暖
+        script(src='http://apps.bdimg.com/libs/jquery/2.1.1/jquery.min.js')
+        
+        link(rel='stylesheet', href='../css/double12.css')
+        script(type='text/javascript').
+            (function() {
+            /*rem*/
+            function setFont() {
+            var __rootrem;
+            var clientWidth = (document.documentElement || document.body.parentNode).clientWidth;
+            if ( clientWidth > 650) {
+            clientWidth = 640;
+            }
+            // 375尺寸的比例，换算成@1x设计稿后1px=0.01rem
+            __rootrem = Math.floor(clientWidth * 100 / 640);
+            (document.documentElement || document.body.parentNode).style.fontSize = __rootrem + "px";
+            }
+            setFont();
+            window.addEventListener("resize", function() {
+            setFont();
+            });
+            })();
+    body
+        .outer
+            //- 好友
+            .friend.hide.J-send-friend
+                .bg
+                    .friend-text 
+                        span.name.J-name Sunshine 
+                        br
+                        | 既然你点进来，就说明你心里还是有我的那你看我那么冷，还不快来暖暖我~
+                    .friend-head
+                        .pic
+                             img(src="../images/choicePic.jpg", alt="").J-friend-face.hide
+                        .friend-woman.J-woman.hide
+                        .friend-man.J-man.hide
+                .btn
+                    a(href="javascript:;").J-send-btn
+            //- 搓火苗
+            .flame.hide.J-send-warm
+                .bg
+                    .time
+                        span.J-send-time 12
+                        | s
+                    .flame-temp
+                        .temp
+                        .current-box
+                            .current.J-send-current
+                    .flame-figure
+                        .flame-woman.J-send-woman.hide
+                            img(src="http://css.dev.meixincdn.com:1314/debug/20171212/images/flameWoman.gif")
+                        .flame-woman.J-send-imgWoman.hide
+
+                        .flame-man.J-send-man.hide
+                            img(src="http://css.dev.meixincdn.com:1314/debug/20171212/images/flameMan.gif")
+                        .flame-man.J-send-imgMan.hide
+
+                       
+                .flame-text
+                    .text-pic
+                    .text 规定时间内搓动的次数越多朋友得到的温暖值越高
+                .flame-popup.J-send-warm
+            //- 结果
+            .result.hide.J-send-sended
+                .bg
+                    .result-text
+                        p 你已成功为好友送出温暖值
+                            span.send.J-send-number 0
+                        p 好友当前温暖值为
+                            span.now.J-now-number 0
+                        p 可领取价值XX的优惠券
+                    .result-figure
+                        .result-woman.hide.J-woman
+                        .result-man.hide.J-man
+                .common-btn.clearfix
+                    .btn.fl
+                        a(href="javascript:;").also
+                    .btn.fr
+                        a(href="javascript:;").stroll
+            //- 狠心的
+            .cruel.hide.J-send-normal
+                .bg
+                    .cruel-cont
+                        .cont-title 
+                            span.J-name sunshine
+                            | ：好狠的心
+                            br
+                            |一点温暖都不给我~
+                            br 
+                            | 哭唧唧
+                        .cont-head
+                            .pic
+                                img(src="../images/choicePic.jpg", alt="").J-face
+                            .cruel-woman.hide.J-woman
+                            .cruel-man.hide.J-man
+                .common-btn.clearfix
+                    .btn.fl
+                        a(href="javascript:;").also
+                    .btn.fr
+                        a(href="javascript:;").stroll
+        script(type="text/javascript") $GLOBAL_CONFIG={};$GLOBAL_CONFIG['currWarmNum']=100;$GLOBAL_CONFIG['userFace']='http://localhost:1314/debug/20171212/images/choicePic.jpg';$GLOBAL_CONFIG['userName']='你好';$GLOBAL_CONFIG['userSex']=1;
+        script(type="text/javascript", src="http://localhost:1314/CDN8176/dist/vendor/js/zepto.js")
+        script(type="text/javascript", src="http://localhost:1314/CDN8176/dist/20171212/js/sendWarm.js")

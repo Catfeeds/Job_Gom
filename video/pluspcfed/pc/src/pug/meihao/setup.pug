@@ -1,0 +1,98 @@
+doctype html
+html(lang="zh-CN")
+    meta(charset="utf-8")
+    link(type="text/css",rel="stylesheet",href="../../css/public/public.css")
+    link(type="text/css",rel="stylesheet",href="../../css/module/setup.css")
+    link(type="text/css",rel="stylesheet",href="../../css/module/meihaoListManager.css")
+    body.opg
+        include ../../widget/header/header-meihao.pug
+        .meihao.clearfix
+            include ../../widget/aside/meihao.pug
+            .setup
+                .setup-title.clearfix
+                    h3 账号信息
+                    .cause-process.revamp-show 您修改的新资料正在审核中，请耐心等待
+                    .cause-fail 您提交的资料修改审核未通过，原因：XXXXXX；如需修改请重新操作
+                    .revamp
+                        .revamp-btn
+                            a(href="javascript:;", target='_blank') 取消修改
+                        .revamp-popup
+                            .popup-pic
+                            p 取消本次修改审核？
+                            .popup-confirm.clearfix                                 
+                                a(href="javascript:;").confirm 确认
+                                a(href="javascript:;").cancel 取消
+                .setup-info.clearfix
+                    .info-left 账号类型
+                    .info-right 个人号
+                .setup-info.clearfix
+                    .info-left 名称
+                    .info-right 天生爱美妆-修云
+                    .revamp-process.revamp-show.clearfix
+                        .new-left 新名称修改审核中：
+                        .new-right 1231231
+                    .revamp-fail.clearfix
+                        .new-left 新名称：
+                        .new-right 1231231
+                .setup-info.clearfix
+                    .info-left 头像
+                    .info-right.info-head
+                        .head 
+                            img(src="../../images/meihao/head.jpg", alt="")
+                    .revamp-process.revamp-show.clearfix
+                        .new-left.new-head 新头像修改审核中：
+                        .new-right.info-head
+                            .head 
+                                img(src="../../images/meihao/head.jpg", alt="")
+                    .revamp-fail.clearfix
+                        .new-left.new-head 新头像：
+                        .new-right.info-head
+                            .head 
+                                img(src="../../images/meihao/head.jpg", alt="")
+                .setup-info.clearfix
+                    .info-left 标签
+                    .info-right 美妆
+                    .revamp-process.revamp-show.clearfix
+                        .new-left 新标签修改审核中：
+                        .new-right 新标签名称
+                    .revamp-fail.clearfix
+                        .new-left 新标签：
+                        .new-right 新标签名称
+                .setup-info.clearfix
+                    .info-left 简介
+                    .info-right 
+                        p.right-intro 七分靠美妆；关三分靠爸妈，七分靠美妆；关于时尚美妆时推荐、护肤知识
+                    .revamp-process.new-intro.revamp-show.clearfix
+                        .new-left 新简介修改审核中：
+                        | 七分靠美妆；关三分靠爸妈，七分靠美妆；关于时尚美妆时推荐、护肤知识
+                    .revamp-fail.new-intro.clearfix
+                        .new-left 新简介：
+                        | 七分靠美妆；关三分靠爸妈，七分靠美妆；关于时尚美妆时推荐、护肤知识
+                .setup-info.clearfix
+                    .info-left 绑定圈子
+                    .info-right 时尚大咖
+                .setup-title.pt20.clearfix
+                    h3 企业信息
+                .setup-info.clearfix
+                    .info-left 企业名称
+                    .info-right 北京666信息技术有限公司
+                .setup-info.clearfix
+                    .info-left 营业执照注册号
+                    .info-right 25211325410221
+                .setup-info.clearfix
+                    .info-left 营业执照
+                    .info-right.info-license
+                        .license
+                            img(src="../../images/meihao/head.jpg", alt="")
+                .setup-info.clearfix
+                    .info-left 运营者姓名
+                    .info-right 美妆
+                .setup-info.clearfix
+                    .info-left 运营者身份证号
+                    .info-right 102220198608012515
+                .setup-info.clearfix
+                    .info-left 运营者手机号
+                    .info-right 13866668888
+                .setup-info.clearfix
+                    .info-left QQ/微信/邮箱
+                    .info-right QQ 234234234

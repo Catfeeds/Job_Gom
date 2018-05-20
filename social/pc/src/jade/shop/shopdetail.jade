@@ -1,0 +1,253 @@
+doctype html
+html(lang="zh-CN")
+	include ../../../../../gomeplusUI/pc/src/jade/head.jade
+	link(type="text/css",rel="stylesheet",href="../../css/public/public.css")
+	link(type="text/css",rel="stylesheet",href="../../css/module/shop/shop-detail.css")
+	body.opg
+		include ../../../../../gomeplusUI/pc/src/jade/header.jade
+		include ../../../../../gomeplusUI/pc/src/jade/menu.jade
+		.wrap-box
+			.fixed-tool
+				a(href="##").tool-1
+					em.icon.icon-user &#xead7;
+					span.hover-txt 个人中心
+				a(href="##").tool-2
+					em.icon.icon-cart &#xeaa2;
+					p 购物车
+					span.cart-num 20
+				a(href="##").tool-3
+					em.icon.icon-coupon &#xead6;
+					span.hover-txt 我的优惠券
+				a(href="##").tool-4
+					em.icon.icon-order &#xead8;
+					span.hover-txt 我的订单
+				a(href="##").tool-5
+					em.icon.icon-save &#xeaa1;
+					span.hover-txt 我的收藏
+			.shop-title.clearfix
+				include ../../../../../gomeplusUI/pc/src/jade/crumbs.jade
+				include ../../../../../gomeplusUI/pc/src/jade/sort.jade
+			.shop-list
+				.list-name.clearfix
+					.img
+						img(src="../../images/link1.png")
+					h1
+						| 德世朗旗舰店
+						span.vip1
+						span.vip2
+						span.vip3
+					p.line2 放心厨具，还原最真实的厨房世界
+					div.clearfix
+						.shop-score
+							| 商品描述：
+							span 4.8
+							| 卖家服务：
+							span 4.6
+							| 物流服务：
+							span 4
+							| 营业执照：
+							span
+								a(href="#")
+									img(src="../../images/shop/icon-zhao.png")
+							.fl
+								| 手机逛店铺
+								em.icon-down
+								.down-ma
+									.sanjiao
+									img(src="../../images/public/ma1.jpg",width="150")
+									p 扫一扫，快速加入国美Plus
+						.function-icon.clearfix
+							a(href="javascript:;").clearfix
+								em.icon.icon-like.active
+								span 5463
+							a(href="javascript:;").clearfix
+								em.icon.icon-save.active
+								span 5463
+							a(href="javascript:;").clearfix
+								em.icon.icon-share.active
+			.fixed-menu
+				.wrap-box
+					.detail-menu
+						.fl
+							a(href="javascript:;")
+								| 本店所有商品
+								em.icon.icon-up &#xea55;
+								em.icon.icon-down &#xea57;
+							.open-list
+								a(href="javascript:;") 未分类
+								a(href="javascript:;") 母婴
+								a(href="javascript:;") 女装
+								a(href="javascript:;") 男装
+								a(href="javascript:;") 箱包
+						a(href="javascript:;").active 店铺首页
+						a(href="javascript:;") 全部商品
+						a(href="javascript:;") 上新商品
+						a(href="javascript:;") 店铺特惠
+						.fr
+							input(type="text").search-val
+							input(type="button",value="搜索").search-btn
+			.detail-menu
+				.fl
+					a(href="javascript:;")
+						| 本店所有商品
+						em.icon.icon-up &#xea55;
+						em.icon.icon-down &#xea57;
+					.open-list
+						a(href="javascript:;") 未分类
+						a(href="javascript:;") 母婴
+						a(href="javascript:;") 女装
+						a(href="javascript:;") 男装
+						a(href="javascript:;") 箱包
+				a(href="javascript:;").active 店铺首页
+				a(href="javascript:;") 全部商品
+				a(href="javascript:;") 上新商品
+				a(href="javascript:;") 店铺特惠
+				.fr
+					input(type="text").search-val
+					input(type="button",value="搜索").search-btn
+			.shop-topic
+				.no-topic
+					.txt.clearfix
+						em.icon &#xe964;
+						p 
+							span
+								| Ta还没有话题哦～
+				ul.topic-list
+					- for (var x = 0; x < 5; x++)
+						li
+							a(href="#") 甜品控|你没有想过的西瓜新吃法- -免烤西瓜蛋糕
+							p
+								a(href="#") Step1:西瓜去头去尾，立起来将皮切掉，去皮完毕后用厨房纸将西瓜外部的水分擦干，这个动作可以方便后面涂抹奶油然后转移到你打算用来放西瓜蛋糕的容器中准备装饰。
+							dl.clearfix
+								dd
+									a(href="#")
+										img(src="https://i6.meixincdn.com/v1/img/T1GRYTB7KT1R4cSCrK.png")
+									em.icon.icon-goods
+								dd
+									a(href="#")
+										img(src="https://i6.meixincdn.com/v1/img/T1GRYTB7KT1R4cSCrK.png")
+									em.icon.icon-video
+								dd
+									a(href="#")
+										img(src="https://i6.meixincdn.com/v1/img/T1GRYTB7KT1R4cSCrK.png")
+									em.icon.icon-num 5
+							.clearfix
+								.fl
+									span.m0 33天前
+									span 来自圈子：
+									a(href="#") 周末烹饪小厨
+									span.name
+										a(href="#")
+											img(src="https://i6.meixincdn.com/v1/img/T1GRYTB7KT1R4cSCrK.png")
+											| 我是店主名
+								.fr
+									span
+										em.icon &#xe944;
+										| 268
+									span
+										em.icon &#xeaca;
+										| 16
+									span
+										em.icon &#xeac8;
+										| 2
+			.detail-coupons
+				dl.clearfix
+					dt
+						em.icon &#xe93d;
+						p 店铺优惠券
+					.coupon-list.clearfix
+						- for (var x = 0; x < 4; x++)
+							dd
+								.clearfix
+									.fl
+										| ￥
+										span 50
+									.fr
+										// p 优惠券
+										span 满100元可用
+								a(href="javascript:;").pc-btn.pc-btnw155.pc-btnh30 立即领取
+								p 2015.04.24-2015.05.05
+			p.no-merchants 该类目下无商品，去其他类目逛逛吧
+			h2.title 返利商品
+			.shop-list.shop-list-bg
+				ul.clearfix
+					- for (var x = 0; x < 10; x++)
+						li
+							.mg-negative
+								em.icon-fan 返
+								img(src="https://i6.meixincdn.com/v1/img/T1GRYTB7KT1R4cSCrK.png")
+								.btn-box
+									a(href="javascritp:;").pc-btn.pc-btnh40 立即购买
+									a(href="javascritp:;").pc-btn.pc-btnh40.pc-bj-fc8753 加入购物车
+								.text
+									| ￥
+									span 259.00
+									p 我新依旧心潮澎湃要你命300湃要你命300
+			h2.title 直降商品
+			.shop-list.shop-list-bg
+				ul.clearfix
+					- for (var x = 0; x < 5; x++)
+						li
+							.mg-negative
+								em.icon-fan.icon-jiang 降
+								img(src="https://i6.meixincdn.com/v1/img/T1GRYTB7KT1R4cSCrK.png")
+								.btn-box
+									a(href="javascritp:;").pc-btn.pc-btnh40 立即购买
+									a(href="javascritp:;").pc-btn.pc-btnh40.pc-bj-fc8753 加入购物车
+								.text
+									| ￥
+									span 259.00
+									p 我新依旧心潮澎湃要你命300湃要你命300
+			h2.title 全部商品
+			.shop-list.shop-list-bg
+				ul.clearfix
+					- for (var x = 0; x < 15; x++)
+						li
+							.mg-negative
+								img(src="https://i6.meixincdn.com/v1/img/T1GRYTB7KT1R4cSCrK.png")
+								.btn-box
+									a(href="javascritp:;").pc-btn.pc-btnh40 立即购买
+									a(href="javascritp:;").pc-btn.pc-btnh40.pc-bj-fc8753 加入购物车
+								.text
+									| ￥
+									span 259.00
+									p 我新依旧心潮澎湃要你命300湃要你命300
+			.no-new
+				dl.clearfix
+					dt
+						em.icon.icon-bag &#xe960;
+					dd
+						p 抱歉，没有找到 “
+							em 耐克
+							| ” 相关的结果
+							br
+							| 建议您尝试其他关键词
+			.no-new
+				dl.clearfix
+					dt
+						em.icon.icon-bag &#xea60;
+					dd
+						span 店铺最近没有更新
+						a(href="##").red-big 逛逛全部商品
+							em 》
+			.no-new
+				dl.clearfix
+					dt
+						em.icon.icon-bag &#xe908;
+					dd
+						span 店铺最近没有特惠
+						a(href="##").red-big 逛逛全部商品
+							em 》
+			.no-new
+				dl.no-business.clearfix
+					dt
+						em.icon.icon-bag &#xea5f;
+					dd
+						span 该店铺未在营业中
+						a(href="##").red-big 去逛逛
+							em 》
+			.page-more
+				a(href="javascript:;").pc-btn.pc-btnw
+					| 点击查看更多商品
+					em.icon &#xe98c;
+		include ../../../../../gomeplusUI/pc/src/jade/footer.jade

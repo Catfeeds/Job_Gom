@@ -1,0 +1,81 @@
+extends ../../pc-widget/head/head-set.jade
+block css-file
+	link(type="text/css",rel="stylesheet",href="../css/public/public.css")
+	link(type="text/css",rel="stylesheet",href="../css/module/set.css")
+block body
+	body.opg
+		.windows-set
+			.set-left
+				h2 设置
+				ul.clearfix.set-menu
+					li
+						a(href="javascript:;").active
+							em.iconn-19
+							span 账号设置
+					li
+						a(href="javascript:;")
+							em.iconn-17
+							span 通用设置
+					li
+						a(href="javascript:;")
+							em.iconn-18
+							span 修改密码
+					li
+						a(href="javascript:;")
+							em.iconn-16
+							span 关于我们
+			.set-right
+				.right-top
+					a(href="javascript:;").iconn-3
+					a(href="javascript:;").iconn-11
+				.right-con
+					//账号设置,关于我们
+					.set-name
+						.im-name
+							| 白露
+							//关于我们页面降文字换成图片即可
+							//<img src="../images/public/about.png">
+						p 白露
+						//.disabled为禁用样式
+						a(href="javascript:;").btn-out 退出登录
+					//修改密码
+					.set-password
+						.error-text 原密码错误
+						p 您正在为18810001000修改密码
+						.pr
+							input(type="password",placeholder="输入原密码").error
+							a(href="javascript:;").iconn-11
+						.pr
+							input(type="password",placeholder="输入新密码(6-20位含字母、数字)")
+							a(href="javascript:;").iconn-11
+						.pr
+							input(type="password",placeholder="再次输入新密码")
+							a(href="javascript:;").iconn-11
+						a(href="javascript:;").btn-send.disabled 确定
+					//通用设置
+					.set-all
+						.all-title 常用
+						label
+							em.iconn-9
+							span 自动登录
+						label
+							em.iconn-9.iconn-10
+							span 开机时自动启动
+						label
+							em.iconn-9.iconn-10
+							span 开机时自动启动
+						.all-title 快捷键
+						.set-key
+							span.fl 发送消息
+							//.open为展开选项
+							.key-select.open
+								//.active为选中选项
+								a(href="javascript:;").active
+									em.iconn-29
+									span Enter
+									em.down
+								a(href="javascript:;")
+									em.iconn-29
+									span Ctrl+Enter
+				//关于我们页面底部文字
+				.set-copyright 美信网络技术有限公司 版本所有

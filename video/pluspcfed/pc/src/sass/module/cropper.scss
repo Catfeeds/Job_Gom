@@ -1,0 +1,205 @@
+@import '../public/cropper.scss';
+.upload-success{
+	display: none;
+	position: relative;
+	max-width: 790px;
+	width: 790px;
+	height: 395px;
+	// min-height: 220px;
+	height: auto;
+	margin-bottom: 20px;
+	.upload-success-wrap{
+		height: auto;
+		position: relative;
+		// float: left;
+
+		.upload-success-img{
+			display: none;
+			max-width: 790px;
+			width: auto;
+			height: auto;
+			background: #999;
+		}
+
+		.upload-success-close{
+			display: none;
+			position: absolute;
+			top: 10px;
+			left: 744px;
+			width: 36px;
+			height: 36px;
+			filter:alpha(opacity=80);
+	        -moz-opacity:0.8;
+	        -khtml-opacity: 0.8;
+	        opacity: 0.8;
+			border-radius: 50%;
+			background: url('../../images/public/copper/delete.png') no-repeat center center;
+		}
+	}
+}
+
+
+.loading-img-progress{
+	display: none;
+	position:absolute;
+	z-index: 999;
+	top: 50%;
+	left: 50%;
+	margin: -6px 0 0 -90px;
+	width: 180px;
+	height: 12px;
+
+	p {
+		line-height: 78px;
+		text-align: center;
+		color: #fff;
+	}
+
+	.progress-bar-bx {
+		position: absolute;
+		bottom: 10px;
+		left: 10px;
+		width:160px;
+		height: 4px;
+		background: #fff;
+
+		span{
+			display: block;
+			width: 100%;
+			height: 100%;
+			background: #F95353;
+		}
+	}
+}
+
+body{
+	background: #fff;
+}
+	*{
+		padding: 0;margin: 0;
+	}
+  .edit-wrap{
+    .upload-img{
+      position: relative;
+			.topic-limit{
+				position: absolute;
+				bottom: 0;
+				left: 170px;
+				color: #666;
+			}
+    }
+    .webuploader-container{
+      width: 160px;
+      height: 94px;
+      line-height: 94px;
+      position: relative;
+      margin: -30px 0 20px;
+      background: #F6F6F6;
+      border: 1px solid #E7E7E7;
+      .webuploader-pick{
+        text-indent: 63px;
+        span{
+          color: #333;
+        }
+      }
+      label{
+        top: 0;
+        left: 0;
+      }
+    }
+    .icon-camara{
+      float: left;
+      width: 16px;
+      height: 16px;
+      position: absolute;
+      top: 50%;
+      left: 41px;
+      margin: -8px 0 0;
+      background: url('../../images/public/copper/uploadTopic.png') no-repeat center center;
+    }
+  }
+  .webuploader-element-invisible{
+    cursor: pointer;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+  }
+	.preview-layer{
+		width: 900px;height: 620px;
+		position: fixed;top: 50%;left:50%;margin: -310px 0 0 -450px;
+		background: #fff;
+		border-radius: 6px;
+	}
+	.preview-title-topic{
+		float: left;
+		font-size: 20px;
+		color: #333333;
+		width: 880px;
+		height: 54px;
+		line-height: 54px;
+		padding-left: 20px;
+		border-bottom: 1px solid #E4E4E4;
+	}
+	.preview-title-cancel{
+		float: right;
+		color: #e60039;
+    position: absolute;
+    right: 15px;
+    font-size: 28px;
+    cursor: pointer;
+    background: transparent;
+    _background: #fff;
+    border: 0;
+    -webkit-appearance: none;
+    outline: none;
+	}
+	.wrap{
+		position: relative;
+	}
+	.preview-content-topic{
+		width: 844px;
+		height: 422px;
+		margin: 34px auto 38px auto;
+		/*background: rgba(0,0,0,.6)*/
+	}
+	.cropWrap{
+		width: 250px;height: 250px;
+		position: relative;
+		z-index: 1;
+	}
+	/*.picker,.preview-layer-content img{
+		width:250px;height: 250px;position: absolute;top: 0;left: 0;z-index: 0;
+		overflow: hidden;
+	}*/
+	/*input{
+		display: block;width: 250px;height: 250px;
+		outline: none;
+		opacity: 0;
+	}*/
+	.preview-btns{
+		height: 36px;
+		width: 180px;
+		margin: 0 auto;
+	}
+	.preview-btns a{
+		display: block;
+		float: left;
+		width: 80px;
+		height: 36px;
+		line-height: 36px;
+		text-align: center;
+		color:#333;
+		font-size: 14px;
+	}
+	.preview-btns a.preview-btns-submit{
+		margin-right: 20px;
+		background: #F95353;
+		border-radius: 2px;
+		color: #fff;
+	}
+	.pop-box-backdrop{
+		 display:none;
+		 background: rgba(0, 0, 0,.6);
+		 position: fixed;
+		 left: 0px; top: 0px; width: 100%; height: 100%; overflow: hidden; user-select: none; z-index: 1024;
+	}

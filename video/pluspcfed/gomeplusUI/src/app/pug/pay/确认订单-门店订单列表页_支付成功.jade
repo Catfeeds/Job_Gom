@@ -1,0 +1,92 @@
+extends ../public/head.jade
+block title
+	title 门店订单
+block link-theme
+	link(rel='stylesheet' type="text/css" href="../../css/pay/pay.css")
+block content
+	//- js
+	include ../public/mobileJs.jade
+	ul.menu-list
+		li.item
+			i.num
+			p.txt 支付成功
+		li.item.active
+			p.txt 退款/售后
+	.tab-con
+		.default-zone
+			.faile-img
+			p.fail-tip
+				| 您好，没有相关订单
+				br
+				| 可以去看看有哪些想买的
+		.tab-cuss
+			.zone
+				.pay-sec.code
+					span.code-num
+						| 订单编号：
+						em 12876
+					strong.state 支付成功
+				div.pay-sec.bor
+					p.infor.ellipsis2
+						| 会专用100mm紫色亮片高跟鞋宴会专用宴会专100mm紫色亮片高跟鞋紫色
+					div.detail
+						span.d-nomey ¥2929.00
+						em.num x1
+				.goods
+					span.gd-num 共1件商品
+					em.gd-pay
+						| 实付: 
+						strong ¥2929.00
+			.zone
+				.pay-sec.code
+					span.code-num
+						| 订单编号：
+						em 12876
+					strong.state 支付成功
+				div.pay-sec.bor
+					p.infor.ellipsis2
+						| 会专用100mm紫色亮片高跟鞋宴会专用宴会专100mm紫色亮片高跟鞋紫色
+					div.detail
+						span.d-nomey ¥2929.00
+						em.num x1
+				.goods
+					span.gd-num 共1件商品
+					em.gd-pay
+						| 实付: 
+						strong ¥2929.00
+		.tab-back
+			.zone
+				.pay-sec.code
+					span.code-num
+						| 订单编号：
+						em 12876
+					strong.state 退款已受理
+				div.pay-sec.bor
+					p.infor.ellipsis2
+						| 会专用100mm紫色亮片高跟鞋宴会专用宴会专100mm紫色亮片高跟鞋紫色
+					div.detail
+						span.d-nomey ¥2929.00
+						em.num x1
+				.goods
+					span.gd-num 共1件商品
+					em.gd-pay
+						| 实付: 
+						strong ¥2929.00
+			.zone
+				.pay-sec.code
+					span.code-num
+						| 订单编号：
+						em 12876
+					strong.state 退款已受理
+				div.pay-sec.bor
+					p.infor.ellipsis2
+						| 会专用100mm紫色亮片高跟鞋宴会专用宴会专100mm紫色亮片高跟鞋紫色
+					div.detail
+						span.d-nomey ¥2929.00
+						em.num x1
+				.goods
+					span.gd-num 共1件商品
+					em.gd-pay
+						| 实付: 
+						strong ¥2929.00
+

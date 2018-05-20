@@ -1,0 +1,30 @@
+.notic-list{
+	margin:41px 40px 0 47px;
+	padding-bottom:20px;
+	border-top:1px solid #e6e6e6;
+	li{
+		padding:20px 0;
+		border-bottom:1px solid #e6e6e6;
+		div{
+			strong{
+				font-size:16px;
+				font-weight:normal;
+				width:985px;
+			}
+			span{
+				font-size:11px;
+				padding-top:2px;
+				float:right;
+			}
+			margin-bottom:10px;
+		}
+		p{
+			color:#666;
+			width:985px;
+			span{
+				line-height:18px;
+				font-size:14px;
+			}
+		}
+	}
+}

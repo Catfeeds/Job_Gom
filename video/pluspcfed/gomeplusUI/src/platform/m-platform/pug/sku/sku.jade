@@ -1,0 +1,27 @@
+//- extends layout.jade
+extends ../../../widget-platform/pug/layout/layout-m.jade
+
+//- index
+block content
+	.platform-tipsinfo
+		h5 说明
+		p m-skupop 公用类名
+		p 具体查看结构，谢谢~
+		p.maty 有问题沟通-maty
+	//end
+
+	//- sku-1
+	div.platform-content
+		h3.platform-header 商品属性选择
+		div.platform-intro
+			p sku-1
+		div.platform-example#sku-1
+			include ../../../../m-widget/sku/sku-1.jade
+		pre.platform-pre.hide
+			code.platform-code#sku-1_code
+			span.platform-jade pug
+			span.platform-jade.platform-html.actived html
+	
+	script(type='text/javascript').
+		HtmlFormat.init(['sku-1'],false,'_code','html','span.platform-jade');
+		$(".platform-sku").parent('li').addClass("actived");

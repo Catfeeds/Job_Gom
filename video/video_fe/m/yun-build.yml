@@ -1,0 +1,7 @@
+build
+  - git pull
+  - npm run sp
+  - node ./config/bin/buildProd.js --env=dev
+  - git add .
+  - git commit -m "feat(yun-build) build dev"
+  - npm run publish

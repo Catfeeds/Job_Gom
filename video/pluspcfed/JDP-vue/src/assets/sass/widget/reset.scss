@@ -1,0 +1,84 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  vertical-align: baseline; }
+html{
+    height: 100%;
+}
+body {
+    background-color: #fff;
+    overflow: hidden;
+    font-family: Mircosoft YaHei, "Helvetica Neue", Helvetica, Arial, "Hiragino Sans GB", "Hiragino Sans GB W3", "WenQuanYi Micro Hei", sans-serif;
+    -webkit-tap-highlight-color: transparent;
+    -webkit-touch-callout: none;
+    -moz-touch-callout: none;
+    -ms-touch-callout: none;
+    touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-text-size-adjust: 100% !important;
+}
+ol, ul {
+  list-style: none; }
+@charset "UTF-8";
+
+@import "utils";
+
+.clearfix{
+    @include clearfix();
+}
+
+body,h1,h2,h3,h4,h5,h6,dl,dt,dd,ul,ol,li,p,input,button,textarea,article,aside,footer,header,nav,section,menu{
+    @include reset-box-model;
+    @include reset-font;
+}
+
+body,button,input,select,textarea{
+    font-size: 14px;
+    font-family:'PingFang SC','Myriad Pro','Hiragino Sans GB','Microsoft YaHei',sans-serif;
+}
+
+table{
+    @include reset-table;
+}
+ul,li{
+    @include reset-list-style;
+}
+img{
+    @include reset-img;
+}
+input{
+    -webkit-appearance: none;
+}
+input,textarea{
+     @include reset-cell;
+}
+a{
+    @include reset-a(#333);
+}
+em{
+    font-style:normal;
+}
+body{
+    background: #fff;
+    min-width: 100%;
+}
+::-ms-clear,::-ms-reveal{
+    display: none;
+}

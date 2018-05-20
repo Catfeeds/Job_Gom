@@ -1,0 +1,133 @@
+doctype html
+html(lang="zh-CN")
+	include ../../widget/head/head.pug
+	link(type="text/css",rel="stylesheet",href="../../css/public/public.css")
+	link(type="text/css",rel="stylesheet",href="../../css/module/video.css")
+	link(type="text/css",rel="stylesheet",href="../../css/module/issuePreview.css")
+	//link(type="text/css",rel="stylesheet",href="../../css/module/topicdetails.css")
+	body.opg
+		include ../../widget/header/header.pug
+		include ../../widget/menu/menu.pug
+		div.wrap-box
+			include ../../widget/top/top.pug
+			.crumbs-box
+				a(href="javescript:") 首页
+				em >
+				a(href="javescript:") 商城
+				em >
+				a(href="javescript:") 店铺列表
+				em >
+				a(href="javescript:") 发布话题
+				em >
+				span.crnmb-activ 预览
+		.more-preview
+			div.preview-title0
+				h1
+					em.set-spark 精品
+					| 人人都是产品经理吧
+				p.preview-source
+					a(href="javascript:;")
+						img(src="../../images/circle/small-logo.png")
+						| 奔腾的小叶路
+					span 来自圈子：
+					| 大电影
+					span.date 2015.05.05
+					span.counts.fr
+						// icon替换 icon icon-collection
+						em.iconn-10
+						span.topic-count 238
+			.preview-content
+				h1 产品经理
+				h2 人人都是产品经理
+				p 产品新人、产品经理等广大产品爱好者打造一个良好的学习交流平台。深度剖析国内外互联网业内动态,分享产品设计、交互设计、视觉设计、用户体验,产品新人、产品经理等广大产品爱好者打造一个良好的学习交流平台。深度剖析国内外
+				span.content-bold 互联网业内动态,
+				| 分享产品设计、交互设计、视觉设计、用户体验，产品新人、产品经理等广大产品爱好者打造一个良好的学习交流平台。深度剖析国内外内动态,分享产品设计、交互设计、视觉设计、用户体验,产品新人、产品经理等广大产打造一个良好的学习交流平台。深度剖析国内外互联网业内动态,分享产品设计、交互设计、视觉设计、用户体验......
+				span.content-bold 产品经理等广大产品爱好者打造一个
+				span.content-italic 良好的学习交流平台。
+				span.content-mingle  深度剖析国内外互联网业内动态,分享
+				ol
+					li 人人都是产品经理
+					li 人人都是交互设计师
+					li 人人都是视觉设计师				
+				p 
+				span.content-bold 产品新人、产品经理等广大产品爱好者打造一个良好的学习交流平台。
+				| 深度剖析国内外互联网业内动态,分享产品设计、交互设计、视觉设计、用户体验,产品新人、产品经理等广大产品爱好者打造一个良好的学习交流平台。深度剖析国内外互联网业内动态,分享产品设计、交互设计、视觉设计、用户体验，产品新人、产品经理等广大产品爱好者打造一个良好的学习交流平台。深度剖析国内外内动态,分享产品设计、交互设计、视觉设计、用户体验,产品新人、产品经理等广大产打造一个良好的学习交流平台。深度剖析国内外互联网业内动态,分享产品设计。		
+				ul
+					li 人人都是产品经理
+					li 人人都是交互设计师
+					li 人人都是视觉设计师		
+				p.content-textL.content-line 产品新人、产品经理等广大产品爱好者打造一个良好的学习交流平台。深度剖析国内外互联网业内动态,分享产品设计、交互设计、视觉设计、用户体验,产品新人、产品经理等广大产品爱好者打造一个良好的学习交流平台。
+				p.content-textR.content-bold 产品新人、产品经理等广大产品爱好者打造一个良好的学习交流平台。深度剖析国内外内动态,分享产品设计、交互设计、视觉设计、用户体验,产品新人、产品经理等广大产打造一个良好的学习交流平台。深度剖析国内外互联网业内动态,分享产品设计、交互设计、视觉设计、用户体验.....
+				p.content-textC.content-mingle 产品新人、产品经理等广大产品爱好者打造一个良好的学习交流平台。深度剖析国内外内动态,分享产品设计、交互设计、视觉设计、用户体验,产品新人、产品经理等广大产打造一个良好的学习交流平台。深度剖析国内外互联网业内动态,分享产品设计、交互设计、视觉设计、用户体验...
+				.publish-item
+					a.img-out(href="javascript:;")
+						img(src="http://img1.gomein.net.cn/image/prodimg/production_image/201604/27/1123230704/1000871346_360.jpg")
+					.publish-cont
+						h3.pub-tl
+							a(href="javascript:;") 鲜果贝 糖水黄桃罐头 425g*6 新鲜方便蜜桃水果罐头 宁波特产
+						.pub-row
+							span.red ￥
+							strong.money-inf 199.00
+						.pub-row
+							em.icon-fan 返
+							| 购买该商品最高可返
+							span.red 0.04
+							| 国美币
+						a.scan-more(href="javascript:;") 查看详情
+				.publish-item
+					a.img-out(href="javascript:;")
+						img(src="http://img1.gomein.net.cn/image/prodimg/production_image/201604/27/1123230704/1000871346_360.jpg")
+					.publish-cont
+						h3.pub-tl
+							a(href="javascript:;") 国美旗舰店
+							a(href="javascript:;").icon-fan 优惠券
+						a.scan-more(href="javascript:;") 进入店铺
+				.publish-text
+					a(href="#")
+						img(src="http://img1.gomein.net.cn/image/prodimg/production_image/201604/27/1123230704/1000871346_360.jpg")
+					a(href="#").link 听说下雪天和巧克力更配哦~今日特价。听说下雪天和巧克力更配哦~今日特价。听说下雪天和巧克力更配哦~今日特价。
+					a(href="#").pc-btn 查看详情
+				.publish-movie
+					a(href="##").img
+						img(src="http://img1.gomein.net.cn/image/bbcimg/production_image/nimg/201605/02/16/52/720d1626c8e349aa1ea_800.jpg")
+					.publish-cont
+						h3.movie-title
+							a(href="##") 湄公河行动
+							em.imax IMAX
+							p.score
+								span 9.2
+								| 分
+						p.introduction
+							span.light-gray 简介：
+							span 2011年10月5日，两艘中国商船在湄公河金三角水域遭遇袭击，13名中国船员全部遇难，泰国警方从船上搜出90万颗冰毒。消息传回国内，举国震惊。为了查明真相...
+						p.actor
+							span.light-gray 演员：
+							span 张涵予／彭于晏 ／冯文娟／陈宝国／孙淳
+						a(href="##").pc-btn.pc-btnw130.pc-btnh40 我要看
+				//img(src="http://img1.gomein.net.cn/image/bbcimg/production_image/nimg/201605/02/16/52/a2581626c8eebe46e62_800.jpg")
+				img(src="../../images/circle/no-message.jpg")
+				img.content-imgC(src="../../images/circle/no-message.jpg")
+				img.content-imgR(src="../../images/circle/no-message.jpg")
+			ul.preview-label.clearfix
+				li 冰激凌
+				li 提拉米苏
+				li 水果披萨
+			.preview-publish.clearfix
+				a.btn-red-md(href="javascript:;") 发布
+				a.btn-edit(href="javascript:;") 继续编辑
+								
+		include ../../widget/footer/footer.pug
+
+
+
+
+
+
+
+
+
+
+
+
+
+

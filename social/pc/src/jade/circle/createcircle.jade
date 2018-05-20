@@ -1,0 +1,128 @@
+doctype html
+html(lang="zh-CN")
+    include ../../../../../gomeplusUI/pc/src/jade/head.jade
+    link(type="text/css",rel="stylesheet",href="../../css/public/public.css")
+    link(type="text/css",rel="stylesheet",href="../../css/module/circle/createcircle.css")
+    body.opg
+        include ../../../../../gomeplusUI/pc/src/jade/header.jade
+        include ../../../../../gomeplusUI/pc/src/jade/menu.jade
+        div.circle-bj
+            div.circle-con-box
+                p.pad-top10 选择圈子分类
+                    span 选择兴趣分类，便于相同兴趣爱好的人查找（单选，必填）
+                ul.category-list
+                    li
+                        a(href="#").active 美食
+                            em.icon.icon-duigou &#xea53;
+                    li
+                        a(href="#") 美食美食美食
+                    li
+                        a(href="#") 美食美食
+                    li
+                        a(href="#") 美食
+                    li
+                        a(href="#") 美食
+                    li
+                        a(href="#") 美食
+                    li
+                        a(href="#") 美食
+                    li
+                        a(href="#") 美食美食美食
+                    li
+                        a(href="#") 美食
+                    li
+                        a(href="#") 美食
+                    li
+                        a(href="#") 美食
+                    li
+                        a(href="#") 美食
+                    li
+                        a(href="#") 美食
+                    li
+                        a(href="#") 美食
+                    li
+                        a(href="#") 美食
+                    li
+                        a(href="#") 美食
+                    li
+                        a(href="#") 美食
+                    li
+                        a(href="#") 美食
+                    li
+                        a(href="#") 美食
+                div.category-list2
+                    a.active(href="#") 西式甜点
+                    a(href="#") 欧式慕斯
+                    a(href="#") 中式早餐
+                    a(href="#") 法式
+                    a(href="#") 美式披萨美式披萨
+                    a(href="#") 俄式奶酪
+                    a(href="#") 欧式慕斯
+                    a(href="#") 中式早餐
+                    a(href="#") 法式
+                    a(href="#") 美式披萨美式披萨
+                    a(href="#") 俄式奶酪
+                    a(href="#") 欧式慕斯
+                    a(href="#") 欧式慕斯
+                    a(href="#") 中式早餐
+                    a(href="#") 法式
+                    a(href="#") 美式披萨美式披萨
+                    a(href="#") 俄式奶酪
+                    a(href="#") 欧式慕斯
+                    a(href="#") 中式早餐
+                    a(href="#") 法式
+                    a(href="#") 美式披萨美式披萨
+                    a(href="#") 俄式奶酪
+                    a(href="#") 欧式慕斯
+                p 输入圈子名称
+                    span 起个响亮的圈子名称，让你的圈子更有吸引力（必填）
+                .div-input
+                    span 0/15
+                    input(type="text",placeholder="填写圈子名称").write-name
+                p.pad-top10 上传圈子头像
+                    span 请上传JPG/PNG/JPEG格式的图片（选填）
+                div.circle-head
+                    div.upload-head-bx
+                        a.pc-btn.pc-bj-fc8753.pc-btnw155.pc-btnh40.upload-picture(href="#")
+                            span +
+                            | 上传头像
+                            input(type="file")
+                        div.picture-bj-img.load-ing
+                            .position-abso
+                                div.picture-bx
+                                .load-failed-bx
+                                    span.top-left
+                                    span.top-right
+                                    span.bottom-left
+                                    span.bottom-right
+                                    span.opacity-all
+                                .load-failed-txt.failure 图片加载失败！
+                                    em.icon &#xe98e;
+                                    a(href="#") 点击刷新
+                                .load-failed-txt.image-load
+                                    p 图片加载中
+                                    .progress-bar-bx
+                                        span
+                            .circle-default-head
+                                img.img250(src="../../images/public/circle-default-head.jpg")
+                            span.error ＊ 图片格式有误 请重新上传
+                        a.pc-btn.pc-bj-fc8753.pc-btnw80.pc-btnh35(href="javescript:") 保存
+                    div.head-preview-bx
+                        p.head-title 效果预览
+                        p.head-size 你上传的图片会自动生成2种尺寸，请注意小尺寸的头像是否清晰
+                        div.picture2-bx
+                            .picture-bx2
+                                div.default-img1
+                                    img(src="../../images/public/default-img1.jpg")
+                                p.p-size 160*160px
+                            .picture-bx3
+                                div.picture-bx4
+                                    div.default-img2
+                                        img(src="../../images/public/default-img2.jpg")
+                                    p.p-size 60*60px
+                                div.picture-bx5
+                                    div.default-img3
+                                        img(src="../../images/public/default-img3.jpg")
+                                    p.p-size 30*30px
+                div.submit-btn
+                    a.pc-btn.pc-bj-fc8753.pc-btnw200.pc-btnh50(href="javescript:") 提交审核

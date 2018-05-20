@@ -1,0 +1,44 @@
+//- extends layout.jade
+extends ../../../widget-platform/pug/layout/layout.jade
+
+//- button
+block content
+	h2.platform-title button
+	div.platform-content
+		h3.platform-header button
+		div.platform-intro 
+			p 通过赋予&lt;a&gt;元素不同类的组合，展示其视觉效果差异。
+		div.platform-example#button
+			include ../../../../pc-widget/button/button.jade
+		pre.platform-pre
+			code.platform-code#button_code
+			span.platform-jade pug
+			span.platform-jade.platform-html.actived html
+	
+	div.platform-content
+		h3.platform-header top
+		div.platform-intro 
+			p 返回页面顶部 | 意见反馈
+		div.platform-example#top
+			include ../../../../pc-widget/top/top.jade
+		pre.platform-pre
+			code.platform-code#top_code
+			span.platform-jade pug
+			span.platform-jade.platform-html.actived html
+	
+
+	div.platform-content
+		h3.platform-header sort
+		div.platform-intro 
+			p 数据信息排序方式
+		div.platform-example#sort
+			include ../../../../pc-widget/sort/sort.jade
+		pre.platform-pre
+			code.platform-code#sort_code
+			span.platform-jade pug
+			span.platform-jade.platform-html.actived html
+				
+	//- js format html code
+	script(type='text/javascript').
+		HtmlFormat.init(['button','top','sort'],false,'_code','html','span.platform-jade');
+		$(".platform-button").parent('li').addClass("actived");

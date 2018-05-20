@@ -1,0 +1,79 @@
+//- extends layout.jade
+extends ../../../widget-platform/pug/layout/layout-m.jade
+
+//- index
+block content
+	.platform-tipsinfo
+		h5 说明
+		p m-btn 公用类
+		p disabled="disabled" 按钮禁用
+		p m-btn btn-bor 边框按钮
+		p m-btn m-btn-black 加入购物车(特殊)
+		p m-btn m-btn-big 加大按钮样式
+		p 具体查看结构，谢谢~
+		p.maty 有问题沟通-maty
+		h5 知识点
+		p ①一像素边框处理
+	//end
+
+	//- button-1
+	div.platform-content
+		h3.platform-header 常用按钮
+		//- div.platform-intro
+		//- 	p 按钮样式-1
+		div.platform-example#button-1
+			include ../../../../plus-widget/button/button-1.jade
+		pre.platform-pre.hide
+			code.platform-code#button-1_code
+			span.platform-jade pug
+			span.platform-jade.platform-html.actived html
+	//- button-2
+	div.platform-content
+		h3.platform-header
+			| 加入购物车
+			small (特殊)
+		//- div.platform-intro
+		//- 	p 按钮样式-2
+		div.platform-example#button-2
+			include ../../../../plus-widget/button/button-2.jade
+		pre.platform-pre.hide
+			code.platform-code#button-2_code
+			span.platform-jade pug
+			span.platform-jade.platform-html.actived html
+	//- button-3
+	div.platform-content
+		h3.platform-header 较大按钮
+		//- div.platform-intro
+		//- 	p 按钮样式-3
+		div.platform-example#button-3
+			include ../../../../plus-widget/button/button-3.jade
+		pre.platform-pre.hide
+			code.platform-code#button-3_code
+			span.platform-jade pug
+			span.platform-jade.platform-html.actived html
+	//- button-4
+	div.platform-content
+		h3.platform-header 较小按钮
+		//- div.platform-intro
+		//- 	p 按钮样式-4
+		div.platform-example#button-4
+			include ../../../../plus-widget/button/button-4.jade
+		pre.platform-pre.hide
+			code.platform-code#button-4_code
+			span.platform-jade pug
+			span.platform-jade.platform-html.actived html
+	//- button-5
+	div.platform-content
+		h3.platform-header 回到顶部/回到首页
+		//- div.platform-intro
+		//- 	p 按钮样式-4
+		div.platform-example#button-5
+			include ../../../../plus-widget/button/button-5.jade
+		pre.platform-pre.hide
+			code.platform-code#button-5_code
+			span.platform-jade pug
+			span.platform-jade.platform-html.actived html
+	script(type='text/javascript').
+		HtmlFormat.init(['button-1','button-2','button-3','button-4','button-5'],false,'_code','html','span.platform-jade');
+		$(".platform-button").parent('li').addClass("actived");
+	

@@ -1,0 +1,22 @@
+/* register */
+@import "../../base/public.scss";
+
+.register-rules{
+    height: 500px;
+    overflow-y: scroll;
+}
+
+.form-input .message{
+    line-height: 22px;
+    color: #666;
+    text-align: left;
+    padding-bottom: 5px;
+    font-size: 12px;
+    white-space:nowrap;
+}
+
+.login-wrap .form-group .form-input .input-code{
+    min-width: 160px;
+    width: 160px;
+}
+

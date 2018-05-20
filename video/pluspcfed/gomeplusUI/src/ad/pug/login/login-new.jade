@@ -1,0 +1,60 @@
+//- login.jade
+doctype html
+html(lang="zh-CN")
+	head
+		block meta-charset
+			meta(charset="UTF-8")
+		block meta-renderer
+			meta(name="renderer" content="webkit")
+		block meta-description
+			meta(name="description",content="gomepulus")
+		block meta-keyword
+			meta(name="keyword",content="gomepulus AMP")
+		block title
+			title 登录注册
+		block compatible
+			meta(http-equiv="X-UA-Compatible",content="IE=edge")
+		block pragma
+			meta(http-equiv="pragma",content="no-cache")
+		block cache
+			meta(http-equiv="cache-control",content="no-cache")
+		block expires
+			meta(http-equiv="expires",content="0")
+		block author
+			meta(name="author",content="")
+		block link-public
+			link(rel='stylesheet' type="text/css" href="../../css/public/public.css")
+		block link-theme
+			link(rel='stylesheet' type="text/css" href="../../css/module/amp.css")
+	body.body-none
+		//- header
+		.login-header
+			span.header-login
+				a(href="#") gomeplus
+		//- body
+		.login-body
+			.body-scaffold
+				.scaffold-main
+					.main-wrap
+						h2 欢迎登录
+						.ele-input.ele-input-block
+							input(type="text",value="",placeholder="输入用户名")
+						.ele-input.ele-input-block
+							input(type="text",value="",placeholder="输入密码")
+						.wrap-valadate
+							.ele-input
+								input(type="text",value="",placeholder="验证码")
+							span.valadate-img
+								img(src="../../images/login/code.jpg")
+							span.valadate-text
+								a(href="#") 换一换
+						.wrap-help
+							a(href="#").help-password 忘记密码
+							a(href="#").help-register 立即注册 >
+						.wrap-btn
+							a(href="#").btn.btn-blue 登 录
+
+
+
+		//- footer
+		include ../public/footer.jade

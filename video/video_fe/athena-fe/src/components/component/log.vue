@@ -1,0 +1,15 @@
+<template>
+    <div>log 查询{{msg}}</div>
+</template>
+<style>
+
+</style>
+<script>
+    export default{
+        data(){
+            return{
+                msg:'hello vue'
+            }
+        }
+    }
+</script>

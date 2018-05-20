@@ -1,0 +1,48 @@
+extends ../public/head.jade
+block title
+	title 电器员工绑定(总部员工)选择二级分部
+block link-theme
+	link(rel='stylesheet' type="text/css" href="../../css/module/employeebind/employeebind.css")
+block content
+	//- js
+	include ../public/mobileJs.jade
+	.banner 国美 Plus 邀请你来赚大钱
+	.bind-infor
+		.header-module.header-module_gray
+			span 员工信息绑定
+		ul.form-list
+			li.list-item.list-item_color
+				em.icon.icon-person
+				.item-text 姚丽丽
+			li.list-item.list-item_color
+				em.icon.icon-id
+				.item-text 00345
+			li.list-item
+				em.icon.icon-first
+				em.icon.iconn-41
+				input.input-style(type="text" placeholder="请选择一级分部")
+			li.list-item
+				em.icon.icon-second
+				em.icon.iconn-41
+				input.input-style(type="text" placeholder="请选择二级分部")
+			li.list-item
+				em.icon.icon-part
+				em.icon.iconn-41
+				input.input-style(type="text" placeholder="请选择门店")
+		.notice
+			span *
+			| 总部将通过此帐号考核您的业绩，请认真填写。如因信息错误产生的后果，请自行承担。
+		a.button.button-primary(href="javascript:;") 提交
+	.master
+	.pop-panel(style="bottom:0;")
+		.pop-panel_hd
+			span.input-search
+				input.input-style(type="text" placeholder="请选择二级分部")
+		.pop-panel_bd
+			ul
+				li.pop-panel_item 运城分部
+				li.pop-panel_item 晋中分部
+				li.pop-panel_item 临汾分部
+				li.pop-panel_item 阳泉分部
+				li.pop-panel_item 晋城分部
+				li.pop-panel_item 阜阳分部

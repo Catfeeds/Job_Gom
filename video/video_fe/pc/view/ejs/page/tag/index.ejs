@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <title>GomePlus视频频道</title>
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="keywords" content="GomePlus视频频道" />
+    <meta name="description" content="" />
+    <meta name="x5-page-mode" content="no-title" />
+    <link rel="stylesheet" href="http://css.atguat.com.cn/??gmlib/reset/1.1.0/reset.css,gmpro/1.0.0/public/1.0.0/css/top.min.css,gmpro/1.0.0/public/1.2.0/css/foot-gomeplus.min.css?v=201704181727">
+    <link rel="stylesheet" type="text/css" href="<%=devenv%>dist/css/tag.css">
+</head>
+
+<body>
+    <script type="text/javascript">
+    var $CONFIG = {
+        userId: 0, //用户id，为0标识未登录
+        nickName: "",
+        avatar: "",
+        domain: "http://m.v.dev.gomeplus.com/",
+        mdomain: "https://m-v.gomeplus.com/",
+    };
+    $CONFIG['tagId'] = 11;
+    $CONFIG['loadMore'] = true;
+    $CONFIG['domain-data'] = 'http://v-dyc.pre.gomeplus.com';
+    </script>
+    <%- include('../../common/head.ejs')%>
+    <!-- main -->
+    <div class="wrap">
+        <h1>我看过的</h1>
+        <div id="listCon">
+        	<%- include('../../common/user-like.ejs')%>
+            <!--<ul class="list">
+
+            </ul>-->
+        </div>
+    </div>
+    <!-- main -->
+    <%- include('../../common/footer.ejs')%>
+    <script src="<%=devenv%>dist/js/vendor.js"></script>
+    <script src="<%=devenv%>dist/js/tag.js"></script>
+</body>
+
+</html>

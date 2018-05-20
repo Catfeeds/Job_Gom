@@ -1,0 +1,58 @@
+doctype html
+html(lang="zh-CN")
+    meta(charset="utf-8")
+    link(type="text/css",rel="stylesheet",href="../../css/public/public.css")
+    link(type="text/css",rel="stylesheet",href="../../css/module/failure.css")
+    body.opg
+        include ../../widget/header/header-meihaoT.pug
+        .failure
+            h3 您的美号绑定圈子已失效，请重新绑定
+            .failure-info
+                .info.pd28.clearfix
+                    p 美号头像
+                    .head-img
+                        img(src="../../images/meihao/head.jpg", alt="")
+                .info.pd28.clearfix
+                    p 美号名称
+                    .info-name 男人帮
+                .info.pd28.clearfix
+                    p 美号标签
+                    .info-label 时尚男人
+                .info.pd28.clearfix
+                    p 美号简介
+                    .info-intro 
+                        | 提供网友最爱看的、服装搭配、理容、泡妞、社会新闻、娱乐八卦、搞笑图片、幽默笑话、旅游等丰富健康的内容，提供男性网网友最爱看的、服装搭配、理容、泡妞、社会新闻、娱乐八卦、搞笑图
+                .info.clearfix
+                    p.info-left 创建绑定圈子
+                    .info-right
+                        input(type="text",maxlength="15").right-found
+                        .right-term 15个汉字以内，您发的内容可在绑定的圈子中展示
+                .info.clearfix
+                    p.info-left 选择圈子分类
+                    .info-right
+                        .right-lable.mr10
+                            .lable-text 
+                                .text-checked 
+                                span
+                                ul.lable-list
+                                    li 
+                                        a(href="javascript:;") 生活美学家
+                                    li 
+                                        a(href="javascript:;") 数码极客
+                                    li 
+                                        a(href="javascript:;") 时尚咖
+                        .right-lable
+                            .lable-text 
+                                .text-checked 
+                                span.lable-btn
+                                ul.lable-list
+                                    li 
+                                        a(href="javascript:;") 生活美学家
+                                    li 
+                                        a(href="javascript:;") 数码极客
+                                    li 
+                                        a(href="javascript:;") 时尚咖
+                        .right-term 选择圈子分类
+                .confirm
+                    a(href="javascript").confirm-btn 确认
+

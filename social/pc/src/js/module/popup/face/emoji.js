@@ -1,0 +1,326 @@
+var imgPath = $_CONFIG.imgpath + '/images/emoji/';
+
+var ext = '.png';
+
+var groupOne = [{
+    name: '微笑',
+    url: 'weixiao'
+}, {
+    name: '色',
+    url: 'se'
+}, {
+    name: '亲亲',
+    url: 'qinqin'
+}, {
+    name: '得意',
+    url: 'deyi'
+}, {
+    name: '流泪',
+    url: 'liulei'
+}, {
+    name: '害羞',
+    url: 'haixiu'
+}, {
+    name: '闭嘴',
+    url: 'bizui'
+}, {
+    name: '鼓掌',
+    url: 'guzhang'
+}, {
+    name: '大哭',
+    url: 'daku'
+}, {
+    name: '尴尬',
+    url: 'ganga'
+}, {
+    name: '生气',
+    url: 'shengqi'
+}, {
+    name: '调皮',
+    url: 'tiaopi'
+}, {
+    name: '呲牙',
+    url: 'ciya'
+}, {
+    name: '惊讶',
+    url: 'jingya'
+}, {
+    name: '委屈',
+    url: 'weiqu'
+}, {
+    name: '吐血',
+    url: 'tuxue'
+}, {
+    name: '冷汗',
+    url: 'lenghan'
+}, {
+    name: '抓狂',
+    url: 'zhuakuang'
+}, {
+    name: '难过',
+    url: 'nanguo'
+}, {
+    name: '偷笑',
+    url: 'touxiao'
+}, {
+    name: '白眼',
+    url: 'baiyan'
+}, {
+    name: '不屑',
+    url: 'buxie'
+}, {
+    name: '快哭了',
+    url: 'kuaikule'
+}];
+
+var groupTwo = [{
+    name: '困',
+    url: 'kun'
+}, {
+    name: '装酷',
+    url: 'zhuangku'
+}, {
+    name: '大笑',
+    url: 'daxiao'
+}, {
+    name: '偷瞄',
+    url: 'toumiao'
+}, {
+    name: '奋斗',
+    url: 'fendou'
+}, {
+    name: '咒骂',
+    url: 'zhouma'
+}, {
+    name: '疑问',
+    url: 'yiwen'
+}, {
+    name: '晕',
+    url: 'yun'
+}, {
+    name: '捶打',
+    url: 'chuida'
+}, {
+    name: '再见',
+    url: 'zaijian'
+}, {
+    name: '抠鼻',
+    url: 'koubi'
+}, {
+    name: '发呆',
+    url: 'fadai'
+}, {
+    name: '坏笑',
+    url: 'huaixiao'
+}, {
+    name: '哈欠',
+    url: 'haqian'
+}, {
+    name: '鄙视',
+    url: 'bishi'
+}, {
+    name: '睡觉',
+    url: 'shuijiao'
+}, {
+    name: '饿',
+    url: 'e'
+}, {
+    name: '阴险',
+    url: 'yinxian'
+}, {
+    name: '难受',
+    url: 'nanshou'
+}, {
+    name: '可怜',
+    url: 'kelian'
+}, {
+    name: '撇嘴',
+    url: 'piezui'
+}, {
+    name: '石化',
+    url: 'shihua'
+}, {
+    name: '泪眼',
+    url: 'leiyan'
+}];
+/*
+var groupThree = [{
+    name: '嘘',
+    url: 'xu'
+}, {
+    name: '哼哼',
+    url: 'hengheng'
+}, {
+    name: '爱慕',
+    url: 'aimu'
+}, {
+    name: '财迷',
+    url: 'caimi'
+}, {
+    name: '耶',
+    url: 'ye'
+}, {
+    name: '思考',
+    url: 'sikao'
+}, {
+    name: '骷髅',
+    url: 'kulou'
+}, {
+    name: '痛哭',
+    url: 'tongku'
+}, {
+    name: '恭喜',
+    url: 'gongxi'
+}, {
+    name: '捂脸',
+    url: 'wulian'
+}, {
+    name: '嘿哈',
+    url: 'heiha'
+}, {
+    name: '机智',
+    url: 'jizhi'
+}, {
+    name: '皱眉',
+    url: 'zhoumei'
+}, {
+    name: '安慰',
+    url: 'anwei'
+}, {
+    name: '飞吻',
+    url: 'feiwen'
+}, {
+    name: '奸笑',
+    url: 'jianxiao'
+}, {
+    name: '猪头',
+    url: 'zhutou'
+}, {
+    name: '玫瑰',
+    url: 'meigui'
+}, {
+    name: '凋谢',
+    url: 'diaoxie'
+}, {
+    name: '爱心',
+    url: 'aixin'
+}, {
+    name: '心碎',
+    url: 'xinsui'
+}, {
+    name: '蛋糕',
+    url: 'dangao'
+}, {
+    name: '喝水',
+    url: 'heshui'
+}];
+
+var groupFour = [{
+    name: '西瓜',
+    url: 'xigua'
+}, {
+    name: '咖啡',
+    url: 'kafei'
+}, {
+    name: '啤酒',
+    url: 'pijiu'
+}, {
+    name: '包包',
+    url: 'baobao'
+}, {
+    name: '高跟鞋',
+    url: 'gaogenxie'
+}, {
+    name: '帽子',
+    url: 'maozi'
+}, {
+    name: '口红',
+    url: 'kouhong'
+}, {
+    name: '裙子',
+    url: 'qunzi'
+}, {
+    name: 'T恤',
+    url: 'txu'
+}, {
+    name: '裤子',
+    url: 'kuzi'
+}, {
+    name: '眼镜',
+    url: 'yanjing'
+}, {
+    name: '太阳镜',
+    url: 'taiyangjing'
+}, {
+    name: '蜡烛',
+    url: 'lazhu'
+}, {
+    name: '礼物',
+    url: 'liwu'
+}, {
+    name: '红包',
+    url: 'hongbao'
+}, {
+    name: '拥抱',
+    url: 'yongbao'
+}, {
+    name: '太阳',
+    url: 'taiyang'
+}, {
+    name: '月亮',
+    url: 'yueliang'
+}, {
+    name: '便便',
+    url: 'bianbian'
+}, {
+    name: '炸弹',
+    url: 'zhadan'
+}, {
+    name: '菜刀',
+    url: 'caidao'
+}, {
+    name: '握手',
+    url: 'woshou'
+}, {
+    name: '胜利',
+    url: 'shengli'
+}];
+
+var groupFive = [{
+    name: '赞',
+    url: 'zan'
+}, {
+    name: 'OK',
+    url: 'ok'
+}, {
+    name: '勾引',
+    url: 'gouyin'
+}, {
+    name: 'NO',
+    url: 'no'
+}, {
+    name: '打脸',
+    url: 'dalian'
+}, {
+    name: '抱拳',
+    url: 'baoquan'
+}, {
+    name: '乒乓球',
+    url: 'pingpangqiu'
+}, {
+    name: '足球',
+    url: 'zuqiu'
+}, {
+    name: '篮球',
+    url: 'lanqiu'
+}];
+*/
+var format = function(arr) {
+    for (var i = 0, len = arr.length; i < len; i++) {
+        var emoji = arr[i];
+        emoji.url = imgPath + emoji.url + ext;
+    }
+    return arr;
+};
+
+module.exports = format(groupOne.concat(groupTwo/*, groupThree, groupFour, groupFive*/));

@@ -1,0 +1,152 @@
+{
+    "publicPath": "https://js.meixincdn.com/m/vh5/dist",
+    "page": {
+        "video_detail": {
+            "css": [
+                {
+                    "path": "css\\video_detail",
+                    "hash": "c37e23c",
+                    "extname": ".css"
+                }
+            ],
+            "js": [
+                {
+                    "path": "js/vendor",
+                    "hash": "c9e495e",
+                    "extname": ".js"
+                },
+                {
+                    "path": "js\\video_detail",
+                    "hash": "1e3d4b8",
+                    "extname": ".js"
+                }
+            ]
+        },
+        "comment": {
+            "css": [
+                {
+                    "path": "css\\comment",
+                    "hash": "b0f80df",
+                    "extname": ".css"
+                }
+            ],
+            "js": [
+                {
+                    "path": "js/vendor",
+                    "hash": "c9e495e",
+                    "extname": ".js"
+                },
+                {
+                    "path": "js\\comment",
+                    "hash": "ebc8cee",
+                    "extname": ".js"
+                }
+            ]
+        },
+        "index": {
+            "css": [
+                {
+                    "path": "css\\index",
+                    "hash": "d71a353",
+                    "extname": ".css"
+                }
+            ],
+            "js": [
+                {
+                    "path": "js/vendor",
+                    "hash": "c9e495e",
+                    "extname": ".js"
+                },
+                {
+                    "path": "js\\index",
+                    "hash": "c2ffe27",
+                    "extname": ".js"
+                }
+            ]
+        },
+        "tag": {
+            "css": [
+                {
+                    "path": "css\\tag",
+                    "hash": "96b2b0f",
+                    "extname": ".css"
+                }
+            ],
+            "js": [
+                {
+                    "path": "js/vendor",
+                    "hash": "c9e495e",
+                    "extname": ".js"
+                },
+                {
+                    "path": "js\\tag",
+                    "hash": "74130f8",
+                    "extname": ".js"
+                }
+            ]
+        },
+        "demo": {
+            "css": [
+                {
+                    "path": "css\\demo",
+                    "hash": "48740b4",
+                    "extname": ".css"
+                }
+            ],
+            "js": [
+                {
+                    "path": "js/vendor",
+                    "hash": "c9e495e",
+                    "extname": ".js"
+                },
+                {
+                    "path": "js\\demo",
+                    "hash": "f22b7a9",
+                    "extname": ".js"
+                }
+            ]
+        },
+        "ui-collection": {
+            "css": [
+                {
+                    "path": "css\\ui-collection",
+                    "hash": "c2e7c76",
+                    "extname": ".css"
+                }
+            ],
+            "js": [
+                {
+                    "path": "js/vendor",
+                    "hash": "c9e495e",
+                    "extname": ".js"
+                },
+                {
+                    "path": "js\\ui-collection",
+                    "hash": "bc0a795",
+                    "extname": ".js"
+                }
+            ]
+        },
+        "error": {
+            "css": [
+                {
+                    "path": "css\\error",
+                    "hash": "9f25b73",
+                    "extname": ".css"
+                }
+            ],
+            "js": [
+                {
+                    "path": "js/vendor",
+                    "hash": "c9e495e",
+                    "extname": ".js"
+                },
+                {
+                    "path": "js\\error",
+                    "hash": "ec8a733",
+                    "extname": ".js"
+                }
+            ]
+        }
+    }
+}

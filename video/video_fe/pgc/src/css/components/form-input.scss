@@ -1,0 +1,215 @@
+
+.form-group{
+    position: relative;
+    zoom: 1;
+    &:after{
+        content:"";display:block;height:0;clear:both;visibility:hidden;
+    }
+    label{
+        float: left;
+        width: 7em;
+        text-align: right;
+        color: $base;
+        line-height: 40px;
+        height: 40px;
+        white-space:nowrap;
+        .color-rad{
+            color: $warning;
+        }
+    }
+    .form-input{
+        position: relative;
+        float: left;
+        padding-bottom: 16px;
+        em{
+            position: absolute;
+            left: 10px;
+            top: 15px;
+            font-size: 20px;
+            color: #999;
+            & ~ .input-text{
+                padding-left: 40px;
+            }
+        }
+        .input-text{
+            box-sizing: border-box;
+            min-width: 350px;
+            border: 1px solid $border;
+            background: $white;
+            border-radius: 3px;
+            padding: 0 10px;
+            height: 40px;
+            line-height: 38px;
+            margin-bottom: 8px;
+            color: $base;
+        }
+        .input-textarea{
+            box-sizing: border-box;
+            min-width: 350px;
+            border: 1px solid $border;
+            background: $white;
+            border-radius: 3px;
+            padding: 10px;
+            height: 60px;
+            line-height: 20px;
+            margin-bottom: 8px;
+            color: $base;
+        }
+        .input-code{
+            min-width: 244px;
+        }
+        .error{
+            color: $warning;
+            font-size: 12px;
+            line-height: 1;
+            display: none;
+            text-align: left;
+            a{
+                color: $primary;
+            }
+        }
+        .disable,[disabled]{
+            color: $disabled-color;
+            background: $disabled-bg;
+            cursor: no-drop;
+        }
+        .num{
+            position: absolute;
+            right: 10px;
+            top: 0;
+            color: $gray;
+            line-height: 40px;
+        }
+    }
+    .btn{
+        float: right;
+        width: 96px;
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+}
+
+/* 上传图片 */
+.upload-box{
+    .upload-attention{
+        font-size: 12px;
+        padding: 12px 0;
+        color: #999;
+    }
+    .upload-img{
+        position: relative;
+        width: 130px;
+        height: 130px;
+        border: 1px solid #e1e1e1;
+        border-radius: 3px;
+        float: left;
+        margin-right: 10px;
+        margin-bottom: 10px;
+        .upload-add{
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 1;
+            cursor: pointer;
+            input[type='file']{
+                display: none;
+            }
+            .icon-7{
+                position: absolute;
+                left: 50%;
+                top: 50%;
+                transform: translate(-50%,-50%);
+                font-size: 30px;
+            }
+            .upload-btn{
+                opacity: 0;
+                cursor: pointer;
+                position: absolute;
+                left: 0;
+                top: 0;
+                width: 100%;
+                height: 100%;
+                z-index: 2;
+            }
+            .add-item{
+                width:130px;
+                height:130px;
+            }
+        }
+        .img-add{
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 3;
+            .loading-bg{
+                position: absolute;
+                left: 0;
+                top: 0;
+                width: 100%;
+                height: 100%;
+                background: #7f7f7f;
+                border-radius: 3px;
+            }
+            .indicator{
+                position: absolute;
+                left: 50%;
+                top: 50%;
+                transform: translate(-50%,-50%);
+                font-size: 30px;
+            }
+            img{
+                position: relative;
+                z-index: 10;
+                width: 100%;
+                height: 100%;
+                border-radius: 3px;
+            }
+            .del{
+                position: absolute;
+                right: -9px;
+                top: -9px;
+                font-size: 18px;
+                color: #f55050;
+                background-color: #fff;
+                border-radius: 50%;
+                cursor: pointer;
+                z-index: 11;
+            }
+        }
+        &.img-company{
+            height: 184px;
+            .upload-add .add-item{
+                height: 184px;
+            }
+        }
+        &.img-cover{
+            width: 280px;
+            height: 158px;
+            .upload-add .add-item{
+                width: 280px;
+                height: 158px;
+            }
+        }
+        &.img-apply{
+            width: 176px;
+            height: 98px;
+            .upload-add .add-item{
+                width: 176px;
+                height: 98px;
+            }
+        }
+        &.img-shop{
+            width: 278px;
+            height: 156px;
+            .upload-add .add-item{
+                width: 278px;
+                height: 156px;
+            }
+        }
+    }
+}

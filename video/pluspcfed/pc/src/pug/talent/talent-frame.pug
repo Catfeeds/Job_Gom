@@ -1,0 +1,36 @@
+doctype html
+html(lang="zh-CN")
+    meta(charset="utf-8")
+    link(type="text/css",rel="stylesheet",href="../../css/public/public.css")
+    //引入对应的scss
+    link(type="text/css",rel="stylesheet",href="../../css/module/recruit.css")
+    body.opg       
+        include ../../widget/header/header-talent.pug        
+        .talent.clearfix  
+            include ../../widget/aside/talent.pug      
+            .recruit
+                .recruit-cont
+                    //右侧内容写这里
+                    //scss文件引入以下文件，class更根据自己的页面来定义
+                        @charset "utf-8";
+                        @import '../../widget/config/_base.scss';
+                        /* @import '../../widget/header/header-talent.scss';
+                        @import '../../widget/aside/talent.scss';
+                        .opg {   
+                            background:#F3F5F7;
+                            min-width: 1040px;
+                        }
+                        .talent{
+                            font-family: 'PingFangSC-Regular';
+                            min-width: 1260px;
+                        }
+                        .recruit{       
+                            margin-left: 220px;
+                            .recruit-cont{
+                                width: 1040px;
+                                margin: 0 auto;
+                                padding-top: 20px;
+                                border: 1px solid #ccc;
+
+                            }
+                        }

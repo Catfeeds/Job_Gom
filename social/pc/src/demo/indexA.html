@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>demo page</title>
+    <link rel="stylesheet" type="text/css" href="/src/css/ui-dialog.css">
+    <style>
+    [data-node=tiles]{
+        width: 400px;
+    }
+    [data-node=tiles] .card{
+        width: 200px;
+    }    
+    </style>
+</head>
+
+<body>
+    <h1>index A A + AAAAA</h1>
+    <a class="abc hhh" data-node="like">Click me b</a> Isomorphic React.js with PHP http://liuchao.gomeplus.com/address/?debug=true
+    <div>
+        <a href="/src/indexB.html">click me</a>
+    </div>
+    <div>http://127.0.0.1/src/indexA.html</div>
+    <div>aaaaaaaaaaaaaaaaaaaaaaaaa</div>
+    <pre>
+
+webpack result is served from http://js.dev.meixincdn.com/m/h5/index.js
+content is served from /Users/jiyp/workspace/gomeplus
+Hash: a65e30e7f794acecb772  
+Version: webpack 1.13.0
+热更新呢
+
+webpack-dev-server
+webpack --> LIBRARY AND EXTERNALS
+</pre> http://webpack.github.io/docs/webpack-dev-server.html
+    <pre>
+var WebpackDevServer = require("webpack-dev-server");
+var webpack = require("webpack");
+
+var compiler = webpack({
+  // configuration
+});
+var server = new WebpackDevServer(compiler, {
+  // webpack-dev-server options
+
+  contentBase: "/path/to/directory",
+  // or: contentBase: "http://localhost/",
+
+  hot: true,
+  // Enable special support for Hot Module Replacement
+  // Page is no longer updated, but a "webpackHotUpdate" message is send to the content
+  // Use "webpack/hot/dev-server" as additional module in your entry point
+  // Note: this does _not_ add the `HotModuleReplacementPlugin` like the CLI option does. 
+
+  // Set this as true if you want to access dev server from arbitrary url.
+  // This is handy if you are using a html5 router.
+  historyApiFallback: false,
+
+  // Set this if you want to enable gzip compression for assets
+  compress: true,
+
+  // Set this if you want webpack-dev-server to delegate a single path to an arbitrary server.
+  // Use "*" to proxy all paths to the specified server.
+  // This is useful if you want to get rid of 'http://localhost:8080/' in script[src],
+  // and has many other use cases (see https://github.com/webpack/webpack-dev-server/pull/127 ).
+  proxy: {
+    "*": "http://localhost:9090"
+  },
+
+  // pass [static options](http://expressjs.com/en/4x/api.html#express.static) to inner express server
+  staticOptions: {
+  },
+
+  // webpack-dev-middleware options
+  quiet: false,
+  noInfo: false,
+  lazy: true,
+  filename: "bundle.js",
+  watchOptions: {
+    aggregateTimeout: 300,
+    poll: 1000
+  },
+  publicPath: "/assets/",
+  headers: { "X-Custom-Header": "yes" },
+  stats: { colors: true }
+});
+server.listen(8080, "localhost", function() {});
+</pre>
+    <div>
+        <h1>placeholder 使用方法</h1>
+        <input type="text" name="name" placeholder="e.g. John Doe">
+    </div>
+
+    <div data-node="tiles">
+        <div class="card">
+            <h1>卡片1</h1>
+            <p>简单的瀑布流实现</p>
+            <p>简单的瀑布流实现</p>
+            <p>简单的瀑布流实现</p>
+        </div>
+        <div class="card">
+            <h1>卡片2</h1>
+            <p>简单的瀑布流实现</p>
+            <p>简单的瀑布流实现</p>
+            <p>简单的瀑布流实现</p>
+            <p>简单的瀑布流实现</p>
+            <p>简单的瀑布流实现</p>
+            <p>简单的瀑布流实现</p>
+        </div>
+        <div class="card">
+            <h1>卡片3</h1>
+            <p>简单的瀑布流实现</p>
+            <p>简单的瀑布流实现</p>
+        </div>
+        <div class="card">
+            <h1>卡片4</h1>
+            <p>简单的瀑布流实现</p>
+            <p>简单的瀑布流实现</p>
+            <p>简单的瀑布流实现简单的瀑布流实现简单的瀑布流实现</p>
+        </div>
+        <div class="card">
+            <h1>卡片5</h1>
+            <p>简单的瀑布流实现</p>
+            <p>简单的瀑布流实现简单的瀑布流实现简单的瀑布流实现</p>
+        </div>
+    </div>
+    
+                 http://js.dev.meixincdn.com/m/pc/src/js/conf/login.js
+                 http://js.dev.meixincdn.com/m/pc/src/js/conf/user.js
+    <script src="http://js.dev.meixincdn.com/m/pc/src/js/conf/vendor.js"></script>
+    <script src="http://js.dev.meixincdn.com/m/pc/src/js/conf/index.js" charset="utf-8"></script>
+    <script src="http://js.dev.meixincdn.com/m/pc/src/js/conf/demo.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,61 @@
+doctype html
+html(lang="zh-CN")
+	include ../../widget/head/head.pug
+	link(type="text/css",rel="stylesheet",href="../../css/public/public.css")
+	link(type="text/css",rel="stylesheet",href="../../css/module/shop-list.css")
+	body.opg
+		include ../../widget/header/header.pug
+		include ../../widget/menu/menu.pug
+		.wrap-box
+			.shop-title.clearfix
+				include ../../widget/crumbs/crumbs.pug
+				include ../../widget/sort/sort.pug
+			- for (var a = 0; a < 5; a++)
+				.shop-list
+					.list-name.clearfix
+						a(href="javascritp:;").pc-btn.pc-btnw120.pc-btnh40 进入店铺
+						.img
+							img(src="../../images/link1.png")
+						h2
+							a(href="javascritp:;") 德世朗旗舰店
+							span.vip1
+							span.vip2
+							span.vip3
+						// p.line2 放心厨具，还原最真实的厨房世界
+						p.counts
+							| 收藏量：
+							span 10056
+							| 总销量：
+							span 13654030
+						p
+							| 商品描述：
+							span 4.8
+							| 卖家服务：
+							span 4.6
+							| 物流服务：
+							span 4
+					ul.clearfix
+						- for (var x = 0; x < 5; x++)
+							li
+								a(href="#")
+									em.icon-fan 返
+									img(src="https://i6.meixincdn.com/v1/img/T1GRYTB7KT1R4cSCrK.png")
+									.text
+										| ￥
+										span 259.00
+										p 我新依旧心潮澎湃要你命300湃要你命300
+					// ul.clearfix
+						- for (var x = 0; x < 5; x++)
+							li
+								img(src="https://i6.meixincdn.com/v1/img/T1GRYTB7KT1R4cSCrK.png")
+								.text
+									| ￥
+									span 259.00
+									p 我新依旧心潮澎湃要你命300湃要你命300
+								.btn-box
+									a(href="javascritp:;").pc-btn.pc-btnh40 立即购买
+									a(href="javascritp:;").pc-btn.pc-btnh40.pc-bj-fc8753 加入购物车
+
+		include ../../widget/footer/footer.pug
+			
+		

@@ -1,0 +1,104 @@
+doctype html
+html(lang="zh-CN",data-use-rem="750")
+	include ../../../m-widget/head/head.jade
+	link(type="text/css",rel="stylesheet",href="../../css/public/public-wap.css")
+	link(type="text/css",rel="stylesheet",href="../../css/module/shop.css")
+	
+	body.opg
+		include ../../../m-widget/head/rem.jade
+
+		.meidian-wrap
+			header.header
+				span
+					a.head-back(href="javascript:;")
+						em.iconn-1
+				.head-search.w480
+					em.iconn-10
+					input.sec-ipt(type="search" placeholder="搜索店铺内商品" disabled="true")
+				span
+					a.head-icn(href="javascript:;")
+						em.iconn-3
+					a.head-icn(href="javascript:;")
+						em.iconn-4
+			.meidian-top
+				// /header
+				.shop-head
+					.head-l
+						img(src="../../images/coupon_share_logo.jpg")
+					.head-c.active
+						h3 无印良品国美超无敌店敌店超无敌
+						.shop-desc
+							p 无印良品是一个日本杂货品牌，在日文中意为无品牌标志的好产品。
+						a(href="javascript:;").unfold-btn
+							em.iconn-40
+							em.iconn-42
+					.head-r
+						a(href="##").like
+							em.iconn-12
+							span 1234
+						a(href="##").collect
+							em.iconn-9
+							span 12万
+			.check-all.mt20
+				span.sort-name 女装外套
+				a(href="javascript:;").checkall-btn
+					| 查看全部
+					em.iconn-41
+			ul.main-list.grid-list-bor
+				-for(i=0;i<4;i++) //循环四个同样的LI
+					li.item
+						a(href="javascript:;")
+							.item-img
+								img(src='https://i-pre.meixincdn.com/T15yWTBKxT1RXrhCrK.200x200cTz.jpg')
+							.item-txt 情人生日礼Crystallin精装礼品
+							.item-price
+								span.red ¥2199.40
+								del.del ¥2899.00
+			ul.menu-list.menu-list-shopbtn.menu-list-btns
+				li.item
+					a(href="##")
+						em.iconn-83
+						cite.txt 全部商品
+				li.item
+					a(href="##")
+						em.iconn-15
+						cite.txt 商品分类
+					.tab-nav.nav-big
+						i.triangle
+						ul
+							li
+								a(href="##") 商品名1
+							li
+								a(href="##") 商品名2
+							li
+								a(href="##") 商品名3
+							li
+								a(href="##") 商品名4
+							li
+								a(href="##") 商品名5
+							li
+								a(href="##") 商品名6
+							li
+								a(href="##") 商品名7
+							li
+								a(href="##") 商品名8
+							li
+								a(href="##") 商品名9
+							li
+								a(href="##") 商品名10
+							li
+								a(href="##") 商品名11
+							li
+								a(href="##") 商品名12
+							li
+								a(href="##") 商品名13
+							li
+								a(href="##") 商品名14
+							li
+								a(href="##") 商品名15
+							li
+								a(href="##") 商品名16
+				li.item
+					a(href="##")
+						em.iconn-32
+						cite.txt 购物车

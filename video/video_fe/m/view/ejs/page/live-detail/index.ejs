@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="zh-CN" data-use-rem="750">
+<head>
+	<meta charset="utf-8">
+	<title>GomePlus视频频道</title>
+	<meta name="keywords" content="GomePlus视频频道" />
+	<meta name="description" content="" />
+	<meta name="format-detection" content="telephone=no">
+	<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no,minimal-ui" />
+	<meta name="x5-page-mode" content="no-title"/>
+	<link rel="stylesheet" type="text/css" href="/m/vm/dist/css/live-detail.css">
+	<script type="text/javascript">
+		
+		var $CONFIG = {
+		    userId: 100017938675,//用户id，为0标识未登录
+		    nickName:"150^_^7211",
+		    avatar:"http://gfs14.atguat.net.cn/T1iyVTBQ_T1RCvBVdK.png",
+		    domain:"http://meimiao.atguat.com.cn/",
+		    mdomain:"http://meimiao.atguat.com.cn/",
+		    plusDomain:"http://m.atguat.com.cn/",
+		    loginUrl:" http://meimiao.atguat.com.cn/login/?return_url=aHR0cDovL21laW1pYW8uYXRndWF0LmNvbS5jbi9zLzEwMTguaHRtbA== ",
+		    jsdomain:"http://js.pre.meixincdn.com/",
+		    imgpath:"http://js.pre.meixincdn.com/m/vm/dist/imgs/",
+		};
+		
+	</script>
+</head>
+<body>
+	<%- include('../../common/rem.ejs')%>
+	
+	<div class="live-detail">
+		<div class="live-wrap">
+			<header class="head-bar">
+				<a href="/" class="fl"><em class="icon-logo"></em></a>
+			</header>
+			<div class="live-video">
+				<div id="video-player"></div>
+			</div>
+
+			<div class="live-pages">
+
+				<div class="live-tab">
+				<!-- 没商品的时候添加 live-nogoods -->
+					<ul>
+						<li class="active">
+						    商品
+						    <img src="/src/imgs/public/icon-quan.png"/>
+						</li>
+						<li>互动</li>
+						<li>更多</li>
+					</ul>
+				</div>
+				<div class="live-content">
+					<div class="live-goods-box ">
+						<div class="add-more hide"> <em class="icon-34"></em><span>下拉刷新</span></div>
+						<div class="add-more hide"> <em class="icon-35"></em><span>上拉刷新</span></div>
+						<ul class="goods-list">
+							<li>
+								<a class="goods-detail" href="www.baidu.com">
+									<img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1504601131720&di=fb6ab452bbd998e980f3f4f957165fb8&imgtype=0&src=http%3A%2F%2Fimg.25pp.com%2Fuploadfile%2Fapp%2Ficon%2F20160109%2F1452304371449158.jpg"/>
+									<div class="goods-msg">
+										<div class="goods-title">
+											大鱼板青少年双翘刷街小鱼板初学者滑板车四轮成人专业滑板男女生大鱼
+										</div>
+										<div class="goods-btn quan">
+											<span>去抢券</span>
+										</div>
+									</div>
+								</a>
+							</li>
+							<li>
+								<a class="goods-detail">
+									<img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1504601131720&di=fb6ab452bbd998e980f3f4f957165fb8&imgtype=0&src=http%3A%2F%2Fimg.25pp.com%2Fuploadfile%2Fapp%2Ficon%2F20160109%2F1452304371449158.jpg"/>
+									<div class="goods-msg">
+										<div class="goods-title">
+											大鱼板青少年双翘刷街小鱼板初学者滑板车四轮成人专业滑板男女生大鱼
+										</div>
+										<div class="goods-btn">
+											<span>去购买</span>
+										</div>
+									</div>
+								</a>
+							</li>
+						</ul>
+						<div class="noGoods" data-node="no-data">
+							<div class="no-data">
+								<div class="nogoods-img"></div>
+								<p>主播还未添加任何商品哦</p>
+							</div>
+
+						</div>
+					</div>
+					<div class="live-chat-box hide">
+						<div class="live-chat-wrap">
+							<div class="live-chat-list">
+								<ul>
+									<li class="no-chat">
+										<img src="/src/imgs/public/no-chat.png">
+										<p>聊点什么呢</p>
+									</li>
+									<!-- <li>
+										<div class="live-user-head"><img src="#"></div>
+										<div class="live-user-msg">
+											<strong>张三：</strong>
+											<span>胡汉三又回来了！</span>
+										</div>
+									</li>
+									<li class="live-self">
+										<div class="live-user-head"><img src="#"></div>
+										<div class="live-user-msg">
+											<strong>张三：</strong>
+											<span>胡汉三又回来了！</span>
+										</div>
+									</li>
+									<li class="live-self">
+										<div class="live-user-head"><img src="#"></div>
+										<div class="live-user-msg">
+											<strong>张三：</strong>
+											<span>胡汉三又回来了！胡汉三又回来了！胡汉三又回来了！胡汉三又回来了！</span>
+										</div>
+									</li>
+									<li>
+										<div class="live-user-head"><img src="#"></div>
+										<div class="live-user-msg">
+											<strong>张三：</strong>
+											<span>胡汉三又回来了！</span>
+										</div>
+									</li>
+									<li class="live-self">
+										<div class="live-user-head"><img src="#"></div>
+										<div class="live-user-msg">
+											<strong>张三：</strong>
+											<span>胡汉三又回来了！</span>
+										</div>
+									</li>
+									<li>
+										<div class="live-user-head"><img src="#"></div>
+										<div class="live-user-msg">
+											<strong>张三：</strong>
+											<span>胡汉三又回来了！</span>
+										</div>
+									</li>
+									<li>
+										<div class="live-user-head"><img src="#"></div>
+										<div class="live-user-msg">
+											<strong>张三：</strong>
+											<span>胡汉三又回来了！</span>
+										</div>
+									</li>
+									<li>
+										<div class="live-user-head"><img src="#"></div>
+										<div class="live-user-msg">
+											<strong>张三：</strong>
+											<span>胡汉三又回来了！</span>
+										</div>
+									</li> -->
+								</ul>
+							</div>
+						</div>
+						<div class="live-editor-bar" data-node="editor-bar">
+							<div class="v-txt">
+								<em class="icon-10"></em>
+								<span>我来说两句...</span>
+							</div>
+							<button class="v-btn">发送</button>
+						</div>
+					</div>
+					<div class="live-info-box hide">
+						<p class="video-title">妹子街头玩滑板，单滑技能满分666~妹子街头玩滑板妹子街头玩滑板妹子街头玩滑板</p>
+						<div class="sub-msg">
+							<div class="msgNav-head ">
+								<img src="https://i1.meixincdn.com/v1/img/T1XIETB_Dv1RXrhCrK.jpg">
+							</div>
+							<div class="msgNav-msg ">
+								<div class="msgNav-name"><a href="">卡丁车遇上小鱼儿</a></div>
+								<div class="msgNav-intr">爱车入迷疯狂爱爱车入迷疯狂爱车迷爱车入迷疯狂爱车迷爱车入迷疯狂爱车迷爱车入迷疯狂爱车迷车迷</div>
+							</div>
+		
+							<div class="subscripBtn  " data-action="subscribe" data-subscribeid="100" data-status="0">
+								<span class="show"><em>+</em>订阅</span>
+								<span class="hide">已订阅</span>
+							</div>
+						</div>
+						<div class="sub-detail">
+							还记得那个玩长滑板的妹纸吗？又有新的视频了哦，十分欢迎热爱滑板，热爱运动的小伙伴加入我们，免费教你如何挑选适合初学者用的板子，更多精彩的滑板视频敬请期待哦热爱运动的小伙伴加入我们热爱运动还记得那个玩长滑板的妹纸吗？又有新的视频了哦，十分欢迎热爱滑板，热爱运动的小伙伴加入我们，免费教你如何挑选适合初学小伙伴加入我们热爱运动还记得那个玩长滑。
+						</div>
+						<div class="item-icon clearfix">
+							<div class="fl" data-share="share">
+								<em class="icon-12"></em>
+							</div>
+							<div class="fl" data-action="collect" data-collectid="id" data-status="0">
+								<em class="icon-7"></em>
+							</div>
+		
+						</div>
+		
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- 互动编辑器 -->
+		<div class="live-mask hide" data-node='mask'></div>
+		<div class="live-editor hide" data-node="editor-form">
+			<div class="live-form">
+				<textarea class="live-txts" data-node="editor-txts">两行文字toast提示内容要是很多很多，很多toast提示内容要是很多很多很多呢</textarea>
+				<div class="live-editor-tools">
+					<div class="live-txts-count"><span class="waring">10000</span>/40</div>
+					<button type="button" class="live-editor-submit">发送</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<script src="/m/vm/dist/js/vendor.js"></script>
+	<script type="text/javascript" src="https://player-pre.gomeplus.com/gvs-player/dist/vod/js/meixinplayer-min.js"></script>
+	<script src="/m/vm/dist/js/live-detail.js"></script>
+</body>
+</html>

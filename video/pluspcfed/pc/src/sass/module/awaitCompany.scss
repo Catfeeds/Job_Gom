@@ -1,0 +1,96 @@
+
+@charset "utf-8";
+@import '../../widget/config/_base.scss';
+@import '../../widget/header/header-meihao.scss';
+.opg{
+    background: #e7e7e7;
+}
+.company{
+    font-family: 'Microsoft YaHei';
+    width: 1198px;
+    border:1px solid #d9dadc;
+    padding: 60px 0 28px;
+    background:#fff;
+    margin: 0 auto;
+    .company-tempo{
+        width:760px;
+        margin: 0 auto;
+        padding: 48px 0 60px;
+        background:url("../../images/meihao/perfectTempo.jpg") no-repeat 50% top;
+        font-size: 14px;
+        height:14px;
+        line-height: 14px;
+        color: #333;
+        p{
+            float: left;
+        }
+        .tempo-approve{
+            padding:0 127px;
+        }
+        .tempo-perfect{
+            width:86px;
+            padding-right:152px;
+        }
+        .tempo-success{
+            color:#a5a5a5;
+        }
+    }
+    .company-condition{
+        height:180px;
+        margin: 0 auto;
+        text-align: center;
+        color:#333;
+        font-size: 18px;
+        line-height: 58px;
+        .condition-img{
+            width:100px;
+            height:100px;
+            margin: 0 auto;
+            img{
+                width:100%;
+            }
+        }
+    }
+    .company-info{
+        padding-top: 42px;
+        border-top: 1px solid #ddd;
+        width:486px;
+        margin: 0 auto;
+        font-size: 14px;
+        line-height: 18px;
+        .info{
+            padding-bottom: 28px;
+            div{
+                float:left;
+                width:368px;
+                color:#333;
+            }
+            p{
+                width:108px;
+                text-align: right;
+                padding-right: 10px;
+                color:#888;
+                float:left;
+            }
+            .info-head,.info-license{
+                width:78px;
+                height:78px;
+                border:1px solid #c9c9cb;
+                img{
+                    width:78px;
+                    height:78px;
+                }
+            }
+        }
+        h3{
+            padding: 20px 0 30px;
+            width:108px;
+            text-align: right;
+            font-size: 18px;
+            line-height: 18px;
+            height:18px;
+            color:#333;
+        }
+
+    }
+}

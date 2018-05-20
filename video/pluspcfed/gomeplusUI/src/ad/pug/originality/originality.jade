@@ -1,0 +1,113 @@
+//- extends layout.jade
+extends ../public/layout.jade
+
+block title
+	title 创意列表页
+//- block link-theme
+//- 	link(rel='stylesheet' type="text/css" href="../../css/module/originality.css")
+
+//- originality
+block content
+	include ../public/menu-generalize.jade
+	div.content-main
+		div.amp-account.amp-originality
+			include ../public/crumbs.jade
+			div.amp-path.mgb1
+				span.path-col
+					| 单元名称：
+					b 十一活动广告
+				span.path-col
+					| 投放平台：
+					b APP
+				span.path-col
+					| 已选广告位：
+					b 
+						i 2
+						| 个
+				span.path-col
+					| 状态：
+					b 有效
+			div.account-set
+				div.set-option
+					a(href="#").btn.btn-normal.btn-back-up 
+						em.icon.icon-prev
+						| 返回
+					a(href="#").btn.btn-normal 新建创意
+					a(href="#").btn.btn-normal 启用
+					a(href="#").btn.btn-normal 暂停
+					a(href="#").btn.btn-normal 删除
+				div.set-fn
+					div.fn-plan
+						span.plan-title 创意名称：
+						div.ele-input.ele-input-01
+							input(type="text",value="")
+					div.fn-plan
+						span.plan-title 创意状态：
+						div.ele-select
+							span.select-text 全部
+					div.fn-search
+						a(href="#").btn.btn-primary 查询
+			div.amp-data
+				div.data-table
+					div.table-list
+						div.list-header.actived
+							span.span-col-1
+								em.icon.icon-select
+								i.data-id 创意ID
+							span.span-col-2 创意名称
+							span.span-col-3 创意预览
+							span.span-col-4 创意类型 
+							span.span-col-5 创意尺寸
+							span.span-col-6 链接类型
+							span.span-col-7 着陆页地址
+							span.span-col-8 状态
+							span.span-col-9 操作
+						div.list-body
+							div.body-row.actived
+								span.span-col-1
+									em.icon.icon-select
+									i.ellipsis 02345678
+								span.span-col-2 
+									i.ellipsis
+										a.ellipsis(href="#") 十一活动广告
+								span.span-col-3 
+									img(src="../../images/originality/originality-img.jpg",alt="")
+								span.span-col-4 
+									i.ellipsis 商品
+								span.span-col-5 
+									i.ellipsis 1990*40
+								span.span-col-6 
+									i.ellipsis URL
+								span.span-col-7 
+									i.ellipsis 
+										| http://www.gomeplus.com
+								span.span-col-8 
+									i.ellipsis 有效
+								span.span-col-9
+									b.operat-link
+										a(href="#",title="") 修改
+							- for (var i =0;i<8;i++)
+								div.body-row
+									span.span-col-1
+										em.icon.icon-select
+										i.ellipsis 02345678
+									span.span-col-2 
+										i.ellipsis
+											a.ellipsis(href="#") 十一活动广告
+									span.span-col-3 
+										img(src="../../images/originality/originality-img.jpg",alt="")
+									span.span-col-4 
+										i.ellipsis 商品
+									span.span-col-5 
+										i.ellipsis 1990*40
+									span.span-col-6 
+										i.ellipsis 商品编号
+									span.span-col-7 
+										i.ellipsis 
+											| http://www.gomeplus.com
+									span.span-col-8 
+										i.ellipsis 审核中
+									span.span-col-9
+										b.operat-link
+											a(href="#",title="") 修改
+			include ../public/page.jade

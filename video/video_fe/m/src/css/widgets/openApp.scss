@@ -1,0 +1,37 @@
+@import "../components/_app.scss";
+
+
+body .openapp{
+    height: rem(110);
+    position: fixed;
+    left: 0;
+    top: 0;
+    background: #4e4e51;
+    width: 100%;
+    z-index: 100;
+    em{
+        float: left;
+        font-size: rem(44);
+        padding: rem(32) rem(20);
+        color: #a8a8ab;
+    }
+    p{
+        float: left;
+        color: #fff;
+        font-size: rem(26);
+        line-height: rem(76);
+        padding: rem(18) 0 0 rem(107);
+        background: url(../../imgs/public/new-logo.png) no-repeat rem(20) rem(18);
+        background-size: rem(76);
+    }
+    a{
+        float: right;
+        font-size: rem(28);
+        line-height: 1;
+        padding: rem(16) rem(25);
+        background: #ec392a;
+        color: #fff;
+        border-radius: rem(30);
+        margin: rem(25) rem(20) 0 0;
+    }
+}

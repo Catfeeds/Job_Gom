@@ -1,0 +1,114 @@
+//- extends layout.jade
+extends ../../../widget-platform/pug/layout/layout-m.jade
+
+//- index
+block content
+	.platform-tipsinfo
+		h5 说明
+		p header 公用类
+		p header header-private 无背景类名
+		p header header-fixed 吸顶类名
+		p 具体查看结构，谢谢~
+		p.maty 有问题沟通-maty
+	//end
+
+	//- header-0
+	div.platform-content
+		h3.platform-header
+			| H5站首页
+			small (首页临时)
+		//- div.platform-intro
+		//- 	p header-0
+		div.platform-example-auto#header-0
+			include ../../../../plus-widget/header/header-0.jade
+		pre.platform-pre.hide
+			code.platform-code#header-0_code
+			span.platform-jade pug
+			span.platform-jade.platform-html.actived html
+
+	//- header-1
+	div.platform-content
+		h3.platform-header
+			| 无背景
+			small (适用于圈子，个人中心等)
+		//- div.platform-intro
+		//- 	p header-1
+		div.platform-example-auto#header-1
+			include ../../../../plus-widget/header/header-1.jade
+		pre.platform-pre.hide
+			code.platform-code#header-1_code
+			span.platform-jade pug
+			span.platform-jade.platform-html.actived html
+	//- header-2
+	div.platform-content
+		h3.platform-header 常规-右侧文字
+		//- div.platform-intro
+		//- 	p header-2
+		div.platform-example-auto#header-2
+			include ../../../../plus-widget/header/header-2.jade
+		pre.platform-pre.hide
+			code.platform-code#header-2_code
+			span.platform-jade pug
+			span.platform-jade.platform-html.actived html
+	//- header-3
+	div.platform-content
+		h3.platform-header 常规-右侧单个ICON
+		//- div.platform-intro
+		//- 	p header-3
+		div.platform-example-auto#header-3
+			include ../../../../plus-widget/header/header-3.jade
+		pre.platform-pre.hide
+			code.platform-code#header-3_code
+			span.platform-jade pug
+			span.platform-jade.platform-html.actived html
+	//- header-4
+	div.platform-content
+		h3.platform-header 带有副标题
+		//- div.platform-intro
+		//- 	p header-4
+		div.platform-example-auto#header-4
+			include ../../../../plus-widget/header/header-4.jade
+		pre.platform-pre.hide
+			code.platform-code#header-4_code
+			span.platform-jade pug
+			span.platform-jade.platform-html.actived html
+	//- header-5
+	div.platform-content
+		h3.platform-header 右侧两个ICON
+		//- div.platform-intro
+		//- 	p header-5
+		div.platform-example-auto#header-5
+			include ../../../../plus-widget/header/header-5.jade
+		pre.platform-pre.hide
+			code.platform-code#header-5_code
+			span.platform-jade pug
+			span.platform-jade.platform-html.actived html
+	//- header-6
+	div.platform-content
+		h3.platform-header 搜索
+		//- div.platform-intro
+		//- 	p header-6
+		div.platform-example-auto#header-6
+			include ../../../../plus-widget/header/header-6.jade
+		pre.platform-pre.hide
+			code.platform-code#header-6_code
+			span.platform-jade pug
+			span.platform-jade.platform-html.actived html
+	//- header-7
+	div.platform-content
+		h3.platform-header header-7
+		//- div.platform-intro
+		//- 	p header-7
+		div.platform-example-auto#header-7
+			include ../../../../plus-widget/header/header-7.jade
+		pre.platform-pre.hide
+			code.platform-code#header-7_code
+			span.platform-jade pug
+			span.platform-jade.platform-html.actived html
+	
+
+
+	script(type='text/javascript').
+		HtmlFormat.init(['header-0','header-1','header-2','header-3','header-4','header-5','header-6','header-7'],false,'_code','html','span.platform-jade');
+		$(".platform-header-new").parent('li').addClass("actived");
+

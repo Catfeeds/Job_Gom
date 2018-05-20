@@ -1,0 +1,421 @@
+@charset "UTF-8";
+@import '../../../../m-widget/reset/_base.scss';
+@import '../../../../m-widget/reset/_mixin.scss';
+
+.opg .pdlr80{
+	padding: 0 .8rem;
+}
+.opg .mt71{
+	margin-top: .71rem;
+}
+.opg .mb0{
+	margin-bottom: 0;
+}
+.opg .mt50{
+    margin-top: .5rem;
+}
+.opg .mar-tp65{
+    margin-top: 0.65rem;
+}
+.log-head{
+    width: 1.7rem;
+    height: 1.7rem;
+    margin: 0 auto;
+    text-align: center;
+    border-radius: 50%;
+	padding:.1rem;
+    -webkit-border-radius: 50%;
+    border: 1px solid #fff8f8;
+}
+.log-head img{
+	width:100%;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+}
+.log-name{
+    color: #333;
+    font-size: .36rem;
+    line-height: .4rem;
+    text-align: center;
+    margin-top: .2rem;
+    margin-bottom: .6rem;
+}
+.log-name span{
+    color: #bfbfbf;
+	display:inline-block;
+    font-size: 0.26rem;
+	margin-top:.16rem;
+}
+.log-icon-bx{
+    height: auto;
+    overflow: hidden;
+    text-align: center;
+    margin: .4rem;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+}
+.log-icon-bx span{
+    -webkit-box-flex: 1;
+    -moz-flex: 1;
+    -ms-flex: 1;
+    -o-flex: 1;
+    flex:1;
+}
+.log-icon-bx a{
+    width: 1.1rem;
+    height: .98rem;
+    margin: 0 .3rem;
+    display: inline-block;
+    background: url(../../../images/log-reg/icon-bg.png) no-repeat -99rem -99rem;
+    background-size: .98rem 3rem;
+}
+.log-icon-bx a.icn-qq{
+    background-position: 0 0;
+}
+.log-icon-bx a.icn-wb{
+    background-position: 0 -1rem;
+}
+.log-icon-bx a.icn-wx{
+    background-position: 0 -2rem;
+}
+.log-line{
+    width: 5.9rem;
+    height: 0.32rem;
+    line-height: 0.32rem;
+    text-align: center;
+    color: #999;
+    font-size: 0.28rem;
+	position:relative;
+}
+.log-line:after{
+	width:100%;
+	height:1px;
+	content:"";
+	overflow:hidden;
+	background-color:#ededed;
+	position:absolute;
+	left:0;
+	top:50%;
+}
+.log-line span{
+	padding:0 .26rem;
+	display:inline-block;
+	background-color:#fff;
+	position:relative;
+	z-index:2;
+}
+.log-third-bx{
+    width: auto;
+    height: auto;
+    overflow: hidden;
+    margin-top: 1rem;
+}
+.log-password{
+	overflow:hidden;
+    line-height:0.4rem;
+    font-size: 0.3rem;
+	padding:0 .3rem 0 .14rem;
+}
+.log-password a:first-child{
+    float: left;
+    color: #f66a6b;
+}
+.log-password a:last-child{
+    float: right;
+    color: #f66a6b;
+}
+
+/*完善个人信息*/
+.perfect-matin .log-head{
+    width: 2.55rem;
+    height: 2.55rem;
+    margin-top: 1rem;
+    position: relative;
+}
+.perfect-matin .log-head a{
+    display: block;
+    width: auto;
+    height: auto;
+    overflow: hidden;
+}
+.camera{
+    position: absolute;
+    bottom: 0.1rem;
+    right:0.35rem;
+    background: url("../../../images/log-reg/bg.png") no-repeat -999rem -999rem;
+    background-size:0.8rem 4rem;
+}
+.camera-posi{
+    background-position: 0 -2.8rem;
+    width: 0.5rem;
+    height: 0.42rem;
+}
+.name-tips{
+    height: 0.7rem;
+    line-height: 0.7rem;
+    margin-top:0.5rem;
+    color: #999;
+}
+.name-tipsred{
+    color: #f66a6b;
+}
+.change-name{
+    margin: 0 auto;
+}
+.reference{
+    width: auto;
+    height:auto;
+    overflow: hidden;
+}
+.reference p{
+    color: #bfbfbf;
+    height: 0.9rem;
+    width: 5.6rem;
+    line-height: 1rem;
+    border-bottom: 1px solid #ededed;
+    padding-left: 0.3rem;
+    overflow: hidden;
+    margin-left: 0.3rem;
+    font-size: 0.28rem;
+}
+.reference p.active{
+	color:#000;
+}
+.change-name .input-wrap{
+    margin-bottom: 0;
+}
+
+/* log */
+.get-code-wrap{
+	overflow: hidden;
+}
+.get-code-wrap .input-wrap{
+	width: 3.7rem;
+	float: left;
+}
+.get-code-wrap .btn-code{
+	float: right;
+}
+.opg .rec-code{
+	display: block;
+	font-size: .28rem;
+	color: #999;
+	padding:.2rem 0 .1rem .1rem;
+    position: relative;
+}
+.opg .rec-code .red{
+	color: #f66a6b;
+}
+.rec-input-wrap{
+	margin-top: .2rem;
+}
+.opg .default-btn{
+	margin-top: .66rem;
+}
+.opg .agreement{
+	font-size: .28rem;
+	color: #999;
+    padding-left: .48rem;
+	position: relative;
+	margin: .3rem 0 0 .1rem;
+}
+.opg .agreement a{
+	color: #f66a6b;
+}
+.reset-psw-link{
+	font-size: .28rem;
+	text-align: center;
+	margin-top: .5rem;
+}
+.reset-psw-link a{
+	color: #f66a6b;
+}
+.reset-psw-link .icon-arrow-right{
+	display: inline-block;
+	width: .11rem;
+	height: .2rem;
+	font-size: .3rem;
+	margin-left: .13rem;
+}
+.reset-psw-tips{
+	font-size: .24rem;
+	color: #999;
+	line-height: .36rem;
+	margin-top: .3rem;
+}
+.reset-psw-tips .tips-t{
+	color: #666;
+	display: block;
+}
+.reset-psw-tips .red{
+    color: #f66a6b;
+}
+.log-reco{
+    margin-top:.28rem;
+}
+
+/* icons */
+.opg .input-icon,
+.opg .icon-tj{
+	background: url(../../../images/log-reg/bg.png) -999px -999px no-repeat;
+	background-size: .8rem 4rem;
+	display: inline-block;
+    top: 50%;
+    margin-top: .02rem;
+    position: absolute;
+    -webkit-transform: translate(0,-50%);
+    transform: translate(0,-50%);
+}
+.opg .icon-phone{
+	background-position: -0.4rem -1.2rem;
+    width: 0.3rem;
+    height: 0.38rem;
+    left: .15rem;
+}
+.opg .icon-key{
+	width: .22rem;
+	height: .37rem;
+	background-position: 0 -2.4rem;
+    left: .15rem;
+}
+.opg .icon-lock{
+	left: .15rem;
+	width: .38rem;
+	height: .36rem;
+	background-position: -.4rem -.8rem;
+}
+.opg .icon-eye-closed{
+	right: .1rem;
+	width: .33rem;
+	height: .36rem;
+	background-position: 0 -2rem;
+}
+.opg .icon-eye{
+	background-position: -.4rem -2rem;
+}
+.opg .icon-arrow-down{
+	width: .21rem;
+	height: .12rem;
+	vertical-align: -1px;
+	margin-left: .15rem;
+	background-position: 0 -1.6rem;
+    position: relative;
+    top: 0;
+}
+.opg .icon-arrow-up{
+	background-position: -.4rem -1.6rem;
+}
+.opg .icon-tjic{
+	left: .15rem;
+	width: .36rem;
+	height: .35rem;
+	background-position: 0 -1.2rem;
+}
+.opg .icon-check{
+	width: .3rem;
+	height: .3rem;
+	margin-right: .16rem;
+	vertical-align: middle;
+    position: absolute;
+    left: 0;
+	background-position: -.4rem -.4rem;
+}
+.opg .icon-check-none{
+	background-position: 0 -.4rem;
+}
+.opg .icon-vip{
+	left: .15rem;
+	width: .34rem;
+	height: .3rem;
+	vertical-align: middle;
+	background-position: 0 0;
+}
+.opg .icon-posi0{
+    width: 0.34rem;
+    height: 0.28rem;
+    background-position: 0 0;
+}
+.opg .icon-posi1{
+     width: 0.3rem;
+    height: 0.36rem;
+    background-position: 0 -0.8rem;
+    left: 0.15rem;
+}
+.opg .icon-posi2{
+    width: 0.32rem;
+    height: 0.32rem;
+    background-position: -0.4rem 0;
+    right: 0.2rem;
+}
+.opg .icon-posi3{
+    width: 0.24rem;
+    height: 0.34rem;
+    background-position: -0.4rem -1.2rem;
+    left: 0.15rem;
+}
+.opg .icon-posi4{
+    width: 0.24rem;
+    height: 0.34rem;
+    background-position: -0.4rem -1.2rem;
+    left: 0.15rem;
+}
+.opg .icon-posi5{
+    width: 0.3rem;
+    height: 0.34rem;
+    background-position: -0.4rem -0.8rem;
+    left: 0.15rem;
+}
+
+.opg .log-header{
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    background: none;
+    border-bottom: none;
+}
+
+.opg .wap-header{
+    background-color: #fff;
+}
+
+/* app-down */
+.app-down{
+    color: #fff;
+    overflow: hidden;
+    padding: .13rem .7rem .13rem .55rem;
+    background-color: #707070;
+}
+.app-down .img{
+    width: .8rem;
+    height: .8rem;
+    float: left;
+    margin-right: .25rem;
+    background: url(../../../images/gome_icon.png) no-repeat left top;
+    background-size: .8rem .8rem;
+}
+
+.app-down .txt{
+    float: left;
+    font-size: .24rem;
+    line-height: .36rem;
+    padding-top: .04rem;
+}
+
+.app-down .btn{
+    width: 1.6rem;
+    height: .58rem;
+    color: #fff;
+    float: right;
+    font-size: .3rem;
+    line-height: .58rem;
+    text-align: center;
+    margin-top: .1rem;
+    border-radius: .55rem;
+    background-color: #f4cc56;
+
+}
+

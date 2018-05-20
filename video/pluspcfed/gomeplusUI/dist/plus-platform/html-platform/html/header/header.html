@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="zh-CN" data-use-rem="750" style="font-size:50px;">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="description" content="">
+    <meta name="keyword" content="">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="format-detection" content="email=no">
+    <title>gomeplusUI-mobile</title>
+    <link rel="stylesheet" type="text/css" href="../../css/public.css">
+    <link rel="stylesheet" type="text/css" href="../../css/platform.css">
+    <script src="../../js/jquery1.42.min.js"></script>
+    <script src="../../js/htmlToJade.js"></script>
+    <script src="../../js/utils/appVersion.js"></script>
+  </head>
+  <body class="opg">
+    <script type="text/javascript">
+      (function appVersion() {
+      	window.platform = {};
+      	var ua = window.navigator.userAgent.toLowerCase();
+      	var isIphone = ua.match(/iphone os/i) == 'iphone os';
+      	var isAndroid = ua.match(/android/i) == 'android';
+      	// ipad 也为mobile
+      	var isMobile = ua.match(/mobile/i) == 'mobile';
+      	var isIpad = ua.match(/ipad/) == 'ipad';
+      
+      	platform.isMobile = function () {
+      		return isMobile && !isIpad;
+      	}
+      	if(platform.isMobile()) {
+      		(function(win){var doc=win.document,html=doc.documentElement,option=html.getAttribute("data-use-rem");if(option===null){return}var baseWidth=parseInt(option).toString()==="NaN"?640:parseInt(option);var grids=baseWidth/100;var clientWidth=html.clientWidth||320;html.style.fontSize=clientWidth/grids+"px";var testDom=document.createElement("div");var testDomWidth=0;var adjustRatio=0;testDom.style.cssText="height:0;width:1rem;";doc.body.appendChild(testDom);var calcTestDom=function(){testDomWidth=testDom.offsetWidth;if(testDomWidth!==Math.round(clientWidth/grids)){adjustRatio=clientWidth/grids/testDomWidth;var reCalcRem=clientWidth*adjustRatio/grids;html.style.fontSize=reCalcRem+"px"}else{doc.body.removeChild(testDom)}};setTimeout(calcTestDom,20);var reCalc=function(){var newCW=html.clientWidth;if(newCW===clientWidth){return}clientWidth=newCW;html.style.fontSize=newCW*(adjustRatio?adjustRatio:1)/grids+"px"};if(!doc.addEventListener){return}var resizeEvt="orientationchange" in win?"orientationchange":"resize";win.addEventListener(resizeEvt,reCalc,false);doc.addEventListener("DOMContentLoaded",reCalc,false)})(window);
+      	}
+      })()
+    </script>
+    <div class="flatform-nav">
+      <div class="flatform-logo"><a href="http://opg-pre.intra.gomeplus.com/gomeplusUI/m-platform/pug/index/index.html">OPG/GomeplusUI</a></div>
+      <div class="flatform-back hide"><a href="http://opg-pre.intra.gomeplus.com/gomeplusUI/pc-platform/pug/index/index.html">PC</a></div><a href="http://opg-pre.intra.gomeplus.com" class="icon-home"><i></i></a><span class="nav-icon"><a href="#"></a></span><span class="nar-arrow-left"></span><span class="nar-arrow-right"></span>
+      <div class="nav-list">
+        <ul style="left:0px">
+          <li><a href="../button/button.html" title="" class="platform-button">button</a></li>
+          <li><a href="../dialog/dialog.html" title="" class="platform-dialog">dialog</a></li>
+          <li><a href="../downapp/downapp.html" title="" class="platform-downapp">downapp</a></li>
+          <li><a href="../header/header.html" title="" class="platform-header-new">header</a></li>
+          <li><a href="../icon/icon.html" title="" class="platform-icon">icon</a></li>
+          <li><a href="../menu/menu.html" title="" class="platform-menu">menu</a></li>
+          <li><a href="../prompt/prompt.html" title="" class="platform-prompt">prompt</a></li>
+          <li><a href="../share/share.html" title="" class="platform-share">share</a></li>
+          <li><a href="../toast/toast.html" title="" class="platform-toast">toast</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="platform-main">
+      <div class="platform-scroll">
+        <div class="platform-tipsinfo">
+          <h5>说明</h5>
+          <p>header 公用类</p>
+          <p>header header-private 无背景类名</p>
+          <p>header header-fixed 吸顶类名</p>
+          <p>具体查看结构，谢谢~</p>
+          <p class="maty">有问题沟通-maty</p>
+        </div>
+        <!--end-->
+        <div class="platform-content">
+          <h3 class="platform-header">H5站首页<small>(首页临时)</small></h3>
+          <div id="header-0" class="platform-example-auto">
+            <header class="header">
+              <div class="h-left"><a href="javascript:;" class="h-logo"></a></div>
+              <div class="h-cnt flex-cell">
+                <div class="input-box index-input"><em class="iconn-10"></em>
+                  <input type="text" placeholder="搜索商品/店铺" disabled="true" class="sec-ipt"><em class="iconn-82"></em>
+                </div>
+              </div>
+              <div class="h-right"><a href="javascript:;" class="h-btn"><i style="display:block;" class="num">1</i><em class="iconn-32"></em></a><a href="javascript:;" class="h-btn"><span class="login">登录</span></a></div>
+            </header>
+            <!-- /header-->
+          </div>
+          <pre class="platform-pre hide"><code id="header-0_code" class="platform-code"></code><span class="platform-jade">pug</span><span class="platform-jade platform-html actived">html</span></pre>
+        </div>
+        <div class="platform-content">
+          <h3 class="platform-header">无背景<small>(适用于圈子，个人中心等)</small></h3>
+          <div id="header-1" class="platform-example-auto">
+            <header class="header">
+              <div class="h-left"><a href="javascript:;" class="h-back"><em class="iconn-1"></em></a></div>
+              <div class="h-cnt flex-cell">
+                <div class="input-box"><em class="iconn-10"></em>
+                  <input type="text" placeholder="搜索商品/店铺" class="sec-ipt">
+                </div>
+              </div>
+              <div class="h-right"><a href="javascript:;" class="h-btn"><em class="iconn-4"></em></a></div>
+            </header>
+            <!-- /header-->
+          </div>
+          <pre class="platform-pre hide"><code id="header-1_code" class="platform-code"></code><span class="platform-jade">pug</span><span class="platform-jade platform-html actived">html</span></pre>
+        </div>
+        <div class="platform-content">
+          <h3 class="platform-header">常规-右侧文字</h3>
+          <div id="header-2" class="platform-example-auto">
+            <header class="header">
+              <div class="h-left"><a href="javascript:;" class="h-back">取消</a></div>
+              <div class="h-cnt flex-cell">
+                <div class="input-box search-input">
+                  <div class="sec-tab">
+                    <div class="tab-txt">商品</div>
+                    <div class="tab-nav">
+                      <p><em class="iconn-83"></em>商品</p>
+                      <p><em class="iconn-93"></em>店铺</p>
+                    </div>
+                  </div><em class="iconn-10"></em>
+                  <input type="text" placeholder="搜索商品/店铺" class="sec-ipt">
+                </div>
+              </div>
+            </header>
+            <!-- /header-->
+          </div>
+          <pre class="platform-pre hide"><code id="header-2_code" class="platform-code"></code><span class="platform-jade">pug</span><span class="platform-jade platform-html actived">html</span></pre>
+        </div>
+        <div class="platform-content">
+          <h3 class="platform-header">常规-右侧单个ICON</h3>
+          <div id="header-3" class="platform-example-auto">
+            <header class="header">
+              <div class="h-left"><a href="javascript:;" class="h-back"><em class="iconn-1"></em></a></div>
+              <div class="h-cnt flex-cell">
+                <h1 class="h-tit">购物车</h1>
+              </div>
+              <div class="h-right"><a href="javascript:;" class="h-btn"><em class="iconn-4"></em></a></div>
+            </header>
+            <!-- /header-->
+          </div>
+          <pre class="platform-pre hide"><code id="header-3_code" class="platform-code"></code><span class="platform-jade">pug</span><span class="platform-jade platform-html actived">html</span></pre>
+        </div>
+        <div class="platform-content">
+          <h3 class="platform-header">带有副标题</h3>
+          <div id="header-4" class="platform-example-auto">
+            <header class="header">
+              <div class="h-left"><a href="javascript:;" class="h-back"><em class="iconn-1"></em></a></div>
+              <div class="h-cnt flex-cell">
+                <h1 class="h-tit">编辑收货地址</h1>
+              </div>
+              <div class="h-left"><a href="javascript:;" class="h-btn">删除</a></div>
+            </header>
+            <!-- /header-->
+          </div>
+          <pre class="platform-pre hide"><code id="header-4_code" class="platform-code"></code><span class="platform-jade">pug</span><span class="platform-jade platform-html actived">html</span></pre>
+        </div>
+        <div class="platform-content">
+          <h3 class="platform-header">右侧两个ICON</h3>
+          <div id="header-5" class="platform-example-auto">
+            <header class="header">
+              <div class="h-left"><a href="javascript:;" class="h-back"><em class="iconn-1"></em></a></div>
+              <div class="h-cnt flex-cell">
+                <div class="h-tab"><a href="javascript:;" class="active">实物订单</a><a href="javascript:;">其他订单</a></div>
+              </div>
+              <div class="h-right"><a href="javascript:;" class="h-btn">刷新</a></div>
+            </header>
+            <!-- /header-->
+          </div>
+          <pre class="platform-pre hide"><code id="header-5_code" class="platform-code"></code><span class="platform-jade">pug</span><span class="platform-jade platform-html actived">html</span></pre>
+        </div>
+        <div class="platform-content">
+          <h3 class="platform-header">搜索</h3>
+          <div id="header-6" class="platform-example-auto">
+            <header class="header">
+              <div class="h-left"><a href="javascript:;" class="h-back"><em class="iconn-1"></em></a></div>
+              <div class="h-cnt flex-cell">
+                <h1 class="h-tit">国美超市</h1>
+              </div>
+              <div class="h-left"><a href="javascript:;" class="h-btn"><em class="iconn-44"></em></a><a href="javascript:;" class="h-btn"><em class="iconn-4"></em></a></div>
+            </header>
+            <!-- /header-->
+          </div>
+          <pre class="platform-pre hide"><code id="header-6_code" class="platform-code"></code><span class="platform-jade">pug</span><span class="platform-jade platform-html actived">html</span></pre>
+        </div>
+        <div class="platform-content">
+          <h3 class="platform-header">header-7</h3>
+          <div id="header-7" class="platform-example-auto">
+            <header class="header">
+              <div class="h-left"><a href="javascript:;" class="h-back"><em class="iconn-1"></em></a></div>
+              <div class="h-cnt flex-cell">
+                <div class="h-tabs"><a href="javascript:;" class="active">商品</a><a href="javascript:;">详情</a><a href="javascript:;">评价</a></div>
+              </div>
+              <div class="h-right"><a href="javascript:;" class="h-btn"><em class="iconn-4"></em>
+                  <div class="tab-nav">
+                    <p><em class="iconn-44"></em>首页</p>
+                    <p><em class="iconn-15"></em>分类</p>
+                    <p><em class="iconn-32"></em>购物车</p>
+                    <p><em class="iconn-90"></em>我的</p>
+                  </div></a></div>
+            </header>
+            <!-- /header-->
+          </div>
+          <pre class="platform-pre hide"><code id="header-7_code" class="platform-code"></code><span class="platform-jade">pug</span><span class="platform-jade platform-html actived">html</span></pre>
+        </div>
+        <script type="text/javascript">
+          HtmlFormat.init(['header-0','header-1','header-2','header-3','header-4','header-5','header-6','header-7'],false,'_code','html','span.platform-jade');
+          $(".platform-header-new").parent('li').addClass("actived");
+        </script>
+      </div>
+    </div>
+    <script src="../../js/m/menu.js"></script>
+  </body>
+</html>

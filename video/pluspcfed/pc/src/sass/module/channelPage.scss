@@ -1,0 +1,970 @@
+@charset "UTF-8";
+@import '../../widget/config/_base.scss';
+@import '../../widget/config/_mixins.scss';
+body{
+	background-color: #F6F6F6;
+}
+.fl{
+	float: left;
+}
+.fr{
+	float: right;
+}
+.up,
+.dialog,
+.star{
+	background-position: left center;
+	background-repeat: no-repeat;
+	padding-left: 20px;
+	font-size: 12px;
+	color: #666;
+}
+.up{
+	background-image:url(../../images/meidian/zan.png);
+}
+.dialog{
+	background-image:url(../../images/meidian/mes.png);
+}
+.star{
+	background-image:url(../../images/meidian/star.png);
+}
+.content_box{
+	width: 1200px;
+	margin: 20px auto 0;
+	.banner{
+		width: 735px;
+		height: 346px;
+		overflow: hidden;
+		position: relative;
+		ul{
+			position: absolute;
+			left: 0;
+			top: 0;
+			width: 500%;
+			height: 100%;
+			li{
+				width: 735px;
+				height: 100%;
+				width: 735px;
+    			float: left;
+    			cursor: pointer;
+				a{
+					display: block;
+					img{
+						width: 735px;
+						height: 346px;
+					}
+				}
+			}
+		}
+		ol{
+			position: absolute;
+			bottom: 10px;
+			left: 50%;
+			li{
+				margin: 0 3px;
+				width: 20px;
+				height: 5px;
+				background-color: #999;
+				float: left;
+				position: relative;
+    			left: -50%;
+				&.on{
+					width: 30px;
+					background-color: #E90033;
+				}
+			}
+		}
+	}
+	.shop_preview{
+		width: 425px;
+		/*height: 326px;*/
+		padding: 20px 0 0 20px;
+		background-color: #fff;
+		.show_preview_top{
+			height: 126px;
+			a{
+				display: block;
+				& > div{
+					width: 294px;
+				}
+			}
+			img{
+				width: 100px;
+				height: 100px;
+				margin-right: 30px;
+				border-radius: 50%;
+			}
+			div{
+				&.not_login{
+					width: 294px;
+					em{
+						cursor: pointer;
+						width: 204px;
+						height: 36px;
+						line-height: 36px;
+						border-radius: 5px;
+						background-color: #FF4C4C;
+						margin-bottom: 14px;
+						display: block;
+						text-align: center;
+						color: #fff;
+						margin-top: 14px;
+					}
+					span{
+						font-size: 14px;
+						color: #FF4C4C;
+					}
+				}
+				&.logined_noproduct{
+					p{
+						font-size: 16px;
+					    color: #333;
+					    margin-top: 10px;
+					    font-weight: bold;
+						img{
+							width: 43px;
+							height: 13px;
+							margin-right: 0;
+						}
+						&:hover{
+							color: #FF5757;
+						}
+					}
+					.progress{
+						line-height: 16px;
+						margin: 13px 0;
+						.progress_info{
+							margin-top: 6px;
+						    width: 200px;
+						    height: 6px;
+						    overflow: hidden;
+						    border-radius: 3px;
+						    background: #f6f6f6;
+						    .pro_num{
+						    	height: 100%;
+							    /*width: 50%;*/
+							    float: left;
+							    border-radius: 3px;
+							    background-color: #FE874C;
+							    /*background: url(../../images/user/line-bag.png) 0 0 repeat-x;*/
+						    }
+						}
+					    .num{
+					    	margin-left: 8px;
+					    	font-size: 12px;
+							color: #999;
+					    }
+					}
+					em{
+						margin-top: 20px;
+						font-size: 12px;
+						color: #FF4C4C;
+					}
+					.tag_box{
+						max-height: 50px;
+						overflow: hidden;
+						span{
+							height: 18px;
+							line-height: 18px;
+							border: 1px solid #FE874C;
+							border-radius: 10px;
+							display: inline-block;
+							margin: 0 10px 10px 0;
+							padding: 0 10px;
+							font-size: 12px;
+							color: #FE874C;
+							overflow: hidden;
+						    text-overflow: ellipsis;
+						    white-space: nowrap;
+						    max-width: 130px;
+						    float: left;
+						}
+					}
+				}
+			}
+		}
+		.preview_box{
+			& > a{
+				display: block;
+			}
+			margin-top: 12px;
+			ul{
+				li{
+					width: 198px;
+					height: 83px;
+					border-radius: 10px;
+					float: left;
+					margin: 0 10px 10px 0;
+					&.sell{
+						background-color: #FFF9F5;
+					}
+					&.income{
+						background-color: #FFF6F6;
+					}
+					&.commission{
+						background-color: #F7FBFF;
+					}
+					&.total{
+						background-color: #FAF7FF;
+					}
+					.icon{
+						width: 54px;
+						height: 54px;
+						float: left;
+						margin: 15px 10px 0 10px;
+						background-repeat: no-repeat;
+						background-position: center center;
+						border-radius: 50%;
+						&.icon_sell{
+							background-image: url(../../images/meidian/icon_sell.png);
+						}
+						&.icon_income{
+							background-image: url(../../images/meidian/icon_income.png);
+						}
+						&.icon_commission{
+							background-image: url(../../images/meidian/icon_commission.png);
+						}
+						&.icon_total{
+							background-image: url(../../images/meidian/icon_total.png);
+						}
+					}
+					p{
+						float: left;
+						font-size: 12px;
+						color: #999;
+						font-weight: bold;
+						line-height: 30px;
+						margin-top: 10px;
+						span{
+							display: block;
+							font-size: 14px;
+							color: #333;
+						}
+					}
+				}
+			}
+		}
+	}
+	.theme_box{
+		padding-left: 20px;
+		background-color: #fff;
+		padding-top: 20px;
+		h1{
+			border-bottom: 1px solid #f0f0f0;
+			line-height: 14px;
+			margin-right: 20px;
+			span{
+				font-size: 16px;
+				border-left: 3px solid #FF5C5C;
+				padding-left: 10px;
+				margin-bottom: 14px;
+				font-weight: bold;
+			}
+			em{
+				float: left;
+				margin-left: 18px;
+				font-size: 14px;
+				color: #FF9191;
+				font-weight: bold;
+			}
+			a{
+				padding-right: 10px;
+				margin-right: 6px;
+				font-size: 12px;
+				background: url(../../images/meidian/more.png) right center no-repeat;
+			    &:hover{
+					color: #FF5757;
+				}
+			}
+		}
+	}
+	.recommend{
+		height: 438px;
+		margin-top: 20px;
+	}
+	.recommend_box{
+		height: 308px;
+		position: relative;
+		& > a{
+			opacity: .4;
+			/*filter: alpha(opacity: 40);*/
+			width: 40px;
+			height: 90px;
+			background-color: #ccc;
+			background-repeat: no-repeat;
+			background-position: center center;
+			position: absolute;
+			top: 124px;
+			z-index: 2;
+			display: none;
+			&.turn_left{
+				left: -20px;
+				background-image: url(../../images/meidian/left_arrow.png);
+			}
+			&.turn_right{
+				right: 0;
+				background-image: url(../../images/meidian/right_arrow.png);
+			}
+		}
+		&:hover{
+			.turn_left,
+			.turn_right{
+				display: block;
+			}
+		}
+		ol{
+			height: 12px;
+			position: absolute;
+			bottom: -30px;
+			left: 50%;
+			background-color: #F1F1F1;
+			border-radius: 10px;
+			padding: 5px;
+			margin-left: -60px;
+			width: 110px;
+			li{
+				width: 12px;
+				height: 12px;
+				border-radius: 50%;
+				background-color: #fff;
+				margin: 0 5px;
+				float: left;
+				&.on{
+					background-color: #ccc;
+				}
+			}
+			&.has2{
+				margin-left: -26px;
+				width: 44px;
+			}
+			&.has3{
+				margin-left: -37px;
+				width: 66px;
+			}
+			&.has4{
+				margin-left: -48px;
+				width: 88px;
+			}
+		}
+		.sj_btn{
+			width: 150px;
+			height: 40px;
+			text-align: center;
+			background: #ccc;
+			border-radius: 3px;
+			margin: 46px auto 0;
+			color: #fff;
+			font-size: 16px;
+			line-height: 40px;
+			cursor: pointer;
+			&.on{
+				background-color: #FF4C4C;
+			}
+		}
+	}
+	.recommend_list_box{
+		height: 308px;
+		width: 100%;
+		position: relative;
+		overflow: hidden;
+	}
+	.recommend_list_box > ul{
+		height: 308px;
+		width: 500%;
+		position: absolute;
+		left: 0;
+		top: 0;
+	}
+	.recommend_list_box > ul > li{
+		/*background-color: #ccc;*/
+		float: left;
+		width: 1180px;
+		ul{
+			li{
+				float: left;
+				height: 124px;
+				width: 393px;
+				margin-top: 30px;
+				img{
+					margin: 0 10px 0 0;
+					width: 124px;
+					height: 124px;
+				}
+				div.fl{
+					width: 236px;
+					p{
+						margin: 4px 0 20px;
+						line-height: 20px;
+						height: 40px;
+						overflow: hidden;
+						span{
+							float: left;
+						    height: 16px;
+						    padding: 0 3px;
+						    font-size: 12px;
+						    line-height: 16px;
+						    border-radius: 3px;
+						    border: 1px solid #EE3B3B;
+						    margin-right: 5px;
+						}
+						.main_tag{
+							color: #EE3B3B;
+							border-color: #EE3B3B;
+						}
+						.shop_tag{
+							color: #52A2FF;
+							border-color: #52A2FF;
+						}
+						.rival_tag{
+							color: #903DD8;
+							border-color: #903DD8 ;
+							padding: 0 6px;
+						}
+						a{
+							&:hover{
+								color: #FF5757;
+							}
+						}
+					}
+				}
+				.price_box{
+					line-height: 16px;
+    				font-size: 16px;
+    				.price{
+    					color: #FF4C4C;
+					    font-weight: bold;
+    				}
+    				.ret_box{
+    					float: right;
+					    overflow: hidden;
+					    border-radius: 3px;
+					    border: 1px solid #FF8D2B;
+					    span{
+					    	float: left;
+						    width: 30px;
+						    height: 16px;
+						    overflow: hidden;
+						    color: #fff;
+						    font-size: 12px;
+						    text-align: center;
+						    background: url(../../images/user/shop-bg.png) 0 0 no-repeat;
+					    }
+					    .ret{
+					    	width: auto;
+						    height: auto;
+						    background: none;
+						    padding: 0 3px;
+						    font: 12px/16px 'PingFangSC-Regular',sans-serif;
+						    color: #FC8825;
+						    border-left: none;
+					    }
+    				}
+				}
+				.shelves{
+					margin-top: 17px;
+    				.ret_box{
+    					float: left;
+					    overflow: hidden;
+					    border-radius: 3px;
+					    border: 1px solid #FF8D2B;
+					    margin-top: 3px;
+					    span{
+					    	float: left;
+						    width: 30px;
+						    height: 16px;
+						    overflow: hidden;
+						    color: #fff;
+						    font-size: 12px;
+						    text-align: center;
+						    background: url(../../images/user/shop-bg.png) 0 0 no-repeat;
+					    }
+					    .ret{
+					    	width: auto;
+						    height: auto;
+						    background: none;
+						    padding: 0 3px;
+						    font: 12px/16px 'PingFangSC-Regular',sans-serif;
+						    color: #FC8825;
+						    border-left: none;
+					    }
+    				}
+					.fl{
+						font-size: 12px;
+						color: #999;
+					}
+					.sj,
+					.already_sj{
+						width: 108px;
+						border: 1px solid #FF4C4C;
+						border-radius: 3px;
+						text-align: center;
+						font-size: 14px;
+						cursor: pointer;
+						height: 24px;
+    					line-height: 24px;
+					}
+					.already_sj{
+						color: #FF4C4C;
+						background-color: #fff;
+					}
+					.sj{
+						color: #fff;
+						background-color: #FF4C4C;
+					}
+				}
+			}
+		}
+	}
+	.ad{
+		height: 250px;
+		overflow: hidden;
+		margin-top: 20px;
+		a{
+			display: block;
+		}
+		img{
+			width: 1200px;
+			height: 250px;
+		}
+	}
+	.star_street_box{
+		margin-top: 20px;
+		.star_img{
+			margin: 20px -5px 20px 0;
+			padding-bottom: 20px;
+			img{
+				width: 286px;
+				height: 270px;
+				float: left;
+				margin-right: 5px;
+				&.spebig{
+					width: 443px;
+				}
+				&.spesmall{
+					width: 234px;
+				}
+			}
+		}
+	}
+	.rank_shop_box{
+		margin-top: 20px;
+		/*height: 692px;*/
+	}
+	.ranking_box{
+		width: 476px;
+		margin-right: 20px;
+		.ranking_main{
+			.ranking_pic{
+				margin-right: 20px;
+    			overflow: hidden;
+    			background: url(../../images/meidian/pk.png) center 55px no-repeat;
+				margin-bottom: -3px;
+				.ranking_pic_left{
+					& > a{
+						display: block;
+					}
+				}
+				.ranking_pic_left, .ranking_pic_right{
+					width: 180px;
+					&>a{
+						display: block;
+					}
+					.number_one{
+						text-align: center;
+						position: relative;
+						height: 132px;
+						width: 156px;
+						position: relative;
+						background-size: cover;
+						z-index: 1;
+						margin: 0 auto;
+						border-top: 1px solid transparent;
+						margin-top: 3px;
+						.hg{
+							background: url(../../images/meidian/hg.png) center center no-repeat;
+							height: 24px;
+							overflow: hidden;
+							width: 39px;
+							margin: 0 auto;
+							position: relative;
+							z-index: 2;
+						}
+						img{
+							height: 100px;
+							width: 100px;
+							border-radius: 50%;
+							border: 5px solid #FDB212;
+							position: relative;
+							top: -2px;
+						}
+						span{
+							background: url(../../images/meidian/number_one.png) center center no-repeat;
+							height: 34px;
+							text-align: center;
+    						display: block;
+							font-size: 16px;
+							color: #B24100;
+							line-height: 34px;
+							position: relative;
+    						top: -26px;
+						}
+					}
+					&.not_login{
+						text-align: center;
+						.hg{
+							background: none;
+						}
+						img{
+							border-color: #9D9D9D;
+						}
+						input{
+							width: 130px;
+							height: 40px;
+							line-height: 40px;
+							background-color: #FF4C4C;
+							color: #fff;
+							margin-top: 83px;
+							text-align: center;
+							border-radius: 3px;
+							cursor: pointer;
+						}
+					}
+					.my_ranking{
+						.hg{
+							background: none;
+						}
+						img{
+							border-color: #9D9D9D;
+						}
+						span{
+							color: #fff;
+							background-image: url(../../images/meidian/my_ranking.png);
+						}
+					}
+					.number_one_detail{
+						width: 180px;
+						height: 174px;
+						background: #F6F6F6;
+						border-radius: 6px;
+						position: relative;
+						top: -30px;
+						h5{
+							padding-top: 50px;
+							font-size: 14px;
+							color: #333;
+							text-align: center;
+							font-weight:bold;
+							overflow: hidden;
+							text-overflow: ellipsis;
+							white-space: nowrap;   
+							/*width: 90%;*/
+							display: block;
+							&:hover{
+								color: #FF5757;
+							}
+						}
+						p{
+							line-height: 16px;
+							margin: 14px 0 0 20px;
+							font-size: 12px;
+							color: #666;
+							span{
+								color: #FF4C4C;
+							}
+						}
+					}
+				}
+				.ranking_pic_left{
+					margin: 0 56px 0 20px;
+				}
+			}
+			.ranking_list{
+				/*padding-top: 20px;*/
+				ul{
+					margin-bottom:10px;
+					li{
+						float: left;
+						margin: 0 16px 20px 0;
+						a{
+							display: block;
+						}
+						*{
+							vertical-align: middle;
+						}
+						em{
+							width: 19px;
+							margin-right: 3px;
+							display: inline-block;
+						}
+						img{
+							height: 50px;
+							width: 50px;
+							margin-right: 8px;
+							border-radius: 50%;
+						}
+						span{
+							color: #333;
+							display: inline-block;
+    						width: 142px;
+    						vertical-align: middle;
+							img{
+								width: 43px;
+								height: 13px;
+								margin-right: 0;
+   								border-radius: 0;
+   								float: right;
+   								margin-top: 4px;
+							}
+							em{
+								width: auto;
+    							display: inline-block;
+    							font-size: 12px;
+								color: #999;
+								margin-top: 6px;
+								strong{
+									margin-left: 4px;
+									position: relative;
+									top: -2px;
+									font-weight:normal;
+								}
+							}
+							u{
+								max-width: 80px;
+							    overflow: hidden;
+							    display: inline-block;
+							    height: 20px;
+							    text-decoration: none;
+							    white-space: nowrap;
+							    &:hover{
+									color: #FF5757;
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+	.shopest_box{
+		width: 664px;
+		.shopest_list{
+			padding: 5px 0 17px 0;
+			height: 645px;
+			overflow: hidden;
+			ul{
+				padding-bottom: 27px;
+				li{
+					margin-top: 42px;
+					float: left;
+					width: 50%;
+					a{
+						display: block;
+					}
+					img{
+						width: 312px;
+						height: 200px;
+						border-radius: 5px;
+					}
+					.shopest_item_detail{
+						margin-top: 16px;
+						& > img{
+							width: 50px;
+							height: 50px;
+							border-radius: 50%;
+							margin-right: 10px;
+						}
+						img.fl{
+							margin-right: 10px;
+							width: 50px;
+							height: 50px;
+							border-radius: 50%;
+						}
+						div{
+							img{
+								height: 13px;
+								width: 43px;
+							}
+							a{
+								display: inline-block;
+							}
+						}
+						a{
+							img{
+								width: 50px;
+								height: 50px;
+							}
+						}
+						p{
+							line-height: 22px;
+							margin-bottom: 6px;
+							em{
+								/*padding-left: 20px;*/
+								margin-right: 10px;
+								color: #666;
+								font-size: 12px;
+							}
+						}
+						p.spe{
+							line-height: 18px;
+							margin-bottom: 0;
+						}
+					}
+				}
+			}
+			&.no_data{
+				text-align:center;
+				line-height: 645px;
+				font-size: 16px;
+    			color: #C0C0C0;
+    			.refresh{
+    				background: url(../../images/meidian/refresh.png) center center no-repeat;
+    				width: 30px;
+    				height: 24px;
+    				margin-right: 10px;
+    				display: inline-block;
+    			}
+    			*{
+    				vertical-align: middle;
+    			}
+			}
+		}
+	}
+	.topic_box{
+		margin: 20px 0;
+		.topic_content{
+			padding-top: 4px;
+			ul{
+				padding: 0 60px 40px 40px;
+				li{
+					border-bottom: 1px solid #e6e6e6;
+					margin-top: 26px;
+					padding-bottom: 15px;
+					a{
+						display: block;
+					}
+					.personal{
+						img{
+							height: 40px;
+							width: 40px;
+							border-radius: 50%;
+							margin-right: 10px;
+						}
+						span{
+							font-size: 14px;
+							color: #656565;
+							&:hover{
+								color: #FF5757;
+							}
+						}
+					}
+					h4{
+						margin: 14px 0 10px;
+						font-size: 16px;
+						color: #000;
+						line-height: 20px;
+						&:hover{
+							color: #FF5757;
+						}
+					}
+					p{
+						line-height: 24px;
+						font-size: 14px;
+						color: #656565;
+						margin-bottom: 15px;
+					}
+					.img_box{
+						height: 148px;
+						padding: 0 0 10px 14px;
+						img{
+							width: 256px;
+							height: 146px;
+							margin-right: 10px;
+						}
+					}
+					.topic_detail{
+						padding-top: 5px;
+						em{
+							font-size: 14px;
+							background: url(../../images/meidian/watch.png) left center no-repeat;
+							color: #999;
+							padding-left: 20px;
+						}
+						strong{
+							font-weight: normal;
+							span{
+								margin-left: 20px;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+.toast_bg{
+	position: fixed;
+	left: 0;
+	top: 0;
+	height: 100%;
+	width: 100%;
+	background-color: rgba(0, 0, 0, .7);
+}
+.toast{
+	position: fixed;
+	height: 178px;
+	width: 350px;
+	left: 50%;
+	top: 50%;
+	margin: -88px 0 0 -175px;
+	background-color: #fff;
+	text-align: center;
+	a{
+		position: absolute;
+		right: 20px;
+		top: 25px;
+		height: 15px;
+		width: 15px;
+		background: url(../../images/meidian/close.png) center center no-repeat;
+	}
+	p{
+		height: 20px;
+		margin-top: 62px;
+		font-size: 16px;
+		color: #333;
+	}
+	input{
+		margin-top: 30px;
+		text-align: center;
+		height: 36px;
+		line-height: 36px;
+		width: 105px;
+		background: #FF4C4C;
+		border-radius: 3px;
+		font-size: 13px;
+		color: #fff;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

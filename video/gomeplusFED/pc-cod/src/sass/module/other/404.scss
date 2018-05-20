@@ -1,0 +1,20 @@
+@import '../../../../../../gomeplusUI/pc/src/sass/common/basic/_base.scss';
+@mixin txtcenter{
+	text-align: center;
+}
+.wrong p{
+	line-height: 40px;
+	font-size: $text24;
+	color: #626262;
+	margin-top: 26px;
+	span{
+		display: block;
+	}
+	a{
+		color: $color-danger;
+	}
+}
+.wrong{
+	@include txtcenter;
+	padding: 50px 0;
+}

@@ -1,0 +1,72 @@
+doctype html
+html(lang="zh-CN")
+	meta(charset="utf-8")
+	link(type="text/css",rel="stylesheet",href="../../css/public/public.css")
+	link(type="text/css",rel="stylesheet",href="../../css/module/createCompany.css")
+	body.opg
+		.perfect-company.company
+			.company-tempo.clearfix
+				p 选择账号类型
+				p.tempo-approve 完善企业认证信息
+				p.tempo-perfect 完善账号信息
+				p.tempo-success 开通成功
+			.company-info
+				.info.clearfix
+					.info-left
+						span.red *
+						| 企业名称
+					.info-right
+						input(type="text").right-name
+						.right-term 需与当地政府颁发的商业许可证书或企业注册证上的企业名称完全一致，信息审核审核成功后，企业名称不可修改
+				.info.clearfix
+					.info-left
+						span.red *
+						| 营业执照注册号
+					.info-right
+						input(type="text").right-name
+						.right-term 请输入15位营业执照注册号或18位的统一社会信用代码
+				.info.clearfix
+					.info-left.info-head
+						span.red *
+						| 营业执照
+					.info-right
+						.right-img
+							a(href="javascript:;")
+								input(type="file")
+						.img-again
+							a(href="javascript:;") 重新上传
+						.right-term 大小不超过4M，支持.PNG .JPG  .JPEG格式
+				.info.clearfix
+					.info-left
+						span.red *
+						| 运营者姓名
+					.info-right
+						input(type="text").right-name
+						.right-term 请填写该美号帐号运营者的姓名，如果名字包含分隔号“·”，请勿省略
+				.info.clearfix
+					.info-left
+						span.red *
+						| 运营者身份证号
+					.info-right
+						input(type="text").right-name
+						.right-term 请输入该美号运营者的身份证号码
+				.info.clearfix
+					.info-left
+						span.red *
+						| 运营者手机号
+					.info-right
+						input(type="text").right-name
+						.right-term 请输入该美号运营者的手机号
+				.info.clearfix
+					.info-left QQ/微信/邮箱
+					.info-right
+						input(type="text").right-name
+						.right-term 请输入该美号运营者的QQ/微信/邮箱
+			.choose-btn.clearfix
+				.continue
+					a(href='javascript:;') 继续
+				.back
+					a(href='javascript:;') 返回
+
+
+

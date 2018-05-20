@@ -1,0 +1,68 @@
+//- extends layout.jade
+extends ../public/layout.jade
+
+block title
+	title 站内信-公告系统
+//- block link-theme
+//- 	link(rel='stylesheet' type="text/css" href="../../css/module/account.css")
+
+//- message
+block content
+	include ../public/menu.jade
+	div.content-main
+		div.amp-account.amp-message
+			// crumbs
+			div.crumbs
+				a(href="javascript:void(0);").actived
+					span 站内信
+					em >
+			// account-main
+			div.account-main
+				// tabs
+				div.tabs
+					ul
+						li.actived
+							a(href="#") 公告系统
+						li
+							a(href="#") 资金变动
+						li
+							a(href="#") 账单
+				div.main-wrap
+					// 公告系统
+					div.record-consume
+						// 查询
+						div.set-fn
+							div.fn-plan
+								span.plan-title 关键词：
+								div.ele-input
+									input(type="text",value="")
+							div.fn-plan
+								span.plan-title 起止时间：
+								div.ele-select.ele-select-small
+									span.select-text 2016-12-23
+								span.plan-title.plan-title-gray -
+								div.ele-select.ele-select-small
+									span.select-text 年/月/日
+							div.fn-search
+								a(href="#").btn.btn-primary 查询
+						// 列表
+						div.message-list
+							ol
+								li.actived
+									span.list-infor
+										a(href="#")
+											| 账户余额不足100元，请尽快充值！账户余额不足100元，请尽快充值！
+									span.list-time
+										| 2016-10-23
+								li
+									span.list-infor
+										a(href="#")
+											| 请尽快充值！账户余额不足100元，请尽快充值！账户余额不足100元，请尽快充值！
+									span.list-time
+										| 2016-10-23
+								li
+									span.list-infor
+										a(href="#")
+											| 账户余额尽快充值！账户余额不足100元，请尽快充值！账户余额不足100元，请尽快充值！账户余额不足100元，请尽快充值！
+									span.list-time
+										| 2016-10-23		

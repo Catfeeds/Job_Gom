@@ -1,0 +1,84 @@
+//@import "../base/_config.scss";
+//@import "../base/_app.scss";
+
+.form-group{
+    position: relative;
+    zoom: 1;
+    &:after{
+        content:"";display:block;height:0;clear:both;visibility:hidden;
+    }
+    label{
+        float: left;
+        width: 7em;
+        text-align: right;
+        color: $base;
+        line-height: 40px;
+        .color-rad{
+            color: $warning;
+        }
+    }
+    .form-input{
+        position: relative;
+        float: left;
+        padding-bottom: 16px;
+        em{
+            position: absolute;
+            left: 10px;
+            top: 15px;
+            font-size: 20px;
+            color: #999;
+            & ~ .input-text{
+                padding-left: 40px;
+            }
+        }
+        .input-text{
+            box-sizing: border-box;
+            min-width: 350px;
+            border: 1px solid $border;
+            background: $white;
+            border-radius: 3px;
+            padding: 0 10px;
+            height: 40px;
+            line-height: 38px;
+            margin-bottom: 8px;
+            color: $base;
+        }
+        .input-textarea{
+            box-sizing: border-box;
+            min-width: 350px;
+            border: 1px solid $border;
+            background: $white;
+            border-radius: 3px;
+            padding: 10px;
+            height: 60px;
+            line-height: 20px;
+            margin-bottom: 8px;
+            color: $base;
+        }
+        .input-code{
+            min-width: 244px;
+        }
+        .error{
+            color: $warning;
+            font-size: 12px;
+            line-height: 1;
+            display: none;
+            text-align: left;
+            a{
+                color: $primary;
+            }
+        }
+        [disabled]{
+            color: $disabled-color;
+            background: $disabled-bg;
+            cursor: no-drop;
+        }
+    }
+    .btn{
+        float: right;
+        width: 96px;
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+}

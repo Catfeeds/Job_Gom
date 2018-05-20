@@ -1,0 +1,39 @@
+<!--index.wxml-->
+<view class="container">
+  <scroll-view>
+      <!--个人信息部分-->
+      <view class="userinfo">
+          <view class="user-photo">
+            <image class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
+          </view>
+          <view class="info">
+            <view class="info-item">
+              <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+            </view>
+            <view class="count info-item">
+              <text class="userinfo-nickname">账号：{{}}</text>
+            </view>
+          </view>
+      </view>
+      <!--订单部分-->
+      <view class="order" bindtap="queryOrder">
+          <view id="orderAll" class="order-item" data-orderType="all">
+            <icon type="String"></icon><text>全部订单</text>
+            <text class="more">></text>
+          </view>
+          <view  class="order-item" id="orderNotPay">
+            <icon type="String"></icon><text>待付款</text>
+            <text class="more">></text>
+          </view>
+          <view  class="order-item" id="orderPayed">
+            <icon type="String"></icon><text>待收货</text>
+            <text class="more">></text>
+          </view>
+          <view  class="order-item" id="orderSaled">
+            <icon type="String"></icon><text>售后订单</text>
+            <text class="more">></text>
+          </view>
+      </view>
+  </scroll-view>
+  
+</view>

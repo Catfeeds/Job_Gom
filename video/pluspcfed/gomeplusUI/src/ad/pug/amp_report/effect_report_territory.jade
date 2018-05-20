@@ -1,0 +1,77 @@
+//- extends layout.jade
+extends ../public/layout.jade
+
+block title
+	title 地域效果
+//- block link-theme
+//- 	link(rel='stylesheet' type="text/css" href="../../css/module/amp_report.css")
+
+//- account
+block content
+	include ../public/menu-amp-report.jade
+	div.content-main
+		div.amp-account
+			div.crumbs
+				a(href="javascript:void(0);")
+					span 数据报表
+					em >
+				a(href="javascript:void(0);").actived
+					span 广告报表
+					em >
+			div.account-tab
+				span 投资报表
+				span.active 效果报表
+			div.account-set.account-set-new
+				div.set-tab
+					span.first 订单效果
+					span 订单汇总
+					span.active 地域效果
+				div.set-fn
+					div.fn-plan
+						span.plan-title 起止日期：
+						div.ele-select.ele-selected
+							span.select-text 2016/12/13
+						span.plan-title.plan-title-gray -
+						div.ele-select.ele-selected
+							span.select-text 2016/12/13
+					div.fn-search
+						a(href="#").btn.btn-primary 查询
+					div.fn-export
+						em.icon.icon-report
+						span 导出
+				div.table-content
+					table.table
+								tr
+									th
+										span 省/直辖市
+									th
+										span 展现数
+									th
+										span 点击数
+									th
+										span 点击率（%）
+									th
+										span 总费用
+								tr
+									td
+										span 2016-12-19
+									td
+										span
+									td
+										span
+									td
+										span
+									td
+										span
+								tr
+									td
+										span 2016-12-19
+									td
+										span
+									td
+										span
+									td
+										span
+									td
+										span
+			include ../public/page.jade

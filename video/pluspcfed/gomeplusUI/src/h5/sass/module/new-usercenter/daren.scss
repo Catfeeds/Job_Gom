@@ -1,0 +1,390 @@
+@charset "UTF-8";
+html, body{
+	min-height: 100%;
+}
+.daren-wrap{
+	padding-bottom: .6rem;
+	/* Daren recruitment and publicity */
+	.dr-1{
+		width: 100%;
+		height: 3.73rem;
+		background: url(../../images/usercenter/daren1.jpg) no-repeat;
+		background-size: contain;
+	}
+	.dr-2{
+		width: 100%;
+		height: 3.73rem;
+		background: url(../../images/usercenter/daren2.jpg) no-repeat;
+		background-size: contain;
+	}
+	.dr-3{
+		width: 100%;
+		height: 3.74rem;
+		background: url(../../images/usercenter/daren3.jpg) no-repeat;
+		background-size: contain;
+	}
+	.dr-4{
+		width: 100%;
+		height: 3.67rem;
+		background: url(../../images/usercenter/daren4.jpg) no-repeat;
+		background-size: contain;
+	}
+	.dr-5{
+		width: 100%;
+		height: 1.55rem;
+		background: url(../../images/usercenter/daren5.jpg) no-repeat;
+		background-size: contain;
+	}
+	.dr-6{
+		width: 100%;
+		height: 4.2rem;
+		background: url(../../images/usercenter/daren6.jpg) no-repeat;
+		background-size: contain;
+	}
+	.dr-7{
+		width: 100%;
+		height: 4.2rem;
+		background: url(../../images/usercenter/daren7.jpg) no-repeat;
+		background-size: contain;
+	}
+	.dr-8{
+		width: 100%;
+		height: 5.85rem;
+		background: url(../../images/usercenter/daren8.jpg) no-repeat;
+		background-size: contain;
+	}
+	.dr-9{
+		width: 100%;
+		height: 6.65rem;
+		background: url(../../images/usercenter/daren9.jpg) no-repeat;
+		background-size: contain;
+	}
+	.dr-10{
+		width: 100%;
+		height: 3.42rem;
+		background: url(../../images/usercenter/daren10.jpg) no-repeat;
+		background-size: contain;
+	}
+	.dr-11{
+		width: 100%;
+		height: 3.42rem;
+		background: url(../../images/usercenter/daren11.jpg) no-repeat;
+		background-size: contain;
+	}
+	.dr-12{
+		width: 100%;
+		height: 3.44rem;
+		background: url(../../images/usercenter/daren12.jpg) no-repeat;
+		background-size: contain;
+	}
+	.aplly-btn-box{
+		position: relative;
+		.dr-aplly-btn{
+			display: block;
+			position: absolute;
+			top: 1.5rem;
+			left: 50%;
+			width: 4.2rem;
+			height: 2.2rem;
+			margin-left: -2.1rem;
+		}
+	}
+	.dr-process{
+		position: relative;
+		ul{
+			width: 5.3rem;
+			overflow: hidden;
+			margin: 0 auto;
+			padding-top: 1.85rem;
+		}
+		li{
+			float: left;
+			width: 1.2rem;
+			font-size: .28rem;
+			color: #00315c;
+			text-align: center;
+			margin-right: .83rem;
+			&:last-child{
+				margin-right: 0;
+			}
+			.step-num{
+				display: block;
+				width: 1rem;
+				height: 1rem;
+				line-height: 1rem;
+				color: #fff;
+				font-size: .6rem;
+				border-radius: 50%;
+				margin: 0 auto;
+				background-color: #fc672c;
+				box-shadow: 0 .02rem .04rem #000;
+				opacity: 0;
+			}
+			.step-txt{
+				display: block;
+				margin-top: .45rem;
+			}
+			&.active{
+				.step-num{
+					opacity: 1;
+				}
+				.step-txt{
+					color: #fff;
+				}
+			}
+			&.fail{
+				.step-num{
+					opacity: 1;
+					width: 1.21rem;
+					height: 1.08rem;
+					text-indent: -9999px;
+					background: url(../../images/usercenter/darenfail.png) no-repeat;
+					background-size: cover;
+					box-shadow: none;
+				}
+				.step-txt{
+					color: #fff;
+				}
+			}
+		}
+		.btn-shadow{
+			margin-top: .24rem;
+		}
+	}
+	.fail-txt{
+		font-size: .24rem;
+		color: #fff;
+		text-align: center;
+		margin-top: .38rem;
+		span{
+			display: block;
+			line-height: .36rem;
+		}
+	}
+	.orange-btn{
+		display: block;
+		width: 2.38rem;
+		height: .76rem;
+		line-height: .76rem;
+		font-size: .4rem;
+		color: #fff;
+		text-align: center;
+		border-radius: .05rem;
+	    text-shadow: 1px 1px .02rem #a92e13;
+	    background: -webkit-linear-gradient(#fbad5c 3%, #e23d19 30%, #d73017 45%);
+	    background: linear-gradient(#fbad5c 3%, #e23d19 30%, #d73017 45%);
+	    box-shadow: inset 0 .01rem 0 #fee6cb;
+	}
+	.btn-shadow{
+		display: block;
+		width: 2.38rem;
+		height: .76rem;
+		margin: 0 auto;
+		border-radius: .05rem;
+		box-shadow:0 .01rem .03rem #000;
+	    /* &:active{
+	    	box-shadow: 0 .03rem .03rem #a3a3a3;
+	    	.orange-btn{
+		    	border: 1px solid #ed8f09;
+		    	text-shadow: 1px 1px .02rem #91260e;
+		    	background: -webkit-linear-gradient(#df954e 3%, #c53713 30%, #b42811 45%);
+		    	background: linear-gradient(#df954e 3%, #c53713 30%, #b42811 45%);
+		    	box-shadow: inset 0 .01rem 0 #f4dec8;
+		    }
+	    } */
+	    &[disabled="disabled"]{
+	    	.orange-btn{
+	    		color: #747373;
+		    	border: 1px solid #8a8787;
+		    	text-shadow: none;
+		    	background: -webkit-linear-gradient(#a3a3a3 3%, #a5a5a5 30%, #a1a1a1 45%);
+		    	background: linear-gradient(#a3a3a3 3%, #a5a5a5 30%, #a1a1a1 45%);
+		    	box-shadow: inset 0 .01rem 0 #f4dec8;
+		    }
+		}
+	}
+	.dr-table{
+		height: auto;
+		padding: 0 .3rem;
+		padding-top: 1.7rem;
+		&.dr-fail{
+			padding-top: .33rem;
+		}
+		li{
+			margin-bottom: .3rem;
+		}
+		label{
+			display: inline-block;
+			width: 1.5rem;
+			font-size: .32rem;
+		}
+		.input-box{
+			display: inline-block;
+			width: 5.1rem;
+			height: .78rem;
+			line-height: .78rem;
+			font-size: .28rem;
+			border: 1px solid #cdcdcd;
+			border-radius: 0.05rem;
+		}
+		.select-box{
+			display: inline-block;
+			width: 4.4rem;
+			text-indent: .16rem;
+			&[disabled="disabled"]{
+				color: #999;
+			}
+		}
+		.iconn-42{
+			display: inline-block;
+			width: .65rem;
+			font-size: .24rem;
+			text-align: center;
+		}
+		input{
+			display: inline-block;
+			width: 5.1rem;
+			height: .78rem;
+			line-height: .78rem;
+			font-size: .28rem;
+			padding: .24rem .16rem;
+		}
+		.gray{
+			color: #999;
+			font-size: .28rem;
+		}
+		.idpics{
+			display: -webkit-box;
+			display: -ms-box;
+			display: -webkit-flex;
+			display: -ms-flexbox;
+			display: flex;
+			width: 5.75rem;
+			margin: .3rem auto 0; 
+			dl{
+			    -webkit-box-flex: 1;
+				-webkit-flex: 1;
+				-ms-flex: 1;
+				flex: 1;
+				height: 1.48rem;
+				text-align: center;
+				margin-right: .62rem;
+				border: 1px solid #e4e4e4;
+				background-color: #f9f9f9;
+				&:last-child{
+					margin-right: 0;
+				}
+			}
+			dt{
+				width: .62rem;
+				height: .58rem;
+				background: url(../../images/usercenter/darensprite.png) no-repeat;
+				background-size: .62rem 1.94rem;
+				margin: .3rem auto 0;
+			}
+			.front{
+				background-position: 0 0;
+			}
+			.obverse{
+				background-position: 0 -.68rem;
+			}
+			.handheld{
+				background-position: 0 -1.34rem;
+			}
+			dd{
+				font-size: .24rem;
+				color: #999;
+				margin-top: .15rem;
+			}
+			img{
+				width: 1.6rem;
+				height: 1.55rem;
+				text-align: center;
+				margin-right: .52rem;
+				&:last-child{
+					margin-right: 0;
+				}
+			}
+		}
+		.text-area{
+			border: 1px solid #cdcdcd;
+			border-radius: .05rem;
+			margin-top: .3rem;
+			position: relative;
+		}
+		textarea{
+			display: block;
+			width: 100%;
+			max-height: 1.78rem;
+			min-height: 1.78rem;
+			font-size: .28rem;
+			padding: .2rem .16rem;
+			resize: none;
+		}
+		.limit{
+			position: absolute;
+			bottom: .12rem;
+			right: .22rem;
+			font-size: .24rem;
+			color: #999;
+		}
+	}
+	.dr-check-table{
+		font-size: .3rem;
+		color: #666;
+		padding: .33rem .3rem 0;
+		li{
+			margin-bottom: .3rem;
+		}
+		label{
+			display: inline-block;
+			width: 1.5rem;
+			vertical-align: top;
+		}
+		.gray{
+			color: #999;
+			font-size: .24rem; 
+		}
+		span, p{
+			display: inline-block;
+		}
+		p{
+			width: 5.1rem;
+			font-size: .28rem;
+			line-height: .36rem;
+		}
+		.idpics{
+			width: 5.85rem;
+			margin: .3rem auto 0;
+			img{
+				width: 1.6rem;
+				height: 1.55rem;
+				text-align: center;
+				margin-right: .52rem;
+				&:last-child{
+					margin-right: 0;
+				}
+			}
+		}
+	}
+	.dr-12{
+		position: relative;
+		.btn-shadow{
+			position: absolute;
+			top: 2.28rem;
+			left: 50%;
+			margin-left: -1.19rem;
+		}
+		p{
+			font-size: .26rem;
+			color: #fff;
+			position: absolute;
+			top: 3.3rem;
+			left: 2.14rem;
+		}
+	}
+	.pro-img{
+		margin-top: 2.5rem;
+	}
+}
+

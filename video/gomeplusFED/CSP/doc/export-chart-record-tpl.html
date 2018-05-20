@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="renderer" content="webkit">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta http-equiv="pragma" content="no-cache">
+	<meta http-equiv="cache-control" content="no-cache">
+	<meta http-equiv="expires" content="0">
+	<title>美信网络技术有限公司</title>
+	<meta name="author" content="美信网络技术有限公司">
+	<meta name="description" content="国美">
+	<meta name="keywords" content="国美+APP">
+	<style type="text/css">
+	@charset "UTF-8";
+	body,
+	button,
+	input,
+	select,
+	textarea {
+		font-size: 14px;
+		font-family: 'PingFang SC', 'Myriad Pro', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif;
+	}
+	
+	body,
+	h1,
+	h2,
+	h3,
+	h4,
+	h5,
+	h6,
+	dl,
+	dt,
+	dd,
+	ul,
+	ol,
+	li,
+	th,
+	td,
+	p,
+	blockquote,
+	pre,
+	form,
+	fieldset,
+	legend,
+	input,
+	button,
+	textarea,
+	article,
+	aside,
+	footer,
+	header,
+	hgroup,
+	nav,
+	section,
+	menu {
+		margin: 0;
+		padding: 0;
+	}
+	
+	table {
+		border-collapse: collapse;
+		border-spacing: 0;
+	}
+	
+	ul,
+	li {
+		list-style: none;
+	}
+	
+	fieldset,
+	img {
+		border: 0;
+		vertical-align: middle;
+	}
+	
+	input,
+	textarea {
+		outline-style: none;
+	}
+	
+	textarea {
+		resize: none;
+	}
+	
+	a {
+		text-decoration: none;
+		outline: none;
+		color: #333;
+	}
+	
+	a:hover {
+		text-decoration: none;
+	}
+	
+	em {
+		font-style: normal;
+	}
+	
+	body {
+		background: #ececec;
+		padding-bottom: 50px;
+	}
+	
+	.wrap-box {
+		margin: 0 auto;
+	}
+	
+	.clearfix:after {
+		content: "";
+		display: block;
+		height: 0;
+		clear: both;
+		visibility: hidden;
+	}
+	
+	.clearfix {
+		zoom: 1;
+	}
+	
+	.wrap-right {
+		width: 870px;
+		padding: 20px 0;
+		margin: 0 auto;
+	}
+	/*==============================标准色==========================*/
+	/*==============================wrap宽度==========================*/
+	/*----结构宽度-----*/
+	/*----主色-----*/
+	/*==============================字体大小==========================*/
+	
+	.phrase-list .list-bg ul li,
+	.im-left .tab-list li .gray {
+		-webkit-text-overflow: ellipsis;
+		-o-text-overflow: ellipsis;
+		text-overflow: ellipsis;
+		overflow: hidden;
+		white-space: nowrap;
+	}
+	
+	.wrap-right .welcome {
+		text-align: center;
+		padding-top: 222px;
+	}
+	
+	.wrap-right .btn-box {
+		padding: 15px 10px;
+	}
+	
+	.wrap-right .table {
+		width: 100%;
+		line-height: 30px;
+		border-bottom: 1px solid #cdcdcd;
+	}
+	
+	.wrap-right .table th {
+		background: #999;
+		color: #fff;
+		padding: 10px 6px;
+		border-left: 1px solid #cdcdcd;
+		border-right: 1px solid #cdcdcd;
+		text-align: left;
+		font-weight: normal;
+	}
+	
+	.wrap-right .table td {
+		padding: 10px 6px;
+		background: #fff;
+		border-left: 1px solid #cdcdcd;
+		border-right: 1px solid #cdcdcd;
+	}
+	
+	.wrap-right .table tr:nth-child(odd) td {
+		background: #ececec;
+	}
+	
+	.chatrecord {
+		width: 100%;
+		border: 1px solid #cdcdcd;
+		background: #f9f9f9;
+	}
+	
+	.chatrecord .right-chat {
+		position: relative;
+		font-size: 14px;
+	}
+	
+	.chatrecord .right-chat .chat-scroll {
+		padding: 15px 0;
+		overflow-y: auto;
+	}
+	
+	.chatrecord .right-chat .text-center {
+		text-align: center;
+		color: #999;
+		padding-top: 20px;
+	}
+	
+	.chatrecord .right-chat dl {
+		padding: 10px 60px 10px 10px;
+	}
+	
+	.chatrecord .right-chat dl dt {
+		float: left;
+		width: 40px;
+	}
+	
+	.chatrecord .right-chat dl dt img {
+		width: 40px;
+		height: 40px;
+		-webkit-border-radius: 50%;
+		border-radius: 50%;
+	}
+	
+	.chatrecord .right-chat dl dd {
+		margin-left: 47px;
+		line-height: 18px;
+	}
+	
+	.chatrecord .right-chat dl dd p.gray {
+		color: #999;
+		padding: 0 4px;
+		line-height: 22px;
+	}
+	
+	.chatrecord .right-chat dl dd .text {
+		border: 1px solid #e4e4e4;
+		padding: 10px;
+		-webkit-border-radius: 8px;
+		border-radius: 8px;
+		background: #fff;
+		position: relative;
+		float: left;
+	}
+	
+	.chatrecord .right-chat dl dd .text .icon-san {
+		position: absolute;
+		left: -9px;
+		top: 7px;
+		width: 9px;
+		height: 9px;
+		background: url(../src/img/ui/icon-san.png) no-repeat;
+	}
+	
+	.chatrecord .right-chat dl dd .text img {
+		max-width: 380px;
+	}
+	
+	.chatrecord .right-chat dl dd .text .resend {
+		position: absolute;
+		left: -38px;
+		top: 50%;
+		transform: translateY(-50%);
+		font-size: 12px;
+		text-align: center;
+		color: #666;
+		width: 24px;
+		line-height: 22px;
+		margin-top: 4px;
+	}
+	
+	.chatrecord .right-chat dl dd .text .resend span {
+		display: inline-block;
+		width: 24px;
+		height: 24px;
+		-webkit-border-radius: 50%;
+		border-radius: 50%;
+		background: #ee2f2f;
+		color: #fff;
+		font-size: 20px;
+	}
+	
+	.chatrecord .right-chat dl dd .text .im-video {
+		position: relative;
+		width: 130px;
+		height: 190px;
+	}
+	
+	.chatrecord .right-chat dl dd .text .im-video .icon-play {
+		position: absolute;
+		left: 0;
+		top: 0;
+		width: 100%;
+		height: 100%;
+		background: url(../src/img/ui/icon-play.png) no-repeat center;
+		cursor: pointer;
+	}
+	
+	.chatrecord .right-chat dl dd .text .im-audio {
+		height: 20px;
+		line-height: 20px;
+		min-width: 100px;
+		cursor: pointer;
+		position: relative;
+	}
+	
+	.chatrecord .right-chat dl dd .text .im-audio .fl {
+		float: left;
+	}
+	
+	.chatrecord .right-chat dl dd .text .im-audio .fr {
+		float: right;
+		width: 14px;
+		background: url(../src/img/ui/icon-audio.png) no-repeat;
+		height: 20px;
+	}
+	
+	.chatrecord .right-chat dl dd .text .im-audio-new:before {
+		content: "";
+		position: absolute;
+		right: -14px;
+		top: -14px;
+		width: 10px;
+		height: 10px;
+		border-radius: 50%;
+		background: #ee2f2f;
+	}
+	
+	.chatrecord .right-chat .right {
+		padding: 0 10px 10px 60px;
+	}
+	
+	.chatrecord .right-chat .right dt {
+		float: right;
+	}
+	
+	.chatrecord .right-chat .right dd {
+		margin: 0 47px 0 0;
+	}
+	
+	.chatrecord .right-chat .right dd p.gray {
+		text-align: right;
+	}
+	
+	.chatrecord .right-chat .right dd .text {
+		border-color: #f0c57b;
+		background: #ffe199;
+		float: right;
+	}
+	
+	.chatrecord .right-chat .right dd .text .icon-san {
+		left: auto;
+		right: -9px;
+		background-image: url(../src/img/ui/icon-san2.png);
+	}
+	
+	.chatrecord .right-chat .right dd .text .im-audio .fl {
+		float: right;
+	}
+	
+	.chatrecord .right-chat .right dd .text .im-audio .fr {
+		float: left;
+		transform: rotate(180deg);
+		-ms-transform: rotate(180deg);
+		-moz-transform: rotate(180deg);
+		-webkit-transform: rotate(180deg);
+		-o-transform: rotate(180deg);
+	}
+	
+	.chatrecord .right-chat .right dd .text .im-audio-new:before {
+		right: auto;
+		top: -14px;
+		left: -14px;
+	}
+	
+	.chatrecord .right-chat .page {
+		position: absolute;
+		left: 1px;
+		bottom: 0;
+		width: 100%;
+		height: 39px;
+		box-sizing: border-box;
+		padding: 3px;
+		border-top: 1px solid #cdcdcd;
+		border-right: 1px solid #cdcdcd;
+		margin-top: -2px;
+	}
+	
+	.chatrecord .right-chat .page .cn {
+		background: none;
+	}
+	</style>
+</head>
+
+<body class="opg">
+	<div class="wrap-box clearfix">
+		<div class="wrap-right clearfix">
+			<div class="chatrecord">
+				<div class="right-chat">
+					<div class="chat-scroll">
+						<dl class="clearfix">
+							<dt><img src="https://i-pre.meixincdn.com/v1/img/T17ahTB5AT1R4cSCrK.png"></dt>
+							<dd>
+								<p class="gray">张一二三四 2016-5-16 13:14:20</p>
+								<div class="text"><em class="icon-san"></em>
+									<p>我也想买那个电视呢</p>
+								</div>
+							</dd>
+						</dl>
+						<dl class="clearfix">
+							<dt><img src="https://i-pre.meixincdn.com/v1/img/T17ahTB5AT1R4cSCrK.png"></dt>
+							<dd>
+								<p class="gray">张一二三四 2016-5-16 13:14:20</p>
+								<div class="text"><em class="icon-san"></em>
+									<p>我也想买那个电视呢我也想买那个电视呢我也想买那个电视呢我也想买那个电视呢我也想买那个电视呢</p>
+								</div>
+							</dd>
+						</dl>
+						<dl class="clearfix right">
+							<dt><img src="https://i-pre.meixincdn.com/v1/img/T17ahTB5AT1R4cSCrK.png"></dt>
+							<dd>
+								<p class="gray">张一二三四 2016-5-16 13:14:20</p>
+								<div class="text"><em class="icon-san"></em>
+									<p>我也想买那个电视呢我也想买那个电视呢我也想买那个电视呢我也想买那个电视呢我也想买那个电视呢</p>
+								</div>
+							</dd>
+						</dl>
+						<dl class="clearfix">
+							<dt><img src="https://i-pre.meixincdn.com/v1/img/T17ahTB5AT1R4cSCrK.png"></dt>
+							<dd>
+								<p class="gray">张一二三四 2016-5-16 13:14:20</p>
+								<div class="text"><em class="icon-san"></em>
+									<p><img src="../src/img/ui/img.jpg"></p>
+								</div>
+							</dd>
+						</dl>
+						<dl class="clearfix right">
+							<dt><img src="https://i-pre.meixincdn.com/v1/img/T17ahTB5AT1R4cSCrK.png"></dt>
+							<dd>
+								<p class="gray">张一二三四 2016-5-16 13:14:20</p>
+								<div class="text"><em class="icon-san"></em>
+									<p>我也想买那个电视呢我也想买那个电视呢我也想买那个电视呢我也想买那个电视呢我也想买那个电视呢</p>
+								</div>
+							</dd>
+						</dl>
+						<dl class="clearfix right">
+							<dt><img src="https://i-pre.meixincdn.com/v1/img/T17ahTB5AT1R4cSCrK.png"></dt>
+							<dd>
+								<p class="gray">张一二三四 2016-5-16 13:14:20</p>
+								<div class="text"><em class="icon-san"></em>
+									<p>我也想买那个电视呢我也想买那个电视呢我也想买那个电视呢我也想买那个电视呢我也想买那个电视呢</p>
+								</div>
+							</dd>
+						</dl>
+						<dl class="clearfix">
+							<dt><img src="https://i-pre.meixincdn.com/v1/img/T17ahTB5AT1R4cSCrK.png"></dt>
+							<dd>
+								<p class="gray">张一二三四 2016-5-16 13:14:20</p>
+								<div class="text"><em class="icon-san"></em>
+									<div class="im-video">
+										<video width="130" height="190">
+											<source src="../src/img/ui/movie.ogg" type="video/ogg">您的浏览器不支持 video 标签。
+										</video><em class="icon-play"></em>
+									</div>
+								</div>
+							</dd>
+						</dl>
+						<dl class="clearfix right">
+							<dt><img src="https://i-pre.meixincdn.com/v1/img/T17ahTB5AT1R4cSCrK.png"></dt>
+							<dd>
+								<p class="gray">张一二三四 2016-5-16 13:14:20</p>
+								<div class="text"><em class="icon-san"></em>
+									<p>我也想买那个电视呢我也想买那个电视呢我也想买那个电视呢我也想买那个电视呢我也想买那个电视呢</p>
+								</div>
+							</dd>
+						</dl>
+						<dl class="clearfix">
+							<dt><img src="https://i-pre.meixincdn.com/v1/img/T17ahTB5AT1R4cSCrK.png"></dt>
+							<dd>
+								<p class="gray">张一二三四 2016-5-16 13:14:20</p>
+								<div class="text"><em class="icon-san"></em>
+									<div style="width: 130px" class="im-audio im-audio-new">
+										<div class="fl">25s'</div>
+										<div class="fr"></div>
+										<audio>
+											<source src="../src/img/ui/horse.ogg" type="audio/ogg">您的浏览器不支持 audio 标签。
+										</audio>
+									</div>
+								</div>
+							</dd>
+						</dl>
+						<dl class="clearfix right">
+							<dt><img src="https://i-pre.meixincdn.com/v1/img/T17ahTB5AT1R4cSCrK.png"></dt>
+							<dd>
+								<p class="gray">张一二三四 2016-5-16 13:14:20</p>
+								<div class="text"><em class="icon-san"></em>
+									<p>我也想买那个电视呢我也想买那个电视呢我也想买那个电视呢我也想买那个电视呢我也想买那个电视呢</p>
+								</div>
+							</dd>
+						</dl>
+
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+
+</html>

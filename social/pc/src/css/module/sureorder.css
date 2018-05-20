@@ -1,0 +1,292 @@
+@charset "UTF-8";
+/*==============================标准色==========================*/
+/*----主色-----*/
+/*==============================字体大小==========================*/
+/*==============================wrap宽度==========================*/
+/*==============================btn 宽度==========================*/
+/*==============================nav==========================*/
+/*==============================text clolor==========================*/
+.opg .address-editor table.table tr td span.consignee-name, .opg .address-editor table.table tr td span.ship-address {
+  -webkit-text-overflow: ellipsis;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap; }
+
+body {
+  background: #f6f5ee; }
+
+.opg .shopcar {
+  position: relative;
+  margin-top: 10px;
+  width: auto;
+  height: 66px;
+  line-height: 66px;
+  font-size: 30px;
+  color: #333;
+  text-align: left;
+  font-weight: normal; }
+  .opg .shopcar a {
+    position: absolute;
+    right: 0;
+    color: #376492;
+    font-size: 14px;
+    top: 10px; }
+  .opg .shopcar .disabled {
+    color: #999;
+    cursor: default; }
+.opg .address-editor {
+  background: #fff;
+  padding: 20px;
+  width: auto;
+  height: auto;
+  overflow: hidden; }
+  .opg .address-editor .order-message {
+    width: 700px;
+    height: 28px;
+    line-height: 1;
+    line-height: 28px\9;
+    border: 1px solid #e9e8e5;
+    padding: 0 12px; }
+  .opg .address-editor .addre-box {
+    width: auto;
+    height: auto;
+    overflow: hidden; }
+  .opg .address-editor .edit-add-box {
+    margin: 15px auto 0 30px; }
+  .opg .address-editor .edit-ad-btn {
+    font-size: 16px;
+    margin-left: 76px;
+    margin-top: 15px; }
+  .opg .address-editor table.table {
+    width: 100%;
+    font-size: 14px;
+    color: #333;
+    margin-top: 12px;
+    border-collapse: collapse; }
+    .opg .address-editor table.table tr {
+      height: 30px;
+      line-height: 30px; }
+      .opg .address-editor table.table tr.default-address:hover {
+        background: #fff; }
+      .opg .address-editor table.table tr:hover {
+        background: url("../../images/public/new-addr-hovbj.jpg") top repeat-x;
+        width: 1044px;
+        cursor: pointer;
+        background-size: 100% 32px;
+        height: 30px; }
+        .opg .address-editor table.table tr:hover a {
+          display: block; }
+      .opg .address-editor table.table tr.height {
+        height: 10px; }
+      .opg .address-editor table.table tr td {
+        text-align: left;
+        padding-bottom: 10px;
+        position: relative; }
+        .opg .address-editor table.table tr td span.consignee-name {
+          max-width: 100px;
+          display: inline-block;
+          float: left; }
+        .opg .address-editor table.table tr td span.ship-address {
+          max-width: 560px;
+          display: inline-block;
+          float: left; }
+        .opg .address-editor table.table tr td span.default-address-bj {
+          position: absolute;
+          top: 2px;
+          right: 103px;
+          background: #999;
+          color: #fff;
+          padding: 0 8px;
+          height: 24px;
+          line-height: 24px;
+          margin-left: 10px;
+          float: left;
+          margin-top: 5px;
+          margin-top: 3px;
+          border-radius: 12px; }
+        .opg .address-editor table.table tr td span.phone-numb {
+          display: inline-block;
+          margin-left: 25px;
+          float: left; }
+        .opg .address-editor table.table tr td a {
+          display: none;
+          float: right;
+          color: #376492;
+          margin-right: 15px; }
+        .opg .address-editor table.table tr td.hide-text a {
+          visibility: hidden;
+          display: block; }
+          .opg .address-editor table.table tr td.hide-text a.active {
+            visibility: inherit; }
+        .opg .address-editor table.table tr td.hide-text:hover a {
+          visibility: inherit;
+          display: block; }
+      .opg .address-editor table.table tr .name-box {
+        position: relative;
+        width: 78px;
+        height: 30px;
+        *height: 28px;
+        padding: 0 10px;
+        overflow: hidden;
+        line-height: 30px;
+        *line-height: 28px;
+        border: 1px solid #e9e8e5;
+        text-align: center;
+        background: #fff; }
+        .opg .address-editor table.table tr .name-box.name-active {
+          position: absolute;
+          background: url("../../images/public/shop-active.png") #fff;
+          top: 0;
+          left: 0;
+          width: 80px;
+          height: 30px;
+          border: none; }
+        .opg .address-editor table.table tr .name-box .name-no-bor {
+          border: none; }
+  .opg .address-editor .unfold-bx {
+    height: 45px;
+    line-height: 45px; }
+    .opg .address-editor .unfold-bx a {
+      display: block;
+      margin-right: 55px;
+      float: left; }
+      .opg .address-editor .unfold-bx a span {
+        display: block;
+        float: left; }
+      .opg .address-editor .unfold-bx a em {
+        font-size: 18px;
+        vertical-align: middle;
+        margin-left: 8px; }
+      .opg .address-editor .unfold-bx a .rotate90 {
+        background-position: -90px 0; }
+.opg .text-aglin-r {
+  text-align: right; }
+.opg .martop13 {
+  margin-top: 13px; }
+.opg .check-all input {
+  display: none; }
+.opg .order-information td {
+  width: 8%; }
+.opg .order-information .shop-arl-check.icon-fontsize {
+  font-size: 20px;
+  margin: -4px 0 0 15px;
+  color: #bbb; }
+.opg .order-information .product-name .product-title {
+  width: 625px; }
+.opg .order-information th {
+  width: 8%; }
+.opg .shop-car-list td.total-price {
+  background: #e9e8e5;
+  font-size: 16px;
+  padding-right: 40px; }
+.opg .shop-car-list .merchandise-news.margi-left20 {
+  margin-left: 20px; }
+.opg .invoice-details {
+  font-size: 14px;
+  color: #999; }
+  .opg .invoice-details .modify {
+    color: #e60039; }
+.opg .invoice-type {
+  display: inline-block; }
+  .opg .invoice-type span {
+    color: #333; }
+  .opg .invoice-type a {
+    color: #fc8753;
+    margin-left: 25px; }
+.opg .invoice-txt {
+  float: left;
+  margin-right: 40px; }
+  .opg .invoice-txt .looked-up {
+    color: #e60039; }
+  .opg .invoice-txt a {
+    cursor: pointer;
+    color: #fc8753; }
+    .opg .invoice-txt a span {
+      color: #333; }
+      .opg .invoice-txt a span.looked-up {
+        color: #fc8753; }
+        .opg .invoice-txt a span.looked-up a {
+          color: #fc8753; }
+  .opg .invoice-txt .iconn-2 {
+    margin-left: 3px;
+    display: inline-block; }
+.opg .marg-r10 {
+  margin-right: 10px; }
+.opg .marg-b20 {
+  margin-bottom: 20px; }
+.opg .pad0 {
+  padding: 0; }
+.opg .items-total {
+  padding: 20px;
+  border-bottom: 1px solid #e9e8e5; }
+  .opg .items-total p {
+    font-size: 14px;
+    line-height: 24px;
+    text-align: right;
+    overflow: hidden; }
+    .opg .items-total p span {
+      width: 115px;
+      text-align: right;
+      display: inline-block;
+      font-size: 16px; }
+      .opg .items-total p span.goods-together {
+        width: 1000px;
+        text-align: right;
+        display: inline-block; }
+    .opg .items-total p .numb {
+      color: #e60039;
+      font-size: 14px; }
+.opg .submit-order-bx {
+  padding: 20px; }
+  .opg .submit-order-bx .submit-order-txt {
+    text-align: right;
+    font-size: 14px;
+    color: #999;
+    line-height: 24px; }
+    .opg .submit-order-bx .submit-order-txt span {
+      font-size: 25px;
+      color: #e60039; }
+      .opg .submit-order-bx .submit-order-txt span strong {
+        font-weight: 100;
+        font-size: 14px; }
+    .opg .submit-order-bx .submit-order-txt span.info {
+      display: block;
+      font-size: 14px;
+      color: #999; }
+.opg .pc-btnw160 {
+  width: 160px;
+  font-size: 16px; }
+.opg .pc-btnh50 {
+  height: 50px;
+  line-height: 50px; }
+.opg .submit-btn {
+  margin-top: 10px;
+  text-align: right; }
+.opg .addre-send {
+  font-size: 16px; }
+
+.order-edit-box {
+  position: absolute;
+  width: 290px;
+  height: 72px; }
+  .order-edit-box .order-edit-text {
+    border: 1px solid #f95959;
+    background: #fff5f5;
+    color: #f95353;
+    padding: 15px;
+    border-radius: 3px;
+    line-height: 20px;
+    height: 40px; }
+    .order-edit-box .order-edit-text .iconn-12 {
+      font-size: 30px;
+      float: left;
+      margin: 3px 15px 0 0; }
+  .order-edit-box .order-edit-san {
+    position: absolute;
+    right: 55px;
+    bottom: -9px;
+    width: 18px;
+    height: 10px;
+    background: url(../../images/shop/icon-sanjiao.png) no-repeat; }
+
+

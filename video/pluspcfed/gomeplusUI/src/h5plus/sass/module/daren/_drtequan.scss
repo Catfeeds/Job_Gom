@@ -1,0 +1,36 @@
+@charset "UTF-8";
+// @ Css name：达人特权
+// @ Author： Kan Jingjing
+// @ Date： 2017-05-11
+// @ Last Modified by： Kan Jingjing
+// @ Last Modified time：2017-05-12
+//==========================
+
+.drzm-t {
+	height: rem(430);
+	background: url(../../../images/daren/dr-bg5.jpg) no-repeat;
+}
+.drzm-c {
+	height: rem(426);
+	background: url(../../../images/daren/dr-bg6.jpg) no-repeat;
+}
+.tq-btn {
+	width: rem(336);
+	font-size: rem(40);
+	font-weight: bold;
+	color: #fff;
+	margin-top: rem(60);
+	text-indent: 0;
+}
+.auth {
+	display: block;
+	font-size: rem(24);
+	color: #4990e2;
+	text-align: center;
+	margin: rem(56) auto 0;
+	em {
+		font-size: rem(20);
+		color: #4990e2;
+		margin-left: rem(8);
+	}
+}

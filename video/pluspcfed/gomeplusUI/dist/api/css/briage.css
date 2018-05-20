@@ -1,0 +1,68 @@
+.header{
+	background:#27ba9e;
+}
+.section p{
+	line-height:1.7;
+}
+.section p.gray{
+	color:#ccc;
+}
+.section p a{
+	color:#ff8a00;
+	text-decoration:underline;
+	padding:0 0.1rem;
+}
+.module .h1{
+	font-size:0.4rem;
+}
+.section .h2{
+	font-size:0.38rem;
+}
+/*nav*/
+.nav li a:hover,
+.nav li.active a,
+.nav li.active a:hover{
+	background:#11826c;
+}
+/*返回首页*/
+.icon-home{
+	right:0.4rem!important;
+}
+/*briage-body*/
+.briage-date{
+	position:relative;
+	overflow:hidden;
+	overflow-x:auto;
+	border:1px solid #dfe6ec;
+	margin-bottom:20px;
+}
+.briage-header{
+	position:absolute;
+	left:0;
+	top:0;
+	right:0;
+	overflow:hidden;
+	overflow-y:scroll;
+}
+.briage-header .table th{
+	border-top:none;
+}
+.briage-header .table th:first-child{
+	border-left:none;
+}
+.briage-header .table th:last-child{
+	border-right:none;
+}
+.briage-body{
+	margin-top:0.6rem;
+	overflow:hidden;
+	overflow-y:scroll;
+	height:500px;
+}
+.span-pd{
+	text-align:left;
+	padding:0px 10px;
+}
+.table td span.span-col{
+	white-space:normal;
+}

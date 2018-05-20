@@ -1,0 +1,20 @@
+//- extends layout.jade
+extends ../../../widget-platform/pug/layout/layout.jade
+
+//- dialog
+block content
+	h2.platform-title dialog
+	div.platform-content
+		h3.platform-header pop
+		div.platform-intro 
+			p 弹层，用户操作提示。
+		div.platform-example#dialog
+			include ../../../../pc-widget/dialog/demo-pop.jade
+		pre.platform-pre
+			code.platform-code#dialog_code
+			span.platform-jade pug
+			span.platform-jade.platform-html.actived html
+	//- js format html code
+	script(type='text/javascript').
+		HtmlFormat.init(['dialog'],false,'_code','html','span.platform-jade');
+		$(".platform-dialog").parent('li').addClass("actived");

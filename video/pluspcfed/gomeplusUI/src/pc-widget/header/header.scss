@@ -1,0 +1,146 @@
+@import '../config/_base.scss';
+@import '../config/_mixins.scss';
+
+.opg{
+    .header{
+        height: 85px;
+        background: $bg-fff;
+        position: relative;
+        z-index: 101;
+        .wrap-box{
+            position: relative;
+            padding: 20px 0;
+            background: $bg-fff;
+        }
+        .fl{ float: left;}
+        .search{
+            position: absolute;
+            left: 375px;
+            top: 25px;
+            height: 38px;
+            line-height: 38px;
+            width: 448px;
+            border: 1px solid $color-danger;
+            border-radius: 1px;
+            .search-val{
+                float: left;
+                width: 62px;
+                text-align: center;
+                border-right: 1px solid $color-danger;
+                height: 38px;
+                position: relative;
+                color: $color-gray;
+                background: $bg-fff;
+                cursor: pointer;
+                em{
+                    display: inline-block;
+                    vertical-align: -2px;
+                    margin-left: 4px;
+                }
+                .search-list{
+                    display: none;
+                    position: absolute;
+                    left: -1px;
+                    top: 38px;
+                    width: 62px;
+                    line-height: 24px;
+                    padding: 5px 0;
+                    border: 1px solid $color-danger;
+                    background: $bg-fff;
+                    text-align: left;
+                    z-index: 30;
+                    a{
+                        display: block;
+                        color: $color-gray;
+                        padding-left: 9px;
+                        &:hover{
+                            color: #666;
+                            background: #f6f5ee;
+                        }
+                    }
+                }
+                &:hover{
+                    .search-list{
+                        display: block;
+                    }
+                }
+            }
+            input{
+                width: 345px;
+                border: 0;
+                display: inline-block;
+                height: 38px;
+                line-height: 1;
+                line-height: 38px\9;
+                padding: 0 10px;
+                box-sizing: border-box;
+                background: transparent;
+            }
+            .iconn-3{
+                float: right;
+                display: inline-block;
+                width: 38px;
+                height: 38px;
+                line-height: 38px;
+                text-align: center;
+                font-size: 25px;
+                background: $color-danger;
+                color: #feeded;
+                cursor: pointer;
+            }
+        }
+        .shop-car{
+            float: right;
+            padding-top: 15px;
+            a{
+                margin-left: 10px;
+            }
+            em{
+                font-size: 16px;
+                vertical-align: -1px;
+                margin-right: 5px;
+            }
+            span{
+                color: $color-danger;
+                padding: 0 5px;
+            }
+        }
+    }
+    .windows-bg{
+        position: fixed;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background: url(../../images/public/opacity.png) repeat;
+        z-index: 100;
+        .windows-ma{
+            position: fixed;
+            left: 50%;
+            top: 50%;
+            width: 600px;
+            height: 270px;
+            background: $bg-fff;
+            text-align: center;
+            transform: translate(-50%,-50%);
+            -ms-transform: translate(-50%,-50%);
+            -moz-transform: translate(-50%,-50%);
+            -webkit-transform: translate(-50%,-50%);
+            -o-transform: translate(-50%,-50%);
+            .iconn-7{
+                position: absolute;
+                right: 15px;
+                top: 15px;
+                font-size: $text25;
+                color: $link-hover;
+            }
+            img{
+                margin: 40px 0 10px;
+            }
+            p{
+                font-size: 20px;
+            }
+        }
+    }
+}
+

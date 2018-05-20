@@ -1,0 +1,111 @@
+extends dashboard-layout
+
+block content
+  nav(class="navbar navbar-inverse navbar-fixed-top", role="navigation")
+    div(class="container-fluid")
+      div(class="navbar-header")
+        button(type="button", class="navbar-toggle collapsed", data-toggle="collapse", data-target="#navbar", aria-expanded="false", aria-controls="navbar")
+          span(class="sr-only") Toggle navigation
+          span(class="icon-bar")
+          span(class="icon-bar")
+          span(class="icon-bar")
+        a(class="navbar-brand", href="#") OPG开发自动化平台
+      div(id="navbar", class="navbar-collapse collapse")
+        ul(class="nav navbar-nav navbar-right")
+          li
+            a
+              span 用户名：
+              span #{username}
+          li#logout
+            a(href="#") 退出
+          li
+            a#about(href="/profile/dev", target='_blank') 关于
+          li
+            a#help(href="/profile/start", target='_blank') 帮助
+        //form(class="navbar-form navbar-right")
+        //  input(type="text", class="form-control", placeholder="Search...")
+  div.container-fluid
+    div.row
+      div#content(class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main")
+        div#compileMode.dataContent
+          div(class="row placeholders")
+            ul(class="nav nav-tabs", role="tablist", id="optTab")
+              li(role="presentation", class="active")
+                a(href="#compilePush", role="tab", data-toggle="tab") 编译并推送
+              li(role="presentation")
+                a(href="#updatePushTip", role="tab", data-toggle="tab", @click="getUpdateTipProj") 更新提醒
+              li(role="presentation")
+                a(href="#deleteProj", role="tab", data-toggle="tab") 删除已建分支
+            div.compileOpts.tab-content
+              div(role="tabpanel", class="tab-pane fade active in", id="compilePush")
+                div
+                  include dashboard-inited.jade
+                  button.btn.btn-danger#reset(type="button",value="") 清空
+                  //include dashboard-bizType.jade
+                  include dashboard-compileResTree.jade
+                  include dashboard-compileOpt.jade
+
+              div(role="tabpanel", class="tab-pane fade", id="updatePushTip")
+                div
+                  include dashboard-inited-Tip.jade
+                  button.btn.btn-danger#reset_tip(type="button",value="",@click="resetForm('updateTipForm')") 清空
+                  include dashboard-updatePushTip.jade
+              div(role="tabpanel", class="tab-pane fade", id="deleteProj")
+                div
+                  h4 已构建项目
+                  br
+                  ul.list-group
+                    li.list-group-item(v-for="item in compiledProjNames")
+                      a.badge(@click="deleteProject(item)" ,href="javascript:void(0);", data-id="", :data-projName="item") 删除
+                      | {{item}}
+
+        div#gomeplusUIM.dataContent.hide
+          h3 gomeplusUI管理更新
+          hr
+          div.updata-icon
+            span 默认情况下会更新所有的内容，并且不清空缓存
+            div.updateContent
+              - for(var i in update_content) {
+              label.checkbox-inline
+                input(@click="contentChecked" ,type="checkbox" , name="inlineCheckbox", value="#{update_content[i].value}")
+                | #{update_content[i].content}
+              - }
+            div
+              //a(class="btn btn-success",id="gomePlusUI",href="/updateUI?gitUrl=" + encodeURIComponent('http://gitlab.intra.gomeplus.com/gomeplusFED/gomeplusUI.git'), target='_blank') 立即更新gomeplusUI
+              a(@click="updateGomePlusUI",class="btn btn-success",id="gomePlusUI",href="javascript:void(0);", target='_blank') 立即更新gomeplusUI
+              a(class="btn btn-success ml20",href="/gomeplusUI/pc-platform/pug/index/index.html", target='_blank') 直接访问gomeplusUI
+        div.hide#pushUpdate
+          div(class="row placeholders")
+            ul(class="nav nav-tabs", role="tablist", id="optTab")
+              li(role="presentation", class="active")
+                a(href="#compilePush", role="tab", data-toggle="tab") 更新列表
+
+
+      div(class="col-sm-3 col-md-2 sidebar")
+        ul.nav.nav-sidebar#menu
+          - for(var i in data.menu) {
+          - var item = data.menu[i];
+          - var itemChild = "";
+          - if(item["default"]) {
+          - if(item["child"].length > 0) {
+          - itemChild = JSON.stringify(item["child"]);
+          - }
+            li.active(data-child="#{itemChild}", data-target="#{item['target']}")
+              a(href="#{item['url']}") #{item['name']}
+          - } else {
+            li(data-child="#{itemChild}", data-target="#{item['target']}")
+              a(href="#{item['url']}") #{item['name']}
+          - }
+          - }
+
+  //script(src='/javascripts/jquery-1.12.1.min.js')
+  script(src='/javascripts/bootstrap.min.js')
+  script(src='/javascripts/spin.min.js')
+  script(src='/javascripts/ladda.min.js')
+  script(src='/modules/dashboard.js')
+  script(src="/modules/socketio.js")
+  script().
+    $(function () {
+      $('#optTab a:first').tab('show')
+    });
+

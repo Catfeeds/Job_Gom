@@ -1,0 +1,13 @@
+@charset "UTF-8";
+@import '../../widget/config/_base.scss';
+@import '../../widget/config/_mixins.scss';
+body{
+	background-color:#fff
+}
+.open-shop{
+	width: 1200px;
+	margin:0 auto;
+	img{
+		width: 100%;
+	}
+}

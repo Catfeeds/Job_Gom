@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="zh-CN" data-use-rem="750">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+	<meta name="format-detection" content="telephone=no">
+	<meta name="format-detection" content="email=no">
+	<meta http-equiv="expires" content="0">
+	<link type="text/css" rel="stylesheet" href="../css/public.css">
+	<link type="text/css" rel="stylesheet" href="../css/project.css">
+	<script type="text/javascript" src="../js/jquery-1.9.0.js"></script>
+	<script type="text/javascript" src="../js/effect.js"></script>
+</head>
+<body class="opg body-font-family">
+	<script type="text/javascript">
+	 (function appVersion() {
+      	window.platform = {};
+      	var ua = window.navigator.userAgent.toLowerCase();
+      	var isIphone = ua.match(/iphone os/i) == 'iphone os';
+      	var isAndroid = ua.match(/android/i) == 'android';
+      	// ipad 也为mobile
+      	var isMobile = ua.match(/mobile/i) == 'mobile';
+      	var isIpad = ua.match(/ipad/) == 'ipad';
+      
+      	platform.isMobile = function () {
+      		return isMobile && !isIpad;
+      	}
+      	if(platform.isMobile()) {
+      		(function(win){var doc=win.document,html=doc.documentElement,option=html.getAttribute("data-use-rem");if(option===null){return}var baseWidth=parseInt(option).toString()==="NaN"?640:parseInt(option);var grids=baseWidth/100;var clientWidth=html.clientWidth||320;html.style.fontSize=clientWidth/grids+"px";var testDom=document.createElement("div");var testDomWidth=0;var adjustRatio=0;testDom.style.cssText="height:0;width:1rem;";doc.body.appendChild(testDom);var calcTestDom=function(){testDomWidth=testDom.offsetWidth;if(testDomWidth!==Math.round(clientWidth/grids)){adjustRatio=clientWidth/grids/testDomWidth;var reCalcRem=clientWidth*adjustRatio/grids;html.style.fontSize=reCalcRem+"px"}else{doc.body.removeChild(testDom)}};setTimeout(calcTestDom,20);var reCalc=function(){var newCW=html.clientWidth;if(newCW===clientWidth){return}clientWidth=newCW;html.style.fontSize=newCW*(adjustRatio?adjustRatio:1)/grids+"px"};if(!doc.addEventListener){return}var resizeEvt="orientationchange" in win?"orientationchange":"resize";win.addEventListener(resizeEvt,reCalc,false);doc.addEventListener("DOMContentLoaded",reCalc,false)})(window);
+      	}
+      })()
+	</script>
+	<!-- header -->
+	<nav class="header header-mobile">
+		<section class="logo">项目流程<span class="classify"></span></section>
+		<a href="http://opg-pre.intra.gomeplus.com" class="fade-in icon-home"><i></i></a>
+	</nav>
+	<!-- header end-->
+	<!-- home -->
+	<span class="back-home bounce-in-down"><a href="#">Home</a></span>
+	<!-- home end -->
+	<!-- css -->
+	<section class="section module" style="display:block;">
+		<h1 class="h1">项目开发流程</h1>
+		<p>需求-UI-分支-开发-完成邮件-UI校验-合并代码-跟进上线）</p>
+		<h2 class="h2">第一步：需求</h2>
+		<p>参与PRD/产品宣讲会，整体了解产品的需求及项目规划(时间排期、功能需求、协调资源...)；</p>
+		<p>跟踪后续产品需求变化及项目调整情况。</p>
+		<h2 class="h2">第二步：UI</h2>
+		<p>提供UI最终确认稿。</p>
+		<p>UI稿尺寸：750px；</p>
+		<p>提供资源：psd/png/sketch标注；</p>
+		<p>提供方式：svn地址；</p>
+		<p>确认邮件：UI设计稿以相关产品负责人发出确认邮件为准；</p>
+		<h2 class="h2">第三步：获取git推送远程分支仓库</h2>
+		<p>项目前端开发负责人创建用于接收前端构建资源的<em class="code">git</em>远程仓库，同时邮件通知前端构建相关人员；</p>
+		<p>注释：远程仓库地址以<em class="code">http://</em>方式为最佳。</p>
+		<h2 class="h2">第四步：前端构建</h2>
+		<p>在<em class="code">gomeplusUI</em>源码仓库的<em class="code">develop</em>分支下创建与推送分支同名的仓库后，进行<em class="code">pug</em><em class="code">sass</em>源码的开发；</p>
+		<p><em class="code">pug</em><em class="code">sass</em>源码编写依赖<em class="code">m-widget</em>组件库和<em class="code">sasscore API</em>核心库；</p>
+		<p>前端构建源码完成后，需通过<em class="code">OPG自动化平台</em>进行编译并将编译成功后的<em class="code">html</em><em class="code">css</em><em class="code">images</em>等文件推送至前端负责人提供的git远程分支仓库。</p>
+		<p>注释：前端开发人员直接在opg自动平台推送的文件下进行文件的调整被视为无效行为，下次推送时会将其覆盖。</p>
+		<h2 class="h2">第五步：视觉校验</h2>
+		<p>构建并推送完成后，通过固定格式的邮件通知产品、设计师、前端开发及项目其它相关人员。</p>
+		<p>访问形式：虚拟服务器(IP地址或二维码)</p>
+		<p>产品+设计师：UI视觉校验；</p>
+		<p>前端开发：接收推送文件并准备后续开发工作；</p>
+		<p>注释：校验过程中以调整<em class="code">sass</em>为主，尽量避免对<em class="code">pug</em>进行更改，以免影响前端开发人员。</p>
+		<h2 class="h2">第六步：合并</h2>
+		<p>项目开发提测后，需将构建源码开发分支合并到主干(develop)。</p>
+		<h2 class="h2">第七步：Bug跟进</h2>
+		<p>及时快速处理测试人员在项目预生产阶段发现的bug，避免影响项目上线进度。</p>
+	</section>
+	<!-- css end-->
+	<!-- javascript -->
+	<section class="section module">
+		<h1 class="h1">javascript开发流程</h1>
+		<p>积极搬砖中...</p>
+	</section>
+	<!-- javascript end-->
+</body>
+</html>

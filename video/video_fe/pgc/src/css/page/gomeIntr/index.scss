@@ -1,0 +1,100 @@
+/* gomeIntr */
+@import "../../base/public";
+.gomeIntr{
+	background: #fff;
+	height:100%;
+
+	.gomeIntrContain{
+		min-height: calc(100vh - 255px);
+	}
+	.hide{
+		display: none;
+	}
+	.intrContainer{
+		margin:30px 300px 0 300px;
+		p{
+//		height: 35px;
+		}
+	}
+	.navImg{
+		width:100%;
+		height:150px;
+		background: url(../../../imgs/public/intrBg.png) no-repeat center;
+	}
+	.intrHead{
+		text-align: center;
+		margin:0 200px;
+		height:80px;
+		line-height:80px;
+		font-size:22px;
+		color:#3e9bf7;
+		border-bottom:1px solid #f0f0f0;
+	}
+	.aboutUs{
+		margin-bottom:50px;
+	}
+	.aboutUs .address{
+		text-align: center;
+		.leftBox,.rightBox{
+			display: inline-block;
+			margin-top:40px;
+			text-align: left;
+		}
+		.leftBox{
+			margin-right:100px;
+		}
+		.rightBox{
+			margin-left:100px;
+		}
+		p{
+			text-align: left;
+		}
+		img{
+			height:210px;
+		}
+	}
+	.aboutUs .describeBox{
+		height:45px;
+		line-height:45px;
+		color:#111;
+	}
+	.aboutUs .msgDetail{
+		margin: 0 300px;
+		p{
+			margin-top:20px;
+		}
+		p,div{
+			line-height:30px;
+		}
+	}
+
+	.intrFooter{
+		background: #fff;
+		padding: 30px 0;
+		text-align: center;
+		width:100%;
+		border-top:1px solid #f0f0f0;
+		ul{
+			overflow: hidden;
+			display: inline-block;
+			li{
+				float: left;
+				a{
+					margin:0 10px;
+					&:hover{
+							color: #53a6f8;
+					}
+				}
+			}
+
+		}
+		.copyRight{
+			font-size:12px;
+			color:#999;
+			margin-top:10px;
+		}
+	}
+
+
+}
+

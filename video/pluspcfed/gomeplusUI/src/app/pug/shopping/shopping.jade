@@ -1,0 +1,192 @@
+extends ../public/head.jade
+block title
+	title 逛逛首页
+block link-theme
+	link(rel='stylesheet' type="text/css" href="../../css/shopping/shopping.css")
+block content
+	//- js
+	include ../public/mobileJs.jade
+	.wrap
+		.carousel.swiper-container
+			.carousel-banner.swiper-wrapper#swiper-banner
+				-for (var i=0;i<6;i++)
+					.carousel-it.swiper-slide
+						a(href="javascript:;").img-default
+							img(src='https://i8.meixincdn.com/T1YXCTB_dv1RXrhCrK.750x420z.jpg')
+			.swiper-pagination
+			.slid-dot
+				.slide-nav
+					#rotate.rotate(style='transform: rotate(0deg);-webkit-transform: rotate(0deg);')
+					.tip
+						span.cur-page 1
+						span /
+						span.total-page 3
+		nav.nav
+			.nav-sub
+				a.nav-it
+					img(src='../../images/gg-index/nav01.png')
+					p.nav-txt 促销
+				a.nav-it
+					img(src='../../images/gg-index/nav02.png')
+					p.nav-txt 领券
+				a.nav-it
+					img(src='../../images/gg-index/nav03.png')
+					p.nav-txt 电影
+				a.nav-it
+					img(src='../../images/gg-index/nav04.png')
+					p.nav-txt 理财
+				a.nav-it
+					img(src='../../images/gg-index/nav05.png')
+					p.nav-txt 分类
+			.nav-sub
+				a.nav-it
+					img(src='../../images/gg-index/nav01.png')
+					p.nav-txt 促销
+				a.nav-it
+					img(src='../../images/gg-index/nav02.png')
+					p.nav-txt 领券
+				a.nav-it
+					img(src='../../images/gg-index/nav03.png')
+					p.nav-txt 电影
+				a.nav-it
+					img(src='../../images/gg-index/nav04.png')
+					p.nav-txt 理财
+				a.nav-it
+					img(src='../../images/gg-index/nav05.png')
+					p.nav-txt 分类
+		.headline
+			.hl-tlitle
+				img(src="../../images/shopping/headline.png", alt="")
+			.hl-cont.swiper-container
+				ul.hl-list.swiper-wrapper
+					-for (var i=0;i<6;i++)
+						li.swiper-slide
+							p.sub-tip 【每日福利】
+							h4.sub-title
+								| 老北京味道！京城里京味儿最浓的10家餐厅！
+		.sec
+			.entrance
+				-for(var i=0;i<4;i++)
+					a.entr-it.img-default
+						img(src='https://i8.meixincdn.com/T1YXCTB_dv1RXrhCrK.750x420z.jpg')
+		.zone
+			.cool.swiper-container
+				ul.cool-list.swiper-wrapper
+					-for (var i=0;i<6;i++)
+						li.swiper-slide.cool-it.img-default
+							a(href="javascript:;")
+								img(src='https://i8.meixincdn.com/T1YXCTB_dv1RXrhCrK.750x420z.jpg')
+		.sec
+			.pic-zone
+				h3.title
+					strong 标题标题
+				.pic-one
+					a(href="javascript:;").img-default
+						img(src='https://i8.meixincdn.com/T1YXCTB_dv1RXrhCrK.750x420z.jpg')
+				.pic-three
+					a(href="javascript:;").img-default
+						img(src='https://i8.meixincdn.com/T1YXCTB_dv1RXrhCrK.750x420z.jpg')
+					a(href="javascript:;").img-default
+						img(src='https://i8.meixincdn.com/T1YXCTB_dv1RXrhCrK.750x420z.jpg')
+					a(href="javascript:;").img-default
+						img(src='https://i8.meixincdn.com/T1YXCTB_dv1RXrhCrK.750x420z.jpg')
+				.pic-four
+					.four-l
+						a(href="javascript:;").img-default
+							img(src='https://i8.meixincdn.com/T1YXCTB_dv1RXrhCrK.750x420z.jpg')
+					.four-r
+						a(href="javascript:;").img-default
+							img(src='https://i8.meixincdn.com/T1YXCTB_dv1RXrhCrK.750x420z.jpg')
+						a(href="javascript:;").img-default
+							img(src='https://i8.meixincdn.com/T1YXCTB_dv1RXrhCrK.750x420z.jpg')
+		.sec
+			h3.title
+				strong 标题标题
+			.pic-zone
+				.pic-four
+					.four-l
+						a(href="javascript:;").img-default
+							img(src='https://i8.meixincdn.com/T1YXCTB_dv1RXrhCrK.750x420z.jpg')
+					.four-r
+						a(href="javascript:;").img-default
+							img(src='https://i8.meixincdn.com/T1YXCTB_dv1RXrhCrK.750x420z.jpg')
+						a(href="javascript:;").img-default
+							img(src='https://i8.meixincdn.com/T1YXCTB_dv1RXrhCrK.750x420z.jpg')
+		.zone
+			.discount
+				a(href="javascript:;").img-default
+					img(src='https://i8.meixincdn.com/T1YXCTB_dv1RXrhCrK.750x420z.jpg')
+				a(href="javascript:;").img-default
+					img(src='https://i8.meixincdn.com/T1YXCTB_dv1RXrhCrK.750x420z.jpg')
+		.sec
+			h3.title
+				strong 标题标题
+			ul.hwz-list
+				-for (var i=0;i<3;i++)
+					li.hwz-it
+						.hwz-pic.img-default
+							img(src='https://i8.meixincdn.com/T1YXCTB_dv1RXrhCrK.750x420z.jpg')
+						.hwz-cont
+							h4.hwz-title
+								| 属于你的圣诞唇语是什么？
+							p.hwz-tip
+								| 显示文章第一句话内容或副标题
+							span.hwz-author
+								| 作者：小果冻牌QQ糖
+			a.more(href="javascript:;") 更多精彩 &gt;
+		.sec
+			h3.title
+				strong 标题标题
+			.recom.swiper-container
+				.recom-list.swiper-wrapper
+					-for(var i=0;i<8;i++)
+						div.swiper-slide.recom-it
+							a.img-default(href="javascript:;")
+								img(src='https://i8.meixincdn.com/T1YXCTB_dv1RXrhCrK.750x420z.jpg')
+		.ad.img-default
+			a(href="javascript:;")
+				img(src='https://i8.meixincdn.com/T1YXCTB_dv1RXrhCrK.750x420z.jpg')
+		.sec
+			h3.title
+				strong 每日好店
+			.goods-shop
+				.shop-detail
+					h4.detail-header 今日推荐
+					.detail-img
+						a.img-default(href='#', title='')
+							img(src='https://i0.meixincdn.com/v1/img/T1tyCTB7AT1RXrhCrK.jpg', alt='')
+						a.img-default(href='#', title='')
+							img(src='https://i0.meixincdn.com/v1/img/T17tYTBKKT1RXrhCrK.jpg', alt='')
+					.detail-name
+						a(href='#', title='') 国美电器
+				.shop-detail
+					h4.detail-header 人气小店
+					.detail-img
+						a.img-default(href='#', title='')
+							img(src='https://i0.meixincdn.com/v1/img/T1tyCTB7AT1RXrhCrK.jpg', alt='')
+						a.img-default(href='#', title='')
+							img(src='https://i0.meixincdn.com/v1/img/T17tYTBKKT1RXrhCrK.jpg', alt='')
+					.detail-name
+						a(href='#', title='') 三只松鼠旗舰店
+		.sec
+			h3.title
+				strong 为你推荐
+			ul.kitchen-list
+				-for(var i=0;i<8;i++)
+					li
+						a.kitchen-item(href='javascript:;')
+							.kit-img.img-default
+								img(src='https://i0.meixincdn.com/v1/img/T1tyCTB7AT1RXrhCrK.jpg')
+							h4.kit-title 不锈钢汤锅
+							span.kit-price ￥99
+							del.kit-pre-price ￥199.00
+			a.loading-more(href='javascript:;') 更多内容，敬请期待
+	.packet-my.packet-keep
+	.to-top
+	script(src="zepto.js")
+	script(src="zepto-fx.js")
+	script(src="swiper.min.js")
+	script(src="main.js")
+
+
+

@@ -1,0 +1,30 @@
+doctype html
+html(lang="zh-CN", data-use-rem="750")
+	include ../../../m-widget/head/head.jade
+	link(type="text/css",rel="stylesheet",href="../../css/public/gomeplusUI.css")
+	link(type="text/css",rel="stylesheet",href="../../css/module/ruzhu/ruzhu.css")
+	link(type="text/css",rel="stylesheet",href="../../css/module/plaintext/plaintext.css")
+	body.opg.ruzhu
+		include ../../../m-widget/head/rem.jade
+		<!--header-->
+		header.header
+			.h-left
+				a.h-back(href="javascript:;")
+					em.iconn-1
+			.h-cnt.flex-cell
+				h1.h-tit 我要入驻
+		<!--推荐码-->
+		figure.ruzhu-header
+			img(src="../../images/ruzhu/ruzhu-face.png").header-face
+			figcaption.header-infor
+				span.infor-name.c-3 国小妹的店铺
+				span.infor-code (推荐码:Xb4DZvza)
+				p.c-6 邀请您加入国美Plus做品牌商家，开启掘金之旅。
+		<!--流程说明-->
+		figure.ruzhu-step
+		<!--我要入驻-->
+		label(for="").fn-label.active
+			em.iconn-38
+			| 我同意
+			a.c-79(href="#") 《商家入驻须知》
+		a.m-btn-big(href="javascript:;") 我要入驻

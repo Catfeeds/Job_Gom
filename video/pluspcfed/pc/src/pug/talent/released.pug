@@ -1,0 +1,92 @@
+
+doctype html
+html(lang="zh-CN")
+    meta(charset="utf-8")
+    link(type="text/css",rel="stylesheet",href="../../css/public/public.css")
+    //引入对应的scss
+    link(type="text/css",rel="stylesheet",href="../../css/module/released.css")
+    body.opg       
+        include ../../widget/header/header-talent.pug        
+        .talent.clearfix  
+            include ../../widget/aside/talent.pug      
+            .released
+                .released-cont
+                    .released-title 已发话题
+                    ul.released-list
+                        li.list-top.clearfix
+                            .list-title 标题
+                            .list-time 发布时间
+                            .list-time 修改时间
+                            .list-operate 操作
+                        li.list-li.clearfix
+                            .list-title 
+                                a(href="javascritp:;" target="_blank") 有了这样的夹克，怎么搭都好看有了这样的夹克，怎么搭都好看有了这样的夹克，怎么搭都好看有了这样的夹克，怎么搭都好看
+                            .list-time 
+                                .time-day 2016-04-30
+                                .time-second 10:26:48
+                            .list-time 
+                                .time-day 2016-04-30
+                                .time-second 10:26:48
+                            .list-operate
+                                div
+                                    a(href="javascritp:;") 编辑
+                                div
+                                    a(href="javascritp:;") 删除
+                                .operate
+                                    a.operate-check(href="javascritp:;") 查看数据
+                                        .check-hover                                            
+                                            span.hover-browse
+                                                em.browse 浏览量
+                                                p.browse-count 1000.00
+                                            span.hover-share.clearfix
+                                                em.share 分享
+                                                p.share-count 1000.00
+                                            span.hover-praise.clearfix
+                                                em.praise 点赞
+                                                p.praise-count 1000.00
+                                            span.hover-discusse.clearfix
+                                                em.discusse 评论
+                                                p.discuss-count 1000.00
+                                            span.hover-collect.clearfix
+                                                em.collect 收藏
+                                                p.collect-count 1000.00
+                        li.list-li.clearfix
+                            .list-title 
+                                a(href="javascritp:;" target="_blank") 有了这样的夹克，怎么搭都好看有了这样的夹克，怎么搭都好看有了这样的夹克，怎么搭都好看有了这样的夹克，怎么搭都好看
+                            .list-time 
+                                .time-day 2016-04-30
+                                .time-second 10:26:48
+                            .list-time 
+                                .time-day 2016-04-30
+                                .time-second 10:26:48
+                            .list-operate
+                                div
+                                    a(href="javascritp:;") 编辑
+                                div
+                                    a(href="javascritp:;") 删除
+                                .operate
+                                    a.operate-check(href="javascritp:;") 查看数据
+                                        .check-hover                                            
+                                            span.hover-browse
+                                                em.browse 浏览量
+                                                p.browse-count 1000.00
+                                            span.hover-share.clearfix
+                                                em.share 分享
+                                                p.share-count 1000.00
+                                            span.hover-praise.clearfix
+                                                em.praise 点赞
+                                                p.praise-count 7
+                                            span.hover-discusse.clearfix
+                                                em.discusse 评论
+                                                p.discuss-count 5
+                                            span.hover-collect.clearfix
+                                                em.collect 收藏
+                                                p.collect-count 2
+                        li.list-li
+                            p.no-topic 你还没相关话题哦，赶紧“
+                                a(href="#") 发布话题
+                                span ”吧
+                    .page-btn
+                        a.page-present(href="javascritp:;") &lt; 上一页
+                        a(href="javascritp:;") 1
+                        a(href="javascritp:;") 下一页  &gt;

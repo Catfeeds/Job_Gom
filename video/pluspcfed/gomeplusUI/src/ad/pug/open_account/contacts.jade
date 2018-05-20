@@ -1,0 +1,94 @@
+//- extends layout.jade
+extends ../public/login_layout.jade
+
+block title
+	title 联系人信息
+//- block link-theme
+//- 	link(rel='stylesheet' type="text/css" href="../../css/module/company.css")
+
+//- account
+block content
+	style.
+		body{
+			background-image:none;
+		}
+	div.open_account
+		div.account-step
+			div.part-guide.part-guide03
+				span.guide-step.guide-step01
+					b.step-text 选择身份
+					b.step-number 1
+					b.step-icon
+						em.icon.icon-right
+				span.guide-step.guide-step02
+					b.step-text 填写公司信息
+					b.step-number 2
+					b.step-icon
+						em.icon.icon-right
+				span.guide-step.guide-step03
+					b.step-text 指定联系人
+					b.step-number 3
+					b.step-icon
+						em.icon.icon-right
+				span.guide-step.guide-step04
+					b.step-text 资料确认
+					b.step-number 4
+					b.step-icon
+						em.icon.icon-right
+				span.guide-percent
+		div.account_content
+			h1 联系人信息
+			p.content-p.content-p-m 身份：
+				b 代理商
+			p.content-p 国美Plus账户：
+				b sdfafaar1423734919041
+			div.content-contacts
+				div.column-group
+					div.group-aside
+						i.group-tip *
+						| 联系人：
+					div.group-detail
+						div.detail-row
+							div.ele-input.ele-input03
+								input(type="text",value="")
+				div.column-group
+					div.group-aside
+						| 称呼：
+					div.group-detail
+						div.detail-row
+							span.row-check
+								em.icon.icon-single
+								i 先生
+							span.row-check
+								em.icon.icon-single.icon-singled
+								i 女士
+				div.column-group
+					div.group-aside
+						i.group-tip *
+						| 手机号：
+					div.group-detail
+						div.detail-row
+							div.ele-input.ele-input03
+								input(type="text",value="")
+				div.column-group
+					div.group-aside
+						i.group-tip *
+						| 邮箱：
+					div.group-detail
+						div.detail-row
+							div.ele-input.ele-input03
+								input(type="text",value="")
+				div.column-group
+					div.group-aside
+						i.group-tip *
+						| 通讯地址：
+					div.group-detail
+						div.detail-row
+							div.ele-textarea
+								textarea(type="text",value="")
+			div.content-form
+				div.form-next-unfold
+					a(href="#").btn.btn-gray 上一步
+					a(href="#").btn.btn-primary 保存
+					a(href="#").btn.btn-primary 下一步
+	include ../public/footer.jade

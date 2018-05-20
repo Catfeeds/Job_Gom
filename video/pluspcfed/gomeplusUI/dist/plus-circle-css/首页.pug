@@ -1,0 +1,239 @@
+extends ../plus-widget/head/head.jade
+block style
+	link(type="text/css",rel="stylesheet",href="circle.css")
+block body
+	body.opg.circle
+		include ../plus-widget/head/rem.jade
+		.m-downapp
+			.app-box
+				a.app-close
+					em.iconn-25
+				img.app-logo(src="https://css.meixincdn.com/m/h5/dist/images/gome_icon.png")
+				h2.app-tit 更多优惠尽在国美Plus
+				a.app-btn 戳我打开
+		.m-openapp
+		
+		.cle-top(style="background-image: url(_pic_2.jpg)")
+			header.header
+				.h-left
+					a.h-back(href="javascript:;")
+						em.iconn-1
+				.h-cnt.flex-cell
+				.h-right
+					a.h-btn(href="javascript:;")
+						em.iconn-3
+			// /header
+			.c-f.top-info
+				p.tips by 清狂
+				h3 
+					span.top-infor-header 跑步畅想俱乐部
+					span.identify-img 官方圈子
+
+				.num-box
+					em.icon-topic
+					cite 3666
+					em.icon-men
+					cite 6058
+					em.icon-tag
+					cite 5070
+				.ft
+					.head-box.face-img
+						img(src="../plus-public/images/public/fail-180.png")
+					a.bor-all.join-btn(href="##") 加入
+					p.pos-abs 申请已发送
+
+		.cle-text
+			p 等设计性纸制品起家，产品充满了原创性和设计感，诞生了众多经典设计以及畅销产品。
+		
+		.m-prompt
+			.pro-img
+				img(src="../plus-public/images/public/img-1.png")
+			.pro-txt
+				| 暂无话题
+				br
+				| 快来占领第一块儿地盘
+		// /暂无话题
+		.m-tabs.cle-tab
+			ul.m-menu.bor-b.tab-head
+				li.flex-cell.active
+					a.link(href="javascript:;") 全部
+				li.flex-cell
+					a.link(href="javascript:;") 精品
+
+			.tab-body
+				.tab-page.cle-list
+					ul.cle-lst
+						-for(i=0;i<3;i++)
+							li
+								em.ic-zd
+								a(href="##") 你所不知道的MIDORI TRALLER‘S 6个小事你所不知道的MIDORI
+					.bor-b.cle-item
+						.flex-box.user-box
+							.face-img
+								img(src="../plus-public/images/public/fail-face.png")
+								em.ic-dr
+							.flex-cell
+								p.c-6.us-name 别人的手机1232
+						a(href="##")
+							h2.tit-box
+								| 去亚马逊玩可以怎样安排行程？
+								img(src="http://10.69.207.16:8008/src//images/face_05.png")
+								img(src="http://10.69.207.16:8008/src//images/face_05.png")
+							.c-6.txt-box 今天买了个很好看的本子觉得很开心，给大家看看。不知道写什么字合适，还得练练字。
+							.c-6.txt-box
+								| 今天买了个很好看的本子觉得很开心，给大家看看。
+								img(src="http://10.69.207.16:8008/src//images/face_05.png")
+								img(src="http://10.69.207.16:8008/src//images/face_05.png")
+								img(src="http://10.69.207.16:8008/src//images/face_05.png")
+								| 不知道写什么字合适，还得练练字。
+
+						.m-tags.m-tags-slide
+							.t-list
+								label 哈哈哈哈哈哈
+								label 哈哈
+								label 哈
+								label 123456789012345
+								label 噢噢噢哦哦噢噢噢哦哦oooo哦
+								label 旺仔牛奶旺仔牛奶旺仔牛奶旺仔牛
+								label 小兔朱迪
+								label 短发短发的
+								label 兔兔兔兔兔兔兔兔兔兔兔兔兔兔兔
+						.flex-box.info
+							.flex-bd
+								p.c-9.time 3 分钟前
+							.flex-ft
+								p.c-9.handle
+									em.iconn-102
+									cite 100
+									em.iconn-19
+									cite 10
+									em.iconn-28
+									cite 20
+									em.iconn-22
+									cite 30
+					.bor-b.cle-item
+						.flex-box.user-box
+							.face-img
+								img(src="_pic_1.jpg")
+							.flex-cell
+								p.c-6.us-name 别人的手机1232
+						
+						a(href="##")
+							h2.tit-box
+								em.ic-zf
+								| 去亚马逊玩可以怎样安排行程？有哪些要注意的地方？
+							.c-6.txt-box 今天买了个很好看的本子觉得很开心，给大家看看。不知道写什么字合适，还得练练字。
+							.pic-box.one
+								.img-it
+									img(src="_pic_5.jpg")
+								.img-it
+									img(src="../plus-public/images/public/fail-750.png")
+						.flex-box.info
+							.flex-bd
+								p.c-9.time 3 分钟前
+							.flex-ft
+								p.c-9.handle
+									em.iconn-102
+									cite 100
+									em.iconn-19
+									cite 10
+									em.iconn-28
+									cite 20
+									em.iconn-22
+									cite 30
+					.bor-b.cle-item
+						.flex-box.user-box
+							.face-img
+								img(src="_pic_1.jpg")
+							.flex-cell
+								p.c-6.us-name 别人的手机1232
+						a(href="##")
+							h2.tit-box
+								em.ic-zf
+								em.ic-jp
+								| 去亚马逊玩可以怎样安排行程？有哪些要注意的地方？
+							.c-6.txt-box 今天买了个很好看的本子觉得很开心，给大家看看。不知道写什么字合适，还得练练字。
+							.pic-box.two
+								.img-it
+									img(src="../plus-public/images/public/fail-360.png")
+									em.iconn-79
+								.img-it
+									img(src="_pic_5.jpg")
+									em.iconn-80
+						.flex-box.info
+							.flex-bd
+								p.c-9.time 3 分钟前
+							.flex-ft
+								p.c-9.handle
+									em.iconn-102
+									cite 100
+									em.iconn-19
+									cite 10
+									em.iconn-28
+									cite 20
+									em.iconn-22
+									cite 30
+					.bor-b.cle-item
+						.flex-box.user-box
+							.face-img
+								img(src="_pic_1.jpg")
+							.flex-cell
+								p.c-6.us-name 别人的手机1232
+						a(href="##")
+							h2.tit-box
+								em.ic-zf
+								em.ic-jp
+								| 去亚马逊玩可以怎样安排行程？有哪些要注意的地方？
+							.c-6.txt-box 今天买了个很好看的本子觉得很开心，给大家看看。不知道写什么字合适，还得练练字。
+							.pic-box.three
+								span.num 17
+								.img-it
+									img(src="../plus-public/images/public/fail-180.png")
+								.img-it
+									img(src="../plus-public/images/public/fail-180.png")
+								.img-it
+									img(src="../plus-public/images/public/fail-180.png")
+
+						//- 店铺
+						.bor-all.flex-box.cle-shop
+							.flex-hd
+								.img-it
+									img(src="../plus-public/images/public/fail-180.png")
+							.flex-bd
+								h2.tit matymatymatymaty
+								p.c-9.tips 收藏 : 12,332 &nbsp; &nbsp;销量 : 12,332
+							a.link(href="##")
+						//- 商品
+						.bor-all.flex-box.flex-start.cle-comm
+							.flex-hd
+								.img-it
+									img(src="../plus-public/images/public/fail-180.png")
+							.flex-bd
+								h2.c-6.tit 天然水晶红石榴家族血统使它能拥有比一般公司更紧密的合作关系
+								p.c-f5c.bor-all.fanl 最高返50国美币
+								p.price
+									small ¥
+									| 49.00
+							a.link(href="##")
+						.flex-box.info
+							.flex-bd
+								p.c-9.time 2016. 4. 20
+							.flex-ft
+								p.c-9.handle
+									em.iconn-102
+									cite 100
+									em.iconn-19
+									cite 10
+									em.iconn-28
+									cite 20
+									em.iconn-22
+									cite 30
+					.m-load
+					
+				// /全部
+				.tab-page.hidden
+					.m-prompt
+						.pro-img
+							img(src="../../images/public/img-7.png")
+						.pro-txt 还没有精品话题呐
+				// /精品

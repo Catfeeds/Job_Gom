@@ -1,0 +1,47 @@
+doctype html
+html(lang="zh-CN")
+	include ../common/head.jade
+	link(type="text/css",rel="stylesheet",href="../../css/public/public.css")
+	body.opg
+		include ../common/header.jade
+		.wrap-box.clearfix
+			.wrap-left
+				.menu
+					a(href="#").active 账号管理
+					a(href="#") 常用语配置
+					a(href="#") 修改密码
+					a(href="#") 查询聊天记录
+					a(href="#") 进入IM
+			.wrap-right
+				.btn-box
+					a(href="#").btn.btn-big.btn-blue 添加账户
+				table.table
+					tr
+						th(width="52") ID
+						th 登录名
+						th(width="100") 昵称
+						th(width="70") 角色
+						th(width="135") 创建时间
+						th(width="70") 目前状态
+						th(width="140") 操作
+					- for (var x = 0; x < 9; x++)
+						tr
+							td 01
+							td sunguang@gomeplus.com
+							td 受不鸟啦
+							td 管理员
+							td 16-06-26 12:23:00
+							td 01
+							td
+								a(href="#").btn.btn-red 编辑
+								a(href="#").btn.btn-gray 删除
+				.page
+					a(href="javascript:;").cn 上一页
+					a(href="javascript:;") 1
+					a(href="javascript:;") 2
+					a(href="javascript:;") 3
+					a(href="javascript:;") 4
+					a(href="javascript:;") 5
+					a(href="javascript:;") ...
+					a(href="javascript:;") 20
+					a(href="javascript:;").cn 下一页

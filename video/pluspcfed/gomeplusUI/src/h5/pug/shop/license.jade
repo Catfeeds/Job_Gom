@@ -1,0 +1,42 @@
+doctype html
+html(lang="zh-CN",data-use-rem="750")
+	include ../../../m-widget/head/head.jade
+	link(type="text/css",rel="stylesheet",href="../../css/public/public-wap.css")
+	link(type="text/css",rel="stylesheet",href="../../css/module/shop.css")
+	
+	body.opg
+		include ../../../m-widget/head/rem.jade		
+
+		header.header
+			span
+				a.head-back(href="javascript:;")
+					em.iconn-1
+			h1.head-title 营业执照
+			span
+				a.head-icn(href="javascript:;")
+					em.iconn-4
+		// /header
+
+		h3.business-name 国美plus网店经营者营业执照信息
+		ul.store.store-info
+			li
+				| 企业名称：
+				span.gray 无印良品有限公司
+			li
+				| 营业执照注册号：
+				span.gray 北京
+			li
+				| 法定代表人姓名：
+				span.gray Jessica
+			li
+				| 企业注册资金：
+				span.gray 6000万
+			li
+				| 公司地址：
+				span.gray 北京市朝阳区麦子店街道鹏润大厦33层
+			li
+				span.gray
+					font(color="#333") 营业执照经营范围：
+					| 技术开发、技术转让、技术咨询、技术服务；机械设备租赁；企业管理、资产管理、能源管理。
+		.store.store-top
+			p 注：根据国家工商总局《网络交易管理办法》要求对网店经营者营业执照信息公示，除企业名称通过认证之外，其余信息由卖家自行申报填写。如需进一步核实，请联系当地工商行政管理部门。

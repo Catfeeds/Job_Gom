@@ -1,0 +1,186 @@
+@import '../../../pc-widget/config/_base.scss';
+@import '../../../pc-widget/config/_mixins.scss';
+
+.mart20{
+	margin-top: 20px;
+}
+.order-right{
+	width: 1003px;
+	float: right;
+	padding-bottom: 27px;
+	background-color: #fff;
+	.order-right-top{
+		border-bottom: 1px solid $bor-bom;
+	}
+	.service-title{
+		font-size: $text20;
+		font-weight: normal;
+		padding: 26px 0 20px 24px;
+	}
+	.service-search-box{
+		display: none;
+		padding: 8px 0 0 24px;
+		li{
+			float: left;
+			margin-right: 28px;
+			&.mgr0{
+				margin-right: 0;
+			}
+			label{
+				line-height: 30px;
+				color: $font-grey-normal;
+			}
+			input{
+				display: inline-block;
+				width: 144px;
+				height: 28px;
+				line-height: 28px;
+				padding: 0 10px;
+				border: 1px solid $bor-bom;
+			}
+			a{
+				display: inline-block;
+				line-height: 28px;
+				padding: 0 7px;
+				border: 1px solid $bor-bom;
+				.default{
+					color: $color-gray;
+				}
+			}
+			.date{
+				width: 106px;
+			}
+		}
+		.trade-type-select{
+		    float: right;
+		    width: 72px;
+		    height: 28px;
+		    line-height: 28px;
+		    cursor: pointer;
+		    position: relative;
+		    color: $color-gray;
+		    border: 1px solid $bor-bom;
+		    em{
+		    	position: absolute;
+			    right: 7px;
+			    top: 7px;
+	    	}
+	    	.trade-state-select-list{
+	    		display: none;
+	    		position: absolute;
+	    		top: 30px;
+	    		left: 0;
+	    		width: 156px;
+	    		a{
+	    			display: block;
+	    		}
+	    	}
+		}
+		.trade-state-select{
+			width: 122px;
+		}
+	}
+	.search-btn{
+		display: none;
+		width: 78px;
+		height: 30px;
+		line-height: 30px;
+		color: $color-txt;
+		text-align: center;
+		border-radius: 3px;
+		margin: 13px 0 20px 91px;
+		background-color: $color-warning;
+	}
+	.order-tabs{
+		width: 963px;
+        margin: 20px 20px 0;
+        border: 1px solid $bor-bom;
+        a{
+        	float: left;
+        	width: 136px;
+        	height: 41px;
+        	line-height: 41px;
+        	text-align: center;
+        	font-size: $text16;
+        	background-color: #fafafa;
+        	border-right: 1px solid $bor-bom;
+    	    border-top: 2px solid #fafafa;
+        	border-bottom: 1px solid $bor-bom;
+        	margin-bottom: -1px;
+        	&:hover{
+        		color: $btn-e30d3e;
+        		height: 41px;
+        		line-height: 41px;
+        		background-color: $bg-fff;
+        		border-bottom: 1px solid $bg-fff;
+    		    border-top: 2px solid #e30d3e;
+        	}
+        	&.active{
+        		color: $btn-e30d3e;
+        		height: 41px;
+        		line-height: 41px;
+        		background-color: $bg-fff;
+        		border-bottom: 1px solid $bg-fff;
+    		    border-top: 2px solid #e30d3e;
+        	}
+        }
+	}
+	.ship-addr-table{
+        width: 963px;
+        margin: 14px 20px 0;
+        tr{
+            &:hover{
+                background: $color-bor;
+                cursor: pointer;
+            }
+        }
+        th{
+            height: 50px;
+            line-height: 50px;
+            background: #fff8e7;
+            text-align: left;
+            padding-left: 20px;
+            color: $color-default;
+            font-size: $text14;
+            font-weight: normal;
+        }
+        td{
+            text-align: left;
+            height: auto;
+            padding:15px 0 10px 20px;
+            border-bottom: 1px dotted $color-bor;
+            .hour{
+            	color: $font-grey-normal;
+            }
+            a{
+            	display: block;
+                color: $font-blue-normal;
+                &:hover{
+                	text-decoration: underline;
+                }
+            }
+            .lh23{
+            	line-height: 23px;
+            }
+            .product-name{
+            	max-width: 175px;
+            	word-break: break-all;
+            	margin-bottom: 5px;
+            	a{
+            		color: $color-default;
+	                &:hover{
+	                	color: $btn-e30d3e;
+	                	text-decoration: none;
+	                }
+            	}
+            }
+        }
+    }
+}
+.page{
+	margin: 16px auto 0;
+}
+.more-comments{
+	width: 963px;
+	margin: 16px auto 0;
+}

@@ -1,0 +1,254 @@
+@charset "utf-8";
+
+// AMP configure
+@import "_configure.scss";
+
+// Define table sheetstyle
+// ##------------------------------------------
+.amp-data{
+	margin-top:12px;
+	padding-bottom:8px;
+	background:#fff;
+}
+.data-table{
+	overflow:hidden;
+	overflow-x:auto;
+}
+.table-list{
+	margin-bottom:8px;
+	min-width:2161px;
+	font-size:14px;
+	color:$text-dark;
+	span{
+		float:left;
+		position:relative;
+		display:block;
+		height:44px;
+		line-height:44px;
+		@include box-sizing(border);
+		&:before{
+			content:'';
+			margin-left:-1px;
+			height:100%;
+			width:1px;
+			display:inline-block;
+			vertical-align:middle;
+		}
+		a{
+			@include inline-block;
+		}
+		i{
+			font-style:normal;
+		}
+		.ellipsis{
+			font-style:normal;
+			@include inline-block;
+			@include ellipsis();
+			width:95%;
+		}
+		.time-more{
+			cursor:pointer;
+			&:after{
+				content:'\e90c';
+				color:$bg-red;
+				font-family:$ff-icon;
+				margin-left:8px;
+				cursor:pointer;
+			}
+		}
+		.operat-link{
+			font-weight:normal;
+			line-height:20px;
+			@include inline-block;
+			a{
+				display:inline-block;
+				white-space:nowrap;
+				padding-right:18px;
+			}
+		}
+		&.span-col-1{
+			padding-left:47px;
+			width:190px;
+			.icon{
+				cursor:pointer;
+				margin-left:-27px;
+				margin-right:10px;
+				color:#b3babf;
+			}
+		}
+		&.span-col-2{
+			width:170px;
+			margin-right:30px;
+		}
+		&.span-col-3{
+			width:286px;
+			.dialog{
+				top:50px;
+			}
+		}
+		&.span-col-4{
+			width:155px;
+		}
+		&.span-col-5{
+			width:160px;
+		}
+		&.span-col-6{
+			width:150px;
+		}
+		&.span-col-7{
+			width:150px;
+		}
+		&.span-col-8{
+			width:160px;
+		}
+		&.span-col-9{
+			width:145px;
+		}
+		&.span-col-10{
+			width:165px;
+		}
+		&.span-col-11{
+			width:160px;
+		}
+		&.span-col-12{
+			width:240px;
+		}
+	}
+	.list-header{
+		@include clearfix();
+		background:$bg-table-head;
+		&.actived{
+			.icon-select{
+				color:$bg-red;
+				&:before{
+					content:'\e904';
+				}
+			}
+		}
+	}
+	.list-body{
+		color:$text-medium;
+		@include clearfix();
+	}
+	.body-row{
+		@include clearfix();
+		border-bottom:1px solid $border-table-col;
+		span{
+			height:60px;
+			line-height:24px;
+		}
+		&:hover{
+			z-index:100;
+			background:$bg-table-hover;
+		}
+		&.actived{
+			z-index:200;
+			background:$bg-table-select;
+			.icon-select{
+				color:$bg-red;
+				&:before{
+					content:'\e904';
+				}
+			}
+		}
+	}
+}
+
+// table stylesheet
+.table{
+	width:100%;
+	table-layout:fixed;
+	border-collapse:collapse;
+	border:1px solid $border-table-col;
+	.icon-delete{
+		color:$bg-blue;
+		cursor:pointer;
+		font-size:14px;
+	}
+	.icon-select{
+		color:#ccc;
+		cursor:pointer;
+		font-size:14px;
+	}
+	tr{
+		th,td{
+			padding:0;
+			margin:0;
+			border-collapse:collapse;
+			border:1px solid #e1e3e6;
+			color:$text-dark;
+			vertical-align:middle;
+			span{
+				display:block;
+				text-align:center;
+				line-height:20px;
+				padding:6px 0px;
+				margin:0px 4px;
+				font-size:14px;
+				&.table-imgs{
+					img{
+						display:inline-block;
+						width:38px;
+						height:54px;
+						margin-right:18px;
+						border:1px solid $border-input-normal;
+					}
+				}
+				&.table-links{
+					a{
+						padding:0px 3px;
+					}
+				}
+			}
+		}
+		th{
+			background:#f0f3f6;
+			color:$text-medium;
+			font-weight:normal;
+			.icon-select{
+				color:#a7b1bd;
+			}
+		}
+		&:hover{
+			background:$bg-table-hover!important;
+		}
+		&.actived{
+			background:$bg-table-select!important;
+			.icon-select{
+				color:$bg-red;
+				&:before{
+					content:"\e904";
+				}
+			}
+		}
+	}
+}
+// table-zebra
+.table-zebra{
+	border:none;
+	tr{
+		border-bottom:1px solid $border-table-col;
+		th,td{
+			border:none;
+		}
+		th{
+			background:#e8ebee;
+			span{
+				padding:12px 0;
+			}
+		}
+		&:nth-child(odd){
+			background:$bg-table-select;
+		}
+	}
+}
+// table-align-left
+.table-align-left{
+	text-align:left;
+	span{
+		text-align:left!important;
+		&.first-child{
+			padding-left:20px;
+		}
+	}
+}

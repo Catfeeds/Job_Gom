@@ -1,0 +1,42 @@
+@import"amend.scss";
+
+.amend-private{
+    font-family: 'Microsoft YaHei';
+    width: 1198px;
+    border:1px solid #d9dadc;
+    padding: 60px 0 28px;
+    background:#fff;
+    margin: 0 auto;
+    .private-tempo{
+        width:756px;
+        margin: 0 auto;
+        padding: 48px 0 60px;
+        background:url("../../images/meihao/tempo.jpg") no-repeat 50% top;
+        font-size: 14px;
+        height:14px;
+        line-height: 14px;
+        color: #333;
+        p{
+            float: left;
+        }
+        .tempo-perfect{
+            width:86px;
+            padding:0 264px 0 254px;
+        }
+        .tempo-success{
+            color:#a5a5a5;
+        }
+    }
+    .private-info{
+        padding-left: 240px;
+        font-size: 14px;
+        color:#333;
+        .right-circle{
+            line-height: 32px;
+        }
+    }
+    .info-circle{
+        line-height: 32px;
+    }
+
+}

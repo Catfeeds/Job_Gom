@@ -1,0 +1,255 @@
+doctype html
+html(lang="zh-CN")
+	include ../../widget/head/head.pug
+	link(type="text/css",rel="stylesheet",href="../../css/public/public.css")
+	link(type="text/css",rel="stylesheet",href="../../css/module/orderdetail.css")
+	body.opg
+		include ../../widget/header/header.pug
+		include ../../widget/menu/menu.pug
+		.crumbs-box
+			a(href="javascript:;") 我的订单
+			em >
+			a(href="javascript:;") 待发货
+			em >
+			span.crnmb-activ 订单详情
+		.wrap-box
+			.bg-white
+				.order-detail-box
+					h2.order-detail-title 订单详情
+					ul.order-detail
+						li.clearfix
+							label 订 单 号 ：
+							p 1160705648101550
+						li.clearfix
+							label 收货信息：
+							p
+								span 周子涛 138****9897
+								span 北京 北京市 海淀区 北京市海淀区西二旗软件园华夏科技大厦
+						li.clearfix
+							label 订单状态：
+							p.order-state 待付款
+						li.clearfix
+							label 下单时间：
+							p.time
+								span 2016-07-04 
+								span.clock 17:07:52
+						li.clearfix
+							label 付款时间：
+							p.time
+								span 2016-07-04 
+								span.clock 17:07:52
+					h2.order-detail-title 发票信息
+					ul.order-detail
+						li.clearfix
+							label 发票类型：
+							p 普通发票
+						li.clearfix
+							label 发票抬头：
+							p 个人
+						li.clearfix
+							label 发票内容：
+							p 开放
+				.button-box
+					.count-down
+						p.time
+							// icon替换 .icon.icon-clock
+							em.iconn-65
+							| 2天12时2分56秒
+						p.txt-in 后系统将自动确认收货
+					a(href="javascript:;").order-blank-btn.order-orange-btn 确认收货
+					a(href="javascript:;").order-blank-btn.order-pay-btn 立即支付
+					a(href="javascript:;").order-blank-btn 取消订单
+			table.shop-car-list.order-information
+				tr.bor-none
+					th.width660
+						.merchandise-news.margi-left20 商品信息
+					th 单价 (元)
+					th 数量
+					th
+					th
+			table.shop-car-list.order-information
+				tr
+					td(colspan="3")
+						.products-by.borb
+							.graphic.clearfix
+								a(href="javascript:;")
+									.product-bx
+										img(src="../../images/public/default-img2.jpg")
+									.product-name
+										a(href="javascript:;").product-title
+											em.ic-hwg 海外购
+											| 洗颜专科矿物质水清透防晒乳液洗颜专科矿物质水清透防晒乳液防晒乳液洗颜专科矿物质水清透防晒乳液洗颜专科矿物质水清透防晒乳液防晒乳液
+										p.product-color 颜色：SPF30 .PA 40ml
+										p.product-source
+											| 来自美店：
+											span 爱已无爱奥
+							span.price-count ￥500.00
+							span.price-count 20
+						.products-by
+							.graphic.clearfix
+								a(href="javascript:;")
+									.product-bx
+										img(src="../../images/public/default-img2.jpg")
+									.product-name
+										a(href="javascript:;").product-title 洗颜专科矿物质水清透防晒乳液洗颜专科矿物质水清透防晒乳液防晒乳液洗颜专科矿物质水清透防晒乳液洗颜专科矿物质水清透防晒乳液防晒乳液
+										p.product-color 颜色：SPF30 .PA 40ml
+										p.product-source
+											| 来自美店：
+											span 爱已无爱奥
+							span.price-count ￥500.00
+							span.price-count 20
+					td
+					td
+			table.shop-car-list.order-information
+				tr.bor-none
+					th.width660
+						.merchandise-news.margi-left20 商品信息
+					th 单价 (元)
+					th 数量
+					th 优惠
+					th 运费
+			table.shop-car-list.order-information
+				tr
+					td.align-left(colspan="5")
+						.check-all.clearfix
+							div.shop-arl-check.icon-fontsize
+								// icon替换icon 
+								em.iconn-64
+							a(href="javascript:;").store-name-text 1qq马克华妃旗舰店
+							a(href="javascript:;").connect-shop 联系商家
+				tr
+					td(colspan="3")
+						.products-by
+							.graphic.clearfix
+								a(href="javascript:;")
+									.product-bx
+										img(src="../../images/public/default-img2.jpg")
+									.product-name
+										a(href="javascript:;").product-title
+											em.ic-hwg 海外购
+											| 洗颜专科矿物质水清透防晒乳液洗颜专科矿物质水清透防晒乳液防晒乳液洗颜专科矿物质水清透防晒乳液洗颜专科矿物质水清透防晒乳液防晒乳液
+										p.product-color 颜色：SPF30 .PA 40ml
+										p.product-source
+											| 来自美店：
+											span 爱已无爱奥
+							span.price-count ￥500.00
+							span.price-count 20
+					td.bor-r
+						.new-border-bom ￥12.00
+					td
+						.new-border-bom ￥1122.00
+			table.shop-car-list.order-information
+				tr
+					td.align-left(colspan="5")
+						.check-all.clearfix
+							div.shop-arl-check.icon-fontsize
+								// icon替换icon 
+								em.iconn-64
+							a(href="javascript:;").store-name-text 马克华妃旗舰店
+							a(href="javascript:;").connect-shop 联系商家
+				tr
+					td(colspan="3")
+						.products-by.borb
+							.graphic.clearfix
+								a(href="javascript:;")
+									.product-bx
+										img(src="../../images/public/default-img2.jpg")
+									.product-name
+										a(href="javascript:;").product-title 洗颜专科矿物质水清透防晒乳液洗颜专科矿物质水清透防晒乳液防晒乳液洗颜专科矿物质水清透防晒乳液洗颜专科矿物质水清透防晒乳液防晒乳液
+										p.product-color 颜色：SPF30 .PA 40ml
+										p.product-source
+											| 来自美店：
+											span 爱已无爱奥
+							span.price-count ￥500.00
+							span.price-count 20
+						.products-by
+							.graphic.clearfix
+								a(href="javascript:;")
+									.product-bx
+										img(src="../../images/public/default-img2.jpg")
+									.product-name
+										a(href="javascript:;").product-title 洗颜专科矿物质水清透防晒乳液洗颜专科矿物质水清透防晒乳液防晒乳液洗颜专科矿物质水清透防晒乳液洗颜专科矿物质水清透防晒乳液防晒乳液
+										p.product-color 颜色：SPF30 .PA 40ml
+										p.product-source
+											| 来自美店：
+											span 爱已无爱奥
+							span.price-count ￥500.00
+							span.price-count 20
+					td.bor-r.td-middle
+						.new-border-bom ￥12.00
+					td.td-middle
+						.new-border-bom ￥1122.00
+			table.shop-car-list.order-information
+				tr.bor-none
+					th.width550
+						.merchandise-news.margi-left20 商品信息
+					th 单价 (元)
+					th 数量
+					th 操作
+					th 优惠
+					th 运费
+			table.shop-car-list.order-information
+				tr
+					td.align-left(colspan="6")
+						.check-all.clearfix
+							div.shop-arl-check.icon-fontsize
+								// icon替换icon 
+								em.iconn-64
+							a(href="javascript:;").store-name-text 马克华妃旗舰店
+							a(href="javascript:;").connect-shop 联系商家
+				tr
+					td(colspan="4")
+						.products-by.borb
+							.graphic.width545.clearfix
+								a(href="javascript:;")
+									.product-bx
+										img(src="../../images/public/default-img2.jpg")
+									.product-name
+										a(href="javascript:;").product-title 洗颜专科矿物质水清透防晒乳液洗颜专科矿物质水清透防晒乳液防晒乳液洗颜专科矿物质水清透防晒乳液洗颜专科矿物质水清透防晒乳液防晒乳液
+										p.product-color 颜色：SPF30 .PA 40ml
+										p.product-source
+											| 来自美店：
+											span 爱已无爱奥
+							span.price-count ￥500.00
+							span.price-count 20
+							.return-btn
+								a(href="javascript:;") 退货
+								a(href="javascript:;") 换货
+						.products-by
+							.graphic.width545.clearfix
+								a(href="javascript:;")
+									.product-bx
+										img(src="../../images/public/default-img2.jpg")
+									.product-name
+										a(href="javascript:;").product-title 洗颜专科矿物质水清透防晒乳液洗颜专科矿物质水清透防晒乳液防晒乳液洗颜专科矿物质水清透防晒乳液洗颜专科矿物质水清透防晒乳液防晒乳液
+										p.product-color 颜色：SPF30 .PA 40ml
+										p.product-source
+											| 来自美店：
+											span 爱已无爱奥
+							span.price-count ￥500.00
+							span.price-count 20
+							.return-btn
+								a(href="javascript:;") 退货
+								a(href="javascript:;") 换货
+					td.bor-r
+						.new-border-bom ￥12.00
+					td
+						.new-border-bom ￥1122.00
+			div.items-total
+				p
+					span.goods-together
+						strong.numb 4 
+						| 件商品，商品合计：
+					span ￥300.00
+				p
+					span.goods-together 运费：
+					span ￥30.00
+				p
+					span.goods-together 使用优惠券：
+					span ￥300.00
+				p
+					span.goods-together 使用国美币：
+					span ￥0.00
+		include ../../widget/footer/footer.pug
+			
+		

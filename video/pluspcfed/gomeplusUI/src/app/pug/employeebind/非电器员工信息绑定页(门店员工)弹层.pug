@@ -1,0 +1,44 @@
+extends ../public/head.jade
+block title
+	title 非电器员工信息绑定页(门店员工)弹层
+block link-theme
+	link(rel='stylesheet' type="text/css" href="../../css/module/employeebind/employeebind.css")
+block content
+	//- js
+	include ../public/mobileJs.jade
+	.banner 国美 Plus 邀请你来赚大钱
+	.bind-infor
+		.header-module.header-module_gray
+			span 员工信息绑定
+		ul.form-list
+			li.list-item.list-item_color
+				em.icon.icon-person
+				.item-text 姚丽丽
+			li.list-item.list-item_color
+				em.icon.icon-id
+				.item-text 00345
+		ul.form-personal
+			li.personal-item
+				span.item-company 公司名称
+				.item-show
+					input.input-style(type="text" placeholder="请选择门店" value="国美九诺")
+			li.personal-item
+				span.item-company 岗位级别
+				.item-show
+					em.icon.iconn-42
+					input.input-style(type="text" placeholder="请选择对应岗位")
+		.notice
+			span *
+			| 总部将通过此帐号考核您的业绩，请认真填写。如因信息错误产生的后果，请自行承担。
+		a.button.button-primary(href="javascript:;") 确认绑定
+	.master
+	.pop-panel(style="bottom:0;")
+		.pop-panel_hd
+			.header-module.header-module_gray
+				span 岗位职级
+		.pop-panel_bd.pop-panel_bd_color
+			ul
+				li.pop-panel_item 基金运营部
+				li.pop-panel_item 产品研发部
+				li.pop-panel_item 客服服务部
+				li.pop-panel_item 市场营销部

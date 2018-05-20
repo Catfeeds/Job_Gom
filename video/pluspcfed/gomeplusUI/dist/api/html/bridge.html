@@ -1,0 +1,1181 @@
+<!DOCTYPE html>
+<html lang="zh-CN" data-use-rem="750">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+	<meta name="format-detection" content="telephone=no">
+	<meta name="format-detection" content="email=no">
+	<meta http-equiv="expires" content="0">
+	<link type="text/css" rel="stylesheet" href="../css/public.css">
+	<link type="text/css" rel="stylesheet" href="../css/briage.css">
+	<script type="text/javascript" src="../js/jquery-1.9.0.js"></script>
+	<script type="text/javascript" src="../js/effect.js"></script>
+</head>
+<body class="opg body-font-family">
+	<script type="text/javascript">
+	 (function appVersion() {
+      	window.platform = {};
+      	var ua = window.navigator.userAgent.toLowerCase();
+      	var isIphone = ua.match(/iphone os/i) == 'iphone os';
+      	var isAndroid = ua.match(/android/i) == 'android';
+      	// ipad 也为mobile
+      	var isMobile = ua.match(/mobile/i) == 'mobile';
+      	var isIpad = ua.match(/ipad/) == 'ipad';
+      
+      	platform.isMobile = function () {
+      		return isMobile && !isIpad;
+      	}
+      	if(platform.isMobile()) {
+      		(function(win){var doc=win.document,html=doc.documentElement,option=html.getAttribute("data-use-rem");if(option===null){return}var baseWidth=parseInt(option).toString()==="NaN"?640:parseInt(option);var grids=baseWidth/100;var clientWidth=html.clientWidth||320;html.style.fontSize=clientWidth/grids+"px";var testDom=document.createElement("div");var testDomWidth=0;var adjustRatio=0;testDom.style.cssText="height:0;width:1rem;";doc.body.appendChild(testDom);var calcTestDom=function(){testDomWidth=testDom.offsetWidth;if(testDomWidth!==Math.round(clientWidth/grids)){adjustRatio=clientWidth/grids/testDomWidth;var reCalcRem=clientWidth*adjustRatio/grids;html.style.fontSize=reCalcRem+"px"}else{doc.body.removeChild(testDom)}};setTimeout(calcTestDom,20);var reCalc=function(){var newCW=html.clientWidth;if(newCW===clientWidth){return}clientWidth=newCW;html.style.fontSize=newCW*(adjustRatio?adjustRatio:1)/grids+"px"};if(!doc.addEventListener){return}var resizeEvt="orientationchange" in win?"orientationchange":"resize";win.addEventListener(resizeEvt,reCalc,false);doc.addEventListener("DOMContentLoaded",reCalc,false)})(window);
+      	}
+      })()
+	</script>
+	<!-- header -->
+	<nav class="header header-mobile">
+		<section class="logo">Bridge-scheme 协议<span class="classify"></span></section>
+		<a href="http://opg-pre.intra.gomeplus.com" class="fade-in icon-home"><i></i></a>
+	</nav>
+	<!-- header end-->
+	<!-- section -->
+	<section class="section module" style="display:block;">
+		<h1 class="h1">概述(OPG SDK version: v1.0)</h1>
+		<p>在客户端app中嵌入h5页面，涉及到native与js的互相通讯问题。native里的<em class="code">webview</em>有相应的api来执行页面的js方法
+而js要想调用native的方法， 则需要通过特殊的处理。目前采用的方式是通过jsbridge来实现js调用<em class="code">natie</em>方法。</p>
+		<h2 class="h2">jsbridge使用方式</h2>
+		<p>在页面中引入js文件<a href="http://opg-pre.intra.gomeplus.com/javascripts/appInterface.js">appInterface.js</a></p>
+		<p>此时在window上引入了一个属性<em class="code">AppInterface</em>，该对象是所有交互操作的宿主对象。所有的交互调用都由<em class="code">AppInterface</em>来实现。</p>
+		<p>例如：如果我们想调用<em class="code">native</em>的页面跳转方式，我们可以这么写：</p>
+		<pre><code>AppInterface.call('/common/localJump', {url: base64.encode(dataValue)});</code></pre>
+		<p>注意： base64是引入的插件库</p>
+		<h2 class="h2">call(api, [params, timeout, callback])</h2>
+		<p>调用APP接口，主要是处理参数包，回调等。</p>
+		<table class="table">
+			<thead>
+				<tr>
+					<th>参数</th>
+					<th>说明</th>
+					<th>默认值</th>
+					<th>选项</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>api</td>
+					<td>请求地址</td>
+					<td>-</td>
+					<td>-</td>
+				</tr>
+				<tr>
+					<td>params</td>
+					<td>参数包</td>
+					<td>-</td>
+					<td>可选</td>
+				</tr>
+				<tr>
+					<td>timeout</td>
+					<td>超时时间</td>
+					<td>
+						<span class="span-col">0</span>
+						<span class="span-col">永远不超时</span>
+					</td>
+					<td>可选</td>
+				</tr>
+				<tr>
+					<td>callback</td>
+					<td>回调方法</td>
+					<td>-</td>
+					<td>可选</td>
+				</tr>
+			</tbody>
+		</table>
+		<p>api为下表中提到的接口协议，在调用的时候需要写成：</p>
+		<pre><code>/[host]/[path]</code></pre>
+		<p><em class="code">params</em>参数里，如果涉及到需要编码的参数，在协议表中会提示（base64），需要经过base64编码处理。</p>
+		<pre><code>AppInterface.call('/common/localJump', {url: base64.encode(dataValue)});</code></pre>
+		<h2 class="h2">open(base64Url)</h2>
+		<p><em class="code">open</em>方法调用APP打开一个新的<em class="code">webview</em>，内部使用<em class="code">call('/common/localJump', {url: base64Url})</em>的方式调用
+<em class="code">@param base64Url base64</em>编码后的<em class="code">url</em>。</p>
+		<h1 class="h1">国美Plus内嵌H5与客户端交互协议</h1>
+		<div class="briage-date">
+			<div class="briage-header" style="min-width:2520px;">
+				<table class="table">
+					<colgroup>
+						<col width="100">
+						<col width="80">
+						<col width="200">
+						<col width="200">
+						<col width="500">
+						<col width="400">
+						<col width="120">
+						<col width="200">
+						<col width="300">
+						<col width="400">
+					</colgroup>
+					<thead>
+						<tr>
+							<th>模块</th>
+							<th>Host</th>
+							<th>功能</th>
+							<th>Path</th>
+							<th>参数(query paramter)</th>
+							<th>callback</th>
+							<th>Android 支持</th>
+							<th>iOS支持</th>
+							<th>备注</th>
+							<th>变更历史</th>
+						</tr>
+					</thead>
+				</table>
+			</div>
+			<div class="briage-body" style="min-width:2520px;">
+				<table class="table">
+					<colgroup>
+						<col width="100">
+						<col width="80">
+						<col width="200">
+						<col width="200">
+						<col width="500">
+						<col width="400">
+						<col width="120">
+						<col width="200">
+						<col width="300">
+						<col width="400">
+					</colgroup>
+					<tbody>
+						<tr>
+							<td>通用</td>
+							<td>common</td>
+							<td>提醒</td>
+							<td>toast</td>
+							<td>
+								<span class="span-col">int timeout</span>
+								<span class="span-col">String msg</span>
+							</td>
+							<td>默认成功回调</td>
+							<td>v325</td>
+							<td>v325</td>
+							<td>-</td>
+							<td>整理callback</td>
+						</tr>
+						<tr>
+							<td>通用</td>
+							<td>common</td>
+							<td>提醒</td>
+							<td>alert</td>
+							<td>
+								<span class="span-col">String title</span>
+								<span class="span-col">String msg</span>
+							</td>
+							<td>默认成功回调</td>
+							<td>v325</td>
+							<td>v325</td>
+							<td>用户只能确认，无法取消</td>
+							<td>整理callcak</td>
+						</tr>
+						<tr>
+							<td>通用</td>
+							<td>common</td>
+							<td>提醒</td>
+							<td>confirm</td>
+							<td>
+								<span class="span-col">String title</span>
+								<span class="span-col">String msg</span>
+								<span class="span-col">String jsCallback</span>
+								
+							</td>
+							<td>
+								<span class="span-col span-pd">点击确认或者取消后再给H5回调 data:isCancel(点击了确定为false，点击取消为true),success:true,message:成功</span>
+							</td>
+							<td>v325</td>
+							<td>v325</td>
+							<td>用户可以确认或者取消</td>
+							<td>整理callcack，v325版本已经实现了callback</td>
+						</tr>
+						<tr>
+							<td>通用</td>
+							<td>common</td>
+							<td>提醒</td>
+							<td>prompt</td>
+							<td>
+								<span class="span-col">String title</span>
+								<span class="span-col">String hint</span>
+								<span class="span-col">String jsCallback</span>
+								
+							</td>
+							<td>
+								<span class="span-col span-pd">点击确认或者取消后再给H5回调 data:isCancel(点击了确定为false，点击取消为true) content输入的内容,success:true,message:成功
+								</span>
+							</td>
+							<td>v325</td>
+							<td>v325</td>
+							<td>用户可以输入确认输入或者取消输入</td>
+							<td>整理callback，v325版本已经实现了callback</td>
+						</tr>
+						<tr>
+							<td>通用</td>
+							<td>copy</td>
+							<td>复制</td>
+							<td>shop</td>
+							<td>
+								<span class="span-col">String msg</span>
+								<span class="span-col">String title</span>
+							</td>
+							<td>
+								<span class="span-col span-pd">执行了copy操作：data:message(copy的内容),success:true,message:成功，没有执行copy操作：data:null,success:false,message：取消
+								</span>
+							</td>
+							<td>v325</td>
+							<td>v325</td>
+							<td>-</td>
+							<td>整理callbck，v325版本已经实现了callback</td>
+						</tr>
+						<tr>
+							<td>通用</td>
+							<td>common</td>
+							<td>登录</td>
+							<td>login</td>
+							<td>
+								<span class="span-col">string activityId</span>
+								<span class="span-col">string channelId</span>
+								<span class="span-col">String type “1”：国美金融，默认为空“”</span>
+							</td>
+							<td>
+								<span class="span-col span-pd">登录成功 data:</span>
+								<span class="span-col span-pd">默认</span>
+								<span class="span-col span-pd">(token,userId),success:true,message:成功，</span>
+								<span class="span-col span-pd">type 为“1”</span>
+								<span class="span-col span-pd">(token,userId，gomeAccessToken),success:true,message:成功</span>
+								<span class="span-col span-pd">登录失败：默认失败回调</span>
+							</td>
+							<td>v325</td>
+							<td>v325</td>
+							<td>-</td>
+							<td>
+								<span class="span-col">整理callback，v325版本已经实现了callback</span>
+								<span class="span-col">增加了两个参数，注册的时候会使用</span>
+							</td>
+						</tr>
+						<tr>
+							<td>通用</td>
+							<td>common</td>
+							<td>获取登录状态</td>
+							<td>getLoginStatus</td>
+							<td></td>
+							<td>
+								<span class="span-col span-pd">登录状态 </span>
+								<span class="span-col span-pd">data:(token,userId),success:true,message:成功</span>
+								<span class="span-col span-pd">未登录状态：默认失败回调</span>
+								<span class="span-col span-pd">通过success状态来判断</span>
+							</td>
+							<td>1.0.5</td>
+							<td>1.0.5</td>
+							<td>-</td>
+							<td>逛逛页面修改bug增加</td>
+						</tr>
+						<tr>
+							<td>通用</td>
+							<td>common</td>
+							<td>获取gomeAccessToken</td>
+							<td>getGomeAccessToken</td>
+							<td>-</td>
+							<td>
+								<span class="span-col span-pd">成功：</span>
+								<span class="span-col span-pd">返回 gomeAccessToken</span>
+								<span class="span-col span-pd">失败：</span>
+								<span class="span-col span-pd">默认失败回调</span>
+							</td>
+							<td>-</td>
+							<td>-</td>
+							<td>-</td>
+							<td>1.4.0 新增，国美金融需求</td>
+						</tr>
+						<tr>
+							<td>通用</td>
+							<td>common</td>
+							<td>退出登录</td>
+							<td>logout</td>
+							<td></td>
+							<td>
+								<span class="span-col span-pd">退出登录成功：默认成功回调</span>
+								<span class="span-col span-pd">退出失败：默认失败回调</span>
+								
+							</td>
+							<td>v325</td>
+							<td>v325</td>
+							<td>-</td>
+							<td>
+								<span class="span-col span pd">login之前先调用logout，预防IM被网页端踢掉，客户端不知道的情况，v325版本已经实现了callback</span>
+							</td>
+						</tr>
+						<tr>
+							<td>通用</td>
+							<td>common</td>
+							<td>分享（通用）活动模板</td>
+							<td>share</td>
+							<td>
+								<span class="span-col span-pd">string title</span>
+								<span class="span-col span-pd">string desc</span>
+								<span class="span-col span-pd">string(base64) imgUrl</span>
+								<span class="span-col span-pd">string(base64) link</span>
+								<span class="span-col span-pd">String shareAppUrl（base64，分享站内的url，没有就使用link）</span>
+								<span class="span-col span-pd">string type(</span>
+								<span class="span-col span-pd">default-客户端默认弹层（shareType</span>
+								<span class="span-col span-pd">1: 邀请好友界面分享，增加面对面扫码默认活动分享）</span>
+								<span class="span-col span-pd">weixin/pengyouquan/qqzone／qq／weibo)</span>
+								<span class="span-col span-pd">string btnType (隐藏分享的部分选项，default的时候会传)</span>
+								<span class="span-col span-pd">string activityId 活动Id</span>
+								
+							</td>
+							<td>
+								<span class="span-col span-pd">分享成功：默认成功回调</span>
+								<span class="span-col span-pd">分享失败：data：null,success：false,message：(失败的原因)</span>
+							</td>
+							<td>v325</td>
+							<td>v418</td>
+							<td>
+								<span class="span-col span-pd">0: 关注的人 1：我的粉丝 2：我的圈子 3：我的群聊 4：复制链接 5：QQ 6:QQ空间 7：微信 8：朋友圈 9：微博 </span>
+								<span class="span-col span-pd">增加shareType，邀请好友页面增加面对面扫码，1.3增加</span>
+							</td>
+							<td>
+								<span class="span-col span-pd">整理callback</span>
+								<span class="span-col span-pd">增加一个活动Id，分享统计使用，1.1.2 增加</span>
+								<span class="span-col span-pd">1.3.0 我的粉丝不在分享列表了，后续可不传了</span>
+							</td>
+						</tr>
+						<tr>
+							<td>通用</td>
+							<td>common</td>
+							<td>本地跳转</td>
+							<td>localJump</td>
+							<td>
+								<span class="span-col span-pd">string userId(可选参数，wap调用的时候使用，判断用户是否登录)</span>
+								<span class="span-col span-pd">string url(base64)</span>
+								<span class="span-col span-pd">int noHistory(0:有历史记录，1没有历史记录)</span>
+								<span class="span-col span-pd">string type(可选参数)</span>
+								<span class="span-col span-pd">type为2（string title</span>
+								<span class="span-col span-pd">string desc</span>
+								<span class="span-col span-pd">string(base64) imgUrl</span>
+								<span class="span-col span-pd">string shareUrl(base64）</span>
+								<span class="span-col span-pd">String shareAppUrl(base64 站内分享使用，不传使用shareUrl)，string btnType (隐藏分享的部分选项)</span>
+								<span class="span-col span-pd">string activityId,活动Id),</span>
+								<span class="span-col span-pd">type为3 (string rightText)</span>
+								<span class="span-col span-pd">type为4（string rightText）</span>
+								<span class="span-col span-pd">type为5（右边带搜索，消息）</span>
+								
+							</td>
+							<td>默认成功回调</td>
+							<td>v325</td>
+							<td>v325</td>
+							<td>
+								<span class="span-col span-pd">type:"1",标题右边带关闭按钮</span>
+								<span class="span-col span-pd">type:"2",标题带分享的功能</span>
+								<span class="span-col span-pd">type:"3",左边返回关闭，右边是文本，</span>
+								<span class="span-col span-pd">type:"4",右边带文字</span>
+								<span class="span-col span-pd">默认只有标题跟返回</span>
+								<span class="span-col span-pd">btnType 0: 关注的人 1：我的粉丝 2：我的圈子 3：我的群聊 4：复制链接 5：QQ 6:QQ空间 7：微信 8：朋友圈 9：微博 </span>
+								<span class="span-col span-pd">type:"5" 右边支持搜索，消息。</span>
+								<span class="span-col span-pd">搜索是搜索海外购商品</span>
+								
+							</td>
+							<td>
+								<span class="span-col span-pd">整理callback,一元购活动要求标题右边带关闭按钮</span>
+								<span class="span-col span-pd">type 为2 的增加一个活动Id，分享统计使用 1.1.2 增加</span>
+								<span class="span-col span-pd">type 为5，海外购商品增加</span>
+								<span class="span-col span-pd"></span>
+								<span class="span-col span-pd"></span>
+								<span class="span-col span-pd"></span>
+								
+							</td>
+						</tr>
+						<tr>
+							<td>通用</td>
+							<td>common</td>
+							<td>本地跳转我的优惠券</td>
+							<td>MyCoupon</td>
+							<td>-</td>
+							<td>
+								<span class="span-col span-pd">进入我的优惠券，默认成功回调否则默认失败回调</span>
+							</td>
+							<td>v325</td>
+							<td>v325</td>
+							<td></td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>通用</td>
+							<td>common</td>
+							<td>保存图片</td>
+							<td>savePicture</td>
+							<td>String picUrl(base64编码)</td>
+							<td>
+								<span class="span-col span-pd">保存成功：默认成功回调</span>
+								<span class="span-col span-pd">保存失败：默认失败回调</span>
+							</td>
+							<td>v418</td>
+							<td>v418</td>
+							<td>418新增加协议</td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>通用</td>
+							<td>common</td>
+							<td>本地跳转title带分享功能</td>
+							<td>localJumpWithShare</td>
+							<td>
+								<span class="span-col">string title</span>
+								<span class="span-col">string desc</span>
+								<span class="span-col">string(base64) imgUrl</span>
+								<span class="span-col">string url(base64)</span>
+								<span class="span-col">string shareUrl(base64)</span>
+							</td>
+							<td>默认成功回调</td>
+							<td>v515</td>
+							<td>v515</td>
+							<td>
+								<span class="span-col span-pd">在localJump基础上增加了分享功能，后续代码优化，见common/localJump</span>
+							</td>
+							<td>418新增加协议,515增加分享的url</td>
+						</tr>
+						<tr>
+							<td>通用</td>
+							<td>common</td>
+							<td>打开app</td>
+							<td>open_app</td>
+							<td>默认成功回调</td>
+							<td></td>
+							<td>v418</td>
+							<td></td>
+							<td>wap端调用</td>
+							<td>整理Wap调用客户端协议</td>
+						</tr>
+						<tr>
+							<td>通用</td>
+							<td>common</td>
+							<td>反馈</td>
+							<td>feedback_app</td>
+							<td>string userId(可选参数，wap可能会传)</td>
+							<td>默认成功回调</td>
+							<td>v418</td>
+							<td>v515</td>
+							<td>wap端调用</td>
+							<td>整理Wap调用客户端协议，这个协议Android是跳转到具体的提意见界面，iOS是到列表界面。 为了协议的统一，后续请使用mine/feedBack</td>
+						</tr>
+						<tr>
+							<td>通用</td>
+							<td>common</td>
+							<td>打开主页面的某一个tab</td>
+							<td>tab</td>
+							<td>
+								<span class="span-col span-pd">int tab 0: 圈子 1:逛逛 2:购物车 3:我的</span>
+								<span class="span-col span-pd">1.4.0 版本之后：</span>
+								<span class="span-col span-pd">0：消息,1：逛逛,2：圈子,3：购物车,4：我</span>
+							</td>
+							<td>默认成功回调</td>
+							<td>v515</td>
+							<td>v515</td>
+							<td>整理协议</td>
+							<td>
+								<span class="span-col span-pd">整理协议</span>
+								<span class="span-col span-pd">1.4.0 版本之后修改</span>
+								<span class="span-col span-pd">因为iOS跟Android对应的顺序不太一样，统一根据tab的顺序来跳转</span>
+								<span class="span-col span-pd"></span>
+							</td>
+						</tr>
+						<tr>
+							<td>通用</td>
+							<td>common</td>
+							<td>隐藏或显示标题</td>
+							<td>updateTitleStatus</td>
+							<td>int type (0:隐藏 1：显示)</td>
+							<td>默认成功回调</td>
+							<td>v515</td>
+							<td>v515</td>
+							<td>
+								<span class="span-col span-pd">邀请好友页面点击二维码，需要隐藏头部，这个是个临时协议，只是针对这个界面使用</span>
+							</td>
+							<td>邀请好友页面增加</td>
+						</tr>
+						<tr>
+							<td>通用</td>
+							<td>common</td>
+							<td>更新分享的内容</td>
+							<td>updateShareContents</td>
+							<td>
+								<span class="span-col span-pd">string title 标题</span>
+								<span class="span-col span-pd">string desc 描述</span>
+								<span class="span-col span-pd">string(base64) imgUrl 头像链接</span>
+								<span class="span-col span-pd">string shareUrl(base64）分享的链接</span>
+								<span class="span-col span-pd">String shareAppUrl(base64 站内分享使用，不传使用shareUrl)</span>
+								<span class="span-col span-pd">string btnType (隐藏分享的部分选项)</span>
+								<span class="span-col span-pd">string activityId 活动Id</span>
+								<span class="span-col span-pd"></span>
+							</td>
+							<td>默认成功回调</td>
+							<td>V1.1.1</td>
+							<td>V1.1.1</td>
+							<td>
+								二次分享区分站内站外
+								 btnType 0: 关注的人 1：我的粉丝 2：我的圈子 3：我的群聊 4：复制链接 5：QQ 6:QQ空间 7：微信 8：朋友圈 9：微博 
+							</td>
+							<td>
+								<span class="span-col span-pd">活动分享发现二次分享存在问题</span>
+								<span class="span-col span-pd">增加一个活动Id，分享统计使用，1.1.2增加</span>
+							</td>
+						</tr>
+						<tr>
+							<td>通用</td>
+							<td>common</td>
+							<td>查看大图</td>
+							<td>viewLargerPicture</td>
+							<td>
+								<span class="span-col span-pd">String imgUrl(多个参数之间“，”分割)</span>
+								<span class="span-col span-pd">int position 默认查看的图片，从0开始</span>
+								
+							</td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td>1.1.2 版本商品详情页查看大图增加</td>
+						</tr>
+						<tr>
+							<td>通用</td>
+							<td>common</td>
+							<td>webview是否可以滑动</td>
+							<td>updateWebViewState</td>
+							<td>
+								<span class="span-col">int webViewCanScroll</span>
+								<span class="span-col">0：不能滚动</span>
+								<span class="span-col">1：能滚动</span>
+							</td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td>Android 为了解决活动冲突的问题增加，目前只在Android版本使用</td>
+						</tr>
+						<tr>
+							<td>通用</td>
+							<td>common</td>
+							<td>判断是否为达人</td>
+							<td>checkIsExpert</td>
+							<td></td>
+							<td>
+								<span class="span-col span-pd">成功：isExpert：true</span>
+								<span class="span-col span-pd">失败：默认失败回调</span>
+								
+							</td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td>1.3.0 新增</td>
+						</tr>
+						<tr>
+							<td>分享</td>
+							<td>common</td>
+							<td>分享店铺</td>
+							<td>shop</td>
+							<td>
+								<span class="span-col">long shopId</span>
+								<span class="span-col">String shopName</span>
+								<span class="span-col">String shopLogo</span>
+							</td>
+							<td>
+								<span class="span-col span-pd">成功分享：默认成功回调</span>
+								<span class="span-col span-pd">分享失败：默认失败回调</span>
+								
+							</td>
+							<td>v325</td>
+							<td>v325</td>
+							<td></td>
+							<td>整理callback</td>
+						</tr>
+						<tr>
+							<td>店铺</td>
+							<td>shop</td>
+							<td>店铺详情页</td>
+							<td>detail</td>
+							<td>
+								<span class="span-col">long shopId</span>
+								<span class="span-col">string orderSource</span>
+								<span class="span-col">string activityId</span>
+								<span class="span-col">string channelId</span>
+								<span class="span-col">string sid</span>
+							</td>
+							<td>默认成功回调</td>
+							<td>v325</td>
+							<td>v418</td>
+							<td></td>
+							<td>
+								<span class="span-col span-pd">整理callback</span>
+								<span class="span-col span-pd">加入购物车增加两个参数，客户端跟服务器交互的时候 activityId 
+								channelId拼接在一起</span>
+								<span class="span-col span-pd">1.3 新增sid</span>
+							</td>
+						</tr>
+						<tr>
+							<td>店铺</td>
+							<td>shop</td>
+							<td>店铺红包</td>
+							<td>redPacket</td>
+							<td>long shopId</td>
+							<td>默认成功回调</td>
+							<td>v515</td>
+							<td>v418</td>
+							<td>领券中心中的店铺优惠券</td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>店铺</td>
+							<td>shop</td>
+							<td>商家入驻</td>
+							<td>settle</td>
+							<td>
+								<span class="span-col">string recommendName</span>
+								<span class="span-col">string recommendID</span>
+								<span class="span-col">striking recommendLogoUrl(base64)</span>
+							</td>
+							<td>
+								<span class="span-col span-pd">到了入驻页面：默认成功回调</span>
+								<span class="span-col span-pd">否则：默认失败回调</span>
+							</td>
+							<td>v418</td>
+							<td>v418</td>
+							<td></td>
+							<td>3.16添加推荐码等信息</td>
+						</tr>
+						<tr>
+							<td>店铺</td>
+							<td>shop</td>
+							<td>店铺设置</td>
+							<td>setting</td>
+							<td>N</td>
+							<td>默认成功回调</td>
+							<td>v325</td>
+							<td>v325</td>
+							<td>整理callback</td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>美店</td>
+							<td>shop</td>
+							<td>分类至</td>
+							<td>classify</td>
+							<td>
+								<span class="span-col">String productIds</span>
+								<span class="span-col">String categoryId</span>
+							</td>
+							<td>
+								<span class="span-col span-pd">分类成功：默认成功回调</span>
+								<span class="span-col span-pd">分类失败：data:null,success:true,message:（失败原因）</span>
+								
+							</td>
+							<td>v325</td>
+							<td>v418</td>
+							<td></td>
+							<td>整理callback</td>
+						</tr>
+						<tr>
+							<td>美店</td>
+							<td>shop</td>
+							<td>商品管理</td>
+							<td>productManger</td>
+							<td></td>
+							<td></td>
+							<td>V1.1.1</td>
+							<td>V1.1.1</td>
+							<td>美店部分页面回收，H5跳转到本地页面</td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>美店</td>
+							<td>shop</td>
+							<td>添加商品</td>
+							<td>addProduct</td>
+							<td></td>
+							<td></td>
+							<td>V1.1.1</td>
+							<td>V1.1.1</td>
+							<td>美店部分页面回收，H5跳转到本地页面</td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>商品</td>
+							<td>product</td>
+							<td>商品详情页</td>
+							<td>detail</td>
+							<td>
+								<span class="span-col">long productId,</span>
+								<span class="span-col">long skuid</span>
+								<span class="span-col">long mid 美店id</span>
+								<span class="span-col">long pid 门店id</span>
+								<span class="span-col">long shopId</span>
+								<span class="span-col">string kid（可选参数）</span>
+								<span class="span-col">string orderSource</span>
+								<span class="span-col">string activityId</span>
+								<span class="span-col">string channelId</span>
+								<span class="span-col">string sid</span>
+								
+							</td>
+							<td>默认成功回调</td>
+							<td>v325</td>
+							<td>v418</td>
+							<td>kid没有默认为"0"</td>
+							<td>
+								<span class="span-col span-pd">整理callback,增加kid</span>
+								<span class="span-col span-pd">加入购物车增加两个参数，客户端跟服务器交互的时候 activityId channelId拼接在一起</span>
+								
+							</td>
+						</tr>
+						<tr>
+							<td>商品</td>
+							<td>product</td>
+							<td>添加商品</td>
+							<td>addProduct</td>
+							<td>string url(base64)</td>
+							<td>默认成功回调</td>
+							<td>v515</td>
+							<td>v515</td>
+							<td>美店页面，添加商品</td>
+							<td>H5重构</td>
+						</tr>
+						<tr>
+							<td>促销</td>
+							<td>promotion</td>
+							<td>提醒我</td>
+							<td>remindme</td>
+							<td>N</td>
+							<td>
+								<span class="span-col span-pd">callback 如果能正常接收push消息：默认成功回调。不能正常接收push消息：默认失败回调
+								</span>
+							</td>
+							<td>v418</td>
+							<td>v418</td>
+							<td></td>
+							<td>促销活动增加</td>
+						</tr>
+						<tr>
+							<td>促销</td>
+							<td>promotion</td>
+							<td>赚外快</td>
+							<td>earnMoney</td>
+							<td></td>
+							<td>默认成功回调</td>
+							<td>v515</td>
+							<td>v515</td>
+							<td>跳转到可以获取返利的商品列表</td>
+							<td>完善协议</td>
+						</tr>
+						<tr>
+							<td>群</td>
+							<td>group</td>
+							<td>群主页</td>
+							<td>detail</td>
+							<td>
+								<span class="span-col">String groupId</span>
+								<span class="span-col">string activityId（活动Id，可选参数）</span>
+							</td>
+							<td>默认成功回调</td>
+							<td>v515</td>
+							<td>v515</td>
+							<td>增加activityId(活动Id)，是因为有可能会有返利</td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>群</td>
+							<td>group</td>
+							<td>群成员列表</td>
+							<td>members</td>
+							<td>
+								<span class="span-col">String groupId</span>
+								<span class="span-col">string groupName</span>
+								<span class="span-col">string groupAvatorUrl(base64)</span>
+								<span class="span-col">boolean isAdmin</span>
+							</td>
+							<td>默认成功回调</td>
+							<td>v515</td>
+							<td>v515</td>
+							<td></td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>聊天</td>
+							<td>im</td>
+							<td>聊天</td>
+							<td>chat</td>
+							<td>
+								<span class="span-col span-pd">string type("0":普通聊天 String imId int chatType(1:单聊2:群聊), "1": 商品 string productName,long productId,long shopId,double productPrice,double rebatePrice,string kid,string productLogo,long sellerId</span>
+								<span class="span-col span-pd">"2":店铺 string shopName,string shopId,string shopIcon， long sellerId（卖家id），string shopType("xpop","mshop)</span>
+								<span class="span-col span-pd">"3":待付款订单</span>
+								<span class="span-col span-pd">string shopId</span>
+								<span class="span-col span-pd">String sellerId</span>
+								<span class="span-col span-pd">String orderType</span>
+								<span class="span-col span-pd">String afterSaleId</span>
+								<span class="span-col span-pd">String orderTime</span>
+								<span class="span-col span-pd">String productImage(base64)</span>
+								
+							</td>
+							<td>默认成功回调</td>
+							<td>v515</td>
+							<td>v515</td>
+							<td>
+								<span class="span-col span-pd">聊分为四种</span>
+								<span class="span-col span-pd">0；普通聊天</span>
+								<span class="span-col span-pd">1：商品</span>
+								<span class="span-col span-pd">2:店铺</span>
+								<span class="span-col span-pd">3:待付款订单</span>
+								<span class="span-col span-pd">4:普通订单</span>
+								<span class="span-col span-pd">5:退款售后订单,对应的老协议为：/buyer/mime/contactSeller.html</span>
+								<span class="span-col span-pd">orderType:"1"订单详情，"2"退款详情，"3"退货详情,"4"换货详情，退款售后会使用2，3，4其他都是1）商品</span>
+								<span class="span-col span-pd"></span>
+							</td>
+							<td>整理协议</td>
+						</tr>
+						<tr>
+							<td>聊天</td>
+							<td>im</td>
+							<td>个人主页</td>
+							<td>userDetail</td>
+							<td>long userId</td>
+							<td>默认成功回调</td>
+							<td>v418</td>
+							<td></td>
+							<td></td>
+							<td>邀请好友新增协议</td>
+						</tr>
+						<tr>
+							<td>聊天</td>
+							<td>im</td>
+							<td>消息列表</td>
+							<td>messageList</td>
+							<td></td>
+							<td>默认成功回调</td>
+							<td>v515</td>
+							<td>v515</td>
+							<td></td>
+							<td>整理协议</td>
+						</tr>
+						<tr>
+							<td>圈子</td>
+							<td>circle</td>
+							<td>圈子</td>
+							<td>home</td>
+							<td>
+								<span class="span-col">String groupId</span>
+								<span class="span-col">String actvityId(选填)</span>
+							</td>
+							<td>默认成功回调</td>
+							<td>v418</td>
+							<td>v418</td>
+							<td>actvityId有值表示活动进入，其他的是普通进入。有活动进入可能会有返利，以做区分</td>
+							<td>促销活动增加</td>
+						</tr>
+						<tr>
+							<td>圈子</td>
+							<td>circle</td>
+							<td>话题详情</td>
+							<td>topicDetail</td>
+							<td>String topicId</td>
+							<td>默认成功回调</td>
+							<td>v515</td>
+							<td>v515</td>
+							<td>wap调用客户端，circle/detail修改为circle/topicDetail</td>
+							<td>wap重构</td>
+						</tr>
+						<tr>
+							<td>圈子</td>
+							<td>circle</td>
+							<td>我的圈子</td>
+							<td>mine</td>
+							<td></td>
+							<td>默认成功回调</td>
+							<td>v515</td>
+							<td>v515</td>
+							<td></td>
+							<td>H5协议整理</td>
+						</tr>
+						<tr>
+							<td>圈子</td>
+							<td>circle</td>
+							<td>创建圈子</td>
+							<td>create</td>
+							<td></td>
+							<td>默认成功回调</td>
+							<td>v1.0.5</td>
+							<td>v1.0.5</td>
+							<td></td>
+							<td>达人特权页增加新的协议</td>
+						</tr>
+						<tr>
+							<td>圈子</td>
+							<td>circle</td>
+							<td>圈子广场</td>
+							<td>square</td>
+							<td></td>
+							<td>默认成功回调</td>
+							<td>v1.0.5</td>
+							<td>v1.0.5</td>
+							<td></td>
+							<td>玩转国美Plus新增</td>
+						</tr>
+						<tr>
+							<td>订单</td>
+							<td>order</td>
+							<td>订单详情</td>
+							<td>detail</td>
+							<td>
+								<span class="span-col span-pd">string userId(可选参数，wap端可能会传)，</span>
+								<span class="span-col span-pd">string type "1" 卖家版</span>
+								<span class="span-col span-pd">long orderId</span>
+								<span class="span-col span-pd">long orderRoleType 店铺类型 1：xpop 2：美店</span>
+							
+							</td>
+							<td>
+								<span class="span-col span-pd">成功进入订单详情：默认成功回调</span>
+								<span class="span-col span-pd">否则默认失败回调</span>
+								
+							</td>
+							<td>v418</td>
+							<td></td>
+							<td></td>
+							<td>h5协议整理，跳转到卖家订单详情，通过type来区分</td>
+						</tr>
+						<tr>
+							<td>订单</td>
+							<td>order</td>
+							<td>售后订单详情</td>
+							<td>afterSaleOrderDetail</td>
+							<td>
+								<span class="span-col span-pd">string type "1" 卖家版</span>
+								<span class="span-col span-pd">string afterSaleId</span>
+								<span class="span-col span-pd">long orderRoleType 店铺类型 1：xpop 2：美店</span>
+								<span class="span-col span-pd">long shopId 美店Id</span>
+							</td>
+							<td>
+								<span class="span-col span-pd">成功进入订单详情：默认成功回调</span>
+								<span class="span-col span-pd">否则默认失败回调</span>
+								
+							</td>
+							<td>v515</td>
+							<td>v515</td>
+							<td></td>
+							<td>一元购活动增加，跳转到卖家订单详情，通过type来区分</td>
+						</tr>
+						<tr>
+							<td>我的</td>
+							<td>mine</td>
+							<td>我的店铺</td>
+							<td>shop</td>
+							<td>int type</td>
+							<td>
+								<span class="span-col span-pd">进入我的店铺：默认成功回调</span>
+								<span class="span-col span-pd">失败：默认失败回调</span>
+							</td>
+							<td>v325</td>
+							<td>type 为1，没有店铺，直接到开通美店页面，玩转国美Plus需求</td>
+							<td>H5</td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>我的</td>
+							<td>mine</td>
+							<td>订单管理（美店）</td>
+							<td>order_manage</td>
+							<td>long shopId</td>
+							<td>默认成功回调</td>
+							<td>v325</td>
+							<td></td>
+							<td></td>
+							<td>整理callback</td>
+						</tr>
+						<tr>
+							<td>我的</td>
+							<td>mine</td>
+							<td>累计返利列表</td>
+							<td>rebateLis</td>
+							<td>
+								<span class="span-col">string url(base64)</span>
+								<span class="span-col">string rebateListEntry</span>
+								<span class="span-col">string money</span>
+							</td>
+							<td>默认成功回调</td>
+							<td>v515</td>
+							<td>v515</td>
+							<td>
+								<span class="span-col span-pd">累计返利列表，添加此协议主要是为了区分title,有money显示筛选，否则显示帮助
+								</span>
+							</td>
+							<td>H5重构</td>
+						</tr>
+						<tr>
+							<td>我的</td>
+							<td>mine</td>
+							<td>提现</td>
+							<td>money</td>
+							<td>string userId(可选参数)</td>
+							<td>默认成功回调</td>
+							<td>v418</td>
+							<td></td>
+							<td>wap调用客户端</td>
+							<td>wap端调用</td>
+						</tr>
+						<tr>
+							<td>我的</td>
+							<td>mine</td>
+							<td>账号管理</td>
+							<td>accountSetting</td>
+							<td>string userId(可选参数)</td>
+							<td>默认成功回调</td>
+							<td>v515</td>
+							<td>v515</td>
+							<td>wap端调用可能会传userId</td>
+							<td>H5协议整理</td>
+						</tr>
+						<tr>
+							<td>我的</td>
+							<td>mine</td>
+							<td>用户信息</td>
+							<td>userInfo</td>
+							<td>string userId</td>
+							<td>默认成功回调</td>
+							<td>v515</td>
+							<td>v515</td>
+							<td></td>
+							<td>H5协议整理</td>
+						</tr>
+						<tr>
+							<td>我的</td>
+							<td>mine</td>
+							<td>账户</td>
+							<td>account</td>
+							<td></td>
+							<td>默认成功回到</td>
+							<td>v1.1.1</td>
+							<td>v1.1.1</td>
+							<td></td>
+							<td>我的优惠券页面需要调用</td>
+						</tr>
+						<tr>
+							<td>我的</td>
+							<td>mine</td>
+							<td>意见反馈</td>
+							<td>feedBack</td>
+							<td></td>
+							<td>默认成功回调</td>
+							<td>v1.1.1</td>
+							<td>v1.1.1</td>
+							<td></td>
+							<td>产品需求新增</td>
+						</tr>
+						<tr>
+							<td>我的</td>
+							<td>mine</td>
+							<td>关注好友</td>
+							<td>followFriends</td>
+							<td></td>
+							<td>默认成功回调</td>
+							<td>v1.1.2</td>
+							<td>v1.1.2</td>
+							<td></td>
+							<td>关注好友，客户端需要刷新</td>
+						</tr>
+						<tr>
+							<td>我的</td>
+							<td>mine</td>
+							<td>达人招募</td>
+							<td>applyExpert</td>
+							<td></td>
+							<td>默认成功回调</td>
+							<td>v1.4.0</td>
+							<td>v1.4.0</td>
+							<td></td>
+							<td>1.4.0 新增</td>
+						</tr>
+						<tr>
+							<td>我的</td>
+							<td>mine</td>
+							<td>二维码扫描</td>
+							<td>qrCodeCapture</td>
+							<td></td>
+							<td>默认成功回调</td>
+							<td>v1.4.0</td>
+							<td>v1.4.0</td>
+							<td></td>
+							<td>线下支付增加</td>
+						</tr>
+						<tr>
+							<td>国美Plus首页</td>
+							<td>list</td>
+							<td>精品小店</td>
+							<td>shopping</td>
+							<td>
+								<span class="span-col">int checkedId</span>
+								<span class="span-col">0：综合</span>
+								<span class="span-col">1：销量</span>
+								<span class="span-col">2：人气</span>
+							</td>
+							<td>默认成功回调</td>
+							<td>v325</td>
+							<td>v418</td>
+							<td></td>
+							<td>整理callback</td>
+						</tr>
+						<tr>
+							<td>国美Plus首页</td>
+							<td>list</td>
+							<td>便宜好货</td>
+							<td>kindpro</td>
+							<td>N</td>
+							<td>默认成功回调</td>
+							<td>v325</td>
+							<td>v418</td>
+							<td></td>
+							<td>整理callback</td>
+						</tr>
+						<tr>
+							<td>国美Plus首页</td>
+							<td>list</td>
+							<td>超级返利</td>
+							<td>lookcheap</td>
+							<td>N</td>
+							<td>默认成功回调</td>
+							<td>v325</td>
+							<td>v418</td>
+							<td></td>
+							<td>整理callback</td>
+						</tr>
+						<tr>
+							<td>国美Plus首页</td>
+							<td>list</td>
+							<td>商品分类</td>
+							<td>category</td>
+							<td>int categoryId</td>
+							<td>默认成功回调</td>
+							<td>v325</td>
+							<td>v418</td>
+							<td>
+								<span class="span-col span-pd">categoryId 为1 进入商品分类的首页，其他进入具体的分类页</span>
+							</td>
+							<td>整理callback</td>
+						</tr>
+						<tr>
+							<td>国美Plus首页</td>
+							<td>list</td>
+							<td>视频列表</td>
+							<td>videoList</td>
+							<td></td>
+							<td>默认成功回调</td>
+							<td>v1.1.2</td>
+							<td>v1.1.2</td>
+							<td></td>
+							<td>逛逛页面增加视频入口，跳转到客户端</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+			
+		</div>
+	</section>
+	<!-- section end-->
+</body>
+</html>

@@ -1,0 +1,171 @@
+doctype html
+html(lang="zh-CN")
+	include ../../../../../gomeplusUI/pc/src/jade/head.jade
+	link(type="text/css",rel="stylesheet",href="../../css/public/public.css")
+	link(type="text/css",rel="stylesheet",href="../../css/module/shop/gomesearch.css")
+	body.opg.body-fff
+		include ../../../../../gomeplusUI/pc/src/jade/header.jade
+		include ../../../../../gomeplusUI/pc/src/jade/menu.jade
+		.gome-search
+			.wrap-box
+				.search-crumbs
+					a(href="javascript:;") 全部商品
+					em >
+					a(href="javascript:;").active
+						| 品牌：
+						em 无良印品
+						span &times;
+					em >
+					a(href="javascript:;") 居家商品
+					em >
+					span.crnmb-active 居家商品
+				.search-warning
+					| 为您显示“
+					span 衣服
+					| ”相关商品，仍然搜索“
+					span.line-under 衣服
+					| ”
+					em.icon &#xea5a;
+				.search-val
+					//添加active隐藏多余选项
+					.val-kind
+						.kind-name 品牌
+						.kind-val
+							a(href="javascript:;").more
+								| 更多
+								em.icon-down
+								em.icon-down.icon-up
+							.tab-title
+								a(href="javascript:;").active 所有品牌
+								a(href="javascript:;") A
+								a(href="javascript:;") B
+								a(href="javascript:;") C
+								a(href="javascript:;") D
+								a(href="javascript:;") E
+								a(href="javascript:;") F
+								a(href="javascript:;") G
+								a(href="javascript:;") H
+								a(href="javascript:;") I
+								a(href="javascript:;") J
+								a(href="javascript:;") K
+								a(href="javascript:;") L
+								a(href="javascript:;") M
+								a(href="javascript:;") N
+								a(href="javascript:;") O
+								a(href="javascript:;") P
+								a(href="javascript:;") Q
+								a(href="javascript:;") R
+								a(href="javascript:;") S
+								a(href="javascript:;") T 
+								a(href="javascript:;") U
+								a(href="javascript:;") V
+								a(href="javascript:;") W
+								a(href="javascript:;") X
+								a(href="javascript:;") Y
+								a(href="javascript:;") Z
+							.tab-menu
+								ul.clearfix
+									- for (var x = 0; x < 35; x++)
+										li
+											a(href="javascript:;") 无良印品
+					.val-kind
+						.kind-name 品牌
+						.kind-val
+							.tab-menu
+								ul.clearfix
+									- for (var x = 0; x < 4; x++)
+										li
+											a(href="javascript:;") 无良印品
+				.search-condition
+					.condition-all.fl
+						a(href="javascript:;").active 综合
+						//up显示上，down显示下
+						a(href="javascript:;").up.down
+							| 价格
+							em.icon.icon-down &#xea57;
+							em.icon.icon-up &#xea55;
+						a(href="javascript:;") 销量
+						a(href="javascript:;") 新品
+					.condition-add.fl
+						span.fl 配送至
+						.select-area
+							a(href="javascript:;").text-hide
+								span.menu-add 选择省
+								span.icon-right
+									em.icon.icon-down &#xea57;
+							.select-box
+								em.icon-close &times;
+								.select-title
+									a(href="javascript:;").selected-span
+										span 北京
+										em.icon.icon-down &#xea57;
+									a(href="javascript:;")
+										span 朝阳区
+										em.icon.icon-down &#xea57;
+									a(href="javascript:;")
+										span 五环全部区域
+										em.icon.icon-down &#xea57;
+									a(href="javascript:;")
+										span 五环全部区域
+										em.icon.icon-down &#xea57;
+								ul.select-content
+									- for (var x = 0; x < 10; x++)
+										li 四环到五环之间
+					.condition-price.fl
+						input(type="text",placeholder="￥最低价").val 
+						span  - 
+						input(type="text",placeholder="￥最高价").val
+						a(href="javascript:;").btn 确定
+					.condition-icon.fl
+						label.active
+							em.icon &#xeaa3;
+							| 返利
+						label
+							em.icon &#xeaa3;
+							| 直降
+					.condition-num
+						.fr
+							span.red 1
+							| /
+							span.mr7 200
+							em.icon.disabled &#xe970;
+							em.icon &#xe98c;
+						.fr
+							| 共
+							span.num 2480
+							| 件商品
+				.search-list
+					ul.clearfix
+						- for (var x = 0; x < 20; x++)
+							li
+								a(href="#").img
+									img(src="https://i6.meixincdn.com/v1/img/T1GRYTB7KT1R4cSCrK.png")
+								.text
+									a(href="#")
+										span 返利
+										| MUJU无印良品居家商品系列2色条纹颈枕多功能
+									.price
+										span ￥198.00
+										del 198.00
+									p 618人付款
+				.search-result
+					.result-text.clearfix
+						em.icon &#xe960;
+						p
+							| 抱歉，没有找到“
+							span 关键词
+							| ”相关的结果
+							br
+							| 建议您尝试其他关键词
+				.page
+					a(href="javascript:;").disabled 上一页
+					a(href="javascript:;") 1
+					a(href="javascript:;") 2
+					a(href="javascript:;") 3
+					a(href="javascript:;").active 4
+					a(href="javascript:;") 5
+					a(href="javascript:;") 6
+					a(href="javascript:;") ···
+					a(href="javascript:;") 下一页
+					a(href="javascript:;") 最后一页
+		include ../../../../../gomeplusUI/pc/src/jade/footer.jade

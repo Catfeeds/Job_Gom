@@ -1,0 +1,167 @@
+doctype html
+html(lang="zh-CN",data-use-rem="750")
+	include ../../../m-widget/head/head.jade
+	link(type="text/css",rel="stylesheet",href="../../css/public/public-wap.css")
+	link(type="text/css",rel="stylesheet",href="../../css/module/shop.css")
+	
+	body.opg
+		include ../../../m-widget/head/rem.jade
+
+		header.header
+			span
+				a.head-back(href="javascript:;")
+					em.iconn-1
+			.head-search.w480
+				em.iconn-10
+				input.sec-ipt(type="search" placeholder="搜索店铺内商品" disabled="true")
+			span
+				a.head-icn(href="javascript:;")
+					em.iconn-3
+				a.head-icn(href="javascript:;")
+					em.iconn-4
+		// /header
+		.shopindex-head
+			.head-content
+				.head-l
+					img(src="../../images/coupon_share_logo.jpg")
+					span.franchise.black 专营店
+					// franchise(必加class) black XPOP店铺 / red O2M店铺 / yellow 国美在线联营 / gray 国美在线自营
+				.head-c
+					h3  宇宙超级无敌掌门狗的店
+					.storelevel
+						em.ic-jin
+						em.ic-yin
+						em.ic-tong
+				.head-r
+					a(href="##").like.active
+						em.iconn-12
+						em.iconn-29
+						span 1234
+					a(href="##").collect.active
+						em.iconn-9
+						em.iconn-46
+						span 12万
+		ul.menu-list.menu-list-shoptop
+			li.item.active
+				i.num
+				em.iconn-45
+				p.txt 首页
+			li.item
+				em.iconn-50
+				p.txt 全部
+			li.item
+				i.num
+				em.iconn-26
+				p.txt 促销
+			li.item
+				em.iconn-36
+				p.txt 动态
+		ul.menu-list.menu-list-shoptop
+			li.item.active
+				i.num
+				em.iconn-45
+				p.txt 首页
+			li.item
+				em.iconn-50
+				p.txt 全部
+			li.item
+				i.num
+				em.iconn-26
+				p.txt 热销
+			li.item
+				em.iconn-36
+				p.txt 上新
+		.m-pics.mt20
+			div
+				img(src='../../images/bg.jpg')
+		.shop-tabcon
+			.m-coupons.m-coupons-shop.mt20
+				ul.coupon-list
+					li
+						a(href="##")
+							p.txt 满100减50
+							p.date 2016.06.20-2016.07.20
+							span.msg.msg-dis 已领
+					-for(i=0;i<10;i++) //循环十个同样的LI
+						li
+							a(href="##")
+								p.txt 满100减50
+								p.date 2016.06.20-2016.07.20
+								span.msg 领取
+			.shop-titles.mt20
+				h3
+					span 店铺公告
+				p 此处字数不做限制，此模块大小做成自适应的。本店始创于康熙年间，研制出这款显示器，绝对高清，绝对靠谱！
+
+			.shop-titles.mt20
+				h3
+					span 店铺推荐
+			.newest-time 今日
+			.newest-time 昨日
+			.newest-time 10月12日
+			ul.main-list.grid-list-bor
+				-for(i=0;i<4;i++) //循环四个同样的LI
+					li.item
+						a(href="javascript:;")
+							.item-img
+								img(src='https://i-pre.meixincdn.com/T15yWTBKxT1RXrhCrK.200x200cTz.jpg')
+							.item-txt 情人生日礼Crystallin精装礼品
+							.item-price
+								span.red ¥2199.40
+								del.del ¥2899.00
+				li.item.item-big
+						a(href="javascript:;")
+							.item-img
+								img(src='https://i-pre.meixincdn.com/T15yWTBKxT1RXrhCrK.200x200cTz.jpg')
+							.item-txt 
+								em.ic-fan
+								| 情人生日礼Crystallin精装礼品
+							.item-price
+								span.red ¥2199.40
+								del.del ¥2899.00
+
+			.shop-titles.mt20
+				h3
+					span 商品模块八
+				h6 副标题最多输八字
+			ul.main-list
+				li.item.item-big
+					a(href="javascript:;")
+						.item-img
+							img(src='https://i-pre.meixincdn.com/T15yWTBKxT1RXrhCrK.200x200cTz.jpg')
+						.item-txt 情人生日礼Crystallin精装礼品
+						.item-price
+							span.red ¥2199.40
+							del.del ¥2899.00
+			.m-pics.mt20
+				div
+					img(src='../../images/bg.jpg')
+			a(href="javascript:;").page-more 查看全部商品
+			// 缺省页
+			.m-prompt
+				.pro-img
+					img(src="../../images/common/emptycart.png")
+				.pro-txt
+					| 店主好懒~居然没有商品
+					br
+					| 咱们去别处逛逛吧
+			.page-no(style="margin-bottom:1rem;") 我是有底线的
+			// /如果有“底部固定”导航，需要给page-no动态添加 "margin-bottom:1rem"
+
+		ul.menu-list.menu-list-shopbtn
+			li.item
+				a(href="##")
+					em.iconn-15
+					cite.txt 商品分类
+			li.item
+				a(href="##")
+					em.iconn-32
+					cite.txt 购物车
+		a.go-top(href="#")
+		// 回到顶部
+
+		a.go-home(href="public-v1.0.9.html")
+		// 回到首页
+
+		// a.go-shopcart(href="#")
+		// 加入购物车

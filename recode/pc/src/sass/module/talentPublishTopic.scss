@@ -1,0 +1,29 @@
+@charset "utf-8";
+@import '../../widget/config/_base.scss';
+@import '../../widget/header/header-talent.scss';
+@import '../../widget/aside/talent.scss';
+@import './releasetopic1.scss';
+@import './issuePreview.scss';
+.opg {
+	background:#F3F5F7;
+	min-width: 1040px;
+}
+
+.wrap-box{width:900px;}
+.talent-home{
+	margin-left:220px;
+}
+.release-topic-wrap{
+	width: 900px;
+	.wrap-box{display:table;}
+	.edit-wrap{padding:50px 55px 0;}
+	.publish-form,.publish-label,.publish-label-created{margin:0 55px;}
+}
+
+.preview-content{
+	min-height:100px;
+}
+
+.preview-label{
+	display: table;
+}

@@ -1,0 +1,61 @@
+@charset "utf-8";
+
+// _configure.scss
+@import "../public/_configure.scss";
+
+// unit
+.amp-unit{
+	.table-list{
+		min-width:1750px;
+		span{
+			&.span-col-1{
+				width:188px;
+			}
+			&.span-col-2{
+				width:172px;
+			}
+			&.span-col-3{
+				width:188px;
+			}
+			&.span-col-4{
+				width:120px;
+			}
+			&.span-col-5{
+				width:125px;
+			}
+			&.span-col-6{
+				width:132px;
+			}
+			&.span-col-7{
+				width:142px;
+			}
+			&.span-col-8{
+				width:133px;
+			}
+			&.span-col-9{
+				width:137px;
+			}
+			&.span-col-10{
+				width:135px;
+			}
+			&.span-col-11{
+				width:200px;
+			}
+		}
+	}
+	// set-fn-new
+	.set-fn-new{
+		min-width:1100px;
+		.ele-select{
+			width:113px!important;
+		}
+		.ele-select{
+			width:115px!important;
+		}
+		.fn-search{
+			.btn-primary{
+				padding:0px 21px!important;
+			}
+		}
+	}
+}

@@ -1,0 +1,61 @@
+//- extends layout.jade
+extends ../../../widget-platform/pug/layout/layout-m.jade
+
+//- index
+block content
+	.platform-tipsinfo
+		h5 说明
+		p m-toast 公用类名
+		p m-toast m-toast-logo 加载提示
+		p m-toast m-toast-auto 提示文字多余三行
+		p 具体查看结构，谢谢~
+		p.maty 有问题沟通-maty
+	//end
+
+	//- toast-1
+	div.platform-content
+		h3.platform-header 加载提示
+		//- div.platform-intro
+		//- 	p toast-1
+		div.platform-example#toast-1
+			include ../../../../m-widget/toast/toast-1.jade
+		pre.platform-pre.hide
+			code.platform-code#toast-1_code
+			span.platform-jade pug
+			span.platform-jade.platform-html.actived html
+	//- toast-2
+	div.platform-content
+		h3.platform-header 单行提示
+		//- div.platform-intro
+		//- 	p toast-2
+		div.platform-example#toast-2
+			include ../../../../m-widget/toast/toast-2.jade
+		pre.platform-pre.hide
+			code.platform-code#toast-2_code
+			span.platform-jade pug
+			span.platform-jade.platform-html.actived html
+	//- toast-3
+	div.platform-content
+		h3.platform-header 两行提示
+		//- div.platform-intro
+		//- 	p toast-3
+		div.platform-example#toast-3
+			include ../../../../m-widget/toast/toast-3.jade
+		pre.platform-pre.hide
+			code.platform-code#toast-3_code
+			span.platform-jade pug
+			span.platform-jade.platform-html.actived html
+	//- toast-4
+	div.platform-content
+		h3.platform-header 多行提示
+		//- div.platform-intro
+		//- 	p toast-4
+		div.platform-example#toast-4
+			include ../../../../m-widget/toast/toast-4.jade
+		pre.platform-pre.hide
+			code.platform-code#toast-4_code
+			span.platform-jade pug
+			span.platform-jade.platform-html.actived html
+	script(type='text/javascript').
+		HtmlFormat.init(['toast-1','toast-2','toast-3','toast-4'],false,'_code','html','span.platform-jade');
+		$(".platform-toast").parent('li').addClass("actived");

@@ -1,0 +1,10 @@
+{
+   "presets": ["es2015"],
+   "ignore": [
+		"./src/js/utils/jsencrypt.js",
+		"./src/js/editor/ueditor/ueditor.all.js",
+		"./src/js/ediotr/ueditor/ueditor.parse.js",
+		"./src/js/plugin/webuploader/webuploader.js",
+		"./src/js/plugin/jquery.lazyload.js"
+  	]
+}

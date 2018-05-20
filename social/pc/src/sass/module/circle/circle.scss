@@ -1,0 +1,295 @@
+@import '../../../../../../gomeplusUI/pc/src/sass/common/basic/_base.scss';
+@import '../../../../../../gomeplusUI/pc/src/sass/common/basic/_mixins.scss';
+
+.circle-top{
+    img{
+        width: 1200px;
+        height: 200px;
+    }
+    .head-title{
+        position: relative;
+        height: 70px;
+        padding-left: 148px;
+        img{
+            position: absolute;
+            left: 20px;
+            bottom: 10px;
+            width: 100px;
+            height: 100px;
+            padding: 4px;
+            background: $bg-fff;
+        }
+        .title-name{
+            padding-top: 10px;
+            h2{
+                font-size: 16px;
+                span{
+                    border: 1px solid #e40e3f;
+                    color: #e40e3f;
+                    padding: 0 2px;
+                    border-radius: 1px;
+                    font-size: 12px;
+                    margin-left: 3px;
+                }
+                .color-r{
+                    color: #e40e3f;
+                    border-color: #e40e3f;
+                }
+                .color-o{
+                    color: #fd4f1e;
+                    border-color: #fd4f1e;
+                }
+                .color-y{
+                    color: #f4a728;
+                    border-color: #f4a728;
+                }
+                .color-g{
+                    color: #15966d;
+                    border-color: #15966d;
+                }
+                .color-r2{
+                    color: #f95353;
+                    border-color: #f95353;
+                }
+                .color-o2{
+                    color: #fc8753;
+                    border-color: #fc8753;
+                }
+            }
+        }
+        .title-text{
+            padding-top: 4px;
+            .pc-btn{
+                width: 64px;
+                height: 25px;
+                line-height: 25px;
+                background: #fc8753;
+                font-size: 12px;
+                margin-right: 20px;
+                float: left;
+            }
+            span{
+                font-size: 12px;
+                color: #999;
+                display: inline-block;
+                padding-top: 10px;
+                em{
+                    color: #fc8753;
+                    padding-right: 10px;
+                }
+            }
+        }
+    }
+}
+
+.circle-list{
+    .list-title{
+        height: 50px;
+        line-height: 50px;
+        background: #f7f7f7;
+        a{
+            float: left;
+            padding: 0 20px;
+            color: #999;
+            &.active{
+                color: #666;
+                background: #efefef;
+            }
+        }
+        .pc-btn{
+            float: right;
+            width: 110px;
+            padding: 0;
+            height: 30px;
+            line-height: 30px;
+            margin: 10px 10px 0 0;
+            background: #fc8753;
+            color: $bg-fff;
+            em{
+                margin-right: 5px;
+            }
+            &:hover{
+                background: #fda984;
+            }
+        }
+    }
+    .list-left{
+        float: left;
+        width: 825px;
+        li{
+            border-bottom: 1px solid #f7f7f7;
+            min-height: 18px;
+            line-height: 18px;
+            padding: 19px 0;
+            position: relative;
+            //标题
+            .title{
+                a{
+                    padding-left: 7px;
+                    &:hover{
+                        color: #e40d3e;
+                    }
+                }
+                .bg-r,.bg-y{
+                    background: #f95353;
+                    color: $bg-fff;
+                    padding: 1px 5px;
+                    border-radius: 2px;
+                    margin-right: 2px;
+                    font-size: 12px;
+                }
+                .bg-y{
+                    background: #fc8753;
+                }
+            }
+            .desc{
+                color: #999;
+                padding-top: 15px;
+            }
+            //右侧头像
+            .name{
+                position: absolute;
+                right: 0;
+                bottom: 0;
+                height: 56px;
+                line-height: 56px;
+                width: 240px;
+                a{
+                    float: left;
+                    color: #5c7da0;
+                    img{
+                        @include circular(16px);
+                        margin-right: 5px;
+                    }
+                }
+                span{
+                    float: right;
+                    margin-left: 10px;
+                    color: #666;
+                    em{
+                        margin-right: 5px;
+                    }
+                    &:hover{
+                        color: #e40d3e;
+                    }
+                }
+            }
+            //图片列表
+            .img-list{
+                position: relative;
+                padding: 6px 0 26px 0;
+                .more{
+                    position: absolute;
+                    left: 0;
+                    bottom: 0;
+                    cursor: pointer;
+                }
+                dl{
+                    height: 100px;
+                    overflow: hidden;
+                }
+                dd{
+                    float: left;
+                    width: 150px;
+                    height: 100px;
+                    margin-right: 10px;
+                    position: relative;
+                    img{
+                        width: 150px;
+                        height: 100px;
+                    }
+                    .icon-video{
+                        position: absolute;
+                        left: 50%;
+                        top: 50%;
+                        transform: translate(-50%,-50%);
+                        width: 62px;
+                        height: 62px;
+                        background: url(../../../images/circle/icon-video.png) no-repeat center;
+                    }
+                }
+            }
+            //商品列表
+            .goods-list{
+                padding-top: 5px;
+                .list-box{
+                    float: left;
+                    margin-right: 10px;
+                    width: 150px;
+                    height: 100px;
+                    img{
+                        width: 150px;
+                        height: 80px;
+                    }
+                    p{
+                        height: 20px;
+                        line-height: 20px;
+                        background: #f7f7f7;
+                        .fl{
+                            float: left;
+                            color: #e60039;
+                            font-size: 12px;
+                        }
+                        .fr{
+                            float: right;
+                            color: $bg-fff;
+                            background: #fc8753;
+                            font-size: 10px;
+                            -webkit-transform:scale(0.8);
+                            padding: 3px;
+                            border-radius: 2px;
+                            margin: 0 5px 0 0;
+                            line-height: 12px;
+                        }
+                    }
+                }
+            }
+            //更新时间
+            .time{
+                height: 18px;
+                line-height: 18px;
+                padding-top: 10px;
+                em{
+                    margin-right: 5px;
+                    color: #999;
+                }
+            }
+        }
+        .page{
+            padding: 30px 0;
+        }
+    }
+    .list-right{
+        float: right;
+        width: 282px;
+    }
+}
+
+.no-topic{
+    height: 220px;
+    background-color: $bg-fff;
+    .txt{
+        width: 326px;
+        margin: 0 auto;
+        padding-top: 80px;
+        .icon{
+            float: left;
+            font-size: 58px;
+            color: $color-gray;
+        }
+        p{
+            float: right;
+            font-size: $text16;
+            text-align: center;
+            line-height: 24px;
+            color: $font-grey-normal;
+            span{
+                display: block;
+            }
+            .red{
+                display: inline;
+                color: $color-danger;
+            }
+        }
+    }
+}

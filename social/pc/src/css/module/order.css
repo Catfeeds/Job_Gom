@@ -1,0 +1,83 @@
+@charset "UTF-8";
+/*==============================标准色==========================*/
+/*----主色-----*/
+/*==============================字体大小==========================*/
+/*==============================wrap宽度==========================*/
+/*==============================btn 宽度==========================*/
+/*==============================nav==========================*/
+/*==============================text clolor==========================*/
+.top30 {
+  margin-top: 30px; }
+
+.order-state {
+  background: #fff;
+  padding: 20px; }
+  .order-state .attention {
+    color: #e60039;
+    margin-left: 11px;
+    line-height: 30px; }
+  .order-state dl {
+    line-height: 30px; }
+    .order-state dl dt {
+      float: left;
+      width: 80px;
+      text-align: right;
+      color: #999; }
+    .order-state dl dd span {
+      color: #e60039; }
+  .order-state .pay-way {
+    float: left;
+    display: block;
+    line-height: 48px;
+    height: 48px;
+    font-size: 18px;
+    border: 1px solid #f6f5ee;
+    margin-right: 20px;
+    padding: 0 15px 0 25px;
+    position: relative;
+    cursor: pointer; }
+    .order-state .pay-way.active {
+      border-color: #e60039; }
+    .order-state .pay-way .icon-tui {
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 35px;
+      height: 35px;
+      background: url(../../images/shop/icon-tui.png) no-repeat; }
+    .order-state .pay-way input {
+      display: none; }
+    .order-state .pay-way .menu-radio {
+      display: inline-block;
+      width: 18px;
+      height: 18px;
+      background: url(../../images/public/sprite.png) no-repeat;
+      background-position: -130px 0;
+      cursor: pointer;
+      vertical-align: -3px;
+      margin-top: 15px;
+      margin-right: 15px;
+      float: left; }
+    .order-state .pay-way .menu-radio-checked {
+      background-position: -108px 0; }
+    .order-state .pay-way em {
+      margin-top: 8px; }
+    .order-state .pay-way em.icon-weixin, .order-state .pay-way em.icon-zfb, .order-state .pay-way em.icon-gm {
+      float: left;
+      width: 133px;
+      height: 34px;
+      background: url(../../images/shop/pay-weixin.png) no-repeat center; }
+    .order-state .pay-way em.icon-zfb {
+      background-image: url(../../images/shop/pay-zfb.png); }
+    .order-state .pay-way em.icon-gm {
+      background-image: url(../../images/shop/pay-gm.png); }
+    .order-state .pay-way img {
+      display: inline-block;
+      width: 133px;
+      height: 34px; }
+  .order-state .btn-box {
+    text-align: center;
+    clear: both;
+    padding-top: 30px; }
+
+

@@ -1,0 +1,189 @@
+doctype html
+html(lang="zh-CN" data-use-rem="750")
+	//- head.jade
+	include ../../../m-widget/head/head.jade
+	link(type="text/css",rel="stylesheet",href="../../css/share/share.css")
+	body.opg
+		include ../../../m-widget/head/rem.jade
+		// 搜索
+		section.share-search
+			.search-bar
+				em.iconn-10
+				input.sec-ipt(type="text" disabled="true" placeholder="搜索商品店铺")
+		// 主图
+		section.share-module.share-theme
+			img(src="../../images/share/share-theme.png",alt="")
+		// 分享赚钱高手
+		section.share-module.share-pocket
+			h2.pocket-header
+				span.header-top
+				span.header-infor 分享赚钱高手
+			.pocket-ranking
+				.ranking-content
+					.content-face
+						span.face-icon.face-icon-first
+						em.face-gold
+						img(src="../../images/share/share-face01.png",alt="")
+					a(href="#").btn-primary 赚 ¥1170
+				.ranking-content
+					.content-face
+						span.face-icon.face-icon-second
+						img(src="../../images/share/share-face02.png",alt="")
+					a(href="#").btn-primary 赚 ¥775
+				.ranking-content
+					.content-face
+						span.face-icon.face-icon-third
+						img(src="../../images/share/share-face03.png",alt="")
+					a(href="#").btn-primary 赚 ¥552
+		// 我的分享小金库
+		section.share-module.share-bursary
+			.bursary-statis
+				span.statis-face
+					img(src="../../images/share/share-face01.png",alt="")
+					em.face-gold
+				h2 我的分享小金库
+				p
+					i ¥
+					em 5.61
+			.bursary-ticket
+				.ticket-frame
+					span.frame-title 有福同享
+					span.frame-border
+					h2 199减100优惠券
+					p
+						a(href="#") 活动规则>
+					.frame-btn
+						a(href="#").btn-primary 分享给好友
+						//- a(href="#").m-btn.btn-bor 分享给好友
+		// 小分享赚大钱
+		section.share-module.share-income
+			.share-header
+				span 小分享赚大钱
+			.share-classify
+				ul.menu-list
+					li.item.active
+						a.link(href="javascript:;")
+							i.num 1
+							p.txt 日用百货
+					li.item
+						a.link(href="javascript:;")
+							i.num 1
+							p.txt 家电
+					li.item
+						a.link(href="javascript:;")
+							i.num 1
+							p.txt 护肤彩妆
+					li.item
+						a.link(href="javascript:;")
+							i.num 1
+							p.txt 零食饮品
+			.share-goods
+				ul.main-list.single-list
+					li.item
+						a.link(href="javascript:;")
+						.item-img
+							img(src="../../images/share/share-goods-picture01.jpg")
+						.item-txt 创意铅笔袋韩国文具盒简约男女生小清新日韩版中学生学生用品
+						.item-price
+							del.del ¥58.00
+							span.red 
+								| 最高赚
+								i ¥2199
+						a(href="#").btn-primary 去赚钱
+						//- a(href="#").m-btn.btn-bor 去赚钱
+					li.item
+						a.link(href="javascript:;")
+						.item-img
+							img(src="../../images/share/share-goods-picture02.jpg")
+						.item-txt 创意铅笔袋韩国文具盒简约男女生小清新日韩版中学生学生用品
+						.item-price
+							del.del ¥58.00
+							span.red 
+								| 最高赚
+								i ¥2199
+						a(href="#").btn-primary 去赚钱
+					li.item
+						a.link(href="javascript:;")
+						.item-img
+							img(src="../../images/share/share-goods-picture03.jpg")
+						.item-txt 创意铅笔袋韩国文具盒简约男女生小清新日韩版中学生学生用品
+						.item-price
+							del.del ¥58.00
+							span.red 
+								| 最高赚
+								i ¥2199
+						a(href="#").btn-primary 去赚钱
+		// 分享处处有惊喜
+		section.share-module.share-surprise
+			.share-header
+				span 分享处处有惊喜
+			.surprise-column
+				ul
+					li.item
+						a(href="javascript:;").link
+						.item-img
+							img(src="../../images/share/share-items01.jpg",alt="")
+						.item-text 两个帽士汇官方旗舰店
+						a(href="#").btn-primary 分享有惊喜
+					li.item
+						a(href="javascript:;").link
+						.item-img
+							img(src="../../images/share/Bitmap1.png",alt="")
+						.item-text NIKE汇官方旗舰店
+						a(href="#").btn-primary 分享有惊喜
+					li.item
+						a(href="javascript:;").link
+						.item-img
+							img(src="../../images/share/share-items03.jpg",alt="")
+						.item-text 情人节生日礼物
+						a(href="#").btn-primary 分享有惊喜
+					li.item
+						a(href="javascript:;").link
+						.item-img
+							img(src="../../images/share/share-items04.jpg",alt="")
+						.item-text 不锈钢汤锅
+						a(href="#").btn-primary 分享有惊喜
+			.surprise-column-large
+				ul
+					li.item
+						a(href="#").item-img
+							img(src="../../images/share/Bitmap1.png",alt="")
+							span.item-text 在世界的尽头遇见你
+						a(href="#").btn-primary 分享有惊喜
+					li.item
+						a(href="#").item-img
+							img(src="../../images/share/Bitmap2.png",alt="")
+							span.item-text 沙滩海浪和旋律
+						a(href="#").btn-primary 分享有惊喜
+					li.item
+						a(href="#").item-img
+							img(src="../../images/share/Bitmap3.png",alt="")
+							span.item-text 迪士尼卖的不止是儿童玩具
+						a(href="#").btn-primary 分享有惊喜
+		// 加载至底部
+		.share-header.share-header-reset
+			span 送君千里，终须一别
+// 遮罩
+.m-mask
+// 弹层-活动规则
+.share-rule
+	em.iconn-25
+	h2 活动规则
+	p
+		span 1.
+		| 给好友发红包，邀请好友成为国美Plus用户，好友领取红包并使用该红包完成下单，您即可再获得额外的奖励红包。
+	p
+		span 2.
+		| 您的好友必须是国美Plus的用户。
+	p
+		span 3.
+		| 好友领取红包后需在7天内完成10元以上线上支付订单且无退款行为。
+	p
+		span 4.
+		| 好友下单途径支持国美Plus客户端、WAP站、PC端。
+	p
+		span 5.
+		| 奖励红包会在好友下单后下发至您的账户，可在国美PlusAPP账户中查看。
+	p
+		span 6.
+		| 如有疑问可咨询国美Plus客服。

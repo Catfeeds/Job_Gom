@@ -1,0 +1,86 @@
+doctype html
+html(lang="zh-CN")
+	include ../common/head.jade
+	link(type="text/css",rel="stylesheet",href="../../css/public/public.css")
+	body.opg
+		include ../common/header.jade
+		.wrap-box.clearfix
+			.wrap-left
+				.menu
+					a(href="#").active 账号管理
+					a(href="#") 常用语配置
+					a(href="#") 修改密码
+					a(href="#") 查询聊天记录
+					a(href="#") 进入IM
+			.wrap-right.clearfix
+				.phrase-list
+					.list-bg
+						//ul上class="none"为隐藏block为显示
+						ul
+							li
+								//.icon-jia为加号.icon-jia.icon-jian为减号
+								em.icon-jia.icon-jian
+								span 问候语
+								ul
+									li
+										em.icon-jia.icon-jian
+										span 上午问候语
+										ul
+											li.active
+												span 早上好啊！有什么能帮到您的？尽管问我吧~
+											li
+												span 早上好啊！有什么能帮到您的？尽管问我吧~
+											li
+												span 早上好啊！有什么能帮到您的？尽管问我吧~1
+								ul
+									li
+										em.icon-jia
+										span 上午问候语
+							li
+								em.icon-jia
+								span 问候语
+								ul.none
+									li
+										em.icon-jia
+										span 上午问候语
+										ul
+											li
+												span 早上好啊！有什么能帮到您的？尽管问我吧~
+											li
+												span 早上好啊！有什么能帮到您的？尽管问我吧~
+											li
+												span 早上好啊！有什么能帮到您的？尽管问我吧~1
+				.phrase-form
+					p 标题
+					input(type="text",value="",placeholder="输入分类名")
+					p 内容
+					textarea(rows="3")
+					p.gray 创建人：Administrator；最后操作人：张三
+					p 操作
+					.option
+						a(href="javascript:;").btn 添加常用语
+						a(href="javascript:;").btn 添加平级分类
+						a(href="javascript:;").btn 添加子分类
+						.btn-box
+							a(href="javascript:;").btn
+								| 删除
+								em.icon-cha
+							a(href="javascript:;").btn
+								| 下移
+								em.icon-down
+							a(href="javascript:;").btn
+								| 上移
+								em.icon-up
+					.form-b
+						.fl
+							a(href="javascript:;").btn 导入
+							a(href="javascript:;").btn 模板下载
+						.fr
+							a(href="javascript:;").btn 取消
+							a(href="javascript:;").btn 保存
+					
+					
+					
+					
+					
+					

@@ -1,0 +1,60 @@
+//- extends layout.jade
+extends ../../../widget-platform/pug/layout/layout-m.jade
+
+//- index
+block content
+	.platform-tipsinfo
+		h5 说明
+		p 提示信息
+		p 具体查看结构，谢谢~
+		p.maty 有问题沟通-maty
+	//end
+
+	//- hint-1
+	div.platform-content
+		h3.platform-header 没有更多商品了
+		//- div.platform-intro
+		//- 	p 没有更多商品了
+		div.platform-example#hint-1
+			include ../../../../m-widget/hint/hint-1.jade
+		pre.platform-pre.hide
+			code.platform-code#hint-1_code
+			span.platform-jade pug
+			span.platform-jade.platform-html.actived html
+	//- hint-2
+	div.platform-content
+		h3.platform-header 我是有底线的
+		//- div.platform-intro
+		//- 	p 我是有底线的/加载更多
+		div.platform-example#hint-2
+			include ../../../../m-widget/hint/hint-2.jade
+		pre.platform-pre.hide
+			code.platform-code#hint-2_code
+			span.platform-jade pug
+			span.platform-jade.platform-html.actived html
+	//- hint-3
+	div.platform-content
+		h3.platform-header 查看全部商品
+		//- div.platform-intro
+		//- 	p 查看全部商品
+		div.platform-example#hint-3
+			include ../../../../m-widget/hint/hint-3.jade
+		pre.platform-pre.hide
+			code.platform-code#hint-3_code
+			span.platform-jade pug
+			span.platform-jade.platform-html.actived html
+	//- hint-4
+	div.platform-content
+		h3.platform-header 列表翻页
+		//- div.platform-intro
+		//- 	p 列表翻页
+		div.platform-example#hint-4
+			include ../../../../m-widget/hint/hint-4.jade
+		pre.platform-pre.hide
+			code.platform-code#hint-4_code
+			span.platform-jade pug
+			span.platform-jade.platform-html.actived html
+	script(type='text/javascript').
+		HtmlFormat.init(['hint-1','hint-2','hint-3','hint-4'],false,'_code','html','span.platform-jade');
+		$(".platform-hint").parent('li').addClass("actived");
+

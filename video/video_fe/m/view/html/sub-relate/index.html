@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="zh-CN" data-use-rem="750">
+<head>
+	<meta charset="utf-8">
+	<title>GomePlus视频频道</title>
+	<meta name="keywords" content="GomePlus视频频道" />
+	<meta name="description" content="" />
+	<meta name="format-detection" content="telephone=no">
+	<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no,minimal-ui" />
+	<meta name="x5-page-mode" content="no-title"/>
+	<link rel="stylesheet" type="text/css" href="/m/vm/dist/css/sub-relate.css">
+</head>
+<body>
+	<script>
+(function(win){var doc=win.document,html=doc.documentElement,option=html.getAttribute("data-use-rem");if(option===null){return}var baseWidth=parseInt(option).toString()==="NaN"?640:parseInt(option);var grids=baseWidth/100;var clientWidth=html.clientWidth||320;html.style.fontSize=clientWidth/grids+"px";var testDom=document.createElement("div");var testDomWidth=0;var adjustRatio=0;testDom.style.cssText="height:0;width:1rem;";doc.body.appendChild(testDom);var calcTestDom=function(){testDomWidth=testDom.offsetWidth;if(testDomWidth!==Math.round(clientWidth/grids)){adjustRatio=clientWidth/grids/testDomWidth;var reCalcRem=clientWidth*adjustRatio/grids;html.style.fontSize=reCalcRem+"px"}else{doc.body.removeChild(testDom)}};setTimeout(calcTestDom,20);var reCalc=function(){var newCW=html.clientWidth;if(newCW===clientWidth){return}clientWidth=newCW;html.style.fontSize=newCW*(adjustRatio?adjustRatio:1)/grids+"px"};if(!doc.addEventListener){return}var resizeEvt="orientationchange" in win?"orientationchange":"resize";win.addEventListener(resizeEvt,reCalc,false);doc.addEventListener("DOMContentLoaded",reCalc,false)})(window);
+</script>
+	<script type="text/javascript">
+
+	// 打开www.dev.gomeplus.com，登录后，在首页右键显示网页源码，使用userId，从cookie获取SCN
+
+    var $CONFIG = {
+        userId: 0, //用户id，为0标识未登录
+        nickName: "meimei",
+        avatar: "http://gfs14.gomein.net.cn/T1YvKTBsDv1RCvBVdK.png",
+		keyword: 1,
+		loadMore: false
+    };
+
+    $CONFIG['SCN'] = 'Pc0jlCMLaaiqQnibWrTq4gPL28MOEDjYnPLKpsmym0zY%2BvNSbbdW4Llpj7FNRkK3C%2B1C5N34cNmsxVrLMSqJMk24fxq2%2B%2B3xD9ixa1WDYsfBSnAt6AEreoT64L1afFLP11e0537078e957656ae2cf6fc4598811';
+</script>
+<script type="text/javascript">
+    // cms
+    $CONFIG['domain'] = 'http://m.v.dev.gomeplus.com/';
+
+    // php
+    $CONFIG['domain-user'] = 'http://api.be.v.dev.gomeplus.com';
+	/*$CONFIG['domain-user'] = 'http://api.be.v.pre.gomeplus.com';*/
+
+    $CONFIG['videoId'] = 1193; // pre -> 1193, 1194, 1195, 1208, 1204, 1187, 1169
+    $CONFIG['topicId'] = 562; // '587, 583, 584, 582, 562'
+    // $CONFIG['userId'] = '100018018011';
+</script>
+	<div id="wrap">
+		<header class="top-title">
+			<div class="left"><a class="icon-13" href="#"></a></div>
+			<h2>相关订阅号</h2>
+			<div class="right"><a class="compile" href="javascript:;"></a></div>
+		</header>
+		<div class="sub-relate-name">与TA相关</div>
+		<ul class="subDetails" data-id="subList">
+			<li class="msgList" data-id="subcontent">
+				<div class="msgNav">
+					<div class="msgNav-head fl"><img src="http://js-pre.meixincdn.com/m/vm/dist/imgs/public/default-head.jpg"></div>
+					<ul class="msgNav-msg fl">
+						<li class="msgNav-name">天使</li>
+						<li class="msgNav-intr">123天使3333</li>
+						<li class="msgNav-fans"><span>4</span>人订阅</li>
+					</ul>
+					<a class="subscripBtn fr" data-action="subscribe" data-subscribeid="625" data-status="0">
+						<span class="show"><em>+</em>订阅</span>
+						<span class="hide">已订阅</span>
+					</a>
+				</div>
+			</li>
+			<li class="msgList" data-id="subcontent">
+				<div class="msgNav">
+					<div class="msgNav-head fl"><img src="http://js-pre.meixincdn.com/m/vm/dist/imgs/public/default-head.jpg"></div>
+					<ul class="msgNav-msg fl">
+						<li class="msgNav-name">天使</li>
+						<li class="msgNav-intr">11天使111111</li>
+						<li class="msgNav-fans"><span>4</span>人订阅</li>
+					</ul>
+					<div class="subscripBtn fr" data-action="subscribe" data-subscribeid="625" data-status="0">
+						<span class="show"><em>+</em>订阅</span>
+						<span class="hide">已订阅</span>
+					</div>
+				</div>
+			</li>
+			<li class="msgList" data-id="subcontent">
+				<div class="msgNav">
+					<div class="msgNav-head fl"><img src="http://js-pre.meixincdn.com/m/vm/dist/imgs/public/default-head.jpg"></div>
+					<ul class="msgNav-msg fl">
+						<li class="msgNav-name">天使</li>
+						<li class="msgNav-intr">33333看看</li>
+						<li class="msgNav-fans"><span>4</span>人订阅</li>
+					</ul>
+					<div class="subscripBtn fr" data-action="subscribe" data-subscribeid="625" data-status="0">
+						<span class="show"><em>+</em>订阅</span>
+						<span class="hide">已订阅</span>
+					</div>
+				</div>
+			</li>
+		</ul>
+	</div>
+	<footer class="footer">
+	<a href="#" class="link1">
+		<em class="icon-1"></em>
+		<p>推荐</p>
+	</a>
+	<a href="#" class="link2">
+		<em class="icon-5"></em>
+		<p>订阅</p>
+	</a>
+	<a href="#" class="link3">
+		<em class="icon-9"></em>
+		<p>我的</p>
+	</a>
+</footer>
+	<script src="/m/vm/dist/js/vendor.js"></script>
+	<script src="/m/vm/dist/js/sub-relate.js"></script>
+</body>
+</html>

@@ -1,0 +1,66 @@
+doctype html
+html(lang="zh-CN" data-use-rem="750")
+	include ../../../m-widget/head/head.jade
+	link(type="text/css",rel="stylesheet",href="../../css/public/public-wap.css")
+	link(type="text/css",rel="stylesheet",href="../../css/module/log-reg/logreg.css")
+
+	body.opg.video-commodity
+		include ../../../m-widget/head/rem.jade
+		
+		header.header.header-private
+			span
+				a.head-back(href="javascript:;")
+					em.iconn-1
+
+			.m-switch.active
+		/// header
+
+		.pdlr80.mt140
+			.head-bx
+				// <div class="log-head"><img src="https://css-pre.meixincdn.com/CDN8105/dist/images/log-reg/login-defa-head.jpg" alt=""></div>
+				p.log-name
+					| 登录国美Plus 
+					br
+					span 支持国美门店和国美在线会员登录
+			.input-bx
+				.input-wrap
+					em.input-icon.icon-phone
+					input#username(type='text', autocomplete='off', placeholder='请输入手机号', value='')
+				.input-wrap
+					em.icon-tj.icon-lock
+					input#password1(type='password', autocomplete='off', maxlength='20', placeholder='请输入密码')
+					input#autologin(type='hidden', name='autologin')
+				.input-wrap.verify-code.get-code-wrap(style='display:none')
+					em.input-icon.icon-code
+					input#verify_code(type='text', placeholder='验证码')
+					a#change_verify_code.img(href='#')
+						img(src='/login/verify?sekey=login', style=' width: 100%; height: 100%;')
+				.log-password
+					a(href='/forgetpwd/index') 忘记密码
+					a(href='/regist/index') 立即注册
+			.log-btn
+				a#login_submit.default-btn(href='javascript:;', bp-data='{"event_id":"p000h003"}') 登录
+		.log-third-bx
+			.log-line
+				span 第三方登录
+			.log-icon-bx
+				span.qqBtn
+					a.icn-a(bp-data='{"event_id":"p000h003"}', href='https://graph.qq.com/oauth2.0/authorize?client_id=101234305&response_type=code&redirect_uri=https://m-pre.gomeplus.com/login/qqcallback')
+						em.icn-qq
+						p QQ
+				span.weiboBtn
+					a.icn-a(bp-data='{"event_id":"p000h003"}', href='https://api.weibo.com/oauth2/authorize?client_id=1338471859&redirect_uri=https%3A%2F%2Fm-pre.gomeplus.com%2Flogin%2Fwbcallback&response_type=code')
+						em.icn-wb
+						p 微博
+				span.yytBtn(bp-data='{"event_id":"p000h003"}', style='display: none')
+					a.icn-a(href='http://authtest.bonusepay.com/oauth2/authorize?app_id=e3ad07e3d7893b8cbfbcd2a94c17c797&state=gomeplus&response_type=code&scope=GetUserInfo&display=mobile')
+						em.icn-yyt
+						p 美付宝
+				span.xtxBtn(bp-data='{"event_id":"p000h003"}', style='display: none')
+					a.icn-a(href='http://10.128.11.110:16391/MVNO-UIP-LHDL/oauth2/authorize?response_type=code&app_id=708ad1c5-a096-4b39-97c0-5caa79ef8d0c&state=gomeplus&redirect_uri=https://m-pre.gomeplus.com/login/jixincallback')
+						em.icn-jxtx
+						p 极信通信
+				span.moreLoginBtn(style='display: block')
+					a.icn-a(href='#')
+						em.icn-more
+						p 更多

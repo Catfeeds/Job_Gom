@@ -1,0 +1,182 @@
+/* apply */
+@import "../../base/public.scss";
+
+.apply-wrap{
+	position:relative;
+	background: $bg;
+	.apply-fail{
+		padding:20px;
+		background:#FFF;
+		margin-bottom:20px;
+		h2{
+			height:46px;
+			line-height:46px;
+			font-size: 22px;
+			font-weight:normal;
+			text-align: center;
+		}
+		p{
+			color:$warning;
+			text-align:center;
+			padding:10px;
+			span{
+				padding:0 20px;
+				line-height:24px;
+				display:inline-block;
+			}
+		}
+	}
+
+	.apply-content{
+		padding:0 20px;
+		background:#FFF;
+	}
+	.apply-head{
+		padding:20px;
+		background:#FFF;
+		border-bottom:1px solid #f0f0f0;
+		h2{
+			height:46px;
+			line-height:46px;
+			font-size: 22px;
+			font-weight:normal;
+			text-align: center;
+		}
+	}
+	.apply-form{
+		background:#FFF;
+		width:800px;
+		margin: 0 auto;
+		.input-text,
+		.input-textarea{
+			width:650px;
+		}
+		.form-group{
+			label{
+				width:140px;
+				line-height: 40px;
+			}
+			.input-text{
+				height:40px;
+			}
+			.apply-user-type{
+				width:auto;
+				display:inline-block;
+				margin-right: 50px;
+				text-align:left;
+				height:40px;
+				input{
+					display:none;
+				}
+				i{
+					font-size:20px;
+					color:$primary;
+					margin:auto 5px auto 10px;
+				}
+				span{
+					vertical-align: 3px;
+				}
+			}
+			.apply-user-type.apply-disabled{
+				i{
+					color:#CCC;
+				}
+			}
+		}
+	}
+	.apply-title{
+		width:134px;
+		height:60px;
+		line-height:60px;
+		font-size:18px;
+		color:$primary;
+		padding-top:20px;
+		text-align:right;
+	}
+	.apply-submit{
+		padding:40px 0;
+		text-align:center;
+		.btn{
+			width:260px;
+			height:48px;
+			line-height:48px;
+			font-size:18px;
+		}
+	}
+
+	.apply-status-tips{
+		width:500px;
+		padding-bottom: 50px;
+		margin: 200px auto 0 auto;
+		text-align:center;
+		background-color:#FFF;
+		.status-img{
+			margin:0 auto;
+			width:86px;
+			height:86px;
+			border-radius:50%;
+			background-size:cover;
+		}
+		.received-img{
+			background:url('../../../imgs/public/apply-received.png');
+		}
+		.fail-img{
+			background:url('../../../imgs/public/apply-fail.png');
+		}
+		.success-img{
+			background:url('../../../imgs/public/apply-success.png');
+		}
+		.status-title{
+			height:40px;
+			line-height:40px;
+			margin-top:10px;
+			font-size:24px;
+		}
+		.status-tip{
+			height:30px;
+			line-height:30px;
+			margin-top:10px;
+			color:#999;
+			a{
+				color:$primary;
+				&:hover{
+					text-decoration:underline;
+				}
+			}
+		}
+	}
+	.apply-status-success{
+		padding:20px;
+		background:#FFF;
+		margin-bottom:20px;
+		.apply-status-tips{
+			width:360px;
+			padding-bottom: 0;
+			margin: 0 auto;
+			overflow:hidden;
+			.status-img{
+				width:56px;
+				height:56px;
+				float:left;
+				background-position:center;
+			}
+			.status-title,
+			.status-tip{
+				float:left;
+				margin-left: 10px;
+			}
+			.status-title{
+				font-size:18px;
+				height:26px;
+				line-height:26px;
+				margin-top: 7px;
+			}
+			.status-tip{
+				font-size:14px;
+				height:20px;
+				line-height:20px;
+				margin-top:0;
+			}
+		}
+	}
+}

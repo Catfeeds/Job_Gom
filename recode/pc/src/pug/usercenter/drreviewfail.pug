@@ -1,0 +1,51 @@
+doctype html
+html(lang="zh-CN")
+	include ../../widget/head/head.pug
+	link(type="text/css",rel="stylesheet",href="../../css/public/public.css")
+	link(type="text/css",rel="stylesheet",href="../../css/module/usercenter.css")
+	body.opg
+		.dr-bg
+			a(href="##").back-to-index
+			ul.info-steps
+				li.bar
+					span.active
+					span.active
+				li.step1.active
+					span.step-num
+						em 1
+					span.step-txt 填写资料
+				li.step2.active
+					span.step-num
+						em 2
+					span.step-txt 审核
+				li.step3.failed
+					span.step-num
+						em 3
+					span.step-txt 审核失败
+			.fail-bg-box
+				.dr-sprites.review-fail-bg
+			p.review-txt
+				span.txt1 您的身份证信息有误，请重新填写！
+			a(href="##").pc-btn.pc-btnh45.dr-btn.dr-create-btn 修改
+			.fail-info
+				p
+					span 真实姓名：
+					span 李明
+				p
+					span 身份证号：
+					span 127428199006130821
+				p 实名认证（身份证正反面照，手持身份证件照）：
+				ul.id-pics
+					li
+						img(src="../../images/public/404-2.png")
+					li
+						img(src="../../images/public/404-2.png")
+					li
+						img(src="../../images/public/404-2.png")
+				p
+					span 达人类别：
+					span 美食达人
+				p
+					span 个人介绍：
+					span.intro 微博号：@李明90
+					

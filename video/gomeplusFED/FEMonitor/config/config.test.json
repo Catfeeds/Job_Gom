@@ -1,0 +1,5 @@
+{
+  "server_ip": "mongodb://10.69.205.70:27017/sitespeed",
+  "server_coll": "speedinfos",
+  "sitespeedpath": ""
+}

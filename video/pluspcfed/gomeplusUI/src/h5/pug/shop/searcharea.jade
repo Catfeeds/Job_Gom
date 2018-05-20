@@ -1,0 +1,48 @@
+doctype html
+html(lang="zh-CN",data-use-rem="750")
+    include ../../../m-widget/head/head.jade
+    link(type="text/css",rel="stylesheet",href="../../css/public/public-wap.css")
+    link(type="text/css",rel="stylesheet",href="../../css/module/search.css")
+    
+    body.opg.search
+        include ../../../m-widget/head/rem.jade
+
+        .m-mask
+            .filter-box.showfilter-transition
+                .search-filter
+                    header.header.erea
+                        span
+                            a.head-back(href="javascript:;")
+                                em.iconn-1
+                        h1.head-title 配送地区
+                    .erea-bx
+                        a(href="javascript:;") 黑龙江省
+                        a(href="javascript:;") 牡丹江市牡丹市dfdf
+                        a.active(href="javascript:;") 请选择请选择请选择请选择
+                    .heat-box
+                        ul.heat-list
+                            li
+                                span 哈尔滨市
+                                em.iconn-94
+                            li
+                                span 哈尔滨市
+                                em.iconn-94
+                            li.active
+                                span 牡丹江市
+                                em.iconn-94
+                            -for(i=0;i<40;i++)
+                                li
+                                    span 牡丹江市
+                                    em.iconn-94
+
+
+
+
+
+
+
+
+
+
+
+

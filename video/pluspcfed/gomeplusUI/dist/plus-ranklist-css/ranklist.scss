@@ -1,0 +1,163 @@
+@charset "UTF-8";
+// @ Css name：美店排行榜
+// @ Author： mjd
+// @ Date： 2017-08-10 16:31
+// @ Last Modified by： ————
+// @ Last Modified time：————
+//==========================
+
+@import "../plus-sasscore/_configure.scss";
+@import "../plus-widget/reset/_mixin.scss";
+
+// rank-show
+.rank-show .rank-data:first-child{
+	margin-bottom:rem(24);
+	.bor-b:after{
+		background-color:#fff!important;	
+	}
+}
+// ranklist
+.ranklist{
+	// rankCup
+	.rankCup{
+		width:rem(750);
+		height:rem(320);
+		background:url('cup.png') no-repeat;
+		-webkit-background-size:cover;
+		background-size:cover;
+	}
+	.rank-data{
+		background-color:#fff;
+		ul{
+			padding-left:rem(50);
+			padding-right:rem(50);
+		}
+		li{
+			padding:rem(15) 0;
+			overflow:hidden;
+		}
+	}
+	// 金牌 | 银牌 | 铜牌
+	.rank-gold,.rank-silver,.rank-broze{
+		.rank-number{
+			font-size:0;
+			line-height:0;
+			span{
+				font-size:0;
+				display:inline-block;
+				width:rem(36);
+				height:rem(64);
+				@include background-size(contain,webkit);
+				background-repeat:no-repeat;
+			}
+		}
+	}
+	// 金牌
+	.rank-gold{
+		.rank-number{
+			span{
+				width:rem(66);
+				height:rem(82);
+				background-image:url('gold.png');
+			}
+		}
+	}
+	// 银牌
+	.rank-silver{
+		.rank-number{
+			span{
+				background-image:url('silver.png');
+			}
+		}
+	}
+	// 铜牌
+	.rank-broze{
+		.rank-number{
+			span{
+				background-image:url('broze.png');
+			}
+		}
+	}
+	// 排名
+	.rank-number{
+		margin-right:rem(18);
+		width:rem(100);
+		font-size:0;
+		text-align:center;
+		color:#000;
+		span{
+			line-height:rem(44);
+			font-size:rem(42);
+			&.rank-number-long{
+				font-size:rem(32);
+			}
+			&.rank-number-no{
+				font-size:rem(28);
+			}
+		}
+	}
+	// 头像
+	.rank-face{
+		overflow:hidden;
+		width:rem(90);
+		height:rem(90);
+		margin-right:rem(54);
+		-webkit-border-radius:50%;
+		border-radius:50%;
+		img{
+			display:block;
+			width:rem(90);
+			height:rem(90);
+		}
+	}
+	// 店名 | 店主 | 地址
+	.rank-content{
+		h2{
+			line-height:rem(36);
+			font-size:rem(30);
+			color:#333;
+			@include ellipsis($type:pc){
+				max-width:rem(370);
+			}
+			a{
+				color:#333;
+			}
+		}
+		p{
+			line-height:0;
+			font-size:rem(22);
+			color:#999;
+			a{
+				color:#999;
+			}
+			span{
+				display:inline-block;
+				vertical-align:middle;
+				line-height:rem(26);
+			}
+			.rank-name{
+				margin-right:rem(42);
+				@include ellipsis($type:pc){
+					max-width:rem(130);
+				}
+			}
+			.rank-address{
+				@include ellipsis($type:pc){
+					max-width:rem(210);
+				}
+			}
+		}
+	}
+	// 线
+	.bor-b:after{
+		background-color:#E6E6E6;
+	}
+	// 底线
+	.page-no{
+		color: #ccc;
+		font-size: 0.24rem;
+		line-height: 0.34rem;
+		text-align: center;
+		padding: 0.38rem 0rem;
+	}
+}

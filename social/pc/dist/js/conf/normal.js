@@ -1,0 +1,1 @@
+webpackJsonp([18],[function(n,c,a){(function($){"use strict";$("[data-node=warning-icon]").on("click",function(){$("[data-node=search-warning]").hide()})}).call(c,a(1))}]);

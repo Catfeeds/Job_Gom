@@ -1,0 +1,192 @@
+doctype html
+html(lang="zh-CN")
+	include ../../../../../gomeplusUI/pc/src/jade/head.jade
+	link(type="text/css",rel="stylesheet",href="../../css/public/public.css")
+	link(type="text/css",rel="stylesheet",href="../../css/module/circle/circle.css")
+	body.opg.bg-fff
+		include ../../../../../gomeplusUI/pc/src/jade/header.jade
+		include ../../../../../gomeplusUI/pc/src/jade/menu.jade
+		.wrap-box
+			.circle-top
+				img(src="https://i6.meixincdn.com/v1/img/T1GRYTB7KT1R4cSCrK.png").img
+				.head-title
+					img(src="https://i6.meixincdn.com/v1/img/T1GRYTB7KT1R4cSCrK.png")
+					.title-name
+						h2
+							| 圈子名圈子名圈子名圈子名圈子名圈子名 
+							span.color-r 时尚
+							span.color-o 时尚
+							span.color-y 时尚
+							span.color-g 时尚
+							span.color-r2 时尚
+							span.color-o2 时尚
+					.title-text
+						a(href="javascript:;").pc-btn 加入圈子
+						span
+							| 成员：
+							em 200
+						span
+							| 话题：
+							em 200
+			.circle-list.clearfix
+				.list-title
+					a(href="javascript:;").active 全部话题
+					a(href="javascript:;") 精选话题
+					a(href="javascript:;").pc-btn
+						em.icon &#xe90e;
+						| 发布话题
+				.list-left
+					ul.clearfix
+						//全部
+						li
+							.title
+								span.bg-r 置顶
+								span.bg-y 精品
+								a(href="#") #纠结#伦敦时装周又出幺蛾子
+							p.desc 没想到中国还有这样一座城！整座城就是一个大型的八卦阵！相传这座八卦城是由全真教七子之一的丘处机设计的，8条主干道分别对应“乾坎艮震巽离兑的”64条街路路相通，处处充满玄机。
+							.img-list
+								dl.clearfix
+									- for(var i = 0; i < 6; i++)
+										dd
+											a(href="javascript:;")
+												img(src="https://i6.meixincdn.com/v1/img/T1GRYTB7KT1R4cSCrK.png")
+												em.icon-video
+								a(href="javascript:;").more 展开全部
+							.goods-list.clearfix
+								.list-box
+									a(href="#")
+										img(src="https://i6.meixincdn.com/v1/img/T1GRYTB7KT1R4cSCrK.png")
+										p
+											span.fl ￥2199.00
+											span.fr 返利
+							.time
+								em.icon.icon-time &#xe98e;
+								| 3分钟前更新
+							.name
+								a(href="#")
+									img(src="https://i6.meixincdn.com/v1/img/T1GRYTB7KT1R4cSCrK.png")
+									| 英俊的叔叔
+								span
+									em.icon &#xeaca;
+									| 238
+								span
+									em.icon &#xeac9;
+									| 238
+						//仅标题
+						li
+							.title
+								span.bg-r 置顶
+								span.bg-y 精品
+								a(href="#") #纠结#伦敦时装周又出幺蛾子
+							.name
+								a(href="#")
+									img(src="https://i6.meixincdn.com/v1/img/T1GRYTB7KT1R4cSCrK.png")
+									| 英俊的叔叔
+								span
+									em.icon &#xeaca;
+									| 238
+								span
+									em.icon &#xeac9;
+									| 238
+						//仅描述
+						li
+							.title
+								span.bg-r 置顶
+								span.bg-y 精品
+								a(href="#") #纠结#伦敦时装周又出幺蛾子
+							p.desc 没想到中国还有这样一座城！整座城就是一个大型的八卦阵！相传这座八卦城是由全真教七子之一的丘处机设计的，8条主干道分别对应“乾坎艮震巽离兑的”64条街路路相通，处处充满玄机。
+							.time
+								em.icon.icon-time &#xe98e;
+								| 3分钟前更新
+							.name
+								a(href="#")
+									img(src="https://i6.meixincdn.com/v1/img/T1GRYTB7KT1R4cSCrK.png")
+									| 英俊的叔叔
+								span
+									em.icon &#xeaca;
+									| 238
+								span
+									em.icon &#xeac9;
+									| 238
+						//描述+图片列表
+						li
+							.title
+								span.bg-r 置顶
+								span.bg-y 精品
+								a(href="#") #纠结#伦敦时装周又出幺蛾子
+							p.desc 没想到中国还有这样一座城！整座城就是一个大型的八卦阵！相传这座八卦城是由全真教七子之一的丘处机设计的，8条主干道分别对应“乾坎艮震巽离兑的”64条街路路相通，处处充满玄机。
+							.img-list
+								dl.clearfix
+									- for(var i = 0; i < 6; i++)
+										dd
+											a(href="javascript:;")
+												img(src="https://i6.meixincdn.com/v1/img/T1GRYTB7KT1R4cSCrK.png")
+												em.icon-video
+								a(href="javascript:;").more 展开全部
+							.time
+								em.icon.icon-time &#xe98e;
+								| 3分钟前更新
+							.name
+								a(href="#")
+									img(src="https://i6.meixincdn.com/v1/img/T1GRYTB7KT1R4cSCrK.png")
+									| 英俊的叔叔
+								span
+									em.icon &#xeaca;
+									| 238
+								span
+									em.icon &#xeac9;
+									| 238
+						//描述+商品
+						li
+							.title
+								span.bg-r 置顶
+								span.bg-y 精品
+								a(href="#") #纠结#伦敦时装周又出幺蛾子
+							p.desc 没想到中国还有这样一座城！整座城就是一个大型的八卦阵！相传这座八卦城是由全真教七子之一的丘处机设计的，8条主干道分别对应“乾坎艮震巽离兑的”64条街路路相通，处处充满玄机。
+							.goods-list.clearfix
+								.list-box
+									a(href="#")
+										img(src="https://i6.meixincdn.com/v1/img/T1GRYTB7KT1R4cSCrK.png")
+										p
+											span.fl ￥2199.00
+											span.fr 返利
+							.time
+								em.icon.icon-time &#xe98e;
+								| 3分钟前更新
+							.name
+								a(href="#")
+									img(src="https://i6.meixincdn.com/v1/img/T1GRYTB7KT1R4cSCrK.png")
+									| 英俊的叔叔
+								span
+									em.icon &#xeaca;
+									| 238
+								span
+									em.icon &#xeac9;
+									| 238
+					.page
+						a(href="javascript:;").disabled 上一页
+						a(href="javascript:;") 1
+						a(href="javascript:;") 2
+						a(href="javascript:;") 3
+						a(href="javascript:;").active 4
+						a(href="javascript:;") 5
+						span ···
+						a(href="javascript:;") 100
+						a(href="javascript:;") 下一页
+						a(href="javascript:;") 最后一页
+				.list-right
+			.no-topic
+				.txt.clearfix
+					em.icon &#xe960;
+					p 
+						span 抱歉，该圈子还没有话题！
+						span 快去发布本圈子的
+							span.red 第一个话题
+							| 吧！
+			.more-comments
+				a(href="##").clearfix
+					span
+						img(src="../../images/circle/small-logo.png")
+						| 查看更多评论
+						em.icon.icon-right &#xe98c;
+		include ../../../../../gomeplusUI/pc/src/jade/footer.jade

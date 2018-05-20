@@ -1,0 +1,377 @@
+extends ../plus-widget/head/head.jade
+block style
+	link(type="text/css",rel="stylesheet",href="myrebate.css")
+block body
+	body.opg.myrebate
+		include ../plus-widget/head/rem.jade
+		.m-openapp
+		header.header
+				.h-left
+					a.h-back(href="javascript:;")
+						em.iconn-1
+				.h-cnt.flex-cell 
+					h1 我的返利 
+				.h-right
+					a.h-btn(href="javascript:;")
+						帮助
+		// /header
+		.head-top
+			.amount-yj
+				h3 +579.60
+				p 预计待入账
+			.amount-box
+				ul
+					li 已入账
+						span 242.90
+					li 已失效
+						span 136.50
+		ol.external-link
+			li 
+				img.icon(src="img-1.png")
+				| 多赚外快
+			li 
+				img.icon(src="img-2.png")
+				| 返利精选
+			li 
+				img.icon(src="img-3.png")
+				| 提升额度
+			li 
+				img.icon(src="img-4.png")
+				| 交流圈 
+
+		//- section.banner-box
+			ul.swiper-wrapper
+				li
+					a(href="#")
+						img(src="http://gfs7.gomein.net.cn/T15mKvByLX1RCvBVdK.jpg")
+				li
+					a(href="#")
+						img(src="http://gfs7.gomein.net.cn/T15mKvByLX1RCvBVdK.jpg")
+				li
+					a(href="#")
+						img(src="http://gfs7.gomein.net.cn/T15mKvByLX1RCvBVdK.jpg")
+			.swiper-poit
+				span.curr
+				span
+				span
+		.swiper-container
+			.swiper-wrapper
+				.swiper-slide
+					img(src="http://gfs7.gomein.net.cn/T15mKvByLX1RCvBVdK.jpg")
+				.swiper-slide
+					img(src="http://gfs7.gomein.net.cn/T15mKvByLX1RCvBVdK.jpg")
+				.swiper-slide
+					img(src="http://gfs7.gomein.net.cn/T15mKvByLX1RCvBVdK.jpg")
+			.swiper-poit.swiper-pagination
+				span.swiper-pagination-bullet
+				span
+				span.swiper-pagination-bullet-active
+		.m-tabs.cle-tab
+			ul.m-menu.bor-b.tab-head
+				li.flex-cell.active
+					a.link(href="javascript:;") 待入账
+				li.flex-cell
+					a.link(href="javascript:;") 已入账
+				li.flex-cell
+					a.link(href="javascript:;") 已失效
+				li.flex-cell.j-choose
+					a.link(href="javascript:;") 筛选
+						i.icon-c		
+		.t-content
+			.m-mask-private
+				.m-toast-logo
+					.t-logo
+			.loading-container(style="display:none")
+				.loading-wrapper
+					.loading.loading_play
+			ol.prout-list.invalid-list(style='display:none')
+				li
+					div.info
+						strong 4.90
+						| 国美币
+						.cause 失效原因：
+							span 订单退货
+					.img-txt
+						.img 
+							img(src="http://img14.360buyimg.com/n4/s130x130_jfs/t3133/270/4539509207/110226/59267230/584b56b9Nbb09c427.jpg")
+						.txt
+							p 双面设计云朵刺绣3条装双层提花刺绣毛巾
+							p.status 您购买了该商品
+							p.date 下单时间：2016.06.22 17:46
+					i.invalid-tips 购买 
+				li
+					div.info
+						strong 4.90
+						| 国美币
+						.cause 失效原因：
+							span 订单取消
+					.img-txt
+						.img 
+							img(src="http://img14.360buyimg.com/n4/s130x130_jfs/t3133/270/4539509207/110226/59267230/584b56b9Nbb09c427.jpg")
+						.txt
+							p 双面设计云朵刺绣3条装双层提花刺绣毛巾
+							p.status 哇咔咔08购买了你分享的商品
+							p.date 下单时间：2016.06.22 17:46
+					i.invalid-tips.list-tips-2 分享 
+				li
+					div.info
+						strong 4.90
+						| 国美币
+						.cause 失效原因：
+							span 订单拒收
+					.img-txt
+						.img 
+							img(src="http://img14.360buyimg.com/n4/s130x130_jfs/t3133/270/4539509207/110226/59267230/584b56b9Nbb09c427.jpg")
+						.txt
+							p 双面设计云朵刺绣3条装双层提花刺绣毛巾
+							p.status 
+								span 哇咔咔08
+								| 购买了你美店的商品
+							p.date 下单时间：2016.06.22 17:46
+					i.invalid-tips.list-tips-3 美店 
+				li.no-more 没有更多内容
+
+			ol.prout-list.credited-list(style='display:none')
+				li
+					div.info
+						strong 4.90
+						| 国美币
+						.cause 到账时间：2017.07.14 18:35
+					.img-txt
+						.img 
+							img(src="http://img14.360buyimg.com/n4/s130x130_jfs/t3133/270/4539509207/110226/59267230/584b56b9Nbb09c427.jpg")
+						.txt
+							p 双面设计云朵刺绣3条装双层提花刺绣毛巾
+							p.status 您购买了该商品
+							p.date 下单时间：2016.06.22 17:46
+					i.invalid-tips 购买 
+				li
+					div.info
+						strong 4.90
+						| 国美币
+						.cause 到账时间：2017.07.14 18:35
+					.img-txt
+						.img 
+							img(src="http://img14.360buyimg.com/n4/s130x130_jfs/t3133/270/4539509207/110226/59267230/584b56b9Nbb09c427.jpg")
+						.txt
+							p 双面设计云朵刺绣3条装双层提花刺绣毛巾
+							p.status 
+								span 哇咔咔08
+								| 购买了你分享的商品
+							p.date 下单时间：2016.06.22 17:46
+					i.invalid-tips.list-tips-2 分享 
+				li
+					div.info
+						strong 4.90
+						| 国美币
+						.cause 到账时间：2017.07.14 18:35
+					.img-txt
+						.img 
+							img(src="http://img14.360buyimg.com/n4/s130x130_jfs/t3133/270/4539509207/110226/59267230/584b56b9Nbb09c427.jpg")
+						.txt
+							p 双面设计云朵刺绣3条装双层提花刺绣毛巾
+							p.status 
+								span 哇咔咔08
+								| 购买了你美店的商品
+							p.date 下单时间：2016.06.22 17:46
+					i.invalid-tips.list-tips-3 美店 
+				li
+					div.info
+						strong 4.90
+						| 国美币
+						.cause 到账时间：2017.07.14 18:35
+					.img-txt
+						.img 
+							img(src="http://img14.360buyimg.com/n4/s130x130_jfs/t3133/270/4539509207/110226/59267230/584b56b9Nbb09c427.jpg")
+						.txt
+							//- p 双面设计云朵刺绣3条装双层提花刺绣毛巾
+							p.status 
+								span "哇咔咔08"
+								| 用户受您邀请，成功注册国美 
+							p.date 下单时间：2016.06.22 17:46
+					i.invalid-tips.list-tips-4 奖励 
+				li
+					div.info
+						strong 4.90
+						| 国美币
+						.cause 到账时间：2017.07.14 18:35
+					.img-txt
+						.img 
+							img(src="http://img14.360buyimg.com/n4/s130x130_jfs/t3133/270/4539509207/110226/59267230/584b56b9Nbb09c427.jpg")
+						.txt
+							//- p 双面设计云朵刺绣3条装双层提花刺绣毛巾
+							p.status 
+								span 哇咔咔08
+								| 商家受您邀请，成功入驻国美
+							p.date 下单时间：2016.06.22 17:46
+					i.invalid-tips.list-tips-4 奖励
+				
+				li
+					div.info
+						strong 4.90
+						| 国美币
+						.cause 到账时间：2017.07.14 18:35
+					.img-txt
+						.img 
+							img(src="http://img14.360buyimg.com/n4/s130x130_jfs/t3133/270/4539509207/110226/59267230/584b56b9Nbb09c427.jpg")
+						.txt
+							p 双面设计云朵刺绣3条装双层提花刺绣毛巾
+							p.status 由
+								span 哇咔咔08
+								| 商家成功售出
+							p.date 下单时间：2016.06.22 17:46
+					i.invalid-tips.list-tips-4 奖励
+				li
+					div.info
+						strong 4.90
+						| 国美币
+						.cause 到账时间：2017.07.14 18:35
+					.img-txt
+						.img 
+							img(src="http://img14.360buyimg.com/n4/s130x130_jfs/t3133/270/4539509207/110226/59267230/584b56b9Nbb09c427.jpg")
+						.txt
+							p 活动名称家装大件一起购
+							p.status 由
+								span 哇咔咔08
+								| 点击了您分享的活动
+							p.date 下单时间：2016.06.22 17:46
+					i.invalid-tips.list-tips-4 奖励
+				li.no-more 没有更多内容
+
+			ol.prout-list.Unrecord-list(style='display:none')
+				li
+					div.info
+						strong 4.90
+						| 国美币
+						//- .cause 到账时间：2017.07.14 18:35
+					.img-txt
+						.img 
+							img(src="http://img14.360buyimg.com/n4/s130x130_jfs/t3133/270/4539509207/110226/59267230/584b56b9Nbb09c427.jpg")
+						.txt
+							p 双面设计云朵刺绣3条装双层提花刺绣毛巾
+							p.status 您购买了该商品
+							p.date 下单时间：2016.06.22 17:46
+					i.invalid-tips 购买 
+				li
+					div.info
+						strong 4.90
+						| 国美币
+						//- .cause 到账时间：2017.07.14 18:35
+					.img-txt
+						.img 
+							img(src="http://img14.360buyimg.com/n4/s130x130_jfs/t3133/270/4539509207/110226/59267230/584b56b9Nbb09c427.jpg")
+						.txt
+							p 双面设计云朵刺绣3条装双层提花刺绣毛巾
+							p.status 
+								span 哇咔咔08
+								| 购买了你分享的商品
+							p.date 下单时间：2016.06.22 17:46
+					i.invalid-tips.list-tips-2 分享 
+				li
+					div.info
+						strong 4.90
+						| 国美币
+						//- .cause 到账时间：2017.07.14 18:35
+					.img-txt
+						.img 
+							img(src="http://img14.360buyimg.com/n4/s130x130_jfs/t3133/270/4539509207/110226/59267230/584b56b9Nbb09c427.jpg")
+						.txt
+							p 双面设计云朵刺绣3条装双层提花刺绣毛巾
+							p.status 
+								span 哇咔咔08
+								| 购买了你美店的商品
+							p.date 下单时间：2016.06.22 17:46
+					i.invalid-tips.list-tips-3 美店 
+				li
+					div.info
+						strong 4.90
+						| 国美币
+						//- .cause 到账时间：2017.07.14 18:35
+					.img-txt
+						.img 
+							img(src="http://img14.360buyimg.com/n4/s130x130_jfs/t3133/270/4539509207/110226/59267230/584b56b9Nbb09c427.jpg")
+						.txt
+							//- p 双面设计云朵刺绣3条装双层提花刺绣毛巾
+							p.status 
+								span "哇咔咔08"
+								| 用户受您邀请，成功注册国美 
+							p.date 下单时间：2016.06.22 17:46
+					i.invalid-tips.list-tips-4 奖励 
+				li
+					div.info
+						strong 4.90
+						| 国美币
+						//- .cause 到账时间：2017.07.14 18:35
+					.img-txt
+						.img 
+							img(src="http://img14.360buyimg.com/n4/s130x130_jfs/t3133/270/4539509207/110226/59267230/584b56b9Nbb09c427.jpg")
+						.txt
+							//- p 双面设计云朵刺绣3条装双层提花刺绣毛巾
+							p.status 
+								span 哇咔咔08
+								| 商家受您邀请，成功入驻国美
+							p.date 下单时间：2016.06.22 17:46
+					i.invalid-tips.list-tips-4 奖励
+				
+				li
+					div.info
+						strong 4.90
+						| 国美币
+						//- .cause 到账时间：2017.07.14 18:35
+					.img-txt
+						.img 
+							img(src="http://img14.360buyimg.com/n4/s130x130_jfs/t3133/270/4539509207/110226/59267230/584b56b9Nbb09c427.jpg")
+						.txt
+							p 双面设计云朵刺绣3条装双层提花刺绣毛巾
+							p.status 由
+								span 哇咔咔08
+								| 商家成功售出
+							p.date 下单时间：2016.06.22 17:46
+					i.invalid-tips.list-tips-4 奖励
+				li
+					div.info
+						strong 4.90
+						| 国美币
+						//- .cause 到账时间：2017.07.14 18:35
+					.img-txt
+						.img 
+							img(src="http://img14.360buyimg.com/n4/s130x130_jfs/t3133/270/4539509207/110226/59267230/584b56b9Nbb09c427.jpg")
+						.txt
+							p 活动名称家装大件一起购
+							p.status 由
+								span 哇咔咔08
+								| 点击了您分享的活动
+							p.date 下单时间：2016.06.22 17:46
+					i.invalid-tips.list-tips-4 奖励
+				li.no-more(style='display:none') 没有更多内容
+				.dropload-down
+					.m-load-more
+			.m-prompt(style='display:none')
+				.pro-img
+					a(href="#")
+						img(src="error.png")
+				.pro-txt
+					| 最近视力下降了，返利都看不到钱了~
+				.btn.m-btn 去赚钱
+			// /暂无
+		.maker(style='display:none')
+		.dlg-class(style='display:none')
+			div.hd 请选择分类
+				i.close X
+			ul
+				li
+					i.checked
+					| 全选
+				li 
+					i.not-check
+					| 我购买的商品
+				li 
+					i.not-check
+					| 我分享的商品，其他人购买
+				li 
+					i.not-check
+					| 我美丽的商吕成功卖出的
+				li 
+					i.not-check
+					| 其他的奖励。
+			div.btn 确定

@@ -1,0 +1,65 @@
+.m-downapp {
+	position: relative;
+	top:0;
+    height: 1rem;
+    width: 100%;
+    z-index: 1000;
+    .app-box {
+    	position: fixed;
+	    padding: 0.13rem 0.5rem 0.12rem 0.74rem;
+	    left: 0;
+	    right: 0;
+	    top: 0;
+	    z-index: 1000;
+	    background-color: #333;
+	    height: .75rem;
+	}
+    .app-close {
+	    padding: 0.14rem;
+	    position: absolute;
+	    left: .15rem;
+	    top: .2rem;
+	    em {
+		    width: 0.22rem;
+		    height: 0.22rem;
+		    color: #FFF;
+		    font-size: 0.26rem;
+		    margin-top: 0.2rem;
+		}
+	}
+	.app-logo {
+	    width: 0.75rem;
+	    height: 0.75rem;
+	    float: left;
+	    -webkit-border-radius: 0.15rem;
+	    border-radius: 0.15rem;
+	    display: block;
+	}
+	.app-tit {
+	    color: #FFF;
+	    font-size: 0.28rem;
+	    line-height: 0.36rem;
+	    position: absolute;
+	    left: 1.45rem;
+	    top: 50%;
+	    padding-right: 28%;
+	    padding-left: 0.25rem;
+	    -webkit-transform: translateY(-50%);
+	    transform: translateY(-50%);
+	}
+	.app-btn {
+	    position: absolute;
+	    right: 0;
+	    top: -0.1rem;
+	    width: 25%;
+	    height: 100%;
+	    font-size: 0.28rem;
+	    line-height: inherit;
+	    margin-top: 0.1rem;
+	    line-height: 1rem;
+	    text-align: center;
+	    background-color: #EE1955;
+	    border-radius: 0;
+	    color: #fff;
+	}
+}

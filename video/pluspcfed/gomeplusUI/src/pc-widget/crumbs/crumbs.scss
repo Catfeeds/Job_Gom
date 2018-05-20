@@ -1,0 +1,45 @@
+@import '../config/_base.scss';
+@import '../config/_mixins.scss';
+.opg{
+  .crumbs-box{
+    width: auto;
+    height: $crunb-h54;
+    line-height:$crunb-h54;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    span{
+      display: block;
+      display: block;
+      color: $font-grey-normal;
+      font-size: $text14;
+      padding-right: 10px;
+      float: left;
+      text-decoration: none;
+      &.crnmb-activ{
+        color: $link-hover;
+        cursor: auto;
+      }
+    }
+    a{
+      display: block;
+      color: $link-color;
+      font-size: $text14;
+      padding-right: 10px;
+      float: left;
+      text-decoration: none;
+      &:hover{
+        color: $link-hover;
+      }
+    }
+    em{
+      float: left;
+      padding-right: 10px;
+      color: $color-gray;
+      font-style: normal;
+    }
+    .disabled{
+      color: $color-default;
+    }
+  }
+}

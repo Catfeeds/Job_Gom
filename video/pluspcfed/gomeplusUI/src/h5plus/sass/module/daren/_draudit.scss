@@ -1,0 +1,62 @@
+@charset "UTF-8";
+// @ Css name：达人申请-初始&完成&审核失败
+// @ Author： Kan Jingjing
+// @ Date： 2017-05-12
+// @ Last Modified by： Kan Jingjing
+// @ Last Modified time：2017-05-12
+//==========================
+
+.title-audit{
+	width: rem(168);
+	height: rem(50);
+	margin: rem(236) auto 0;
+	background-position: rem(0 -390);
+}
+.audit-txt{
+	width: rem(500);
+	height: rem(78);
+	margin: rem(76 0 0 148);
+	background: url(../../../images/daren/dr-txt.png) no-repeat;
+	background-size: contain;
+}
+.audit-data{
+	margin-top: rem(54);
+	padding: rem(16 52 48 40);
+	background-color: #fff;
+	li{
+		line-height: rem(48);
+		font-size: rem(30);
+		margin-top: rem(22);
+	}
+	p{
+		word-break: break-all;
+	}
+}
+
+//审核失败
+.title-fail{
+	width: rem(212);
+	height: rem(52);
+    margin: 2.36rem auto 0;
+	background-position: rem(0 -456);
+}
+.fail-txt{
+	line-height: rem(42);
+	font-size: rem(28);
+	text-align: center;
+	padding: rem(0 128);
+	margin-top: rem(66);
+	word-break: break-all;
+}
+.modify-btn{
+	display: block;
+	width: rem(236);
+	height: rem(94);
+	margin: rem(40) auto rem(-10);
+	span{
+		display: inline-block;
+		width: rem(74);
+		height: rem(36);
+		background-position: rem(0 -644);
+	}
+}

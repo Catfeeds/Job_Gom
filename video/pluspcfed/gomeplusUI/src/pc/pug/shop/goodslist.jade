@@ -1,0 +1,34 @@
+doctype html
+html(lang="zh-CN")
+	include ../../../pc-widget/head/head.jade
+	link(type="text/css",rel="stylesheet",href="../../css/public/public.css")
+	link(type="text/css",rel="stylesheet",href="../../css/module/goods-list.css")
+	body.opg
+		include ../../../pc-widget/header/header.jade
+		include ../../../pc-widget/menu/menu.jade
+		.wrap-box
+			.shop-title.clearfix
+				include ../../../pc-widget/crumbs/crumbs.jade
+				.search-warning
+					| 为您显示“
+					span 衣服
+					| ”相关商品，仍然搜索“
+					span.line-under 衣服
+					| ”
+					// icon替换 icon
+					em.iconn-7
+				include ../../../pc-widget/sort/sort.jade
+			.shop-list
+				ul.clearfix
+					- for (var x = 0; x < 35; x++)
+						li
+							a(href="#")
+								em.icon-fan 返
+								img(src="https://i6.meixincdn.com/v1/img/T1GRYTB7KT1R4cSCrK.png")
+								.text
+									| ￥
+									span 259.00
+									p 我新依旧心潮澎湃要你命300湃要你命300
+		include ../../../pc-widget/footer/footer.jade
+			
+		

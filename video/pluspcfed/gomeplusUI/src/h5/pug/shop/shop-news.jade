@@ -1,0 +1,192 @@
+doctype html
+html(lang="zh-CN",data-use-rem="750")
+	include ../../../m-widget/head/head.jade
+	link(type="text/css",rel="stylesheet",href="../../css/public/public-wap.css")
+	link(type="text/css",rel="stylesheet",href="../../css/module/shop.css")
+	
+	body.opg
+		include ../../../m-widget/head/rem.jade
+
+		header.header
+			span
+				a.head-back(href="javascript:;")
+					em.iconn-1
+			.head-search.w480
+				em.iconn-10
+				input.sec-ipt(type="search" placeholder="搜索店铺内商品" disabled="true")
+			span
+				a.head-icn(href="javascript:;")
+					em.iconn-3
+				a.head-icn(href="javascript:;")
+					em.iconn-4
+		// /header
+
+		.shopindex-head
+			.head-content
+				.head-l
+					img(src="../../images/coupon_share_logo.jpg")
+					span.franchise 专营店
+				.head-c
+					h3  宇宙超级无敌掌门狗的店
+					.storelevel
+						em.ic-jin
+						em.ic-yin
+						em.ic-tong
+				.head-r
+					a(href="##").like.active
+						em.iconn-12
+						em.iconn-29
+						span 1234
+					a(href="##").collect.active
+						em.iconn-9
+						em.iconn-46
+						span 12万
+		ul.menu-list.menu-list-shoptop
+			li.item
+				i.num
+				em.iconn-44
+				p.txt 首页
+			li.item
+				em.iconn-50
+				p.txt 全部
+			li.item
+				i.num
+				em.iconn-26
+				p.txt 促销
+			li.item.active
+				em.iconn-37
+				p.txt 动态
+		section.dynamic-list.mt20
+			article.article
+				a.art-link(href="##")
+				.art-user
+					span.user-face
+						img(src="../../images/bg.jpg")
+					span.user-name.red 店主
+				h2.art-tit 老店铺新装修！
+				.art-txt
+					p 本店始创于康熙年间，经过先后6000多年，研制出这款显示器，绝对高清，绝对靠谱！
+				.m-pics
+					div
+						img(src='../../images/bg.jpg')
+				.art-info
+					span.time 3分钟前
+					
+					span
+						em.iconn-19
+						| 23
+					span
+						em.iconn-28
+						| 34
+					span
+						em.iconn-22
+						| 12
+			article.article
+				a.art-link(href="##")
+				.art-user
+					span.user-face
+						img(src="../../images/bg.jpg")
+					span.user-name 用户名称A
+				h2.art-tit 老店铺新装修！
+				.art-txt
+					p 本店始创于康熙年间，经过先后6000多年，研制出这款显示器，绝对高清，绝对靠谱！
+				.m-pics
+					div.img
+						img(src='../../images/bg.jpg')
+					div.img
+						img(src='../../images/bg.jpg')
+				.art-info
+					span.time 3分钟前
+					
+					span
+						em.iconn-19
+						| 23
+					span
+						em.iconn-28
+						| 34
+					span
+						em.iconn-22
+						| 12
+
+			article.article
+				a.art-link(href="##")
+				.art-user
+					span.user-face
+						img(src="https://js-pre.meixincdn.com/m/h5/dist/images/gome_icon.png")
+					span.user-name 用户名称A
+				h2.art-tit 老店铺新装修！
+				.art-txt
+					p 本店始创于康熙年间，经过先后6000多年，研制出这款显示器，绝对高清，绝对靠谱！
+				.m-pics
+					.img
+						img(src='../../images/bg.jpg')
+					.img
+						img(src='../../images/bg.jpg')
+					.img
+						em.num 5
+						span.price 999.00
+						img(src='../../images/bg.jpg')
+				.art-info
+					span.time 3分钟前
+					span
+						em.iconn-19
+						| 23
+					span
+						em.iconn-28
+						| 34
+					span
+						em.iconn-22
+						| 12
+			article.article
+				a.art-link(href="##")
+				.art-user
+					span.user-face
+						img(src="../../images/bg.jpg")
+					span.user-name.red 店主
+				h2.art-tit 老店铺新装修！
+				.art-txt
+					p 本店始创于康熙年间，经过先后6000多年，研制出这款显示器，绝对高清，绝对靠谱！
+				.art-info
+					span.time 3分钟前
+					
+					span
+						em.iconn-19
+						| 23
+					span
+						em.iconn-28
+						| 34
+					span
+						em.iconn-22
+						| 12
+			article.article
+				a.art-link(href="##")
+				.art-user
+					span.user-face
+						img(src="../../images/bg.jpg")
+					span.user-name.red 店主
+				h2.art-tit 老店铺新装修！
+				.art-info
+					span.time 3分钟前
+					
+					span
+						em.iconn-19
+						| 23
+					span
+						em.iconn-28
+						| 34
+					span
+						em.iconn-22
+						| 12
+		
+		.page-no 我是有底线的
+		// /如果有“底部固定”导航，需要给page-no动态添加 "margin-bottom:1rem"
+		
+		ul.menu-list.menu-list-shopbtn
+			li.item
+				i.num
+				em.iconn-15
+				cite.txt 商品分类
+			li.item
+				em.iconn-32
+				cite.txt 购物车
+		

@@ -1,0 +1,110 @@
+body{
+	background: #c3d4ff;
+}
+.opg-hometextile{
+	overflow: hidden;
+}
+.opg-hometextile .hometextile-top img{
+	width: 100%;
+}
+.opg-hometextile .hometextile-dec{
+	background: #fff;
+
+}
+.opg-hometextile .hometextile-dec,.opg-hometextile .hometextile-pd,.opg-hometextile .activate-pd{
+	width: 100%;
+	text-align: center;
+}
+.opg-hometextile .hometextile-dec img,.opg-hometextile .hometextile-pd a img,.opg-hometextile .activate-pd a img{
+	width: 6.98rem;
+	margin: 0.2rem 0;
+}
+.opg-hometextile .hometextile-dec img{
+	padding: 0.6rem 0;
+}
+.opg-hometextile .hometextile-pd header img,.opg-hometextile .activate-pd header img{
+	width: 100%;
+}
+.opg-hometextile .hometextile-pd header img{
+	margin-bottom: 0.2rem;
+	margin-top: -0.1rem;
+}
+.opg-hometextile .activate-pd header img{
+	margin: 0.1rem 0;
+}
+
+
+.opg-hometextile .hometextile-pd header{
+	position: relative;
+}
+.opg-hometextile .hometextile-pd header .accent-01{
+	width: 2.03rem;
+	position: absolute;
+	top: 0.59rem;
+	z-index: 1;
+}
+.opg-hometextile .hometextile-pd header .accent-02{
+	width: 2.03rem;
+	position: absolute;
+	top: -0.4rem;
+	right: -0.1rem;
+}
+.opg-hometextile .hometextile-pd a{
+	position: relative;
+	display: inline-block;
+}
+.opg-hometextile .hometextile-pd a .accent-03{
+	width: 1.6rem;
+	position: absolute;
+	top: 3.4rem;
+	right: -0.25rem;
+	z-index: 1;
+}
+.opg-hometextile .hometextile-pd a .accent-04{
+	width: 1.6rem;
+	position: absolute;
+	top: 3.5rem;
+	left: -0.3rem;
+	z-index: 1;
+}
+.opg-hometextile .activate-pd header{
+	position: relative;
+}
+.opg-hometextile .activate-pd header .accent-05{
+	position: absolute;
+	right: 0;
+	top: -0.3rem;
+	width: 2.03rem;
+}
+
+/*dropload*/
+.dropload-up,.dropload-down{
+    position: relative;
+    height: 0;
+    overflow: hidden;
+    -webkit-transform:translate3d(0,0,0);
+    transform:translate3d(0,0,0);
+    font-size: 0.26rem;
+}
+.dropload-refresh,.dropload-update,.dropload-load{
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    width: 100%;
+    height: 0.7rem;
+    line-height: 0.7rem;
+    text-align: center;
+    font-size:0.26rem;
+    -webkit-transform:translate(-50%,0);
+    transform:translate(-50%,0);
+}
+.dropload-up .loading,.dropload-down .loading{
+    display: inline-block;
+    height: 0.4rem;
+    width: 0.4rem;
+    background-image: url(../../../images/public/loading-1.gif);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    margin: 0.1rem 0.1rem 0.2rem 0.1rem;
+    vertical-align: middle;
+}    

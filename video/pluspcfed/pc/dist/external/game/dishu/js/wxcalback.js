@@ -1,0 +1,1 @@
+"use strict";function shareSuccess(s){"shabao"==s||"dishu"==s&&$("#share").show()}

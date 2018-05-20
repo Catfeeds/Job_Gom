@@ -1,0 +1,21 @@
+<!--home.wxml-->
+<view class="container">
+
+<scroll-view>
+  <view class="header">
+      <view class="content">
+        <view class="search-logo">
+          <image src="../../images/search_logo.png"></image>
+        </view>
+        <button bindtap="searchProduct" class="btn-search"><icon type="String"></icon>搜索商品</button>
+      </view>
+  </view>
+  <view class="erweima">
+
+    <icon type="String">扫一扫</icon>
+
+  </view>
+
+</scroll-view>
+
+</view>

@@ -1,0 +1,8 @@
+div.btn-group.mr20#initedTipBtn
+  button(type="button" class="btn btn-primary") 已经构建的分支
+  button(type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown")
+    span.caret
+    span.sr-only
+  ul(class="dropdown-menu", role="menu")
+    li(v-for="item in updateTipData")
+      a(@click="setUpdateTip",href="#",v-bind:data-sourceUrl="item.repository", v-bind:data-sourceBranch="item.branch",v-bind:data-directory="item.derectory") {{item.repository}}

@@ -1,0 +1,45 @@
+<!doctype html>
+<html>
+    <head>
+        <title>美信比价搜索</title> 
+        <style>
+            ol li {
+                margin:15px; 
+            }
+            ol{
+                max-height:200px;
+                overflow-y:scroll;
+            }
+            ol li img {
+                width:30px;
+                height:30px;
+            }
+        iframe {margin:10px;}
+        </style>
+    </head>
+    <body>
+        <h1>国美+ 站内搜索比价</h1>
+        <form action="/" method="get">
+            <p>商品名称搜索：<input type="text" name="key" value="<%=key%>"> </p>
+            <p>美信商品url：<input type="url" value="<%=mxurl%>" placeholder="美信商品url" name="mxurl"></p>
+            <p><input type="submit" value="搜索"></p>
+        </form>
+        <p style="color:red;">右键复制商品超链接，贴到url里可以进行搜索比价</p>
+        <p><img src="images/bijia.png"></p>
+        <% if(name){ %>
+        <h3><%=name%></h3>
+        <h4>美信价：<span style="color:red;"><%=price%></span></h4>
+        <% if(data.length){ %>
+        <p style="color:green;"><em><%=msg%></em><p>
+            <ol>
+                <% data.forEach(function(item){%>
+                <li><img src="<%=item.imgurl%>"><a target="_blank" href="<%=item.url%>"><%=item.title%></a> <strong style="color:red;"><%=item.price%></strong> 来源:<%=item.from%></li> 
+                <% }); %> 
+            </ol>
+            <% } %>
+        <% }else{ %>
+            <p>没有搜到相关其他商品</p>
+        <% } %>
+        <iframe width="100%" height="500" src="https://mall.gomeplus.com/search/index?word=<%=key%>"></iframe>
+    </body>
+</html>

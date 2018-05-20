@@ -1,0 +1,15 @@
+<%- include('../include/header.html',{
+    pageTitle: pageTitle
+}) %>
+    <script type="text/javascript">
+    var allPageConfig = {
+        "drop_down_default_data": <%- JSON.stringify(drop_down_default_data) %>,
+        "page": <%- JSON.stringify(page) %>,
+        "pageAll": <%- JSON.stringify(pageAll) %>,
+        "userInfo": <%- JSON.stringify(userInfo) %>
+    }
+    </script>
+    <div id="page-wrapper" class="app" style="min-height: 1054px;">
+        <router-view></router-view>
+    </div>
+    <%- include('../include/footer.html') %>

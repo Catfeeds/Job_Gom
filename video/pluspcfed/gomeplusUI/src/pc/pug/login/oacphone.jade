@@ -1,0 +1,64 @@
+doctype html
+html(lang="zh-CN")
+    include ../../../pc-widget/head/head.jade
+    body.opg.lg-bg
+        link(type="text/css",rel="stylesheet",href="../../css/public/public.css")
+        link(type="text/css",rel="stylesheet",href="../../css/module/login.css")
+        .lg-header
+            .lg-header-in
+                h1.lg-logo
+                    a 国美plus
+        .lg-main.oac-main
+            .oacphone
+                h4.oac-phone 关联手机号
+                .lg-form
+                    ul.lg-form-list
+                        .lg-error-tip.none.clearfix
+                            // icon替换 iconn-error
+                            em.iconn-12
+                            span 您已三次输入错误，请输入验证码
+                        li.clearfix.lg-form-it.lg-form-error
+                            label 手机号
+                            div.lg-form-cont
+                                input.lg-input-it(type="text" placeholder="请输入手机号码") 
+                            span.lg-warm 手机号格式错误
+                        li.clearfix.lg-form-it
+                                label 短信验证码
+                                div.lg-form-cont
+                                    a.lg-codes(href="javascript:;") 获取验证码
+                                    input.lg-input-it(type="text" placeholder="请输入短信验证码")
+                                span.lg-warm 
+                        li.clearfix.lg-form-it.lg-form-error
+                                label 密码
+                                div.lg-form-cont
+                                    input.lg-input-it(type="text" placeholder="输入密码")
+                                    //.active为隐藏密码
+                                    em.icon-eyes.active
+                                    em.iconn-20.lg-allright
+                                .pass-level 
+                                    span.level-weak 弱
+                                    span.level-md 中
+                                    span.level-strong 强
+                                span.lg-warm 
+                        li.clearfix.lg-form-it
+                            label 推荐码
+                            .lg-form-cont
+                                input.lg-input-it(type="text" placeholder="推荐码（选填）")
+                            span.lg-warm
+                        li.clearfix.lg-form-it.oac-agreement
+                            label
+                            .lg-form-cont
+                                em.iconn-20.lg-radio.lg-radio-true
+                                //切换lg-radio-true
+                                p.lg-txt.txt-small
+                                    b 【审慎阅读】
+                                    | 注册协议已更新，您在点击同意前，应当认真阅读以下协议，尤其粗体标识的重要条款。请您务必审慎阅读、充分理解协议中相关条款内容。
+                                    br
+                                    b 【特别提示】
+                                    | 当您点击同意后，即表示您已充分阅读、理解并接受协议的全部内容。如您因平台服务与国美发生争议的，适用《国美平台服务协议》处理。
+                                    a(href="##") 《国美平台服务协议》
+                                    a(href="##") 《美付宝用户服务协议》
+                                span.lg-warm 请同意协议并勾选
+                    a(href="javascript:;").pc-btn.pc-btnw300.pc-btnh45.lg-mt 完成
+        include ../../../pc-widget/footer/footer.jade
+

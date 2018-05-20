@@ -1,0 +1,35 @@
+doctype html
+html(lang="zh-CN")
+    meta(charset="utf-8")
+    link(type="text/css",rel="stylesheet",href="../../css/public/public.css")
+    link(type="text/css",rel="stylesheet",href="../../css/module/meihaoListManager.css") 
+    body.opg        
+        include ../../widget/header/header-meihao.pug
+        .meihao.clearfix
+            include ../../widget/aside/meihao.pug
+            //右侧内容写这里 与达人平台类似
+            //例如：
+            //#meihao-list-manager 
+
+                    //scss文件引入以下文件，class更根据自己的页面来定义
+                        @charset "utf-8";
+                        @import '../../widget/config/_base.scss';
+                        /* @import '../../widget/header/header-meihao.scss';
+                        @import '../../widget/aside/meihao.scss';
+                        .opg {   
+                            background:#F3F5F7;
+                            min-width: 1040px;
+                        }
+                        .meihao{       
+                            margin-left: 220px;
+                            .meihao-cont{
+                                width: 1040px;
+                                margin: 0 auto;
+                                padding-top: 20px;
+                                border: 1px solid #ccc;
+
+                            }
+                        } 
+   
+                
+

@@ -1,0 +1,26 @@
+//- head.jade
+doctype html
+html(lang="zh-CN",data-use-rem="750")
+	head
+		block meta-charset
+			meta(charset="UTF-8")
+		//- block meta-renderer
+		//- 	meta(name="renderer" content="webkit")
+		block meta-description
+			meta(name="description",content="")
+		block meta-keyword
+			meta(name="keyword",content="")
+		block meta-viewport
+			meta(name="viewport",content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no")
+		block format-detection-telephone
+			meta(name="format-detection",content="telephone=no")
+		block format-detection-email
+			meta(name="format-detection",content="email=no")
+		block title
+			title Default title
+		//- block link-public
+		//- 	link(rel='stylesheet' type="text/css" href="public.css")
+		block link-theme
+			link(rel='stylesheet' type="text/css" href="../css/conpon.css")
+	body.opg
+		block content 

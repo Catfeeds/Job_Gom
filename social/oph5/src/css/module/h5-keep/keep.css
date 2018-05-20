@@ -1,0 +1,104 @@
+body{
+	background: #e2bf99;
+}
+.opg-keep{
+	overflow: hidden;
+}
+.opg-keep .keep-top img{
+	width: 100%;
+}
+.opg-keep .keep-top img{
+    border-bottom: 0.12rem solid #f1d9bf;
+}
+.opg-keep .keep-dec{
+    height: 7.15rem;
+}
+.opg-keep .keep-dec header img{
+    width: 6.48rem;
+    height: 1.46rem;
+    margin: 0.1rem 2.08rem 0.2rem 2.34rem;
+}
+.opg-keep .keep-dec div{
+    width: 9.98rem;
+    margin: 0 auto;
+}
+.opg-keep .keep-dec div img{
+    float: left;
+}
+.opg-keep .keep-dec div img.w243{
+    width: 2.43rem;
+}
+.opg-keep .keep-dec div img.w244{
+    width: 2.44rem;
+    margin: 0 0.22rem;
+}
+.opg-keep .keep-dec div img.w222{
+    width: 2.22rem;
+    margin-right: 0.22rem;
+}
+.opg-keep .keep-dec div img.w223{
+    width: 2.23rem;
+}
+.opg-keep .keep-pd a{
+    display: block;
+    width: 9.98rem;
+    margin: 0 auto;
+    margin-bottom: 0.1rem;
+}
+.opg-keep .keep-pd img{
+    width: 100%;
+}
+.opg-keep .activate-pd header{
+    text-align: center;
+}
+.opg-keep .activate-pd header img{
+    width: 1.52rem;
+    height: 0.57rem;
+    margin: 0.1rem 0;
+}
+.opg-keep .activate-pd a{
+    display: block;
+    width: 9.98rem;
+    margin: 0 auto;
+}
+.opg-keep .activate-pd a img{
+    width: 100%;
+}
+.opg-keep .footer{
+	text-align: center;
+}
+.opg-keep .footer img{
+	width: 4.38rem;
+	margin: 0.25rem 0;
+}
+/*dropload*/
+.dropload-up,.dropload-down{
+    position: relative;
+    height: 0;
+    overflow: hidden;
+    -webkit-transform:translate3d(0,0,0);
+    transform:translate3d(0,0,0);
+    font-size: 0.26rem;
+}
+.dropload-refresh,.dropload-update,.dropload-load{
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    width: 100%;
+    height: 0.7rem;
+    line-height: 0.7rem;
+    text-align: center;
+    font-size:0.26rem;
+    -webkit-transform:translate(-50%,0);
+    transform:translate(-50%,0);
+}
+.dropload-up .loading,.dropload-down .loading{
+    display: inline-block;
+    height: 0.4rem;
+    width: 0.4rem;
+    background-image: url(../../../images/public/loading-1.gif);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    margin: 0.1rem 0.1rem 0.2rem 0.1rem;
+    vertical-align: middle;
+}    

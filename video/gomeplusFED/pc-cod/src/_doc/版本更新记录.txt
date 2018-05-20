@@ -1,0 +1,100 @@
+eg: 2016-01-01 变更记录如下：
+新增文件：
+1.src\html\circle\circleindex.html
+2.src\html\circle\circleindex2.html
+更新文件
+1.src\html\circle\circleindex.html
+更改摘要：修改xx样式
+2.src\html\circle\circleindex.html
+更改摘要：修改xx样式
+====================================
+2016-08-11 变更记录如下：
+
+
+
+====================================
+2016-08-29 变更记录如下：
+新增文件：
+src/html/circle/auditnopass.html
+更新文件
+src/html/index/index.html
+src/html/shop/payresult.html
+src/html/shop/shopdetail.html
+src/html/shop/shopcar.html
+src/html/pop.html	登录弹窗
+
+
+
+
+====================================
+2016-09-01 变更记录如下：
+更新文件
+src/html/login/login01.html
+src/html/login/login02.html
+src/html/login/login03.html
+src/html/pop.html
+
+
+
+
+====================================
+2016-09-08 变更记录如下：
+更新文件
+src/html/shop/goodsdetail.html
+src/html/usercenter/allorders.html
+
+
+
+====================================
+2016-09-12 变更记录如下：
+更新文件
+
+src/html/usercenter/forgetshopasw.html
+src/html/usercenter/shopinfo.html
+
+
+
+====================================
+2016-09-13 变更记录如下：
+更新文件
+
+src/html/usercenter/bindphone.html
+
+
+
+====================================
+2016-09-20 变更记录如下：
+更新文件
+
+src/html/circle/topicdetails.html
+
+
+
+
+====================================
+2016-09-22 变更记录如下：
+更新文件
+
+
+src/html/circle/circleindex.html
+src/html/shop/shoplist.html
+
+
+
+
+====================================
+2016-09-26 变更记录如下：
+更新文件
+
+
+src/html/shop/goodsdetail.html
+
+
+
+
+====================================
+2016-10-9 变更记录如下：
+更新文件
+
+
+src/html/usercenter/drreviewfail.html

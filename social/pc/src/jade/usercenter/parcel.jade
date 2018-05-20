@@ -1,0 +1,116 @@
+doctype html
+html(lang="zh-CN")
+	include ../../../../../gomeplusUI/pc/src/jade/head.jade
+	link(type="text/css",rel="stylesheet",href="../../css/public/public.css")
+	link(type="text/css",rel="stylesheet",href="../../css/module/usercenter/usercenter.css")
+	body.opg
+		include ../../../../../gomeplusUI/pc/src/jade/header.jade
+		include ../../../../../gomeplusUI/pc/src/jade/menu.jade
+		div.wrap-box
+			include ../../../../../gomeplusUI/pc/src/jade/crumbs.jade
+			.pracel-box
+				table.pracel-list
+					thead
+						tr.list-title
+							th.order-l 商品信息
+							th.t-price 单价（元）
+							th.num 数量
+							th.prod-opr 商品操作
+							th.count 交易金额（元）
+							th.count-s 交易状态
+							th.count-op 订单操作
+					tbody
+						tr
+							td(colspan="7").title-name 包裹1
+						tr
+							td.order-l
+								a(href="javascript:;").fl
+									img(src="../../images/public/default-img2.jpg").order-img
+								.parameter
+									a(href="javascript:;") 洗颜专科矿物质水清透防晒乳液洗颜专科矿...
+									p 颜色：SPF30 .PA 40ml
+							td.t-price.f16
+								span.price ￥560.00
+							td.num 1
+							td.prod-opr
+								a(href="#") 联系商家
+							td.count
+								strong.f16 ￥560.00
+								p (含运费：￥6)
+							td.count-s
+								.active 已投妥
+								a(href="#") 查看物流
+							td.count-op
+								a(href="#").w120-h40.order-btn-red 确认收货
+						tr
+							td(colspan="7").title-name 包裹2
+						tr
+							td.order-l
+								a(href="javascript:;").fl
+									img(src="../../images/public/default-img2.jpg").order-img
+								.parameter
+									a(href="javascript:;") 洗颜专科矿物质水清透防晒乳液洗颜专科矿...
+									p 颜色：SPF30 .PA 40ml
+							td.t-price.f16
+								span.price ￥560.00
+							td.num 1
+							td.prod-opr
+								a(href="#") 联系商家
+							td.count
+								strong.f16 ￥560.00
+								p (含运费：￥6)
+							td.count-s
+								.active 已投妥
+								a(href="#") 查看物流
+							td.count-op(rowspan="3")
+								a(href="#").w120-h40.order-btn-red 确认收货
+						tr
+							td.order-l
+								a(href="javascript:;").fl
+									img(src="../../images/public/default-img2.jpg").order-img
+								.parameter
+									a(href="javascript:;") 洗颜专科矿物质水清透防晒乳液洗颜专科矿...
+									p 颜色：SPF30 .PA 40ml
+							td.t-price.f16
+								span.price ￥560.00
+							td.num 1
+							td.prod-opr
+								a(href="#") 联系商家
+							td.count
+								strong.f16 ￥560.00
+								p (含运费：￥6)
+							td.count-s
+								.active 已投妥
+								a(href="#") 查看物流
+						tr
+							td.order-l
+								a(href="javascript:;").fl
+									img(src="../../images/public/default-img2.jpg").order-img
+								.parameter
+									a(href="javascript:;") 洗颜专科矿物质水清透防晒乳液洗颜专科矿...
+									p 颜色：SPF30 .PA 40ml
+							td.t-price.f16
+								span.price ￥560.00
+							td.num 1
+							td.prod-opr
+								a(href="#") 联系商家
+							td.count
+								strong.f16 ￥560.00
+								p (含运费：￥6)
+							td.count-s
+								.active 已投妥
+								a(href="#") 查看物流
+				.page
+					a(href="javascript:;").disabled 上一页
+					a(href="javascript:;") 1
+					a(href="javascript:;") 2
+					a(href="javascript:;") 3
+					a(href="javascript:;").active 4
+					a(href="javascript:;") 5
+					span ···
+					a(href="javascript:;") 100
+					a(href="javascript:;") 下一页
+					a(href="javascript:;") 最后一页
+		include ../../../../../gomeplusUI/pc/src/jade/footer.jade
+			
+		

@@ -1,0 +1,102 @@
+doctype html
+html(lang="zh-CN" data-use-rem="750")
+	//- head.jade
+	include ../../../m-widget/head/head.jade
+	link(type="text/css",rel="stylesheet",href="../../css/share/share.css")
+	body.opg
+		include ../../../m-widget/head/rem.jade
+		// 搜索结果列表
+		.search-result.share-income
+			.share-goods
+				ul.main-list.single-list
+					li.item
+						a.link(href="javascript:;")
+						.item-img
+							img(src="../../images/share/share-goods-picture01.jpg")
+						.item-txt 创意铅笔袋韩国文具盒简约男女生小清新日韩版中学生学生用品
+						.item-price
+							del.del ¥58.00
+							span.red 
+								| 最高赚
+								i ¥2199
+						a(href="#").btn-primary 去赚钱
+					li.item
+						a.link(href="javascript:;")
+						.item-img
+							img(src="../../images/share/share-goods-picture02.jpg")
+						.item-txt 创意铅笔袋韩国文具盒简约男女生小清新日韩版中学生学生用品
+						.item-price
+							del.del ¥58.00
+							span.red 
+								| 最高赚
+								i ¥2199
+						a(href="#").btn-primary 去赚钱
+					li.item
+						a.link(href="javascript:;")
+						.item-img
+							img(src="../../images/share/share-goods-picture03.jpg")
+						.item-txt 创意铅笔袋韩国文具盒简约男女生小清新日韩版中学生学生用品
+						.item-price
+							del.del ¥58.00
+							span.red 
+								| 最高赚
+								i ¥2199
+						a(href="#").btn-primary 去赚钱
+					li.item
+						a.link(href="javascript:;")
+						.item-img
+							img(src="../../images/share/share-goods-picture01.jpg")
+						.item-txt 创意铅笔袋韩国文具盒简约男女生小清新日韩版中学生学生用品
+						.item-price
+							del.del ¥58.00
+							span.red 
+								| 最高赚
+								i ¥2199
+						a(href="#").btn-primary 去赚钱
+					li.item
+						a.link(href="javascript:;")
+						.item-img
+							img(src="../../images/share/share-goods-picture02.jpg")
+						.item-txt 创意铅笔袋韩国文具盒简约男女生小清新日韩版中学生学生用品
+						.item-price
+							del.del ¥58.00
+							span.red 
+								| 最高赚
+								i ¥2199
+						a(href="#").btn-primary 去赚钱
+					li.item
+						a.link(href="javascript:;")
+						.item-img
+							img(src="../../images/share/share-goods-picture03.jpg")
+						.item-txt 创意铅笔袋韩国文具盒简约男女生小清新日韩版中学生学生用品
+						.item-price
+							del.del ¥58.00
+							span.red 
+								| 最高赚
+								i ¥2199
+						a(href="#").btn-primary 去赚钱
+		// 加载至底部
+		.share-header.share-header-reset
+			span 送君千里，终须一别
+	// 遮罩
+	.m-mask
+	// 搜索
+	section.search-type
+		// 搜索框
+		//- 追加.header-reset为设置四个字符样式
+		section.header.header-reset
+			.head-search.w620
+				em.iconn-10
+				input.sec-ipt(type="text",placeholder="面膜")
+				em.iconn-82
+			span
+				//- 追加.active则箭头朝上
+				//- 文本内容依次为：综合、分享次数、赚钱金额
+				a.head-edit.active(href="javascript:;") 
+					| 分享次数
+					em.iconn-42
+		// 分类
+		.search-classify(style="display:block")
+			a(href="#") 综合
+			a(href="#") 分享次数从高到低
+			a(href="#") 赚钱金额从高到低

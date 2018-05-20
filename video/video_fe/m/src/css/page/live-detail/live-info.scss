@@ -1,0 +1,138 @@
+@import "../../base/public.scss";
+
+.live-detail{
+	.live-wrap{
+		.live-info-box{
+			margin: 0 rem(20) 0 rem(20);
+			.video-title{
+				line-height: rem(50);
+				color:#333;
+				font-size:rem(36);
+				margin: rem(30) 0;
+			}
+			.sub-msg{
+				position: relative;
+				.msgNav-head{
+					height:rem(70);
+					width:rem(70);
+					img{
+						height:rem(70);
+						width:rem(70);
+						border-radius: 50%;
+					}
+				}
+				.msgNav-msg{
+					max-width: rem(470);
+					position: absolute;
+					left: rem(90);
+					top: 0;
+					.msgNav-name{
+						line-height:rem(40);
+						font-size:rem(28);
+						a{
+							color: #333;
+						}
+					}
+					.msgNav-intr{
+						@include ellipsis(1);
+						font-size:rem(24);
+						color:#999;
+
+					}
+
+				}
+				.subscripBtn{
+					position:absolute;
+					right: 0;
+					top:rem(11); ;
+					width: rem(128);
+					height:rem(48);
+					text-align: center;
+					line-height: rem(48);
+					font-size:rem(28);
+					color:#fff;
+					background: #EC392A;
+					border-radius: rem(98);
+				}
+				.subscripBtn.active{
+					span.show{
+						display: none;
+					}
+					span.hide{
+						display: block;
+					}
+					background: #e1e2e5;
+				}
+			}
+			.sub-detail{
+				color:#999;
+				font-size: rem(28);
+				line-height: rem(44);
+				margin:rem(25) 0;
+			}
+			.item-icon{
+				em{
+					margin-right:rem(60);
+					margin-left :rem(15);
+					font-size:rem(32);
+
+				}
+				em.icon-7{
+					font-size: rem(36);
+				}
+				.active{
+					em{
+						color: #ec392a;
+						&.icon-7:before{
+							content: "\e907";
+						}
+					}
+				}
+			}
+
+		}
+	}
+}
+.shareMask{
+	width: 100%;
+	height: 100%;
+	position:fixed;
+	display: none;
+	top:0;
+	left:0;
+	background-color: rgba(0,0,0,0.5);
+	z-index: 100;
+	.share-x{
+		width:100%;
+		padding:5% 0 30% 0;
+		position: fixed;
+		left:0;
+		bottom:0;
+		img{
+			margin:0 45%;
+			width: 10%;
+		}
+		em{
+			display: block;
+			width: 100%;
+			font-size: 0.7rem;
+			text-align: center;
+			color:white;
+		}
+	}
+	.share-h,.share-h-app{
+		margin:5px 0 0 25%;
+		background-repeat: no-repeat;
+		background-size: 100% 100%;
+	}
+	.share-h{
+		width: 71%;
+		height: 54%;
+		background-image: url('../../../imgs/public/share-h.png');
+	}
+	.share-h-app{
+		width: 64%;
+		height: 54%;
+		background-image: url('../../../imgs/public/share-h-app.png');
+	}
+}

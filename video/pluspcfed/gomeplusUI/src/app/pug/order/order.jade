@@ -1,0 +1,90 @@
+doctype html
+html(lang='en', data-use-rem='750')
+    head
+        meta(charset='UTF-8')
+        meta(name='viewport', content='width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no')
+        meta(name='format-detection', content='telephone=no')
+        meta(name='format-detection', content='email=no')
+        title Title
+        link(rel='stylesheet',type="text/css",href='../../css/public/gomeplusUI.css')
+        link(rel='stylesheet',type="text/css",href='../../css/module/order/order.css')
+    body.opg.order
+        script.
+            (function(win){var doc=win.document,html=doc.documentElement,option=html.getAttribute("data-use-rem");if(option===null){return}var baseWidth=parseInt(option).toString()==="NaN"?640:parseInt(option);var grids=baseWidth/100;var clientWidth=html.clientWidth||320;html.style.fontSize=clientWidth/grids+"px";var testDom=document.createElement("div");var testDomWidth=0;var adjustRatio=0;testDom.style.cssText="height:0;width:1rem;";doc.body.appendChild(testDom);var calcTestDom=function(){testDomWidth=testDom.offsetWidth;if(testDomWidth!==Math.round(clientWidth/grids)){adjustRatio=clientWidth/grids/testDomWidth;var reCalcRem=clientWidth*adjustRatio/grids;html.style.fontSize=reCalcRem+"px"}else{doc.body.removeChild(testDom)}};setTimeout(calcTestDom,20);var reCalc=function(){var newCW=html.clientWidth;if(newCW===clientWidth){return}clientWidth=newCW;html.style.fontSize=newCW*(adjustRatio?adjustRatio:1)/grids+"px"};if(!doc.addEventListener){return}var resizeEvt="orientationchange" in win?"orientationchange":"resize";win.addEventListener(resizeEvt,reCalc,false);doc.addEventListener("DOMContentLoaded",reCalc,false)})(window);
+        .m-load
+    .order-box  
+        ul.m-menu
+            li.flex-cell.active
+                a.link(href="javascript:;") 销售单
+            li.flex-cell
+                a.link(href="javascript:;") 退货单
+
+        .order-bx
+            .ord-item
+                .ord-nmb-bx
+                    p 订单号:
+                        span 12233345548
+                    p 配送单号:
+                        span 12233345548
+                .ord-list
+                    .ord-title
+                        p 商品名称
+                        p 数量
+                    .ord-content
+                        .describe 商品名称商商品名称
+                            .numb (串码:
+                                span 37293829939283
+                                |)
+                        .describe 1
+                    .ord-store
+                        .salesman
+                            p 
+                                span 销售员：
+                                | 张三
+                            p
+                                span 日期：
+                                | 2017年08月28日
+                        .store
+                            span 门店：
+                            | 北京国美安贞店
+
+
+            .ord-item
+                .ord-nmb-bx
+                    p 订单号:
+                        span 12233345548
+                    p 配送单号:
+                        span 12233345548
+                .ord-list
+                    .ord-title
+                        p 商品名称
+                        p 数量
+                    .ord-content
+                        .describe 商品名称商品名称商品名称商品名称商品名称商品名称商品名称商品名称商品名称商品名称
+                            .numb (串码:
+                                span 37293829939283
+                                |)
+                        .describe 1
+                    .ord-store
+                        .salesman
+                            p 
+                                span 销售员：
+                                | 张三
+                            p
+                                span 日期：
+                                | 2017年08月28日
+                        .store
+                            span 门店：
+                            | 北京国美安贞店
+
+            .m-load
+            .page-no
+                span
+                | 我是有底线的~
+            ///底部提示
+
+
+
+
+
+        

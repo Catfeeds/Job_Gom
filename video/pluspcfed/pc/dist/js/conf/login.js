@@ -1,0 +1,1 @@
+webpackJsonp([62],{"288":function(n,exports,c){"use strict";(function($){var n=c(15),o=c(9);$("[data-node=login-btn]").on("click",function(){var c=o(),a=location.search.replace(/^r=/i,"");c?location.href=a:n(function(){location.href=a})})}).call(exports,c(0))}},[288]);

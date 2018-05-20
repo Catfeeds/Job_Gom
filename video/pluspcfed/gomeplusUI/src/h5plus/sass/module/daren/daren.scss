@@ -1,0 +1,79 @@
+@charset "UTF-8";
+// @ Css name：达人招募
+// @ Author： Kan Jingjing
+// @ Date： 2017-05-11
+// @ Last Modified by： Kan Jingjing
+// @ Last Modified time：2017-05-12
+//==========================
+
+@import "../../../../sasscore/_configure.scss";
+@import "../../../../m-widget/reset/_mixin.scss";
+
+.dr-btn {
+	display: block;
+    height: rem(94);
+    line-height: rem(94);
+    text-align: center;
+	border-radius: rem(54);
+    margin: 0 auto;
+	background-color: #ff5c5c;
+	border: rem(3) solid #8f3f12;
+	box-shadow: inset rem(5) rem(5) rem(0) #fff;
+	&.disabled {
+		border-color: #5c5c5c;
+		background-color: #a4a4a4;
+	}
+	span{
+		margin-top: rem(26rem);
+		display: inline-block;
+	}
+}
+.btn-wrap{
+	padding-bottom: rem(40);
+	.dr-btn{
+		margin-bottom: 0;
+	}
+}
+.dr-sprites {
+	background: url(../../../images/daren/dr-sprites.png) no-repeat;
+	background-size: rem(320 958);
+	text-indent: -9999px;
+}
+
+// 达人特权	Kan Jingjing
+@import "_drtequan.scss";
+// 达人申请-初始 Kan Jingjing
+@import "_drapply.scss";
+// 达人申请-填写表单&完成填写表单 Kan Jingjing
+@import "_drform.scss";
+// 达人申请-审核中 Kan Jingjing
+@import "_draudit.scss";
+html{
+	height: 100%;
+}
+body {
+	background: url(../../../images/daren/dr-bg.jpg) repeat;
+	background-size: rem(16 16);
+	padding-bottom: rem(40);
+}
+.daren {
+	background: #fff;
+}
+.dr-bg1{
+	height: rem(500);
+	background: url(../../../images/daren/dr-bg1.png) no-repeat;
+}
+.dr-bg {
+	width: 100%;
+	background-size: 100% 100%;
+}
+.drform-c{
+	background-size: contain;
+}
+.btn-btxt {
+	font-size: rem(24);
+	color: #666;
+	text-align: center;
+	margin-top: rem(20);
+	padding-bottom: rem(40);
+}

@@ -1,0 +1,37 @@
+doctype html
+html(lang="zh-CN")
+	include ../../../pc-widget/head/head.jade
+	link(type="text/css",rel="stylesheet",href="../../css/public/public.css")
+	link(type="text/css",rel="stylesheet",href="../../css/module/goods-list.css")
+	body.opg
+		include ../../../pc-widget/header/header.jade
+		include ../../../pc-widget/menu/menu.jade
+		.wrap-box
+			.shop-title.clearfix
+				include ../../../pc-widget/crumbs/crumbs.jade
+				include ../../../pc-widget/sort/sort.jade
+			.shop-list
+				ul.clearfix
+					- for (var x = 0; x < 35; x++)
+						li
+							a(href="#")
+								em.icon-fan 返
+								img(src="https://i6.meixincdn.com/v1/img/T1GRYTB7KT1R4cSCrK.png")
+								.text
+									| ￥
+									span 259.00
+									p 我新依旧心潮澎湃要你命300湃要你命300
+			.page
+				a(href="javascript:;") 上一页
+				a(href="javascript:;") 1
+				a(href="javascript:;") 2
+				a(href="javascript:;") 3
+				a(href="javascript:;").active 4
+				a(href="javascript:;") 5
+				a(href="javascript:;") ···
+				a(href="javascript:;") 100
+				a(href="javascript:;") 下一页
+				a(href="javascript:;") 最后一页
+		include ../../../pc-widget/footer/footer.jade
+			
+		

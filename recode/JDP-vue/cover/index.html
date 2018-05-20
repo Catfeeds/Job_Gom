@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="description" content="项目信息装进手机，随时查看！">
+  <meta content="yes" name="apple-mobile-web-app-capable">
+  <meta id="viewport" name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no">
+  <title>项目管理新功能，上线啦~~项目信息装进手机，随时查看！</title>
+  <style>
+    body{padding: 0;margin: 0;}
+    img{width: 100%;border: none;}
+  </style>
+
+</head>
+<body>
+  <div style="height: 0;overflow: hidden;"><img src="https://css.meixincdn.com/m/jira/cover/images/img_00.jpg" width="0" height="0"></div>
+  <div><img onload="loadedImg()" src="https://css.meixincdn.com/m/jira/cover/images/img_01.jpg"></div>
+  <div><img onload="loadedImg()"src="https://css.meixincdn.com/m/jira/cover/images/img_02.jpg"></div>
+  <div><img onload="loadedImg()"src="https://css.meixincdn.com/m/jira/cover/images/img_03.jpg"></div>
+  <!-- <div><img src="https://css.meixincdn.com/m/jira/cover/images/img_04.jpg"></div>
+  <div><img src="https://css.meixincdn.com/m/jira/cover/images/img_05.jpg"></div>
+  <div><img src="https://css.meixincdn.com/m/jira/cover/images/img_06.jpg"></div>
+  <div><img src="https://css.meixincdn.com/m/jira/cover/images/img_07.jpg"></div>
+  <div><img src="https://css.meixincdn.com/m/jira/cover/images/img_08.jpg"></div>
+  <div><img src="https://css.meixincdn.com/m/jira/cover/images/img_09.jpg"></div>
+  <div><img src="https://css.meixincdn.com/m/jira/cover/images/img_10.jpg"></div> -->
+  <script>
+  var path = "https://css.meixincdn.com/m/jira/cover/images/"
+  var imgList = ["img_04.jpg","img_05.jpg","img_06.jpg","img_07.jpg","img_08.jpg","img_09.jpg","img_10.jpg"];
+  var imgNum = 0;
+  function loadedImg(){
+    if(++imgNum == 3){
+      imgList.forEach(function(v, index){
+        addImg(v);
+      })
+    }
+  }
+  function addImg(imgName){
+    var img = document.createElement("img");
+    img.src = path + imgName;
+    document.body.appendChild(img);
+  }
+  </script>
+</body>
+</html>

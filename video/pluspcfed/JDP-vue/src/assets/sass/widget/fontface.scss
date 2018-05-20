@@ -1,0 +1,42 @@
+@mixin font-face($name,$version){
+  @font-face{
+    font:{
+      family: $name;
+    }
+    src: filename($name,$version);
+  }
+  .icon,
+  [class^="iconn-"],
+  [class*="iconn-"] {
+      @include icon($name);
+  }
+  [class^="iconn-"]:before,
+  [class*="iconn-"]:before{
+      display: block;
+  }
+}
+
+$set-file-path:      'assets/fonts/';
+@function filename($name,$version){
+  @return
+     url('#{$set-file-path}#{$name}.eot?v=#{$version}#iefix') format('embedded-opentype'),
+     url('#{$set-file-path}#{$name}.ttf?v=#{$version}') format('truetype'),
+     url('#{$set-file-path}#{$name}.woff?v=#{$version}') format('woff'),
+     url('#{$set-file-path}#{$name}.svg?v=#{$version}') format('svg');
+}
+
+@mixin icon($name){
+  font-family: #{$name} !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+@import 'fonticons';

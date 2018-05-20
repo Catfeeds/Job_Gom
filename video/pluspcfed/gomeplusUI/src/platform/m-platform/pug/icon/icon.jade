@@ -1,0 +1,43 @@
+//- extends layout.jade
+extends ../../../widget-platform/pug/layout/layout-m.jade
+
+//- index
+block content
+	.platform-tipsinfo
+		h5 说明
+		p 图标为最新版本
+		p 所有图标均已‘iconn-’开头定义
+		p 图标对应图标名称
+		p
+			font(color="red") *红色标识只可header使用
+		p 已选状态有两种展现形式
+		p 调用两个不同的类（例：.iconn-26 / .iconn-27）
+		p 父级添加'active'实现（例：<a href="#link1">点我查看</a>）
+		p 具体查看结构，谢谢~
+		p.maty 有问题沟通-maty
+		h5 知识点
+		p ①CSS伪类管理图标
+	//end
+
+	//- icon
+	div.platform-content
+		h3.platform-header icon
+		//- div.platform-intro
+		//- 	p 
+		//- 		|  <br>
+		//- 		| <br>
+		//- 		| <br>
+		//- 		| <br>
+		//- 		| <br>
+		//- 		| ① <br>
+		//- 		| ② 
+		div.platform-example#icon
+			include ../../../../m-widget/icon/icon.jade
+		pre.platform-pre.hide
+			code.platform-code#icon_code
+			span.platform-jade pug
+			span.platform-jade.platform-html.actived html
+	script(type='text/javascript').
+		HtmlFormat.init(['icon'],false,'_code','html','span.platform-jade');
+		$(".platform-icon").parent('li').addClass("actived");
+

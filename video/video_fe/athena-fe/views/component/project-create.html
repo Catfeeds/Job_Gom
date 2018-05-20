@@ -1,0 +1,61 @@
+<!-- project-create begin -->
+<div class="content">
+	<div>
+		<h3>新建项目</h3>
+		<hr>
+		<form class="form-horizontal">
+		  	<div class="form-group">
+		    	<label for="name" class="col-sm-2 control-label">项目名称</label>
+			    <div class="col-sm-10">
+			      	<input type="email" class="form-control" id="name" placeholder="请填写项目名称">
+			    </div>
+		  	</div>
+			<div class="form-group">
+			    <label for="description" class="col-sm-2 control-label">项目描述</label>
+			    <div class="col-sm-10">
+			      	<textarea class="form-control" rows="4" id="description"></textarea>
+			    </div>
+			</div>
+			<div class="form-actions col-sm-10">
+				<input type="submit" value="创建项目" class="btn btn-create" >
+				<a class="btn btn-cancel" href="">取消</a>
+			</div>
+		</form>
+	</div>
+</div>
+<style type="text/css">
+@media (min-width: 768px) {
+	.form-actions{
+		position: fixed;
+		right: 10px;
+		bottom: 0;
+		width: 83.3333333%;
+		margin-bottom: 15px;
+		margin-left: -15px;
+		padding: 16px;
+		border-top: 1px solid #e5e5e5;
+	}
+	.btn-create{
+		background-color: #38ae67;
+		border-color: #2faa60;
+		color: #fff;
+	}
+	.btn-create:hover{
+		background-color: #2faa60;
+		border-color: #2ca05b;
+		color: #fff;
+	}
+	.btn-cancel{
+		float: right;
+		background-color: #fff;
+		border-color: #d6dae2;
+		color: #848484;
+	}
+	.btn-cancel:hover{
+		background-color: #ededed;
+		border-color: #d6dae2;
+		color: #848484;
+	}
+}
+</style>
+<!-- project-create end -->

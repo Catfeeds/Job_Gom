@@ -1,0 +1,452 @@
+@charset "utf-8";
+@import '../../widget/config/_base.scss';
+@import '../../widget/header/header-meihao.scss';
+.webuploader-container {
+	width: 78px;
+	height: 78px;
+	position: relative;
+}
+.webuploader-element-invisible {
+	position: absolute !important;
+	clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+    clip: rect(1px,1px,1px,1px);
+}
+.webuploader-pick {
+    width: 100%;
+    height: 100%;
+    line-height: 28px;
+	position: relative;
+	display: inline-block;
+	cursor: pointer;
+	background: no-repeat;
+	color: #000;
+	text-align: center;
+	border-radius: 3px;
+	overflow: hidden;
+}
+.webuploader-pick-hover {
+	background: no-repeat;
+}
+
+.webuploader-pick-disable {
+	opacity: 0.6;
+	pointer-events:none;
+}
+
+.avatar-img {
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 78px;
+  height: 78px;
+}
+
+.loading-img-progress{
+	display: none;
+	position:absolute;
+	z-index: 999;
+	top: 0;
+	left: 0;
+	width: 78px;
+	height: 78px;
+
+	p {
+		line-height: 78px;
+		text-align: center;
+	}
+
+	.progress-bar-bx {
+		position: absolute;
+		bottom: 10px;
+		left: 4px;
+		width:68px;
+		height: 5px;
+		border: 1px solid #ededed;
+
+		span{
+			display: block;
+			width: 100%;
+			height: 100%;
+			background: #107eed;
+		}
+	}
+}
+select {
+/*Chrome和Firefox里面的边框是不一样的，所以复写了一下*/
+border: none;
+/*很关键：将默认的select选择框样式清除*/
+appearance:none;
+-moz-appearance:none;
+-webkit-appearance:none;
+/*将背景改为白色*/
+background:#fff;
+/*加padding防止文字覆盖*/
+padding-right: 0;
+}
+/*清除ie的默认选择框样式清除，隐藏下拉箭头*/
+select::-ms-expand { display: none; }
+.opg{
+    background: #e7e7e7;
+    .pop-box{
+        padding:0;
+    }
+    .pop-box .del-pop-p{
+        padding: 33px 25px 40px;
+        line-height: 16px;
+        color:#333;
+    }
+    .circle-pop-btn{
+        width:110px;
+        height: 30px;
+        line-height: 30px;
+        margin-bottom: 30px;
+        text-align: center;
+        background:#107eee;
+        color:#fff;
+        &:hover{
+            background:#046ebf;
+        }
+    }
+}
+.info{
+    padding-bottom: 10px;
+    div{
+        float:left;
+    }
+    .info-left{
+        float:left;
+        text-align: right;
+        width:88px;
+        padding-right: 10px;
+        line-height: 32px;
+    }
+    .info-right{
+        width:314px;
+
+    }
+    .info-head{
+        margin-bottom: 5px;
+        line-height: 80px;
+        height:80px;
+        .head{
+            width:78px;
+            height:78px;
+            border: 1px solid #dedede;
+        }
+        img{
+            display:block;
+            width:78px;
+            height:78px;
+        }
+    }
+    .right-img {
+        position: relative;
+        width:80px;
+        height:80px;
+        overflow: hidden;
+        a{
+            display:block;
+            width:78px;
+            height:78px;
+            border: 1px solid #dedede;
+            background:url("../../images/meihao/headImg.jpg")no-repeat;
+            &:hover{
+                border: 1px solid #737373;
+                background:url("../../images/meihao/headH.jpg")no-repeat;
+            }
+        }
+        input {
+            cursor: pointer;
+            width:100%;
+            height:100%;
+            opacity: 0;
+            filter: alpha(opacity=0);
+        }
+
+    }
+    .img-again{
+        width:108px;
+        height:28px;
+        line-height:30px;
+        border:1px solid #ababab;
+        border-radius: 2px;
+        text-align: center;
+        margin:24px 0 0 20px;
+        &:hover{
+            background:#f3f3f3;
+        }
+    }
+    .right-term{
+        color:#a5a5a5;
+        line-height: 34px;
+        height: 34px;
+        width:314px;
+    }
+    .right-error{
+        color:#ed2835;
+    }
+    .right-name,.right-lable,.right-found{
+        border:1px solid  #ddd;
+        line-height:30px;
+        height:30px;
+        padding: 0;
+    }
+    .right-name,.right-found{
+        padding:0 10px;
+        width:292px;
+    }
+    .right-lable{
+        position: relative;
+        .lable-text{
+             position: relative;
+             width:130px;
+             padding: 0 10px;
+             height:30px;
+             line-height: 30px;
+							.text-checked{
+								overflow: hidden; /*自动隐藏文字*/
+						    text-overflow: ellipsis;/*文字隐藏后添加省略号*/
+						    white-space: nowrap;/*强制不换行*/
+								width: 100px;
+							}
+             span{
+                position:absolute;
+                left:120px;
+                top:0;
+                width:30px;
+                height:100%;
+                background:url("../../images/meihao/lableBtn.jpg")no-repeat 50% 50%;
+             }
+
+            .lable-btn{
+                background:url("../../images/meihao/lableBtnH.jpg")no-repeat 50% 50%;
+            }
+        }
+
+    }
+    .lable-list{
+		    text-overflow: ellipsis;/*文字隐藏后添加省略号*/
+		    white-space: nowrap;/*强制不换行*/
+        overflow-y: auto;
+				overflow-x: hidden;
+        display:none;
+        position:absolute;
+        z-index: 9;
+        width:150px;
+        max-height: 150px;
+        padding: 6px 0 10px;
+        background:#fff;
+        border:1px solid  #ddd;
+        border-top:none;
+        left:-1px;
+        top:31px;
+        li{
+            height:22px;
+            line-height: 22px;
+            a{
+								overflow: hidden; /*自动隐藏文字*/
+								text-overflow: ellipsis;/*文字隐藏后添加省略号*/
+								white-space: nowrap;/*强制不换行*/
+                display: block;
+                width:130px;
+                padding:0 10px;
+                height:100%;
+                &:hover{
+                    background:#f3f3f3;
+                }
+            }
+        }
+    }
+    .right-text{
+        display:block;
+        width:292px;
+        height:86px;
+        line-height: 18px;
+        padding:2px 10px;
+        border:1px solid  #ddd;
+    }
+}
+
+.consent{
+    font-size: 14px;
+    line-height: 34px;
+    height: 34px;
+    color:#333;
+    padding-left: 340px;
+    input{
+        width:14px;
+        height:14px;
+        position:relative;
+        top:2px;
+        left:-4px;
+        z-index: 0;
+    }
+    .consent-deal{
+        color:#06c;
+    }
+    .right-term {
+      color: #a5a5a5;
+      height: 34px;
+      padding-bottom: 10px;
+    }
+    .right-error{
+        color:#ed2835;
+    }
+}
+.choose-btn{
+    width:240px;
+    padding:30px 0 30px 337px;
+    text-align: center;
+    div{
+        float:left;
+        width:110px;
+        height:30px;
+        line-height: 30px;
+        a{
+            display:block;
+            width:100%;
+            height:100%;
+            border-radius: 2px;
+            background:#ccc;
+            color:#fff;
+
+        }
+    }
+    .continue{
+        a{
+            background: #107eee;
+            color:#fff;
+            &:hover{
+                background:#046ebf;
+            }
+        }
+    }
+    .back{
+        float:right;
+        a{
+            color:#333;
+            width:108px;
+            height:28px;
+            border:1px solid #aaa;
+            background: #fff;
+            line-height: 28px;
+            &:hover{
+                background:#f3f3f3;
+            }
+        }
+    }
+}
+.affirm-popup{
+    display:none;
+    position: fixed;
+    _position: absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    .popup-bg{
+        width:100%;
+        height:100%;
+        background:#333;
+        opacity: 0.5;
+        filter:alpha(opacity=50);
+        z-index: 10;
+    }
+    .popup-info{
+        width:530px;
+        height:502px;
+        position:absolute;
+        top:50%;
+        left:50%;
+        margin:-256px 0 0 -251px;
+        background:#fff;
+    }
+    .info-title{
+        background:#f6f8f9;
+        font-size: 18px;
+        color:#333;
+        text-align: center;
+        height:86px;
+        line-height:86px;
+    }
+    .info{
+        padding-bottom: 16px;
+        div{
+            float:left;
+            width:368px;
+            color:#333;
+        }
+        p{
+            font-family: 'Microsoft YaHei';
+            width:108px;
+            text-align: right;
+            padding-right: 10px;
+            color:#888;
+            float:left;
+        }
+        .head-img{
+            width:78px;
+            height:78px;
+            border:1px solid #c9c9cb;
+            img{
+                width:78px;
+								height:78px;
+            }
+        }
+        .info-license{
+            width:80px;
+            height:80px;
+            border:1px solid  #c9c9cb;
+            img{
+                width:100%;
+                height:100%;
+            }
+        }
+        .info-notice{
+            color:#ed2835;
+            line-height:30px;
+        }
+    }
+    .choose-btn{
+        width:240px;
+        padding: 0;
+        margin:0 auto;
+        text-align: center;
+    }
+    .popup-close{
+        width:12px;
+        height:12px;
+        position:absolute;
+        top:10px;
+        right:10px;
+        a{
+            display:block;
+            width:100%;
+            height:100%;
+            background:url("../../images/meihao/close.jpg")no-repeat;
+            &:hover{
+                background:url("../../images/meihao/closeH.jpg")no-repeat;
+            }
+        }
+    }
+}
+.pt26{
+    padding-top: 26px;
+}
+.mr10{
+    margin-right: 10px;
+}
+.again-hide{
+    display:none;
+}
+/* .continue{
+    a{
+        background: #107eee!important;
+        color:#fff;
+        &:hover{
+                background:#046ebf;
+        }
+    }
+}
+ */

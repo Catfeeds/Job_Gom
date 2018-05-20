@@ -1,0 +1,30 @@
+//- layout-pc.jade
+doctype html
+//- html(lang="zh-CN")
+html(lang="zh-CN",data-use-rem="750",style="font-size:50px;")
+	head
+		block meta-charset
+			meta(charset="UTF-8")
+		block meta-renderer
+			meta(name="renderer" content="webkit")
+		block meta-description
+			meta(name="description",content="gomepulusUI")
+		block meta-keyword
+			meta(name="keyword",content="gomepulusUI")
+		block title
+			title OPG/gomeplusUI
+		block icon
+			link(rel="shortcut icon",href="https://www.gomeplus.com/favicon.ico")
+		block link-public
+			link(rel='stylesheet' type="text/css" href="../../sass/public/public.css")
+		block link-theme
+			link(rel='stylesheet' type="text/css" href="../../sass/platform/platform.css")
+		block js-jquery
+			script(src="../../../js-platform/jquery1.42.min.js")
+		block js-formatHtml
+			script(src="../../../js-platform/htmlToJade.js")
+	body.opg
+		include ../menu/menu.jade
+		div.platform-main
+			div.platform-scroll
+				block content 

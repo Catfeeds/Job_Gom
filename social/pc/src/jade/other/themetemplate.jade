@@ -1,0 +1,210 @@
+doctype html
+html(lang="zh-CN")
+	include ../../../../../gomeplusUI/pc/src/jade/head.jade
+	link(type="text/css",rel="stylesheet",href="../../css/public/public.css")
+	link(type="text/css",rel="stylesheet",href="../../css/module/other/themetemplate.css")
+	body.opg
+		// 右侧导航
+		.side-nav
+			a(href="##").nav-auto(style="height: 58px;")
+				span 主会场
+			a(href="##").nav-normal
+				span 楼层导航
+			a(href="##").nav-normal
+				span 楼层导航楼层导航
+			a(href="##").nav-normal
+				span 楼层导航
+			a(href="##").nav-normal
+				span 楼层导航楼层导航
+			a(href="##").nav-normal
+				span 楼层导航
+			a(href="##").nav-normal
+				span 返回顶部
+		// 头图banner
+		.top-banner(style="background: url(../../images/user/drtype.png) #87ceeb no-repeat center center;height: 400px;")
+		.coupon-wrapper(style="background: pink")
+			.center-wrap
+				// 优惠券banner
+				.coupon-banner
+					img(src="../../images/circle_bg/bg-11.jpg")
+				// 优惠券1
+				.coupon-one.mgt10
+					img(src="../../images/user/home-bg.jpg")
+				// 优惠券2
+				.coupon-two.mgt10
+					img(src="../../images/public/img-error-big.png")
+				// 优惠券3
+				.coupon-three.mgt10
+					img(src="../../images/public/img-error-big.png")
+		div(style="background: #90ee90;")
+			.center-wrap
+				// 1行4列-banner1
+				div
+					img(src="../../images/user/home-bg.jpg")
+				.item-list.four-list.mgt10
+					ul
+						- for (var i = 0; i < 4; i++)
+							li
+								a(href="##").list-img
+									img(src="../../images/circle/yellow-small2.png")
+								.list-txt
+									a(href="##") 送女友星巴克女神杯生日礼物送女杯生日礼物送女杯生日礼物送女友星巴克女神杯 生日礼物
+								.list-bottom
+									p.tag
+										em.icon-fan
+										span 1.00国美币
+									p.price
+										span.red
+											em.icon-rmb ￥
+											span 198.00
+										span.del ￥298.00
+									a(href="##").buy-btn 立即抢购
+		div(style="background: #add8e6")
+			.center-wrap
+				// 1行5列-banner1
+				div
+					img(src="../../images/user/home-bg.jpg")
+				.item-list.five-list.mgt10
+					ul
+						- for (var i = 0; i < 5; i++)
+							li
+								a(href="##").list-img
+									img(src="../../images/circle/yellow-small2.png")
+								.list-txt
+									a(href="##") 送女友星巴克女神杯生日礼物送女杯生日礼物送女杯生日礼物送女友星巴克女神杯生日礼物
+								.list-bottom
+									p.tag
+										em.icon-fan
+										span 1.00国美币
+									p.price
+										span.red
+											em.icon-rmb ￥
+											span 198.00
+										span.del ￥298.00
+									a(href="##").buy-btn 立即抢购
+		div(style="background: pink")
+			.center-wrap
+				// 1行4列-banner2
+				div
+					img(src="../../images/user/home-bg.jpg")
+				.item-nav
+					a(href="##" style="background-color: #f95353;").active 选项
+					- for (var i = 0; i < 7; i++)
+						a(href="##" style="background-color: #666;") 选项
+				.item-list.four-list.mgt10
+					ul
+						- for (var i = 0; i < 4; i++)
+							li
+								a(href="##").list-img
+									img(src="../../images/circle/yellow-small2.png")
+								.list-txt
+									a(href="##") 送女友星巴克女神杯生日礼物送女杯生日礼物送女杯生日礼物送女友星巴克女神杯 生日礼物
+								.list-bottom
+									p.tag
+										em.icon-fan
+										span 1.00国美币
+									p.price
+										span.red
+											em.icon-rmb ￥
+											span 198.00
+										span.del ￥298.00
+									a(href="##").buy-btn 立即抢购
+		div(style="background: #add8e6")
+			.center-wrap
+				// 1行5列-banner2
+				div
+					img(src="../../images/user/home-bg.jpg")
+				.item-nav
+					a(href="##" style="background-color: #f95353;").active 选项
+					a(href="##" style="background-color: #666;") 选项
+				.item-list.five-list.mgt10
+					ul
+						- for (var i = 0; i < 5; i++)
+							li
+								a(href="##").list-img
+									img(src="../../images/circle/yellow-small2.png")
+								.list-txt
+									a(href="##") 送女友星巴克女神杯生日礼物送女杯生日礼物送女杯生日礼物送女友星巴克女神杯 生日礼物
+								.list-bottom
+									p.tag
+										em.icon-fan
+										span 1.00国美币
+									p.price
+										span.red
+											em.icon-rmb ￥
+											span 198.00
+										span.del ￥298.00
+									a(href="##").buy-btn 立即抢购
+		div(style="background: pink;")
+			.center-wrap
+				// 1行1图-banner
+				div
+					img(src="../../images/circle_bg/bg-11.jpg")
+				div
+					img(src="../../images/user/home-bg.jpg")
+		div(style="background: #add8e6;")
+			.center-wrap
+				// 1行2图-banner
+				div
+					img(src="../../images/circle_bg/bg-11.jpg")
+				.fl.two-pic
+					img(src="../../images/public/img-error-big.png")
+				.fl.two-pic
+					img(src="../../images/public/img-error-big.png")
+		div(style="background: pink;")
+			.center-wrap
+				// 1行3图-banner
+				div
+					img(src="../../images/circle_bg/bg-11.jpg")
+				.fl.two-pic
+					img(src="../../images/user/pop-bg.jpg")
+				.fl.two-pic
+					img(src="../../images/user/home-bg.jpg")
+					img(src="../../images/user/home-bg.jpg")
+		div(style="background: #add8e6;")
+			.center-wrap
+				// 1行3图-banner
+				div
+					img(src="../../images/circle_bg/bg-11.jpg")
+				.fl.three-pic
+					img(src="../../images/public/img-error-big.png")
+				.fl.three-pic
+					img(src="../../images/public/img-error-big.png")
+				.fl.three-pic
+					img(src="../../images/public/img-error-big.png")
+		div(style="background: pink;")
+			.center-wrap
+				// 1行3图-banner
+				div
+					img(src="../../images/circle_bg/bg-11.jpg")
+				.fl.two-pic
+					img(src="../../images/user/home-bg.jpg")
+					img(src="../../images/user/home-bg.jpg")
+				.fl.two-pic
+					img(src="../../images/user/pop-bg.jpg")
+		div(style="background: #add8e6;")
+			.center-wrap
+				// 1行3图-banner
+				div
+					img(src="../../images/circle_bg/bg-11.jpg")
+				.fl.four-pic
+					img(src="../../images/public/img-error-big.png")
+				.fl.four-pic
+					img(src="../../images/public/img-error-big.png")
+				.fl.four-pic
+					img(src="../../images/public/img-error-big.png")
+				.fl.four-pic
+					img(src="../../images/public/img-error-big.png")
+		div(style="background: pink;")
+			.center-wrap
+				// 1行3图-banner
+				div
+					img(src="../../images/circle_bg/bg-11.jpg")
+				div
+					img(src="../../images/user/home-bg.jpg")
+				.fl.three-pic
+					img(src="../../images/public/img-error-big.png")
+				.fl.three-pic
+					img(src="../../images/public/img-error-big.png")
+				.fl.three-pic
+					img(src="../../images/public/img-error-big.png")

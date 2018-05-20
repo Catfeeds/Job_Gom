@@ -1,0 +1,69 @@
+doctype html
+html(lang="zh-CN", data-use-rem="750")
+	include ../../../m-widget/head/head.jade
+	style.
+		body, div, header, a, h1, p, span{padding: 0;margin:0;}
+		html, body{height: 100%;}
+		html{font-size: 50px;}
+		body{max-width: 640px;margin-left: auto;margin-right: auto;background-color: #fff;position: relative;}
+		a{-webkit-tap-highlight-color: transparent;}
+		.home-box{font-size: .32rem;}
+		.home-box .header{line-height: .88rem;text-align: center;position: relative;}
+		.home-box .header .h-back{position: absolute;left: .32rem;top: .32rem;width: .2rem;height: .2rem;display: inline-block;border-top: 1px solid #fff;border-left: 1px solid #fff;-webkit-transform: rotate(-45deg);-moz-transform: rotate(-45deg);-mo-transform: rotate(-45deg);-o-transform: rotate(-45deg);transform: rotate(-45deg);margin-right: .1rem;		}
+		.home-box .header h1{font-size: .36rem;font-weight: normal;color: #fff;}
+		.home-box .red-bg{height: 4rem;background-color: #ff5c5c;padding-bottom: 1.26rem;;}
+		.home-box .red-bg .price{color: #fff;margin: 1.1rem 0 0 .85rem;position: relative;}
+		.home-box .price .mark{font-size: .3rem;margin-left: -.37rem;}
+		.home-box .price .dot-b{font-size: 1.5rem;}
+		.home-box .price .dot-a{font-size: .8rem;}
+		.home-box .txt p{font-size: .24rem;color: #999;text-align: center;}
+		.home-box .txt .p-t{margin-top: .36rem;}
+		.home-box .txt .p-b{position: absolute;bottom: .5rem;width: 100%;}
+		.home-box .p-1 .dot-b{font-size: 1.4rem;}
+		.home-box .p-1 .dot-a{font-size: .7rem;}
+		.home-box .p-2 .dot-b{font-size: 1.24rem;}
+		.home-box .p-2 .dot-a{font-size: .6rem;}
+		.home-box .p-3 .dot-b{font-size: 1.1rem;}
+		.home-box .p-3 .dot-a{font-size: .5rem;}
+		.home-box .p-4 .dot-b{font-size: .96rem;}
+		.home-box .p-4 .dot-a{font-size: .4rem;}
+	body.opg.gmb
+		include ../../../m-widget/head/rem.jade
+		.home-box
+			.red-bg
+				header.header
+					a.h-back(href="javascript:;")
+					h1.h-tit 购物车
+				p.price
+					span.mark ￥
+					span.dot-b 10000
+					span.dot-a .00
+				//- 十万 class="price p-1"
+				//- p.price.p-1
+				//- 	span.mark ￥
+				//- 	span.dot-b 100000
+				//- 	span.dot-a .00
+				//- 百万 class="price p-2"
+				//- p.price.p-2
+				//- 	span.mark ￥
+				//- 	span.dot-b 1000000
+				//- 	span.dot-a .00
+				//- 千万 class="price p-3"
+				//- p.price.p-3
+				//- 	span.mark ￥
+				//- 	span.dot-b 10000000
+				//- 	span.dot-a .00
+				//- 亿 class="price p-4"
+				//- p.price.p-4
+				//- 	span.mark ￥
+				//- 	span.dot-b 100000000
+				//- 	span.dot-a .00
+			//- header
+			.txt
+				p.p-t
+					| 国美币提现请前往国美在线电脑端网页版
+					br
+					| www.gome.com.cn
+
+				p.p-b 本服务由银盈通提供
+			//- 

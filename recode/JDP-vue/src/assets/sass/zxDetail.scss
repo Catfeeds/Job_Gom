@@ -1,0 +1,130 @@
+.zxdetail{
+  .detailMain{
+    .detailtitle{
+      &.open{
+        max-height: 10rem;
+      }
+      display: -webkit-box;
+      width: auto;
+      position: relative;
+      margin: .52rem .3rem 0;
+      padding: 0;
+      max-height: 1rem;
+      overflow: hidden;
+      .detailname{
+        text-indent: 0;
+        padding-left: .06rem;
+        -webkit-box-flex: 1;
+        float: none;
+        width: auto;
+        margin-right: .5rem;
+      }
+      .detailflag{
+        float: none;
+        display: inline-block;
+        position: relative;
+        top: -0.03rem;
+      }
+    }
+    .detailcontainer{
+      padding-bottom: .5rem;
+      ol{
+        li{
+          &.zx_speed{
+            margin-bottom: .08rem;
+          }
+          display: -webkit-box;
+          position: relative;
+          /*margin-top: .15rem;*/
+          margin-bottom: .29rem;
+          .detailexplainItems{
+            -webkit-box-flex: 1;
+            display: block;
+            margin-right: .7rem;
+            line-height: .4rem;
+            overflow: hidden;
+            &.margin{
+              margin-bottom: .2rem;
+              height: .8rem;
+            }
+            &.open{
+              height: auto;
+            }
+          }
+          b{
+            font-weight: normal;
+            display: block;
+            width: 100%;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            color: #4A90E2;
+            height: .6rem;
+          }
+          .detailItems{
+            line-height: .4rem;
+          }
+          .detailexplainItems.specialLi{
+            height: auto;
+          }
+          div.detailexplainItems{
+            progress{
+              width: 3.9rem;
+            }
+            padding-top: 0;
+            position: relative;
+            top: -0.12rem;
+            *{
+              vertical-align: middle;
+            }
+            .detailprogressItems{
+
+            }
+            .detailprogressCount{
+              float: none!important;
+            }
+          }
+          .switchBtn{
+            right: .22rem;
+            em{
+              position: relative;
+              left: .1rem;
+            }
+          }
+        }
+      }
+      
+    }
+    .switchBtn{
+      width: .3rem;
+      height: .44rem;
+      background-size: cover;
+      /*background: url(/static/img/up.png) center center no-repeat;*/
+      /*background: url(../../assets/images/up.png) center center no-repeat;*/
+      /*border-radius: .1rem;*/
+      /*border: 1px solid #bebebe;*/
+      transform: rotate(180deg);
+      display: inline-block;
+      position: absolute;
+      bottom: unset;
+      top: 50%;
+      margin-top: -0.32rem;
+      right: .02rem;
+      em.header-backicon{
+        transform: rotate(-90deg);
+        font-size: .2rem;
+        position: relative;
+        top: .03rem;
+      }
+      .iconn-1:before{
+        color: #666;
+      }
+      &.open{
+        transform: rotate(0deg);
+        bottom: .5rem;
+        margin-top: 0;
+        top: unset;
+      }
+    }
+  }
+}

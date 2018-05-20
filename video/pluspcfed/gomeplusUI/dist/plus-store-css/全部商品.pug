@@ -1,0 +1,44 @@
+extends ../plus-widget/head/head.jade
+block style
+	link(type="text/css",rel="stylesheet",href="store.css")
+block body
+	body.opg.store
+		include ../plus-widget/head/rem.jade
+		
+
+		header.header
+			.h-left
+				a.h-back(href="javascript:;")
+					em.iconn-1
+			.h-cnt.flex-cell
+			.h-right
+				a.h-btn(href="javascript:;")
+					em.iconn-3
+		// /header
+
+		.store_wrap
+			.str-navs
+				ul.m-menu
+					//- fixed
+					li.flex-cell.active
+						a.link(href="javascript:;") 销量
+					li.flex-cell
+						a.link(href="javascript:;") 价格
+					li.flex-cell
+						a.link(href="javascript:;") 新品
+					li.flex-cell
+						a.link(href="javascript:;") 人气
+			//- 导航菜单
+			
+			.gds-list
+				ul.lst-box
+					-for(i=0; i<10; i++)
+						li.item
+							a(href="##")
+								.img-box
+									img(src="http://gfs17.gomein.net.cn/T1u0VvBTxT1RCvBVdK_160.jpg")
+								.txt-box
+									p.tit 格力（GREE）大一匹 变标题最多两行超过省略左右留10px…
+									p.c-f5c.price ¥2399
+			//- 商品列表			
+		// /store_wrap

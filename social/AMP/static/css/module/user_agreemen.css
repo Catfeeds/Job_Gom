@@ -1,0 +1,99 @@
+.amp-account .set-content-p {
+  background-color: white;
+  margin-bottom: 20px; }
+  .amp-account .set-content-p .account-set {
+    max-height: 910px;
+    overflow-y: scroll;
+    margin-right: 10px; }
+    .amp-account .set-content-p .account-set .set-content {
+      padding: 0 65px;
+      margin-right: 10px; }
+      .amp-account .set-content-p .account-set .set-content h1 {
+        text-align: center;
+        font-size: 26px;
+        margin: 0 0 30px 0; }
+      .amp-account .set-content-p .account-set .set-content h2 {
+        text-align: left;
+        font-size: 26px;
+        margin: 0 0 30px 0; }
+      .amp-account .set-content-p .account-set .set-content h3 {
+        font-size: 18px;
+        margin: 30px 0 10px 0; }
+      .amp-account .set-content-p .account-set .set-content p {
+        font-size: 14px;
+        line-height: 24px; }
+      .amp-account .set-content-p .account-set .set-content h4 {
+        font-size: 18px;
+        margin: 30px 0; }
+      .amp-account .set-content-p .account-set .set-content .retract {
+        text-indent: 2em; }
+
+.standard {
+  padding: 10px 30px;
+  font-size: 15px;
+  line-height: 2; }
+  .standard h1, .standard h2, .standard h3, .standard h4 {
+    padding: 10px 0;
+    font-weight: bold; }
+  .standard h1 {
+    text-align: center;
+    font-size: 28px; }
+  .standard h2 {
+    font-size: 18px; }
+  .standard h3 {
+    font-size: 16px; }
+  .standard h4 {
+    font-size: 15px; }
+  .standard p {
+    padding-bottom: 10px;
+    text-indent: 2em; }
+  .standard .pd0 {
+    text-indent: 0; }
+  .standard .pdl {
+    padding-left: 3em;
+    text-indent: -1em; }
+  .standard .catalog-bold {
+    font-weight: bold; }
+  .standard dl {
+    padding-left: 2em; }
+    .standard dl dd {
+      padding-left: 2em; }
+    .standard dl.catalog-dl dd {
+      padding-bottom: 10px;
+      text-indent: -1em;
+      padding-left: 3em; }
+  .standard .standard-time {
+    text-align: center; }
+  .standard .standard-catalog .catalog-three {
+    display: block;
+    font-size: 24px;
+    text-align: center;
+    font-weight: normal; }
+  .standard .catalog-list {
+    background: rgba(0, 0, 0, 0.03);
+    padding: 20px; }
+    .standard .catalog-list li strong {
+      display: block;
+      font-size: 18px;
+      font-weight: bold;
+      padding-bottom: 10px; }
+    .standard .catalog-list li dl {
+      padding-left: 2em;
+      padding-bottom: 1em; }
+      .standard .catalog-list li dl dd {
+        padding-left: 2em; }
+  .standard .table {
+    margin: 10px 0; }
+    .standard .table th span {
+      text-align: center;
+      font-weight: bold; }
+    .standard .table tr td:first-child span {
+      text-align: center; }
+    .standard .table tr td span {
+      line-height: 2 !important; }
+    .standard .table span {
+      display: block;
+      padding: 5px 10px;
+      text-align: left; }
+
+

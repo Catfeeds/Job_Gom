@@ -1,0 +1,95 @@
+doctype html
+html(lang="zh-CN")
+	include ../../../../../gomeplusUI/pc/src/jade/head.jade
+	link(type="text/css",rel="stylesheet",href="../../css/public/public.css")
+	link(type="text/css",rel="stylesheet",href="../../css/module/shop/shop-detail.css")
+	body.opg
+		include ../../../../../gomeplusUI/pc/src/jade/header.jade
+		include ../../../../../gomeplusUI/pc/src/jade/menu.jade
+		.wrap-box
+			.shop-title.clearfix
+				include ../../../../../gomeplusUI/pc/src/jade/crumbs.jade
+			.shop-list
+				.list-name.clearfix
+					.img
+						img(src="../../images/link1.png")
+					h1
+						| 德世朗旗舰店
+						span.vip1
+						span.vip2
+						span.vip3
+					p.line2 放心厨具，还原最真实的厨房世界
+					div.clearfix
+						.shop-score
+							| 商品描述：
+							span 4.8
+							| 卖家服务：
+							span 4.6
+							| 物流服务：
+							span 4
+							| 营业执照：
+							span
+								a(href="#")
+									img(src="../../images/shop/icon-zhao.png")
+							.fl
+								| 手机逛店铺
+								em.icon-down
+								.down-ma
+									.sanjiao
+									img(src="../../images/public/ma1.jpg",width="150")
+									p 扫一扫，快速加入国美Plus
+						.function-icon.clearfix
+							a(href="javascript:;").clearfix
+								em.icon.icon-like.active
+								span 5463
+							a(href="javascript:;").clearfix
+								em.icon.icon-save.active
+								span 5463
+							a(href="javascript:;").clearfix
+								em.icon.icon-share.active
+			.license
+				table
+					tr
+						td(colspan="2").pb20
+							p 根据国家相关政策要求对网店经营者资质信息公示如下：
+					tr
+						td.w325 验证码
+						td.code
+							input(type="text",placeholder="请输入验证码",value="")
+							.fl
+								img(src="../../images/public/ma1.jpg")
+							a(href="javascript:;") 换一换
+					tr
+						td.w325
+						td.red 验证码不能为空
+					tr
+						td.w325
+						td
+							a(href="javascript:;").pc-btn 确定
+				table.license-list
+					tr
+						th(colspan="2") 网店经营者资质信息公示：
+					tr
+						td.w130
+							p 企业名称：
+						td 北京德世朗厨具有限责任公司
+					tr
+						td.w130
+							p 营业执照注册号：
+						td 6294678297964
+					tr
+						td.w130
+							p 法定代表人姓名：
+						td 王德世
+					tr
+						td.w130
+							p 企业注册资金：
+						td 500万
+					tr
+						td.w130
+							p 营业执照经营范围：
+						td 生产，加工，批发，零售：厨具，橱柜
+					tr
+						td(colspan="2").pt15
+							p 注：以上营业执照信息，除公司名称、店铺名称和店铺网址已通过认证之外，其余信息由卖家自行申报填写。如需进一步核实，请联系当地工商行政管理部门。
+		include ../../../../../gomeplusUI/pc/src/jade/footer.jade

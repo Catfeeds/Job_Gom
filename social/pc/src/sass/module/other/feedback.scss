@@ -1,0 +1,208 @@
+@import '../../../../../../gomeplusUI/pc/src/sass/common/basic/_base.scss';
+@mixin txtcenter{
+	text-align: center;
+}
+.bg-fff{
+    background: $bg-fff;
+    margin-top: 12px;
+}
+.w902{
+    width: 902px;
+    margin: 0 auto;
+    color: $color-default;
+    h2{
+        text-align: center;
+        font-size: 18px;
+        padding: 50px 0 20px;
+        border-bottom: 1px solid #f6f5ee;
+        margin-bottom: 18px;
+    }
+    .feed-error{
+        border: 1px solid #fdbb98;
+        color: #fdbb98;
+        background: #fff8e6;
+        padding: 12px 15px;
+        width: 420px;
+        margin: 0 auto 10px;
+    }
+    .welcome{
+        line-height: 26px;
+    }
+    h3{
+        margin-left: -12px;
+        padding: 30px 0 18px;
+        span{
+            font-size: $text12;
+            color: $color-gray;
+        }
+        .red{
+            color: $link-hover;
+        }
+        strong{
+            font-size: $text16;
+            padding-left: 6px;
+        }
+    }
+    .type a{
+        box-sizing: border-box;
+        float: left;
+        height: 34px;
+        line-height: 34px;
+        width: 90px;
+        text-align: center;
+        margin-right: 20px;
+        border: 1px solid #e9e8e5;
+        color: $color-default;
+        &:hover{
+            background: $link-hover;
+            color: $bg-fff;
+        }
+        &.active{
+            color: $color-default;
+            border: 2px solid $link-hover;
+            background: url(../../../images/shop/icon-checked.png) no-repeat right bottom;
+        }
+    }
+    .textarea-box{
+        position: relative;
+        textarea{
+            box-sizing: border-box;
+            width: 900px;
+            height: 178px;
+            border: 1px solid #f5f4f3;
+            background: $bg-fff;
+            padding: 12px 20px;
+        }
+        .pa{
+            position: absolute;
+            right: 20px;
+            bottom: 15px;
+            color: $color-gray;
+        }
+    }
+    .upload{
+        float: left;
+        width: 150px;
+        height: 150px;
+        border: 1px solid #f5f4f3;
+        position: relative;
+        margin-right: 12px;
+        img{
+            width: 150px;
+            height: 150px;
+        }
+        a.btn{
+            display: block;
+            width: 150px;
+            height: 150px;
+            line-height: 150px;
+        }
+        .icon-close{
+            position: absolute;
+            top: 8px;
+            right: 8px;
+            color: $color-gray;
+            font-size: 16px;
+            display: none;
+        }
+        &:hover{
+            .icon-close{
+                display: block;
+            }
+        }
+        &.ing{
+            .mask{
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                z-index: 5;
+                left: 0;
+                top: 0;
+                background: url(../../../images/public/opacity.png) repeat;
+            }
+            .mask-text{
+                position: absolute;
+                left: 0;
+                width: 100%;
+                text-align: center;
+                z-index: 10;
+                top: 50%;
+                .progress{
+                    width: 80px;
+                    margin: 0 auto;
+                    background: $bg-fff;
+                    height: 3px;
+                    line-height: 3px;
+                    font-size: 0;
+                    .val{
+                        float: left;
+                        height: 3px;
+                        width: 0;
+                        background: $link-hover;
+                    }
+                }
+                p{
+                    color: $bg-fff;
+                    padding-top: 20px;
+                }
+            }
+        }
+        &.fail{
+            background: #f1f1f1;
+            .mask-text{
+                position: absolute;
+                left: 0;
+                width: 100%;
+                text-align: center;
+                z-index: 10;
+                top: 60px;
+                color: $color-default;
+                p{
+                    padding-bottom: 5px;
+                }
+                a span{
+                    padding-left: 5px;
+                    text-decoration: underline;
+                    font-size: $text12;
+                }
+            }
+        }
+        &.add{
+            cursor: pointer;
+            .icon-add{
+                position: absolute;
+                left: 55px;
+                top: 55px;
+                font-size: 40px;
+                color: #b9b9b7;
+            }
+            input{
+                display: block;
+                width: 150px;
+                height: 150px;
+                line-height: 150px;
+                opacity: 0;
+                cursor: pointer;
+                position: absolute;
+                top: 1px;
+                left: 1px;
+                z-index: 9;
+            }
+        }
+    }
+    .btn-box{
+        text-align: center;
+        padding: 50px 0;
+        .pc-btn{
+            width: 200px!important;
+            background-color: $link-hover!important;
+        }
+    }
+    
+}
+.feedback-suc{
+    line-height: 34px;
+    padding-top: 100px;
+    text-align: center;
+    font-size: 20px;
+}

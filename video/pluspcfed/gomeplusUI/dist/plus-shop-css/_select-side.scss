@@ -1,0 +1,255 @@
+@charset "UTF-8";
+// @ Css name：店铺信息
+// @ Author： kanjingjing
+// @ Date： 2017-08-07
+// @ Last Modified by： kanjingjing
+// @ Last Modified time：2017-08-07
+//==========================
+
+@import "../plus-sasscore/_configure.scss";
+
+// kanjingjing 2017-08-07
+.rebate{
+	.aslider{
+		position: fixed;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		z-index: 101;
+	}
+	.m-select{
+		position: absolute;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		padding-bottom: rem(90);
+		background-color: #eaeaea;
+		overflow-y: auto;
+		width: rem(650);
+		height: 100%;
+		.module-top{
+			padding-top: rem(40);
+		}
+		.title{
+			font-size: rem(28);
+			line-height: rem(28);
+			overflow: hidden;
+			.iconn-43{
+				padding-right: rem(20);
+				font-size: rem(24);
+				color: #999;
+			}
+			.num{
+				padding-left: rem(4);
+				font-size: rem(20);
+				color: #999;
+			}
+			.unfold{
+				float: right;
+				padding-right: rem(30);
+			    font-size: 0.24rem;
+    			color: #999;
+			}
+		}
+		.title-normal{
+			padding-top: rem(30);
+			padding-bottom: rem(30);
+			min-width: rem(112);
+		}
+		.fixed-title{
+			position: fixed;
+			top: 0;
+			right: 0;
+			left: rem(130);
+			z-index: 102;
+			padding-top: rem(66);
+			padding-bottom: rem(40);
+			background-color: #fff;
+		}
+		.f-t-b{
+			padding-top: rem(134);
+		}
+		.option-wrap{
+			overflow: hidden;
+			.option{
+				display: block;
+				padding: rem(16 10 14);
+				color: #666;
+				background-color: #f2f2f2;
+				border-radius: rem(6);
+				width: rem(184);
+				&:after{
+					border-color: #f2f2f2;
+					border-radius: 6px;
+				}
+				span{
+					display: block;
+				}
+			}
+			.iconn-94{
+				display: none;
+				margin-left: rem(10);
+				font-size: rem(18);
+				color: #ff5c5c;
+				line-height: rem(18);
+			}
+			li{
+				float: left;
+				padding-right: rem(20);
+				padding-bottom: rem(20);
+				&.active{
+					.option{
+						color: #ff5c5c;
+						background-color: #fff;
+						&:after{
+							border-color: #ff5c5c;
+						}
+					}
+					.iconn-94{
+						display: block;
+						float: right;
+						padding-top: rem(4);
+						padding-right: rem(12);
+					}
+				}
+			}
+		}
+		.selected{
+			padding-left: rem(20);
+			padding-right: rem(20);
+			font-size: rem(26);
+			color: #ff5c5c;
+			text-align: right;
+			.iconn-56{
+				padding-right: rem(20);
+				font-size: rem(24);
+				color: #ff5c5c;
+			}
+		}
+		.price-input{
+			padding-left: rem(20);
+			.price-in{
+				display: inline-block;
+				padding: rem(16 10 15);
+				text-align: center;
+				font-size: rem(26);
+				background-color: #f2f2f2;
+				width: rem(200);
+			}
+			.line{
+				display: inline-block;
+				margin-left: rem(16);
+				margin-right: rem(10);
+				vertical-align: middle;
+				background-color: #666;
+				width: rem(26);
+				height: 1px;
+			}
+		}
+		.address-wrap{
+			li{
+				&:first-child{
+					padding-top: 0;
+				}
+				.iconn-56{
+					font-size: rem(24);
+					color: #333;
+				}
+				.iconn-94{
+					display: none;
+					padding-right: rem(23);
+					font-size: rem(20);
+				}
+				p{
+					padding-left: rem(20);
+					padding-right: rem(30);
+					font-size: rem(28);
+					line-height: rem(36);
+				}
+				&.active{
+					color: #ff5c5c;
+					.iconn-56{
+						color: #ff5c5c;
+					}
+					.iconn-94{
+						display: inline-block;
+						color: #ff5c5c;
+					}
+					p{
+						padding-right: rem(20);
+					}
+				}
+			}
+		}
+		.address-tab{
+			position: fixed;
+			top: rem(134);
+			right: 0;
+			left: rem(100);
+			z-index: 102;
+			padding-left: rem(30);
+			background-color: #fff;
+			overflow: hidden;
+			a{
+				display: block;
+				padding-bottom: rem(20);
+			}
+			li{
+				float: left;
+				margin-right: rem(44);
+				font-size: rem(26);
+				&.active{
+					border-bottom: 1px solid #ff5c5c;
+					a{
+						color: #ff5c5c;
+					}
+				}
+			}
+		}
+		.area-list{
+			padding-top: rem(210);
+			li{
+				p{
+					padding-left: 0;
+					font-size: rem(26);
+					line-height: rem(26);
+				}
+				.iconn-94{
+					padding-right: rem(35);
+					font-size: rem(26);
+				}
+			}
+		}
+	}
+	.module-normal{
+		background-color: #fff;
+		padding-left: rem(30);
+		.iconn-41{
+			padding-right: rem(30);
+			font-size: rem(24);
+			color: #999;
+		}
+	}
+	.fixed-btn{
+		position: fixed;
+		left: rem(100);
+		right: 0;
+		bottom: 0;
+		z-index: 102;
+		a{
+			display: block;
+			padding-top: rem(28);
+			padding-bottom: rem(30);
+			text-align: center;
+			font-size: rem(32);
+		}
+		.btn-reset{
+			background-color: #f9f9f9;
+		}
+		.btn-confirm{
+			color: #fff;
+			background-color: #ff5c5c;
+		}
+	}
+}

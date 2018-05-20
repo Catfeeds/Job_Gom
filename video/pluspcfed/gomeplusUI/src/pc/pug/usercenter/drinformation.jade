@@ -1,0 +1,84 @@
+doctype html
+html(lang="zh-CN")
+	include ../../../pc-widget/head/head.jade
+	link(type="text/css",rel="stylesheet",href="../../css/public/public.css")
+	link(type="text/css",rel="stylesheet",href="../../css/module/usercenter.css")
+	body.opg
+		.dr-bg
+			a(href="##").back-to-index
+			ul.info-steps
+				li.bar
+					span
+					span
+				li.active.step1
+					span.step-num
+						em 1
+					span.step-txt 填写资料
+				li.step2
+					span.step-num
+						em 2
+					span.step-txt 审核
+				li.step3
+					span.step-num
+						em 3
+					span.step-txt 审核结果
+			ul.dr-form
+				.error-tip 此昵称太受欢迎了，已经有人抢了
+				li.clearfix
+					label.label-input 真实姓名
+					// icon替换 .icon.input-ok
+					em.iconn-20
+					input(type="text" placeholder="请输入您的真实姓名").txt-input
+				li.dr-form-error.clearfix
+					label.label-input 身份证号
+					// icon替换 .icon.input-ok
+					em.iconn-20
+					input(type="text" placeholder="请输入身份证号").txt-input
+					span.error-txt 请填写18位有效身份证号
+				li.clearfix
+					label.label-verify 实名认证
+					.verify-pics.fl
+						p （身份证正反面照，手持身份证件照）
+						ul.upload-box
+							li
+								a(href="##").upload-btn
+									.bar-upload-pic
+										span
+							li.dr-form-error
+								a(href="##").upload-btn
+									input(type="file")
+									// icon替换 icon
+									em.iconn-50
+								span.card-txt 身份证反面
+								span.error-txt 格式为JPG、JPEG、PNG
+							li
+								a(href="##").upload-btn
+									img(src="../../images/public/404-2.png")
+									a(href="##").modify-mask
+										span.mask-txt 更换照片 
+								span.card-txt 手持身份证
+				li.clearfix
+					label.label-input 达人类别
+					.dr-type-select.fl
+						.dr-select.active
+							span.select-txt
+								| 请选择
+							// icon替换 .icon
+							em.iconn-2
+						.select-list
+							a(href="javascript:;") 时尚达人
+							a(href="javascript:;") 户外达人
+							a(href="javascript:;") 美食达人
+							a(href="javascript:;") 健身达人
+							a(href="javascript:;") 健身达人
+							a(href="javascript:;") 健身达人
+							a(href="javascript:;") 健身达人
+				li.clearfix.dr-form-error
+					label.self-intro 个人介绍
+					.textarea.fl
+						textarea(placeholder="请填写简单的文字介绍，包括您的微博、微信等其他平台的个人账号，是否与其他品牌有过合作等")
+						p.rest-txt
+							span 0
+							|/100
+						span.error-txt 请输入自我介绍，2-100个字符
+			a(href="##").pc-btn.pc-btnh45.dr-btn.dr-form-btn 申请达人

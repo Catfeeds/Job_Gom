@@ -1,0 +1,18 @@
+doctype html
+html(lang="zh-CN", data-use-rem="750")
+	include ../../../m-widget/head/head.jade
+	link(type="text/css",rel="stylesheet",href="../../css/public/gomeplusUI.css")
+	link(type="text/css",rel="stylesheet",href="../../css/module/plaintext/plaintext.css")
+	//- link(type="text/css",rel="stylesheet",href="../../css/module/im-packet/im-packet.css")
+	body.opg.im-packet
+		include ../../../m-widget/head/rem.jade
+		<!--header-->
+		header.header
+			.h-left
+				a.h-back(href="javascript:;")
+					em.iconn-1
+			.h-cnt.flex-cell
+				h1.h-tit 说明
+		section.plaintext
+			h2 怎么查我的红包发送和领取记录？
+			p 查询方法：发送红包后，可点击红包气泡进入详情页，点击底部的【查看红包记录】进行查看；

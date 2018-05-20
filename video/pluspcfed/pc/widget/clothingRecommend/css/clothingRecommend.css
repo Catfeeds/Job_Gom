@@ -1,0 +1,19 @@
+.pluspc-clothing-wrap{width: 1200px;margin: 20px auto 8px;font-size: 14px; color:#333;font-family: '微软雅黑', sans-serif;}
+.pluspc-clothing-wrap a{color:#333;}
+.pluspc-clothing-wrap a:hover{color:#E3101E;text-decoration: none;}
+.pluspc-clothing-title{font-size:24px;line-height: 66px;}
+.pluspc-clothing-list{ padding-top:43px; margin-right:-8px;}
+.pluspc-clothing-list li{float: left;position: relative;margin-right:8px;width:294px;}
+.pluspc-clothing-user{position: absolute;z-index: 100;left:10px;top:-43px;}
+.pluspc-clothing-uImg{border:3px #fff solid;width: 80px;height: 80px;border-radius:50%;float: left;background: #fff;}
+.pluspc-clothing-uImg:hover{zoom:1;}
+.pluspc-clothing-uImg:hover img{opacity: 0.9;filter: alpha(opacity=90);}
+.pluspc-clothing-uImg img{width: 80px;height: 80px;overflow: hidden;border-radius:50%; background: url(../images/loading-sm.png) 50% 50% no-repeat;border: none;vertical-align: middle;}
+.pluspc-clothing-uname{float: left;margin:9px 0 0  7px;line-height: 34px;}
+.pluspc-clothing-image,.pluspc-clothing-image img{width: 294px;height: 175px;background: url(../images/loading-sm.png) 50% 50% no-repeat;border: none;vertical-align: middle;}
+.pluspc-clothing-image a:hover{opacity:0.9;filter:alpha(opacity=90);}
+.pluspc-clothing-toptitle{line-height: 52px;height:52px;overflow: hidden;display: block;}
+.w1000 .pluspc-clothing-wrap{width: 1000px;}
+.w1000 .pluspc-clothing-list li{width: 244px;}
+.w1000 .pluspc-clothing-image{width: 244px;position: relative;overflow: hidden;}
+.w1000 .pluspc-clothing-image img{left: -10px;top:0;position: absolute; background: url(../images/loading-sm.png) 50% 50% no-repeat;border: none;vertical-align: middle;}

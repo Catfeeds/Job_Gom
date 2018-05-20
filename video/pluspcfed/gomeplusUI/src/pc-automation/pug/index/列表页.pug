@@ -1,0 +1,92 @@
+	//- head.jade
+extends ../../../pc-widget/head/head-set.jade
+block title
+	title 自动化管理平台
+	meta(name="author",content="国美plus")
+block css-file 
+	link(type="text/css",rel="stylesheet",href="../../css/public/public.css")
+	link(type="text/css",rel="stylesheet",href="../../css/module/page.css")
+	script(type="text/javascript" src="../../js/jquery-3.2.1.js")
+block body
+	body.opg
+		.header
+			img(src="../../images/log.jpg").log
+			div.head-right
+		.con-box
+			.sider
+				ul.list
+					li.curr
+						em.icon-1
+						span.name 分类管理
+						em.icon-2
+						ol.sub 
+							li
+								a(href="#") 项目1
+							li
+								a(href="#") 项目1
+							li
+								a(href="#") case
+					li 
+						em.icon-1
+						span.name 分类管理2
+						em.icon-2
+						ol.sub 
+							li
+								a(href="#") 项目1
+							li
+								a(href="#") 项目1
+							li
+								a(href="#") 项目3
+			.right-content
+				.right-box
+					div.seach-box
+						div.select-box
+							select 
+								option 选择项目
+							select 
+								option 选择一级分类
+							select 
+								option 选择二级分类
+							select 
+								option 选择三级分类
+						div.seach
+							input(type="input" value="case名称" size="30").ipt-txt
+							input(type="input" value="case名称" size="30").ipt-txt
+							button.btn-normal 搜索
+							button.btn-normal 清空
+					div.new-class
+						em.btn-normal 进行分类
+					div.table-box
+						table.tbl
+							tr
+								th(width="56") 
+									span.choose-all 全选 
+								th case名称
+							tr.hover
+								td 
+									span.menu-radio.menu-radio-checked
+								td.tc 逛街首页
+							tr 
+								td 
+									span.menu-radio
+								td.tc 逛街首页2
+							tr 
+								td 
+									span.menu-radio
+								td.tc 分类编号
+							tr 
+								td 
+									span.menu-radio
+								td.tc 逛街首页2
+					div.fenye
+						a 首页
+						a 上一页
+						span.curr 4
+						a(href="#") 下一页
+						a(href="#") 尾页
+						span 当前11页
+						span 共11页
+		script(type="text/javascript" src="../../js/page.js")
+
+
+		

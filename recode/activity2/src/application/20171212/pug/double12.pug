@@ -1,0 +1,352 @@
+doctype html
+html(lang="zh-CN")
+    head
+        meta(charset='UTF-8')
+        meta(name='robots', content='noarchive')
+        meta(name='Baiduspider', content='noarchive')
+        meta(http-equiv='Cache-Control', content='no-transform')
+        meta(http-equiv='Cache-Control', content='no-siteapp')
+        meta(name='applicable-device', content='pc,mobile')
+        meta(name='MobileOptimized', content='width')
+        meta(name='HandheldFriendly', content='true')
+        title 送温暖
+        script(src='http://apps.bdimg.com/libs/jquery/2.1.1/jquery.min.js')
+        
+        link(rel='stylesheet', href='../css/double12.css')
+        script(type='text/javascript').
+            (function() {
+            /*rem*/
+            function setFont() {
+            var __rootrem;
+            var clientWidth = (document.documentElement || document.body.parentNode).clientWidth;
+            if ( clientWidth > 650) {
+            clientWidth = 640;
+            }
+            // 375尺寸的比例，换算成@1x设计稿后1px=0.01rem
+            __rootrem = Math.floor(clientWidth * 100 / 640);
+            (document.documentElement || document.body.parentNode).style.fontSize = __rootrem + "px";
+            }
+            setFont();
+            window.addEventListener("resize", function() {
+            setFont();
+            });
+            })();
+    body
+        img(src="../images/share.jpg", alt="").hide
+        .loading.hide
+                .loading-cont
+                    .cont-img
+                        .img-box
+                            .box-up
+                    .percent 
+                        span 50
+                        | %
+        .outer
+            //- 首页
+            .home.hide
+                .home-text
+                .home-btn
+                    a(href="javascript:;").warmBtn
+                    a(href="javascript:;").ruleBtn
+            //- 规则
+            .rule.hide
+                .bg
+                    .back
+                        a(href="javascript:;")
+                    .rule-cont
+                        .cont-text
+                            //.text-title 规则：
+                            p
+                                strong • 活动时间：2017.12.10 -2017.12.13
+                            p 参与时间：2017.12.10 -2017.12.13
+                            p 优惠券使用时间：2017.12.10 -2017.12.13
+
+                            p  
+                                strong • 活动奖品兑换：
+                            p 50暖心值兑换2元优惠券（无门槛）
+                            p 100暖心值兑换5元优惠券（无门槛）
+                            p 150暖心值兑换121元优惠券（满500可使用）
+                            p 注：每个ID不同面额各仅限一张，优惠券为红券，每笔支付订单限用一张，不可叠加使用）；数量有限先到先得，优惠券仅限全场自营购买使用；
+
+                            p 
+                                strong • 活动内容：
+                            p 1.在活动期间，用户登录“取暖大作战”互动H5，通过邀请好友参与“送暖心值”互动小游戏，用户可获得相应的暖心值；
+                            p 2.每个好友每次最高可送出40暖心值（好友对于每个用户ID，仅有一次“送暖心值”的机会），当用户暖心值累计分别达到三个不同等级，用户则有机会获得兑换优惠券的机会；
+                            p 
+                                strong • 活动细则：
+                            p 1.临近活动时间，记得刷新页面；
+                            p 2.本次活动严禁恶意刷奖行为，一经发现立即取消中奖资格，不予发奖 ；
+                            p 3.互联网业务活动存在诸多不确定性，如因不可抗因素，例如活动中存在大面积作弊行为（如使用机器刷单等）、通讯线路故障、网络异常或计算机大规模瘫痪等原因致使活动难以继续开展的，国美有权取消、修改或暂停本活动；
+                            p 4.用户参与此活动即视为理解并同意本活动细则，在法律允许范围内， 国美对本活动有最终解释权。
+            //- 输入信息
+            .info.hide
+                .bg
+                    .back
+                        a(href="javascript:;")
+                    .sex 
+                        .sex-title 请选择你的性别
+                        .sex-btn.clearfix
+                            .man.fl
+                                .head
+                                    img(src="../images/man.png", alt="")
+                                .btn
+                                    a(href="javascript:;").btn-man
+                            .woman.fr
+                                .head.pitch
+                                    img(src="../images/woman.png", alt="")
+                                .btn
+                                    a(href="javascript:;").btn-woman
+                    .nickname
+                        input(type="text",name="tname",placeholder="输入昵称")
+                    .picture
+                        .picturetitle 请选择你的头像
+                        .head
+                            img(src="../images/photoWoman.jpg", alt="").head-woman
+                            img(src="../images/photoMan.jpg", alt="").head-man.hide
+                        .picture-btn
+            //- 头像调整
+            .adjust.hide
+                .bg
+                    .back
+                        a(href="javascript:;")
+                    .adjust-title 调整你的头像位置
+                    .head
+                        img(src="../images/photoWoman.jpg", alt="").head-woman
+                        img(src="../images/photoMan.jpg", alt="").head-man.hide
+                    .btn
+                        a(href="javascript:;")
+            //- 选择装备
+            .choice.hide
+                .bg
+                    .back
+                        a(href="javascript:;")
+                    .choice-pic
+                        .pic
+                            img(src="../images/choicePic.jpg", alt="")
+                        .choice-woman
+                        .choice-man.hide
+                    .choice-text
+                        span sunshine
+                        | ，选一个过冬吧？
+                    .choice-btn
+                        .btn.choice1
+                            a(href="javascript:;").pitch-btn
+                        .btn.choice2
+                            a(href="javascript:;")
+                        .btn.choice3
+                            a(href="javascript:;")
+                        .btn.choice4
+                            a(href="javascript:;")
+                .ok-btn
+            //- 装备
+            .equip.hide
+                .bg
+                    .equip-text 
+                        span.name Sunshine 
+                        br
+                        | 你给我的温暖，我都收在心里了
+                    .equip-pic
+                        .pic-head
+                            .pic
+                                img(src="../images/choicePic.jpg", alt="")
+                            .head-woman.hide
+                            .head-man
+                            .pic-equip1.hide
+                            .pic-equip2.hide
+                            .pic-equip3
+                            .pic-equip4.hide
+                        .pic-title
+                .equip-btn.clearfix
+                    .poster.btn
+                        a(href="javascript:;")
+                    .share.btn
+                        a(href="javascript:;")
+            //- 好友
+            .friend
+                .bg
+                    .back
+                        a(href="javascript:;")
+                    .friend-text 
+                        span.name Sunshine 
+                        br
+                        | 既然你点进来，就说明你心里还是有我的那你看我那么冷，还不快来暖暖我~
+                    .friend-head
+                        .pic
+                             img(src="../images/choicePic.jpg", alt="")
+                        .friend-woman
+                        .friend-man.hide
+                .btn
+                    a(href="javascript:;")
+            //- 搓火苗
+            .flame.hide
+                .bg
+                    .back
+                        a(href="javascript:;")
+                    .time
+                        span.J-send-time 12
+                        | s
+                    .flame-temp
+                        .temp
+                        .current-box
+                            .current.J-send-current
+                    .flame-figure
+                        .figure.hide
+                            .pic
+                                img(src="../images/choicePic.jpg", alt="")
+                            .flame-woman
+                            .flame-man.hide
+                        .figure-gif
+                            img(src="../images/flameWoman.gif", alt="")
+                .flame-text
+                    .text-pic
+                    .text 规定时间内搓动的次数越多朋友得到的温暖值越高
+                .flame-popup.J-send-warm
+            //- 结果
+            .result.hide
+                .bg
+                    .back
+                        a(href="javascript:;")
+                    .result-text
+                        p 你已成功为好友送出温暖值
+                            span.send 45
+                        p 好友当前温暖值为
+                            span.now 110
+                        p 可领取价值XX的优惠券
+                    .result-figure
+                        .result-woman
+                        .result-man.hide
+                .common-btn.clearfix
+                    .btn.fl
+                        a(href="javascript:;").also
+                    .btn.fr
+                        a(href="javascript:;").stroll
+            //- 狠心的
+            .cruel.hide
+                .bg
+                    .back
+                        a(href="javascript:;")
+                    .cruel-cont
+                        .cont-title 
+                            span sunshine
+                            | ：好狠的心
+                            br
+                            |一点温暖都不给我~
+                            br 
+                            | 哭唧唧
+                        .cont-head
+                            .pic
+                                img(src="../images/choicePic.jpg", alt="")
+                            .cruel-woman
+                            .cruel-man.hide
+                .common-btn.clearfix
+                    .btn.fl
+                        a(href="javascript:;").also
+                    .btn.fr
+                        a(href="javascript:;").stroll
+            //- 当前
+            .present.hide
+                .bg
+                    .back
+                        a(href="javascript:;")
+                    .present-title
+                        span Sunshine
+                        | 内心的小火苗
+                        br
+                        | 当前暖心值：
+                        span.num 110
+                    .present-temp
+                        .temp
+                        .current-box
+                            .current
+                    .present-figure
+                        .present-woman
+                        .present-man.hide
+                .common-btn.clearfix
+                    .btn.fl
+                        a(href="javascript:;").numerical
+                    .btn.fr
+                        a(href="javascript:;").stroll
+                .common-hint 通过右上角分享，可继续求温暖哦
+            //- 兑换
+            .exchange.hide
+                .bg
+                    .back
+                        a(href="javascript:;")
+                    ul
+                        li.title
+                            .name Sunshine
+                            .exchange-num 当前暖心值：
+                                span.num 110
+                        li.clearfix
+                            .ticket.fl
+                                p 暖心值满50可领取
+                                .ticket-money 
+                                    span XX
+                                    |优惠券
+                            .btn.fr
+                                a(href="javascript:;").already
+                        li.clearfix
+                            .ticket.fl
+                                p 暖心值满50可领取
+                                .ticket-money 
+                                    span XX
+                                    |优惠券
+                            .btn.fr
+                                a(href="javascript:;")
+                        li.clearfix
+                            .ticket.fl
+                                p 暖心值满50可领取
+                                .ticket-money 
+                                    span XX
+                                    |优惠券
+                            .btn.fr
+                                a(href="javascript:;")
+                    .hint 每种优惠券只可限领一次哦~
+                        br
+                        |数量有限，先到先得
+                    .more-btn
+            //- 兑换成功
+            .successful.hide
+                .bg
+                    .back
+                        a(href="javascript:;")
+                    .title
+                        .successful-title 您已成功兑换礼券
+                        .successful-num 当前暖心值：
+                            span.num 110
+                    .successful-coupon
+                        .coupon2
+                        .coupon5.hide
+                        .coupon121.hide
+                .common-btn.clearfix
+                    .btn.fl
+                        a(href="javascript:;").continue
+                    .btn.fr
+                        a(href="javascript:;").vsenue
+            //- 音乐
+            .music.open
+                audio(src="",autoplay,loop)
+            //- 弹层
+            .hint.hide
+                .hint-bg
+                //- 验证码
+                .hint-cont.hide
+                    .import.clearfix
+                        .fl.import-text
+                            input#curitytext(type='text')
+                        .fr.import-img
+                            img#curityimg(src='../images/pic.png', height='45', width='154', alt='')
+                    .hint-btn.clearfix
+                        .btn.fl
+                            a(href="javascript:;").hint-off
+                        .btn.fr
+                            a(href="javascript:;").hint-ok
+                //- 验证码错误
+                .hint-error
+                //- 活动结束
+                .hint-end.hide
+            .shareWx.hide
+                .share-bg
+                .share-title
+        script(type="text/javascript", src="http://localhost:1314/CDN8176/dist/vendor/js/zepto.js")
+        script(type="text/javascript", src="http://localhost:1314/CDN8176/dist/20171212/js/sendWarm.js")

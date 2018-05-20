@@ -1,0 +1,21 @@
+{
+  "status": 0,
+  "result": true, //false
+  "message": "成功",
+  "type":"newmsg",
+  "data": {
+    "sessionId": 90,
+    "personnelType": 1, //1:固定客户id
+    "uid": 2233,
+    "sessionTime": "2016-5-30 13:14:20",
+    "sessionName": "liangxiao",
+    "sessionIcon": "http://10.69.205.26:9090/dist/img/user_avatar.png",
+    "sessionContent": {
+      "content": "亲爱的我想买的电视今天有打折么，多买能打几折", //0：文本    其它:url
+      "type": "text ", // | img | video | audio       //文字     图片     音频      视频
+      "name": "8889.jpg",
+      "imgHeight": "",
+      "imgWidth": ""
+    }
+  }
+}

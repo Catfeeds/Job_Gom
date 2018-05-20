@@ -1,0 +1,91 @@
+doctype html
+html(lang="zh-CN")
+    meta(charset="utf-8")
+    link(type="text/css",rel="stylesheet",href="../../css/public/public.css")
+    link(type="text/css",rel="stylesheet",href="../../css/module/amendPrivate.css")
+    body.opg
+        include ../../widget/header/header-meihaoT.pug
+        .amend-private
+            .private-tempo.clearfix
+                p 选择账号类型
+                p.tempo-perfect 完善账号信息
+                p.tempo-success 开通成功
+            .private-info
+                .info.clearfix
+                    .info-left.info-head 美号头像
+                    .info-right
+                        .right-img.info-head(data-node="cropWrap")
+                          div.loading-img-progress(data-node="loadNotice")
+                            p 头像加载中
+                            div.progress-bar-bx
+                              span(data-node="uploadProgress")
+                          img.avatar-img(data-edit="editImg")
+                        .img-again
+                          a.retry-upload(data-action="upload-edit",href="javascript:;") 重新上传
+                        .right-term(data-node="noticeBox") 大小不超过4M，支持.PNG .JPG  .JPEG格式
+                .info.clearfix
+                    .info-left 美号名称
+                    .info-right
+                      input(data-edit="editName",type="text",minlength="2", maxlength="15").right-name
+                      .right-term(data-node="noticeName") 名称长度为2-15个字，不含有特殊字符
+                .info.clearfix
+                    .info-left 美号标签
+                    .info-right
+                        .right-lable
+                          .lable-text(data-edit="editLabelDiv")
+                            .text-checked 生活美学家
+                            span.lable-btn
+                          ul(data-edit="editLabelSearch").lable-list
+                        .right-term(data-node="noticeLabel") 选择您擅长/感兴趣的领域
+                .info.clearfix
+                    .info-left 美号简介
+                    .info-right
+                      textarea(data-edit="editDetail").right-text
+                      .right-term(data-node="noticeDetail") 简介长度为4-120个字
+                .info.clearfix
+                    .info-left 绑定圈子
+                    .info-right.info-circle 时尚圈
+            .consent
+              div
+                input(data-edit="editCheck", type='checkbox')
+                | 我已阅读并同意
+                a(href='javascript:;',target="_blank").consent-deal 《XXXXXXXXXXX》
+            .choose-btn.clearfix
+              .continue
+                a(data-submit="editSubmit", href='javascript:;') 继续
+              .back
+                a(href='javascript:;') 返回
+        //- 弹层
+        .affirm-popup
+            .popup-bg
+            .popup-info
+                .info-title 请确认您填写的信息是否有误    
+                .info.pt26.clearfix
+                    p 美号头像
+                    .info-head
+                        .head
+                            img(src="../../images/meihao/head.jpg", alt="")
+                .info.clearfix
+                    p 美号名称
+                    .info-name 男人帮
+                .info.clearfix
+                    p 美号标签
+                    .info-label 时尚男人
+                .info.clearfix
+                    p 美号简介
+                    .info-intro 
+                        | 提供网友最爱看的、服装搭配、理容、泡妞、社会新闻、娱乐八卦、搞笑图片、幽默笑话、旅游等丰富健康的内容，提供男性网网友最爱看的、服装搭配、理容、泡妞、社会新闻、娱乐八卦、搞笑图
+                .info.clearfix
+                    p 绑定圈子
+                        div
+                            .info-circle 时尚圈
+                            .info-notice 绑定圈子一经提交，不能修改
+                .choose-btn.clearfix
+                    .continue(data-node="update")
+                        a(href='javascript:;') 确认
+                    .back(data-node="close")
+                        a(href='javascript:;') 返回修改
+                .popup-close(data-node="close")
+                    a(href="javascript:;")
+
+            

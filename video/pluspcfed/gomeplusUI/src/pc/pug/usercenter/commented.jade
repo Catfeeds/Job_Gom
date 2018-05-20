@@ -1,0 +1,13 @@
+doctype html
+html(lang="zh-CN")
+	include ../../../pc-widget/head/head.jade
+	link(type="text/css",rel="stylesheet",href="../../css/public/public.css")
+	link(type="text/css",rel="stylesheet",href="../../css/module/postcomment.css")
+	body.opg
+		include ../../../pc-widget/header/header.jade
+		include ../../../pc-widget/menu/menu.jade
+		p.commented-txt
+			| 亲，此订单已评价，请点击 
+			a(href="##") 返回我的订单 
+			| 吧
+		include ../../../pc-widget/footer/footer.jade

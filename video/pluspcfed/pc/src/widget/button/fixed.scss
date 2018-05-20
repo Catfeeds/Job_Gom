@@ -1,0 +1,91 @@
+@import '../config/_base.scss';
+@import '../config/_mixins.scss';
+.opg{
+//fixed
+    .fixed-tool{
+        position: fixed;
+        top: 50%;
+        right: 0;
+        width: 40px;
+        height: 310px;
+        margin-top: -150px;
+        z-index: 99;
+        a{
+            display: block;
+            width: 40px;
+            height: 40px;
+            color: $color-txt;
+            text-align: center;
+            margin-bottom: 1px;
+            background-color: #fc8752;
+            position: relative;
+            cursor: pointer;
+            &.tool-2{
+                height: 105px;
+                p{
+                    width: 16px;
+                    line-height: 1;
+                    position: absolute;
+                    top: 47px;
+                    left: 14px;
+                }
+                .cart-num{
+                    position: absolute;
+                    top: 11px;
+                    right: 2px;
+                    width: 18px;
+                    height: 18px;
+                    line-height: 18px;
+                    text-align: center;
+                    font-size: $text12;
+                    border-radius: 50%;
+                    background-color: $link-hover;
+                }
+            }
+            em{
+                font-size: 20px;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                margin: -10px 0 0 -11px;
+                &.icon-cart{
+                	top: 28px;
+	            }
+            }
+            .hover-txt{
+                width: 28px;
+                line-height: 14px;
+                padding-top: 7px;
+                margin: 0 auto;
+                font-size: $text12;
+                display: none;
+            }
+            &.tool-3{
+                .hover-txt{
+                    width: 40px;
+                }
+            }
+            &.line1{
+                .hover-txt{
+                    line-height: 30px;
+                }
+            }
+            &:hover{
+                background-color: #fda984;
+                -webkit-transition: all .3s ease;
+                -moz-transition: all .3s ease;
+                -o-transition: all .3s ease;
+                transition: all .3s ease;
+                .hover-txt{
+                    display: block;
+                }
+                em{
+                    display: none;
+                }
+                em.icon-cart{
+                    display: block;
+                }
+            }
+        }
+    }
+}

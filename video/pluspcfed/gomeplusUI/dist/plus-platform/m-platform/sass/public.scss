@@ -1,0 +1,24 @@
+// reset.scss
+@import "../../../plus-sasscore/_configure.scss";
+@import "../../../plus-widget/reset/reset.scss";
+
+
+// m-widget scss
+// @import "../../../plus-widget/article/article.scss";
+@import "../../../plus-widget/button/button.scss";
+// @import "../../../plus-widget/footer/footer.scss";
+// @import "../../../plus-widget/coupon/coupon.scss";
+@import "../../../plus-widget/dialog/dialog.scss";
+// @import "../../../plus-widget/grid/grid.scss";
+// @import "../../../plus-widget/hint/hint.scss";
+@import "../../../plus-widget/header/header.scss";
+@import "../../../plus-widget/icon/icon.scss";
+@import "../../../plus-widget/menu/menu.scss";
+@import "../../../plus-widget/prompt/prompt.scss";
+// @import "../../../plus-widget/pic/pic.scss";
+// @import "../../../plus-widget/slider/slider.scss";
+// @import "../../../plus-widget/sku/sku.scss";
+@import "../../../plus-widget/share/share.scss";
+@import "../../../plus-widget/toast/toast.scss";
+
+@import "../../../plus-widget/downapp/downapp.scss";

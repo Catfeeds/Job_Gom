@@ -1,0 +1,11 @@
+/* my-collect */
+@import "../../base/public.scss";
+@import "../../components/topTitle.scss";
+@import "../../components/myCardList.scss";
+@import "../../components/scroll-load.scss";
+@import '../../components/pullToRefresher';
+
+body{
+	background-color: #FFF;
+	padding-bottom:0;
+}

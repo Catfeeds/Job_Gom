@@ -1,0 +1,170 @@
+.detail{
+  height: 100%;
+
+  .detailMain{
+    width: 7.5rem;
+    margin-top: 1rem;
+    overflow: hidden;
+
+    .detailtitle{
+      width: 100%;
+      padding: .52rem .3rem 0;
+      text-align: center;
+
+      .detailflag{
+        float: left;
+        width: .08rem;
+        height: .24rem;
+        margin: .14rem 0;
+        background-color: #d63333;
+      }
+      .detailname{
+        float: left;
+        width: 90%;
+        text-indent: .12rem;
+        line-height: .5rem;
+        font-size: .36rem;
+        text-align: left;
+      }
+    }
+
+    .detailcontainer{
+      width: 7rem;
+      padding: .22rem .36rem 0;
+      overflow: hidden;
+      ol {
+        overflow: hidden;
+      }
+      ol li {
+        &.disWebkit{
+          display: -webkit-box;
+          .detailexplainItems{
+            display: block;
+          }
+        }
+        position: relative;
+        margin-bottom: .29rem;
+        .detailItems{
+          line-height: .4rem;
+          font-size: .28rem;
+          color: #666;
+        }
+        .fl{
+          float: left;
+        }
+        .detailexplainItems{
+          -webkit-box-flex: 1;
+          margin-right: .7rem;
+          line-height: .4rem;
+          overflow: hidden;
+          &.margin{
+            margin-bottom: .2rem;
+            height: .8rem;
+          }
+          &.open{
+            height: auto;
+          }
+        }
+        .switchBtn{
+          width: .3rem;
+          height: .44rem;
+          background-size: cover;
+          transform: rotate(180deg);
+          display: inline-block;
+          position: absolute;
+          bottom: unset;
+          top: 50%;
+          margin-top: -0.32rem;
+          right: .22rem;
+          em.header-backicon{
+            transform: rotate(-90deg);
+            font-size: .2rem;
+            position: relative;
+            top: .03rem;
+          }
+          .iconn-1:before{
+            color: #666;
+          }
+          &.open{
+            transform: rotate(0deg);
+            bottom: .5rem;
+            margin-top: 0;
+            top: unset;
+          }
+        }
+        .detailmemberItems{
+          float: left;
+          line-height: .4rem;
+          font-size: .28rem;
+          color: #4990e2;
+        }
+
+        .detailprogressCount{
+          float: left;
+          line-height: .4rem;
+          font-size: .28rem;
+          color: #f6a623;
+          margin-left: .13rem;
+        }
+
+        .detailprogressItems{
+          width: 50%;
+          height: .1rem;
+          margin: .13rem 0;
+          background-color: #fff;
+          display: inline-block;
+          border: 1px solid #f6a623;
+          color: #f6a623; /*IE10*/
+        }
+        /*ie6-ie9*/
+        progress ie {
+            display:block;
+            height: 100%;
+            background: #f6a623;
+        }
+
+        progress::-moz-progress-bar { background: #f6a623; }
+        progress::-webkit-progress-bar { background: #fff; }
+        progress::-webkit-progress-value  { background: #f6a623; }
+      }
+
+      .detailwrapper{
+        width: 100%;
+        // overflow-x: scroll;
+        overflow: auto;
+
+        .detaildrawing-min{
+          width: 160%;
+          height: 5.03rem;
+        }
+
+        .detaildrawing-mid{
+          width: 170%;
+          height: 5.03rem;
+        }
+
+        .detaildrawing-max{
+          width: 180%;
+          height: 5.03rem;
+        }
+
+        .detaildrawing-smax{
+          width: 210%;
+          height: 5.03rem;
+        }
+      }
+    }
+  }
+}
+
+[v-cloak] {
+  display: none;
+}
+
+.vShow{
+  visibility: visible;
+}
+
+.vHide{
+  visibility: hidden;
+}

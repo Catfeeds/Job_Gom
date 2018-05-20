@@ -1,0 +1,64 @@
+@import '../config/_base.scss';
+@import '../config/_mixins.scss';
+
+.opg{
+    .footer{
+        box-sizing: border-box;
+        margin-top: 50px;
+        background: $color-default;
+        color: $color-gray;
+        font-size: $text12;
+        .wrap-box{
+            padding: 30px 0 40px;
+            a{
+                color: $color-gray;
+            }
+        }
+        dl.link-list{
+            float: left;
+            width: 150px;
+            line-height: 22px;
+            dt{
+                font-size: $text16;
+                color: $bg-fff;
+                padding-bottom: 5px;
+            }
+            dd{
+                a{
+                    &:hover{
+                        color: $link-hover;
+                    }
+                }
+            }
+        }
+        .ma{
+            float: right;
+            p{
+                width: 120px;
+                padding-left: 40px;
+                float: left;
+                img{
+                    width: 120px;
+                    height: 120px;
+                }
+                span{
+                	display: block;
+                	margin: 10px 0 0 0;
+                	text-align: center;
+                	white-space: nowrap;
+                }
+            }
+        }
+        .copyright{
+            background: #252525;
+            line-height: 24px;
+            text-align:center;
+            padding: 8px 0;
+            .wrap-box{
+                background: #252525;
+                padding: 0;
+            }
+        }
+    }
+}
+

@@ -1,0 +1,12 @@
+<view>
+    <block wx:for="{{dataList}}" wx:key="unique">
+        <navigator class="index-item" url="../detail/detail?id={{item.video_id}}&type={{item.video_type}}" open-type="navigate">
+            <view class="index-preview" style="background-image:url('{{item.image}}')">
+                <image class="index-preview-img" src="../../image/play-btn.png"></image>
+                <text wx:if="{{item.video_type == 2}}" class="index-live-flag">直播</text>
+            </view>
+            <view class="index-video-name"><text>{{item.title}}</text></view>
+        </navigator>
+    </block>
+    <view class="nomore" wx:if="{{nomore}}"><text class="nomore-text">好了，这是我的底线了</text></view>
+</view>

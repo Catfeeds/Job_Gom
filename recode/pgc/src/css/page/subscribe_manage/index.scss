@@ -1,0 +1,199 @@
+/* subscribe_manage */
+@import "../../base/public.scss";
+.subscribe-manage{
+
+   .video-list-table {
+     tbody{
+      tr.hoverC:hover{
+        td{
+          background: #fff;
+        }
+      }
+       tr.hoverC .sub-targ.changeBtn a{
+         cursor: pointer;
+       }
+       tr.hoverC .sub-targ.changeBtn a:hover{
+         color:#3e9bf7;
+       }
+    }
+   }
+
+
+  .subscribe-manage-box{
+    padding: 0 24px;
+    /* 操作区 */
+
+    .addVideo {
+
+      .add-left{
+        float: left;
+        line-height: 36px;
+        cursor: pointer;
+        .video{
+          display: inline-block;
+          border-radius: 5px 0 0 5px;
+          border: 1px solid #ccc;
+          padding:0 40px;
+          color:#3b3b1f;
+          &:hover{
+            color:#53a6f8;
+          }
+        }
+        .article{
+          display: inline-block;
+          padding:0 40px;
+          color:#3b3b1f;
+          border-radius:0 5px  5px 0;
+          border: 1px solid #ccc;
+          &:hover{
+            color:#53a6f8;
+          }
+        }
+        .active{
+          background: #53a6f8;
+          color:#fff;
+          border-color:#53a6f8;
+          &:hover{
+            color:#fff;
+          }
+        }
+      }
+      overflow: hidden;
+      position: relative;
+      padding: 40px 0 20px 0;
+      .video-add {
+        &:hover{
+          border:1px solid #75b8f9;
+          color: #75b8f9;
+        }
+        padding:0 20px;
+        position: absolute;
+        right: 0;
+        display: inline-block;
+        height: 36px;
+        line-height: 36px;
+        text-align: center;
+        border: 1px solid $primary;
+        color: $primary;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+      .video-add.disable{
+        border:1px solid #999;
+        color:#999;
+      }
+    }
+    /* 订阅号  */
+    .video-list-table tbody .video-msg .video-detail .sub-targ{
+      left:0
+    }
+    // 订阅号详情
+    .sub-detail-manage{
+      width: 100%;
+      tr{
+        border-bottom:1px solid $border;
+        td{
+          padding:20px 0;
+        }
+      }
+      .video-msg{
+        position: relative;
+        .video-img{
+          cursor: default;
+          display: inline-block;
+          position: relative;
+          width:96px;
+          height:96px;
+        }
+      }
+
+        .video-detail{
+          position: absolute;
+          left:115px;
+          top:20px;
+          bottom:0;
+          .name{
+            font-size:18px;
+            color:$base;
+            a{
+              cursor: default;
+            }
+          }
+          .build-time{
+            line-height: 24px;
+            color: #999;
+          }
+
+          .sub-targ{
+            bottom:20px;
+            color: $gray;
+          }
+          .sub-targ.state-auditing{
+            color:$auditing;
+          }
+          .description {
+            color:#999;
+            font-size: 14px;
+          }
+          .sub-targ.changeBtn {
+            color: $base;
+            left:-5px;
+            &:hover {
+              a{
+                color: $option-hover;
+              }
+
+            }
+          }
+        }
+    }
+  }
+
+  // 管理美号- 图文
+  .video-list-table{
+    tr.article{
+      .position-right{
+        cursor: pointer;
+      }
+      .video-detail{
+        text-align: left;
+        padding-left:20px;
+        .name{
+          font-size:18px;
+          line-height: 36px;
+          color:#111;
+          a{
+            cursor: default;
+          }
+        }
+        .build-time{
+          font-size:14px;
+          color:#999;
+        }
+      }
+    }
+  }
+}
+
+
+
+.navBar{
+  background: #f0f0f0;
+  ul{
+    padding-bottom:20px;
+    li a{
+      margin:0 3px;
+    }
+    li a.mySub-link{
+      cursor: pointer;
+      &:hover{
+        color:$option-hover;
+      }
+    }
+    li.current a{
+      color:$option-hover;
+      padding-left:3px;
+    }
+  }
+}
+

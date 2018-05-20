@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>editorTest</title>
+	
+	
+	
+</head>
+<body class="opg">
+<h1>333</h1>
+<script>
+	var port = '1314';
+	$GLOBAL_CONFIG=[];
+	$GLOBAL_CONFIG['prefix'] ='abc';
+	/*
+	$GLOBAL_CONFIG['js_domain'] = 'http://js.dev.meixincdn.com:1314';
+	$GLOBAL_CONFIG['jspath'] = 'http://js.dev.meixincdn.com:'+ port +'/CDN8053/dist';
+	$GLOBAL_CONFIG['csspath'] = 'http://js.dev.meixincdn.com:'+ port +'/CDN8053/dist';
+	$GLOBAL_CONFIG['imgpath'] = 'http://js.dev.meixincdn.com:'+ port +'/CDN8053/dist';
+	$GLOBAL_CONFIG['versionData'] = "123";
+	$GLOBAL_CONFIG['trId'] = "123";
+	*/
+	$GLOBAL_CONFIG['js_domain'] = 'http://js.dev.meixincdn.com';
+	$GLOBAL_CONFIG['jspath'] = 'http://js.dev.meixincdn.com/m/editor/dist'
+	$GLOBAL_CONFIG['csspath'] = 'http://js.dev.meixincdn.com/m/editor/dist'
+	$GLOBAL_CONFIG['imgpath'] = 'http://js.dev.meixincdn.com/m/editor/dist'
+	$GLOBAL_CONFIG['versionData'] = "123";
+
+	$GLOBAL_CONFIG['pccsspath'] = 'http://127.0.0.1:8080';
+	$GLOBAL_CONFIG['pcjspath'] = 'http://127.0.0.1:8080';
+	$GLOBAL_CONFIG['pcimgpath'] = 'http://127.0.0.1:8080/dist';
+	$GLOBAL_CONFIG['trId'] = "123";
+	
+</script>
+<span>789</span>
+<div style="width:800px;margin:0 auto;">
+<div id="editor" class="test"></div>
+</div>
+
+<script src = './jquery.js'></script>
+<!--
+<script src="http://js.dev.meixincdn.com:1314/CDN8053/dist/js/conf/publishTopic.js"></script>
+-->
+<script src="http://js.dev.meixincdn.com/m/editor/dist/js/conf/publishTopic.js"></script>
+<script>
+	GomeEditor("editor", {
+        GlobalVal:{
+            //imgpath:'aaa.com'
+        },
+        Buttons:{
+            //使用视频
+            video:{
+                use:false
+            }
+        },
+        Components:{
+            //商品类型 1: 默认带搜索   2: tab
+            goodsType:1
+        },
+        Urls:{
+            //查询视频地址
+            //getVideoPath:'/aaa.json'
+            getCollectItem:'',				//不带我的收藏 请将 这个地址置空
+			myMshop:''
+
+        }
+    });
+</script>
+</body>
+</html>

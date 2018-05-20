@@ -1,0 +1,81 @@
+@charset "UTF-8";
+// @ Css name：店铺信息
+// @ Author： matianye@
+// @ Date： 2017-03-20 15:55
+// @ Last Modified by： maty
+// @ Last Modified time：2017-03-20 15:55
+//==========================
+
+@import "../../../../sasscore/_configure.scss";
+
+.meidian{
+	.meidianall-top{
+		&.header-fixed{
+			z-index: 999;
+		}
+		.sort-name{
+			em{
+				font-size: .28rem;
+				margin-left: .1rem;
+			}
+		}
+	}
+	.choose-sort{
+		overflow: hidden;
+		padding-bottom: .01rem;
+		background-color: #fff;
+		border-bottom: 1px solid #ddd;
+		li{
+			float: left;
+			width: 50%;
+			height: .8rem;
+			font-size: .28rem;
+			color: #999;
+			text-align: center;
+			position: relative;
+			a{
+				width: 100%;
+				color: #999;
+				height: 100%;
+			    display: block;
+			    white-space: nowrap;
+			    overflow: hidden;
+			    text-overflow: ellipsis;
+			    padding: .22rem .2rem .2rem;
+				span{
+					padding: .22rem .2rem .2rem;
+				}
+			}
+			&.active{ 
+				a{
+					color: #ED5B5D;
+					span{
+				    	border-bottom: 1px solid #F66A6B;
+				    }
+				}
+			}
+		}
+	}
+
+
+	
+	.meidian-dec{
+		position: relative;
+		font-size: .32rem;
+		textarea{
+			width: 100%;
+			height: 1.7rem;
+			padding: .14rem .2rem;
+			background-color: #fff;
+			resize: none;
+		}
+		.num{
+			position: absolute;
+			right: .08rem;
+			bottom: .06rem;
+			font-size: .28rem;
+			color: #999;
+		}
+	}
+}
+

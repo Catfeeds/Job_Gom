@@ -1,0 +1,56 @@
+.pageDiv{
+	text-align:center;
+}
+.pageBreak{
+	height:80px;
+	line-height:80px;
+	text-align:center;
+	li{
+		::selection{
+			    background: none;
+			}
+		&:focus{
+			background:#fff;
+		}
+		display:inline-block;
+		width:47px;
+		text-align:center;
+		a{	
+			border-bottom:1px solid #fff;
+			line-height:28px;
+			font-size:14px;
+			display:inline-block;
+			color:#999999;
+			cursor:pointer;
+		}
+	}
+	li.active, li.active:hover{
+		a{
+			color:#ec392a;
+			border-bottom:1px solid #ec392a;
+		}
+	}
+	li:hover{
+		a{
+			cursor:pointer;
+			color:#333;
+			border-bottom:1px solid #333;
+		}
+		
+	}
+	li.prev:hover,li.next:hover{
+		a{
+			color:#333;
+			border-bottom:1px solid transparent;
+		}
+	}
+	li.nodata:hover,li.nodata{
+		a{
+			cursor:default;
+			border-bottom:1px solid transparent;
+		}
+		
+
+	}
+	
+}

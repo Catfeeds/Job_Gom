@@ -1,0 +1,82 @@
+@charset "utf-8";
+
+// AMP configure
+@import "_configure.scss";
+
+// form-grid
+// ##----------------------------------
+.form-column{
+	@include clearfix();
+}
+.column-group{
+	@include clearfix();
+}
+.group-aside{
+	float:left;
+	width:120px;
+	line-height:40px;
+	font-size:14px;
+	text-align:right;
+}
+.group-detail{
+	margin-left:128px;
+	padding-bottom:18px;
+}
+.group-tip{
+	color:$bg-red;
+	font-weight:normal;
+	font-style:normal;
+	padding:0px 5px;
+}
+.group-title{
+	padding:10px 0px 16px;
+	font-weight:normal;
+	font-size:16px;
+}
+.row-check{
+	margin:12px 20px 9px 0;
+	cursor:pointer;
+	font-size:0;
+	white-space:nowrap;
+	@include inline-block;
+	.icon{
+		font-size:14px;
+		margin-right:5px;
+		color:#b5bcc1;
+	}
+	i{
+		margin-top:-2px;
+		@include inline-block;
+		font-size:14px;
+		font-style:normal;
+	}
+}
+.form-text{
+	position:relative;
+	margin-right:6px;
+	@include inline-block;
+	.dialog{
+		left:auto;
+		top:auto;
+		right:-15px;
+		bottom:27px;
+	}
+	.icon{
+		vertical-align:top;
+	}
+}
+.form-gray-text{
+	@include inline-block;
+	color:#99a0a9;
+	line-height:22px;
+	font-size:14px;
+}
+.form-division{
+	@include inline-block;
+	margin-right:17px;
+	color:#99a0a9;
+}
+.form-infor{
+	@include inline-block;
+	padding:10px 10px 10px 0;
+}

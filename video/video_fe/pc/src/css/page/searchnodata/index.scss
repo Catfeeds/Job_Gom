@@ -1,0 +1,41 @@
+/* searchnodata */
+@import "../../base/public.scss";
+@import "../search/index";
+@import "../my-index/index";
+@import "../error/index";
+
+.error {
+  padding: 0px;
+  background: url("../../../imgs/public/no-data-search.jpg") no-repeat center 100px #ffffff;
+  p {
+    padding: 224px 0px 0px 0px;
+    color: #999999;
+    font-size: 18px;
+  }
+}
+.exchange {
+  a {
+    display: block;
+    width: 500px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    color: #333;
+    font-size: 16px;
+    border-radius: 25px;
+    border: 1px solid #a6a7a9;
+    margin: 0 auto;
+    background-color: #fff;
+    &:hover{
+      color: #fff;
+      background-color: #262629;
+    }
+  }
+  margin-bottom: 50px;
+}
+
+.img {
+  em {
+    display: none!important;
+  }
+}

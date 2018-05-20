@@ -1,0 +1,18 @@
+extends ../plus-widget/head/head.jade
+block style
+	link(type="text/css",rel="stylesheet",href="plaintext.css")
+block body
+	body.opg
+		include ../plus-widget/head/rem.jade
+		<!--header-->
+		header.header
+			.h-left
+				a.h-back(href="javascript:;")
+					em.iconn-1
+			.h-cnt.flex-cell
+				h1.h-tit 说明
+		section.plaintext
+			h2 什么是国美币？
+			p 国美币是您在国美Plus的个人专属账户，您可以在国美Plus上享受到国美币带来的各种返利、红包等优惠，而且获得的国美币可以直接提现至您的银行卡。当您的国美币账户实名认证通过后，则可以进行充值和提现。当您办理退货、取消订单产生的退款不支持原路返回时，退款将以国美币形式退至您的国美币账户中，红包、返利金额也会返还到您的国美币账户中。国美币账户服务（账户开立、充值、提现、实名认证、绑卡）由银盈通提供技术及运营支持。
+			p 
+				b 1国美币=1元

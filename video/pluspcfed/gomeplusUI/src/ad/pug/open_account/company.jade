@@ -1,0 +1,68 @@
+//- extends layout.jade
+extends ../public/login_layout.jade
+
+block title
+	title 我的账户
+//- block link-theme
+//- 	link(rel='stylesheet' type="text/css" href="../../css/module/company.css")
+
+//- account
+block content
+	style.
+		body{
+			background-image:none;
+		}
+	div.open_account
+		div.account-step
+			div.part-guide.part-guide02
+				span.guide-step.guide-step01
+					b.step-text 选择身份
+					b.step-number 1
+					b.step-icon
+						em.icon.icon-right
+				span.guide-step.guide-step02
+					b.step-text 填写公司信息
+					b.step-number 2
+					b.step-icon
+						em.icon.icon-right
+				span.guide-step.guide-step03
+					b.step-text 指定联系人
+					b.step-number 3
+					b.step-icon
+						em.icon.icon-right
+				span.guide-step.guide-step04
+					b.step-text 资料确认
+					b.step-number 4
+					b.step-icon
+						em.icon.icon-right
+				span.guide-percent
+		div.account_content
+			h1 填写公司信息
+			h4 (本页所有信息项均为必填项)
+			div.content-form
+				p 身份：
+					b 代理商
+				p 国美Plus账户：
+					b sdfafaar1423734919041
+				div.form-if
+					div.if-item
+						em.icon.icon-unfold
+						span 营业执照信息（副本）
+						a(href="#").btn.btn-normal 编辑
+					div.if-item
+						em.icon.icon-unfold
+						span 组织机构代码
+						a(href="#").btn.btn-normal 编辑
+					div.if-item
+						em.icon.icon-unfold
+						span 税务登记证
+						a(href="#").btn.btn-normal 编辑
+					div.if-item
+						em.icon.icon-unfold
+						span 开户银行许可证
+						a(href="#").btn.btn-normal 编辑
+				div.form-next
+					a(href="#").btn.btn-gray 上一步
+					a(href="#").btn.btn-primary 下一步
+	include ../public/footer.jade
+

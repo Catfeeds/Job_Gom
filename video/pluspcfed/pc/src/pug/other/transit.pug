@@ -1,0 +1,21 @@
+doctype html
+html(lang="zh-CN")
+    include ../../widget/head/head.pug
+    link(type="text/css",rel="stylesheet",href="../../css/public/public.css")
+    link(type="text/css",rel="stylesheet",href="../../css/module/transit.css")
+    body.opg
+        .transit
+            .transit-explain
+                p.explain-visit 欢迎访问 www.gomeplus.com
+                p.explain-timer 
+                    |由于国美品牌升级整合,将在 
+                    span.timer(data-node="timer") 3 
+                    |秒后跳转至国美首页......
+            div
+                a(href="https://www.gome.com.cn/",data-node="transit-btn").transit-btn 立即跳转
+            .copyright ©2000-2017  国美在线电子商务有限公司版权所有
+
+
+
+
+

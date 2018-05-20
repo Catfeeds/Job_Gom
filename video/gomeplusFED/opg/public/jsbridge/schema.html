@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+
+
+    <style type="text/css">
+.tg  {border-collapse:collapse;border-spacing:0;}
+.tg td{font-family:Arial, sans-serif;font-size:14px;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;}
+.tg th{font-family:Arial, sans-serif;font-size:14px;font-weight:normal;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;}
+.tg .tg-yw4l{vertical-align:top}
+
+.wrap{
+    width:80%;
+    margin: 0 auto;
+}
+</style>
+
+
+</head>
+
+<body>
+
+<div class="wrap">
+    <h2><b>概述(OPG SDK version: v1.0)</b></h2>
+    <p>
+      在客户端app中嵌入h5页面，涉及到native与js的互相通讯问题。native里的webview有相应的api来执行页面的js方法<br>
+      而js要想调用native的方法， 则需要通过特殊的处理。目前采用的方式是通过jsbridge来实现js调用natie方法。
+    </p>
+
+
+  <div class="jsbridge">
+    <h2><b>jsbridge使用方式</b></h2>
+    <p>在页面中引入js文件<a href="../javascripts/appInterface.js">appInterface.js</a></p>
+    <p>此时在window上引入了一个属性AppInterface，该对象是所有交互操作的宿主对象。所有的交互调用都由AppInterface来实现</p>
+    <p>例如：如果我们想调用native的页面跳转方式，我们可以这么写</p>
+      <pre>
+        AppInterface.call('/common/localJump', {url: base64.encode(dataValue)});
+
+        注意： base64是引入的插件库
+      </pre>
+
+    <h3><a href="javascript:void(0);"><b>call</b>(api, [params, timeout, callback])</a></h3>
+    <p>
+      调用APP接口，主要是处理参数包，回调等。<br>
+      @param api 请求地址<br>
+      @param params 参数包 可选<br>
+      @param timeout 超时时间 可选 默认为0代表永远不超时<br>
+      @param callback 回调方法 可选<br>
+    <p>api为下表中提到的接口协议，在调用的时候需要写成：/[host]/[path]</p>
+    <p>params 参数里，如果涉及到需要编码的参数，在协议表中会提示（base64），需要经过base64编码处理。</p>
+
+    </p>
+      <pre>
+        AppInterface.call('/common/localJump', {url: base64.encode(dataValue)});
+      </pre>
+    <h3><a href="javascript:void(0);">open(base64Url)</a></h3>
+    <p>
+      open方法调用APP打开一个新的webview，内部使用call('/common/localJump', {url: base64Url})的方式调用<br>
+      @param base64Url base64编码后的url
+    </p>
+
+    <!--<h3><a href="javascript:void(0);">isBrowser</a></h3>
+    <p>判断是否是浏览器</p>
+    <h3><a href="javascript:void(0);">isWeiXin</a></h3>
+    <p>判断是否是微信浏览器</p>
+    <h3><a href="javascript:void(0);">isIOS9</a></h3>
+    <p>判断是否是IOS9。因为兼容性的缘故，可能会对ios9坐特殊的处理</p>
+    <h3><a href="javascript:void(0);">isMobile</a></h3>
+    <p>判断是否是移动设备</p>
+    <h3><a href="javascript:void(0);">isIOS</a></h3>
+    <p>判断是否是IOS</p>-->
+
+  </div>
+
+  <h2>国美Plus内嵌H5与客户端交互协议</h2>
+    <table class="tg">
+      <tr>
+        <th class="tg-yw4l">模块</th>
+        <th class="tg-yw4l">host</th>
+        <th class="tg-yw4l">功能</th>
+        <th class="tg-yw4l">path</th>
+        <th class="tg-yw4l">参数(query paramter)</th>
+        <th class="tg-yw4l">callback</th>
+        <th class="tg-yw4l">Android 支持</th>
+        <th class="tg-yw4l">iOS支持</th>
+        <th class="tg-yw4l">备注</th>
+        <th class="tg-yw4l">变更历史</th>
+      </tr>
+      <tr>
+        <td class="tg-yw4l">通用</td>
+        <td class="tg-yw4l">common</td>
+        <td class="tg-yw4l">提醒</td>
+        <td class="tg-yw4l">toast</td>
+        <td class="tg-yw4l">int timeout, String msg</td>
+        <td class="tg-yw4l">默认成功回调</td>
+        <td class="tg-yw4l">v325</td>
+        <td class="tg-yw4l">v325</td>
+        <td class="tg-yw4l"></td>
+        <td class="tg-yw4l">整理callback</td>
+      </tr>
+      <tr>
+        <td class="tg-yw4l">通用</td>
+        <td class="tg-yw4l">common</td>
+        <td class="tg-yw4l">提醒</td>
+        <td class="tg-yw4l">alert</td>
+        <td class="tg-yw4l">String title, String msg</td>
+        <td class="tg-yw4l">默认成功回调</td>
+        <td class="tg-yw4l">v325</td>
+        <td class="tg-yw4l">v325</td>
+        <td class="tg-yw4l">用户只能确认，无法取消</td>
+        <td class="tg-yw4l">整理callcak</td>
+      </tr>
+      <tr>
+        <td class="tg-yw4l">通用</td>
+        <td class="tg-yw4l">common</td>
+        <td class="tg-yw4l">提醒</td>
+        <td class="tg-yw4l">confirm</td>
+        <td class="tg-yw4l">String title, String msg, String jsCallback</td>
+        <td class="tg-yw4l">点击确认或者取消后再给H5回调 data:isCancel(点击了确定为false，点击取消为true),success:true,message:成功</td>
+        <td class="tg-yw4l">v325</td>
+        <td class="tg-yw4l">v325</td>
+        <td class="tg-yw4l">用户可以确认或者取消</td>
+        <td class="tg-yw4l">整理callcack，v325版本已经实现了callback</td>
+      </tr>
+      <tr>
+        <td class="tg-yw4l">通用</td>
+        <td class="tg-yw4l">common</td>
+        <td class="tg-yw4l">提醒</td>
+        <td class="tg-yw4l">prompt</td>
+        <td class="tg-yw4l">String title, String hint, String jsCallback</td>
+        <td class="tg-yw4l">点击确认或者取消后再给H5回调 data:isCancel(点击了确定为false，点击取消为true) content 输入的内容,success:true,message:成功</td>
+        <td class="tg-yw4l">v325</td>
+        <td class="tg-yw4l">v325</td>
+        <td class="tg-yw4l">用户可以输入确认输入或者取消输入</td>
+        <td class="tg-yw4l">整理callback，v325版本已经实现了callback</td>
+      </tr>
+      <tr>
+        <td class="tg-yw4l">通用</td>
+        <td class="tg-yw4l">common</td>
+        <td class="tg-yw4l">登录</td>
+        <td class="tg-yw4l">login</td>
+        <td class="tg-yw4l">
+          string activityId<br>
+          string channelId<br>
+          type 默认是""，如果是国美金融调起登录，则传递1
+        </td>
+        <td class="tg-yw4l">
+          登录成功 data:(token,userId),success:true,message:成功，<br>
+          type 为“1”  (token,userId，gomeAccessToken),success:true,message:成功<br>
+          登录失败：默认失败回调
+        </td>
+        <td class="tg-yw4l">v325</td>
+        <td class="tg-yw4l">v325</td>
+        <td class="tg-yw4l"></td>
+        <td class="tg-yw4l">整理callback，v325版本已经实现了callback增加了两个参数，注册的时候会使用</td>
+      </tr>
+      <tr>
+        <td class="tg-yw4l">通用</td>
+        <td class="tg-yw4l">common</td>
+        <td class="tg-yw4l">获取登录状态</td>
+        <td class="tg-yw4l">getLoginStatus</td>
+        <td class="tg-yw4l"></td>
+        <td class="tg-yw4l">登录状态 data:(token,userId),success:true,message:成功未登录状态：默认失败回调通过success状态来判断</td>
+        <td class="tg-yw4l">1.0.5</td>
+        <td class="tg-yw4l">1.0.5</td>
+        <td class="tg-yw4l"></td>
+        <td class="tg-yw4l">逛逛页面修改bug增加</td>
+      </tr>
+      <tr>
+        <td class="tg-yw4l">通用</td>
+        <td class="tg-yw4l">common</td>
+        <td class="tg-yw4l">退出登录</td>
+        <td class="tg-yw4l">logout</td>
+        <td class="tg-yw4l"></td>
+        <td class="tg-yw4l">退出登录成功：默认成功回调退出失败：默认失败回调</td>
+        <td class="tg-yw4l">v325</td>
+        <td class="tg-yw4l">v325</td>
+        <td class="tg-yw4l"></td>
+        <td class="tg-yw4l">login之前先调用logout，预防IM被网页端踢掉，客户端不知道的情况，v325版本已经实现了callback</td>
+      </tr>
+      <tr>
+        <td class="tg-yw4l">通用</td>
+        <td class="tg-yw4l">common</td>
+        <td class="tg-yw4l">分享</td>
+        <td class="tg-yw4l">share</td>
+        <td class="tg-yw4l">string titlestring descstring(base64) imgUrlstring(base64) linkString shareAppUrl（base64，分享站内的url，没有就使用link）string type(default-客户端默认弹层（shareType1: 邀请好友界面分享，增加面对面扫码默认活动分享）weixin/pengyouquan/qqzone／qq／weibo)string btnType (隐藏分享的部分选项，default的时候会传)string activityId 活动Id</td>
+        <td class="tg-yw4l">分享成功：默认成功回调分享失败：data：null,success：false,message：(失败的原因)</td>
+        <td class="tg-yw4l">v325</td>
+        <td class="tg-yw4l">v418</td>
+        <td class="tg-yw4l">0: 关注的人 1：我的粉丝 2：我的圈子 3：我的群聊 4：复制链接 5：QQ 6:QQ空间 7：微信 8：朋友圈 9：微博 增加shareType，邀请好友页面增加面对面扫码，1.3增加</td>
+        <td class="tg-yw4l">整理callback增加一个活动Id，分享统计使用，1.1.2 增加1.3.0 我的粉丝不在分享列表了，后续可不传了</td>
+      </tr>
+      <tr>
+        <td class="tg-yw4l">通用</td>
+        <td class="tg-yw4l">common</td>
+        <td class="tg-yw4l">本地跳转</td>
+        <td class="tg-yw4l">localJump</td>
+        <td class="tg-yw4l">string userId(可选参数，wap调用的时候使用，判断用户是否登录)string url(base64)int noHistory(0:有历史记录，1没有历史记录)string type(可选参数)type为2（string titlestring descstring(base64) imgUrlstring shareUrl(base64）String shareAppUrl(base64 站内分享使用，不传使用shareUrl)，string btnType (隐藏分享的部分选项)string activityId,活动Id),type为3 (string rightText)type为4（string rightText）</td>
+        <td class="tg-yw4l">默认成功回调</td>
+        <td class="tg-yw4l">v325</td>
+        <td class="tg-yw4l">v325</td>
+        <td class="tg-yw4l">type:"1",标题右边带关闭按钮type:"2",标题带分享的功能type:"3",左边返回关闭，右边是文本，type:"4",右边带文字默认只有标题跟返回 btnType 0: 关注的人 1：我的粉丝 2：我的圈子 3：我的群聊 4：复制链接 5：QQ 6:QQ空间 7：微信 8：朋友圈 9：微博</td>
+        <td class="tg-yw4l">整理callback,一元购活动要求标题右边带关闭按钮type 为2 的增加一个活动Id，分享统计使用 1.1.2 增加</td>
+      </tr>
+      <tr>
+        <td class="tg-yw4l">通用</td>
+        <td class="tg-yw4l">common</td>
+        <td class="tg-yw4l">本地跳转title带分享功能</td>
+        <td class="tg-yw4l">localJumpWithShare</td>
+        <td class="tg-yw4l">string title,string desc,string(base64) imgUrl,string url(base64),string shareUrl(base64)</td>
+        <td class="tg-yw4l">默认成功回调</td>
+        <td class="tg-yw4l">v515</td>
+        <td class="tg-yw4l">v515</td>
+        <td class="tg-yw4l">在localJump基础上增加了分享功能，后续代码优化，见common/localJump</td>
+        <td class="tg-yw4l">418新增加协议,515增加分享的url</td>
+      </tr>
+      <tr>
+        <td class="tg-yw4l">通用</td>
+        <td class="tg-yw4l">common</td>
+        <td class="tg-yw4l">打开app</td>
+        <td class="tg-yw4l">open_app</td>
+        <td class="tg-yw4l"></td>
+        <td class="tg-yw4l">默认成功回调</td>
+        <td class="tg-yw4l">v418</td>
+        <td class="tg-yw4l"></td>
+        <td class="tg-yw4l">wap端调用</td>
+        <td class="tg-yw4l">整理Wap调用客户端协议</td>
+      </tr>
+    </table>
+
+
+  <script src="../javascripts/appInterface.js"></script>
+  <script>
+    console.log(AppInterface);
+  </script>
+
+</div>
+
+</body>
+</html>

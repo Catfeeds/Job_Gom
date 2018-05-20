@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="zh-CN" data-use-rem="750" style="font-size: 50px;">
+  <head>
+    <meta charset="utf-8">
+    <meta content="yes" name="apple-mobile-web-app-capable"/>
+    <meta content="yes" name="apple-touch-fullscreen"/>
+    <meta content="telephone=no,email=no" name="format-detection"/>
+    <meta name="App-Config" content="fullscreen=yes,useHistoryState=yes,transition=yes"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <title>vue-test</title>
+  <link href="/CDN8174/dist/static/css/app.css" rel="stylesheet"></head>
+  <body>
+    <div id="app"></div>
+    <!-- built files will be auto injected -->
+  <script type="text/javascript">
+   (function(){
+      function setRem(){
+        var oSize;
+        if(document.documentElement.clientWidth > 750){
+          var oSize = 100;
+        }else{
+          oSize = document.documentElement.clientWidth/7.5;
+        }
+        var oHtml = document.getElementsByTagName('html')[0];
+        oHtml.style.fontSize = oSize + 'px';
+      }
+      window.addEventListener("resize", setRem);
+      setRem();
+    })();
+  </script>
+  <script type="text/javascript" src="/CDN8174/dist/static/js/manifest.js"></script><script type="text/javascript" src="/CDN8174/dist/static/js/vendor.js"></script><script type="text/javascript" src="/CDN8174/dist/static/js/app.js"></script></body>
+</html>
+

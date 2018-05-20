@@ -1,0 +1,68 @@
+doctype html
+html(lang="zh-CN")
+	include ../../../pc-widget/head/head.jade
+	link(type="text/css",rel="stylesheet",href="../../css/public/public.css")
+	link(type="text/css",rel="stylesheet",href="../../css/module/feedback.css")
+	body.opg
+		include ../../../pc-widget/top/top.jade
+		.header
+			.wrap-box.clearfix
+				h1.fl
+					a(href="#")
+						img(src="../../images/public/logo.png")
+		.wrap-box.bg-fff
+			.w902
+				h2 “国美Plus” 用户反馈
+				.feed-error bs接口返回错误
+				.welcome
+					| 尊敬的用户：
+					br
+					| 您好！为了给您提供更好的服务，请大声说出您的建议或问题。对您的配合和支持表示衷心的感谢！
+				h3
+					span.red *
+					strong 留言类型
+					span.red （请选择留言类型）
+				.type.clearfix
+					a(href="javascript:;").active 投诉
+					a(href="javascript:;") 建议
+					a(href="javascript:;") 举报
+					a(href="javascript:;") 支持
+					a(href="javascript:;") 其他
+				h3
+					span.red *
+					strong 留言
+					span.red （请输入5-200个字符）
+				.textarea-box
+					textarea(placeholder="请输入您的建议和问题，以便我们为您提供更好的服务！")
+					span.pa 0/200
+				h3
+					span.red *
+					strong 上传截图
+					span （最多上传3张，仅支持JPG、PNG格式，图片大小不超过4M）
+				.clearfix
+					.upload
+						// icon替换 icon-close
+						em.icon.iconn-40
+						img(src="https://i6.meixincdn.com/v1/img/T1GRYTB7KT1R4cSCrK.png")
+					.upload.ing
+						img(src="https://i6.meixincdn.com/v1/img/T1GRYTB7KT1R4cSCrK.png")
+						.mask
+						.mask-text
+							.progress
+								.val
+							p 图片上传中
+					.upload.fail
+						.mask-text
+							p 图片上传失败！
+							a(href="javascript:;")
+								// icon替换 icon-re
+								em.icon.iconn-24
+								span 重新上传
+					.upload.add
+						input(type="file")
+						// icon替换 icon-add
+						em.icon.iconn-41
+				.btn-box
+					a(href="javascript:;").pc-btn.pc-btnh45 提交
+					
+		include ../../../pc-widget/footer/footer.jade

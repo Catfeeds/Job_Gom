@@ -1,0 +1,86 @@
+@charset "utf-8";
+
+// _configure.scss
+@import "../public/_configure.scss";
+
+// Defined message stylesheet
+//##------------------------------------------
+.message-list{
+	@include clearfix();
+	color:$text-medium;
+	border:1px solid #e1e3e6;
+	ol{
+		position:relative;
+		margin-bottom:-1px;
+		@include clearfix();
+		li{
+			position:relative;
+			padding:5px 216px 5px 16px;
+			@include clearfix();
+			border-bottom:1px solid #e1e3e6;
+			a{
+				color:$text-medium;
+				font-size:14px;
+				line-height:22px;
+				&:hover{
+					color:$text-medium;
+				}
+			}
+			&:hover{
+				background:$bg-table-hover;
+			}
+			.icon-letter{
+				float:left;
+				margin:4px 14px 0px -9px;
+			}
+			&.actived{
+				.icon-letter{
+					&:after{
+						display:block;
+					}
+				}
+			}
+			.list-infor{
+				overflow:hidden;
+				*zoom:1;
+				display:block;
+			}
+			.list-time{
+				position:absolute;
+				right:67px;
+				top:7px;
+				font-size:14px;
+				color:$text-light;
+			}
+		}
+	}
+}
+
+// msg-detail
+//##------------------------------------------
+.msg-detail{
+	padding:23px 40px 20px;
+	background:#fff;
+	font-size:16px;
+	line-height:2;
+	color:$text-medium;
+	.detail-header{
+		font-size:normal;
+		font-size:18px;
+		line-height:1.5;
+		color:$bg-red;
+		text-align:center;
+	}
+	.detail-time{
+		padding:7px 0 20px;
+		text-align:center;
+		font-size:14px;
+		color:$text-light;
+	}
+	.detail-infor{
+		p{
+			padding-bottom:20px;
+			text-indent:2em;
+		}
+	}
+}

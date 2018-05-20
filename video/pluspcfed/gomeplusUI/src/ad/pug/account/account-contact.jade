@@ -1,0 +1,78 @@
+//- extends layout.jade
+extends ../public/layout.jade
+
+block title
+	title 账户管理-联系方式
+//- block link-theme
+//- 	link(rel='stylesheet' type="text/css" href="../../css/module/account.css")
+
+//- account
+block content
+	include ../public/menu.jade
+	div.content-main
+		div.amp-account
+			// crumbs
+			div.crumbs
+				a(href="javascript:void(0);")
+					span 账户管理
+					em >
+				a(href="javascript:void(0);").actived
+					span 联系方式
+					em >
+			// account-main
+			div.account-main
+				// amp-path
+				div.amp-path.amp-path-large
+					span.path-col 
+						b 联系方式
+				div.main-wrap.contact-wrap
+					// 联系方式列表
+					div.form-column
+						div.column-group
+							div.group-aside 
+								i.group-tip *
+								| 联系人：
+							div.group-detail
+								div.detail-row 
+									div.ele-input.ele-input-large.hover
+										input(type="text",value="")
+						div.column-group
+							div.group-aside 
+								i.group-tip *
+								| 称呼：
+							div.group-detail
+								div.detail-row 
+									span.row-check
+										em.icon.icon-single.icon-singled
+										i 先生
+									span.row-check
+										em.icon.icon-single
+										i 女生
+						div.column-group
+							div.group-aside 
+								i.group-tip *
+								| 手机号：
+							div.group-detail
+								div.detail-row 
+									div.ele-input.ele-input03.error
+										input(type="text",value="")
+									div.error-block
+										em.icon.icon-warning
+										span.error-text 错误信息
+						div.column-group
+							div.group-aside 
+								i.group-tip *
+								| 邮箱：
+							div.group-detail
+								div.detail-row 
+									div.ele-input.ele-input03
+										input(type="text",value="")
+						div.column-group
+							div.group-aside
+								| 通信地址：
+							div.group-detail
+								div.detail-row 
+									div.ele-textarea
+										<textarea></textarea>
+						div.column-group.btn-wrap
+							a(href="#").btn.btn-primary 提交修改

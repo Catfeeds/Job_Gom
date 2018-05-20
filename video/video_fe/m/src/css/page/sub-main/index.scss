@@ -1,0 +1,136 @@
+/* sub-hp */
+@import "../../base/public.scss";
+@import '../../components/card.scss';
+@import "../../components/scroll-load.scss";
+body{
+    padding-top:0;
+}
+.feeds-main{
+    width: 100%;
+    height:4.4rem;
+    background-image: url(../../../imgs/public/feeds-main.png); 
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    color:white;
+    position: relative;
+    overflow: hidden;
+    em{
+        font-size: 0.32rem;
+    }
+    .main-back{
+        position: absolute;
+        left:0.4rem;
+        top:0.3rem;
+    }
+    .main-share{
+        position: absolute;
+        right:0.4rem;
+        top:0.3rem;
+    }
+    .main-desc{
+        margin: 0 auto;
+        width: 3.4rem;
+        text-align: center;
+        padding: 0.4rem 0 0 0;
+        h3{
+            font-size: 0.3rem;
+            margin-top:0.23rem;
+        }
+        p{
+            overflow:hidden;
+            @include ellipsis(1);
+            font-size: 0.26rem;
+            line-height: rem(30);
+            margin: 0.26rem 0;
+        }
+        .head-p{
+            width: 1.3rem;
+            height: 1.3rem;
+            border-radius: 100% 100%;
+            box-sizing: border-box;
+            border: 4px solid rgba(255,255,255,0.2);
+        }
+        .main-attention{
+            width: 1.3rem;
+            height: 0.48rem;
+            color:white;
+            background-color: #ec392a;
+            margin:0 auto;
+            border-radius: 100px;
+            font-size:0.24rem;
+            padding: rem(12) 0;
+            line-height: 1;
+            overflow: hidden;
+            em{
+                font-size:0.22rem;
+                display: inline-block;
+            }
+            .subscription{
+                display: none;
+            }
+        }
+        .active{
+            color:#FFF;
+            background-color: rgba(0,0,0,0);
+            border:1px solid #FFF;
+            .no-subscription{
+                display: none;
+            }
+            .subscription{
+                display: inline-block;
+            }
+        }
+    }
+}
+.sub-content{
+    .content-title{
+        font-size: 0.32rem;
+        color: #666;
+        margin:0.4rem 0 0.1rem 0.4rem;
+    }
+}
+
+
+.shareMask{
+    width: 100%;
+    height: 100%;
+    position:fixed;
+    display: none;
+    top:0;
+    left:0;
+    background-color: rgba(0,0,0,0.5);
+    z-index: 100;
+    .share-x{
+        width:100%;
+        padding:5% 0 30% 0;
+        position: fixed;
+        left:0;
+        bottom:0;
+        img{
+            margin:0 45%;
+            width: 10%;
+        }
+        em{
+            display: block;
+            width: 100%;
+            font-size: 0.7rem;
+            text-align: center;
+            color:white;
+        }
+    }
+    .share-h,.share-h-app{
+        margin:5px 0 0 25%;
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+    }
+    .share-h{
+        width: 71%;
+        height: 54%;
+        background-image: url('../../../imgs/public/share-h.png');
+    }
+    .share-h-app{
+        width: 64%;
+        height: 54%;
+        background-image: url('../../../imgs/public/share-h-app.png');
+    }
+}

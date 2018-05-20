@@ -1,0 +1,185 @@
+@charset "utf-8";
+@import '../../widget/config/_base.scss';
+@import '../../widget/header/header-meihao.scss';
+@import '../../widget/aside/meihao.scss';
+.opg {   
+    background:#F3F5F7;
+    min-width: 1040px;
+}
+.meihao{
+    font-family: 'Microsoft Yahei', '微软雅黑', 'PingFang SC', 'Hiragino Sans GB', '黑体', sans-serif;
+}
+.setup{
+    float:left;
+    width: 908px;
+    padding:12px 40px 40px;
+    line-height: 58px;
+    color:#333;
+    .setup-title{
+        border-bottom: 1px solid #e7e7eb;
+        h3{
+            float: left;
+            font-size: 18px;
+        }
+        .cause-process,.cause-fail,.revamp{
+            line-height: 50px;
+            padding-top: 6px;
+        }
+        .revamp{
+            position: relative;
+            float:right;
+            .revamp-btn{
+                a{
+                    font-size: 14px;
+                    color: #107eee;
+                    &:hover{
+                        text-decoration: underline;
+                    }
+                }
+            }
+            .revamp-popup{
+                display:none;
+                position:absolute;
+                top:50px;
+                right:0;
+                width:222px;
+                height:62px;
+                padding:18px;
+                border:1px solid #C8C8C8;
+                background:#fff;
+            }
+            .popup-pic{
+                position:absolute;
+                width:13px;
+                height:7px;
+                top:-7px;
+                right:20px;
+                background: url("../../images/meihao/revampH.jpg")no-repeat;
+            }
+            p{
+                font-size: 14px;
+                line-height: 18px;
+                color:#333;
+            } 
+            .popup-confirm{
+                width:140px;
+                height:26px;
+                padding-top: 18px;
+                margin:0 auto;
+                text-align: center;
+                font-size: 12px;
+                line-height: 24px;
+                a{
+                    border-radius: 2px;
+                }
+                .confirm{
+                    float:left;
+                    width:60px;
+                    height:26px;
+                    background:#107eee;
+                    color:#fff;
+                    &:hover{
+                        background:#046ebf;
+                    }
+                }
+                .cancel{
+                    float:right;
+                    width:58px;
+                    height:24px;
+                    border:1px solid #ddd;
+                    &:hover{
+                        background:#f3f3f3;
+                    }
+                }
+            }
+        }
+    }
+    .setup-info{
+        
+        line-height: 52px;
+        border-bottom: 1px solid #e7e7eb;
+        .info-left{
+            height:52px;
+            float:left;
+            width:116px;
+            color:#888;
+        }
+        .info-right{
+            float:left;
+            width:364px;           
+            padding-right:40px;
+            .right-intro{
+                padding:16px 0;     
+                line-height: 22px;
+            }
+        }
+        .info-head,.info-license{
+            height:118px;
+            width:78px;
+            .head,.license{
+                margin-top: 20px ;
+                height:78px;
+                border: 1px solid #ddd;
+            }
+            
+            img{
+                display:block;
+                width:100%;
+                height:100%;
+            }
+        }
+        .info-license{
+            width:118px;
+        }
+        
+    }
+}
+.cause-process,.cause-fail{
+    display:none;  
+    float: left;
+    padding-left: 44px;
+}
+.cause-process{  
+    color:#f96;
+}
+.cause-fail{
+    color:#ed2835;
+}
+
+.revamp-process,.revamp-fail{    
+    display: none; 
+    float:right;
+    width: 388px;
+    div{
+        float:left;
+        color:#a5a5a5;
+    }    
+    .new-head{
+        line-height: 118px;
+    }
+}
+.revamp-process{
+       
+    .new-left{
+        width:126px;
+    }
+}
+.revamp-fail{
+    .new-left{
+        width:56px;
+    }
+}
+.revamp-show{
+    display:block;
+}
+.new-intro{
+    color:#a5a5a5;
+    padding: 16px 0;
+    line-height: 22px;
+}
+
+
+
+.pt20{
+    padding-top: 20px;
+}

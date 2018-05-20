@@ -1,0 +1,197 @@
+doctype html
+html(lang="zh-CN")
+	include ../../widget/head/head.pug
+	link(type="text/css",rel="stylesheet",href="../../css/public/public.css")
+	link(type="text/css",rel="stylesheet",href="../../css/module/circleindex.css")
+	body.opg
+		include ../../widget/header/header.pug
+		include ../../widget/menu/menu.pug
+		div.circle-top
+			div.user-head
+				a(href="##")
+					img(src="https://i6.meixincdn.com/v1/img/T1GRYTB7KT1R4cSCrK.png" alt="")
+			h1.user-name 美味甜品ddd
+			div.user-top-info
+				ul.clearfix
+					li
+						|分类：
+						span 美食/甜品
+					li
+						|成员：
+						span 105
+					li
+						|话题：
+						span 80
+			div.user-top-btns
+				a.pc-btn.join-circle-btn(href="##") 加入圈子
+				a.pc-btn.pc-bj-fc8753.share-circle-btn(href="##") 分享圈子
+		div.wrap-box
+			div.index-title.clearfix
+				h2
+					a(href="##") 全部话题
+					a(href="##").active 精选话题
+					a(href="##").release-topic
+						em.icon-release
+							img(src="../../images/circle/circleIndexRel.png" alt="")
+						span.txt-release 发布话题
+			.circle-index-list.clearfix
+				//圈子-无图
+				div.circle-box.no-pic
+					.mg-negative
+						span.topic-tag.topic-tag-static
+							a(href="##")
+								em.icon-lysy
+									img(src="https://i6.meixincdn.com/v1/img/T1GRYTB7KT1R4cSCrK.png" alt="")
+								| 旅游摄影
+						.list-title
+							p.list-title-content
+								a(href="##") 婚纱也可以这么拍婚纱也可以这么拍婚纱也可以这么拍
+								span.list-title-time 2015.06.06
+						p.list-description 有人说，最好的旅行，就是在一个陌的地方，发现一种久违的感动。 是的，我们热爱旅行，有时爱的…
+						.text-icon
+							a(href="javascript:;")
+								em.icon.icon-collection.active &#xeac9;
+								| 238
+							a(href="javascript:;").a-share
+								em.icon.icon-share &#xeaca;
+								span 121
+				//圈子
+				div.circle-box
+					.mg-negative
+						span.topic-tag
+							a(href="##")
+								em.icon-lysy
+									img(src="https://i6.meixincdn.com/v1/img/T1GRYTB7KT1R4cSCrK.png" alt="")
+								| 旅游摄影
+						span.topic-num 19
+						.list-img
+							em.icon-play
+							a(href="##")
+								img(src="https://i6.meixincdn.com/v1/img/T1GRYTB7KT1R4cSCrK.png" alt="")
+						.list-title
+							p.list-title-content
+								a(href="##") 婚纱也可以这么拍婚纱也可以这么拍婚纱也可以这么拍
+								span.list-title-time 2015.06.06
+						p.list-description 有人说，最好的旅行，就是在一个陌的地方，发现一种久违的感动。 是的，我们热爱旅行，有时爱的…
+						.text-icon
+							a(href="javascript:;")
+								em.icon.icon-collection &#xeac9;
+								| 238
+							a(href="javascript:;").a-share
+								em.icon.icon-share &#xeaca;
+								span 121
+				//圈子、置顶
+				div.circle-box
+					.mg-negative
+						span.topic-tag
+							a(href="##")
+								em.icon-lysy
+									img(src="https://i6.meixincdn.com/v1/img/T1GRYTB7KT1R4cSCrK.png")
+								| 旅游摄影
+						.list-img
+							a(href="##")
+								img(src="https://i6.meixincdn.com/v1/img/T1GRYTB7KT1R4cSCrK.png" alt="")
+						.list-title
+							p.list-title-content
+								em.set-top 置顶
+								a(href="##") 婚纱也可以这么拍婚纱也可以这么拍婚纱也可以这么拍
+								span.list-title-time 2015.06.06
+						p.list-description 有人说，最好的旅行，就是在一个陌的地方，发现一种久违的感动。 是的，我们热爱旅行，有时爱的…
+						.text-icon
+							a(href="javascript:;")
+								em.icon.icon-collection &#xeac9;
+								| 238
+							a(href="javascript:;").a-share
+								em.icon.icon-share &#xeaca;
+								span 121
+				//圈子、加精
+				div.circle-box
+					.mg-negative
+						span.topic-tag
+							a(href="##")
+								em.icon-lysy
+									img(src="https://i6.meixincdn.com/v1/img/T1GRYTB7KT1R4cSCrK.png" alt="")
+								| 旅游摄影
+						.list-img
+							a(href="##")
+								img(src="https://i6.meixincdn.com/v1/img/T1GRYTB7KT1R4cSCrK.png" alt="")
+						.list-title
+							p.list-title-content
+								em.set-spark 加精
+								a(href="##") 婚纱也可以这么拍
+								span.list-title-time 2015.06.06
+						p.list-description 有人说，最好的旅行，就是在一个陌的地方，发现一种久违的感动。
+						.text-icon
+							a(href="javascript:;")
+								em.icon.icon-collection &#xeac9;
+								| 238
+							a(href="javascript:;").a-share
+								em.icon.icon-share &#xeaca;
+								span 121
+				//商品、返
+				div.circle-box
+					.mg-negative
+						span.topic-tag
+							a(href="##")
+								em.icon-lysy
+									img(src="../../images/circle/lvsy.jpg" alt="")
+								| 旅游摄影
+						.list-img
+							a(href="##")
+								img(src="https://i6.meixincdn.com/v1/img/T1GRYTB7KT1R4cSCrK.png" alt="")
+						p.list-price
+							| ￥
+							span 199.00
+							em.fan-tag 返
+						.list-title
+							p.list-title-content
+								a(href="##") 婚纱也可以这么拍纱也可以这么拍也可以这么拍
+								span.list-title-time 2015.06.06
+						.text-icon
+							a(href="javascript:;")
+								em.icon.icon-collection &#xeac9;
+								| 238
+							a(href="javascript:;").a-share
+								em.icon.icon-share &#xeaca;
+								span 121
+				//店铺、优惠券
+				div.circle-box.shop
+					.mg-negative
+						span.topic-tag.topic-tag-static
+							a(href="##")
+								em.icon-lysy
+									img(src="../../images/circle/lvsy.jpg" alt="")
+								| 旅游摄影
+						dl.list-shop
+							dt
+								a(href="##")
+									img(src="https://i6.meixincdn.com/v1/img/T1GRYTB7KT1R4cSCrK.png" alt="")
+							dd
+								a(href="##") 国美国际酒业际酒业
+								em.coupon-tag 优惠券
+						.list-title
+							p.list-title-content
+								a(href="##") 婚纱也可以这么拍纱也可以这么拍也可以这么拍
+								span.list-title-time 2015.06.06
+						.text-icon
+							a(href="javascript:;")
+								em.icon.icon-collection &#xeac9;
+								| 238
+							a(href="javascript:;").a-share
+								em.icon.icon-share &#xeaca;
+								span 121
+			.no-topic
+				.txt.clearfix
+					em.icon &#xe960;
+					p
+						span 抱歉，该圈子还没有话题！
+						span 快去发布本圈子的
+							span.red 第一个话题
+							| 吧！
+			.more-comments
+				a(href="##").clearfix
+					span
+						img(src="../../images/circle/small-logo.png")
+						| 查看更多评论
+						em.icon.icon-right &#xe98c;
+		include ../../widget/footer/footer.pug

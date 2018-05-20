@@ -1,0 +1,77 @@
+.message-list {
+  *zoom: 1;
+  color: #596069;
+  border: 1px solid #e1e3e6; }
+  .message-list:after {
+    content: "";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden; }
+  .message-list ol {
+    position: relative;
+    margin-bottom: -1px;
+    *zoom: 1; }
+    .message-list ol:after {
+      content: "";
+      display: block;
+      height: 0;
+      clear: both;
+      visibility: hidden; }
+    .message-list ol li {
+      position: relative;
+      padding: 5px 216px 5px 16px;
+      *zoom: 1;
+      border-bottom: 1px solid #e1e3e6; }
+      .message-list ol li:after {
+        content: "";
+        display: block;
+        height: 0;
+        clear: both;
+        visibility: hidden; }
+      .message-list ol li a {
+        color: #596069;
+        font-size: 14px;
+        line-height: 22px; }
+        .message-list ol li a:hover {
+          color: #596069; }
+      .message-list ol li:hover {
+        background: #f2faff; }
+      .message-list ol li .icon-letter {
+        float: left;
+        margin: 4px 14px 0px -9px; }
+      .message-list ol li.actived .icon-letter:after {
+        display: block; }
+      .message-list ol li .list-infor {
+        overflow: hidden;
+        *zoom: 1;
+        display: block; }
+      .message-list ol li .list-time {
+        position: absolute;
+        right: 67px;
+        top: 7px;
+        font-size: 14px;
+        color: #89919c; }
+
+.msg-detail {
+  padding: 23px 40px 20px;
+  background: #fff;
+  font-size: 16px;
+  line-height: 2;
+  color: #596069; }
+  .msg-detail .detail-header {
+    font-size: normal;
+    font-size: 18px;
+    line-height: 1.5;
+    color: #d30312;
+    text-align: center; }
+  .msg-detail .detail-time {
+    padding: 7px 0 20px;
+    text-align: center;
+    font-size: 14px;
+    color: #89919c; }
+  .msg-detail .detail-infor p {
+    padding-bottom: 20px;
+    text-indent: 2em; }
+
+

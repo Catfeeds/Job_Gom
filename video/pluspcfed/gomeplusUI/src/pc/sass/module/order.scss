@@ -1,0 +1,102 @@
+@import '../../../pc-widget/config/_base.scss';
+@import '../../../pc-widget/config/_mixins.scss';
+
+//shoplist
+
+.top30{
+    margin-top: 30px;
+}
+
+.order-state{
+    background: $bg-fff;
+    padding: 20px;
+    .attention{
+        color: $link-hover;
+        margin-left: 11px;
+        line-height: 30px;
+    }
+    dl{
+        line-height: 30px;
+        dt{
+            float: left;
+            width: 80px;
+            text-align: right;
+            color: $color-gray;
+        }
+        dd{
+            span{
+                color: $link-hover;
+            }
+        }
+    }
+    .pay-way{
+        float: left;
+        display: block;
+        line-height: 48px;
+        height: 48px;
+        font-size: 18px;
+        border: 1px solid #f6f5ee;
+        margin-right: 20px;
+        padding: 0 15px 0 25px;
+        position: relative;
+        cursor: pointer;
+        &.active{
+            border-color: $link-hover;
+        }
+        .icon-tui{
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 35px;
+            height: 35px;
+            background: url(../../images/shop/icon-tui.png) no-repeat;
+        }
+        input{
+            display: none;
+        }
+        .menu-radio{
+            display: inline-block;
+            width: 18px;
+            height: 18px;
+            background: url(../../images/public/sprite.png) no-repeat;
+            background-position: -130px 0;
+            cursor: pointer;
+            vertical-align: -3px;
+            margin-top: 15px;
+            margin-right: 15px;
+            float: left;
+        }
+        .menu-radio-checked{
+            background-position: -108px 0;
+        }
+        em{
+            margin-top: 8px;
+        }
+        em.icon-weixin,em.icon-zfb,em.icon-gm{
+            float: left;
+            width: 133px;
+            height: 34px;
+            background: url(../../images/shop/pay-weixin.png) no-repeat center;
+        }
+        em.icon-zfb{
+            background-image: url(../../images/shop/pay-zfb.png);
+        }
+        em.icon-gm{
+            background-image: url(../../images/shop/pay-gm.png);
+        }
+        img{
+            display: inline-block;
+            width: 133px;
+            height: 34px;
+        }
+    }
+    .btn-box{
+        text-align: center;
+        clear: both;
+        padding-top: 30px;
+    }
+}
+
+
+
+

@@ -1,0 +1,195 @@
+@charset "UTF-8";
+// @ Css name：返利帮助
+// @ Author： yilingbo@
+// @ Date： 2017-08-01 15:30
+// @ Last Modified by： yilingbo
+// @ Last Modified time：2017-08-01 15:53
+//==========================
+
+@import "../plus-sasscore/_configure.scss";
+.myhelp{
+	.m-menu {
+		.link{
+			font-size:rem(28);
+			}
+	}		
+}
+.link-btn{
+		background: #fff;
+		overflow: hidden;
+		.link-wrap{
+			width:100%;
+			overflow: hidden;
+			padding:rem(40 20);
+			display: block;
+			text-align: center;
+			.link-a{
+				width:rem(200);
+				height:rem(72);
+				margin:rem(0 15);
+				display: inline-block;
+				overflow: hidden;
+				line-height: 300;
+				&:nth-child(1){
+					background: url(btn-1.png) no-repeat center;
+					background-size: 100% 100%;
+					&.active{
+						background: url(btn-1-o.png) no-repeat center;
+         				background-size: 100% 100%;
+					}
+				}
+				&:nth-child(2){
+					background: url(btn-2.png) no-repeat center;
+					background-size: 100% 100%;
+					&.active{
+						background: url(btn-2-o.png) no-repeat center;
+         				background-size: 100% 100%;
+					}
+				}
+				&:nth-child(3){
+					background: url(btn-3.png) no-repeat center;
+					background-size: 100% 100%;
+					&.active{
+						background: url(btn-3-o.png) no-repeat center;
+         				background-size: 100% 100%;
+					}
+				}
+				img{
+					width:100%;
+				}
+				// &.active{
+				// 	border:1px solid red;
+				// }
+			}
+		}
+	}
+	.fix-link-btn{
+			position: fixed;
+			top:rem(0);
+			left:0;
+			width:100%;
+			z-index: 19;	
+	}
+/**模块*/
+.mod-box{
+	background: #F3F5F7;
+	// display: none;
+	&:last-child{
+		display: none;
+	}
+	.box{
+		padding:rem(20);
+		text-align: center;
+		background: #fff;
+		.tit{
+			padding:rem(120 0 100 0);
+			&:first-child{
+				 padding-top:rem(80);
+			}
+		}
+		.btnbox{
+			padding:rem(90 0 0 0);
+			display: block;
+      		text-align: center;
+			img{
+				width:5.8rem;
+				height:0.7rem;
+				margin:0 auto;
+			}
+		}
+		
+	}
+	.title{
+		position: relative;
+		font-size:rem(32);
+		padding:rem(20 0);
+		// border-left:2px solid red;
+		background: #fff;
+		margin-top:rem(20);
+		text-indent: rem(22);
+		&:before{
+			content: " ";
+			position: absolute;
+			width: rem(7);
+			height:rem(68);
+			left: 0;
+			top: 26%;
+			background:#FF5C5C;
+			// border-left: 1px solid #FF5C5C;
+			// border-left-width:rem(7);
+			-webkit-transform-origin: 0 0;
+			transform-origin: 0 0;
+			-webkit-transform: scaleY(0.5);
+			transform: scaleY(0.5);
+			border-radius: rem(30);
+		}
+		&:after{
+			content: " ";
+			position: absolute;
+			height: 2px;
+			left: 0;
+			bottom: 0;
+			right: 0;
+			border-bottom: 2px solid #DDD;
+			-webkit-transform-origin: 0 100%;
+			transform-origin: 0 100%;
+			-webkit-transform: scaleY(0.5);
+			transform: scaleY(0.5);
+		}
+	}
+	dl{
+		padding:rem(0 30 20 30);
+		background: #fff;
+		color:#666;
+		font-size:rem(28);
+		dd{
+			// height:rem(40);
+			// line-height: rem(40);
+			padding:rem(30 0);
+			font-size:rem(28);
+			span{
+				display: block;
+				line-height: 1.4;
+				overflow: hidden;
+				@include ellipsis();
+			}
+			&.curr{
+				padding-bottom:0;
+				.sub-box{
+					display: block;
+				}
+			}
+			table{
+				border-collapse:collapse;
+				border:1px solid #999;
+				td{
+					border:1px solid #999;
+					padding:rem(10);
+					text-align: center;
+				}
+			}
+		}
+		.sub-box{
+			display: none;
+			margin:rem(30 0 0 0);
+			line-height: rem(50);
+			padding:rem(20 20);
+			border-radius: rem(10);
+			background: #F3F5F7;
+		}
+		&.curr{
+			display: block;
+		}
+	}
+}
+
+.opg .go-top, .opg .go-home {
+    width: 1.0rem;
+    height: 1.0rem;
+    background: url(go-top.png) no-repeat;
+    background-size: cover;
+    position: fixed;
+    right: 0.4rem;
+    bottom: 1.38rem;
+    z-index: 9;
+}

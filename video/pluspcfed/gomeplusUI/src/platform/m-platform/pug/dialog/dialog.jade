@@ -1,0 +1,75 @@
+//- extends layout.jade
+extends ../../../widget-platform/pug/layout/layout-m.jade
+
+//- index
+block content
+	.platform-tipsinfo
+		h5 说明
+		p m-mask 公用透明层
+		p m-mask-private 透明弹层(JS使用)
+		p m-dialog Dialog公用结构
+		p m-dialog-auto 高度自适应
+		p 结构有修改同步JS，谢谢~
+		p 具体查看结构，谢谢~
+		p.maty 有问题沟通-maty
+	//end
+
+	//- dialog-1
+	div.platform-content
+		h3.platform-header 带有输入框
+		//- div.platform-intro
+		//- 	p dialog-1
+		div.platform-example#dialog-1
+			include ../../../../m-widget/dialog/dialog-1.jade
+		pre.platform-pre.hide
+			code.platform-code#dialog-1_code
+			span.platform-jade pug
+			span.platform-jade.platform-html.actived html
+	//- dialog-2
+	div.platform-content
+		h3.platform-header 标题+描述文字
+		//- div.platform-intro
+		//- 	p dialog-2
+		div.platform-example#dialog-2
+			include ../../../../m-widget/dialog/dialog-2.jade
+		pre.platform-pre.hide
+			code.platform-code#dialog-2_code
+			span.platform-jade pug
+			span.platform-jade.platform-html.actived html
+	//- dialog-3
+	div.platform-content
+		h3.platform-header 两行标题
+		//- div.platform-intro
+		//- 	p dialog-3
+		div.platform-example#dialog-3
+			include ../../../../m-widget/dialog/dialog-3.jade
+		pre.platform-pre.hide
+			code.platform-code#dialog-3_code
+			span.platform-jade pug
+			span.platform-jade.platform-html.actived html
+	//- dialog-4
+	div.platform-content
+		h3.platform-header 单行标题
+		//- div.platform-intro
+		//- 	p dialog-4
+		div.platform-example#dialog-4
+			include ../../../../m-widget/dialog/dialog-4.jade
+		pre.platform-pre.hide
+			code.platform-code#dialog-4_code
+			span.platform-jade pug
+			span.platform-jade.platform-html.actived html
+	//- dialog-5
+	div.platform-content
+		h3.platform-header 密码支付
+		//- div.platform-intro
+		//- 	p dialog-5
+		div.platform-example#dialog-5
+			include ../../../../m-widget/dialog/dialog-5.jade
+		pre.platform-pre.hide
+			code.platform-code#dialog-5_code
+			span.platform-jade pug
+			span.platform-jade.platform-html.actived html
+	script(type='text/javascript').
+		HtmlFormat.init(['dialog-1','dialog-2','dialog-3','dialog-4','dialog-5'],false,'_code','html','span.platform-jade');
+		$(".platform-dialog").parent('li').addClass("actived");
+

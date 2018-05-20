@@ -1,0 +1,125 @@
+/* contentManage */
+
+@import "../../base/public.scss";
+.contentManage {
+    padding: 24px;
+    .selectNav {
+        .selectorBox {
+            display: inline-block;
+            margin-right: 50px;
+            em {
+                float: left;
+                line-height: 36px;
+            }
+        }
+    }
+}
+
+.red{
+    color: $warning;
+}
+.green{
+    color: $success;
+}
+.orange{
+    color: $danger;
+}
+
+.list-table {
+    td,th {
+        box-sizing: border-box;
+    }
+    thead th{
+        background: #f0f0f0;
+        color: #111;
+        font-weight: 700;
+        line-height: 48px;
+        padding: 0 16px;
+        &:first-child{
+            text-align: left;
+        }
+    }
+    td{
+        padding: 20px 10px;
+        border-bottom: 1px solid #f0f0f0;
+        text-align: center;
+        &:first-child{
+            text-align: left;
+            vertical-align: top;
+        }
+        .title{
+            line-height: 38px;
+            font-size: 18px;
+            margin-bottom: 5px;
+            color: #111;
+            &:hover{
+                color: #3e9bf7;
+            }
+        }
+        .gray{
+            font-size: 12px;
+            color: $gray;
+            line-height: 20px;
+        }
+        img{
+            width: 170px;
+            height: 96px;
+        }
+        .a-btn{
+            display: inline-block;
+            width: 40%;
+            line-height: 28px;
+            text-align: center;
+        }
+    }
+}
+
+.nodata{
+    text-align: center;
+    padding-top: 12%;
+    p{
+        font-size: 18px;
+    }
+    .btn{
+        margin-top: 40px;
+        width: 260px;
+    }
+}
+
+.video-update-btns{
+    padding: 0 0 50px 0;
+    text-align:center;
+    .btn{
+        margin: 0 20px;
+        width: 120px;
+        height: 40px;
+        line-height: 40px;
+        font-size: 16px;
+        border-radius: 5px;
+        cursor: pointer;
+        text-align: center;
+        border: none;
+
+        &:hover {
+            background: #75b8f9;
+        }
+    }
+    //.video-update-submit{
+    //    width: 180px;
+    //}
+    .video-update-submit{
+        color: #FFF;
+        background: #53a6f8;
+    }
+
+    .video-update-cancel{
+        color: #666;
+        background: #FFF;
+        border: 1px solid #CCC;
+        display: inline-block;
+        &:hover{
+            background: #FFF;
+            border-color:#999;
+        }
+    }
+}

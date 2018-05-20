@@ -1,0 +1,87 @@
+doctype html
+html(lang="zh-CN")
+	include ../../../../../gomeplusUI/pc/src/jade/head.jade
+	link(type="text/css",rel="stylesheet",href="../../css/public/public.css")
+	link(type="text/css",rel="stylesheet",href="../../css/module/usercenter/usercenter.css")
+	body.opg
+		include ../../../../../gomeplusUI/pc/src/jade/header.jade
+		include ../../../../../gomeplusUI/pc/src/jade/menu.jade
+		.wrap-box.mart20.clearfix
+			include ../../../../../gomeplusUI/pc/src/jade/usercenter-side.jade
+			.user-right
+				.circle-index-list.clearfix
+					.usercircle-title
+						h2 我创建的圈子
+						a(href="javascript:;").right 创建圈子
+					- for (var x = 0; x < 6; x++)
+						.circle-list
+							.mg-negative
+								div.user-head
+									a(href="##")
+										img(src="https://i6.meixincdn.com/v1/img/T1GRYTB7KT1R4cSCrK.png" alt="")
+								h3.user-name 美味甜品
+								div.user-top-info
+									ul.clearfix
+										li
+											strong 105
+											p 成员
+										li
+											strong 80
+											p 话题
+				.circle-index-list.clearfix
+					.usercircle-title
+						h2 我加入的圈子
+					- for (var y = 0; y < 6; y++)
+						.circle-list
+							.mg-negative
+								div.user-head
+									a(href="##")
+										img(src="https://i6.meixincdn.com/v1/img/T1GRYTB7KT1R4cSCrK.png" alt="")
+								h3.user-name 美味甜品
+								div.user-top-info
+									ul.clearfix
+										li
+											strong 105
+											p 成员
+										li
+											strong 80
+											p 话题
+				.more-comments
+					a(href="##").clearfix
+						span
+							img(src="../../images/circle/small-logo.png")
+							| 点击加载更多
+							em.icon.icon-right &#xe98c;
+				.more-comments
+					a(href="##").disabled.clearfix
+						span
+							img(src="../../images/public/loading.gif")
+							| 正在加载...
+				.more-comments
+					a(href="##").disabled.clearfix
+						span
+							| 没有可加载内容
+				.circle-index-list.clearfix
+					.usercircle-title
+						h2 我创建的圈子
+						a(href="javascript:;").right 创建圈子
+					.no-topic
+						.txt.clearfix
+							em.icon &#xe94b;
+							p 
+								span
+									| 您还没创建圈子，赶快 
+									a(href="javascript:;") 创建圈子 
+									| 吧！
+				.circle-index-list.clearfix
+					.usercircle-title
+						h2 我加入的圈子
+					.no-topic
+						.txt.clearfix
+							em.icon &#xe94b;
+							p 
+								span
+									| 您还没有加入任何的圈子，赶快 
+									a(href="javascript:;") 加入圈子 
+									| 吧！
+		include ../../../../../gomeplusUI/pc/src/jade/footer.jade

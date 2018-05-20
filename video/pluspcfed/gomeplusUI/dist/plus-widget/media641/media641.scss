@@ -1,0 +1,16 @@
+@charset "UTF-8";
+
+@media screen and (min-width:641px){
+	html{font-size:85px;}
+	.opg .bor-all:before{
+		width: 100%;
+		height: 100%;
+		-webkit-transform: scale(1);
+				transform: scale(1);
+	}
+	.opg .bor-t:after,
+	.opg .bor-b:after{
+		-webkit-transform: scaleY(1);
+				transform: scaleY(1);
+	}
+}

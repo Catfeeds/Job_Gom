@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<title>日历demo</title>
+<style type="text/css">
+* {padding:0;margin:0;font-size:12px;}
+body{padding:100px 50px;}
+.test-box{float:left;margin-right:200px;}
+.data-box{width:260px; }
+.calendar {width:248px;height:28px;line-height:28px;padding:0 5px;border:1px solid #e1e1e1;color:#999;}
+.show-mn {text-align:center;padding:0 20px;}
+.date-lawyer {margin-top:10px;border:1px solid #999;padding:3px}
+.cal-table {width:100%;margin-top:10px;}
+.cal-table td {text-align:center;cursor:pointer;height:24px;font-size:14px;}
+.cal-table td.on {color:#fff;background-color:#f0f}
+.cal-table td.hover{color:blue;}
+.showDate2 {width:35px;padding:3px 5px;color:#999;border:1px solid #f00;text-align:center}
+.showDate2.on {border:1px solid #f0f; }
+</style>
+
+</head>
+<body>
+    <div class="test-box">
+        <div class="data-box" id="data-box1">
+            <input type="text"  class="calendar" value="点击选择日期" readonly/>
+            <div class="date-lawyer" style="display:none;">
+                <div>
+                    
+                    <div class="show-mn">
+                        <input type="text" class="showDate2 year" value="选择年份" />
+                        <span class="ml5 mr5">年</span>
+                        <input type="text" class="showDate2 month" value="选择月份" />
+                        <span class="ml5">月</span>
+                    </div>              
+                </div>
+                
+            </div>
+        </div>
+    </div>
+	
+	<div class="test-box">
+        <div class="data-box" id="data-box2">
+            <input type="text"  class="calendar" value="点击选择日期" readonly/>
+            <div class="date-lawyer" style="display:none;">
+                <div>
+                    
+                    <div class="show-mn">
+                        <input type="text" class="showDate2 year" value="选择年份" />
+                        <span class="ml5 mr5">年</span>
+                        <input type="text" class="showDate2 month" value="选择月份" />
+                        <span class="ml5">月</span>
+                    </div>              
+                </div>
+                
+            </div>
+        </div>
+    </div>
+	<script type="text/javascript" src="jq.js"></script>
+	<script type="text/javascript" src="calendar.js"></script>
+</body>
+</html>

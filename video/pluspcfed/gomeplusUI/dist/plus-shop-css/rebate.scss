@@ -1,0 +1,43 @@
+@charset "UTF-8";
+// @ Css name：返利
+// @ Author： kanjingjing
+// @ Date： 2017-08-01
+// @ Last Modified by： kanjingjing
+// @ Last Modified time：2017-08-01
+//==========================
+
+/*maty*/
+
+
+@import "../plus-sasscore/_configure.scss";
+@import "../plus-widget/reset/_mixin.scss";
+
+// 返利	kjj
+.mgt-20{
+	margin-top: rem(20);
+}
+.elli{
+	overflow: hidden;
+	text-overflow:ellipsis;
+	white-space: nowrap;
+}
+.elli2{
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    word-break: break-all;
+    -webkit-box-orient: vertical;
+}
+.fl{
+	float: left;
+}
+.dsib{
+	display: inline-block;
+}
+@import "_index.scss";
+@import "_select-side.scss";
+
+
+
+
+

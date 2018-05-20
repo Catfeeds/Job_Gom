@@ -1,0 +1,130 @@
+.detail{
+  height: 100%;
+
+  .detailMain{
+    width: 7.5rem;
+    margin-top: 1rem;
+    overflow: hidden;
+
+    .detailtitle{
+      width: 100%;
+      padding: .52rem .3rem 0;
+      text-align: center;
+
+      .detailflag{
+        float: left;
+        width: .08rem;
+        height: .24rem;
+        margin: .14rem 0;
+        background-color: #d63333;
+      }
+      .detailname{
+        float: left;
+        width: 90%;
+        text-indent: .12rem;
+        line-height: .5rem;
+        font-size: .36rem;
+        text-align: left;
+      }
+    }
+
+    .detailcontainer{
+      width: 7rem;
+      padding: .22rem .36rem 0;
+      overflow: hidden;
+      ol {
+        overflow: hidden;
+      }
+      ol li {
+        .detailItems{
+          line-height: .7rem;
+          font-size: .28rem;
+          color: #666;
+        }
+
+        .fl{
+          float: left;
+        }
+
+        .detailexplainItems{
+          line-height: .7rem;
+          font-size: .28rem;
+          color: #151515;
+        }
+
+        .detailmemberItems{
+          float: left;
+          line-height: .7rem;
+          font-size: .28rem;
+          color: #4990e2;
+        }
+
+        .detailprogressCount{
+          float: left;
+          line-height: .7rem;
+          font-size: .28rem;
+          color: #f6a623;
+          margin-left: .13rem;
+        }
+
+        .detailprogressItems{
+          width: 50%;
+          height: .1rem;
+          margin: .28rem 0;
+          background-color: #fff;
+          display: inline-block;
+          border: 1px solid #f6a623;
+          color: #f6a623; /*IE10*/
+        }
+        /*ie6-ie9*/
+        progress ie {
+            display:block;
+            height: 100%;
+            background: #f6a623;
+        }
+
+        progress::-moz-progress-bar { background: #f6a623; }
+        progress::-webkit-progress-bar { background: #fff; }
+        progress::-webkit-progress-value  { background: #f6a623; }
+      }
+
+      .detailwrapper{
+        width: 100%;
+        // overflow-x: scroll;
+        overflow: auto;
+
+        .detaildrawing-min{
+          width: 160%;
+          height: 5.03rem;
+        }
+
+        .detaildrawing-mid{
+          width: 170%;
+          height: 5.03rem;
+        }
+
+        .detaildrawing-max{
+          width: 180%;
+          height: 5.03rem;
+        }
+
+        .detaildrawing-smax{
+          width: 210%;
+          height: 5.03rem;
+        }
+      }
+    }
+  }
+}
+
+[v-cloak] {
+  display: none;
+}
+
+.vShow{
+  visibility: visible;
+}
+
+.vHide{
+  visibility: hidden;
+}

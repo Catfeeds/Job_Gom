@@ -1,0 +1,228 @@
+@charset "UTF-8";
+//项目：首页优惠券弹窗
+//作者：hukezhen
+//时间：2016-12-22
+
+@import "../../../../sasscore/_configure.scss";
+.coupon-box{
+    width: rem(572);
+    height: rem(786);
+    position: fixed;
+    top:50%;
+    margin-top: rem(-393);
+    left: 50%;
+    margin-left: rem(-296);
+    z-index: 40010;
+}
+.coupon-bg1{
+    background: url("../../../images/newHome/coupon-bg3.png") no-repeat;
+    width: rem(572);
+    height: rem(676);
+    background-size: cover;
+    .coupon-nmb{
+        width: rem(289);
+        padding-top: rem(130);
+        margin:0 auto;
+        text-align: center;
+        font-size: rem(150);
+        color: #fc313b;
+        font-weight: bold;
+        @include prefix(text-shadow,rem(2) rem(2) rem(10) #f3cb54);
+    }
+    .coupon-txt{
+        width: auto;
+        line-height: rem(70);
+        font-size: rem(32);
+        color: #fc313b;
+        text-align: center;
+        font-weight: bold;
+    }
+    .coupon-register{
+        margin-top: rem(140);
+        text-align: center;
+        color: #fff;
+        font-size: rem(34);
+        font-weight: bold;
+    }
+    .collect-btn{
+        display: block;
+        width: rem(226);
+        height: rem(76);
+        line-height: rem(76);
+        font-weight: bold;
+        background: #fbea43;
+        font-size: rem(40);
+        color: #F01313;
+        margin: .2rem auto;
+        text-align: center;
+        @include prefix(border-radius,rem(10));
+        @include prefix(box-shadow,rem(2) rem(2) rem(10) #b1010a);
+
+    }
+}
+.coupon-close{
+    display: block;
+    background: url("../../../images/newHome/coup-close.png") no-repeat;
+    width: rem(80);
+    height: rem(110);
+    margin: rem(-36) auto 0;
+    background-size: cover;
+}
+
+
+//老用户弹窗
+.coupon-bg2{
+    background: url("../../../images/newHome/coupon-bg1.png") no-repeat;
+    background-size: cover;
+    width: rem(567);
+    height: rem(623);
+    position: fixed;
+    margin-top: rem(-311);
+    margin-left: rem(-283);
+    top:50%;
+    left: 50%;
+    z-index: 40010;
+    text-align: center;
+    .tips-txt{
+        margin-top: rem(230);
+        img{
+            width: rem(423);
+            height: rem(85);
+            margin: 0 auto;
+        }
+    }
+    .tips-txt2{
+        font-size: rem(24);
+        line-height: rem(40);
+        color: #FFF193;
+        text-align: center;
+        margin-top: rem(38);
+        font-weight: bold;
+    }
+    .coupon-btn{
+        width: auto;
+        height: auto;
+        overflow: hidden;
+        margin-top: rem(90);
+        a{
+            @include prefix(border-radius,rem(10));
+            text-align: center;
+            font-size: rem(30);
+            text-align: center;
+            height: rem(64);
+            line-height: rem(64);
+            color: #fff;
+            display:block;
+            &.cancel-btn{
+                float: left;
+                width: auto;
+                padding: 0 rem(45);
+                height: rem(62);
+                line-height: rem(62);
+                float: left;
+                border:1px solid #fff;
+                margin-left: rem(80);
+            }
+            &.go-receive-btn{
+                float: right;
+                padding: 0 rem(18);
+                background-color: #fbea43;
+                color: #F01414;
+                margin-right: rem(90);
+                font-weight: bold;
+            }
+        }
+    }
+}
+
+
+//领取成功方案终端
+.coupon-box2{
+    width: rem(570);
+    max-height: rem(960);
+    position: fixed;
+    margin-top: rem(200);
+    left: 50%;
+    top: 50%;
+    margin-top: rem(-480);
+    margin-left: rem(-285);
+    z-index: 40010;
+    .coupon-close{
+        margin-top: 0;
+    }
+}
+.coupon-bg3{
+    background: url("../../../images/newHome/coupon-bg2.png") no-repeat;
+    width: rem(570);
+    height: rem(407);
+    background-size: cover;
+    .tips-txt3{
+        padding-top: rem(200);
+        margin: 0 auto;
+        width: rem(390);
+        img{
+            width: rem(390);
+            height: rem(61);
+        }
+    }
+    .tips-txt4{
+        font-size: rem(26);
+        color: #FFFDBE;
+        text-align: center;
+        line-height: rem(40);
+        margin-top: rem(30);
+        font-weight: bold;
+    }
+}
+.coupon-list-bx{
+    padding: 0 rem(15) rem(15) rem(30);
+    background: #f72734;
+    width: rem(515);
+    height: auto;
+    overflow: hidden;
+    margin: rem(-1rem) auto 0 rem(20);
+    @include prefix(border-radius,25);
+    border-radius: 0 0 rem(25) rem(25);
+    li{
+        a{
+            display: block;
+        }
+        p{
+            &:first-child{
+                color: #fff;
+                font-size: rem(40);
+                line-height:rem(70);
+                height: rem(60);
+                text-align: center;
+                overflow: hidden;
+                span{
+                    font-size: rem(24);
+                }
+            }
+            &:last-child{
+                color: #fff;
+                font-size: rem(18);
+                text-align: center;
+                height: rem(30);
+                line-height: rem(30);
+            }
+        }
+        float: left;
+        background:url("../../../images/newHome/coupon-bg.png") no-repeat;
+        width: rem(222);
+        height: rem(96);
+        background-size: cover;
+        margin-right: rem(10);
+        margin-bottom: rem(8);
+    }
+}
+
+
+
+
+
+
+
+
+
+

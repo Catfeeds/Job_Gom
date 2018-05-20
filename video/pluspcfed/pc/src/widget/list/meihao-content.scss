@@ -1,0 +1,87 @@
+.article-title{
+		font-size:16px;
+		color:#333;
+		height:30px;
+		line-height:30px;
+		span{
+			float:left;
+			height:30px;
+			line-height:30px;
+		}
+		.release{
+			float:right;	
+			width:100px;
+			height:30px;		
+			a{
+				display:block;
+				width:100%;
+				height:100%;
+				line-height:30px;
+				text-align:center;
+				font-size:14px;
+				color:#fff;
+				background:#107eee;
+				border-radius:2px;
+				&:hover{
+					background:#046ebf;
+					text-decoration:none;
+				}
+			}	
+		}
+	}
+	.article-list{
+		margin-bottom:60px;
+		li{
+			display:block;
+			padding:20px 0;
+			border-bottom:1px solid #e1e1e1;
+			.pic{
+				float:left;
+				margin-right:20px;
+				width:116px;
+				height:75px;
+				img{
+					display: block;
+					width:100%;
+					height:100%;
+				}
+			}
+			.con{
+				float:left;
+				padding-top:15px;
+				width:420px;
+				height:65px;
+				line-height:22px;
+				margin-right:40px;
+			}
+			.date{
+				float:left;
+				width:230px;
+				height:75px;
+				line-height:75px;
+			}
+			.oparate{
+				float:right;
+				height:75px;
+				line-height:75px;
+				a{
+					color: #107eee;
+					&:hover{
+						text-decoration:underline;
+					}; 
+					&.edit{
+						margin-right:20px;
+					}
+				}
+
+			}
+
+		}
+	}
+
+    .create-msg{
+    	padding:265px 0;
+    	text-align:center;
+    	font-size:14px;
+    	color:#a5a5a5;
+    }

@@ -1,0 +1,21 @@
+doctype html
+html(lang="zh-CN",data-use-rem="750")
+	include ../../../m-widget/head/head.jade
+	link(type="text/css",rel="stylesheet",href="../../css/public/public-wap.css")
+	link(type="text/css",rel="stylesheet",href="../../css/module/shop.css")
+	
+	body.opg
+		include ../../../m-widget/head/rem.jade
+		
+		.meidian-wrap
+			header.header
+				span
+					a.head-back(href="javascript:;")
+						em.iconn-1
+				h1.head-title 店铺描述
+				span
+					a.head-edit(href="javascript:;") 完成
+			// /header
+			.meidian-dec
+				textarea(placeholder="想买啥先和老板说声，万一有呢～")
+				span.num 16/200

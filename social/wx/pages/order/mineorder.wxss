@@ -1,0 +1,49 @@
+/**index.wxss**/
+page {
+  height: 100%;
+}
+
+.container {
+  padding:0;
+  background-color: #f2f2f2;
+}
+
+.userinfo {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background: palevioletred;
+}
+
+.userinfo-avatar {
+  width: 128rpx;
+  height: 128rpx;
+  margin: 20rpx;
+  border-radius: 50%;
+}
+
+
+.count {
+  font-size: 30rpx;
+}
+.info-item {
+  color: #fff;
+  margin: 16rpx 0rpx;
+}
+
+/*订单*/
+
+.order {
+  background-color: #fff;
+  margin-top: 40rpx;
+}
+ .order-item {
+   height:96rpx;
+   font-size: 32rpx;
+   border-bottom: 1rpx #f2f2f2 solid;
+   padding: 0rpx 24rpx;
+   line-height: 96rpx;
+ }
+ .order-item .more {
+   float: right;
+ }

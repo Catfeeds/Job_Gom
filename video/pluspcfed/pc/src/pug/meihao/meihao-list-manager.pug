@@ -1,0 +1,17 @@
+doctype html
+html(lang="zh-CN")
+    meta(charset="utf-8")
+    link(type="text/css",rel="stylesheet",href="../../css/public/public.css")
+    link(type="text/css",rel="stylesheet",href="../../css/module/meihaoListManager.css")
+    body.opg
+        include ../../widget/header/header-meihao.pug
+        .meihao.clearfix
+            include ../../widget/aside/meihao.pug
+            #meihao-list-manager
+                h2 文章管理
+                include ../../widget/list/meihao-content.pug
+script(type="text/javascript",src="http://js.dev.meixincdn.com:1314/debug/js/conf/vendor.js")
+script(type="text/javascript",src="../../js/conf/meihaoListManager.js")
+
+
+

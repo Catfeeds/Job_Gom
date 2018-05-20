@@ -1,0 +1,15 @@
+extends layout
+
+block content
+  div.pattern-pic
+  div.container-reset
+    - if(msg) {
+    p(class="errMsg") #{msg}
+    - }
+    form(class="form-signin", role="form", action="login", method="post")
+      h2(class="form-signin-heading") OPG开发自动化平台
+      input(name="username" type="text", class="form-control", placeholder="username",required,autofocus)
+      input(name="psw" type="password", class="form-control", placeholder="password", required)
+      button(class="btn btn-lg btn-success btn-block",type="submit") Login In
+  script(src='/javascripts/jquery-1.12.1.min.js')
+  script(src='/javascripts/bootstrap.min.js')

@@ -1,0 +1,48 @@
+{
+  "name": "gomeplus_pc",
+  "version": "1.0.0",
+  "description": "国美+",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "webpack-dev-server --config webpack.config.js --progress --colors --profile --mx-dev",
+    "pre": "webpack-dev-server --config webpack.config.js --progress --colors --profile --https --mx-pre",
+    "online": "webpack-dev-server --config webpack.config.js --progress --colors --profile --https --mx-online",
+    "conf": "webpack",
+    "build": "webpack --config webpack.prd.config.js --progress --colors --profile",
+    "uppre": "echo \"更新svn\" && svn up && echo \"生成src/js/conf\" && webpack && echo \"提交svn\" && svn add src/js/conf --force && svn add src/css --force && svn add src/images --force && svn commit src/js/conf/* -m \"commit generated src/js/conf\" && svn commit src/images/* -m \"commit images\" && svn commit src/css/* -m \"commit css\" ",
+    "upprd": "echo \"更新svn\" && svn up && echo \"生成dist/js/conf,拷贝css,images到dist目录\" && webpack --config webpack.prd.config.js && echo \"提交svn\" && svn add dist/ --force && svn commit dist/* -m \"commit generated dist, include all compressed js,css and images\" "
+  },
+  "author": "jiyunpeng",
+  "license": "",
+  "dependencies": {
+    "jquery": "^1.12.4",
+    "lodash": "^4.13.1"
+  },
+  "devDependencies": {
+    "clean-webpack-plugin": "^0.1.8",
+    "cli": "^0.11.3",
+    "commander": "^2.9.0",
+    "del": "^2.2.2",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^3.1.1",
+    "gulp-base64": "^0.1.3",
+    "gulp-cache": "^0.4.5",
+    "gulp-concat": "^2.6.0",
+    "gulp-imagemin": "^3.0.3",
+    "gulp-jade": "^1.1.0",
+    "gulp-jshint": "^2.0.1",
+    "gulp-livereload": "^3.8.1",
+    "gulp-minify-css": "^1.2.4",
+    "gulp-notify": "^2.2.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-ruby-sass": "^2.1.0",
+    "gulp-sourcemaps": "^1.8.1",
+    "gulp-uglify": "^1.5.4",
+    "jshint": "^2.9.3",
+    "tmodjs-loader": "^1.0.1",
+    "transfer-webpack-plugin": "^0.1.4",
+    "webpack": "^1.13.1",
+    "webpack-dev-server": "^1.14.1"
+  }
+}

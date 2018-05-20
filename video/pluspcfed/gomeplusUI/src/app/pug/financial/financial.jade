@@ -1,0 +1,164 @@
+doctype html
+html(lang='zh-CN', data-use-rem='750')
+    head
+        meta(charset='UTF-8')
+        meta(name='viewport', content='width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no')
+        meta(name='format-detection', content='telephone=no')
+        meta(name='format-detection', content='email=no')
+        title 美信网络技术有限公司
+    link(type='text/css', rel='stylesheet', href='../../css/financial/financial.css')
+    body.opg
+        script(type='text/javascript').
+            (function(win){var doc=win.document,html=doc.documentElement,option=html.getAttribute("data-use-rem");if(option===null){return}var baseWidth=parseInt(option).toString()==="NaN"?640:parseInt(option);var grids=baseWidth/100;var clientWidth=html.clientWidth||320;html.style.fontSize=clientWidth/grids+"px";var testDom=document.createElement("div");var testDomWidth=0;var adjustRatio=0;testDom.style.cssText="height:0;width:1rem;";doc.body.appendChild(testDom);var calcTestDom=function(){testDomWidth=testDom.offsetWidth;if(testDomWidth!==Math.round(clientWidth/grids)){adjustRatio=clientWidth/grids/testDomWidth;var reCalcRem=clientWidth*adjustRatio/grids;html.style.fontSize=reCalcRem+"px"}else{doc.body.removeChild(testDom)}};setTimeout(calcTestDom,20);var reCalc=function(){var newCW=html.clientWidth;if(newCW===clientWidth){return}clientWidth=newCW;html.style.fontSize=newCW*(adjustRatio?adjustRatio:1)/grids+"px"};if(!doc.addEventListener){return}var resizeEvt="orientationchange" in win?"orientationchange":"resize";win.addEventListener(resizeEvt,reCalc,false);doc.addEventListener("DOMContentLoaded",reCalc,false)})(window);
+        div
+            #slider.slider
+                #hd.hd
+                    ul(style='border-bottom:none;')
+                #bd.bd
+                    ul.heilogin
+                        li
+                            a(href='http://m.gomemyc.com/hongbao1610?yqzc=yqzc&refm=MXHBH501')
+                                img(src='../../images/financial/financial_banner_1.jpg')
+                        li
+                            a(href='http://m.gomemyc.com/h5/yaoqinghd?yqzc=yqzc&refm=MXYQH501')
+                                img(src='../../images/financial/financial_banner_2.jpg')
+                        li
+                            a(href='http://wap.5262.com/single/home/land/national.html')
+                                img(src='../../images/financial/financial_banner_3.png')
+                        li
+                            a(href='https://m.dbjb.com/active/bannerxslcj')
+                                img(src='../../images/financial/financial_banner_4.png')
+            // 理财栏
+            .licl
+                .licnum
+                    a(href='http://m.gomefinance.com.cn?yqzc=yqzc&refm=MXSYH501')
+                        img(src='../../images/financial/licai4.png')
+                        .conp
+                            p.lictit.licyt 国美金融
+                .licnum.licnum01
+                    a(href='http://wap.5262.com/')
+                        img(src='../../images/financial/licai2.png')
+                        .conp
+                            p.lictit.licyt 华人理财
+            // 理财栏
+            .licl
+                .licnum.licnum01
+                    a(href='javascript:;')
+                        img(src='../../images/financial/licai3.png')
+                        .conp(style='position:relative;')
+                            p.lictit 多边金都
+                            span(style='position:absolute;bottom:1px;right:1px;') (敬请期待)
+                .licnum
+                    a(href=' http://m.pengcredit.com/')
+                        img(src='../../images/financial/licai1.png')
+                        .conp
+                            p.lictit 鹏润美美
+            // sad
+            .pro_gb
+                p.pro_p
+                    | 新手专享
+                    span 100元起投
+                .pro_list
+                    .pro_listnum.pro_listnum01
+                        p.pro_l 年化利率
+                        p.pro_not
+                            | 10
+                            span %
+                    .pro_listnum
+                        p.pro_l 投资期限
+                        p.pro_not
+                            | 15
+                            span
+                                b 天
+                .pro_btn
+                    a(href='http://m.gomefinance.com.cn/listacti?yqzc=yqzc&refm=MXHDH501') 立即投资
+            .pro_gb
+                p.pro_p
+                    | 新手专享理财金
+                    span 5克起投
+                .pro_list
+                    .pro_listnum.pro_listnum01
+                        p.pro_l 年化收益
+                        p.pro_not
+                            | 16
+                            span %
+                    .pro_listnum
+                        p.pro_l 投资期限
+                        p.pro_not
+                            | 15
+                            span
+                                b 天
+                .pro_btn
+                    a(href='https://m.dbjb.com/Financ/detail?lcPrdCode=1008000139') 立即投资
+            .pro_gb
+                p.pro_p
+                    | 新手标（迎新金标）15天投
+                    span 500起投
+                .pro_list
+                    .pro_listnum.pro_listnum01
+                        p.pro_l 年化收益
+                        p.pro_not
+                            | 13
+                            span %
+                    .pro_listnum
+                        p.pro_l 投资期限
+                        p.pro_not
+                            | 15
+                            span
+                                b 天
+                .pro_btn
+                    a(href='http://wap.5262.com/product/detail/pid/2850.html') 立即投资
+            .pro_gb
+                p.pro_p
+                    | 华金半年投
+                    span 100起投
+                .pro_list
+                    .pro_listnum.pro_listnum01
+                        p.pro_l 年化收益
+                        p.pro_not
+                            | 10.50
+                            span %
+                    .pro_listnum
+                        p.pro_l 投资期限
+                        p.pro_not
+                            | 6
+                            span
+                                b 个月
+                .pro_btn
+                    a(href='http://wap.5262.com/product/detail/pid/2837.html') 立即投资
+            .pro_gb
+                p.pro_p
+                    | 华金年度投
+                    span 100起投
+                .pro_list
+                    .pro_listnum.pro_listnum01
+                        p.pro_l 年化收益
+                        p.pro_not
+                            | 11.50
+                            span %
+                    .pro_listnum
+                        p.pro_l 投资期限
+                        p.pro_not
+                            | 12
+                            span
+                                b 个月
+                .pro_btn
+                    a(href='http://wap.5262.com/product/detail/pid/2859.html') 立即投资
+            .pro_gb
+                p.pro_p
+                    | 美美理财新手专享
+                    span 1000起投，限额1万
+                .pro_list
+                    .pro_listnum.pro_listnum01
+                        p.pro_l 预期年化收益率
+                        p.pro_not
+                            | 15
+                            span %
+                    .pro_listnum
+                        p.pro_l 投资期限
+                        p.pro_not
+                            | 7
+                            span
+                                b 天
+                .pro_btn
+                    a(href='http://m.meme2c.com') 立即投资

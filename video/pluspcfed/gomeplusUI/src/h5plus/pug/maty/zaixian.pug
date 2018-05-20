@@ -1,0 +1,743 @@
+doctype html
+html
+	head
+		meta(charset='utf-8')
+		title 国美Plus触屏版
+		meta(name='viewport', content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0')
+		link(rel='stylesheet', type='text/css', href='../../css/public/base.css')
+		link(rel='stylesheet', href='../../css/public/gome.css')
+		style(type='text/css').
+			html{font-size: 10px!important;}body{font-size: inherit!important;}
+	body.opg
+		// 搜索
+		.search_box
+			header.idx_header
+				.gome_logo
+					img(src='https://css.gomein.net.cn/plus/style/index/images/grass_logo.png?v=20161020')
+				.usr_bar
+					p
+						a.cart(href='//cart.m.gomeplus.com/shopping_cart.html')
+							img(src='https://css.gomein.net.cn/plus/style/index/images/grass_cart.png', alt='')
+						a(onclick='urlClick(this)', href='//m.gomeplus.com/login.html') 登录
+				.idx_searech
+					.search_module
+						.search_bar
+							p#wok.cancle 取消
+							.search
+								.search_btn
+									img(src='##/plus/style/index/images/search_icon.png', alt='')
+								.search_clear(data-icon='&#x003f')
+								.search_item(data-icon='&#x0043', data-val='0') 商品
+								.search_input_bar
+									input#search_input(type='search')
+									h1 电视低至999
+		//- 在线
+
+		header.header
+			a(href="javascript:;").h-logo
+			.h-cnt.flex-cell
+				.input-box.index-input
+					em.iconn-10
+					input.sec-ipt(type="text",placeholder="搜索商品/店铺",disabled="true")
+					em.iconn-82
+			a.head-btn(href="javascript:;")
+				i.num(style="display:block;") 1
+				em.iconn-32
+			a.head-btn(href="javascript:;")
+				span.login 登录
+		//- plus
+		
+
+		section#bannerHeight.banner.swiper-container
+			ul.swiper-wrapper
+				li.swiper-slide
+					a(href='//prom.m.gomeplus.com/html/prodhtml/topics/201703/23/saleoqSZn2O8U31.html?intcmp=sy-3281477-1', params='sy-3281477-1')
+						img(src='###T1IwdTBXKg1RCvBVdK.jpeg')
+				li.swiper-slide.advertisement
+					a(href='?intcmp=sy-3281477-2', params='sy-3281477-2')
+						img(src='#####index_new/lazy_banner.png?v=20170220')
+				li.swiper-slide.advertisement
+					a(href='?intcmp=sy-3281477-3', params='sy-3281477-3')
+						img(src='#####index_new/lazy_banner.png?v=20170220')
+				li.swiper-slide
+					a(href='//prom.m.gomeplus.com/html/prodhtml/topics/201703/27/saleJvWOTJ2uTBN.html?intcmp=sy-3281477-4', params='sy-3281477-4')
+						img(src='###T1ySdTB5A_1RCvBVdK.jpeg')
+				li.swiper-slide
+					a(href='//prom.m.gomeplus.com/html/prodhtml/topics/201703/23/saleM07JWujj8tu.html?intcmp=sy-3281477-5', params='sy-3281477-5')
+						img(src='###T1eTETBTDj1RCvBVdK.jpeg')
+				li.swiper-slide
+					a(href='//prom.m.gomeplus.com/html/prodhtml/topics/201703/24/saleZ1jLZ5xhuf0.html?intcmp=sy-3281477-6', params='sy-3281477-6')
+						img(src='##T1ZTDTByDg1RCvBVdK.jpeg')
+				li.swiper-slide
+					a(href='//prom.m.gomeplus.com/html/prodhtml/topics/201703/31/sale27upckmsqes.html?intcmp=sy-3281477-7', params='sy-3281477-7')
+						img(src='##T1fTKTBTVT1RCvBVdK.jpeg')
+				li.swiper-slide
+					a(href='//prom.m.gomeplus.com/html/prodhtml/topics/201704/1/salevytAqx9fz8M.html?intcmp=sy-3281477-8', params='sy-3281477-8')
+						img(src='##T1tTxTBgL_1RCvBVdK.jpeg')
+			.swiper-pagination
+		// 快捷入口
+		.shortcut_container
+			ul.nav_shortcut.grid5
+				li
+					a(href='//m.gomeplus.com/goods_class.html?intcmp=sy-3281478-1', params='sy-3281478-1')
+						.nav_icon.box.center
+							img(src='#####T1dALTB5__1RCvBVdK.png')
+						p.title(style='') 分类
+				li
+					a(href='//m.gomeplus.com/recharge.html?intcmp=sy-3281478-2', params='sy-3281478-2')
+						.nav_icon.box.center
+							img(src='###T17IdTB_Lv1RCvBVdK.png')
+						p.title(style='') 充值中心
+				li
+					a(href='//prom.m.gomeplus.com/html/prodhtml/topics/201608/17/channelWfVWbYXiFst.html?intcmp=sy-3281478-3', params='sy-3281478-3')
+						.nav_icon.box.center
+							img(src='#####T1aGATBXYT1RCvBVdK.png')
+						p.title(style='') 电器商城
+				li
+					a(href='//m.gomeplus.com/coupons_center.html?intcmp=sy-3281478-4', params='sy-3281478-4')
+						.nav_icon.box.center
+							img(src='#####T1IvDTB_dv1RCvBVdK.png')
+						p.title(style='') 领券中心
+				li
+					a(href='//prom.m.gomeplus.com/html/prodhtml/topics/201607/29/channelguomeibendian.html?intcmp=sy-3281478-5', params='sy-3281478-5')
+						.nav_icon.box.center
+							img(src='###T1QGxTBQWv1RCvBVdK.png')
+						p.title(style='') 国美电器
+				li
+					a(href='//jr.m.gomeplus.com/finance-index.html?intcmp=sy-3281478-6', params='sy-3281478-6')
+						.nav_icon.box.center
+							img(src='##T1XvETBmd_1RCvBVdK.png')
+						p.title(style='') 金融理财
+				li
+					a(href='//prom.m.gomeplus.com/html/prodhtml/topics/201511/6/channelguomeichaoshi.html?intcmp=sy-3281478-7', params='sy-3281478-7')
+						.nav_icon.box.center
+							img(src='###T1nP_TBgxT1RCvBVdK.png')
+						p.title(style='') 国美超市
+				li
+					a(href='//prom.m.gomeplus.com/html/prodhtml/topics/201703/8/channelbaihuocheng.html?intcmp=sy-3281478-8', params='sy-3281478-8')
+						.nav_icon.box.center
+							img(src='#####T1yvLTBXK_1RCvBVdK.png')
+						p.title(style='') 百货城
+				li
+					a(href='//m.gomeplus.com/super.html?intcmp=sy-3281478-9', params='sy-3281478-9')
+						.nav_icon.box.center
+							img(src='##T1nvZTBsAv1RCvBVdK.png')
+						p.title(style='') 返利专区
+				li
+					a(href='//m.gomeplus.com/my_gome.html?intcmp=sy-3281478-10', params='sy-3281478-10')
+						.nav_icon.box.center
+							img(src='##T10PbTB4Jv1RCvBVdK.png')
+						p.title(style='') 我的
+		// 主题街
+		section.module.no_gap.theme_street
+			.module_main
+				.floor_img.noborder
+					ul.h_box
+						li.swiper-slide
+							a(href='//prom.m.gomeplus.com/html/prodhtml/topics/201704/1/saleGq8Q1Cimeq4.html?intcmp=sy-3523200-1', params='sy-3523200-1')
+								img(src='##T1seETByDQ1RCvBVdK.jpeg')
+		// 头条活动
+		section.headline.flexbox
+			.caption
+				.title
+					img(src='#####T1tPDTB_dv1RCvBVdK.png')
+			.content.flex1
+				.headlineScroll
+					ul
+						li.swiper-slide(style='color:#000000')
+							a(href='//prom.m.gomeplus.com/html/prodhtml/topics/201704/1/saleGMy73FcBV7n.html?intcmp=sy-3281479-1', params='sy-3281479-1')
+								span.tag 会员5折日
+								| 美豆5折兑现金！
+						li.swiper-slide(style='color:#000000')
+							a(href='//prom.m.gomeplus.com/html/prodhtml/topics/201703/31/sale27upckmsqes.html?intcmp=sy-3281479-2', params='sy-3281479-2')
+								span.tag 彩电烧屏趴
+								| 夏普45英寸智能电视2499元
+						li.swiper-slide(style='color:#000000')
+							a(href='//prom.m.gomeplus.com/html/prodhtml/topics/201704/1/salendroozrEtmZ.html?intcmp=sy-3281479-3', params='sy-3281479-3')
+								span.tag 海外购
+								| 美妆热卖6折起
+		// 抢购
+		section.module.rush_buy.clearfix
+			.rush_title
+				h3 12点场
+				.gm_timer(data-seconds-left='719', data-type='under3')
+				a.sale_tips(href='/rushbuy.html?from=1&intcmp=sy-3281480-t')
+					span 好货秒抢
+					i(data-icon='&#x00A3')
+			.rush_buy_slider
+				.rush_goods.swiper-container
+					ul.swiper-wrapper
+						li.swiper-slide
+							a(href='/rushbuy.html?itemid=Q8800367861&from=1&intcmp=sy-3281480-1', params='sy-3281480-1')
+								.goods_info
+									.picture
+										img(src='#####index/11.png', data-lazyload='#####T1qodTBTLv1RCvBVdK_160.jpg')
+										span.corner 推荐
+									.price.clearfix
+										span ￥999
+										// <span class="discount">推荐</span>
+									p.inventory 仅剩:406件
+						li.swiper-slide
+							a(href='/rushbuy.html?itemid=Q8800382922&from=1&intcmp=sy-3281480-2', params='sy-3281480-2')
+								.goods_info
+									.picture
+										img(src='#####index/11.png', data-lazyload='#####T1lvYTB4dT1RCvBVdK_160.jpg')
+										span.corner 省钱
+									.price.clearfix
+										span ￥17.9
+										// <span class="discount">省钱</span>
+									p.inventory 仅剩:49件
+						li.swiper-slide
+							a(href='/rushbuy.html?itemid=Q8800379373&from=1&intcmp=sy-3281480-3', params='sy-3281480-3')
+								.goods_info
+									.picture
+										img(src='#####index/11.png', data-lazyload='###T1SCATBQKT1RCvBVdK_160.jpg')
+										span.corner 精选
+									.price.clearfix
+										span ￥9.9
+										// <span class="discount">精选</span>
+									p.inventory 仅剩:37件
+						li.swiper-slide
+							a(href='/rushbuy.html?itemid=Q8800379838&from=1&intcmp=sy-3281480-4', params='sy-3281480-4')
+								.goods_info
+									.picture
+										img(src='#####index/11.png', data-lazyload='##T1wvYTBg_Q1RCvBVdK_160.jpg')
+										span.corner 划算
+									.price.clearfix
+										span ￥9.9
+										// <span class="discount">划算</span>
+									p.inventory 仅剩:42件
+						li.swiper-slide
+							a(href='/rushbuy.html?itemid=Q8800379481&from=1&intcmp=sy-3281480-5', params='sy-3281480-5')
+								.goods_info
+									.picture
+										img(src='#####index/11.png', data-lazyload='####T1zZYTBmZ_1RCvBVdK_160.jpg')
+										span.corner 抢抢抢
+									.price.clearfix
+										span ￥159
+										// <span class="discount">抢抢抢</span>
+									p.inventory 仅剩:50件
+						li.swiper-slide
+							a(href='/rushbuy.html?itemid=Q8800369788&from=1&intcmp=sy-3281480-6', params='sy-3281480-6')
+								.goods_info
+									.picture
+										img(src='#####index/11.png', data-lazyload='#####T1gJVTBKEv1RCvBVdK_160.jpg')
+										span.corner 值得买
+									.price.clearfix
+										span ￥3368
+										// <span class="discount">值得买</span>
+									p.inventory 仅剩:20件
+						li.swiper-slide
+							a(href='/rushbuy.html?itemid=Q8800379605&from=1&intcmp=sy-3281480-7', params='sy-3281480-7')
+								.goods_info
+									.picture
+										img(src='#####index/11.png', data-lazyload='#####T13vLTBgZ_1RCvBVdK_160.jpg')
+									.price.clearfix
+										span ￥199
+										// <span class="discount"></span>
+									p.inventory 仅剩:50件
+						li.swiper-slide
+							a(href='/rushbuy.html?itemid=Q8800369793&from=1&intcmp=sy-3281480-8', params='sy-3281480-8')
+								.goods_info
+									.picture
+										img(src='#####index/11.png', data-lazyload='#####T13OWTB7_v1RCvBVdK_160.jpg')
+									.price.clearfix
+										span ￥19.9
+										// <span class="discount"></span>
+									p.inventory 仅剩:41件
+						li.swiper-slide
+							a(href='/rushbuy.html?itemid=Q8800380313&from=1&intcmp=sy-3281480-9', params='sy-3281480-9')
+								.goods_info
+									.picture
+										img(src='#####index/11.png', data-lazyload='//gfs3.gomein.net.cn/T1ukYTB4Cv1RCvBVdK_160.jpg')
+									.price.clearfix
+										span ￥149
+										// <span class="discount"></span>
+									p.inventory 仅剩:50件
+						li.swiper-slide
+							a(href='/rushbuy.html?itemid=Q8800382690&from=1&intcmp=sy-3281480-10', params='sy-3281480-10')
+								.goods_info
+									.picture
+										img(src='#####index/11.png', data-lazyload='#####T17KdTB7xv1RCvBVdK_160.jpg')
+									.price.clearfix
+										span ￥38.9
+										// <span class="discount"></span>
+									p.inventory 仅剩:49件
+						li.swiper-slide
+							a(href='/rushbuy.html?itemid=Q8800383298&from=1&intcmp=sy-3281480-11', params='sy-3281480-11')
+								.goods_info
+									.picture
+										img(src='#####index/11.png', data-lazyload='#####T1V2ZTBvDv1RCvBVdK_160.jpg')
+									.price.clearfix
+										span ￥9.9
+										// <span class="discount"></span>
+									p.inventory 仅剩:36件
+						li.swiper-slide
+							a(href='/rushbuy.html?itemid=Q8800369796&from=1&intcmp=sy-3281480-12', params='sy-3281480-12')
+								.goods_info
+									.picture
+										img(src='#####index/11.png', data-lazyload='#####T1jGbTByYT1RCvBVdK_160.jpg')
+									.price.clearfix
+										span ￥299
+										// <span class="discount"></span>
+									p.inventory 仅剩:50件
+						li.swiper-slide
+							a(href='/rushbuy.html?itemid=Q8800379374&from=1&intcmp=sy-3281480-13', params='sy-3281480-13')
+								.goods_info
+									.picture
+										img(src='#####index/11.png', data-lazyload='##T1cvCTBsWv1RCvBVdK_160.jpg')
+									.price.clearfix
+										span ￥49
+										// <span class="discount"></span>
+									p.inventory 仅剩:50件
+						li.swiper-slide
+							a(href='/rushbuy.html?itemid=Q8800382931&from=1&intcmp=sy-3281480-14', params='sy-3281480-14')
+								.goods_info
+									.picture
+										img(src='#####index/11.png', data-lazyload='#####T17vJTBb_T1RCvBVdK_160.jpg')
+									.price.clearfix
+										span ￥378
+										// <span class="discount"></span>
+									p.inventory 仅剩:30件
+						li.swiper-slide
+							a(href='/rushbuy.html?itemid=Q8800379825&from=1&intcmp=sy-3281480-15', params='sy-3281480-15')
+								.goods_info
+									.picture
+										img(src='#####index/11.png', data-lazyload='//gfs3.gomein.net.cn/T1NoZTB7Wv1RCvBVdK_160.jpg')
+									.price.clearfix
+										span ￥949
+										// <span class="discount"></span>
+									p.inventory 仅剩:25件
+						li.redirect(data-pageurl='/rushbuy.html?from=1')
+							.more.box.center
+								span.arrow_icon(data-icon='>')
+								span.desc 左滑更多
+		// 掌上专享、海外购、国美精选、团购
+		section.activity_module
+			.module_left
+				.activity_item.palm_vip
+					h4.main_tit 掌上专享
+					.palm_wrapper.swiper-container
+						ul.swiper-wrapper
+							li.swiper-slide
+								a(href='/palm_vip.html?from=1&intcmp=sy-3281481-1', params='sy-3281481-1')
+									.info
+										p.sub_tit TCL 小1P 定频 冷暖电辅 空调
+										strong.price ¥1399
+									.detail
+										.img_box
+											img(src='#####index/11.png', data-lazyload='#####T1roJTBv__1RCvBVdK_160.jpg')
+										.tag.box.center
+											span
+												| 比网站省
+												br
+												em.strong ￥150
+							li.swiper-slide
+								a(href='/palm_vip.html?from=1&intcmp=sy-3281481-1', params='sy-3281481-1')
+									.info
+										p.sub_tit 小狗大功率静音吸尘器
+										strong.price ¥299
+									.detail
+										.img_box
+											img(src='#####index/11.png', data-lazyload='//gfs3.gomein.net.cn/T1I5CTBQhv1RCvBVdK_160.jpg')
+										.tag.box.center
+											span
+												| 比网站省
+												br
+												em.strong ￥100
+							li.swiper-slide
+								a(href='/palm_vip.html?from=1&intcmp=sy-3281481-1', params='sy-3281481-1')
+									.info
+										p.sub_tit Apple iPhone 7Plus 红色
+										strong.price ¥6899
+									.detail
+										.img_box
+											img(src='#####index/11.png', data-lazyload='##T13wETBbWv1RCvBVdK_160.jpg')
+										.tag.box.center
+											span
+												| 比网站省
+												br
+												em.strong ￥89
+			.module_right
+				.right_top
+					a(href='/', params='sy-3281481-2')
+						.activity_item.overseas_buy.flexbox
+							.info.flex1
+								h4.main_tit 美媒
+								p.sub_tit 好物 分享 返利
+							.detail.box.center
+								.img_box
+									img(src='#####index/11.png', data-lazyload='https://i6.meixincdn.com/v1/img/T18SJTB7Zv1R4cSCrK.png')
+				.right_bottom.flexbox
+					// LEFT BEGIN
+					.activity_item.flex1.best_gome
+						a(href='//m.gomeplus.com/hot_sale.html?from=1&intcmp=sy-3281481-3', params='sy-3281481-3')
+							.info
+								h4.main_tit 排行榜
+								p.sub_tit 必买尖儿货
+							.detail
+								.img_box
+									img(src='#####index/11.png', data-lazyload='####T1J.CTBbZT1RCvBVdK_160.jpg')
+					// LEFT END
+					// RIGHT BEGIN
+					.activity_item.flex1.groupon
+						a(href='/groupon.html?from=1&intcmp=sy-3281481-4', params='sy-3281481-4')
+							.info
+								h4.main_tit 团购
+								p.sub_tit 火拼价更低
+							.detail
+								.img_box
+									img(src='#####index/11.png', data-lazyload='//gfs3.gomein.net.cn/T1VVKTBQLT1RCvBVdK_160.jpg')
+								.tag.box.center
+									span
+										| 278人
+										br
+										| 已参团
+					// RIGHT END
+		#hot_circle_module
+		// 超实惠
+		section.module
+			.module_top(style='color:#333333;')
+				.title
+					span.line
+					h3
+						| 国美特色
+					span.line
+				// 促销语
+			.module_main
+				.size_pic.aboveborder
+					.h_box
+						.big_pic_box
+							a.big_pic(href='//prom.m.gomeplus.com/html/prodhtml/topics/201607/29/channelguomeibendian.html?intcmp=sy-3454741-1', params='sy-3454741-1')
+								img(src='#####index/11_big.png', data-lazyload='##T1HeZTBbKg1RCvBVdK.png')
+						.v_box
+							a(href='//prom.m.gomeplus.com/html/prodhtml/topics/201602/4/channelXXNTnmmaO8X.html?intcmp=sy-3454741-2', params='sy-3454741-2')
+								img(src='#####index/21.png', data-lazyload='#####T1ePWTB5hb1RCvBVdK.png')
+							a(href='//prom.m.gomeplus.com/html/prodhtml/topics/201610/8/sale8MZ1WPPJpUM.html?intcmp=sy-3454741-3', params='sy-3454741-3')
+								img(src='#####index/21.png', data-lazyload='###T1NTYTBTx_1RCvBVdK.png')
+		// 主题街
+		section.module.no_gap.theme_street
+			.module_main
+				.floor_img.aboveborder
+					ul.h_box
+						li.swiper-slide
+							a(href='//m-v.gomeplus.com?intcmp=sy-3454742-1', params='sy-3454742-1')
+								img(src='###T1sSxTB4Dj1RCvBVdK.png')
+						li.swiper-slide
+							a(href='//wapgj.gomeplus.com/v1/index.html?intcmp=sy-3454742-2', params='sy-3454742-2')
+								img(src='#####T1zwZTBvAg1RCvBVdK.png')
+		// 主题街
+		section.module.theme_street
+			.module_top(style='color:#333333;')
+				.title
+					span.line
+					h3
+						| 返利专区
+					span.line
+				// 促销语
+			.module_main
+				.floor_img.noborder
+					ul.h_box
+						li.swiper-slide
+							a(href='//m.gomeplus.com/super.html?intcmp=sy-3383665-1', params='sy-3383665-1')
+								img(src='#####T1zThTBmhT1RCvBVdK.jpeg')
+		section.module.share_rebate.no_gap
+			.module_top(style='color:;')
+				// 标题是 图片
+				img.tit_pic(src='')
+				// 促销语
+			.module_main
+				.brand_list.swiper-container.swiper-container-horizontal
+					ul.swiper-wrapper
+						li.swiper-slide
+							a(href='//item.m.gomeplus.com/product-9134124340-1123080716.html')
+								ul.rebate_commodity
+									li.pic
+										img(src='####T1cEWTBTWv1RCvBVdK_160.jpg')
+									li
+										h3 康佳彩电A55U 55英寸 64位安卓智能 4K超高清 LED平板液晶电视（黑色）
+										strong.price
+											| ¥2999
+										span.btn 我要赚外快
+						li.swiper-slide
+							a(href='//item.m.gomeplus.com/product-A0005747997-pop8008372156.html')
+								ul.rebate_commodity
+									li.pic
+										img(src='#####T1FAhTBXKv1RCvBVdK_160.jpg')
+									li
+										h3 佳能（Canon） EOS 80D 数码单反相机单机/套机热卖中(18-135 官方标配)
+										strong.price
+											| ¥7859
+										span.btn 我要赚外快
+						li.swiper-slide
+							a(href='//item.m.gomeplus.com/product-A0005424902-pop8006666316.html')
+								ul.rebate_commodity
+									li.pic
+										img(src='#####T1zSxTBTh_1RCvBVdK_160.jpg')
+									li
+										h3 【买就送】42度洋河蓝色经典海之蓝480ml 绵柔国产江苏白酒
+										strong.price
+											| ¥129
+										span.btn 我要赚外快
+		section.module.swiper-container.banner_advertisement(data-advertid='10038')
+		// 主题街
+		section.module.theme_street
+			.module_top(style='color:#333333;')
+				.title
+					span.line
+					h3
+						| 主题街
+					span.line
+				// 促销语
+			.module_main
+				.floor_img.noborder
+					ul.h_box
+						li.swiper-slide
+							a(href='//prom.m.gomeplus.com/html/prodhtml/topics/201511/6/channelshoujitongxun.html?intcmp=sy-3281602-1', params='sy-3281602-1')
+								img(src='##T1ewhTBvbT1RCvBVdK.jpeg')
+						li.swiper-slide
+							a(href='//prom.m.gomeplus.com/html/prodhtml/topics/201605/9/channelvbretXIY8rz.html?intcmp=sy-3281602-2', params='sy-3281602-2')
+								img(src='##T1.vWTBb_g1RCvBVdK.jpeg')
+		// 主题街
+		section.module.no_gap.theme_street
+			.module_main
+				.floor_img.noborder
+					ul.h_box
+						li.swiper-slide
+							a(href='//prom.m.gomeplus.com/html/prodhtml/topics/201603/28/channelXSNHbjy5jby.html?intcmp=sy-3281603-1', params='sy-3281603-1')
+								img(src='#####T1vSDTByC_1RCvBVdK.jpeg')
+						li.swiper-slide
+							a(href='//prom.m.gomeplus.com/html/prodhtml/topics/201607/26/channeljiajujiazhuang.html?intcmp=sy-3281603-2', params='sy-3281603-2')
+								img(src='#####T1wwYTBmA_1RCvBVdK.jpeg')
+		// 主题街
+		section.module.no_gap.theme_street
+			.module_main
+				.floor_img.noborder
+					ul.h_box
+						li.swiper-slide
+							a(href='//prom.m.gomeplus.com/html/prodhtml/topics/201511/6/channeldianshiyingyin.html?intcmp=sy-3281604-1', params='sy-3281604-1')
+								img(src='##T17wxTBCEj1RCvBVdK.jpeg')
+						li.swiper-slide
+							a(href='//prom.m.gomeplus.com/html/prodhtml/topics/201602/3/channelyvqjI6aHLIN.html?intcmp=sy-3281604-2', params='sy-3281604-2')
+								img(src='#####T1rwYTByWv1RCvBVdK.jpeg')
+						li.swiper-slide
+							a(href='//prom.m.gomeplus.com/html/prodhtml/topics/201511/6/channelfushixiebao.html?intcmp=sy-3281604-3', params='sy-3281604-3')
+								img(src='#####T1_whTBThv1RCvBVdK.jpeg')
+						li.swiper-slide
+							a(href='//prom.m.gomeplus.com/html/prodhtml/topics/201603/29/channelqipeicheng.html?intcmp=sy-3281604-4', params='sy-3281604-4')
+								img(src='#####T1CShTB4dv1RCvBVdK.jpeg')
+		// 主题街
+		section.module.no_gap.theme_street
+			.module_main
+				.floor_img.noborder
+					ul.h_box
+						li.swiper-slide
+							a(href='//prom.m.gomeplus.com/html/prodhtml/topics/201511/6/channeldiannaoshuma.html?intcmp=sy-3281605-1', params='sy-3281605-1')
+								img(src='###T1qSYTBgKv1RCvBVdK.jpeg')
+						li.swiper-slide
+							a(href='//prom.m.gomeplus.com/html/prodhtml/topics/201511/6/channelbingxiangxiyiji.html?intcmp=sy-3281605-2', params='sy-3281605-2')
+								img(src='#####T1uexTBsZ_1RCvBVdK.jpeg')
+						li.swiper-slide
+							a(href='//prom.m.gomeplus.com/html/prodhtml/topics/201511/6/channelchuweixiaojiadian.html?intcmp=sy-3281605-3', params='sy-3281605-3')
+								img(src='##T1sShTBgD_1RCvBVdK.jpeg')
+						li.swiper-slide
+							a(href='//prom.m.gomeplus.com/html/prodhtml/topics/201605/9/channelQwQZSeDsUAI.html?intcmp=sy-3281605-4', params='sy-3281605-4')
+								img(src='##T1FGJTBXA_1RCvBVdK.jpeg')
+		section.module.swiper-container.banner_advertisement(data-advertid='10039')
+		// 主题街
+		section.module.theme_street
+			.module_top(style='color:#333333;')
+				.title
+					span.line
+					h3
+						| 国美电器
+					span.line
+				// 促销语
+			.module_main
+				.floor_img.noborder
+					ul.h_box
+						li.swiper-slide
+							a(href='//prom.m.gomeplus.com/html/prodhtml/topics/201703/27/saleJvWOTJ2uTBN.html?intcmp=sy-3383258-1', params='sy-3383258-1')
+								img(src='##T1CILTBQDQ1RCvBVdK.jpeg')
+		section.module.share_rebate.no_gap
+			.module_top(style='color:;')
+				// 标题是 图片
+				img.tit_pic(src='')
+				// 促销语
+			.module_main
+				.brand_list.swiper-container.swiper-container-horizontal
+					ul.swiper-wrapper
+						li.swiper-slide
+							a(href='//item.m.gomeplus.com/product-9132560026-1121440190.html')
+								ul.rebate_commodity
+									li.pic
+										img(src='###T1ZkbTBsCT1RCvBVdK_160.jpg')
+									li
+										h3 伊莱克斯(Elecrolux) 大1P 定频 冷暖 壁挂式空调 EAW26FD43BC4
+										strong.price
+											| ¥1399
+						li.swiper-slide
+							a(href='//item.m.gomeplus.com/product-9134401079-1123340507.html')
+								ul.rebate_commodity
+									li.pic
+										img(src='#####T1VoCTBXbT1RCvBVdK_160.jpg')
+										span 加价换购
+									li
+										h3 Apple iPhone 7 32G 黑色 移动联通电信4G手机
+										strong.price
+											| ¥4688
+						li.swiper-slide
+							a(href='//item.m.gomeplus.com/product-9133578394-1122380204.html')
+								ul.rebate_commodity
+									li.pic
+										img(src='####T1TVKTByhv1RCvBVdK_160.jpg')
+									li
+										h3 海尔（Haier） BCD-575WDBI 575升L 对开门冰箱(白)
+										strong.price
+											| ¥4399
+		// 主题街
+		section.module.theme_street
+			.module_top(style='color:#333333;')
+				.title
+					span.line
+					h3
+						| 国美百货
+					span.line
+				// 促销语
+			.module_main
+				.floor_img.noborder
+					ul.h_box
+						li.swiper-slide
+							a(href='//prom.m.gomeplus.com/html/prodhtml/topics/201703/2/saleZYLkFT5HT3U.html?intcmp=sy-3281607-1', params='sy-3281607-1')
+								img(src='##T15PZTBQDv1RCvBVdK.jpeg')
+		section.module.share_rebate
+			.module_top(style='color:;')
+				// 标题是 图片
+				img.tit_pic(src='')
+				// 促销语
+			.module_main
+				.brand_list.swiper-container.swiper-container-horizontal
+					ul.swiper-wrapper
+						li.swiper-slide
+							a(href='//q.m.gomeplus.com/rushbuy_detail-Q8800368951.html')
+								ul.rebate_commodity
+									li.pic
+										img(src='#####T1wACTBjxT1RCvBVdK_160.jpg')
+									li
+										h3 西润男士洗面奶
+										strong.price
+											| ¥9.9
+						li.swiper-slide
+							a(href='//q.m.gomeplus.com/rushbuy_detail-Q8800373205.html')
+								ul.rebate_commodity
+									li.pic
+										img(src='##T1ewETB7Av1RCvBVdK_160.jpg')
+									li
+										h3 韩电插排插线板插座空调多用带线插座拖线板3/4/6/8/10插位接线板插座(3插位 2米)
+										strong.price
+											| ¥10.8
+						li.swiper-slide
+							a(href='//q.m.gomeplus.com/rushbuy_detail-Q8800368828.html')
+								ul.rebate_commodity
+									li.pic
+										img(src='#####T1ETJTB5h_1RCvBVdK_160.jpg')
+									li
+										h3 诗薇儿男士牛皮自动扣皮带 商务休闲款
+										strong.price
+											| ¥29.9
+		// 超实惠
+		section.module
+			.module_top(style='color:#000000;')
+				.title
+					span.line
+					h3
+						| 金融理财
+					span.line
+				// 促销语
+			.module_main
+				.size_pic.special.allborder
+					.h_box
+						.big_pic_box
+							a.big_pic(href='/licai_gs_list-040-000.html?intcmp=sy-3281637-1', params='sy-3281637-1')
+								img(src='#####index/11_big.png', data-lazyload='#####T1ZICTBQ_g1RCvBVdK.jpeg')
+						.v_box
+							.h_box
+								a(href='/licai_p2p_list-020-000.html?intcmp=sy-3281637-2', params='sy-3281637-2')
+									img(src='#####index/21.png', data-lazyload='###T1pvKTBsDg1RCvBVdK.jpeg')
+								a(href='//jr.m.gomeplus.com/finance_transfer_list.html?intcmp=sy-3281637-3', params='sy-3281637-3')
+									img(src='#####index/21.png', data-lazyload='#####T1SICTBXJj1RCvBVdK.jpeg')
+							.h_box
+								a(href='//jr.m.gomeplus.com/?intcmp=sy-3281637-4', params='sy-3281637-4')
+									img(src='#####index/21.png', data-lazyload='#####T1xGCTBbhg1RCvBVdK.jpeg')
+								a(href='/meiyingbao.html?intcmp=sy-3281637-5', params='sy-3281637-5')
+									img(src='#####index/21.png', data-lazyload='###T1wv_TBb_g1RCvBVdK.jpeg')
+		// 好店推荐
+		section#shop_templet.module.best_shop(style='display:none')
+			.module_top(style='color:#000000;')
+				.title
+					span.line
+					h3
+						| 好店推荐
+					span.line
+				// 促销语
+				a.sale_tips(href='//m.gomeplus.com/shop_index.html?intcmp=sy-box311-t')
+					span
+					i(data-icon='&#x00A3')
+			#shop_templet_list.module_main
+		// 主题街
+		section.module.theme_street
+			.module_main
+				.floor_img.noborder
+					ul.h_box
+						li.swiper-slide
+							a(href='//m.gomeplus.com/topic-58bbe9211cf2b643d69accfa.html?intcmp=sy-3281640-1', params='sy-3281640-1')
+								img(src='##T1WGxTBTE_1RCvBVdK.jpeg')
+						li.swiper-slide
+							a(href='//m.gomeplus.com/circle-138186651456241688.html?source=out-copylink&intcmp=sy-3281640-2', params='sy-3281640-2')
+								img(src='###T1UAWTBsYv1RCvBVdK.jpeg')
+		// 你可能喜欢
+		// 个性化推荐商品列表
+		.maylike
+			.maylike_title
+				h4
+					span(data-icon='>')
+					| 你可能喜欢
+			// 商品列表
+			ul#list_item.product_list
+		// 公共底部
+		footer.common_footer
+			.user_bar
+				.left
+					a(href='//m.gomeplus.com/login.html') 登录
+					a(href='//m.gomeplus.com/registered.html') 注册
+				.right
+					a(href='//m.gomeplus.com/feed_back.html') 反馈
+					a(href='//m.gomeplus.com/more.html') 更多
+			.foot_msg
+				ul.msg_versions.grid3
+					li.active
+						a
+							.icon
+								img(src='##/plus/style/index/images/version_phone.png')
+								img.depper(src='##/plus/style/index/images/version_phone_2.png')
+								em.hint
+							span.name 触屏版
+					li
+						a#appdownload
+							.icon
+								img(src='##/plus/style/index/images/version_app.png')
+								img.depper(src='##/plus/style/index/images/version_app_2.png')
+								em.hint
+									img(src='##/plus/style/index/images/new_gift.png')
+							span.name 客户端
+					li
+						a(onclick='urlClick(this)', href='//www.gomeplus.com/', params='jump=wtp')
+							.icon
+								img(src='##/plus/style/index/images/version_pc.png')
+								img.depper(src='##/plus/style/index/images/version_pc_2.png')
+								em.hint
+							span.name 电脑版
+				.copyright
+					p copyright ©  2000-2017 gomeplus.com
+					p 客服热线：4008-708-708
+		

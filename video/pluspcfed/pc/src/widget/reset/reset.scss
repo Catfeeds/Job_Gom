@@ -1,0 +1,74 @@
+@charset "UTF-8";
+// --------------------------------
+// https://www.gomeplus.com/
+// v1.0 - 20161101
+// maty
+
+@import "../../sass/core/reset/_utils.scss";
+@import "../../sass/core/stylesheet/_font-face.scss";
+
+
+body,h1,h2,h3,h4,h5,h6,dl,dt,dd,ul,ol,li,p,input,button,textarea,article,aside,footer,header,nav,section,menu{
+    @include reset-box-model;
+    @include reset-font;
+}
+
+body,button,input,select,textarea{
+    font-size: 14px;
+    font-family: 'Microsoft Yahei', '微软雅黑', 'PingFang SC', 'Hiragino Sans GB', '黑体', sans-serif;
+}
+
+table{
+    @include reset-table;
+}
+ul,li{
+    @include reset-list-style;
+}
+img{
+    @include reset-img;
+}
+input,textarea{
+     @include reset-cell;
+}
+a{
+    @include reset-a(#333);
+}
+em{
+    font-style:normal;
+}
+::-ms-clear,::-ms-reveal{
+    display: none;
+}
+// global style
+body{
+    background: #f6f5ee;
+    min-width: 1200px;
+}
+.wrap-box{
+    width: 1200px;
+    margin: 0 auto;
+}
+.hide{
+    display:none!important;
+}
+.show{
+    display:block!important;
+}
+.cursor-default{
+    cursor: default;
+}
+.cursor-pointer{
+    cursor: pointer;
+}
+.loading-box{
+    display: table;
+    width: 100%;
+    height: 200px;
+    text-align: center;
+    .loading-img{
+        display: table-cell;
+        vertical-align: middle;
+    }
+}
+// font family
+@include font-face(icomoon,161220);

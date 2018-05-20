@@ -1,0 +1,145 @@
+doctype html
+html(lang="zh-CN")
+	include ../../../../../gomeplusUI/pc/src/jade/head.jade
+	link(type="text/css",rel="stylesheet",href="../../css/public/public.css")
+	link(type="text/css",rel="stylesheet",href="../../css/module/usercenter/usercenter.css")
+	body.opg
+		include ../../../../../gomeplusUI/pc/src/jade/header.jade
+		include ../../../../../gomeplusUI/pc/src/jade/menu.jade
+		.wrap-box.mart20.clearfix
+			include ../../../../../gomeplusUI/pc/src/jade/usercenter-side.jade
+			.user-right
+				.user-menu.clearfix
+					.user-index-head
+						em.icon-v
+						.user-head-img
+							a(href="javascript:;")
+								img(src="../../images/public/head-default.png")
+								span.change-img 更换头像
+						a(href="##").pc-btn.dr-previlage-btn 达人特权
+						h2
+							span.user-name 惊天魔盗团
+						p.fl 关注：250 
+						p.fr 粉丝：520
+					.user-index-fan
+						p
+							| 返利　
+							span 23.00
+						p
+							| 优惠券
+							a(href="#") 3
+					.user-index-order
+						a(href="#")
+							em.icon &#xe9db;
+							p
+								| 待付款 
+								span 2
+						a(href="#")
+							em.icon &#xe9ab;
+							p
+								| 待发货 
+								span 2
+						a(href="#")
+							em.icon &#xe9ad;
+							p
+								| 待收货 
+								span 2
+						a(href="#")
+							em.icon &#xe964;
+							p
+								| 待评价
+								span 2
+						a(href="#")
+							em.icon &#xe90f;
+							p
+								| 退款／售后
+				a(href="##").dr-entrance
+				.user-order
+					.right-text-title
+						h2 我的订单
+						a(href="#") 查看更多 》
+					.user-order-index
+						table
+							tr
+								th(colspan="5")
+									| 订单编号：
+									span 130633199109291076
+									| 成交时间：
+									span 2016-07-03 12:00:02
+							tr
+								td.img(width="330")
+									img(src="https://i6.meixincdn.com/v1/img/T1GRYTB7KT1R4cSCrK.png")
+									img(src="https://i6.meixincdn.com/v1/img/T1GRYTB7KT1R4cSCrK.png")
+									img(src="https://i6.meixincdn.com/v1/img/T1GRYTB7KT1R4cSCrK.png")
+									span.icon &#xe913;
+								td 欧阳念念
+								td(width="180") ￥199.00
+								td(width="150")
+									span.active 待付款
+								td(width="120")
+									a(href="#") 查看订单
+						table
+							tr
+								th(colspan="5")
+									| 订单编号：
+									span 130633199109291076
+									| 成交时间：
+									span 2016-07-03 12:00:02
+							tr
+								td.img(width="330")
+									img(src="https://i6.meixincdn.com/v1/img/T1GRYTB7KT1R4cSCrK.png")
+									img(src="https://i6.meixincdn.com/v1/img/T1GRYTB7KT1R4cSCrK.png")
+								td 欧阳念念
+								td(width="180") ￥199.00
+								td(width="150")
+									span 已付款
+								td(width="120")
+									a(href="#") 查看订单
+						.no-topic
+							.txt.clearfix
+								em.icon &#xe96c;
+								p 
+									span
+										| 亲，您还没有相关订单，赶快去
+										a(href="#") 首页
+										| 逛逛吧
+				.user-mytopic
+					.right-text-title
+						h2 我发布的话题
+						a(href="#") 查看更多 》
+					ul.clearfix.mytopic-list
+						- for (var x = 0; x < 5; x++)
+							li
+								a(href="#").title 最多40个字最多40个字最多40个字最多40个字最多40个字最多40个字最多40个字最多40个字最多40个字
+								span 2016-09-06
+								p
+									| 发表自圈子: 
+									a(href="#") 骑行圈
+					.no-topic
+						.txt.clearfix
+							em.icon &#xe964;
+							p 
+								span
+									| 你还没相关话题哦,赶快去
+									a(href="#") 发布话题 
+									| 吧
+				.user-shop
+					.right-text-title
+						h2 推荐商品
+						a(href="#") 换一组
+					.shop-list
+						ul.clearfix
+							- for (var y = 0; y < 8; y++)
+								li
+									.mg-negative
+										a(href="#")
+											img(src="https://i6.meixincdn.com/v1/img/T1GRYTB7KT1R4cSCrK.png")
+										.btn-box
+											a(href="javascritp:;").pc-btn.pc-btnh40 立即购买
+											a(href="javascritp:;").pc-btn.pc-btnh40.pc-bj-fc8753 加入购物车
+										.text
+											a(href="#")
+												| ￥
+												span 259.00
+												p 我新依旧心潮澎湃要你命300湃要你命300
+		include ../../../../../gomeplusUI/pc/src/jade/footer.jade

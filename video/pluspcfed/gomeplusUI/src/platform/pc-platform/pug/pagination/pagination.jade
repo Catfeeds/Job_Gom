@@ -1,0 +1,20 @@
+//- extends layout.jade
+extends ../../../widget-platform/pug/layout/layout.jade
+
+//- pagination
+block content
+	h2.platform-title pagination
+	div.platform-content
+		h3.platform-header loading
+		div.platform-intro 
+			p 加载分页,对于用户操作进行友好提示。
+		div.platform-example#loading
+			include ../../../../pc-widget/checkmorecomments/checkmorecomments.jade
+		pre.platform-pre
+			code.platform-code#loading_code
+			span.platform-jade pug
+			span.platform-jade.platform-html.actived html
+	//- js format html code
+	script(type='text/javascript').
+		HtmlFormat.init(['loading'],false,'_code','html','span.platform-jade');
+		$(".platform-pagination").parent('li').addClass("actived");

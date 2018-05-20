@@ -1,0 +1,31 @@
+{
+    "publicPath": "http://js.pre.meixincdn.com/m/vpgc/dist",
+    "page": {
+        "app": {
+            "css": [
+                {
+                    "path": "css/app",
+                    "hash": "2487adb",
+                    "extname": ".css"
+                }
+            ],
+            "js": [
+                {
+                    "path": "js/vendor",
+                    "hash": "4cfbd06",
+                    "extname": ".js"
+                },
+                {
+                    "path": "js/vendor",
+                    "hash": "4cfbd06",
+                    "extname": ".js"
+                },
+                {
+                    "path": "js/app",
+                    "hash": "ccf611b",
+                    "extname": ".js"
+                }
+            ]
+        }
+    }
+}

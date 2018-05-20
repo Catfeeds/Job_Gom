@@ -1,0 +1,101 @@
+doctype html
+html(lang="zh-CN" data-use-rem="750")
+	include ../../../m-widget/head/head.jade
+	link(type="text/css",rel="stylesheet",href="../../css/public/public-wap.css")
+	link(type="text/css",rel="stylesheet",href="../../css/module/video.css")
+
+	body.opg.video-commodity
+		include ../../../m-widget/head/rem.jade
+		
+		//- header.header.header-private
+		//- 	span
+		//- 		a.head-back(href="javascript:;")
+		//- 			em.iconn-1
+
+		//- 	.m-switch.active
+		//- /// header
+
+		.vcd-box
+			.vcd-img
+				img(src="../../images/_temp/vcd-img.jpg")
+			//- .vcd-fail.hidden(style="display:block;")
+			//- 	p 视频加载失败请重试
+			//- 	a.m-btn.btn-bor 重新加载
+			//- .bar-bot
+			//- 	span.tit 距离直播开始还有
+			//- 	span.time 15天 13时 15分 20秒
+		/// 视频播放区
+
+		.vcd-userbox
+			.m-user80
+				.face
+					img(src="https://js-pre.meixincdn.com/m/h5/dist/images/gome_icon.png")
+				.name 某某主持人／某某频道
+			//- a.share(href="javascript:;")
+			//- 	em.iconn-16
+			//- 	| 分享
+		/// 用户信息
+		
+		//- .m-prompt
+		//- 	.pro-img
+		//- 		img(src="../../images/_temp/404.png")
+		//- 	.pro-txt
+		//- 		| 亲，您的手机网络不太顺畅哦
+		//- 		br
+		//- 		| 请检查您的手机是否联网
+		//- 	.pro-btn
+		//- 		a.m-btn 刷新
+		//- ///缺省页
+
+		//- ul.menu-list.vcd-tabs
+		//- 	li.item.active
+		//- 		a.link(href="javascript:;")
+		//- 			p.txt 精彩推荐
+		//- 	li.item
+		//- 		a.link(href="javascript:;")
+		//- 			p.txt 互动
+		//- /// tab
+
+		.vcd-titinfo
+			h3
+				| 中粮早班车：均衡五色果蔬燕麦
+				em.iconn-42
+			h3.active
+				| 中粮早班车：均衡五色果蔬燕麦
+				em.iconn-42
+			.text.hidden(style="display:block")
+				p 简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介。
+		/// 标题+内容
+
+		ul.main-list.single-list.vcd-commlist
+			li.item
+				a.link(href="javascript:;")
+				.item-img
+					img(src="../../images/_temp/w236x236.jpg")
+				.item-txt
+					em.ic-fan
+					| 创意铅笔袋韩国文具盒简约男女生小清新日韩版中学生学习用品
+				.item-price
+					span.red ¥2199.40
+				.item-pay 131付款
+				a.m-btn.btn-bor 立即购买
+
+			-for(i=0;i<4;i++)
+				li.item
+					a.link(href="javascript:;")
+					.item-img
+						img(src="../../images/_temp/w236x236.jpg")
+					.item-txt 创意铅笔袋韩国文具盒简约男女生小清新日韩版中学生学习用品
+					.item-price
+						span.red ¥2199.40
+					.item-pay 131付款
+					a.m-btn.btn-bor 立即购买
+		/// 商品列表
+		
+		//- .vcd-box.vcd-fixed-bot
+		//- 	a.vcd-close
+		//- 	.vcd-img
+		//- 		img(src="../../images/_temp/vcd-img.jpg")
+		//- 	.vcd-fail
+		//- 		p 加载失败
+		//- /// 右下角漂浮

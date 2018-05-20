@@ -1,0 +1,254 @@
+doctype html
+html(lang="zh-CN")
+	include ../common/head.jade
+	link(type="text/css",rel="stylesheet",href="../../css/public/public.css")
+	body.opg
+		.header
+			.wrap-box
+				.fl
+					| Admin
+					.header-select
+						span
+						| 在线
+						em.san
+						.select-s
+							a(href="javascript:;").active
+								span
+								| 在线
+							a(href="javascript:;")
+								span.red
+								| 忙碌
+							a(href="javascript:;")
+								span.gray
+								| 离线
+					| 当前处理咨询人数：
+					span.text 999
+					| 当前等待咨询人数：
+					span.text 999
+					a(href="javascript:;").btn-header 注销
+				.fr
+					img(src="../../images/logo.png")
+		.wrap-box.clearfix
+			.im-left
+				.left-tab
+					a(href="javascript:;").active
+						| 当前联系人
+						em.icon-tab
+					a(href="javascript:;")
+						| 历史联系人
+						em.icon-tab
+				.tab-list
+					ul
+						li.active
+							img(src="https://i-pre.meixincdn.com/v1/img/T17ahTB5AT1R4cSCrK.png")
+							p
+								span.f14 张一二三四
+								span.fr 11:34
+							p.gray 上次下的单怎么还没到啊
+						li
+							img(src="https://i-pre.meixincdn.com/v1/img/T17ahTB5AT1R4cSCrK.png")
+							p
+								span.f14 张一二三四
+								span.fr 11:34
+							p.gray 上次下的单怎么还没到啊上次下的单怎么还没到啊
+							span.new ···
+						li
+							img(src="https://i-pre.meixincdn.com/v1/img/T17ahTB5AT1R4cSCrK.png")
+							p
+								span.f14 张一二三四
+								span.fr 11:34
+							p.gray 上次下的单怎么还没到啊
+			.im-chat
+				.chatrecord
+					.right-chat
+						.chat-scroll
+							dl.clearfix
+								dt
+									img(src="https://i-pre.meixincdn.com/v1/img/T17ahTB5AT1R4cSCrK.png")
+								dd
+									p.gray 张一二三四 2016-5-16 13:14:20
+									.text
+										em.icon-san
+										p 我也想买那个电视呢我也想买那个电视呢我也想买那个电视呢我也想买那个电视呢我也想买那个电视呢
+							dl.clearfix.right
+								dt
+									img(src="https://i-pre.meixincdn.com/v1/img/T17ahTB5AT1R4cSCrK.png")
+								dd
+									p.gray 张一二三四 2016-5-16 13:14:20
+									.text
+										em.icon-san
+										p 我也想买那个电视呢我也想买那个电视呢我也想买那个电视呢我也想买那个电视呢我也想买那个电视呢
+										a(href="javascript:;").resend
+											span !
+											| 重发
+							dl.clearfix.right
+								dt
+									img(src="https://i-pre.meixincdn.com/v1/img/T17ahTB5AT1R4cSCrK.png")
+								dd
+									p.gray 张一二三四 2016-5-16 13:14:20
+									.text
+										em.icon-san
+										p
+											img(src="../../images/img.jpg")
+										a(href="javascript:;").resend
+											img(src="../../images/loading.gif")
+							dl.clearfix
+								dt
+									img(src="https://i-pre.meixincdn.com/v1/img/T17ahTB5AT1R4cSCrK.png")
+								dd
+									p.gray 张一二三四 2016-5-16 13:14:20
+									.text
+										em.icon-san
+										.im-video
+											video(width="130",height="190")
+												source(src="../../images/movie.ogg",type="video/ogg")
+												| 您的浏览器不支持 video 标签。
+											em.icon-play
+							dl.clearfix
+								dt
+									img(src="https://i-pre.meixincdn.com/v1/img/T17ahTB5AT1R4cSCrK.png")
+								dd
+									p.gray 张一二三四 2016-5-16 13:14:20
+									.text
+										em.icon-san
+										.im-audio.im-audio-new(style="width:150px")
+											.fl 25s'
+											.fr
+											audio
+												source(src="../../images/horse.ogg",type="audio/ogg")
+												| 您的浏览器不支持 audio 标签。
+							dl.clearfix.right
+								dt
+									img(src="https://i-pre.meixincdn.com/v1/img/T17ahTB5AT1R4cSCrK.png")
+								dd
+									p.gray 张一二三四 2016-5-16 13:14:20
+									.text
+										em.icon-san
+										.im-audio
+											.fl 25s'
+											.fr
+											audio
+												source(src="../../images/horse.ogg",type="audio/ogg")
+												| 您的浏览器不支持 audio 标签。
+					.chat-send
+						.send-title
+							a(href="javascript:;").icon.icon-expression
+							a(href="javascript:;").icon.icon-img
+							a(href="javascript:;").icon.icon-cut
+							a(href="javascript:;").btn.btn-gray 结束当前会话
+							.expression-box.clearfix.none
+								img(src="../../images/faces/bs.png")
+								img(src="../../images/faces/dk.png")
+								img(src="../../images/faces/dx.png")
+								img(src="../../images/faces/dy.png")
+								img(src="../../images/faces/ex.png")
+								img(src="../../images/faces/fn.png")
+								img(src="../../images/faces/gg.png")
+								img(src="../../images/faces/jk.png")
+								img(src="../../images/faces/k.png")
+								img(src="../../images/faces/kb.png")
+								img(src="../../images/faces/kl.png")
+								img(src="../../images/faces/ll.png")
+								img(src="../../images/faces/mm.png")
+								img(src="../../images/faces/nl.png")
+								img(src="../../images/faces/q.png")
+								img(src="../../images/faces/s.png")
+								img(src="../../images/faces/sh.png")
+								img(src="../../images/faces/sj.png")
+								img(src="../../images/faces/sx.png")
+								img(src="../../images/faces/wx.png")
+								img(src="../../images/faces/y.png")
+								img(src="../../images/faces/yw.png")
+								img(src="../../images/faces/yx.png")
+								img(src="../../images/faces/yy.png")
+								img(src="../../images/faces/zk.png")
+						.send-text
+							textarea(row="4")
+							.send-btn
+								.btn-send
+									a(href="javascript:;").btn.btn-blue 发送
+									span.icon-down
+								.btn-send-empty
+									em.sanjiao
+									span !
+									| 发送内容不能为空！
+								.btn-send-s
+									a(href="javascript:;").active Enter发送
+									a(href="javascript:;") ctrl+Enter发送
+			.im-right
+				.link-a
+					a(href="javascript:;") 圈子推荐
+					a(href="javascript:;") 话题推荐
+					a(href="javascript:;") 达人推荐
+				.icon-dian
+				.left-tab
+					a(href="javascript:;").active
+						| 常用语
+						em.icon-tab
+					a(href="javascript:;")
+						| 用户订单
+						em.icon-tab
+					a(href="javascript:;")
+						| 跟进管理
+						em.icon-tab
+				.right-search
+					input(type="text",placeholder="搜索常用语")
+					a(href="javascript:;").btn-search
+				.im-phrase-list
+					.phrase-list
+						//循环开始
+						.list-bg
+							.list-title
+								| 问候语
+								em.icon-down
+							//ul上class="none"为隐藏block为显示
+							ul
+								li
+									em.icon-jia.icon-jian
+									span 上午问候语
+									ul
+										li
+											span 早上好啊！有什么能帮到您的
+										li
+											span 早上好啊！有什么
+										li
+											span 早上好啊！有什么能帮到
+								li
+									em.icon-jia
+									span 上午问候语
+									ul.none
+										li
+											span 早上好啊
+										li
+											span 早上好啊
+										li
+											span 早上好啊！
+						.list-bg
+							.list-title
+								| 问候语
+								em.icon-down
+							//ul上class="none"为隐藏block为显示
+							ul.none
+								li
+									em.icon-jia.icon-jian
+									span 上午问候语
+									ul
+										li
+											span 早上好啊！有什么能帮到您的
+										li
+											span 早上好啊！有什么
+										li
+											span 早上好啊！有什么能帮到
+								li
+									em.icon-jia
+									span 上午问候语
+									ul.none
+										li
+											span 早上好啊
+										li
+											span 早上好啊
+										li
+											span 早上好啊！
+					
+					
+					

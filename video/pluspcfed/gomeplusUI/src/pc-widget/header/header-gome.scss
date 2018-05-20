@@ -1,0 +1,166 @@
+.header-gome{
+    min-width: 1200px;
+    height: 80px;
+    background: #dd2d3a;
+    .wrap-box{
+        background: url(../../images/public/gome-header-bg.png) no-repeat 805px 0;
+    }
+    h1{
+        float: left;
+        margin-top: 24px;
+        .mygome{
+            display: block;
+            width: 152px;
+            height: 32px;
+            background-position: 0 -24px;
+        }
+    }
+    .gome-nav{
+        float: left;
+        margin-left: 58px;
+        li{
+            float: left;
+            line-height: 80px;
+             a {
+                display: block;
+                height: 80px;
+                line-height: 77px;
+                font-size: 18px;
+                color: #fff;
+                padding: 0px 20px;
+                position: relative;
+                &.cur-arrow:after {
+                    display: block;
+                    content: " ";
+                    line-height: 0;
+                    font-size: 0;
+                    border-left: 9px solid transparent;
+                    border-right: 9px solid transparent;
+                    border-bottom: 9px solid #fff;
+                    position: absolute;
+                    left: 40%;
+                    bottom: 0;
+                    visibility: visible;
+                }
+            }
+        }
+    }
+    .gome-top-right{
+        width: 275px;
+        float: right;
+        position: relative;
+        .gome-search{
+            width: 221px;
+            height: 28px;
+            float: left;
+            margin-top: 26px;
+            background: #e4e4e4;
+            position: relative;
+            .search-list{
+                background: #fff;
+                position: absolute;
+                left: 0;
+                top: 0;
+                width: 59px;
+                line-height: 28px;
+                border-right: 1px solid #e4e4e4;
+                text-align: center;
+                em{
+                    font-size: 12px;
+                    margin-left: 5px;
+                }
+                .list-val{
+                    display: none;
+                    background: #fff;
+                    position: absolute;
+                    padding: 8px 0;
+                    left: 0;
+                    top: 100%;
+                    width: 58px;
+                    z-index: 102;
+                    border: 1px solid #e4e4e4;
+                    a{
+                        display: block;
+                        &:hover{
+                            background: #f6f5ee;
+                        }
+                    }
+                }
+            }
+            .search-input{
+                float: left;
+                width: 132px;
+                height: 18px;
+                line-height: 18px;
+                color: #5e5e5e;
+                padding: 5px 0 5px 65px;
+                border: none;
+                background: #e4e4e4;
+            }
+            &.active{
+                background-color: #fff;
+                .search-input{
+                    background-color: #fff;
+                }
+            }
+            &:hover{
+                .list-val{
+                    display: block;
+                }
+            }
+        }
+        .search-btn{
+            float: left;
+            width: 23px;
+            line-height: 28px;
+            .icon{
+                display: inline-block;
+                width: 16px;
+                height: 15px;
+                background-position: -162px -25px;
+            }
+        }
+        .shop-cart{
+            position: relative;
+            float: right;
+            width: 45px;
+            height: 28px;
+            margin-top: 26px;
+            .cart{
+                display: block;
+                width: 28px;
+                height: 21px;
+                margin-top: 5px;
+                background-position: -150px 0;
+            }
+        }
+        .shopnum{
+            position: absolute;
+            top: -12px;
+            left: 15px;
+            min-width: 14px;
+            height: 18px;
+            line-height: 18px;
+            color: #dd2d3a;
+            padding: 0 3px;
+            font-weight: 700;
+            text-align: center;
+            background-color: #fff;
+            i{
+                position: absolute;
+                width: 0;
+                height: 0;
+                border: 4px dashed transparent;
+                border-color: transparent transparent transparent #fff;
+                border-right: 0;
+                border-left-style: solid;
+                overflow: hidden;
+                bottom: -4px;
+                left: 5px;
+            }
+        }
+    }
+    .icon{
+        background: url(../../images/public/gome-sprite.png) no-repeat;
+    }
+}

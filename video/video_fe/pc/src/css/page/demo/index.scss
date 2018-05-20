@@ -1,0 +1,73 @@
+/* demo */
+@import "../../base/public.scss";
+@import "../../components/indicator.scss";
+
+.con1 {
+	width: 100%;
+	padding: 0 2%;
+	box-sizing: border-box;
+}
+
+.list-one {
+	display: flex;
+	li {
+		background: #ff5151;
+		margin: 0 0.133333rem;
+		width: 2.133333rem;
+		height: 2.133333rem;
+	}
+}
+
+.list-two {
+	display: flex;
+	justify-content: space-between;
+	li {
+		background: #ff5151;
+		width: 2.133333rem;
+		height: 2.133333rem;
+	}
+}
+
+.card {
+	width: 100%;
+	.main {
+		width: 100%;
+		display: flex;
+		.img {
+			width: 2.666667rem;
+			height: 2.666667rem;
+			background: rgba(0, 0, 0, 0.5);
+			color: #fff;
+			display: flex;
+			align-items: center;
+			span {
+				display: block;
+				margin: 0 auto;
+			}
+		}
+		.describe {
+			flex: 1;
+			padding-left: 10px;
+			box-sizing: border-box;
+			h2 {
+				line-height: 26px;
+			}
+		}
+	}
+	.label {
+		width: 100%;
+		display: flex;
+		flex-wrap: wrap;
+		margin-top: 0.133333rem;
+		li {
+			padding: 0 0.266667rem;
+			display: block;
+			text-align: center;
+			background: #ddd;
+			margin: 0 0.066667rem;
+			border-radius: 30%;
+			font-size: 12px;
+			line-height: 24px;
+		}
+	}
+}

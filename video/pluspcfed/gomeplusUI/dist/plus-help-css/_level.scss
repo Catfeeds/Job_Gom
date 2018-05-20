@@ -1,0 +1,147 @@
+@charset "UTF-8";
+@import "../plus-sasscore/_configure.scss";
+// 配置图片路路径
+$set-img-path:          ''; 
+// 基本颜色
+$level-color:           #333;
+// 美店等级规则
+.opg{
+	.meidian-main{
+		background:#fff;
+		overflow:hidden;
+	}
+	.level-title{
+		margin:rem(48) auto rem(30);
+		width:rem(310);
+		height:rem(50);
+		line-height:rem(50);
+		font-size:rem(34);
+		text-align:center;
+		color:#fff;
+		@include img('level-title.png');
+		@include background-size(cover);
+	}
+	.level-introction{
+		padding:rem(0 20);
+		line-height:rem(38);
+		color:$level-color;
+		font-size:rem(24);
+	}
+	// 等级对照表
+	.level-compare{
+		margin:rem(12) 0 rem(20);
+		font-size:rem(34);
+		color:$level-color;
+		text-align:center;
+	}
+	.level-table{
+		table-layout: fixed;
+		margin:0 rem(20);
+		text-align:center;
+		color:$level-color;
+		table{
+			width:100%;
+			border-collapse: collapse;
+		}
+		th,td{
+			padding:rem(8) 0;
+			font-weight:normal;
+			border:1px solid #d7a763;
+			border-collapse: collapse;
+		}
+		th{
+			font-size:rem(24);
+		}
+		td{
+			font-size:rem(22);
+		}
+		.level-icon{
+			display:inline-block;
+			margin-top:rem(5);
+			width:rem(92);
+			height:rem(28);
+			@include background-size(cover);
+		}
+		.level-icon-1{
+			@include img('level-1.png');
+		}
+		.level-icon-2{
+			@include img('level-2.png');
+		}
+		.level-icon-3{
+			@include img('level-3.png');
+		}
+		.level-icon-3{
+			@include img('level-3.png');
+		}
+		.level-icon-4{
+			@include img('level-4.png');
+		}
+		.level-icon-5{
+			@include img('level-5.png');
+		}
+		.level-icon-6{
+			@include img('level-6.png');
+		}
+		.level-icon-7{
+			@include img('level-7.png');
+		}
+		.level-icon-8{
+			@include img('level-8.png');
+		}
+		.level-icon-9{
+			@include img('level-9.png');
+		}
+		.level-icon-10{
+			@include img('level-10.png');
+		}
+	}
+	// 如何提升等级
+	.level-grade{
+		padding:rem(0) rem(38);
+		ul,li{
+			overflow:hidden;
+		}
+		li{
+			padding-bottom:rem(40);
+		}
+		.level-grade-icon{
+			margin-right:rem(35);
+			width:rem(85);
+			height:rem(85);
+			@include background-size(contain);
+		}
+		.flex-bd{
+			strong{
+				display:block;
+				line-height:rem(44);
+				font-size:rem(34);
+				font-weight:weight;
+				color: #333;
+			}
+			span{
+				display:block;
+				font-size:rem(24);
+				line-height:rem(32);
+			}
+		}
+		.level-grade-1{
+			@include img('level-grade-1.jpg');
+		}
+		.level-grade-2{
+			@include img('level-grade-2.jpg');
+		}
+		.level-grade-3{
+			@include img('level-grade-3.jpg');
+		}
+		.level-grade-4{
+			@include img('level-grade-4.jpg');
+		}
+		.level-grade-5{
+			@include img('level-grade-5.jpg');
+		}
+		.level-grade-6{
+			@include img('level-grade-6.jpg');
+		}
+	}
+}

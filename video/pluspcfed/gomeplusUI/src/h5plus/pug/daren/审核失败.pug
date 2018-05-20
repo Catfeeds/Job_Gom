@@ -1,0 +1,45 @@
+extends ../../../m-widget/head/head-set.jade
+block style
+	link(type="text/css",rel="stylesheet",href="../../css/module/daren/daren.css")
+block body
+	body.opg
+		include ../../../m-widget/head/rem.jade
+		// /header
+		header.header
+			.h-left
+				a.h-back(href="javascript:;")
+					em.iconn-1
+			.h-cnt.flex-cell
+				h1.h-tit 达人招募
+		// /content
+		.dr-bg.dr-bg1
+		.dr-bg.drform-c
+			h3.dr-sprites.title-fail
+			ul.apply-step
+				li.active
+					span.dr-sprites.step.step1
+					span.num 1
+				li.active
+					span.dr-sprites.step.step2
+					span.num 2
+				li
+					span.dr-sprites.fail-icon
+					span.num 3
+		p.fail-txt
+			| 不好意思哦，小主！+
+			span 失败原因失败原因失败原因失败原因失败原因失败原因
+		a(href="javascript:;").dr-btn.modify-btn
+			span.dr-sprites
+		ul.audit-data
+			li.flex-box.flex-start
+				label.c-6 真实姓名：
+				p.flex-bd 马小帅
+			li.flex-box.flex-start
+				label.c-6 联系方式：
+				p.flex-bd 17866669999
+			li.flex-box.flex-start
+				label.c-6 达人类别：
+				p.flex-bd 宠物达人
+			li.flex-box.flex-start
+				label.c-6 个人介绍：
+				p.flex-bd 这是一首简单的小情歌 唱着人们心肠的曲折 我想我很快乐 当有你的温热 脚边的空气转了 唱着我们心头的白鸽 

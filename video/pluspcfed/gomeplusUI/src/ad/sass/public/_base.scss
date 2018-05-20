@@ -1,0 +1,178 @@
+@charset "utf-8";
+
+// Defined background color for `<body>`
+// ##------------------------------------------
+body{
+	background:url('../../images/public/body-bg.jpg') repeat-y $bg-body;
+	font-family:$font-family;
+}
+// Definde global links status for `<a>`
+// ##------------------------------------------
+a{
+	color:$link-web-color;
+	&:hover{
+		color:$link-web-color;
+	}
+}
+
+// Defined global public stylesheet
+// ##------------------------------------------
+*{
+	@include box-sizing(border);
+}
+.master{
+	position:fixed;
+	left:0;
+	right:0;
+	top:0;
+	bottom:0;
+	z-index:1000;
+	background:#23272c;
+	@include opacity(35);
+}
+.hide{
+	display:none!important;
+}
+.show{
+	display:block!important;
+}
+.bodyHtml{
+	overflow:hidden;
+}
+.scroll-x{
+	overflow:hidden;
+	overflow-x:auto;
+}
+.mgl1{
+	margin-left:10px;
+}
+.mgr1{
+	margin-right:10px;
+}
+.mgb1{
+	margin-bottom:10px;
+}
+.bg-white{
+	background:#fff;
+}
+.body-none{
+	background-image:none;
+}
+.ellipsis{
+	overflow:hidden;
+	display:block;
+	white-space:nowrap;
+	width:100%;
+	text-overflow:ellipsis;
+}
+// amp-content
+.amp-content{
+	@include clearfix();
+}
+
+// amp-main
+.content-main{
+	overflow:hidden;
+	zoom:1;
+}
+
+// add-fn
+.add-fn{
+	margin-right:-34px;
+	margin-bottom:8px;
+	.btn{
+		position:relative;
+		display:block;
+		&:before{
+			content:'';
+			position:absolute;
+			left:50%;
+			top:50%;
+			margin-left:-9px;
+			margin-top:-1px;
+			width:18px;
+			height:2px;
+			background:#aaa;
+		}
+		&:after{
+			content:'';
+			position:absolute;
+			left:50%;
+			top:50%;
+			margin-left:-1px;
+			margin-top:-9px;
+			width:2px;
+			height:18px;
+			background:$text-light;
+		}
+	}
+}
+
+// amp-path
+// ##----------------------------------
+.amp-path{
+	// margin-bottom:10px;
+	padding-left:16px;
+	height:46px;
+	line-height:46px;
+	font-size:16px;
+	color:$text-light;
+	border-left:4px solid #ffc41d;
+	background:#fff;
+	.path-col{
+		@include inline-block;
+		padding-right:40px;
+		b{
+			font-weight:normal;
+			color:$text-dark;
+		}
+		i{
+			padding:0px 4px 0px 0px;
+			font-style:normal;
+			color:$bg-red;
+		}
+	}
+}
+.amp-path-large{
+	padding-left:27px;
+	font-size:18px!important;
+}
+
+
+
+// account
+.amp-account{
+	min-width:1100px;
+	padding:0px $space;
+	@include box-sizing(border);
+	.account-set{
+		padding:28px 20px;
+		background:#fff;
+		.set-option{
+			padding-bottom:30px;
+		}
+	}
+	.set-option{
+		.btn{
+			margin-right:10px;
+		}
+		.btn-back-up{
+			padding:0px 15px;
+		}
+	}
+}
+
+// amp-module
+//##------------------------------------------
+.amp-module{
+	background:#fff;
+}
+// == element party fix
+// 
+// ## el-pagination
+.el-pagination-reset{
+	padding:0;
+	margin-top:20px;
+	margin-bottom:20px;
+	text-align:right;
+}

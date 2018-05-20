@@ -1,0 +1,27 @@
+@charset "UTF-8";
+/*==============================标准色==========================*/
+/*----主色-----*/
+/*==============================字体大小==========================*/
+/*==============================wrap宽度==========================*/
+/*==============================btn 宽度==========================*/
+/*==============================nav==========================*/
+/*==============================text clolor==========================*/
+.merchant-join {
+  background: url(../../images/other/tenants.jpg);
+  height: 650px;
+  position: relative;
+  margin: 30px 0 -20px 0; }
+
+.merchant-join a {
+  position: absolute;
+  left: 50%;
+  bottom: 127px;
+  margin: 0 0 0 -87px;
+  width: 174px;
+  height: 45px;
+  line-height: 45px;
+  border-radius: 5px;
+  text-align: center;
+  color: #fff;
+  font-size: 18px;
+  background-color: #f95353; }

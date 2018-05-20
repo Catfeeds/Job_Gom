@@ -1,0 +1,31 @@
+@import '../config/_base.scss';
+@import '../config/_mixins.scss';
+
+//page
+.opg{
+	.page{
+		height: 32px;
+    line-height: 30px;
+    text-align: center;
+    .disabled{
+			cursor: no-drop;
+    	color: #999;
+    }
+    .active{
+	    border: 0;
+			background: none;
+			color: #e60039;
+    }
+    a{
+	    display: inline-block;
+	    padding: 0 12px;
+	    height: 30px;
+	    background: #fff;
+	    border: 1px solid #e8e9e4;
+	    margin-left: 5px;
+    }
+    span{
+    	margin-left: 5px;
+    }
+	}
+}

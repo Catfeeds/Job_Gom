@@ -1,0 +1,124 @@
+@charset "utf-8";
+
+// AMP configure
+@import "_configure.scss";
+
+// Defined menu stylesheet
+// ##------------------------------------------
+.content-menu{
+	width:180px;
+	float:left;
+	@include box-sizing(border);
+	ul{
+		li{
+			&.actived{
+				.menu-second{
+					display:block;
+				}
+				.menu-header{
+					a{
+						&:before{
+							content:"";
+							position:absolute;
+							left:0;
+							top:50%;
+							width:4px;
+							height:18px;
+							margin-top:-8px;
+							background:$bg-red;
+						}
+					}
+					.icon{
+						color:$bg-red;
+					}
+					.icon-arrow{
+						color:#89919c;
+						&:before{
+							content:'\e908';
+						}
+					}
+					.header-text{
+						color:$bg-red;
+					}
+				}
+			}
+		}
+	}
+	// menu-header
+	.menu-header{
+		a{
+			position:relative;
+			display:block;
+			padding-left:15px;
+			height:44px;
+			line-height:44px;
+			font-size:16px;
+			color:$text-dark;
+			.icon{
+				margin-right:8px;
+				color:#b3babf;
+			}
+			.icon-arrow{
+				overflow:hidden;
+				position:absolute;
+				right:10px;
+				margin-right:0;
+				height:44px;
+				line-height:44px;
+				color:#89919c;
+				font-size:10px;
+			}
+			.header-text{
+				font-size:16px;
+				display:inline-block;
+				vertical-align:middle;
+			}
+			&:hover{
+				color:$bg-red;
+				.icon{
+					color:$bg-red;
+				}
+				.icon-arrow{
+					color:#89919c;
+				}
+			}
+		}
+	}
+	// menu-second
+	.menu-second{
+		display:none;
+		a{
+			overflow:hidden;
+			padding:4px 25px 4px 39px;
+			display:block;
+			font-size:14px;
+			line-height:20px;
+			color:$text-medium;
+			&:hover{
+				color:$text-medium;
+				background:nth($bg-menu-status,1);
+			}
+			&.actived,
+			&.actived:hover{
+				color:$text-medium;
+				background:nth($bg-menu-status,2);
+			}
+		}
+	}
+	.menu-second-new{
+		a{
+			position:relative;
+			&:before{
+				content:'';
+				position:absolute;
+				width:6px;
+				height:6px;
+				left:23px;
+				top:10px;
+				overflow:hidden;
+				background:#b3babf;
+				@include prefix(border-radius,6px);
+			}
+		}
+	}
+}

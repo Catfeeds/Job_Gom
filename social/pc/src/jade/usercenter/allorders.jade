@@ -1,0 +1,397 @@
+doctype html
+html(lang="zh-CN")
+	include ../../../../../gomeplusUI/pc/src/jade/head.jade
+	link(type="text/css",rel="stylesheet",href="../../css/public/public.css")
+	link(type="text/css",rel="stylesheet",href="../../css/module/shop/allorders.css")
+	body.opg
+		include ../../../../../gomeplusUI/pc/src/jade/header.jade
+		include ../../../../../gomeplusUI/pc/src/jade/menu.jade
+		.wrap-box.mart20.clearfix
+			.order-side-bar
+				h3 我的主页
+				h3 社交
+				ul
+					li
+						a(href="javascript:;") 我的圈子
+					li
+						a(href="javascript:;") 我的话题
+				h3 购物
+				ul
+					li
+						a(href="javascript:;").active 我的订单
+					li
+						a(href="javascript:;") 我的优惠券
+				h3 收藏
+				ul
+					li
+						a(href="javascript:;") 我的收藏
+				h3 设置
+				ul
+					li
+						a(href="javascript:;") 个人信息
+					li
+						a(href="javascript:;") 登录密码修改
+					li
+						a(href="javascript:;") 修改绑定手机号
+					li
+						a(href="javascript:;") 收货地址管理
+				h3
+					a(href="javascript:;") 售后服务
+				ul
+					li
+						a(href="javascript:;") 退款/售后
+			.order-right
+				.order-state-nav.clearfix
+					a(href="javascript:;").order-state-nav-a 全部订单
+					a(href="javascript:;").order-state-nav-a 待付款
+						span  3
+					a(href="javascript:;").order-state-nav-a 待发货
+						span  2
+					a(href="javascript:;").order-state-nav-a.active 待收货
+						span  4
+					a(href="javascript:;").order-state-nav-a 待评价
+						span  5
+					a(href="javascript:;").order-state-nav-a 我要晒单
+					.trade-state-select
+						span.select-txt 交易状态
+						em.icon.icon-down.icon-up
+						.trade-state-select-list
+							a(href="javascript:;") 1
+							a(href="javascript:;") 2
+							a(href="javascript:;") 3
+				table.order-prod-nav
+					tbody
+						tr.order-prod-nav-bg
+							th.order-base-nav.order-comment-nav
+								.prod-info 商品信息
+							th.sin-price 单价（元）
+							th.count 状态
+							th.prod-opr 操作
+				table.order-prod-info
+					tr
+						td(colspan="7").order-base-nav
+							ul.clearfix
+								li.time 2016-07-04 17:07:52
+								li.order-number 订单号：
+									a(href="javascript:;").color-default 98766598686
+					tr
+						td(colspan="4").order-l.clearfix
+							.order-l-list.bor-none.clearfix
+								a(href="javascript:;")
+									img(src="../../images/public/default-img2.jpg").order-img
+								.parameter
+									a(href="javascript:;") 洗颜专科矿物质水清透防晒乳液洗颜专科矿...
+									p 颜色：SPF30 .PA 40ml
+						td.t-price
+							span.price ￥560.00
+						td.trading-status
+							span.mb0.font-grey-6 ---
+						td.order-operate
+							a(href="javascript:;").order-blank-btn.order-pay-btn 晒商品
+				table.order-prod-info
+					tr
+						td(colspan="7").order-base-nav
+							ul.clearfix
+								li.time 2016-07-04 17:07:52
+								li.order-number 订单号：
+									a(href="javascript:;").color-default 98766598686
+					tr
+						td(colspan="4").order-l.clearfix
+							.order-l-list.bor-none.clearfix
+								a(href="javascript:;")
+									img(src="../../images/public/default-img2.jpg").order-img
+								.parameter
+									a(href="javascript:;") 洗颜专科矿物质水清透防晒乳液洗颜专科矿...
+									p 颜色：SPF30 .PA 40ml
+						td.t-price
+							span.price ￥560.00
+						td.trading-status
+							span.mb0.font-grey-6 已评价
+						td.order-operate
+							a(href="javascript:;").order-blank-btn.order-pay-btn 晒商品
+				table.order-prod-nav
+					tbody
+						tr.order-prod-nav-bg
+							th.order-base-nav
+								.prod-info 商品信息
+							th.sin-price 单价（元）
+							th.count 数量
+							th.prod-opr 商品操作
+							th.trade-sum 交易金额(元)
+							th.trade-state 交易状态
+							th.order-opr 订单操作
+
+				.no-order
+					em.icon.icon-order &#xe96c;
+					p
+						| 亲，您还没有订单，赶快 
+						a(href="javascript:;") 去逛逛 
+						| 吧
+				table.order-prod-info
+					tr
+						td(colspan="7").order-base-nav
+							ul.clearfix
+								li.time 2016-07-04 17:07:52
+								li.order-number 订单号：
+									a(href="javascript:;").color-default 98766598686
+								li.color-default
+									em.icon.icon-platform &#xe9df;
+									a(href="javascript:;") 国美Plus购物平台
+					tr
+						td(colspan="4").order-l.clearfix
+							.order-l-list.bor-none.clearfix
+								a(href="javascript:;")
+									img(src="../../images/public/default-img2.jpg").order-img
+								.parameter
+									a(href="javascript:;") 洗颜专科矿物质水清透防晒乳液洗颜专科矿...
+									p 颜色：SPF30 .PA 40ml
+								span.s-price ￥560.00
+								span.count-num 1
+								.connect-shop.more
+									a(href="javascript:;") 联系商家
+									a(href="javascript:;") 联系商家
+						td.t-price
+							span.price ￥560.00
+							p.fare （含运费：￥6）
+						td.trading-status
+							span 待付款
+							a(href="javascript:;") 查看详情
+						td.order-operate
+							a(href="javascript:;").order-blank-btn.order-pay-btn.marb14 立即支付
+							a(href="javascript:;").order-blank-btn 取消订单
+				table.order-prod-info
+					tr
+						td(colspan="7").order-base-nav
+							ul.clearfix
+								li.time 2016-07-04 17:07:52
+								li.order-number 订单号：
+									a(href="javascript:;").color-default 98766598686
+								li.color-default
+									em.icon.icon-platform &#xe9df;
+									a(href="javascript:;") 国美Plus购物平台
+					tr
+						td(colspan="4").order-l.clearfix
+							.order-l-list.clearfix
+								a(href="javascript:;")
+									img(src="../../images/public/default-img2.jpg").order-img
+								.parameter
+									a(href="javascript:;") 洗颜专科矿物质水清透防晒乳液洗颜专科矿...
+									p 颜色：SPF30 .PA 40ml
+								span.s-price ￥560.00
+								span.count-num 1
+								.connect-shop
+									a(href="javascript:;") 联系商家
+							.order-l-list.bor-none.clearfix
+								a(href="javascript:;")
+									img(src="../../images/public/default-img2.jpg").order-img
+								.parameter
+									a(href="javascript:;") 洗颜专科矿物质水清透防晒乳液洗颜专科矿...
+									p 颜色：SPF30 .PA 40ml
+								span.s-price ￥560.00
+								span.count-num 1
+								.connect-shop
+									a(href="javascript:;") 联系商家
+						td.t-price
+							span.price ￥560.00
+							p.fare （含运费：￥6）
+						td.trading-status
+							span 买家已支付
+							a(href="javascript:;") 查看详情
+						td.order-operate
+							a(href="javascript:;").order-blank-btn 取消订单
+				table.order-prod-info
+					tr
+						td(colspan="7").order-base-nav
+							ul.clearfix
+								li.time 2016-07-04 17:07:52
+								li.order-number 订单号：
+									a(href="javascript:;").color-default 98766598686
+								li.color-default
+									em.icon.icon-platform &#xe9df;
+									a(href="javascript:;") 国美Plus购物平台
+					tr
+						td(colspan="4").order-l.clearfix
+							.order-l-list.bor-none.clearfix
+								a(href="javascript:;")
+									img(src="../../images/public/default-img2.jpg").order-img
+								.parameter
+									a(href="javascript:;") 洗颜专科矿物质水清透防晒乳液洗颜专科矿...
+									p 颜色：SPF30 .PA 40ml
+								span.s-price ￥560.00
+								span.count-num 1
+								.connect-shop
+									a(href="javascript:;") 联系商家
+						td.t-price
+							span.price ￥560.00
+							p.fare （含运费：￥6）
+						td.trading-status
+							span 取消待处理
+							a(href="javascript:;") 查看详情
+						td.order-operate
+							a(href="javascript:;").order-blank-btn.order-blank-btn-disabled 取消订单
+								span.small-mask 取消订单处理中
+				table.order-prod-info
+					tr
+						td(colspan="7").order-base-nav
+							ul.clearfix
+								li.time 2016-07-04 17:07:52
+								li.order-number 订单号：
+									a(href="javascript:;").color-default 98766598686
+								li.color-default
+									em.icon.icon-platform &#xe9df;
+									a(href="javascript:;") 国美Plus购物平台
+								li.countdown
+									em.icon.icon-clock &#xe9ab;
+									| 还剩4天20时
+					tr
+						td(colspan="4").order-l.clearfix
+							.order-l-list.bor-none.clearfix
+								a(href="javascript:;")
+									img(src="../../images/public/default-img2.jpg").order-img
+								.parameter
+									a(href="javascript:;") 洗颜专科矿物质水清透防晒乳液洗颜专科矿...
+									p 颜色：SPF30 .PA 40ml
+								span.s-price ￥560.00
+								span.count-num 1
+								.connect-shop
+									a(href="javascript:;") 联系商家
+						td.t-price
+							span.price ￥560.00
+							p.fare （含运费：￥6）
+						td.trading-status
+							span 待付款
+							a(href="javascript:;") 查看详情
+						td.order-operate
+							a(href="javascript:;").order-blank-btn.marb14 确认收货
+							a(href="javascript:;").order-blank-btn 延迟收货
+				table.order-prod-info
+					tr
+						td(colspan="7").order-base-nav
+							ul.clearfix
+								li.time 2016-07-04 17:07:52
+								li.order-number 订单号：
+									a(href="javascript:;").color-default 98766598686
+								li.color-default
+									em.icon.icon-platform &#xe9df;
+									a(href="javascript:;") 国美Plus购物平台
+					tr
+						td(colspan="4").order-l.clearfix
+							.order-l-list.bor-none.clearfix
+								a(href="javascript:;")
+									img(src="../../images/public/default-img2.jpg").order-img
+								.parameter
+									a(href="javascript:;") 洗颜专科矿物质水清透防晒乳液洗颜专科矿...
+									p 颜色：SPF30 .PA 40ml
+								span.s-price ￥560.00
+								span.count-num 1
+								.connect-shop
+									a(href="javascript:;") 联系商家
+						td.t-price
+							span.price ￥560.00
+							p.fare （含运费：￥6）
+						td.trading-status
+							span.font-grey-normal 用户拒收
+							a(href="javascript:;") 查看详情
+							a(href="javascript:;") 查看物流
+						td.order-operate
+				table.order-prod-info
+					tr
+						td(colspan="7").order-base-nav
+							ul.clearfix
+								li.time 2016-07-04 17:07:52
+								li.order-number 订单号：
+									a(href="javascript:;").color-default 98766598686
+								li.color-default
+									em.icon.icon-platform &#xe9df;
+									a(href="javascript:;") 国美Plus购物平台
+					tr
+						td(colspan="4").order-l.clearfix
+							.order-l-list.bor-none.clearfix
+								a(href="javascript:;")
+									img(src="../../images/public/default-img2.jpg").order-img
+								.parameter
+									a(href="javascript:;") 洗颜专科矿物质水清透防晒乳液洗颜专科矿...
+									p 颜色：SPF30 .PA 40ml
+								span.s-price ￥560.00
+								span.count-num 1
+								.connect-shop
+									a(href="javascript:;") 联系商家
+						td.t-price
+							span.price ￥560.00
+							p.fare （含运费：￥6）
+						td.trading-status
+							span.font-grey-normal 拒收入库
+							a(href="javascript:;") 查看详情
+							a(href="javascript:;") 查看物流
+						td.order-operate
+				table.order-prod-info
+					tr
+						td(colspan="7").order-base-nav
+							ul.clearfix
+								li.time 2016-07-04 17:07:52
+								li.order-number 订单号：
+									a(href="javascript:;").color-default 98766598686
+								li.color-default
+									em.icon.icon-platform &#xe9df;
+									a(href="javascript:;") 国美Plus购物平台
+					tr
+						td(colspan="4").order-l.clearfix
+							.order-l-list.bor-none.clearfix
+								a(href="javascript:;")
+									img(src="../../images/public/default-img2.jpg").order-img
+								.parameter
+									a(href="javascript:;") 洗颜专科矿物质水清透防晒乳液洗颜专科矿...
+									p 颜色：SPF30 .PA 40ml
+								span.s-price ￥560.00
+								span.count-num 1
+								.connect-shop
+									a(href="javascript:;") 联系商家
+						td.t-price
+							span.price ￥560.00
+							p.fare （含运费：￥6）
+						td.trading-status
+							span 交易成功
+							a(href="javascript:;") 查看详情
+							a(href="javascript:;") 查看物流
+						td.order-operate
+							a(href="javascript:;").order-blank-btn 立即评价
+				table.order-prod-info
+					tr
+						td(colspan="7").order-base-nav
+							ul.clearfix
+								li.time 2016-07-04 17:07:52
+								li.order-number 订单号：
+									a(href="javascript:;").color-default 98766598686
+								li.color-default
+									em.icon.icon-platform &#xe9df;
+									a(href="javascript:;") 国美Plus购物平台
+					tr
+						td(colspan="4").order-l.clearfix
+							.order-l-list.bor-none.clearfix
+								a(href="javascript:;")
+									img(src="../../images/public/default-img2.jpg").order-img
+								.parameter
+									a(href="javascript:;") 洗颜专科矿物质水清透防晒乳液洗颜专科矿...
+									p 颜色：SPF30 .PA 40ml
+								span.s-price ￥560.00
+								span.count-num 1
+								.connect-shop
+									a(href="javascript:;") 联系商家
+						td.t-price
+							span.price ￥560.00
+							p.fare （含运费：￥6）
+						td.trading-status
+							span.font-grey-normal 交易关闭
+							a(href="javascript:;") 查看详情
+						td.order-operate
+				.page
+					a(href="javascript:;").page-disable 上一页
+					a(href="javascript:;") 1
+					a(href="javascript:;") 2
+					a(href="javascript:;") 3
+					a(href="javascript:;").active 4
+					a(href="javascript:;") 5
+					span ···
+					a(href="javascript:;") 100
+					a(href="javascript:;") 下一页
+					a(href="javascript:;") 最后一页

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en" data-use-rem="750">
+<head>
+    <title>vue demo</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,minimum-scale=1,user-scalable=no,viewport-fit=cover">
+	<link rel="stylesheet" type="text/css" href="/m/m/dist/css/demo.css">
+</head>
+<body>
+    <script type="text/javascript">
+	(function(){
+	      (function(win){var doc=win.document,html=doc.documentElement,option=html.getAttribute("data-use-rem");if(option===null){return}var baseWidth=parseInt(option).toString()==="NaN"?640:parseInt(option);var grids=baseWidth/100;var clientWidth=html.clientWidth||320;html.style.fontSize=clientWidth/grids+"px";var testDom=document.createElement("div");var testDomWidth=0;var adjustRatio=0;testDom.style.cssText="height:0;width:1rem;";doc.body.appendChild(testDom);var calcTestDom=function(){testDomWidth=testDom.offsetWidth;if(testDomWidth!==Math.round(clientWidth/grids)){adjustRatio=clientWidth/grids/testDomWidth;var reCalcRem=clientWidth*adjustRatio/grids;html.style.fontSize=reCalcRem+"px"}else{doc.body.removeChild(testDom)}};setTimeout(calcTestDom,20);var reCalc=function(){var newCW=html.clientWidth;if(newCW===clientWidth){return}clientWidth=newCW;html.style.fontSize=newCW*(adjustRatio?adjustRatio:1)/grids+"px"};if(!doc.addEventListener){return}var resizeEvt="orientationchange" in win?"orientationchange":"resize";win.addEventListener(resizeEvt,reCalc,false);doc.addEventListener("DOMContentLoaded",reCalc,false)})(window);
+	})();
+</script>
+    <script type="text/javascript">
+        var qq_zone_title = "这里有志趣相投的小伙伴，快加入我们吧 ~";
+        var qq_zone_desc = "伟霆ForU";
+        var qq_zone_link = "https://circle.m.gome.com.cn/circle-58e492abc258b40231b5c08c.html";
+        var qq_zone_img = "https://gfs12.gomein.net.cn/T1YwZTB_hj1RXrhCrK.jpg";
+
+        var sina_title = "伟霆ForU 终于找到了和我志趣相同的小伙伴，有种找到组织的感觉。";
+        var sina_desc = "终于找到了和我志趣相同的小伙伴，有种找到组织的感觉。";
+        var sina_link = "https://circle.m.gome.com.cn/circle-58e492abc258b40231b5c08c.html";
+        var sina_img = "https://gfs12.gomein.net.cn/T1YwZTB_hj1RXrhCrK.jpg";
+    </script>
+	<div id="app">
+	</div>
+	<!-- <div class="m-share-bottom" style="bottom: 0%; transition: bottom 0.5s ease-out; opacity: 0.98; z-index: 40010;">
+            <ul class="share-list">
+                <li class="item">
+                    <a href="javascript:;" class="weibo">
+                        <em class="share-icon"></em>
+                        <p class="share-txt">微博</p>
+                    </a>
+                </li>
+                <li class="item">
+                    <a href="javascript:;" class="weixin">
+                        <em class="share-icon"></em>
+                        <p class="share-txt">微信</p>
+                    </a>
+                </li>
+                <li class="item">
+                    <a href="javascript:;" class="friends">
+                        <em class="share-icon"></em>
+                        <p class="share-txt">朋友圈</p>
+                    </a>
+                </li>
+                <li class="item">
+                    <a href="javascript:;" class="qq">
+                        <em class="share-icon"></em>
+                        <p class="share-txt">QQ</p>
+                    </a>
+                </li>
+                <li class="item">
+                    <a href="javascript:;" class="qzone">
+                        <em class="share-icon"></em>
+                        <p class="share-txt">QQ空间</p>
+                    </a>
+                </li>
+            </ul>
+            <a href="javascript:;" class="share-close">取消</a>
+        </div>
+        <div class="m-mask-private" style="display: block;"></div>
+        <div class="m-share-top"></div>
+    
+        <div class="m-dialog " style="display: block; z-index: 9999;">
+            <div class="dialog-tit ">在手机浏览器打开我会更好看哦!</div>    
+            <div class="dialog-txt hidden"></div>
+            <div class="dialog-btn">
+                
+                <div class="" id="confirmMod">确认</div>
+            </div>
+        </div>
+    
+        <div class="m-toast">
+            <p class="t-txt">撒大声地撒爱上</p>
+        </div>
+    
+        <div class="m-toast-logo">
+        <div class="t-logo"></div>
+        <p class="t-txt">${oCont}</p>
+    </div>
+    
+    <div class="m-dialog">
+            <div class="dialog-tit">1111</div>    
+            <div class="dialog-txt">1111</div>
+            <div class="dialog-btn"><div id="cancelMod">取消</div><div id="confirmMod">确定</div>
+            </div>
+        </div> -->
+<script src="/m/m/dist/js/vendor.js"></script>
+<script src="/m/m/dist/js/demo.js"></script>
+</body>
+</html>

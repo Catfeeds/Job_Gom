@@ -1,0 +1,6 @@
+{
+	"presets": ["latest"],
+	"ignore": ["electron.asar", "node_modules"],
+	"plugins": ["transform-runtime"],
+	"comments": false
+}

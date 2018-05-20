@@ -1,0 +1,144 @@
+doctype html
+html(lang="zh-CN", data-use-rem="750")
+	include ../../../m-widget/head/head.jade
+	link(type="text/css",rel="stylesheet",href="../../css/public/gomeplusUI.css")
+	link(type="text/css",rel="stylesheet",href="../../css/module/meidian/meidian.css")
+	
+	body.opg.meidian
+		include ../../../m-widget/head/rem.jade
+		.meidianall-top.header-fixed
+			header.header
+				.h-left
+					a.h-back(href="javascript:;")
+						em.iconn-1
+				.h-cnt.flex-cell
+					h1.h-tit
+						a(href="javascript:;").sort-name
+							| 鞋子
+							em.iconn-42
+							em.iconn-40
+				.h-right
+					a.h-btn(href="javascript:;")
+						em.iconn-3
+					a.h-btn(href="javascript:;")
+						em.iconn-11
+			// /header
+			
+			ul.choose-sort
+				li.active
+					a(href="##")
+						span 毛衣
+				li
+					a(href="##")
+						span 牛仔裤
+				li
+					a(href="##")
+						span 呢子大衣
+				li.active
+					a(href="##")
+						span 床上四件套床上四件套床上四件套床上四件套床上四件套
+		//- 分类列表
+
+		
+		ul.main-list
+			// -for(i=0;i<2;i++)
+			// 常规
+			li.item
+				a.link(href="javascript:;")
+				.item-img.fail-img
+					img(src='https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1492427889172&di=11787edb099d456b5a54d7d1d40ff0d4&imgtype=0&src=http%3A%2F%2Fpic.58pic.com%2F58pic%2F13%2F89%2F91%2F04a58PICjWN_1024.jpg')
+				.item-txt 情人生日礼Crystallin精装礼品
+				.item-price
+					span.c-f5c ¥2199.40
+					del.c-9 ¥2899.00
+			li.item
+				a.link(href="javascript:;")
+				.item-img.fail-img
+					img(src='https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1492427889172&di=11787edb099d456b5a54d7d1d40ff0d4&imgtype=0&src=http%3A%2F%2Fpic.58pic.com%2F58pic%2F13%2F89%2F91%2F04a58PICjWN_1024.jpg')
+				.item-txt
+					em.ic-fan
+					| 情人生日礼Crystallin精装礼品
+				.item-price
+					span.c-f5c ¥2199.40
+					del.c-9 ¥2899.00
+
+
+			// -for(i=0;i<2;i++)
+			// 月消 付款
+			li.item
+				a.link(href="javascript:;")
+				.item-img.fail-img
+					span.ic-yuex 月销7
+					img(src='https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1492427889172&di=11787edb099d456b5a54d7d1d40ff0d4&imgtype=0&src=http%3A%2F%2Fpic.58pic.com%2F58pic%2F13%2F89%2F91%2F04a58PICjWN_1024.jpg')
+				.item-txt 创意铅笔袋韩国文具盒简约男女生小清新日韩版中学生学习用品
+				.item-price
+					span.c-f5c ¥2199.40
+					del.c-9 ¥2899.00
+				.item-pay 131付款
+			li.item
+				a.link(href="javascript:;")
+				.item-img.fail-img
+					span.ic-yuex 月销7
+					img(src='https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1492427889172&di=11787edb099d456b5a54d7d1d40ff0d4&imgtype=0&src=http%3A%2F%2Fpic.58pic.com%2F58pic%2F13%2F89%2F91%2F04a58PICjWN_1024.jpg')
+				.item-txt
+					em.ic-fan
+					| 创意铅笔袋韩国文具盒简约男女生小清新日韩版中学生学习用品
+				.item-price
+					span.c-f5c ¥2199.40
+					del.c-9 ¥2899.00
+				.item-pay 131付款
+
+
+			// -for(i=0;i<2;i++)
+			// 返标识
+			li.item
+				a.link(href="javascript:;")
+				.item-img.fail-img
+					img(src='https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1492427889172&di=11787edb099d456b5a54d7d1d40ff0d4&imgtype=0&src=http%3A%2F%2Fpic.58pic.com%2F58pic%2F13%2F89%2F91%2F04a58PICjWN_1024.jpg')
+				.item-txt 情人生日礼Crystallin精装礼品
+				.item-price
+					span.c-f5c ¥2199.40
+					del.c-9 ¥2899.00
+			li.item
+				a.link(href="javascript:;")
+				.item-img.fail-img
+					img(src='https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1492427889172&di=11787edb099d456b5a54d7d1d40ff0d4&imgtype=0&src=http%3A%2F%2Fpic.58pic.com%2F58pic%2F13%2F89%2F91%2F04a58PICjWN_1024.jpg')
+				.item-txt
+					em.ic-fan
+					| 情人生日礼Crystallin精装礼品
+				.item-price
+					span.c-f5c ¥2199.40
+					del.c-9 ¥2899.00
+
+			// -for(i=0;i<2;i++)
+			// 带有按钮
+			li.item
+				a.link(href="javascript:;")
+				a.m-btn.btn-bor 按钮文字
+				.item-img.fail-img
+					img(src='https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1492427889172&di=11787edb099d456b5a54d7d1d40ff0d4&imgtype=0&src=http%3A%2F%2Fpic.58pic.com%2F58pic%2F13%2F89%2F91%2F04a58PICjWN_1024.jpg')
+				.item-txt 情人生日礼Crystallin精装礼品
+				.item-price
+					span.c-f5c ¥2199.40
+					del.c-9 ¥2899.00
+			li.item
+				a.link(href="javascript:;")
+				a.m-btn.btn-bor 按钮文字
+				.item-img.fail-img
+					img(src='https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1492427889172&di=11787edb099d456b5a54d7d1d40ff0d4&imgtype=0&src=http%3A%2F%2Fpic.58pic.com%2F58pic%2F13%2F89%2F91%2F04a58PICjWN_1024.jpg')
+				.item-txt
+					em.ic-fan
+					| 情人生日礼Crystallin精装礼品
+				.item-price
+					span.c-f5c ¥2199.40
+					del.c-9 ¥2899.00
+		
+
+		
+
+
+
+
+
+
+

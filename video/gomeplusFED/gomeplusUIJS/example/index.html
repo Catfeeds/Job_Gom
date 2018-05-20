@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="zh-CN" data-use-rem="750" style="font-size:50px;">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=0">
+    <title>gomeplus.js</title>
+    <link rel="stylesheet" href="https://res.wx.qq.com/open/libs/weui/1.1.0/weui.min.css">
+    <link rel="stylesheet" href="http://opg-pre.intra.gomeplus.com/gomeplusUI/m-platform/sass/platform/platform.css">
+    <link rel="stylesheet" href="http://opg-pre.intra.gomeplus.com/gomeplusUI/m-platform/sass/public/public.css">
+    <style>
+        html, body{
+            height: 100%;
+            background-color: #f8f8f8;
+        }
+        body{
+            font-family: -apple-system-font, Helvetica Neue, Helvetica, sans-serif;
+        }
+        .item{
+            padding: 10px 0;
+        }
+        .item__title{
+            margin-bottom: 5px;
+            padding-left: 15px;
+            padding-right: 15px;
+            color: #999;
+            font-weight: normal;
+            font-size: 14px;
+        }
+        .item__ctn{
+            padding: 0 15px;
+        }
+        .page_feedback{
+            display: block;
+            padding: 15px;
+            overflow: auto;
+            background-color: #FFFFFF;
+        }
+
+        /*fix fastclick很难点中的bug*/
+        label > * { pointer-events: none; }
+
+        /* weui需要fix的 */
+        .weui-picker__item{
+            padding: 0;
+            height: 34px;
+            line-height: 34px;
+        }
+    </style>
+    <script type="text/javascript">
+        (function appVersion() {
+            window.platform = {};
+            var ua = window.navigator.userAgent.toLowerCase();
+            var isIphone = ua.match(/iphone os/i) == 'iphone os';
+            var isAndroid = ua.match(/android/i) == 'android';
+            // ipad 也为mobile
+            var isMobile = ua.match(/mobile/i) == 'mobile';
+            var isIpad = ua.match(/ipad/) == 'ipad';
+
+            platform.isMobile = function () {
+                return isMobile && !isIpad;
+            }
+            if(platform.isMobile()) {
+                (function(win){var doc=win.document,html=doc.documentElement,option=html.getAttribute("data-use-rem");if(option===null){return}var baseWidth=parseInt(option).toString()==="NaN"?640:parseInt(option);var grids=baseWidth/100;var clientWidth=html.clientWidth||320;html.style.fontSize=clientWidth/grids+"px";var testDom=document.createElement("div");var testDomWidth=0;var adjustRatio=0;testDom.style.cssText="height:0;width:1rem;";doc.body.appendChild(testDom);var calcTestDom=function(){testDomWidth=testDom.offsetWidth;if(testDomWidth!==Math.round(clientWidth/grids)){adjustRatio=clientWidth/grids/testDomWidth;var reCalcRem=clientWidth*adjustRatio/grids;html.style.fontSize=reCalcRem+"px"}else{doc.body.removeChild(testDom)}};setTimeout(calcTestDom,20);var reCalc=function(){var newCW=html.clientWidth;if(newCW===clientWidth){return}clientWidth=newCW;html.style.fontSize=newCW*(adjustRatio?adjustRatio:1)/grids+"px"};if(!doc.addEventListener){return}var resizeEvt="orientationchange" in win?"orientationchange":"resize";win.addEventListener(resizeEvt,reCalc,false);doc.addEventListener("DOMContentLoaded",reCalc,false)})(window);
+            }
+        })()
+    </script>
+</head>
+<body class="opg" ontouchstart>
+<p id="bear"></p>
+<div class="weui-tab" id="tab">
+    <div class="weui-navbar">
+        <div class="weui-navbar__item">反馈</div>
+        <div class="weui-navbar__item">表单</div>
+        <div class="weui-navbar__item">上传</div>
+        <div class="weui-navbar__item">其它</div>
+    </div>
+    <div class="weui-tab__panel">
+        <div class="weui-tab__content page_feedback">
+            <a href="javascript:;" id="toastBtn" class="weui-btn weui-btn_default">Toast</a>
+            <a href="javascript:;" id="shareBtn" class="weui-btn weui-btn_default">Share</a>
+        </div>
+    </div>
+</div>
+</body>
+</html>

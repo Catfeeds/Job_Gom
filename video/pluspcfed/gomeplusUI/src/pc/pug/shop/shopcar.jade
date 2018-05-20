@@ -1,0 +1,241 @@
+doctype html
+html(lang="zh-CN")
+	include ../../../pc-widget/head/head.jade
+	link(type="text/css",rel="stylesheet",href="../../css/public/public.css")
+	link(type="text/css",rel="stylesheet",href="../../css/module/shopcart.css")
+	link(type="text/css",rel="stylesheet",href="../../css/module/shoppublic.css")
+	body.opg
+		include ../../../pc-widget/header/header.jade
+		include ../../../pc-widget/menu/menu.jade
+		.wrap-box
+			h1.shopcar 购物车
+			table.shop-car-list
+				tr.bor-bom
+					th.width55
+						.check-all
+							input(type="checkbox")
+							div.shop-arl-check
+								a.icon-hook(href="javescript:")
+							span 全选
+						.merchandise-news 商品信息
+					th 单价（元）
+					th 数量
+					th 金额（元）
+					th 操作
+			table.shop-car-list.active
+				tr.bor-bom
+					td.align-left(colspan="5")
+						.check-all
+							input(type="checkbox")
+							div.shop-arl-check.martop3
+								a.icon-hook(href="javescript:")
+							span.store-name-text 马克华妃旗舰店2
+							p.warn
+								em.iconn-12
+								| 该店铺单笔限额￥5000.00，请重新选择
+				- for (var a = 0; a < 4; a++)
+					tr.active
+						td.width55
+							.products-by
+								input(type="checkbox")
+								div.shop-arl-check.martop0
+									a.icon-hook(href="javescript:")
+								.graphic
+									.product-bx
+										a(href="#")
+											img(src="//img.alicdn.com/bao/uploaded/i1/TB1OgSRLVXXXXaaXFXXXXXXXXXX_!!0-item_pic.jpg_250x250xz.jpg")
+											span.off-shelf 已下架
+									.product-name
+										h4.product-title
+											a(href="#")
+												em.ic-hwg 海外购
+												| 洗颜专科矿物质水清透防晒乳液洗颜专科矿物质水清透防晒乳液防晒乳液
+										p.product-color 颜色：SPF30 .PA 40ml
+										p.product-source
+											span 商品来自美店：
+											a(href="#") 农夫山泉小店
+						td
+							div.new-border-bom 500.00
+						td
+							div.new-border-bom
+								div.product-number
+									a(href="javescript:") -
+									input(value="4")
+									a(href="javescript:") +
+								.over-count 单个商品购买数量已超载
+						td
+							div.new-border-bom  1122.00
+						td
+							div.new-border-bom
+								a(href="javescript:") 删除
+			.total-price-limit
+				em.iconn-12
+				| 该店铺单笔限额￥5000.00，请重新选择
+			table.shop-car-list.fail-title
+				tr.bor-bom
+					th.width55
+						.check-all
+							span 失效商品
+					th 单价（元）
+					th 数量
+					th 金额（元）
+					th 操作
+			table.shop-car-list.shop-car-fail
+				tr.bor-bom
+					td.align-left(colspan="5")
+						.check-all
+							// icon替换 .icon-shop
+							em.icon.iconn-44
+							a(href="#")
+								span.store-name-text 马克华妃旗舰店2
+				- for (var a = 0; a < 4; a++)
+					tr
+						td.width55
+							.products-by
+								.shop-fail-text
+									p 失效
+								.graphic
+									.product-bx
+										a(href="#")
+											img(src="//img.alicdn.com/bao/uploaded/i1/TB1OgSRLVXXXXaaXFXXXXXXXXXX_!!0-item_pic.jpg_250x250xz.jpg")
+											span.off-shelf 已下架
+									.product-name
+										h4.product-title
+											a(href="#") 洗颜专科矿物质水清透防晒乳液洗颜专科矿物质水清透防晒乳液防晒乳液
+										p.product-color 颜色：SPF30 .PA 40ml
+										p.product-source
+											span 商品来自美店：
+											a(href="#") 农夫山泉小店
+											span.red 该商品已经无货了
+						td
+							div.new-border-bom 500.00
+						td
+							div.new-border-bom 2
+						td
+							div.new-border-bom  1122.00
+						td
+							div.new-border-bom
+								a(href="javescript:") 删除
+			table.shop-car-list.over-inherit.shop-car-fail
+				tr.bor-bom
+					td.align-left.volume-pop(colspan="5")
+						.check-all
+							// icon替换 .icon-shop
+							em.icon.iconn-44
+							span.store-name-text 马克华妃旗舰店
+				- for (var a = 0; a < 4; a++)
+					tr
+						td.width55
+							.products-by
+								.shop-fail-text
+									p 失效
+								.graphic
+									.product-bx
+										a(href="#")
+											img(src="//img.alicdn.com/bao/uploaded/i1/TB1OgSRLVXXXXaaXFXXXXXXXXXX_!!0-item_pic.jpg_250x250xz.jpg")
+											span.off-shelf 已下架
+									.product-name
+										h4.product-title
+											a(href="#") 洗颜专科矿物质水清透防晒乳液洗颜专科矿物质水清透防晒乳液防晒乳液
+										p.product-color 颜色：SPF30 .PA 40ml
+										p.product-source
+											span 商品来自美店：
+											a(href="#") 农夫山泉小店
+											span.red 该商品已经无货了
+						td
+							div.new-border-bom 500.00
+						td
+							div.new-border-bom 2
+						td
+							div.new-border-bom 1122.00
+						td
+							div.new-border-bom
+								a(href="javescript:") 删除
+			.fail-more
+				a(href="javescript:").btn 更多
+			div.floating-layer.bor-top
+				table.shop-car-list.bottom-nav
+					tr
+						td.align-left(colspan="5")
+							.check-all
+								input(type="checkbox")
+								div.shop-arl-check.margtop16
+									a(href="javescript:")
+								span.store-name-text.martop13 全选
+							a(href="##").delete-selecte-items.martop13 删除选中的商品
+							a(href="##").delete-selecte-items.martop13 删除全部失效商品
+							.commodity-prices 已选商品
+								strong 12
+								| 件&nbsp;&nbsp;&nbsp;合计（不含运费）：
+								strong.font-size20 ￥456 .00
+								a(href="javescript:").pc-btn.pc-btnw120.pc-btnh40.disabled 去结算
+							.separate-pay
+								em.icon-down
+								a(href="javascript:;").iconn-7
+								h3 请分开结算以下商品
+								ul.content
+									- for (var i=0; i<6; i++)
+										li
+											.left
+												p.shop 国美海外购官方旗舰店
+												p.total
+													| 包含1件商品，合计：
+													span.red ￥1812.00
+													| 元
+											a(href="##").pc-btn.pc-btnh30 去结算
+			.search-result.top30
+				.result-text.clearfix
+					// icon替换 icon
+					em.iconn-5
+					p.text-left
+						| 您的购物车还是空的，去看看心仪的商品吧~
+						br
+						a(href="#") 去购物
+			h2.title 我的收藏
+			.shop-list
+				// icon替换 .icon-left
+				a(href="javascript:;").icon.iconn-8
+				// icon替换 .icon-right
+				a(href="javascript:;").icon.iconn-9
+				.shop-list-scroll
+					ul.clearfix
+						- for (var a = 0; a < 15; a++)
+							li
+								a(href="#")
+									img(src="https://i6.meixincdn.com/v1/img/T1GRYTB7KT1R4cSCrK.png")
+									.text
+										| ￥
+										span 259.00
+										p 我新依旧心潮澎湃要你命300湃要你命300
+									.btn-box
+										span.pc-btn.pc-btnh40.pc-bj-fc8753 加入购物车
+			h2.title 为您推荐
+			.shop-list
+				// icon替换 .icon-left
+				a(href="javascript:;").icon.iconn-8
+				// icon替换 .icon-right
+				a(href="javascript:;").icon.iconn-9
+				.shop-list-scroll
+					ul.clearfix
+						- for (var b = 0; b < 15; b++)
+							li
+								a(href="#")
+									img(src="https://i6.meixincdn.com/v1/img/T1GRYTB7KT1R4cSCrK.png")
+									.text
+										| ￥
+										span 259.00
+										p 我新依旧心潮澎湃要你命300湃要你命300
+									.btn-box
+										span.pc-btn.pc-btnh40.pc-bj-fc8753 加入购物车
+				.shop-list-tab
+					a(href="javascript:;").active 1
+					a(href="javascript:;") 1
+					a(href="javascript:;") 1
+					a(href="javascript:;") 1
+					a(href="javascript:;") 1
+			.loading-box
+				.loading-img
+					img(src="../../images/public/loading.gif")
+					p 加载中...
+		include ../../../pc-widget/footer/footer.jade
+

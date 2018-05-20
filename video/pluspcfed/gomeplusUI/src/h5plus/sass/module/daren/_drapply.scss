@@ -1,0 +1,79 @@
+@charset "UTF-8";
+// @ Css name：达人申请-初始&完成
+// @ Author： Kan Jingjing
+// @ Date： 2017-05-11
+// @ Last Modified by： Kan Jingjing
+// @ Last Modified time：2017-05-12
+//==========================
+
+.drsq-c {
+	height: rem(520);
+	background: url(../../../images/daren/dr-bg2.png) no-repeat;
+}
+.drsq-b {
+	height: rem(266);
+	background: url(../../../images/daren/drtq.png) no-repeat;
+}
+.title-t {
+	width: rem(320);
+	height: rem(146);
+	background-position: 0 0;
+	margin: rem(58) auto rem(38);
+}
+.title-b {
+	width: rem(320);
+	height: rem(138);
+	background-position: rem(0 -165);
+	margin: rem(48) auto rem(46);
+}
+.apply-task {
+	padding: 0 rem(40);
+	li {
+		padding:rem(30 38 24 32);
+		background-color: #fff8a6;
+		overflow: hidden;
+		&:first-child {
+			margin-bottom: rem(20);
+		}
+		p {
+			float: left;
+			font-size: rem(32);
+		}
+		span {
+			display: block;
+			font-size: rem(24);
+			color: #666;
+			margin-top: rem(14);
+			text-indent: rem(20);
+		}
+	}
+	.task-btn {
+		float: right;
+		width: rem(160);
+		line-height: 1;
+		padding: rem(21 0);
+		text-align: center;
+		font-size: rem(28);
+		color: #fff;
+		border-radius: rem(34);
+		background-color: #f5773f;
+		&.disabled {
+			background-color: #a4a4a4;
+		}
+		em {
+			width: rem(12);
+			color: #fff;
+			font-size: rem(20);
+			margin-left: rem(6);
+		}
+	}
+}
+.apply-btn{
+	width: rem(676);
+	margin-top: rem(50);
+	span {
+		width: rem(118);
+		height: rem(38);
+		background-position: rem(0 -584);
+	}
+}

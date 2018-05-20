@@ -1,0 +1,63 @@
+.pop-box-wrap
+	//确认订单-发票抬头
+	.pop-box.pop-pad-btm65
+		.ui-dialog-arrow-a
+		.ui-dialog-arrow-b
+		table.ui-dialog-grid
+			tbody
+				tr
+					td.ui-dialog-header
+						button(i="close",title="取消").icon.icon-close &times;
+						.ui-dialog-title 修改发票
+				tr
+					td.ui-dialog-body
+						.ui-body-box
+							.invoice-box.clearfix
+								h3.radio-title 发票类型：
+								div.invoice-flot-lft
+									label
+										span.menu-radio.menu-radio-checked
+										| 不开票
+								div.invoice-flot-lft
+									label
+										span.menu-radio
+										| 普通发票
+							.invoice-box.clearfix
+								h3.radio-title 发票抬头：
+								div.invoice-flot-lft
+									label
+										span.menu-radio.menu-radio-checked
+										| 个人
+								div.invoice-flot-lft
+									label
+										span.menu-radio
+										| 单位
+							div.please-enter
+								em.icon.close &#xea5a;
+								input(type="text",placeholder="请输入个人发票抬头").input-error
+								input(type="text",placeholder="请输入单位发票抬头").input-error
+								p.error
+									em.icon &#xe961;
+									| 头不能为空！请输入您的姓名／单位
+							p.invoice-content 发票内容：由供应商自行确定发票内容
+				tr
+					td.ui-dialog-footer
+						.two-buttons
+							a(href="javascript:;").pc-btn.pc-btnh40.pc-btnw120 确认修改
+							a(href="javascript:;").queren-btn.pc-btnh40.pc-btnw120 取消
+.pop-box-wrap
+	//圈子主页-加入圈子
+	.pop-box
+		.ui-dialog-arrow-a
+		.ui-dialog-arrow-b
+		table.ui-dialog-grid
+			tbody
+				tr
+					td.ui-dialog-header
+						button(i="close",title="取消").icon.icon-close &times;
+				tr
+					td.ui-dialog-body
+						p.circle-pop-p 恭喜，您已加入圈子
+				tr
+					td.ui-dialog-footer
+						a.pc-btn.pc-btnh35.circle-pop-btn(href="javascript:;") 保存

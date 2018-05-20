@@ -1,0 +1,36 @@
+/* my-record */
+@import "../../base/public.scss";
+@import "../../components/topTitle.scss";
+@import "../../components/myCardList.scss";
+@import "../../components/scroll-load.scss";
+@import '../../components/pullToRefresher';
+
+body{
+	background:#FFF;
+	padding-bottom:0;
+}
+.login-tag{
+	height:rem(90);
+	padding:rem(18) rem(40);
+	background: rgba(0,0,0,.5);
+	color:#FFF;
+	font-size:rem(30);
+	line-height:rem(54);
+	overflow:hidden;
+	.login-btn{
+		width: rem(160);
+		height:rem(54);
+		text-align:center;
+		background-color: #FF4FA1;
+		font-size:rem(24);
+		float: right;
+		border-radius: rem(27);
+	}
+}
+.empty-data{
+	padding:rem(20);
+	height:rem(30);
+	line-height:rem(30);
+	text-align:center;
+	font-size:rem(26);
+}

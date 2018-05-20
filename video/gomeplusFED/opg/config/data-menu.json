@@ -1,0 +1,113 @@
+{
+  "menu":[
+    {
+      "id":1,
+      "default": true,
+      "name": "编译/更新提醒",
+      "url": "#",
+      "target":"compileMode",
+      "child":[
+        {
+          "id":11,
+          "default": false,
+          "name": "sass编译",
+          "url": "#",
+          "target":"",
+          "child":[]
+        },
+        {
+          "id":12,
+          "default": false,
+          "name": "jade编译",
+          "url": "#",
+          "target":"",
+          "child":[]
+        }
+      ]
+    },
+    {
+      "id":2,
+      "default": false,
+      "name": "gomeplusUI管理",
+      "url": "#",
+      "target":"gomeplusUIM",
+      "child":[]
+    }
+  ],
+  "bizType":{
+    "app":{
+      "task":"default",
+      "path":"src",
+      "gulpSassSrc":"",
+      "gulpSassDest":"",
+      "gulpJadeSrc":"",
+      "gulpJadeDest":"",
+      "gulpImgDest":"",
+      "gulpImgSrc":"app"
+    },
+    "h5":{
+      "task":"default",
+      "path":"src",
+      "gulpSassSrc":"",
+      "gulpSassDest":"",
+      "gulpJadeSrc":"",
+      "gulpJadeDest":"",
+      "gulpImgDest":"",
+      "gulpImgSrc":"h5"},
+    "op/app":{
+      "task":"default",
+      "path":"src",
+      "gulpSassSrc":"",
+      "gulpSassDest":"",
+      "gulpJadeSrc":"",
+      "gulpJadeDest":"",
+      "gulpImgDest":"",
+      "gulpImgSrc":"op/app"},
+    "op/pc":{
+      "task":"default",
+      "path":"src",
+      "gulpSassSrc":"",
+      "gulpSassDest":"",
+      "gulpJadeSrc":"",
+      "gulpJadeDest":"",
+      "gulpImgDest":"",
+      "gulpImgSrc":"op/pc"},
+    "op/h5":{"path":"src"},
+    "pc":{
+      "task":"default",
+      "path":"src",
+      "gulpSassSrc":"",
+      "gulpSassDest":"",
+      "gulpJadeSrc":"",
+      "gulpJadeDest":"",
+      "gulpImgDest":"",
+      "gulpImgSrc":"pc"},
+    "pc-widget":{
+      "task":"jadeImg",
+      "path":"assets",
+      "gulpSassSrc":"",
+      "gulpSassDest":"",
+      "gulpJadeSrc":"",
+      "gulpJadeDest":"",
+      "gulpImgDest":"",
+      "gulpImgSrc":"pc"},
+    "m-widget":{
+      "task":"jadeImg",
+      "path":"assets",
+      "gulpSassSrc":"",
+      "gulpSassDest":"",
+      "gulpJadeSrc":"",
+      "gulpJadeDest":"",
+      "gulpImgDest":"",
+      "gulpImgSrc":"pc"},
+    "ad":{
+      "task":"default",
+      "path":"src",
+      "gulpSassSrc":"",
+      "gulpSassDest":"",
+      "gulpJadeSrc":"",
+      "gulpJadeDest":"",
+      "gulpImgDest":"",
+      "gulpImgSrc":"ad"}
+  }
+}

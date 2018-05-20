@@ -1,0 +1,161 @@
+doctype html
+html(lang="zh-CN")
+	include ../../../pc-widget/head/head.jade
+	link(type="text/css",rel="stylesheet",href="../../css/public/public.css")
+	link(type="text/css",rel="stylesheet",href="../../css/module/postcomment.css")
+	body.opg
+		include ../../../pc-widget/header/header.jade
+		include ../../../pc-widget/menu/menu.jade
+		.crumbs-box
+			a(href="javascript:;") 我的订单
+			em >
+			a(href="javascript:;") 待评论
+			em >
+			span.crnmb-activ 发布评论
+		.wrap-box
+			.bg-white
+				table.post-comment-table
+					tr
+						th.borb
+							h2.comment-title 评价订单
+						th.borb
+							.order-num
+								span.font-grey-normal 订单号：
+								span 98766598686
+					tr
+						td.borr
+							.product-info.borb
+								a(href="javascript:;")
+									img(src="../../images/public/default-img2.jpg").product-img
+								a(href="javascript:;").prod-title 洗颜专科矿物质水清透防晒乳液洗颜专科矿
+								p 颜色：SPF30 .PA 40ml
+						td
+							.comment-box.borb
+								ul.comment-post
+									li
+										span.feature-title 描述相符：
+										.star-box
+											// icon替换 .icon.icon-star
+											a(href="javascript:;").iconn-43
+											a(href="javascript:;").iconn-43
+											a(href="javascript:;").iconn-43
+											a(href="javascript:;").iconn-43
+											a(href="javascript:;").iconn-43
+											span.zero 0分
+									li
+										span.feature-title 评价商品：
+										.textarea
+											textarea(placeholder="评价商品")
+											p.txt-count
+												span 200
+												| /200
+									li
+										span.feature-title 我要晒图：
+										.pics-list-wrap.clearfix
+											ul.pics-list.clearfix
+												li
+													img(src="../../images/public/default-img2.jpg" alt="")
+													// icon替换 .icon.icon-dele-pic
+													a(href="javascript:;").iconn-66
+												li
+													img(src="../../images/public/default-img2.jpg" alt="")
+													// icon替换 .icon.icon-dele-pic
+													a(href="javascript:;").iconn-66
+												li
+													a(href="javascript:;").re-upload 重新上传
+												li
+													.bar-upload-pic
+														span
+												li
+													input(type="file")
+													// icon替换 .icon.icon-add
+													a(href="javascript:;").iconn-50
+											div.num-pics
+												| 您可以添加 
+												span.link-hover-red 1
+												span.deep-gray /9 
+												| 张图片
+					tr
+						td.borr
+							.product-info
+								a(href="javascript:;")
+									img(src="../../images/public/default-img2.jpg").product-img
+								a(href="javascript:;").prod-title 洗颜专科矿物质水清透防晒乳液洗颜专科矿
+								p 颜色：SPF30 .PA 40ml
+						td
+							.comment-box.borb
+								ul.comment-post
+									li
+										span.feature-title 描述相符：
+										.star-box
+											// icon替换 .icon.icon-star
+											a(href="javascript:;").iconn-43
+											a(href="javascript:;").iconn-43
+											a(href="javascript:;").iconn-43
+											a(href="javascript:;").iconn-43
+											a(href="javascript:;").iconn-43
+											span.zero 0分
+									li
+										span.feature-title 评价商品：
+										.textarea
+											textarea(placeholder="评价商品")
+											p.txt-count
+												span 200
+												| /200
+									li
+										span.feature-title 我要晒图：
+										.pics-list-wrap.clearfix
+											ul.pics-list.clearfix
+												li
+													img(src="../../images/public/default-img2.jpg" alt="")
+													// icon替换 .icon.icon-dele-pic
+													a(href="javascript:;").iconn-66
+												li
+													img(src="../../images/public/default-img2.jpg" alt="")
+													// icon替换 .icon.icon-dele-pic
+													a(href="javascript:;").iconn-66
+												li
+													img(src="../../images/public/default-img2.jpg" alt="")
+													// icon替换 .icon.icon-dele-pic
+													a(href="javascript:;").iconn-66
+												li
+													img(src="../../images/public/default-img2.jpg" alt="")
+													// icon替换 .icon.icon-dele-pic
+													a(href="javascript:;").iconn-66
+												li
+													input(type="file")
+													// icon替换 .icon.icon-add
+													a(href="javascript:;").iconn-50
+											div.num-pics
+												| 您可以添加 
+												span.link-hover-red 1
+												span.deep-gray /9 
+												| 张图片
+					tr
+						td.borr
+						td
+							.service-score
+								span.feature-title 服务态度
+								.star-box
+									// icon替换 .icon.icon-star
+									a(href="javascript:;").iconn-43.active
+									a(href="javascript:;").iconn-43.active
+									a(href="javascript:;").iconn-43.active
+									a(href="javascript:;").iconn-43.active
+									a(href="javascript:;").iconn-43
+									span.star-num
+										em.icon-left
+										| 4分满意
+								span.feature-title 物流态度
+								.star-box
+									// icon替换 .icon.icon-star
+									a(href="javascript:;").iconn-43
+									a(href="javascript:;").iconn-43
+									a(href="javascript:;").iconn-43
+									a(href="javascript:;").iconn-43
+									a(href="javascript:;").iconn-43
+									span.star-num.five
+										em.icon-left
+										| 5分满意
+								a(href="javascript:;").submit-comment 提交评论
+		include ../../../pc-widget/footer/footer.jade

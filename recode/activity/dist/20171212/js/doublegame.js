@@ -1,0 +1,1 @@
+"use strict";!function(){function e(){var e,t=(document.documentElement||document.body.parentNode).clientWidth;t>650&&(t=640),e=Math.floor(100*t/640),(document.documentElement||document.body.parentNode).style.fontSize=e+"px"}e(),window.addEventListener("resize",function(){e()})}();

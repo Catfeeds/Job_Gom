@@ -1,0 +1,49 @@
+doctype html
+html(lang="zh-CN")
+    include ../../../../../gomeplusUI/pc/src/jade/head.jade
+    body.opg.lg-bg
+        link(type="text/css",rel="stylesheet",href="../../css/public/public.css")
+        link(type="text/css",rel="stylesheet",href="../../css/module/usercenter/usercenter.css")
+        .lg-header
+            .lg-header-in
+                h1.lg-logo
+                    a 国美plus
+        .lg-main
+            //步骤 开始
+            ul.lg-steps.clearfix
+                li.active
+                    em 1
+                    | 填写门店信息
+                li
+                    em 2
+                    | 重置完成
+            //步骤 结束
+            div.lg-form
+                ul.lg-form-list
+                    .lg-error-tip.clearfix
+                        em.icon.icon-error &#xe983;
+                        span 您已三次输入错误，请输入验证码
+                    li.clearfix.lg-form-it.lg-form-error
+                        label 门店会员账号
+                        div.lg-form-cont
+                            input.lg-input-it(type="text" placeholder="请输入门店会员账号")
+                        span.lg-warm 此门店账号不存在，请重新输入
+                    li.clearfix.lg-form-it
+                        label 手机号
+                        div.lg-form-cont
+                            input.lg-input-it(type="text" placeholder="请输入与门店匹配手机号") 
+                        span.lg-warm 
+                a.pc-btn.pc-btnw300.pc-btnh45.lg-mt.btn-default(href="javascript:;") 重置
+                //重置完成
+                h4.lg-succ-top
+                    em.icon &#xea52;
+                    | 门店会员密码重置成功！
+                p.congratulation
+                    | 已下发至“
+                    span 15811077046
+                    | ”手机，请查收短信，马上
+                    a(href="javascript:;") 登录
+        include ../../../../../gomeplusUI/pc/src/jade/footer.jade
+
+
+

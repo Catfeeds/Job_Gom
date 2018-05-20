@@ -1,0 +1,29 @@
+@import '../config/_base.scss';
+.share-down{
+    display: none;
+    position: relative;
+    text-align: center;
+    width: 170px;
+    background-color: $bg-fff;
+    border-radius: 3px;
+    border: 1px solid $bor-bom;
+    -webkit-box-shadow:0 0 2px 0px rgba(0,0,0,0.6);
+    -moz-box-shadow:0 0 2px 0px rgba(0,0,0,0.6);
+    box-shadow:0 0 2px 0px rgba(0,0,0,0.6);
+    padding: 8px 0 3px;
+    .icon-up-arrow{
+        width: 18px;
+        height: 10px;
+        position: absolute;
+        top: -10px;
+        left: 50%;
+        margin-left: -9px;
+        z-index: 100;
+        background: url(../../images/imoj-up-arrow.png) no-repeat;
+    }
+    em{
+        font-size: $text18;
+        margin: 0 3px 0;
+        color: $color-gray;
+    }
+}

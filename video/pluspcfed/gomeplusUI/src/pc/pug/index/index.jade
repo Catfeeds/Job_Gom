@@ -1,0 +1,409 @@
+doctype html
+html(lang="zh-CN")
+	include ../../../pc-widget/head/head.jade
+	link(type="text/css",rel="stylesheet",href="../../css/public/public.css")
+	link(type="text/css",rel="stylesheet",href="../../css/module/index.css")
+	body.opg
+		.low-v-warn
+			p
+				| 为了保障良好的社交购物体验，建议您
+				a(href="javascript:;") 升级IE浏览器
+				| ，或下载
+				a(href="javascript:;") 国美Plus APP
+		include ../../../pc-widget/header/header-merge.jade
+		include ../../../pc-widget/header/header.jade
+		include ../../../pc-widget/menu/menu.jade
+		.black-mask
+		.low-v-prompt
+			a(href="javascript:;").ie-update-btn
+			a(href="javascript:;").close-btn
+		.banner
+			ul
+				- for (var x = 0; x < 4; x++)
+					li
+						a(href="#")
+							img(src="https://i6.meixincdn.com/v1/img/T1ItYTB5WT1RXrhCrK.jpg")
+			// icon替换 icon-left
+			em.icon.iconn-8
+			// icon替换 icon-right
+			em.icon.iconn-9
+			.banner-page
+				ol
+					li.active 1
+					li 2
+					li 3
+					li 4
+		.wrap-box
+			.index-popular
+				.index-title.clearfix
+					h2.hot-topic 热门话题
+						span Hot Topic
+				.hot-topic-list
+					- for (var x = 0; x < 3; x++)
+						a(href="##")
+							img(src="https://i6.meixincdn.com/v1/img/T1GRYTB7KT1R4cSCrK.png")
+				.index-title.clearfix
+					h2.joinus 加入圈子
+						span Join Us
+				ul.joinus
+					- for (var x = 0; x < 4; x++)
+						li.circle-list
+							img(src="../../images/public/head-default.png")
+							span.title 国美精选
+							a(href="##").join-btn
+								| 加入圈子 
+								em.iconn-50
+					li.circle-list
+						img(src="../../images/public/head-default.png")
+						span.title 国美精选
+						a(href="##").join-btn.join-suc
+							em.iconn-20
+							| 加入圈子
+					li.circle-list
+						img(src="../../images/public/head-default.png")
+						span.title 互联网那些事
+						a(href="##").out-btn 退出圈子
+				.index-title.clearfix
+					h2.mx-recommend 美信推荐
+						span Popular recommendation
+				.index-popular-list
+					ul.clearfix
+						- for (var x = 0; x < 6; x++)
+							li
+								.mg-negative
+									.img.scale-small
+										img(src="https://i6.meixincdn.com/v1/img/T1GRYTB7KT1R4cSCrK.png")
+									.img-box
+										a(href="#")
+											img(src="https://i6.meixincdn.com/v1/img/T1CzhTBXCT1RXrhCrK.jpg")
+											p.hover
+												em.icon-play
+										a(href="#")
+											img(src="https://i6.meixincdn.com/v1/img/T1CzhTBXCT1RXrhCrK.jpg")
+											p.hover
+												| ￥
+												span 5400.00
+										a(href="#")
+											img(src="https://i6.meixincdn.com/v1/img/T1CzhTBXCT1RXrhCrK.jpg")
+											p.hover
+												| ￥
+												span 5400.00
+									.text
+										span.tag 时尚
+										a(href="#").list-title 旅游出行摄影必备
+										p.gray 一双能助你奔波而又不累的运动战靴，相机架加单反相机架加单反相机架加单反相机架加单反
+										.text-icon
+											a(href="javascript:;").icon-collect
+												// icon替换 icon-collection
+												em.icon.iconn-10
+												| 238
+											a(href="javascript:;").a-share
+												// icon替换 icon-share
+												em.icon.iconn-11
+												span 121
+												// em.icon.icon-right &#xe98c;
+													p
+														em.icon.icon-weixin &#xe937;
+														em.icon.icon-qq &#xe900;
+														em.icon.icon-sina &#xe935;
+														em.icon.icon-kongjian &#xe902;
+			.index-circle
+				.index-title.clearfix
+					h2.circle-topic 圈子话题
+						span Circle topic
+					a(href="#") 发布话题
+				.index-circle-list
+					ul.clearfix
+						- for (var x = 0; x < 10; x++)
+							li
+								.mg-negative
+									.topic-tag
+										em.icon-lysy
+											img(src="https://i6.meixincdn.com/v1/img/T1GRYTB7KT1R4cSCrK.png")
+										span 旅游摄影
+									.img.scale-small
+										em.icon-play
+										img(src="https://i6.meixincdn.com/v1/img/T1GRYTB7KT1R4cSCrK.png")
+									.text
+										a(href="#").list-title 旅游出行摄影必备
+										.text-icon
+											a(href="javascript:;").icon-collect
+												// icon替换 icon-collection
+												em.icon.iconn-10
+												| 238
+											a(href="javascript:;").a-share
+												// icon替换 icon-share
+												em.icon.iconn-11
+												span 121
+			.index-shop
+				.index-title.clearfix
+					h2.gg-goods 逛逛商品
+						span Go shopping
+					a(href="#") 逛商城
+				.index-shop-list
+					table
+						tr
+							td(rowspan="2")
+								a(href="#")
+									img(src="https://i6.meixincdn.com/v1/img/T1GRYTB7KT1R4cSCrK.png",width="300",height="420")
+							td(rowspan="2")
+								.banner.banner-s
+									ul
+										- for (var x = 0; x < 4; x++)
+											li
+												a(href="#")
+													img(src="https://i6.meixincdn.com/v1/img/T1ItYTB5WT1RXrhCrK.jpg")
+									// icon替换 icon-left
+									em.icon.iconn-8
+									// icon替换 icon-right
+									em.icon.iconn-9
+									.banner-page
+										ol
+											li.active 1
+											li 2
+											li 3
+											li 4
+							td
+								a(href="#")
+									img(src="https://i6.meixincdn.com/v1/img/T1GRYTB7KT1R4cSCrK.png",width="230",height="210")
+							td
+								a(href="#")
+									img(src="https://i6.meixincdn.com/v1/img/T1GRYTB7KT1R4cSCrK.png",width="230",height="210")
+						tr
+							td
+								a(href="#")
+									img(src="https://i6.meixincdn.com/v1/img/T1GRYTB7KT1R4cSCrK.png",width="230",height="210")
+							td
+								a(href="#")
+									img(src="https://i6.meixincdn.com/v1/img/T1GRYTB7KT1R4cSCrK.png",width="230",height="210")
+						tr
+							td
+								.list-text
+									ul.clearfix
+										- for (var d = 0; d < 10; d++)
+											li
+												a(href="#") 滚筒洗衣机
+							td
+								a(href="#")
+									img(src="https://i6.meixincdn.com/v1/img/T1GRYTB7KT1R4cSCrK.png",width="438",height="210")
+							td
+								a(href="#")
+									img(src="https://i6.meixincdn.com/v1/img/T1GRYTB7KT1R4cSCrK.png",width="230",height="210")
+							td
+								a(href="#")
+									img(src="https://i6.meixincdn.com/v1/img/T1GRYTB7KT1R4cSCrK.png",width="230",height="210")
+					table(style="display:none")
+						tr
+							td
+								.img-position
+									a(href="#")
+										.pa.pa1
+											p 介个思标题
+											| ￥
+											span 222.00
+										img(src="https://i6.meixincdn.com/v1/img/T1GRYTB7KT1R4cSCrK.png",width="240",height="210")
+							td(rowspan="2")
+								.img-position
+									a(href="#")
+										.pa.pa2
+											p 介个思标题
+											| ￥
+											span 222.00
+										img(src="https://i6.meixincdn.com/v1/img/T1CzhTBXCT1RXrhCrK.jpg",width="240",height="420")
+							td
+								.img-position
+									a(href="#")
+										.pa.pa3
+											p 介个思标题
+											| ￥
+											span 222.00
+										img(src="https://i6.meixincdn.com/v1/img/T1JtDTBvDT1RXrhCrK.jpg",width="240",height="210")
+							td(colspan="2")
+								.img-position
+									a(href="#")
+										.pa.pa4
+											p 介个思标题
+											| ￥
+											span 222.00
+										img(src="https://i6.meixincdn.com/v1/img/T1LtVTB4ET1RXrhCrK.jpg",width="479",height="210")
+						tr
+							td
+								.img-position
+									a(href="#")
+										.pa.pa5
+											p 介个思标题
+											| ￥
+											span 222.00
+										img(src="https://i6.meixincdn.com/v1/img/T1ltWTBXWT1RXrhCrK.jpg",width="240",height="210")
+							td
+								.img-position
+									a(href="#")
+										.pa.pa6
+											p 介个思标题
+											| ￥
+											span 222.00
+										img(src="https://i6.meixincdn.com/v1/img/T1GRYTB7KT1R4cSCrK.png",width="240",height="210")
+							td(rowspan="2")
+								.img-position
+									a(href="#")
+										.pa.pa7
+											p 介个思标题
+											| ￥
+											span 222.00
+										img(src="https://i6.meixincdn.com/v1/img/T1GRYTB7KT1R4cSCrK.png",width="240",height="420")
+							td
+								.img-position
+									a(href="#")
+										.pa.pa8
+											p 介个思标题
+											| ￥
+											span 222.00
+										img(src="https://i6.meixincdn.com/v1/img/T1GRYTB7KT1R4cSCrK.png",width="240",height="210")
+						tr
+							td(colspan="2")
+								.img-position
+									a(href="#")
+										.pa.pa9
+											p 介个思标题
+											| ￥
+											span 222.00
+										img(src="https://i6.meixincdn.com/v1/img/T1bRbTB4ZT1RXrhCrK.jpg",width="480",height="210")
+							td
+								.img-position
+									a(href="#")
+										.pa.pa10
+											p 介个思标题
+											| ￥
+											span 222.00
+										img(src="https://i6.meixincdn.com/v1/img/T1CFJTBXKT1RXrhCrK.jpg",width="239",height="210")
+							td
+								.img-position
+									a(href="#")
+										.pa.pa11
+											p 介个思标题
+											| ￥
+											span 222.00
+										img(src="https://i6.meixincdn.com/v1/img/T1CFJTBXKT1RXrhCrK.jpg",width="239",height="210")
+			.index-interest
+				.index-title.clearfix
+					h2.interest-circle 兴趣圈子
+						span Interest circle
+					a(href="#") 更多圈子
+				.index-interest-list
+					ul.clearfix
+						li.first
+							.mg-negative
+								.img.scale-small
+									img(src="https://i6.meixincdn.com/v1/img/T1GRYTB7KT1R4cSCrK.png")
+								.text
+									span.tag 时尚
+									a(href="#").list-title 旅游出行摄影必备
+									.text-icon
+										span.fl
+												em 成员：
+												| 238
+											span.fl
+												em 话题：
+												| 238
+											// a(href="javascript:;").a-share
+												// icon替换 icon-share
+												em.icon.iconn-11
+												span 121
+						- for (var x = 0; x < 6; x++)
+							li
+								.mg-negative
+									.img.scale-small
+										img(src="https://i6.meixincdn.com/v1/img/T1GRYTB7KT1R4cSCrK.png")
+									.text
+										span.tag 时尚
+										a(href="#").list-title 旅游出行摄影必备
+										.text-icon
+											span.fl
+												em 成员：
+												| 238
+											span.fl
+												em 话题：
+												| 238
+											a(href="javascript:;").a-share
+												// icon替换 icon-share
+												em.icon.iconn-11
+												span 121
+												p
+													em.sanjiao
+													em.icon.icon-weixin &#xe937;
+													em.icon.icon-qq &#xe900;
+													em.icon.icon-sina &#xe935;
+													em.icon.icon-kongjian &#xe902;
+			.index-circle.go-on
+				.index-title.clearfix
+					h2.go-on 不断寻觅
+						span Go On
+				.index-circle-list
+					ul.clearfix
+						- for (var x = 0; x < 5; x++)
+							li
+								.mg-negative
+									.img.scale-small
+										img(src="https://i6.meixincdn.com/v1/img/T1GRYTB7KT1R4cSCrK.png")
+									.text
+										a(href="#").list-title 旅游出行摄影必备旅游出行摄影必备旅游出行摄影必备旅游出行摄影必备旅游出行摄影必备旅游出行摄影必备旅游出行摄影必备
+										span.from-title 来自摄影
+									.text-icon
+										a(href="javascript:;")
+											em.icon.iconn-10
+											| 238
+										a(href="javascript:;")
+											em.icon.iconn-11
+											span 121
+										a(href="javascript:;")
+											em.icon.iconn-57
+											span  6
+			.index-link
+				.index-title.clearfix
+					h2.friend-link 友情链接
+						span Friendship link
+				.index-link-list.clearfix
+					a(href="#") 国美控股
+					span |
+					a(href="#") 国美集团
+					span |
+					a(href="#") 国美家装
+					span |
+					a(href="#") 国美金融
+					span |
+					a(href="#") 国美酒业
+					span |
+					a(href="#") 国美在线
+					span |
+					a(href="#") 中国邮政储蓄信用卡
+					span |
+					a(href="#") 大象保险
+					span |
+					a(href="#") 卷皮折扣
+					span |
+					a(href="#") 海南房产网
+					span |
+					a(href="#") GPLP
+					span |
+					a(href="#") 装修新闻网
+					span |
+					a(href="#") 无人机飞行服务
+					br
+					a(href="#") 1905电影网
+					span |
+					a(href="#") 小先生网
+					span |
+					a(href="#") GNC
+					span |
+					a(href="#") 北京新房
+					span |
+					a(href="#") 蛙趣
+					span |
+					a(href="#") 第一金融网
+					span |
+					a(href="#") 刷刷app
+					span |
+					a(href="#") 我爱购物网
+		include ../../../pc-widget/footer/footer.jade
+			
+		

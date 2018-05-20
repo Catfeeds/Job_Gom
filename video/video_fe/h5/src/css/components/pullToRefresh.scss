@@ -1,0 +1,70 @@
+@charset "utf-8";
+@import "./_app.scss";
+
+$ptrSize: 108;
+
+.ptr.transitioning{
+	transition-duration: .4s;
+}
+
+.ptr{
+	.pending, .refreshing{
+		background-size: 100%;
+	    background-repeat: no-repeat;
+	    display: inline-block;
+	    width: rem($ptrSize);
+	    height: rem($ptrSize);
+	}
+	.pending{
+		background-image: url(../../imgs/public/pull-pending.png);
+	}
+	.refreshing{
+		background-image: url(../../imgs/public/pull-refreshing.gif);	
+	}
+}
+
+.ptr.layer{
+	height: rem($ptrSize);
+	text-align: center;
+	font-size: rem(24px);
+	line-height: rem($ptrSize);
+	color: #808080;
+	background-color: #e8edf3;
+	margin-top: rem(-$ptrSize);
+	position: relative;
+	z-index: 99;
+}
+
+.ptr.refreshing{
+	transform: translate3d(0, 90px, 0);
+}
+
+/* iphone 6 */
+@media only screen and (max-device-width: 667px) and (-webkit-device-pixel-ratio: 2) {
+	.ptr{
+		.pending, .refreshing{
+			width: rem(148);
+			height: rem(148);
+		}
+		&.layer{
+			height: rem(148);
+			line-height: rem(148);
+			margin-top: rem(-148);
+		}
+	}
+}
+
+@media only screen and (min-device-width : 414px) and (-webkit-device-pixel-ratio: 3){
+	.ptr{
+		.pending, .refreshing{
+			width: rem(148);
+			height: rem(148);
+		}
+		&.layer{
+			height: rem(148);
+			line-height: rem(148);
+			margin-top: rem(-148);
+		}
+	}
+}
+

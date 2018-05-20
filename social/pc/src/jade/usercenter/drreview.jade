@@ -1,0 +1,30 @@
+doctype html
+html(lang="zh-CN")
+	include ../../../../../gomeplusUI/pc/src/jade/head.jade
+	link(type="text/css",rel="stylesheet",href="../../css/public/public.css")
+	link(type="text/css",rel="stylesheet",href="../../css/module/usercenter/usercenter.css")
+	body.opg
+		.dr-bg
+			a(href="##").back-to-index
+			ul.info-steps
+				li.bar
+					span.active
+					span
+				li.step1.active
+					span.step-num
+						em 1
+					span.step-txt 填写资料
+				li.step2.active
+					span.step-num
+						em 2
+					span.step-txt 审核
+				li.step3
+					span.step-num
+						em 3
+					span.step-txt 审核结果
+			.dr-review
+				.dr-sprites.dr-review-bg
+				p
+					span 您的申请我们正在认真审核哦~
+					span 审核需要1-2个工作日请您耐心等待
+			a(href="##").pc-btn.pc-btnh45.dr-btn.dr-back-btn 返回首页

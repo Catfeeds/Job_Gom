@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta content="yes" name="apple-mobile-web-app-capable">
+  <meta id="viewport" name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no">
+  <title>项目管理新功能，上线啦~~项目信息装进手机，随时查看！</title>
+  <style>
+    body{padding: 0;margin: 0;}
+    img{width: 100%;display:block;border: none;}
+  </style>
+
+</head>
+<body>
+  <img src="https://css.meixincdn.com/m/jira/cover/images/img_00.jpg" style="visibility:hidden;width:0;height:0;">
+  <div><img onload="loadedImg()" src="https://css.meixincdn.com/m/jira/cover/images/img_001.jpg"></div>
+  <div><img onload="loadedImg()"src="https://css.meixincdn.com/m/jira/cover/images/img_002.jpg"></div>
+  <div><img onload="loadedImg()"src="https://css.meixincdn.com/m/jira/cover/images/img_003.jpg"></div>
+  <script>
+  var path = "https://css.meixincdn.com/m/jira/cover/images/"
+  var imgList = ["img_004.jpg","img_005.jpg","img_006.jpg","img_007.jpg","img_008.jpg","img_009.jpg","img_010.jpg"];
+  var imgNum = 0;
+  function loadedImg(){
+    if(++imgNum == 3){
+      imgList.forEach(function(v, index){
+        addImg(v);
+      })
+    }
+  }
+  function addImg(imgName){
+    var img = document.createElement("img");
+    img.src = path + imgName;
+    document.body.appendChild(img);
+  }
+  </script>
+</body>
+</html>

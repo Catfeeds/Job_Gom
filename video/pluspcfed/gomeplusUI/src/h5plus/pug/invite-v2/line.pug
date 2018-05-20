@@ -1,0 +1,153 @@
+doctype html
+html(lang="zh-CN", data-use-rem="750")
+	include ../../../m-widget/head/head.jade
+	link(type="text/css",rel="stylesheet",href="../../css/public/gomeplusUI.css")
+	link(type="text/css",rel="stylesheet",href="../../css/module/invite-v2/invite-v2.css")
+	
+	body.opg.invite(style="background:#ffc02b;")
+		include ../../../m-widget/head/rem.jade
+		//- 主题图
+		section.invite-theme
+			img(src="../../images/invite-v2/theme01.jpg")
+			img(src="../../images/invite-v2/theme02.jpg")
+			img(src="../../images/invite-v2/theme03.jpg")
+			a.invite-icon(href="#")
+				img(src="../../images/invite-v2/invite-icon.png")
+		//- 内容
+		section.invite-content
+			//- tabs
+			.invite-tabs
+				ul
+					li(style="color:#fdda89;") 活动规则
+					li(style="color:#fdda89;") 我的邀请
+					li.actived(style="color:#f39800;") 邀请排行榜
+			.invite-main
+				//- 活动规则 
+				section.invite-rule
+					.rule-steps
+						img(src="../../images/invite-v2/rule-steps.jpg")
+					.rule-infor
+						dl
+							dt 邀请奖励发放规则
+							dd 1.您每推荐一个好友注册成功，好友均可获得首单礼和新人礼包；新人礼包和首单礼均为手动发放，预计7天到账；
+							dd 2.您每推荐一个好友注册并下单，均有一定比例的国美币打入到您的账户；国美币可用于提现；1元国美币=1元现金；
+							dd 3.您每推荐一个好友注册，该好友并下首单成功，均有对应的5元优惠券作为奖励；
+							dd 4.下发奖励的优惠券，如不做交易使用，逾期无效，本平台将不承担任何责任；
+							dd 5.活动中如果发现通过作弊手段获得奖励的，将取消奖励资格；
+				//- 我的邀请
+				section.invite-myself
+					.myself-static
+						.static-item
+							p.item-count 
+								span.item-num 0
+								span.item-unit 人
+							p.item-text 已邀请好友
+						.static-item
+							p.item-count 
+								span.item-num 0
+								span.item-float .00
+								span.item-unit 元
+							p.item-text 已获得国美币
+					dl.list-module(style="display:none;")
+						dt
+							.row-01 邀请的好友
+							.row-02 
+								| 国美币奖励
+								span.module-tip (1国美币=1元)
+							.row-03 注册时间
+						dd
+							.row-01 
+								a.module-ellipsis(href="#") 王山而的猫咪店铺地址
+							.row-02 
+								span.module-price 2345.00
+								| 元
+							.row-03
+								span.module-date 2016.03.08
+						dd
+							.row-01 
+								a.module-ellipsis(href="#") 远远
+							.row-02 
+								span.module-price 3.00
+								| 元
+							.row-03
+								span.module-date 2016.02.21
+						dd
+							.row-01 
+								a.module-ellipsis(href="#") 经验不足那
+							.row-02 
+								span.module-price 67.00
+								| 元
+							.row-03
+								span.module-date 2016.01.21
+					.invite-erro
+						span.erro-img
+						span.erro-text 暂无明细
+				//- 邀请排行榜
+				section.invite-line(style="display:block;")
+					dl.list-module
+						dt
+							.row-01 排名
+							.row-02 昵称
+							.row-03 邀请人数
+							.row-04
+								| 国美币奖励
+								span.module-tip (1国美币=1元)
+						dd
+							.row-01 01
+							.row-02 
+								a.module-ellipsis(href="#") 测试字数数字的内容
+							.row-03 300
+							.row-04
+								span.module-price 2345.00
+								| 元
+						dd
+							.row-01 02
+							.row-02 
+								a.module-ellipsis(href="#") 然后
+							.row-03 245
+							.row-04
+								span.module-price 1899.00
+								| 元
+						dd
+							.row-01 03
+							.row-02 
+								a.module-ellipsis(href="#") 哎呀
+							.row-03 222
+							.row-04
+								span.module-price 1000.00
+								| 元
+						dd
+							.row-01 04
+							.row-02 
+								a.module-ellipsis(href="#") 韩梅格桑
+							.row-03 123
+							.row-04
+								span.module-price 899.00
+								| 元
+						dd
+							.row-01 05
+							.row-02 
+								a.module-ellipsis(href="#") 李轩
+							.row-03 56
+							.row-04
+								span.module-price 345.00
+								| 元
+						dd
+							.row-01 06
+							.row-02 
+								a.module-ellipsis(href="#") 迷之
+							.row-03 44
+							.row-04
+								span.module-price 200.00
+								| 元
+						dd.module-ranking
+							.row-01 999+
+							.row-02 
+								a.module-ellipsis(href="#") 小灿灿
+								span.ranking-sort (我的排名)
+							.row-03 32
+							.row-04
+								span.module-price 168.00
+								| 元
+		//- 遮罩弹层
+		.invite-mask

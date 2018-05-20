@@ -1,0 +1,20 @@
+//- extends layout.jade
+extends ../../../widget-platform/pug/layout/layout.jade
+
+//- cell
+block content
+	h2.platform-title cell
+	div.platform-content
+		h3.platform-header select
+		div.platform-intro 
+			p 下拉多级联动选项
+		div.platform-example#select
+			include ../../../../pc-widget/select/select.jade
+		pre.platform-pre
+			code.platform-code#select_code
+			span.platform-jade pug
+			span.platform-jade.platform-html.actived html
+	//- js format html code
+	script(type='text/javascript').
+		HtmlFormat.init(['select'],false,'_code','html','span.platform-jade');
+		$(".platform-cell").parent('li').addClass("actived");

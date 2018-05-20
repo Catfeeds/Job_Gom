@@ -1,0 +1,215 @@
+@import '../../widget/config/_base.scss';
+@import '../../widget/config/_mixins.scss';
+input{
+	background: none;
+	border: none;
+	outline: none;
+}
+html{
+	width: 100%;
+	background-color: #ffcd03;
+}
+.icon_t{
+    background-image: url(../../images/talent/talent_icon.png);
+    background-repeat: no-repeat;
+    display: inline-block;
+}
+.icon-username,
+.icon-phone,
+.icon-talent-type,
+.icon-introduce{
+	margin-right: 4px;
+}
+.icon-username{
+	background-position: -45px -33px;
+    height: 26px;
+    width: 32px;
+}
+.icon-phone{
+	background-position: -77px -32px;
+    height: 27px;
+    width: 32px;
+}
+.icon-talent-type{
+	background-position: -109px -32px;
+    height: 25px;
+    width: 32px;
+}
+.icon-introduce{
+	background-position: -145px -32px;
+    height: 25px;
+    width: 32px;
+}
+body.opg{
+	width: 100%;
+	margin: 0 auto;
+	/* 防止页面重绘 */
+	position: relative;
+	zoom : 1;
+	background-color: #ffcd03;
+}
+.talent-top{
+	width: 100%;
+	background-color: #ffcd03;
+	/* 防止页面重绘 */
+	position: relative;
+	zoom : 1;
+	border-top: 2px solid #ffcd03;
+	background: url(../../images/talent/recruitBg.jpg) repeat center center;
+	.talent-t-cover{
+		width: 1000px;
+		height: 558px;
+		margin: 0 auto;
+		background: url(../../images/talent/application/cover-1.jpg) no-repeat center center;
+	}
+}
+.examining,
+.examined{
+	.talent-middle{
+		width: 100%;
+		.talent-banner{
+			font-size: 24px;
+		    font-weight: bold;
+		    line-height: 28px;
+			width: 1000px;
+			height: 28px;
+			margin: 0 auto;
+			background: url(../../images/talent/examine/app-title-bg.png) no-repeat center center;
+		}
+	}
+}
+
+.talent-result{
+	background: url(../../images/talent/examine/result-left-bg.png) no-repeat left bottom;
+	width: 806px;
+	margin: 0 auto 0;
+	.talent-result-info{
+		height: 216px;
+		background: url(../../images/talent/application/flowersmall-2.png) no-repeat 693px bottom;
+		.talent-result-details{
+			line-height: 56px;
+			font-size: 20px;
+		}
+	}
+}
+.talent-middle{
+	padding-bottom: 30px;
+	.talent-tool{
+		margin-top: 0;
+		width: 510px;
+		height: 36px;
+	}
+}
+.talent-result .talent-middle .talent-tool.step1 .talent-b-tool .talent-b-t-item{
+	.talent-b-t-i-count.talent-b-t-i-count1{
+		background-color: #ff6600;
+	    color: #fff;
+	}
+}
+.talent-result .talent-middle .talent-tool.step2 .talent-b-tool .talent-b-t-item{
+	.talent-b-t-i-count.talent-b-t-i-count1,
+	.talent-b-t-i-count.talent-b-t-i-count2{
+		background-color: #ff6600;
+	    color: #fff;
+	}
+}
+.talent-result .talent-middle .talent-tool.step3 .talent-b-tool .talent-b-t-item{
+	.talent-b-t-i-count.talent-b-t-i-count1,
+	.talent-b-t-i-count.talent-b-t-i-count2,
+	.talent-b-t-i-count.talent-b-t-i-count3{
+		background-color: #ff6600;
+	    color: #fff;
+	}
+}
+.talent-result .talent-middle .talent-tool.step1{
+	.talent-b-tool .talent-b-t-item1{
+		p{
+			color: #000;
+		}
+	}
+}
+.talent-result .talent-middle .talent-tool.step2{
+	.talent-b-tool .talent-b-t-item1,
+	.talent-b-tool .talent-b-t-item2{
+		p{
+			color: #000;
+		}
+	}
+}
+.talent-result .talent-middle .talent-tool.step3{
+	.talent-b-tool .talent-b-t-item1,
+	.talent-b-tool .talent-b-t-item2,
+	.talent-b-tool .talent-b-t-item3{
+		p{
+			color: #000;
+		}
+	}
+}
+.talent-failed{
+	position: absolute;
+	right: -26px;
+	top: 2px;
+	width: 100px;
+	height: 100px;
+	background: url(../../images/talent/examine/talent-failed.png) no-repeat center center;
+}
+
+.talent-content{
+	width: 800px;
+	height: auto;
+	margin: 40px auto;
+	border-radius: 10px;
+	border: 2px solid #000;
+	background-color: #fff;
+	padding-bottom: 0;
+	.talent-content-info{
+		text-align: left;
+		margin: 10px;
+		border: 2px dashed #f4b8af;
+		border-radius: 10px;
+		ul{
+			margin: 34px 0 90px 160px;
+			li{
+				margin-bottom: 24px;
+				line-height: 28px;
+				i,
+				span,
+				strong{
+					float:left;
+				}
+				span{
+					color: #5e5e5e;
+					margin-right: 10px;
+				}
+				strong{
+					font-weight: normal;
+					width: 330px;
+				}
+				strong.introduce{
+					font-size: 14px;
+				}
+				.update-message{
+					width: 180px;
+					height: 32px;
+					background-color: #ff5c5c;
+					color: #fff;
+					border-radius: 16px;
+					display: inline-block;
+					text-align: center;
+					line-height: 32px;
+					font-size: 18px;
+					margin-left: 108px;
+				}
+			}
+		}
+	}
+}
+.examining .talent-content .talent-content-info ul{
+	margin: 34px 0 100px 160px;
+}
+.talent-tool .talent-b-tool .talent-b-t-linner{
+	left: 56px;
+}
+.talent-tool .talent-b-tool{
+	padding: 0px 30px 0 18px;
+}

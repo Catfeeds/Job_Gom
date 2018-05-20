@@ -1,0 +1,118 @@
+doctype html
+html(lang="zh-CN" data-use-rem="750")
+    include ../../../m-widget/head/head.jade
+    link(type="text/css",rel="stylesheet",href="../../css/public/public-wap.css")
+    link(type="text/css",rel="stylesheet",href="../../css/module/usercenter-new.css")
+   
+    body.opg.user-center
+        include ../../../m-widget/head/rem.jade
+                //当上面div加上class="circle"  呈现导航吸顶状态
+        header.header.change-bj
+            span
+                a.head-back(href="##")
+                    em.iconn-1
+            span
+                a.head-edit(href="##")
+                    em.iconn-4
+                    .tab-nav
+                        p.active
+                            em.iconn-44
+                            | 首页
+                        p
+                            em.iconn-15
+                            | 分类
+                        p
+                            em.iconn-32
+                            | 购物车
+                        p
+                            em.iconn-90
+                            | 我的
+        .user-header.h-334
+            .header-box
+                .head
+                    a(href="#")
+                        img.head-img(src="https://i6.meixincdn.com/T1JXETByAT1R4cSCrK.90x90cTz.png")
+                        span
+                            img(src="../../images/usercenter/mark.png")
+                h3 扮野优美Horipro
+                    img(src="../../images/usercenter/sex-girl.png").sex-icon
+                .head-tex
+                    p Ta的话题
+                        span 10
+                    p Ta的话题
+                        span 10
+        .user-mian
+            ul.menu-list
+                li.item
+                    p.txt 话题
+                li.item.active
+                    i.num
+                    p.txt 圈子
+            ul.circle-list
+                - for(var i=0;i<17;i++)
+                    li
+                        .cir-head
+                            img(src="https://i6.meixincdn.com/T1JXETByAT1R4cSCrK.90x90cTz.png")
+                        .cir-txt
+                            h3 头像昵称头像
+                            p
+                                span 成员222
+                                span 话题1833993
+        .page-no
+            span 我是有底线的~
+                header.header.change-bj
+                    span
+                        a.head-back(href="##")
+                            em.iconn-1
+                    span
+                        a.head-edit(href="##")
+                            em.iconn-4
+                            .tab-nav
+                                p.active
+                                    em.iconn-44
+                                    | 首页
+                                p
+                                    em.iconn-15
+                                    | 分类
+                                p
+                                    em.iconn-32
+                                    | 购物车
+                                p
+                                    em.iconn-90
+                                    | 我的
+                .user-header.h-334
+                    .header-box
+                        .head
+                            a(href="#")
+                                img.head-img(src="https://i6.meixincdn.com/T1JXETByAT1R4cSCrK.90x90cTz.png")
+                                span
+                                    img(src="../../images/usercenter/mark.png")
+                        h3 扮野优美Horipro
+                            img(src="../../images/usercenter/sex-girl.png").sex-icon
+                        .head-tex
+                            p Ta的话题
+                                span 10
+                            p Ta的话题
+                                span 10
+                .user-mian
+                    ul.menu-list
+                        li.item
+                            p.txt 话题
+                        li.item.active
+                            i.num
+                            p.txt 圈子
+                    ul.circle-list
+                        - for(var i=0;i<17;i++)
+                            li
+                                .cir-head
+                                    img(src="https://i6.meixincdn.com/T1JXETByAT1R4cSCrK.90x90cTz.png")
+                                .cir-txt
+                                    h3 头像昵称头像
+                                    p
+                                        span 成员222
+                                        span 话题1833993
+                .page-no
+                    span
+                    | 我是有底线的~
+
+

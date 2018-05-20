@@ -1,0 +1,16 @@
+extends ../plus-widget/head/head.jade
+block style
+	link(type="text/css",rel="stylesheet",href="plaintext.css")
+block body
+	body.opg
+		include ../plus-widget/head/rem.jade
+		<!--header-->
+		header.header
+			.h-left
+				a.h-back(href="javascript:;")
+					em.iconn-1
+			.h-cnt.flex-cell
+				h1.h-tit 说明
+		section.plaintext
+			h2 实名认证
+			p 实名认证需要用户提供姓名、身份证号、银行卡号和手机号，当用户在国美币系统实名认证通过后，则可以进行充值、提现操作。

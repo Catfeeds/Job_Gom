@@ -1,0 +1,30 @@
+doctype html
+html(lang="zh-CN" data-use-rem="750")
+	include ../../../m-widget/head/head.jade
+	link(type="text/css",rel="stylesheet",href="../../css/public/public-wap.css")
+	link(type="text/css",rel="stylesheet",href="../../css/module/protocol.css")
+
+	body.opg.protocol
+		include ../../../m-widget/head/rem.jade
+		
+		header.header
+			span
+				a.head-back(href="javascript:;")
+					em.iconn-1
+			h1.head-title 服务协议
+		/// header
+
+		a.prot-btn(href="##") 同意协议
+		.prot-wrap
+			h5 【审慎阅读】
+			p 服务协议已更新，您在点击同意前，应当认真阅读以下协议，尤其粗体标识的重要条款。请您务必审慎阅读、充分理解协议中相关条款内容。
+			
+			h5 【特别提示】
+			p 当您点击同意后，即表示您已充分阅读、理解并接受协议的全部内容。如您因平台服务与国美发生争议的，适用《国美平台服务协议》处理。
+			p
+				a.link-a(href="##") 《国美平台经营者注册服务协议》
+				| <br>
+				a.link-a(href="##") 《美付宝用户服务协议》
+
+		
+

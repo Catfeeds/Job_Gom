@@ -1,0 +1,204 @@
+.open_account .group-detail {
+  overflow: hidden;
+  margin: 0; }
+.open_account .ele-input-s {
+  width: 86px; }
+.open_account .ele-input-m {
+  width: 194px; }
+
+.amp-content {
+  vertical-align: middle; }
+
+.account_content {
+  width: 100%;
+  height: 890px;
+  background-color: white;
+  margin-top: 40px;
+  padding: 50px 0; }
+  .account_content h1 {
+    font-size: 26px;
+    text-align: center;
+    color: #2e2e2e;
+    margin: 0 0 130px 0; }
+
+.content_img {
+  margin: 0 0 0 350px; }
+  .content_img .img_content_f, .content_img .img_content_c {
+    width: 200px;
+    height: 260px;
+    background: 100% 100%;
+    display: inline-block;
+    background-color: #f4f5f7;
+    color: #8a909c; }
+    .content_img .img_content_f em, .content_img .img_content_c em {
+      margin-top: 70px;
+      font-size: 80px;
+      display: inline-block;
+      text-align: center;
+      width: 100%; }
+    .content_img .img_content_f p, .content_img .img_content_c p {
+      color: #282a29;
+      text-align: center;
+      margin-top: 24px; }
+  .content_img .active {
+    background-color: #ffc41d;
+    color: white; }
+    .content_img .active em, .content_img .active p {
+      color: white; }
+
+.img_content_f:hover, .img_content_c:hover {
+  background-color: #ffc41d;
+  color: white; }
+  .img_content_f:hover em, .img_content_f:hover p, .img_content_c:hover em, .img_content_c:hover p {
+    color: white; }
+
+.content_img .img_content_f {
+  margin-right: 100px; }
+
+.open_account {
+  width: 1200px;
+  min-height: 740px;
+  margin: 0 auto; }
+
+.account-icon {
+  padding: 110px 0 0 0;
+  text-align: center; }
+  .account-icon em {
+    font-size: 60px;
+    color: #1bb169; }
+  .account-icon h1 {
+    font-size: 40px;
+    color: #2e2e2e;
+    margin: 40px 0 0 0; }
+  .account-icon h4 {
+    font-size: 20px;
+    color: #596069;
+    margin: 18px 0 0 0; }
+
+.dialog {
+  border: 0px; }
+
+.part-guide {
+  position: relative;
+  margin: 70px auto 36px;
+  height: 4px;
+  width: 680px;
+  background: #d9dbde; }
+  .part-guide .guide-percent {
+    overflow: hidden;
+    display: block;
+    height: 4px;
+    width: 0%;
+    background: #1bb169; }
+  .part-guide .guide-step {
+    position: absolute;
+    top: -10px;
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    background: #d9dbde;
+    -webkit-border-radius: 20px;
+    border-radius: 20px; }
+    .part-guide .guide-step .step-text {
+      position: absolute;
+      top: -24px;
+      left: 50%;
+      margin-left: -62px;
+      width: 125px;
+      height: 24px;
+      line-height: 24px;
+      font-size: 16px;
+      font-weight: normal;
+      color: #89919c; }
+    .part-guide .guide-step .step-number {
+      display: block;
+      height: 20px;
+      line-height: 21px;
+      font-size: 13px;
+      font-weight: normal;
+      color: #fff; }
+    .part-guide .guide-step .step-icon {
+      display: none; }
+      .part-guide .guide-step .step-icon .icon {
+        width: 20px;
+        height: 20px;
+        line-height: 20px;
+        font-size: 10px;
+        color: #fff;
+        font-weight: normal; }
+  .part-guide .guide-step01 {
+    left: -10px; }
+  .part-guide .guide-step02 {
+    left: 33%;
+    margin-left: -10px; }
+  .part-guide .guide-step03 {
+    left: 66%; }
+  .part-guide .guide-step04 {
+    right: -8px; }
+
+.part-guide01 .guide-step01 {
+  background: #1bb169 !important; }
+  .part-guide01 .guide-step01 .step-text {
+    color: #1bb169 !important; }
+
+.part-guide02 .guide-step01 {
+  background: #1bb169 !important; }
+  .part-guide02 .guide-step01 .step-number {
+    display: none; }
+  .part-guide02 .guide-step01 .step-icon {
+    display: inline-block; }
+.part-guide02 .guide-step02 {
+  background: #1bb169 !important; }
+  .part-guide02 .guide-step02 .step-text {
+    color: #1bb169 !important; }
+.part-guide02 .guide-percent {
+  width: 33%; }
+
+.part-guide03 .guide-step01 {
+  background: #1bb169 !important; }
+  .part-guide03 .guide-step01 .step-number {
+    display: none; }
+  .part-guide03 .guide-step01 .step-icon {
+    display: inline-block; }
+.part-guide03 .guide-step02 {
+  background: #1bb169 !important; }
+  .part-guide03 .guide-step02 .step-number {
+    display: none; }
+  .part-guide03 .guide-step02 .step-icon {
+    display: inline-block; }
+.part-guide03 .guide-step03 {
+  background: #1bb169 !important; }
+  .part-guide03 .guide-step03 .step-text {
+    color: #1bb169 !important; }
+.part-guide03 .guide-percent {
+  width: 66%; }
+
+.part-guide04 .guide-step01 {
+  background: #1bb169 !important; }
+  .part-guide04 .guide-step01 .step-number {
+    display: none; }
+  .part-guide04 .guide-step01 .step-icon {
+    display: inline-block; }
+.part-guide04 .guide-step02 {
+  background: #1bb169 !important; }
+  .part-guide04 .guide-step02 .step-number {
+    display: none; }
+  .part-guide04 .guide-step02 .step-icon {
+    display: inline-block; }
+.part-guide04 .guide-step03 {
+  background: #1bb169 !important; }
+  .part-guide04 .guide-step03 .step-number {
+    display: none; }
+  .part-guide04 .guide-step03 .step-icon {
+    display: inline-block; }
+.part-guide04 .guide-step04 {
+  background: #1bb169 !important; }
+  .part-guide04 .guide-step04 .step-text {
+    color: #1bb169 !important; }
+.part-guide04 .guide-percent {
+  width: 100%; }
+
+.identity-content {
+  margin: 130px 0 270px 0; }
+
+

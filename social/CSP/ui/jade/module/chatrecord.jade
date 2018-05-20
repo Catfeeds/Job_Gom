@@ -1,0 +1,84 @@
+doctype html
+html(lang="zh-CN")
+	include ../common/head.jade
+	link(type="text/css",rel="stylesheet",href="../../css/public/public.css")
+	body.opg
+		include ../common/header.jade
+		.wrap-box.clearfix
+			.wrap-left
+				.menu
+					a(href="#").active 账号管理
+					a(href="#") 常用语配置
+					a(href="#") 修改密码
+					a(href="#") 查询聊天记录
+					a(href="#") 进入IM
+			.wrap-right.clearfix
+				.title
+					h2 来访顾客
+					.search-box
+						.search-list
+							span 客服人员
+							em.icon-down
+							.list-s
+								a(href="javascript:;") 客服人员
+								a(href="javascript:;") 客服人员
+								a(href="javascript:;") 客服人员
+						input(type="text",placeholder="输入关键词搜索")
+						a(href="javascript:;").btn-search
+				.chatrecord
+					.left-list
+						ul
+							li
+								em.icon-check.active
+								img(src="https://i-pre.meixincdn.com/v1/img/T17ahTB5AT1R4cSCrK.png")
+								span 呵呵呵呵用户名
+								span.fr 11:12
+							- for (var x = 0; x < 5; x++)
+								li
+									em.icon-check
+									img(src="https://i-pre.meixincdn.com/v1/img/T17ahTB5AT1R4cSCrK.png")
+									span 呵呵呵呵用户名
+									span.fr 11:12
+						.list-btn
+							a(href="javascript:;").btn.btn-blue 导出
+					.right-chat
+						.chat-scroll
+							p.text-center 上拉加载更多消息
+							dl.clearfix
+								dt
+									img(src="https://i-pre.meixincdn.com/v1/img/T17ahTB5AT1R4cSCrK.png")
+								dd
+									p.gray 张一二三四 2016-5-16 13:14:20
+									.text
+										em.icon-san
+										p 我也想买那个电视呢
+							dl.clearfix
+								dt
+									img(src="https://i-pre.meixincdn.com/v1/img/T17ahTB5AT1R4cSCrK.png")
+								dd
+									p.gray 张一二三四 2016-5-16 13:14:20
+									.text
+										em.icon-san
+										p 我也想买那个电视呢我也想买那个电视呢我也想买那个电视呢我也想买那个电视呢我也想买那个电视呢
+							dl.clearfix.right
+								dt
+									img(src="https://i-pre.meixincdn.com/v1/img/T17ahTB5AT1R4cSCrK.png")
+								dd
+									p.gray 张一二三四 2016-5-16 13:14:20
+									.text
+										em.icon-san
+										p 我也想买那个电视呢我也想买那个电视呢我也想买那个电视呢我也想买那个电视呢我也想买那个电视呢
+						.page
+							a(href="javascript:;").cn 上一页
+							a(href="javascript:;") 1
+							a(href="javascript:;") 2
+							a(href="javascript:;") 3
+							a(href="javascript:;") 4
+							a(href="javascript:;") 5
+							a(href="javascript:;") ...
+							a(href="javascript:;") 20
+							a(href="javascript:;").cn 下一页
+					
+					
+					
+					

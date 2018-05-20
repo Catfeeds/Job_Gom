@@ -1,0 +1,36 @@
+@charset "UTF-8";
+@import "../../../../sasscore/_configure.scss";
+@import "../../../../m-widget/reset/reset.scss";
+@import "../../../../m-widget/menu/menu.scss";
+body{
+	background-color: #f9f9f9;
+}
+.gmb{
+	// 常见问题 
+	.tab-block{
+		margin: .4rem.3rem 0;
+		.sub-title{
+			font-size: .28rem;
+			margin-bottom: .28rem;
+		}
+		p{
+    		line-height: .34rem;
+			font-size: .26rem;
+			color: #999;
+			word-break: break-all;
+			padding-bottom: .18rem;
+		}
+		.content-txt{
+			padding: 0 0 .4rem .4rem;
+		}
+		.txt-indent{
+		    text-indent: .4rem;
+		}
+	}
+	.tab-page{
+		display: none;
+	}
+	.tab-page.active{
+		display: block;
+	}
+}

@@ -1,0 +1,23 @@
+form(method="post",id="updateTipForm" name="updateTipForm", action="updateTip/init")
+  div.urlInput.mb40
+    fieldset
+      legend 引用仓库
+      input#remoteURL(name="remoteURL",placeholder="请输入引用分支的git路径",class="form-control", required="required")
+      //div.branch
+        input#remoteURLBranch.form-control.branch(name="remoteURLBranch",placeholder="请输入分支", required="required")
+      div.branch
+        input#tipDirectory(name="tipDirectory",placeholder="请输入需要提醒的目录名(不填写为所有更新都提醒)",class="form-control")
+    //fieldset
+    //  legend 本地开发仓库
+    //  input#localURL(name="localURL",placeholder="请输入本地分支的git路径",class="form-control", required="required")
+    //  div.branch
+    //    input.form-control#localURLBranch.branch(name="localURLBranch",placeholder="请输入分支", required="required")
+    //    br
+    //    div.switchSapn
+    //      span#openUpdate 开启更新
+    //      span.active#closeUpdate 关闭更新
+
+  div
+    button.mr20(@click.prevent="updateTipInit", data-formAction="",class="ladda-button btn btn-success",data-style="zoom-out")
+      span.ladda-label 初始化项目
+    span.tip.ml20 {{ tipMsg }}

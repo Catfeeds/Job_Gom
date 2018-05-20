@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Flat Admin V.2 - Free Bootstrap Admin Templates</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="../../css/invite.css">
+    <script type="text/javascript">
+        (function() {
+            /*rem*/
+            function setFont() {
+                var __rootrem;
+                var clientWidth = (document.documentElement || document.body.parentNode).clientWidth;
+                if ( clientWidth > 650) {
+                    clientWidth = 640;
+                }
+                // 375尺寸的比例，换算成@1x设计稿后1px=0.01rem
+                __rootrem = Math.floor(clientWidth * 100 / 750);
+                (document.documentElement || document.body.parentNode).style.fontSize = __rootrem + "px";
+            }
+            setFont();
+            window.addEventListener("resize", function() {
+                setFont();
+            });
+        })();
+    </script>
+</head>
+
+<body class="invite-box">
+    <div class="invite-card">
+        <div class="card-head">
+            <img src="../../img/invite/user-head.jpg" alt="">
+            <p>用户昵称</p>
+        </div>
+        <h4>邀你一起答题，瓜分大奖</h4>
+        <p class="code">6FV8P6</p>
+        <p>长按可复制</p>
+    </div>
+    <div class="invite-download">
+        <a href="#" class="btn-download">下载国美App立即参加</a>
+    </div>
+</body>
+
+</html>

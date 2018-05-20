@@ -1,0 +1,26 @@
+doctype html
+html(lang="zh-CN",data-use-rem="750")
+	include ../../../m-widget/head/head.jade
+	link(type="text/css",rel="stylesheet",href="../../css/public/public-wap.css")
+	link(type="text/css",rel="stylesheet",href="../../css/module/usercenter-new.css")
+	
+	body.opg.user-center
+		include ../../../m-widget/head/rem.jade
+		
+		header.header
+			span
+				a.head-back(href="javascript:;")
+					em.iconn-1
+			h1.head-title 达人特权
+		// /header
+
+		.daren-wrap
+			.m-prompt
+				.pro-img
+					img(src="../../images/common/img-4.png")
+				.pro-txt
+					| 店主好懒~居然没有商品
+					br
+					| 咱们去别处逛逛吧
+				.pro-btn
+					a.m-btn 刷新

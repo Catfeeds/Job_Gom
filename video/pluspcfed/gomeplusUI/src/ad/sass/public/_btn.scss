@@ -1,0 +1,166 @@
+@charset "utf-8";
+
+// AMP configure
+@import "_configure.scss";
+
+// Define btn stylesheet
+// ##------------------------------------------
+.btn{
+	overflow:hidden;
+	@include inline-block;
+	margin:0;
+	padding:0 30px;
+	text-align:center;
+	white-space:nowrap;
+	outline:0 none;
+	height:34px;
+	line-height:34px;
+	font-size:14px;
+	color:$text-dark;
+	border:1px solid transparent;
+	@include prefix(border-radius,$border-radius-big);
+	@include box-sizing(border);
+	@include linear(nth($bg-btn-normal,1),nth($bg-btn-normal,2));
+	&:hover{
+		color:$text-dark;
+		@include linear(nth($bg-btn-hover,1),nth($bg-btn-hover,2));
+	}
+	&:focus{
+		color:$text-dark;
+		@include linear(nth($bg-btn-fouce,1),nth($bg-btn-fouce,2));
+	}
+}
+// btn-normal
+.btn-normal{
+	border-color:#ddd;
+}
+// btn-primary
+.btn-primary{
+	padding:0px 44px;
+	height:40px;
+	line-height:40px;
+	font-size:16px;
+	color:#fff;
+	@include linear(nth($bg-btn-primary,1),nth($bg-btn-primary,1));
+	border-color:nth($bg-btn-primary,1);
+	&:hover{
+		color:#fff;
+		@include linear(nth($bg-btn-primary,2),nth($bg-btn-primary,2));
+	}
+	&:focus{
+		color:#fff;
+		@include linear(nth($bg-btn-primary,3),nth($bg-btn-primary,3));
+	}
+}
+// btn-primary-small
+.btn-primary-small{
+	padding:0px 24px;
+	height:34px;
+	line-height:34px;
+	font-size:14px;
+}
+
+// btn-gray
+.btn-gray{
+	padding:0px 44px;
+	height:40px;
+	line-height:40px;
+	font-size:16px;
+	color:$text-medium;
+	@include linear(nth($bg-btn-gray,1),nth($bg-btn-gray,1));
+	&:hover{
+		color:$text-medium;
+		@include linear(nth($bg-btn-gray,2),nth($bg-btn-gray,2));
+	}
+	&:focus{
+		color:$text-medium;
+		@include linear(nth($bg-btn-gray,3),nth($bg-btn-gray,3));
+	}
+}
+
+// btn-gray-small
+.btn-gray-small{
+	padding:0px 5px;
+	height:18px;
+	line-height:18px;
+	font-size:14px;
+	color:$text-medium;
+	@include linear(nth($bg-btn-normal,1),nth($bg-btn-normal,2));
+	border-color:nth($bg-btn-gray,1);
+	&:hover{
+		color:$text-dark;
+		@include linear(nth($bg-btn-hover,1),nth($bg-btn-hover,2));
+	}
+	&:focus{
+		color:$text-dark;
+		@include linear(nth($bg-btn-fouce,1),nth($bg-btn-fouce,2));
+	}
+}
+// btn-base-gray
+.btn-base-gray{
+	padding:0px 44px;
+	height:40px;
+	line-height:40px;
+	font-size:16px;
+	color:$text-dark;
+	@include linear(#fff,#fff);
+	border-color:$border-btn-normal;
+	&:hover{
+		color:$text-dark;
+		@include linear(#fff,#fff);
+	}
+	&:focus{
+		color:$text-dark;
+		@include linear(#fff,#fff);
+	}
+}
+
+// amp-path btn icon
+.btn{
+	.icon-prev{
+		margin-right:2px;
+		margin-top:-2px;
+		font-size:10px;
+	}
+}
+
+// btn-square
+.btn-square{
+	@include inline-block;
+	white-space: nowrap;
+	margin:3px 20px 12px 0px;
+	padding:9px 0px;
+	min-width:100px;
+	text-align:center;
+	border:1px solid #dcdcdc;
+	font-size:14px;
+	line-height:1;
+	color:$text-medium;
+	&:hover,
+	&.actived{
+		color:$link-web-color;
+		border-color:$link-web-color;
+	}
+}
+// btn-square-large
+.btn-square-large{
+	padding:10px 0px;
+}
+
+// btn-blue
+.btn-blue{
+	padding:0px 44px;
+	height:44px;
+	line-height:44px;
+	font-size:16px;
+	color:#fff;
+	@include linear(nth($bg-btn-blue,1),nth($bg-btn-blue,1));
+	&:hover{
+		color:#fff;
+		@include linear(nth($bg-btn-blue,2),nth($bg-btn-blue,2));
+	}
+	&:focus{
+		color:#fff;
+		@include linear(nth($bg-btn-blue,3),nth($bg-btn-blue,3));
+	}
+}

@@ -1,0 +1,142 @@
+@charset "UTF-8";
+//========== _configure.scss ==========//
+@import "../../../../sasscore/_configure.scss";
+html{
+	height: 100%;
+}
+
+.order-bx{
+	font-size:rem(28);
+	color:#666;
+	margin-top:rem(100);
+	.ord-item{
+		background: #fff;
+		padding:0 rem(30) rem(20) rem(30);
+		margin-bottom: rem(20);
+	}
+	.ord-nmb-bx{
+		line-height: rem(90);
+		font-size: rem(28);
+		overflow: hidden;
+		p{
+			width: 50%;
+			font-weight: bold;
+			color: #FF5C5C;
+			span{
+				color: #333;
+				font-weight: normal;
+			}
+			&:nth-child(1){
+				float: left;
+			}
+			&:nth-child(2){
+				float: right;
+				text-align: right;
+			}
+		}
+	}
+
+	.ord-title{
+		width: 100%;
+		height: rem(72);
+		line-height: rem(72);
+		background:#f7f7f7;
+		color: #333;
+		text-align: center;
+		p{
+			&:nth-child(1){
+				float: left;
+				width: 80%;
+			}
+			&:nth-child(2){
+				width: 20%;
+				float: right;
+				border-left: 2px solid #fff;
+			}
+		}
+	}
+	.ord-content{
+		position: relative;
+		overflow: hidden;
+		font-size: rem(26);
+		.describe{
+			&:nth-child(1){
+				width: 80%;
+				padding:rem(20) 0 rem(20) 0;
+				line-height: rem(38);
+			}
+			&:nth-child(2){
+				position: absolute;
+			    height: rem(30);
+			    line-height: rem(30);
+			    top: 50%;
+			    margin-top: rem(-10);
+			    right: 0;
+			    width: rem(140);
+			    text-align: center;
+			}
+		}
+		.numb{
+			line-height: rem(40);
+			margin-top: rem(15);
+		}
+	}
+	.salesman{
+		overflow: hidden;
+		padding:rem(10) 0;
+		p{
+			width: 50%;
+			line-height: rem(56);
+			float: left;
+			&:nth-child(1){
+				text-align: left;
+			}
+			&:nth-child(2){
+				text-align: right;
+			}
+		}
+	}
+	.store{
+		line-height: rem(36);
+	}
+	.ord-store{
+		border-top:rem(6) solid #f6f6f6;
+		overflow: hidden;
+		font-size: rem(26);
+		span{
+			&:nth-child(1){
+				color: #333;
+			}
+		}
+	}
+}
+
+.order-box{
+	.m-menu{
+		li{
+			font-size: 0;
+		}
+	}
+	.m-menu{
+		position: fixed;
+		top:0;
+		width: 100%;
+		z-index: 10;
+	}
+}
+.opg .m-menu .link{
+	height:rem(82);
+}
+.opg .m-menu .link:after {
+    content: " ";
+    position: absolute;
+    height: 1px;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    border-bottom: 2px solid #fff;
+    -webkit-transform-origin: 0 100%;
+    transform-origin: 0 100%;
+    -webkit-transform: scaleY(0.5);
+    transform: scaleY(0.5);
+}

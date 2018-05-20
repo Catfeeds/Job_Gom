@@ -1,0 +1,421 @@
+extends ../plus-widget/head/head.jade
+block style
+	link(type="text/css",rel="stylesheet",href="wireless-h5/plus-public/css/gomeplusUI.css")
+	link(type="text/css",rel="stylesheet",href="plaintext.css")
+block body
+	<script  type="text/javascript" src="zepto.js"></script>
+	<script  type="text/javascript" src="effect.js"></script>
+	body.opg.plaintext
+		include ../plus-widget/head/rem.jade
+		<!--header-->
+		header.header
+			.h-left
+				a.h-back(href="javascript:;")
+					em.iconn-1
+			.h-cnt.flex-cell
+				h1.h-tit 帮助中心
+		.hlp-nav.bor-b
+			span(href="#").bor-all.actived 美店运营
+			span(href="#").bor-all 商品管理
+			span(href="#").bor-all 佣金&提现
+			span(href="#").bor-all 门店员工
+		ul.hlp-list.actived
+			li.bor-b.bor-t(stamp='1')
+				div.hlp-title
+					h1 什么是美店
+					span.arrows
+				p.hlp-txt 
+					| 用户在国美平台上开通的小店，上架平台商品，获取分销佣金，无需用户自己处理订单、仓储、物流。平台货源，无需囤货，商家跟进，售后无忧。
+			li.bor-b.bor-t(stamp='1')
+				div.hlp-title
+					h1 开美店的条件
+					span.arrows
+				p.hlp-txt 
+					| 所有国美用户均可开通美店，全民均可参与其中。
+			li.bor-b.bor-t(stamp='1')
+				div.hlp-title
+					h1 关于美店设置
+					span.arrows
+				p.hlp-txt 
+					| 通过我的美店进入美店设置，在美店设置中，店主可以随时根据当前的运营需要调整美店logo、设置美店介绍、更换美店背景
+			li.bor-b.bor-t(stamp='1')
+				div.hlp-title
+					h1 关于美店等级体系
+					span.arrows
+				p.hlp-txt 
+					| 美店等级以积分制的形式将美店的各项指标量化，包括美店活跃度、关注度及销售量，从而衡量美店主的运营、销售能力。另外，美店等级也是美店主是否能够享受平台特权、奖励政策的评定标准。
+			li.bor-b.bor-t(stamp='1')
+				div.hlp-title
+					h1 哪里查看订单
+					span.arrows
+				p.hlp-txt 
+					| 在我的美店中点击订单管理，进入订单管理页面，在订单管理页面可以查看待出库、已出库、已完成、售后订单列表，点击相应的订单可以查看该订单的订单详情。
+			li.bor-b.bor-t(stamp='1')
+				div.hlp-title
+					h1 如何查看我的美店效果
+					span.arrows
+				p.hlp-txt
+					| 在我的美店中点击美店预览，进入美店预览页面，即查看美店内所有商品，可选择按分类、上新顺序查看。
+			li.bor-b.bor-t(stamp='1')
+				div.hlp-title
+					h1 运营方法
+					span.arrows
+				p.hlp-txt 
+					| 积极分享商品和美店，可以把美店里的商品加入到话题中进行发布，提高商品和美店的曝光度哦~
+			li.bor-b.bor-t(stamp='1')
+				div.hlp-title
+					h1 销售技巧：怎样分享商品不被朋友屏蔽/拉黑？
+					span.arrows
+				p.hlp-txt 
+					| 建议把朋友圈进行用户群分组，根据不同属性的组别分享相应商品，每日可更新分享2-6个商品，分享时间间隔5个小时以上，这样朋友既不会感觉刷屏，同时能让朋友定时关注到您的商品。
+			li.bor-b.bor-t(stamp='1')
+				div.hlp-title
+					h1 销售技巧：什么文案能吸引点击？
+					span.arrows
+				p.hlp-txt 
+					| 推广文案可以结合当下热门新鲜事件、网络用词等，同时也可以用自己平时说话的语气，提高与朋友互动性，这样效果会倍增。
+			li.bor-b.bor-t(stamp='1')
+				div.hlp-title
+					h1 销售技巧：如何提高转化？
+					span.arrows
+				p.hlp-txt 
+					| 1）塑造自己的风格店铺，切忌对同一个用户群组什么商品都推广，捉住用户需求。（例如学生群体：刚发完四件套又发大家电，捉不住用户需求，转化自然不好。）
+					<br/>2）朋友圈信息不能全是推广商品，同时需要推送风景、人物照片/热门新鲜事件等信息，让用户知道您是有生活情调的，不只是推广员，建议个人生活分享和商品分享的比例为3:7。
+					<br/>3）提高与用户的互动性，如朋友圈评论、点赞、安慰、问候等，要相信只有和用户建立起信任关系，用户才会依赖于您，订单量自然节节上升。
+			li.bor-b.bor-t(stamp='1')
+				div.hlp-title
+					h1 如何挑选正确的推广商品?
+					span.arrows
+				p.hlp-txt 
+					| a、分析用户的需求
+					|	您可以根据性别、年龄端，结婚、职业等因素划分你的朋友，进行用户群分组归类推广，同时配合自己独特的审美选择货品。
+					<br/>b、根据季节性选择商品要有针对性的选择商品，也可以根据最新时尚话题和当季季节来选择商品，提高转化。
+
+			li.bor-b.bor-t(stamp='1')
+				div.hlp-title
+					h1 一定要先上架商品到美店才能分享商品吗?
+					span.arrows
+				p.hlp-txt 
+					| 不用，不上架商品单独分享只会拿到分享的返利。如果上架商品分享出去产生销售会得到分销佣金+分享返利。
+		ul.hlp-list
+			li.bor-b.bor-t(stamp='1')
+				div.hlp-title
+					h1 商品都从哪里来？
+					span.arrows
+				p.hlp-txt 
+					| 美店可上架商品均来自国美平台，仓储物流均由专业平台完成，十分可靠哦！
+			li.bor-b.bor-t(stamp='1')
+				div.hlp-title
+					h1 如何上架商品？
+					span.arrows
+				p.hlp-txt 
+					| 在我的美店点击“添加商品至美店”进入好货推荐频道，精选好货直接上架，或者进入商品管理，选择“添加商品”，直接搜索想要上架的商品，精准查找。
+			li.bor-b.bor-t(stamp='1')
+				div.hlp-title
+					h1 如何挑选商品
+					span.arrows
+				p.hlp-txt 
+					| 好货推荐频道从最热、最新、佣金最高多个维度为您推荐优质商品，无需逐个操作，可将优质商品一键上架至美店，方便快捷。或者通过搜索精准寻找，搜索结果可以按销量、佣金排序，帮你挑选高佣金好口碑的优质商品。
+
+			li.bor-b.bor-t(stamp='1')
+				div.hlp-title
+					h1 美店商品该如何分享？
+					span.arrows
+				p.hlp-txt 
+					| 美店商品可以通过商品管理与商品详情页的分享控件分享至站内及其他社交平台，同时提供商品链接复制、二维码长图生成、多图分享等丰富的分享形式。
+			li.bor-b.bor-t(stamp='1')
+				div.hlp-title
+					h1 商品分类管理
+					span.arrows
+				p.hlp-txt
+					| 上架商品时，会带入商品原有分类，自动区分不同种类的商品。通过商品管理→分类管理，可以对分类进行编辑，自定义分类名称、调整商品所在分类、新增分类、设置首页展示。用心管理分类，美店首页大不一样哦~
+			li.bor-b.bor-t(stamp='1')
+				div.hlp-title
+					h1 商品是否有正品保障?
+					span.arrows
+				p.hlp-txt 
+					| 商品经由国美或其商家提供货源、发货、正品保证。
+			li.bor-b.bor-t(stamp='1')
+				div.hlp-title
+					h1 为什么美店端的商品价格与PC端的商品价格不一致?
+					span.arrows
+				p.hlp-txt 
+					| 美店商品大部分为精选优质畅销商品，大部分都是专享价或直降价商品，价格优于PC端产品。
+			li.bor-b.bor-t(stamp='1')
+				div.hlp-title
+					h1 美店可以支持上架自有商品吗?
+					span.arrows
+				p.hlp-txt 
+					| 不可以，目前美店只支持上架国美APP商品。
+			li.bor-b.bor-t(stamp='1')
+				div.hlp-title
+					h1 PC端能操作美店吗?
+					span.arrows
+				p.hlp-txt 
+					| 不可以，目前美店只支持APP，不支持在PC端操作。
+			li.bor-b.bor-t(stamp='1')
+				div.hlp-title
+					h1 添加的商品是否有数量限制?
+					span.arrows
+				p.hlp-txt 
+					| 没有数量限制
+			li.bor-b.bor-t(stamp='1')
+				div.hlp-title
+					h1 美店的挑货中心多久上一次新货?
+					span.arrows
+				p.hlp-txt 
+					|好货推荐页面精选标签每天更新，banner活动每周更新
+			li.bor-b.bor-t(stamp='1')
+				div.hlp-title
+					h1 商品佣金是否不会改变?
+					span.arrows
+				p.hlp-txt
+					| 会修改，商品佣金也是有周期的，偷偷告诉你，大促期间部分商品佣金会比较高哦。
+		ul.hlp-list
+			li.bor-b.bor-t(stamp='1')
+				div.hlp-title
+					h1 付款方式
+					span.arrows
+				p.hlp-txt 
+					| 国美APP支持的付款方式，美店都可以支持。
+			li.bor-b.bor-t(stamp='1')
+				div.hlp-title
+					h1 退换货
+					span.arrows
+				p.hlp-txt 
+					| 美店订单产生退换货，佣金即失效
+			li.bor-b.bor-t(stamp='1')
+				div.hlp-title
+					h1 电子发票
+					span.arrows
+				p.hlp-txt 
+					| 订单妥投后3-5天即可生成电子发票。可在我的美店->查看订单右下角发票信息-点击下载电子发票。
+			li.bor-b.bor-t(stamp='1')
+				div.hlp-title
+					h1 商品快递运费由谁支付?价格如何呢?
+					span.arrows
+				p.hlp-txt 
+					| 国美配送：自营百货满99元包邮，低于99元运费6元、超过10KG另收运费；自营电器满39包邮。商家配送：即pop商家，非自营（运费可自行联系商家客服咨询）。
+			li.bor-b.bor-t(stamp='1')
+				div.hlp-title
+					h1 佣金算法
+					span.arrows
+				p.hlp-txt 
+					| 商品标注佣金为分享佣金和分销佣金总和。顾客通过美店购买，店主即可获得分销佣金；顾客通过分享链接购买，即可获得分销佣金。将商品上架到自己的美店并分享到各社交平台，顾客购买后，就能得到分享和分销的双份佣金哦！
+
+			li.bor-b.bor-t(stamp='1')
+				div.hlp-title
+					h1 佣金返利模式
+					span.arrows
+				p.hlp-txt
+					| 美店店主可以接触到三种返利模式，即分享返利、分销返利、购买返利；
+					<br/>举个栗子1：小明将该商品上架到美店，然后通过美店分享给好友，好友购买之后，小明获得的返利总金额是分享返利和分销返利；
+					<br/>举个栗子2：小明将该商品上架到美店，然后小明通过“我的”-“我的美店”-“商品管理”-“商品详情页”下单购买。小明获得的返利总金额是分销返利和购买返利；
+					<br/>举个栗子3：小明将该商品上架到美店，然后通过美店把商品分享到社交软件，自己点击分享的链接购买了商品，小明获得的返利总金额是分享返利、分销返利和购买返利。
+			li.bor-b.bor-t(stamp='1')
+				div.hlp-title
+					h1 关于佣金到账时间
+					span.arrows
+				p.hlp-txt 
+					| 顾客在美店中购买商品，商品妥投后7天，佣金就进到美店账户里啦~商品妥投后即将拿到的佣金可以在“待入账佣金”中查看，小钱钱就在路上，不用着急呦~
+			li.bor-b.bor-t(stamp='1')
+				div.hlp-title
+					h1 关于美店账户
+					span.arrows
+				p.hlp-txt 
+					| 美店账户中可以查看近7天收入、待入账、历史总额。近7天收入：最近一周入账佣金，跟上周比比看有没有进步待入账：妥投后7天，佣金就进账啦，小钱钱就在路上，不用着急呦~历史总额：从开店起赚得的所有佣金，加油赚多多！
+			li.bor-b.bor-t(stamp='1')
+				div.hlp-title
+					h1 为什么实际获得佣金与跟页面显示不一致?
+					span.arrows
+				p.hlp-txt 
+					| 佣金=商品销售金额×佣金比例，同一型号、款式的商品也可能因为某一时段参与促销价格有所调整，从而导致实际获得佣金与页面显示不一致。
+			li.bor-b.bor-t(stamp='1')
+				div.hlp-title
+					h1 佣金提现后，多久到账？
+					span.arrows
+				p.hlp-txt 
+					| 提现成功后预计24小时到账
+			li.bor-b.bor-t(stamp='1')
+				div.hlp-title
+					h1 佣金提现有没有限制？
+					span.arrows
+				p.hlp-txt 
+					| 单笔体现金额最少10元
+			li.bor-b.bor-t(stamp='1')
+				div.hlp-title
+					h1 关于提现扣税的问题
+					span.arrows
+				p.hlp-txt 
+					| 根据《个人所得税法》规定，应按照“劳动报酬所得”缴纳个人所得税。所得额≤800，不缴纳个人所得税；所的额800-4000（包含4000）记为A，按照（A-800）×20%缴纳；所的额4000-20000（包含20000）记为A，按照A×（1-20%）×20%缴纳；所的额20000-50000（包含50000）记为A，按照A×（1-20%）×30%缴纳；所的额＞50000记为A，按照A×（1-20%）×40%缴纳。关于国美币具体细则，可在我的→我的钱包→国美币→常见问题中查看详情~
+			li.bor-b.bor-t(stamp='1')
+				div.hlp-title
+					h1 到哪里可以看见自己的返利金额?
+					span.arrows
+				p.hlp-txt 
+					| 在我的美店历史总金额可查看分销佣金，在我的返利中可看到所有的返利金额
+			li.bor-b.bor-t(stamp='1')
+				div.hlp-title
+					h1 自己购买自己美店的商品也能获得分销佣金吗?
+					span.arrows
+				p.hlp-txt 
+					| 可以
+			li.bor-b.bor-t(stamp='1')
+				div.hlp-title
+					h1 数据统计
+					span.arrows
+				p.hlp-txt 
+					| 我的美店首页进入数据统计，可以查看前一天、过去7天以及过去30天的订单量、访客数和佣金，协助店主观测美店数据，调整运营方法。
+		ul.hlp-list
+			li.bor-b.bor-t(stamp='1')
+				div.hlp-title
+					h1 无法打印发票
+					span.arrows
+				p.hlp-txt 
+					| 查询订单是否已经妥投，如已经妥投未显示发票要报ITSM运维处理，如未妥投需要找电商管理部维护订单妥投后即可显示电子发票信息。
+			li.bor-b.bor-t(stamp='1')
+				div.hlp-title
+					h1 无法扫码，微信，支付宝支付
+					span.arrows
+				p.hlp-txt 
+					| 报ITSM运维处理。
+			li.bor-b.bor-t(stamp='1')
+				div.hlp-title
+					h1 无法绑定账户，无法更新账户信息
+					span.arrows
+				p.hlp-txt 
+					| 报ITSM运维处理。
+			li.bor-b.bor-t(stamp='1')
+				div.hlp-title
+					h1 实际门店有货，但是分享是现实无货
+					span.arrows
+				p.hlp-txt 
+					| 报ITSM运维处理。
+			li.bor-b.bor-t(stamp='1')
+				div.hlp-title
+					h1 实际门店有货，但是购买后订单显示的别的门店的
+					span.arrows
+				p.hlp-txt 
+					| 报ITSM运维处理。
+			li.bor-b.bor-t(stamp='1')
+				div.hlp-title
+					h1 订单未流转
+					span.arrows
+				p.hlp-txt 
+					| 报ITSM运维技术推送订单状态流转处理。
+			li.bor-b.bor-t(stamp='1')
+				div.hlp-title
+					h1 如何分辨订单是门店业绩的方法
+					span.arrows
+				p.hlp-txt 
+					| 首先员工们分享的产品的是带有门店标识的，且是自己所在门店有货的，分享后库存是走门店的库存即算作场景三门店业绩。
+			li.bor-b.bor-t(stamp='1')
+				div.hlp-title
+					h1 发票金额跟订单支付金额不符
+					span.arrows
+				p.hlp-txt 
+					| 报ITSM运维处理。
+			li.bor-b.bor-t(stamp='1')
+				div.hlp-title
+					h1 订单生成后无法打印发票
+					span.arrows
+				p.hlp-txt 
+					| 查询订单是否已经妥投，如已经妥投未显示发票要报ITSM运维处理，如未妥投需要找电商管理部维护订单妥投后即可显示电子发票信息。
+			li.bor-b.bor-t(stamp='1')
+				div.hlp-title
+					h1 没有退换货的按钮，无法提交退换货申请
+					span.arrows
+				p.hlp-txt 
+					| 在ERM系统查询订单状态是否已经妥投，只有订单妥投了顾客点击确认收货按钮，系统才会显示退换货的按钮，如订单未妥投是不显示退换货的按钮的。
+			li.bor-b.bor-t(stamp='1')
+				div.hlp-title
+					h1 订单为什么会系统取消
+					span.arrows
+				p.hlp-txt 
+					| 因系统无货，订单生成后如未匹配到库存，系统会自动审核失败取消订单，系统自动触发退款给顾客。如是系统异常取消订单，需要提报ITSM系统运维查询推送处理。
+			li.bor-b.bor-t(stamp='1')
+				div.hlp-title
+					h1 购买产品是否可以跟延保分开购买
+					span.arrows
+				p.hlp-txt 
+					| 不可以分开，需要绑定一个订单购买。
+			li.bor-b.bor-t(stamp='1')
+				div.hlp-title
+					h1 乐视电视跟乐视网卡是否可以分开购买
+					span.arrows
+				p.hlp-txt 
+					| 不可以分开，因为两个产品不是一个仓库配送，订单无法分开发货。
+			li.bor-b.bor-t(stamp='1')
+				div.hlp-title
+					h1 电子发票如何换开增值税发票
+					span.arrows
+				p.hlp-txt 
+					| 下单时先勾选电子发票，发票上的单位名称一定要填写正确，待电子发票生成以后，再拿去财务冲红，将该单位增票资质提供给财务，换开增票即可。
+			li.bor-b.bor-t(stamp='1')
+				div.hlp-title
+					h1 中心仓物流发货维护订单状态的问题找谁处理
+					span.arrows
+				p.hlp-txt 
+					| 电商管理对接中心仓物流管理部推送状态即可。
+			li.bor-b.bor-t(stamp='1')
+				div.hlp-title
+					h1 配送类产品后台无安装信息无法安装的问题如何处理？
+					span.arrows
+				p.hlp-txt 
+					| 需要让分部业务提报OA到总部业务推送安装标识，请联系下当地业务，协助解决。
+			li.bor-b.bor-t(stamp='1')
+				div.hlp-title
+					h1 门店无法抓取库存信息，自提业务已经开启的
+					span.arrows
+				p.hlp-txt 
+					| 门店自提业务是开启的，去查正常库区库存数据信息是否正常，若无问题就要找业务维护共价关系
+			li.bor-b.bor-t(stamp='1')
+				div.hlp-title
+					h1 订单取消退款周期
+					span.arrows
+				p.hlp-txt 
+					| 订单取消财务一个工作日审核，1-3工作日内打款到账，都会有短信提示打款情况的，请注意查收短信
+			li.bor-b.bor-t(stamp='1')
+				div.hlp-title
+					h1 系统无安装建档的如何处理
+					span.arrows
+				p.hlp-txt 
+					| 针对这个没有安装建档的事，需要找电商管理部提报OA审批维护安装标识推送到系统就可以显示了。
+			li.bor-b.bor-t(stamp='1')
+				div.hlp-title
+					h1 订单在预留状态未流转的是啥原因
+					span.arrows
+				p.hlp-txt 
+					| 订单未流转或者电子发票系统未切换造成订单未流转卡顿，需要找OTM人处理。
+			li.bor-b.bor-t(stamp='1')
+				div.hlp-title
+					h1 购买电视后无法只显示电视发票，不显示爱奇艺发票下载
+					span.arrows
+				p.hlp-txt 
+					| 下载PC端后尝试下载，还是无法下载报运维处理
+			li.bor-b.bor-t(stamp='1')
+				div.hlp-title
+					h1 员工注册绑定银行卡时显示四要素不匹配
+					span.arrows
+				p.hlp-txt 
+					| 员工绑定的银行卡预留银行的信息跟绑定的信息不匹配：比如预留的手机，卡号，或者是姓名不对等不匹配的都是属于四要素内，核对银行卡信息输入正确的信息即可匹配。
+			li.bor-b.bor-t(stamp='1')
+				div.hlp-title
+					h1 上了电子发票系统了，但是订单仍然显示纸质发票
+					span.arrows
+				p.hlp-txt 
+					|  1、核对财务是否可以开具纸质发票
+					<br/>2、员工绑定的手机系统未更新，建议解绑手机后重新绑定后再尝试订购
+					<br/>3、如无法开具，报ITSM技术排查原因处理
+			li.bor-b.bor-t(stamp='1')
+				div.hlp-title
+					h1 订单查看不到发票的情况
+					span.arrows
+				p.hlp-txt 
+					| 线下的订单是订单提交后正常流转后即可显示电子发票信息，或者行单审核后即可显示发票，如未显示，报运维查技术原因。线上的订单是需要订单妥投后顾客点击确认收货后，系统电子发票信息才会显示，如已经妥投后系统还显示未开票或者看不到发票信息，报运维查技术原因。
+			li.bor-b.bor-t(stamp='1')
+				div.hlp-title
+					h1 如何查询顾客订单提货电子签收码？
+					span.arrows
+				p.hlp-txt 
+					| 在顾客订单页上方有提货码信息，按返回键，在订单页上方

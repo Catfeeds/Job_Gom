@@ -1,0 +1,142 @@
+doctype html
+html(lang="zh-CN")
+	include ../../../../../gomeplusUI/pc/src/jade/head.jade
+	link(type="text/css",rel="stylesheet",href="../../css/public/public.css")
+	link(type="text/css",rel="stylesheet",href="../../css/module/shop/service.css")
+	body.opg
+		include ../../../../../gomeplusUI/pc/src/jade/header.jade
+		include ../../../../../gomeplusUI/pc/src/jade/menu.jade
+		.wrap-box.mart20.clearfix
+			.order-side-bar
+				h3 我的主页
+				h3 社交
+				ul
+					li
+						a(href="javascript:;") 我的圈子
+					li
+						a(href="javascript:;") 我的话题
+				h3 购物
+				ul
+					li
+						a(href="javascript:;") 我的订单
+					li
+						a(href="javascript:;") 我的优惠券
+				h3 收藏
+				ul
+					li
+						a(href="javascript:;") 我的收藏
+				h3 设置
+				ul
+					li
+						a(href="javascript:;") 个人信息
+					li
+						a(href="javascript:;") 登录密码修改
+					li
+						a(href="javascript:;") 修改绑定手机号
+					li
+						a(href="javascript:;") 收货地址管理
+				h3
+					a(href="javascript:;").active 售后服务
+				ul
+					li
+						a(href="javascript:;") 退款/售后
+			.order-right
+				.order-right-top
+					h2.service-title 售后服务
+					ul.service-search-box.clearfix
+						li
+							label 订单编码：
+							input(type="text" placeholder="请输入正确订单编码")
+						li
+							label 申请时间：
+							a(href="javascript:;").date
+								span 2016-07-20
+							|  - 
+							a(href="javascript:;").date
+								span.default 日期
+						li
+							label 类型：
+							a(href="javascript:;").trade-type-select
+								span 退款
+								em.icon.icon-down.icon-up
+						li.mgr0
+							label 状态：
+							a(href="javascript:;").trade-type-select.trade-state-select
+								span 请选择
+								em.icon.icon-down.icon-up
+					a(href="javascript:;").search-btn 搜索
+				.order-tabs.clearfix
+					a(href="javascript:;").active 全部
+					a(href="javascript:;") 申请的退款
+					a(href="javascript:;") 申请的退换货
+				// 带有商品名称版
+				table.ship-addr-table
+					tr
+						th 订单
+						th 商品名称
+						th 交易金额
+						th 退款金额
+						th 类型
+						// th 申请时间
+						th 状态
+						th 订单操作
+					tr
+						td.order-number 682927374628
+						td
+							p.product-name
+								a(href="##") 一二三四五六七这是第一个商品名是第一个商品名第一个商品名一个商品名个商品名商品名品名
+							p.product-name
+								a(href="##") 一二三四五六七这是第二个商品名是第二个商品名第二个商品名
+						td.trade-money ￥1200
+						td.refund-money ￥30
+						td.type 退款
+						// td.time
+							span.date 2016-07-20 
+							span.hour 21:13
+						td.refund 买家申请退款
+						td
+							a(href="javascript:;").check-detail 查看详情
+				// 带有申请时间版
+				table.ship-addr-table
+					tr
+						th 订单
+						th 交易金额
+						th 退款金额
+						th 类型
+						th 申请时间
+						th 状态
+						th 订单操作
+					tr
+						td.order-number 682927374628
+						td.trade-money ￥1200
+						td.refund-money ￥30
+						td.type 退款
+						td.time
+							span.date 2016-07-20 
+							span.hour 21:13
+						td.refund 买家申请退款
+						td
+							a(href="javascript:;").check-detail 查看详情
+					tr
+						td.order-number 682927374628
+						td.trade-money ￥1200
+						td.refund-money ￥30
+						td.type 退款
+						td.time
+							span.date 2016-07-20 
+							span.hour 21:13
+						td.refund 买家申请退款
+						td
+							a(href="javascript:;").check-detail 查看详情
+							a(href="javascript:;").lh23 查看物流
+				.page
+					a(href="javascript:;").page-disable 上一页
+					a(href="javascript:;") 1
+					a(href="javascript:;") 2
+					a(href="javascript:;") 3
+					a(href="javascript:;").active 4
+					a(href="javascript:;") 5
+					span ···
+					a(href="javascript:;") 100
+					a(href="javascript:;") 下一页
+					a(href="javascript:;") 最后一页

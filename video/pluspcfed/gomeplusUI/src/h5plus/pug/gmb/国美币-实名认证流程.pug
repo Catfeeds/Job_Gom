@@ -1,0 +1,60 @@
+doctype html
+html(lang="zh-CN", data-use-rem="750")
+	include ../../../m-widget/head/head.jade
+	link(type="text/css",rel="stylesheet",href="../../css/public/gomeplusUI.css")
+	link(type="text/css",rel="stylesheet",href="../../css/module/gmb/gmb.css")
+	body.opg.gmb
+		include ../../../m-widget/head/rem.jade
+	
+	.account-box
+		.c-f4.gmb-notice
+			em.u-sj
+			| 请认真填写
+		.flex-boxs.bor-t
+			.flex-box
+				.flex-hd
+					p.c-3 账户安全
+				.flex-bd
+					input
+			.flex-box
+				.flex-hd
+					p.c-3 身份证号
+				.flex-bd
+					input
+			.flex-box
+				.flex-hd
+					p.c-3 卡类型
+				.flex-bd
+					input
+				.flex-ft
+					span.u-sj
+			.flex-box
+				.flex-hd
+					p.c-3 卡号
+				.flex-bd
+					input
+
+		.flex-boxs.bor-t
+			.flex-box
+				.flex-hd
+					p.c-3 手机号
+				.flex-bd
+					input
+			.flex-box
+				.flex-hd
+					p.c-3 验证码
+				.flex-bd
+					input
+				.flex-ft
+					a.m-btn-bor(href="javascript" disabled="true") 50s后可重获
+			.flex-box
+				.flex-hd
+					p.c-3 验证码
+				.flex-bd
+					input
+				.flex-ft
+					a.m-btn-bor(href="javascript") 获取验证码
+		.btn-box
+			a.m-btn-big(href="javascript:;") 退出
+	//- 结束
+		

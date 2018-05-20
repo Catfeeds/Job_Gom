@@ -1,0 +1,48 @@
+@charset "utf-8";
+    @import '../../widget/config/_base.scss';
+    @import '../../widget/header/header-talent.scss';
+    @import '../../widget/aside/talent.scss';
+    .opg {   
+        background:#F3F5F7;
+        min-width: 1040px;
+    }
+    .talent{
+        min-width: 1260px;
+    }
+    .talent-protocol-box{       
+        margin-left: 220px;
+        .protocol-cont{
+            width: 940px;
+            margin: 0 auto;
+            padding-top: 20px;
+            border: 1px solid #ccc;
+            background-color:#fff;
+            padding:30px 50px;
+            .contents{
+                margin-top: 80px;
+            }
+            h1{
+                font-family: PingFangSC-Regular;
+                font-size: 26px;
+                color: #333333;
+                letter-spacing: 0;
+                text-align: center;
+            }
+            p{
+                font-family: 'PingFangSC-Regular';
+                font-size: 14px;
+                color: #333333;
+                letter-spacing: 0;
+                line-height: 30px;
+            }
+            p.first-line{
+                margin-top: 50px;
+            }
+            h2.first-title{
+                margin-top: 45px;
+            }
+            a{
+                color: #4990E2;
+            }
+        }
+    }

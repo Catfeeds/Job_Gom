@@ -1,0 +1,149 @@
+@charset "utf-8";
+
+// _configure.scss
+@import "../public/_configure.scss";
+
+// account-main
+.account-main{
+	background:#fff;
+	.record-consume{
+		padding:10px 20px 20px;
+		.set-fn{
+			margin:22px 0px 30px;
+			.ele-input{
+				width:190px;
+			}
+			.ele-select{
+				width:190px;
+			}
+		}
+	}
+}
+.account-main01{
+	.amp-path{
+		margin-bottom:2px;
+		.path-col{
+			font-size:14px;
+			color:$text-dark;
+		}
+	}
+}
+// contact-wrap
+.contact-wrap{
+	padding:16px 20px 0px 0px;
+	.ele-input{
+		width:282px;
+	}
+	.ele-textarea{
+		width:282px;
+	}
+	.btn-wrap{
+		padding:0px 0px 30px 183px;
+	}
+	.group-detail{
+		padding-bottom:30px;
+	}
+}
+// module-statis
+.module-statis{
+	padding:15px;
+	.statis-infor{
+		overflow:hidden;
+		height:337px;
+		.infor-name{
+			float:left;
+			width:385px;
+			// width:35%;
+			height:337px;
+			text-align:center;
+			background:#fffcf0;
+			&:before{
+				content:'';
+				display:block;
+				height:100%;
+				width:1px;
+				@include inline-block;
+			}
+			p{
+				@include inline-block;
+				width:98%;
+				text-align:center;
+				.name-icon{
+					display:block;
+					margin:0px auto;
+					width:65px;
+					height:67px;
+					color:#f7cc05;
+					.icon-wallet{
+						font-size:65px;
+					}
+				}
+				.name-title{
+					margin-top:10px;
+					display:block;
+					font-size:20px;
+					color:$text-dark;
+				}
+			}
+		}
+		.infor-data{
+			overflow:hidden;
+			*zoom:1;
+			ul{
+				position:relative;
+				li{
+					float:left;
+					width:50%;
+					padding:0px 0px 15px 10px;
+					text-align:center;
+					p{
+						background:#f6fdfa;
+						height:161px;
+						strong{
+							padding:47px 0px 12px;
+							font-weight:normal;
+							font-size:16px;
+							line-height:1.5;
+							display:block;
+							color:$text-medium;
+						}
+						span{
+							display:block;
+							font-size:26px;
+							color:#ff6600;
+						}
+					}
+				}
+			}
+		}
+	}
+	// statis-fn
+	.statis-fn{
+		padding:30px 0px 0px;
+		.btn{
+			margin-right:20px;
+		}
+		.btn-base-gray{
+			padding:0px 20px;
+		}
+	}
+}
+// money-cont
+.money-cont{
+	padding:44px 0px 0px 134px;
+	.detail-row04{
+		padding-top:6px;
+	}
+	.money-other{
+		width:700px;
+		padding:15px 20px;
+		background:#f9fafb;
+		.ele-input{
+			height:34px;
+			width:240px;
+			padding:3px 10px;
+			margin-right:10px;
+			@include prefix(border-radius,0);
+		}
+	}
+}

@@ -1,0 +1,209 @@
+@charset "UTF-8";
+
+// 我的页面
+// body class="opg userhome"
+// userhome 私有
+
+.go-index{
+    width: rem(178);
+    height: rem(86);
+    display: block;
+    background: url(../../images/wechat/go-index.png) no-repeat left top;
+    background-size: rem(178 86);
+    position: fixed;
+    right: 0;
+    bottom: rem(260);
+    z-index: 100;
+}
+.user-wrap{
+	background-repeat: no-repeat;
+	background-position: left top;
+	background-size: 100% 3.4rem;
+	// 随机背景图片
+	&.user-bg-1{
+		background-image: url(../../images/wechat/bg-1.jpg) 
+	}
+	&.user-bg-2{
+		background-image: url(../../images/wechat/bg-2.jpg) 
+	}
+	&.user-bg-3{
+		background-image: url(../../images/wechat/bg-3.jpg) 
+	}
+	&.user-bg-4{
+		background-image: url(../../images/wechat/bg-4.jpg) 
+	}
+	&.user-bg-5{
+		background-image: url(../../images/wechat/bg-5.jpg) 
+	}
+	&.user-bg-6{
+		background-image: url(../../images/wechat/bg-6.jpg) 
+	}
+	&.user-bg-7{
+		background-image: url(../../images/wechat/bg-7.jpg) 
+	}
+	&.user-bg-8{
+		background-image: url(../../images/wechat/bg-8.jpg) 
+	}
+	&.user-bg-9{
+		background-image: url(../../images/wechat/bg-9.jpg) 
+	}
+	// 随机背景图片
+	.user-head{
+		height: rem(340);
+		padding-top: rem(104);
+		margin-bottom: rem(10);
+		// background: url(../../images/usercenter/userhome.jpg) no-repeat left top;
+		// background-size: 100% 2.52rem;
+		.head-face{
+			width: 1.3rem;
+			height: 1.3rem;
+			margin-left: auto;
+			margin-right: auto;
+			border: 2px solid #fff;
+			border-radius: 1.3rem;
+			-webkit-border-radius: 1.3rem;
+			position: relative;
+			img{
+				width: 100%;
+				height: 100%;
+				border-radius: 1.3rem;
+				-webkit-border-radius: 1.3rem;
+			}
+		}
+		.head-nick{
+			color: #fff;
+			font-size: .3rem;
+			line-height: .42rem;
+			text-align: center;
+			margin-top: .25rem;
+		}
+	}
+	// /user-home
+
+	.order-entry{
+		margin-bottom: .1rem;
+		background-color: #fff;
+	}
+	.entry-item{
+		height: auto;
+		border-bottom: 1px solid #eee;
+		&:nth-last-child(1){
+			border-bottom: none;
+		}
+		&>a{
+			height: 1rem;
+			color: #333;
+			display: block;
+			line-height: 1.1rem;
+			overflow: hidden;
+			padding-left: .3rem;
+			padding-right: .3rem;
+			position: relative;
+		}
+		.icn{
+			float: left;
+			margin-right: .2rem;
+			em{
+				font-size: .4rem;
+			}
+		}
+		em.iconn-33{
+			color: #EC5B5C;
+		}
+		em.iconn-70{
+			color: #A689CB;
+		}
+		em.iconn-49{
+			color: #FF5A83;
+		}
+		em.iconn-57{
+			color: #79B7FF;
+		}
+		em.iconn-96{
+			color: #FF9F05;
+		}
+		
+		
+		.arrow{
+			color: #f00;
+			position: absolute;
+			right: .3rem;
+			top: 50%;
+			margin-top: 1px;
+			-webkit-transform: translateY(-50%);
+	    	transform: translateY(-50%);
+	    	em{
+	    		color: #999;
+	    		font-size: .22rem;
+	    		margin-right: -.04rem;
+	    	}
+		}
+		.title{
+			float: left;
+			font-size: .28rem;
+			position: relative;
+		}
+		.tips{
+			float: right;
+			color: #999;
+			font-size: .22rem;
+			padding-right: .24rem;
+		}
+		
+	}
+	.item-first{
+		&>a{
+			height: .7rem;
+			line-height: .8rem;
+		}
+	}
+
+	.entry-list{
+		height: 1.3rem;
+		overflow: hidden;
+		display: -webkit-box;
+	    display: box;
+	    li{
+	    	width: 100%;
+		    -webkit-box-flex: 1;
+		    box-flex: 1;
+		    -webkit-box-align: center;
+		    box-align: center;
+		    display: -webkit-box;
+		    display: box;
+            .num {
+                width: .3rem;
+                height: .3rem;
+                display: block;
+                position: absolute;
+                top: -.06rem;
+                right: .55rem;
+                border: 1px solid #ff5c5c;
+                background-color: #fff;
+                border-radius: .3rem;
+                text-align: center;
+                line-height: .3rem;
+                font-style: normal;
+                font-size: .2rem;
+                color: #ff5c5c; }
+		    &>a{
+		    	color: #666;
+		    	width: 100%;
+		    	display: block;
+		    	text-align: center;
+                position: relative;
+		    }
+		    p{
+		    	font-size: .22rem;
+		    	margin-top: .2rem;
+		    }
+		    em{
+		    	font-size: .4rem;
+		    }
+	    }
+	}
+}
+
+
+
+

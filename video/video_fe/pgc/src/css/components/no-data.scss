@@ -1,0 +1,21 @@
+/**
+ * [未请求到数据]
+ * @Author: Fu Xiaochun
+ * @Email:  fuzhengchun@gomeplus.com
+ */
+
+.no-data-wrap{
+	width:100%;
+	padding:50px 0;
+	text-align: center;
+	font-size: 16px;
+	line-height: 24px;
+	.no-data-msg{
+		padding-bottom: 20px;
+		color:#333;
+	}
+	.no-data-btn{
+		padding:0 20px;
+		color:#FFF;
+	}
+}

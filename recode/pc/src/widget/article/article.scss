@@ -1,0 +1,10 @@
+@import '../config/_base.scss';
+@import '../config/_mixins.scss';
+.opg{
+    h2.title{
+        font-size: $text30;
+        line-height: 70px;
+        padding-top: 10px;
+        font-weight: normal;
+    }
+}

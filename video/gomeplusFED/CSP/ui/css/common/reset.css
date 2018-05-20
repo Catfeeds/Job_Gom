@@ -1,0 +1,425 @@
+@charset "UTF-8";
+/*==============================标准色==========================*/
+/*==============================wrap宽度==========================*/
+/*----结构宽度-----*/
+/*----主色-----*/
+/*==============================字体大小==========================*/
+body, button, input, select, textarea {
+  font-size: 14px;
+  font-family: 'PingFang SC','Myriad Pro','Hiragino Sans GB','Microsoft YaHei',sans-serif; }
+
+body, h1, h2, h3, h4, h5, h6, dl, dt, dd, ul, ol, li, th, td, p, blockquote, pre, form, fieldset, legend, input, button, textarea, article, aside, footer, header, hgroup, nav, section, menu {
+  margin: 0;
+  padding: 0; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+ul, li {
+  list-style: none; }
+
+fieldset, img {
+  border: 0;
+  vertical-align: middle; }
+
+input, textarea {
+  outline-style: none; }
+
+textarea {
+  resize: none; }
+
+a {
+  text-decoration: none;
+  outline: none;
+  color: #333; }
+
+a:hover {
+  text-decoration: none; }
+
+em {
+  font-style: normal; }
+
+body {
+  background: #ececec;
+  padding-bottom: 50px; }
+
+.wrap-box {
+  width: 1080px;
+  margin: 0 auto; }
+
+.clearfix:after {
+  content: "";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden; }
+
+.clearfix {
+  zoom: 1; }
+
+.none {
+  display: none; }
+
+.block {
+  display: block; }
+
+.wrap-left {
+  float: left;
+  width: 200px; }
+
+.wrap-right {
+  float: right;
+  width: 870px; }
+
+.opg .header {
+  height: 70px;
+  background: #419dea;
+  color: #f2f2f2;
+  margin-bottom: 12px; }
+  .opg .header .fl {
+    float: left;
+    line-height: 28px;
+    padding-top: 21px; }
+    .opg .header .fl .header-select {
+      display: inline-block;
+      padding: 0 9px;
+      position: relative;
+      height: 26px;
+      border: 1px solid #287cc3;
+      border-radius: 3px;
+      background: #47abff;
+      color: #f2f2f2;
+      margin: 0 20px;
+      cursor: pointer; }
+      .opg .header .fl .header-select span {
+        display: inline-block;
+        width: 12px;
+        height: 12px;
+        border: 1px solid #fff;
+        border-radius: 50%;
+        background: #5cb86c;
+        vertical-align: -2px;
+        margin-right: 10px; }
+      .opg .header .fl .header-select .red {
+        background: #ee2f2f; }
+      .opg .header .fl .header-select .gray {
+        background: #cdcdcd; }
+      .opg .header .fl .header-select em.san {
+        font-style: normal;
+        display: inline-block;
+        width: 0;
+        height: 0;
+        border-left: 6px solid transparent;
+        border-right: 6px solid transparent;
+        border-top: 6px solid #fff;
+        margin-left: 15px; }
+      .opg .header .fl .header-select .select-s {
+        position: absolute;
+        left: 0;
+        top: 100%;
+        width: 100%;
+        line-height: 40px;
+        background: #fff;
+        z-index: 50;
+        margin-top: 1px; }
+        .opg .header .fl .header-select .select-s a {
+          display: block;
+          padding-left: 9px; }
+          .opg .header .fl .header-select .select-s a:hover {
+            background: #e4e4e4; }
+        .opg .header .fl .header-select .select-s .active {
+          background: #e4e4e4; }
+    .opg .header .fl .text {
+      background: #fff;
+      color: #666;
+      padding: 0 5px;
+      border-radius: 2px;
+      margin-right: 10px; }
+    .opg .header .fl .btn-header {
+      display: inline-block;
+      height: 26px;
+      border: 1px solid #287cc3;
+      border-radius: 3px;
+      padding: 0 15px;
+      background: #47abff;
+      color: #f2f2f2;
+      margin-left: 20px; }
+  .opg .header .fr {
+    float: right;
+    padding-top: 12px; }
+
+.opg .wrap-left .menu {
+  background: #f9f9f9; }
+  .opg .wrap-left .menu a {
+    line-height: 60px;
+    display: block;
+    text-align: center; }
+  .opg .wrap-left .menu .active {
+    background: #e4e4e4; }
+
+.opg .btn {
+  display: inline-block;
+  padding: 0 15px;
+  line-height: 30px;
+  border-radius: 3px;
+  background: #fff;
+  color: #666;
+  text-align: center;
+  border: 1px solid #cdcdcd;
+  box-sizing: border-box; }
+  .opg .btn:hover {
+    color: #fff;
+    border-color: #419dea;
+    background: #419dea; }
+.opg .btn ~ .btn {
+  margin-left: 10px; }
+.opg .btn-big {
+  line-height: 40px;
+  padding: 0 30px; }
+.opg .btn-red {
+  color: #ee2f2f;
+  border-color: #ee2f2f;
+  background: #fff; }
+.opg .btn-blue {
+  color: #fff;
+  border-color: #419dea;
+  background: #419dea; }
+.opg .btn-block {
+  width: 100%; }
+.opg .disable {
+  cursor: no-drop; }
+  .opg .disable:hover {
+    color: #666;
+    background: #fff;
+    border: 1px solid #cdcdcd; }
+
+.gap {
+  margin: 50px; }
+
+.pop-box {
+  width: 460px;
+  background: #f9f9f9; }
+  .pop-box.check-chat {
+    width: 540px; }
+  .pop-box label {
+    float: left; }
+  .pop-box .ui-dialog-title {
+    height: 36px;
+    line-height: 36px;
+    padding-left: 13px;
+    color: #fff;
+    background-color: #419dea; }
+  .pop-box .add-acount {
+    width: 392px;
+    padding: 0 33px 0 35px; }
+    .pop-box .add-acount label {
+      width: 52px;
+      height: 40px;
+      line-height: 40px; }
+    .pop-box .add-acount input {
+      width: 190px; }
+    .pop-box .add-acount .login-name {
+      width: 330px; }
+    .pop-box .add-acount .add-acount-title {
+      font-weight: normal;
+      text-align: center;
+      padding: 28px 0 12px; }
+  .pop-box .character {
+    position: relative;
+    width: 200px;
+    height: 40px;
+    float: left;
+    cursor: pointer; }
+    .pop-box .character input {
+      cursor: pointer; }
+    .pop-box .character em {
+      position: absolute; }
+    .pop-box .character .line {
+      display: block;
+      top: 5px;
+      right: 40px;
+      width: 1px;
+      height: 28px;
+      background-color: #cdcdcd; }
+    .pop-box .character .icon-down {
+      top: 18px;
+      right: 15px;
+      width: 10px;
+      height: 5px;
+      background: url(../../images/icon-down.png) no-repeat; }
+    .pop-box .character ul {
+      width: 198px;
+      border-left: 1px solid #e4e4e4;
+      border-right: 1px solid #e4e4e4;
+      background-color: #fff; }
+      .pop-box .character ul li {
+        padding-left: 8px;
+        height: 39px;
+        line-height: 39px;
+        border-bottom: 1px solid #e4e4e4; }
+        .pop-box .character ul li:hover {
+          background-color: #e4e4e4; }
+  .pop-box .input {
+    margin-top: 15px; }
+    .pop-box .input input {
+      padding-left: 8px;
+      height: 38px;
+      line-height: 38px;
+      border: 1px solid #e4e4e4; }
+  .pop-box .ui-dialog-button {
+    float: right;
+    padding: 24px 34px 32px 0; }
+  .pop-box .prompt-txt {
+    width: 460px;
+    padding: 50px 0 26px;
+    text-align: center; }
+  .pop-box .im-prompt-txt {
+    width: 323px;
+    padding: 36px 65px 38px 72px; }
+    .pop-box .im-prompt-txt span {
+      color: #ee2f2f;
+      font-size: 16px; }
+  .pop-box .welcome-txt {
+    width: 388px;
+    padding: 15px 40px 0 35px; }
+    .pop-box .welcome-txt label {
+      width: 72px; }
+    .pop-box .welcome-txt p {
+      width: 315px;
+      float: left; }
+    .pop-box .welcome-txt textarea {
+      width: 296px;
+      height: 56px;
+      padding: 11px 6px;
+      border: 1px solid #e4e4e4; }
+    .pop-box .welcome-txt .set-time-box {
+      height: 40px;
+      line-height: 40px;
+      margin: 24px 0 26px; }
+    .pop-box .welcome-txt .time-set {
+      position: relative;
+      float: left; }
+      .pop-box .welcome-txt .time-set span {
+        float: left;
+        margin: 0 11px; }
+      .pop-box .welcome-txt .time-set input {
+        float: left;
+        width: 38px;
+        height: 38px;
+        text-align: center;
+        border: 1px solid #e4e4e4; }
+  .pop-box .confirm-txt {
+    width: 460px;
+    padding: 66px 0 30px;
+    text-align: center; }
+  .pop-box .confirm-btn {
+    width: 143px;
+    margin: 0 auto;
+    float: none;
+    padding-right: 0; }
+  .pop-box .export-chat-records {
+    width: 505px;
+    padding: 38px 0 0 35px; }
+    .pop-box .export-chat-records .chat-date {
+      margin-bottom: 22px; }
+      .pop-box .export-chat-records .chat-date label {
+        height: auto;
+        line-height: 16px; }
+      .pop-box .export-chat-records .chat-date .date-box {
+        float: left; }
+        .pop-box .export-chat-records .chat-date .date-box .raido {
+          float: left;
+          width: 16px;
+          height: 16px;
+          margin-right: 11px;
+          background: url(../../images/icon-o.png) no-repeat; }
+        .pop-box .export-chat-records .chat-date .date-box .active {
+          background: url(../../images/icon-o2.png) no-repeat; }
+        .pop-box .export-chat-records .chat-date .date-box label {
+          width: auto;
+          line-height: 16px; }
+        .pop-box .export-chat-records .chat-date .date-box .date-nav {
+          width: 310px;
+          height: 23px;
+          line-height: 23px; }
+          .pop-box .export-chat-records .chat-date .date-box .date-nav a {
+            width: 110px;
+            float: left; }
+            .pop-box .export-chat-records .chat-date .date-box .date-nav a img {
+              margin: -3px 7px 0 0; }
+          .pop-box .export-chat-records .chat-date .date-box .date-nav .line {
+            float: left;
+            width: 36px;
+            height: 1px;
+            margin: 10px 16px 0 8px;
+            background-color: #666; }
+        .pop-box .export-chat-records .chat-date .date-box .choose-date {
+          margin-top: 14px; }
+          .pop-box .export-chat-records .chat-date .date-box .choose-date .raido {
+            margin-top: 2px; }
+    .pop-box .export-chat-records label {
+      width: 66px;
+      height: 40px;
+      line-height: 40px; }
+    .pop-box .export-chat-records input {
+      width: 310px; }
+    .pop-box .export-chat-records .file {
+      float: left;
+      width: 320px;
+      height: 40px;
+      position: relative; }
+      .pop-box .export-chat-records .file .icon-file {
+        position: absolute;
+        top: 9px;
+        left: 11px; }
+      .pop-box .export-chat-records .file input {
+        width: 279px;
+        padding-left: 39px; }
+    .pop-box .export-chat-records .read-btn {
+      margin: 4px 0 0 15px; }
+  .pop-box .pdr43 {
+    padding-right: 43px; }
+  .pop-box .opg .btn ~ .mgl19 {
+    margin-left: 19px; }
+
+.im-video-dialog {
+  width: 321px;
+  height: 468px;
+  position: relative; }
+  .im-video-dialog .icon-close {
+    position: absolute;
+    right: -60px;
+    top: -42px;
+    width: 50px;
+    height: 50px;
+    background: url(../../images/icon-close.png) no-repeat center;
+    cursor: pointer; }
+  .im-video-dialog .icon-stop {
+    position: absolute;
+    left: 11px;
+    bottom: 12px;
+    width: 50px;
+    height: 50px;
+    background: url(../../images/icon-stop.png) no-repeat center;
+    cursor: pointer; }
+  .im-video-dialog .icon-play {
+    background-image: url(../../images/icon-play.png);
+    background-size: 100%; }
+  .im-video-dialog .progress {
+    font-size: 0;
+    height: 4px;
+    line-height: 4px;
+    overflow: hidden;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background: #fff; }
+    .im-video-dialog .progress .progress-play {
+      background: #419dea;
+      height: 4px;
+      line-height: 4px;
+      float: left; }
+
+

@@ -1,0 +1,62 @@
+doctype html
+html(lang="zh-CN",data-use-rem="750")
+	include ../../../m-widget/head/head.jade
+	link(type="text/css",rel="stylesheet",href="../../css/public/public-wap.css")
+	link(type="text/css",rel="stylesheet",href="../../css/module/shop.css")
+	
+	body.opg
+		include ../../../m-widget/head/rem.jade		
+
+		header.header
+			span
+				a.head-back(href="javascript:;")
+					em.iconn-1
+			h1.head-title 本店上新
+			span
+				a.head-icn(href="javascript:;")
+					em.iconn-3
+				a.head-icn(href="javascript:;")
+					em.iconn-4
+		// /header
+
+		.newest-time 今日
+		ul.main-list.grid-list-bor
+			-for(i=0;i<4;i++) //循环四个同样的LI
+				li.item
+					a(href="javascript:;")
+						.item-img
+							img(src='https://i-pre.meixincdn.com/T15yWTBKxT1RXrhCrK.200x200cTz.jpg')
+						.item-txt 情人生日礼Crystallin精装礼品
+						.item-price
+							span.red ¥2199.40
+							del.del ¥2899.00
+		ul.main-list
+			li.item.item-big
+				a(href="javascript:;")
+					.item-img
+						img(src='https://i-pre.meixincdn.com/T15yWTBKxT1RXrhCrK.200x200cTz.jpg')
+					.item-txt 情人生日礼Crystallin精装礼品
+					.item-price
+						span.red ¥2199.40
+						del.del ¥2899.00
+		.newest-time 昨日
+		ul.main-list
+			li.item.item-big
+				a(href="javascript:;")
+					.item-img
+						img(src='https://i-pre.meixincdn.com/T15yWTBKxT1RXrhCrK.200x200cTz.jpg')
+					.item-txt 情人生日礼Crystallin精装礼品
+					.item-price
+						span.red ¥2199.40
+						del.del ¥2899.00
+		.newest-time 9月30日
+		ul.main-list
+			li.item.item-big
+				a(href="javascript:;")
+					.item-img
+						img(src='https://i-pre.meixincdn.com/T15yWTBKxT1RXrhCrK.200x200cTz.jpg')
+					.item-txt 情人生日礼Crystallin精装礼品
+					.item-price
+						span.red ¥2199.40
+						del.del ¥2899.00
+		.page-no 我是有底线的

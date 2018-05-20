@@ -1,0 +1,47 @@
+.pager{
+  text-align: center;
+  padding:10px 0;
+  margin:20px 0 30px 0 ;
+  li{
+    border: 1px solid #f0f0f0;
+    border-radius: 4px;
+    margin:0 5px;
+    display:inline-block;
+    width:40px;
+    height:40px;
+    line-height:40px;
+    text-align: center;
+    cursor: pointer;
+    span{
+      color:#666;
+    }
+  }
+  li:hover{
+    //span{
+    //  color:$primary;
+    //  border-bottom: 1px solid $primary;
+    //}
+    background:#3e9bf7;
+    span{
+      color:#fff;
+    }
+
+    //span.nodata{
+    //  color:$base;
+    //  border-bottom: 1px solid transparent;
+    //}
+  }
+  li.active{
+    background:#3e9bf7;
+    span{
+      color: #fff;
+    }
+  }
+  li.noClickClass:hover{
+    cursor: default;
+    background:#fff;
+    span{
+      color:#666;
+    }
+  }
+}

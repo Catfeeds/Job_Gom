@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>ZNM | TEST</title>
+    <meta charset="UTF-8">
+    <style type="text/css">
+        * {
+            padding: 0;
+            margin: 0;
+
+        }
+        html,
+        body {
+            height: 100%;
+        }
+    </style>
+</head>
+<body>
+	<h1>login</h1>
+
+	<script src="./../../../node_modules/jquery/dist/jquery.min.js"></script>
+	<script>
+		var dynSite='//g.atguat.com.cn',
+		    staSite='//www.atguat.com.cn',
+		    contextPath='/ec/homeus',
+		    imgServer='//img.atguat.net.cn/images',
+		    secureURL='//g.atguat.com.cn',
+		    pictureserver='//img.atguat.net.cn/image',
+		    cookieDomain='.atguat.com.cn',
+		    stageJsServer='//js.atguat.com.cn',
+		    stageImageServer='//img.atguat.net.cn',
+		    stageCssServer='//css.atguat.com.cn',
+		    cssserver='//css.atguat.com.cn/css',
+		    jsserver='//js.atguat.com.cn/js',
+		    protocol='http',
+		    versionData='1701170327';
+	</script>
+	<script src="http://js.atguat.net.cn/gmlib/unit/g/1.0.0/g.js"></script>
+	<script>
+		console.log('$: ',window.$);
+		console.log('jQuery: ',window.jQuery);
+		$('h1').click(function(){
+			g.login(function(){ console.log('in.');});
+		})
+	</script>
+
+</body>
+</html>

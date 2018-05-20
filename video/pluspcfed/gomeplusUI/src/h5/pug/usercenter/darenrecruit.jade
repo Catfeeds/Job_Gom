@@ -1,0 +1,68 @@
+doctype html
+html(lang="zh-CN",data-use-rem="750")
+	include ../../../m-widget/head/head.jade
+	link(type="text/css",rel="stylesheet",href="../../css/public/public-wap.css")
+	link(type="text/css",rel="stylesheet",href="../../css/module/usercenter-new.css")
+	
+	body(style="background-color: #fff;").opg.user-center
+		include ../../../m-widget/head/rem.jade
+		
+		header.header.header-fixed
+			// 吸顶时加.header-fixed 不吸顶去掉
+			span
+				a.head-back(href="javascript:;")
+					em.iconn-1
+			h1.head-title 达人招募
+		// /header
+
+		.daren-wrap
+			.dr-1
+			.dr-2
+			.dr-3.aplly-btn-box
+				a(href="##").dr-aplly-btn
+			.dr-4.dr-process
+				ul
+					li
+						.step-num 1
+						span.step-txt 填写资料
+					li
+						.step-num 2
+						span.step-txt 审核
+					li
+						.step-num 3
+						span.step-txt 填写资料
+			.dr-5.dr-table
+				ul
+					li
+						label 真实姓名:
+						.input-box
+							input(type="text" placeholder="请输入姓名（必填）")
+					li
+						label 身份证号:
+						.input-box
+							input(type="text" placeholder="请输入身份证号（必填）")
+					li
+						label 实名认证:
+						span.gray （身份证正反面照、手持身份证照）
+						.idpics
+							dl
+								dt.front
+								dd 正面
+							dl
+								dt.obverse
+								dd 反面
+							dl
+								dt.handheld
+								dd 手持身份证
+					li
+						label 达人类别:
+						.input-box
+							a(href="##" disabled="disabled").select-box 请选择达人类别（必选）
+							em.iconn-42
+					li
+						label 个人介绍:
+						.text-area
+							textarea(placeholder="请填写简单的文字介绍，包括您的微博、微信等其它平台的个人账号，是否与其他品牌有过合作等。")
+							span.limit 0/200
+				a(href="##").btn-shadow
+					span.orange-btn 申请达人

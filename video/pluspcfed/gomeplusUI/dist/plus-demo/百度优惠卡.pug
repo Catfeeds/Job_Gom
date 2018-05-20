@@ -1,0 +1,43 @@
+extends ../plus-widget/head/head.jade
+block style
+	link(type="text/css",rel="stylesheet",href="goods.css")
+block body
+	body.opg.goods
+		include ../plus-widget/head/rem.jade
+		header.header
+			.h-left
+				a.h-back(href="javascript:;")
+					em.iconn-1
+			.h-cnt.flex-cell
+				h1.h-tit 优惠信息
+			.h-right
+				a.h-btn(href="javascript:;")
+					em.iconn-3
+		// header end
+		
+		.goods-wrap
+			section.swiper-img
+
+			// swiper end
+
+			.gs-info
+				.source
+					span 国美
+					span 08-09
+					span 19:45
+				h2.title
+					a(href="") Apple MacBook AirMD 760CH/ B3.3 英寸宽屏笔记本电脑
+				p.price
+					span.pr-box
+						small ¥
+						span 6288.00
+					em.tag-1
+
+			.gs-text
+				p
+					em.lt
+					| 促销信息后台返回，显示全部促销信息内容，显示不下折行显示折，行显示折行显示折行，显示折行显示折行。显示折行显示折行显示折行显示折行显，示折行显示折行显示折行，显示折行显示折行显示折行，显示折行显示折。行显示折行显示折行显示折行显示折行显示折，行显示折行显示，折行显示折行显示折行显。示折行显示折行显示折行。显示折行显示折行显示折行显示折行，显示折行显示折行显示折行
+					em.gt
+
+			.gd-btn
+				a(href="##").buy 点击购买

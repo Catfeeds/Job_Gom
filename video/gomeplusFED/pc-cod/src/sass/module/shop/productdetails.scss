@@ -1,0 +1,112 @@
+@import '../../../../../../gomeplusUI/pc/src/sass/common/basic/_base.scss';
+@import '../../../../../../gomeplusUI/pc/src/sass/common/basic/_mixins.scss';
+body{
+    background: #f6f5ee;
+}
+.opg{
+    $bor:#e4e3db;
+    .goods-box{
+        text-align: center;
+        width: auto;
+        height: auto;
+        overflow: hidden;
+        padding: 30px 0;
+        .store-logo{
+            text-align: center;
+            img{
+                width: 60px;
+                height: 50px;
+            }
+        }
+    .p-store-name{
+        font-size: $text20;
+        line-height: 36px;
+        text-align: center;
+        color: $color-default;
+    }
+        .icon-vip{
+            display: inline-block;
+            background: url("../../../images/public/sprite.png") no-repeat;
+            width: 16px;
+            height:20px;
+            margin-left: 10px;
+            vertical-align: middle;
+            &.vip2{
+                background-position: -25px 0;
+            }
+            &.vip3{
+                background-position: -50px 0;
+            }
+
+        }
+        .p-store-stars{
+            font-size: $text14;
+            color: $color-gray;
+            line-height: 28px;
+            span{
+                color: $link-hover;
+                font-weight: bold;
+                padding-right: 38px;
+                &:nth-child(3){
+                    padding-right: 0;
+                }
+                &.color333{
+                    color: $color-default;
+                    padding-right: 0;
+                }
+            }
+        }
+        .goods-num{
+            width: 270px;
+            height: auto;
+            overflow: hidden;
+            border-top: 1px solid $bor;
+            padding: 15px 0;
+            margin: 0 auto;
+            margin-top: 10px;
+            .collection-numb{
+                width: 33%;
+                float: left;
+                height: auto;
+                overflow: hidden;
+                color: $color-gray;
+                font-size: $text12;
+                border-right:1px solid $bor;
+                text-align: center;
+                &:nth-child(3){
+                    border: none;
+                }
+                .p-number{
+                    font-size: $text20;
+                    font-weight: bold;
+                    color: $link-hover;
+                }
+            }
+        }
+        .btn-box2{
+            padding-bottom: 20px;
+            a{
+                display: inline-block;
+                width: 130px;
+                height: 34px;
+                line-height: 34px;
+                background: $bg-fff;
+                margin: 0 5px;
+                em{
+                    font-size: 20px;
+                    color:#e6033b;
+                    vertical-align: -2px;
+                    margin-right: 5px;
+                }
+            }
+        }
+    }
+    .goods-table{
+        line-height: 30px;
+        padding: 0 0 20px;
+        .color-gray{
+            color: $color-default;
+            text-align: right;
+        }
+    }
+}

@@ -1,0 +1,73 @@
+doctype html
+html(lang="zh-CN")
+	include ../../../../../gomeplusUI/pc/src/jade/head.jade
+	link(type="text/css",rel="stylesheet",href="../../css/public/public.css")
+	link(type="text/css",rel="stylesheet",href="../../css/module/usercenter/usercenter.css")
+	body.opg
+		include ../../../../../gomeplusUI/pc/src/jade/header.jade
+		include ../../../../../gomeplusUI/pc/src/jade/menu.jade
+		.wrap-box.mart20.clearfix
+			include ../../../../../gomeplusUI/pc/src/jade/usercenter-side.jade
+			.order-right
+				.bind-phone-nav
+					a(href="javascript:;").bind-phone-nav-a 修改绑定手机号
+				ul.lg-steps.bind-phone-steps.clearfix
+					li.active
+						em 1
+						| 验证身份
+					li
+						em 2
+						| 修改手机号
+					li
+						em 3
+						| 修改成功
+				.lg-form.bind-phone-form
+					ul.lg-form-list
+						.lg-error-tip.clearfix
+							em.icon.icon-error &#xe983;
+							span 您已三次输入错误，请输入验证码
+						li.clearfix.lg-form-it
+							label 已验证手机：
+							span.verified-phone 138****4281
+						li.clearfix.lg-form-it.code-tip
+							label 短信验证码：
+							.lg-form-cont
+								a.lg-codes.code-disabled(href="javascript:;") 20s
+								input.lg-input-it(type="text" placeholder="请输入6位短信验证码")
+							span.lg-warm
+								em.icon &#xea52;
+								| 验证码短信已发出，请注意查收
+						li.clearfix.lg-form-it.lg-form-error
+							label 短信验证码：
+							.lg-form-cont
+								a.lg-codes(href="javascript:;") 获取验证码
+								input.lg-input-it(type="text" placeholder="请输入6位短信验证码")
+							span.lg-warm 验证码输入错误，请重新输入
+					a(href="javascript:;").pc-btn.pc-btnh45.bind-phone-btn 下一步
+				.lg-form.bind-phone-form
+					ul.lg-form-list
+						.lg-error-tip.clearfix
+							em.icon.icon-error &#xe983;
+							span 您已三次输入错误，请输入验证码
+						li.clearfix.lg-form-it.lg-form-error
+							label 新手机号：
+							.lg-form-cont
+								input.lg-input-it(type="text" placeholder="请输入11位有效手机号")
+								em.icon.icon-right &#xea52;
+							span.lg-warm 手机号格式错误
+						li.clearfix.lg-form-it.code-tip
+							label 短信验证码：
+							.lg-form-cont
+								a.lg-codes.code-disabled(href="javascript:;") 获取验证码
+								input.lg-input-it(type="text" placeholder="请输入6位短信验证码")
+							span.lg-warm
+								em.icon &#xea52;
+								| 验证码短信已发出，请注意查收
+					a(href="javascript:;").pc-btn.pc-btnh45.bind-phone-btn 下一步
+				.lg-form.bind-phone-form
+					h4.lg-succ-top
+						em.icon &#xea52;
+						| 门店修改成功！
+					p.congratulation
+						| 当前绑定手机号为
+						span 158****7046

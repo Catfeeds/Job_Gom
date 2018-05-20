@@ -1,0 +1,80 @@
+/* card */
+@import "../../components/_app.scss"; // 工具函数
+@import "../../base/public.scss"; // 公共样式
+@import "../../components/scroll-load.scss"; // 上拉加载更多
+
+.card-title {
+	padding: rem(40px) rem(20px);
+	box-sizing: border-box;
+	font-size: rem(40px);
+	color: #202020;
+	line-height: rem(40px);
+}
+
+#listCon {
+	ul {
+		width: 100%;
+		box-sizing: border-box;
+		padding: 0 rem(20px);
+	}
+	li:first-child {
+		margin-top: 0;
+	}
+	li:last-child {
+		margin-bottom: rem(30px);
+	}
+	li {
+		>a {
+			display: flex;
+		}
+		width: 100%;
+		height: rem(186px);
+		margin-top: rem(30px);
+		.left {
+			position: relative;
+			width: rem(328px);
+			height: rem(186px);
+			overflow: hidden;
+			background: url(../../../imgs/public/video-default.png) no-repeat #d6d6d6;
+            background-size: cover;
+			img {
+				display: block;
+				width: rem(328px);
+                height: rem(186px);
+			}
+			span {
+				position: absolute;
+				right: 0;
+				bottom: 0;
+				font-size: rem(22px);
+				line-height: rem(32px);
+				padding: 0 rem(12px);
+				background-color: #ea362f;
+				display: block;
+				color: #fff;
+			}
+		}
+		.right {
+			flex: 1;
+			margin-left: rem(16px);
+			position: relative;
+			height: rem(186px);
+			h2 {
+				font-size: rem(32px);
+				line-height: rem(48px);
+				color: #202020;
+				@include ellipsis(2);
+				font-weight: 500;
+			}
+			.time {
+				font-size: rem(22px);
+				color: #808080;
+				display: block;
+				position: absolute;
+				left: 0;
+				line-height: rem(22px);
+				bottom: rem(10px);
+			}
+		}
+	}
+}

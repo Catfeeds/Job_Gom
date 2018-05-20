@@ -1,0 +1,116 @@
+doctype html
+html(lang="zh-CN")
+	include ../../widget/head/head.pug
+	link(type="text/css",rel="stylesheet",href="../../css/public/public.css")
+	link(type="text/css",rel="stylesheet",href="../../css/module/usercenter.css")
+	body.opg
+		include ../../widget/header/header.pug
+		include ../../widget/menu/menu.pug
+		.wrap-box.mart20.clearfix
+			include ../../widget/slider/slider.pug
+			.user-right
+				.usershop-title
+					.left-tab
+						a(href="javascritp:;").active 商品
+						a(href="javascritp:;") 店铺
+						a(href="javascritp:;") 话题
+					.right-edit
+						a(href="javascritp:;") 批量管理
+					.right-edit
+						label
+							input(type="checkbox")
+							| 全选
+						a(href="javascritp:;")
+							// icon替换 
+							em.iconn-72
+							| 删除
+						a(href="javascritp:;") 取消管理
+				.shop-list
+					ul.clearfix
+						//确定删除弹窗
+						li
+							.mg-negative
+								// icon替换
+								em.iconn-72.icon-del
+								a(href="#")
+									img(src="https://i6.meixincdn.com/v1/img/T1GRYTB7KT1R4cSCrK.png")
+								.btn-box
+									a(href="javascritp:;").pc-btn.pc-btnh40 立即购买
+									a(href="javascritp:;").pc-btn.pc-btnh40.pc-bj-fc8753 加入购物车
+								.text
+									a(href="#")
+										| ￥
+										span 259.00
+										p 我新依旧心潮澎湃要你命300湃要你命300
+							.del-btn
+								.del-text
+									p 确定要删除？
+									.text-center
+										a(href="javascritp:;").pc-btn.pc-bj-fff 取消
+										a(href="javascritp:;").pc-btn 确定
+						//批量删除弹窗
+						li.remove-del
+							.mg-negative
+								// icon替换 
+								em.iconn-72.icon-del
+								a(href="#")
+									img(src="https://i6.meixincdn.com/v1/img/T1GRYTB7KT1R4cSCrK.png")
+								.btn-box
+									a(href="javascritp:;").pc-btn.pc-btnh40 立即购买
+									a(href="javascritp:;").pc-btn.pc-btnh40.pc-bj-fc8753 加入购物车
+								.text
+									a(href="#")
+										| ￥
+										span 259.00
+										p 我新依旧心潮澎湃要你命300湃要你命300
+							.del-all
+								//active为选中
+								em.icon-check
+						- for (var x = 0; x < 10; x++)
+							li
+								.mg-negative
+									// icon替换 
+									em.iconn-72.icon-del
+									a(href="#")
+										img(src="https://i6.meixincdn.com/v1/img/T1GRYTB7KT1R4cSCrK.png")
+									.btn-box
+										a(href="javascritp:;").pc-btn.pc-btnh40 立即购买
+										a(href="javascritp:;").pc-btn.pc-btnh40.pc-bj-fc8753 加入购物车
+									.text
+										a(href="#")
+											| ￥
+											span 259.00
+											p 我新依旧心潮澎湃要你命300湃要你命300
+				.more-comments
+					a(href="##").clearfix
+						span
+							img(src="../../images/circle/small-logo.png")
+							| 点击加载更多
+							// icon替换 
+							em.iconn-9
+				.more-comments
+					a(href="##").disabled.clearfix
+						span
+							img(src="../../images/public/loading.gif")
+							| 正在加载...
+				.more-comments
+					a(href="##").disabled.clearfix
+						span
+							| 没有可加载内容
+				.no-topic
+					.txt.clearfix
+						// icon替换 
+						em.iconn-35
+						p 
+							span
+								| 你还没收藏过宝贝哦,赶快去 
+								a(href="javascript:;") 首页 
+								| 逛逛吧
+				.no-topic.no-data
+					.txt.clearfix
+						p 
+							span
+								| 数据获取失败，请 
+								a(href="javascript:;") 重试 
+								| ！
+		include ../../widget/footer/footer.pug

@@ -1,0 +1,344 @@
+.open_account .account_content h1, .open_account .account_content h1 {
+  font-size: 26px;
+  text-align: center;
+  color: #2e2e2e;
+  margin: 0 0 0 0; }
+
+.open_account .account_content, .open_account .account_content {
+  height: auto;
+  padding: 50px 0 36px 0; }
+
+.account_content {
+  overflow: hidden; }
+  .account_content .content-p {
+    text-align: center;
+    color: #23272c;
+    font-size: 14px;
+    line-height: 22px; }
+  .account_content .content-p-m {
+    margin: 20px 0 0 0; }
+  .account_content h4 {
+    color: #d30312;
+    text-align: center;
+    font-size: 14px;
+    margin-top: 10px; }
+  .account_content .content-form {
+    width: 900px;
+    margin: 0 auto;
+    padding: 20px 0 0 0; }
+    .account_content .content-form p b {
+      line-height: 22px; }
+    .account_content .content-form .form-if {
+      width: 100%;
+      margin-top: 24px; }
+      .account_content .content-form .form-if .if-item {
+        border: 1px solid #e1e1e2;
+        border-bottom: 0;
+        height: 60px;
+        line-height: 60px;
+        overflow: hidden; }
+        .account_content .content-form .form-if .if-item span em {
+          display: inline-block;
+          float: left;
+          font-size: 16px; }
+        .account_content .content-form .form-if .if-item span {
+          color: #2e2e2e; }
+        .account_content .content-form .form-if .if-item .span {
+          font-size: 20px; }
+        .account_content .content-form .form-if .if-item em {
+          margin: 0 20px 0 30px;
+          color: #d30312;
+          font-size: 16px;
+          cursor: pointer;
+          position: relative;
+          top: -2px; }
+        .account_content .content-form .form-if .if-item a {
+          display: inline-block;
+          float: right;
+          margin: 12px 20px 0 0; }
+      .account_content .content-form .form-if .if-item:hover {
+        background-color: #f7fafc; }
+      .account_content .content-form .form-if .active {
+        background-color: #f7fafc; }
+      .account_content .content-form .form-if .if-item:last-child {
+        border: 1px solid #e1e1e2; }
+      .account_content .content-form .form-if .item-unfold {
+        width: 100%;
+        background-color: #f7fafc;
+        min-height: 100px;
+        border: 1px solid #eeeeef;
+        border-bottom: 0;
+        padding-bottom: 12px; }
+        .account_content .content-form .form-if .item-unfold span em {
+          display: inline-block;
+          float: left; }
+        .account_content .content-form .form-if .item-unfold .span {
+          padding: 30px 0 0 0;
+          color: #2e2e2e;
+          font-size: 20px;
+          display: inline-block; }
+        .account_content .content-form .form-if .item-unfold .em {
+          margin: 0 20px 0 30px;
+          font-size: 16px;
+          cursor: pointer;
+          position: relative;
+          top: -2px; }
+        .account_content .content-form .form-if .item-unfold .unfold-content {
+          margin: 40px 0 0 0; }
+          .account_content .content-form .form-if .item-unfold .unfold-content .column-group {
+            width: 100%; }
+            .account_content .content-form .form-if .item-unfold .unfold-content .column-group .group-aside {
+              width: 286px;
+              margin: 0 20px 0 0; }
+      .account_content .content-form .form-if .item-unfold-comfirm {
+        background-color: white; }
+      .account_content .content-form .form-if .item-unfold-comfirm:last-child {
+        border: 1px solid #eeeeef; }
+    .account_content .content-form .form-next {
+      width: 100%;
+      padding: 185px 0 0 310px; }
+      .account_content .content-form .form-next a:first-child {
+        margin: 0 20px 0 0; }
+    .account_content .content-form .form-next-unfold {
+      width: 100%;
+      padding: 36px 0 0 250px; }
+      .account_content .content-form .form-next-unfold a {
+        margin: 0 20px 0 0; }
+      .account_content .content-form .form-next-unfold a:last-child {
+        margin: 0 0 0 0; }
+
+.detail-row .row-span {
+  display: inline-block;
+  height: 40px;
+  line-height: 40px; }
+.detail-row .row-en-dash {
+  display: inline-block;
+  float: left;
+  width: 10px;
+  height: 2px;
+  background-color: #d9dbde;
+  margin: 18px 5px 0 5px; }
+.detail-row p {
+  color: #89919c;
+  font-size: 14px;
+  padding: 12px 0 0 0; }
+.detail-row .p-r {
+  position: relative;
+  left: -4px; }
+.detail-row .ele-input-s {
+  width: 86px;
+  float: left;
+  display: inline-block; }
+  .detail-row .ele-input-s input {
+    text-align: center; }
+.detail-row .ele-input-m {
+  width: 194px;
+  float: left;
+  display: inline-block; }
+  .detail-row .ele-input-m input {
+    text-align: center; }
+.detail-row .ele-input-ms {
+  width: 380px;
+  float: left;
+  display: inline-block; }
+  .detail-row .ele-input-ms input {
+    text-align: center; }
+.detail-row .ele-select-l {
+  width: 420px; }
+.detail-row .m-em {
+  display: inline-block;
+  float: left;
+  line-height: 40px;
+  height: 40px;
+  text-align: center;
+  margin: 0;
+  padding: 0 8px; }
+.detail-row b {
+  display: inline-block;
+  float: left;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  color: #23272c;
+  font-size: 14px;
+  padding: 0 20px 0 10px;
+  font-weight: 100; }
+.detail-row .row-photo-s {
+  float: left;
+  width: 146px;
+  margin: 0 20px 0 0;
+  background: transparent; }
+  .detail-row .row-photo-s img[src=""] {
+    opacity: 0; }
+  .detail-row .row-photo-s .photo-add-b {
+    background-image: url("../../images/login/default_s.png");
+    border: 0; }
+  .detail-row .row-photo-s .photo-add-b:hover {
+    background-image: url("../../images/login/bj1_hover.png"); }
+  .detail-row .row-photo-s .photo-add {
+    width: 100%;
+    height: 80px;
+    border-radius: 5px;
+    text-align: center;
+    margin: 20px 0 0 0;
+    position: relative;
+    overflow: hidden;
+    background-position: center center;
+    background-size: 100% 100%;
+    background-repeat: no-repeat; }
+    .detail-row .row-photo-s .photo-add .add-content {
+      display: none; }
+      .detail-row .row-photo-s .photo-add .add-content .add-mask {
+        width: 100%;
+        height: 80px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-color: rgba(0, 0, 0, 0.3); }
+      .detail-row .row-photo-s .photo-add .add-content .add-foot {
+        width: 100%;
+        height: 20px;
+        line-height: 20px;
+        background-color: #0090ec;
+        color: white;
+        text-align: center;
+        position: absolute;
+        bottom: 0;
+        left: 0; }
+    .detail-row .row-photo-s .photo-add .active {
+      display: block; }
+    .detail-row .row-photo-s .photo-add img {
+      width: 100%;
+      height: 100%;
+      display: inline-block; }
+  .detail-row .row-photo-s .photo-add-nomar {
+    margin: 12px 0 0 0;
+    border: 0; }
+  .detail-row .row-photo-s p {
+    width: 100%;
+    text-align: center;
+    color: #596069;
+    font-size: 14px; }
+.detail-row .row-photo-m img[src=""] {
+  opacity: 0; }
+.detail-row .row-photo-m .photo-add-b {
+  background-image: url("../../images/login/default_m.png");
+  border: 0; }
+.detail-row .row-photo-m .photo-add-b:hover {
+  background-image: url("../../images/login/bj3-hover.png"); }
+.detail-row .row-photo-m .photo-add {
+  width: 144px;
+  height: 100px;
+  border-radius: 5px;
+  text-align: center;
+  background-color: #e5e5e6;
+  color: #d9dbde;
+  margin: 20px 0 0 0;
+  position: relative;
+  overflow: hidden;
+  background-position: center center;
+  background-size: 100% 100%;
+  background-repeat: no-repeat; }
+  .detail-row .row-photo-m .photo-add .add-content {
+    display: none; }
+    .detail-row .row-photo-m .photo-add .add-content .add-mask {
+      width: 100%;
+      height: 100px;
+      position: absolute;
+      top: 0;
+      left: 0;
+      background-color: rgba(0, 0, 0, 0.3); }
+    .detail-row .row-photo-m .photo-add .add-content .add-foot {
+      width: 100%;
+      height: 20px;
+      line-height: 20px;
+      background-color: #0090ec;
+      color: white;
+      text-align: center;
+      position: absolute;
+      bottom: 0;
+      left: 0; }
+  .detail-row .row-photo-m .photo-add .active {
+    display: block; }
+  .detail-row .row-photo-m .photo-add img {
+    width: 100%;
+    height: 100%;
+    display: inline-block; }
+.detail-row .row-photo-m .photo-add-nomar {
+  margin: 12px 0 0 0;
+  border: 0; }
+.detail-row .row-photo-m .p {
+  width: 144px;
+  text-align: center;
+  color: #596069;
+  font-size: 14px; }
+.detail-row .row-photo-m .p-l {
+  width: 154px; }
+.detail-row .row-photo-l img[src=""] {
+  opacity: 0; }
+.detail-row .row-photo-l .photo-add-b {
+  background-image: url("../../images/login/default_l.png");
+  border: 0; }
+.detail-row .row-photo-l .photo-add-b:hover {
+  background-image: url("../../images/login/bj2-hover.png"); }
+.detail-row .row-photo-l .photo-add {
+  width: 144px;
+  height: 200px;
+  border-radius: 5px;
+  text-align: center;
+  background-color: #e5e5e6;
+  color: #d9dbde;
+  margin: 20px 0 0 0;
+  position: relative;
+  overflow: hidden;
+  background-position: center center;
+  background-size: 100% 100%;
+  background-repeat: no-repeat; }
+  .detail-row .row-photo-l .photo-add .add-content {
+    display: none; }
+    .detail-row .row-photo-l .photo-add .add-content .add-mask {
+      width: 100%;
+      height: 200px;
+      position: absolute;
+      top: 0;
+      left: 0;
+      background-color: rgba(0, 0, 0, 0.3); }
+    .detail-row .row-photo-l .photo-add .add-content .add-foot {
+      width: 100%;
+      height: 20px;
+      line-height: 20px;
+      background-color: #0090ec;
+      color: white;
+      text-align: center;
+      position: absolute;
+      bottom: 0;
+      left: 0; }
+  .detail-row .row-photo-l .photo-add .active {
+    display: block; }
+  .detail-row .row-photo-l .photo-add img {
+    width: 100%;
+    height: 100%;
+    display: inline-block; }
+.detail-row .row-photo-l .photo-add-nomar {
+  margin: 12px 0 0 0;
+  border: 0; }
+.detail-row .row-photo-l .p {
+  width: 144px;
+  text-align: center;
+  color: #596069;
+  font-size: 14px; }
+.detail-row .row-photo-l .p-l {
+  width: 154px; }
+.detail-row .ele-textarea {
+  width: 420px;
+  background-color: white; }
+
+.content-contacts {
+  width: 100%;
+  height: auto;
+  margin: 40px 0 0 0; }
+  .content-contacts .group-aside {
+    width: 400px;
+    margin: 0 16px 0 0; }
+
+

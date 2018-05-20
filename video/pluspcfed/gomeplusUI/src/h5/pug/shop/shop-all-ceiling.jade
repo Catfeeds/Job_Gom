@@ -1,0 +1,80 @@
+doctype html
+html(lang="zh-CN",data-use-rem="750")
+	include ../../../m-widget/head/head.jade
+	link(type="text/css",rel="stylesheet",href="../../css/public/public-wap.css")
+	link(type="text/css",rel="stylesheet",href="../../css/module/shop.css")
+	
+	body.opg
+		include ../../../m-widget/head/rem.jade		
+
+		header.header
+			span
+				a.head-back(href="javascript:;")
+					em.iconn-1
+			.head-search.w480
+				em.iconn-10
+				input.sec-ipt(type="search" placeholder="搜索店铺内商品" disabled="true")
+			span
+				a.head-icn(href="javascript:;")
+					em.iconn-3
+				a.head-icn(href="javascript:;")
+					em.iconn-4
+		// 吸顶效果页
+		// /header
+
+		.shopindex-head
+			.head-content
+				.head-l
+					img(src="../../images/coupon_share_logo.jpg")
+					span.franchise 专营店
+				.head-c
+					h3  宇宙超级无敌掌门狗的店
+					.storelevel
+						em.ic-jin
+						em.ic-yin
+						em.ic-tong
+				.head-r
+					a(href="##").like.active
+						em.iconn-12
+						em.iconn-29
+						span 1234
+					a(href="##").collect.active
+						em.iconn-9
+						em.iconn-46
+						span 12万
+		// 全部吸顶
+		ul.menu-list.menu-list-shoptop
+			li.item
+				em.iconn-44
+				p.txt 首页
+			li.item.active
+				i.num
+				em.iconn-51
+				p.txt 全部
+			li.item
+				i.num
+				em.iconn-26
+				p.txt 促销
+			li.item
+				em.iconn-36
+				p.txt 动态
+		ul.menu-list.menu-list-shopmin
+			li.item.active
+				p.txt 综合
+			li.item
+				p.txt 销量
+			li.item
+				p.txt 价格
+					span.down
+			li.item
+				p.txt 上新
+		ul.main-list.grid-list-bor
+			-for(i=0;i<4;i++) //循环四个同样的LI
+				li.item
+					a(href="javascript:;")
+						.item-img
+							img(src='https://i-pre.meixincdn.com/T15yWTBKxT1RXrhCrK.200x200cTz.jpg')
+						.item-txt 情人生日礼Crystallin精装礼品
+						.item-price
+							span.red ¥2199.40
+							del.del ¥2899.00

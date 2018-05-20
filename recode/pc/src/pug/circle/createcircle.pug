@@ -1,0 +1,283 @@
+doctype html
+html(lang="zh-CN")
+    include ../../widget/head/head.pug
+    link(type="text/css",rel="stylesheet",href="../../css/public/public.css")
+    link(type="text/css",rel="stylesheet",href="../../css/module/createcircle.css")
+    body.opg
+        include ../../widget/header/header.pug
+        include ../../widget/menu/menu.pug
+        div.circle-bj(data-small="circle-bjS")
+            div.circle-con-box(data-node="circleBox")
+                p.circle-name  输入圈子名称
+                    span 起个响亮的圈子名称，让你的圈子更有吸引力（必填）
+                .div-input
+                    span(data-node="nameLength" ) 0/15
+                    input(type="text",placeholder="填写圈子名称" maxLength="15").write-name
+                p.circle-selected.circle-name.pad-top10 
+                    em(data-node="circle-selected") 选择圈子分类
+                    span(data-node="circle-selected-classify") 选择兴趣分类，便于相同兴趣爱好的人查找（单选，必填）                    
+                .circle-category
+                    ul.category-list(data-node="category-list")
+                        li.list-li(data-node="category-list-li")
+                          a.li-img(href="javascript:;")
+                            div
+                              img(src="../../images/public/categoryPic1.png")
+                              span.img-active(data-node="img-active")
+                            em 数码/家电
+                          .category-list2(data-node="category-list2")
+                            i
+                            .category-hover(data-node="category-hover")
+                                a(herf="javascritp:;") 文字
+                        li.list-li(data-node="category-list-li")
+                          a.li-img(href="javascript:;")
+                            div
+                              img(src="../../images/public/categoryPic2.png")
+                              span(data-node="img-active")
+                            em 时尚
+                          .category-list2(data-node="category-list2")
+                            i
+                            .category-hover(data-node="category-hover")
+                                a(herf="javascritp:;") 文字文字
+                                a(herf="javascritp:;") 文字文字
+                        li.list-li(data-node="category-list-li")
+                          a.li-img(href="javascript:;")
+                            div
+                              img(src="../../images/public/categoryPic3.png")
+                              span(data-node="img-active")
+                            em 家居／智能
+                          .category-list2(data-node="category-list2")
+                            i
+                            .category-hover(data-node="category-hover")
+                                a(herf="javascritp:;") 文字文字文字文字文
+                                a(herf="javascritp:;") 文字文字
+                                a(herf="javascritp:;") 文字文字文字文字文
+                                a(herf="javascritp:;") 文字文字文字文字文
+                        li.list-li(data-node="category-list-li")
+                          a.li-img(href="javascript:;")
+                            div
+                              img(src="../../images/public/categoryPic4.png")
+                              span(data-node="img-active")
+                            em 母婴
+                          .category-list2(data-node="category-list2")
+                            i
+                            .category-hover(data-node="category-hover")
+                                a(herf="javascritp:;") 文字文字文字文字文
+                                a(herf="javascritp:;") 文字文字
+                                a(herf="javascritp:;") 文字文字文字文字文
+                                a(herf="javascritp:;") 文字文字文字文字文
+                        li.list-li(data-node="category-list-li")
+                          a.li-img(href="javascript:;")
+                            div
+                              img(src="../../images/public/categoryPic5.png")
+                              span(data-node="img-active")
+                            em 娱乐
+                          .category-list2(data-node="category-list2")
+                            i
+                            .category-hover(data-node="category-hover")
+                                a(herf="javascritp:;") 文字文字文字文字文
+                                a(herf="javascritp:;") 文字文字
+                                a(herf="javascritp:;") 文字文字文字文字文
+                                a(herf="javascritp:;") 文字文字文字文字文
+                        li.list-li(data-node="category-list-li")
+                          a.li-img(href="javascript:;")
+                            div
+                              img(src="../../images/public/categoryPic6.png")
+                              span(data-node="img-active")
+                            em 健身
+                          .category-list2(data-node="category-list2")
+                            i
+                            .category-hover(data-node="category-hover")
+                                a(herf="javascritp:;") 文字文字文字文字文
+                                a(herf="javascritp:;") 文字文字
+                                a(herf="javascritp:;") 文字文字文字文字文
+                                a(herf="javascritp:;") 文字文字文字文字文
+                        li.list-li(data-node="category-list-li")
+                          a.li-img(href="javascript:;")
+                            div
+                              img(src="../../images/public/categoryPic7.png")
+                              span(data-node="img-active")
+                            em 美事
+                          .category-list2(data-node="category-list2")
+                            i
+                            .category-hover(data-node="category-hover")
+                                a(herf="javascritp:;") 文字文字文字文字文
+                                a(herf="javascritp:;") 文字文字
+                                a(herf="javascritp:;") 文字文字文字文字文
+                                a(herf="javascritp:;") 文字文字文字文字文
+                        li.list-li(data-node="category-list-li")
+                          a.li-img(href="javascript:;")
+                            div
+                              img(src="../../images/public/categoryPic8.png")
+                              span(data-node="img-active")
+                            em Plus活动社
+                          .category-list2(data-node="category-list2")
+                            i
+                            .category-hover(data-node="category-hover")
+                                a(herf="javascritp:;") 文字文字文字文字文
+                                a(herf="javascritp:;") 文字文字
+                                a(herf="javascritp:;") 文字文字文字文字文
+                                a(herf="javascritp:;") 文字文字文字文字文
+                        li.list-li(data-node="category-list-li")
+                          a.li-img(href="javascript:;")
+                            div
+                              img(src="../../images/public/categoryPic9.png")
+                              span(data-node="img-active")
+                            em 视频
+                          .category-list2(data-node="category-list2")
+                            i
+                            .category-hover(data-node="category-hover")
+                                a(herf="javascritp:;") 文字文字文字文字文
+                                a(herf="javascritp:;") 文字文字
+                                a(herf="javascritp:;") 文字文字文字文字文
+                                a(herf="javascritp:;") 文字文字文字文字文
+                        li.list-li(data-node="category-list-li")
+                          a.li-img(href="javascript:;")
+                            div
+                              img(src="../../images/public/categoryPic10.png")
+                              span(data-node="img-active")
+                            em 旅行
+                          .category-list2(data-node="category-list2")
+                            i
+                            .category-hover(data-node="category-hover")
+                                a(herf="javascritp:;") 文字文字文字文字文
+                                a(herf="javascritp:;") 文字文字
+                                a(herf="javascritp:;") 文字文字文字文字文
+                                a(herf="javascritp:;") 文字文字文字文字文
+                        li.list-li(data-node="category-list-li")
+                          a.li-img(href="javascript:;")
+                            div
+                              img(src="../../images/public/categoryPic11.png")
+                              span(data-node="img-active")
+                            em 汽车
+                          .category-list2(data-node="category-list2")
+                            i
+                            .category-hover(data-node="category-hover")
+                                a(herf="javascritp:;") 文字文字文字文字文
+                                a(herf="javascritp:;") 文字文字
+                                a(herf="javascritp:;") 文字文字文字文字文
+                                a(herf="javascritp:;") 文字文字文字文字文
+                        li.list-li(data-node="category-list-li")
+                          a.li-img(href="javascript:;")
+                            div
+                              img(src="../../images/public/categoryPic12.png")
+                              span(data-node="img-active")
+                            em 生活
+                          .category-list2(data-node="category-list2")
+                            i
+                            .category-hover(data-node="category-hover")
+                                a(herf="javascritp:;") 文字文字文字文字文
+                                a(herf="javascritp:;") 文字文字
+                                a(herf="javascritp:;") 文字文字文字文字文
+                                a(herf="javascritp:;") 文字文字文字文字文
+                        li.list-li(data-node="category-list-li")
+                          a.li-img(href="javascript:;")
+                            div
+                              img(src="../../images/public/categoryPic13.png")
+                              span(data-node="img-active")
+                            em 宠物
+                          .category-list2(data-node="category-list2")
+                            i
+                            .category-hover(data-node="category-hover")
+                                a(herf="javascritp:;") 文字文字文字文字文
+                                a(herf="javascritp:;") 文字文字
+                                a(herf="javascritp:;") 文字文字文字文字文
+                                a(herf="javascritp:;") 文字文字文字文字文
+                        li.list-li(data-node="category-list-li")
+                          a.li-img(href="javascript:;")
+                            div
+                              img(src="../../images/public/categoryPic14.png")
+                              span(data-node="img-active")
+                            em 摄影
+                          .category-list2(data-node="category-list2")
+                            i
+                            .category-hover(data-node="category-hover")
+                                a(herf="javascritp:;") 文字文字文字文字文
+                                a(herf="javascritp:;") 文字文字
+                                a(herf="javascritp:;") 文字文字文字文字文
+                                a(herf="javascritp:;") 文字文字文字文字文
+                        li.list-li(data-node="category-list-li")
+                          a.li-img(href="javascript:;")
+                            div
+                              img(src="../../images/public/categoryPic15.png")
+                              span(data-node="img-active")
+                            em 文玩
+                          .category-list2(data-node="category-list2")
+                            i
+                            .category-hover(data-node="category-hover")
+                                a(herf="javascritp:;") 文字文字文字文字文
+                                a(herf="javascritp:;") 文字文字
+                                a(herf="javascritp:;") 文字文字文字文字文
+                                a(herf="javascritp:;") 文字文字文字文字文
+                        li.list-li(data-node="category-list-li")
+                          a.li-img(href="javascript:;")
+                            div
+                              img(src="../../images/public/categoryPic16.png")
+                              span(data-node="img-active")
+                            em 玩具
+                          .category-list2(data-node="category-list2")
+                            i
+                            .category-hover(data-node="category-hover")
+                                a(herf="javascritp:;") 文字文字文字文字文
+                                a(herf="javascritp:;") 文字文字
+                                a(herf="javascritp:;") 文字文字文字文字文
+                                a(herf="javascritp:;") 文字文字文字文字文
+     
+                p 输入圈子介绍
+                    span 输入圈子介绍，你的圈子更加精彩
+                .introduce-textarea(data-node="introduce-textarea")
+                    span(data-node="introduce-textareaNum") 0/500
+                    textarea(data-node="textarea-info",placeholder="填写圈子介绍").write-introduce
+                p.pad-top10 上传圈子头像
+                    span 请上传JPG/PNG/JPEG格式的图片（选填）
+                div.circle-head.clearfix
+                    div.error ＊请上传小于4M的图片，支持格式jpg、jpeg、png！
+
+                    div.upload-head-bx
+                        a.pc-btn.pc-bj-fc8753.pc-btnw155.pc-btnh40.upload-picture(href="#")
+                            span +
+                            | 上传头像
+                            input(type="file")
+                        div.picture-bj-img.load-ing
+                            .position-abso
+                                div.picture-bx
+                                .load-failed-bx
+                                    span.top-left
+                                    span.top-right
+                                    span.bottom-left
+                                    span.bottom-right
+                                    span.opacity-all
+                                .load-failed-txt.failure 图片加载失败！
+                                    // icon替换 icon
+                                    em.iconn-24
+                                    a(href="#") 点击刷新
+                                .load-failed-txt.image-load
+                                    p 图片加载中
+                                    .progress-bar-bx
+                                        span
+                            .circle-default-head
+                                div(data-defaultAddFile="picker")
+                                    img(src="http://js.dev.meixincdn.com:1314/CDN8053/dist/images/public/circle-default-head.jpg" alt="" data-default="http://js.dev.meixincdn.com:1314/CDN8053/dist/images/public/circle-default-head.jpg" data-edit="btn")
+                                //- img.img250(src="../../images/public/circle-default-head.jpg")
+                            // span.error ＊ 图片格式有误 请重新上传
+                        .pc-btn-box
+                            a.pc-btn.pc-bj-fc8753.pc-btnw80.pc-btnh35(href="javescript:") 保存
+                            a.pc-btn-amend.pc-bj-fc8753.pc-btnw80.pc-btnh35(href="javescript:") 修改
+                    div.head-preview-bx
+                        p.head-title 效果预览
+                        p.head-size 你上传的图片会自动生成2种尺寸，请注意小尺寸的头像是否清晰
+                        div.picture2-bx
+                            .picture-bx2
+                                div.default-img1
+                                    img(src="../../images/public/default-img1.jpg")
+                                p.p-size 160*160px
+                            .picture-bx3
+                                div.picture-bx4
+                                    div.default-img2
+                                        img(src="../../images/public/default-img2.jpg")
+                                    p.p-size 60*60px
+                                div.picture-bx5
+                                    div.default-img3
+                                        img(src="../../images/public/default-img3.jpg")
+                                    p.p-size 30*30px
+                div.submit-btn
+                    a.pc-btn.pc-bj-fc8753.pc-btnw200.pc-btnh50(href="javascript:void(0);") 提交审核

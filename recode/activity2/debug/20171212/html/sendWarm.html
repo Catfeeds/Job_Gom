@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="robots" content="noarchive">
+    <meta name="Baiduspider" content="noarchive">
+    <meta http-equiv="Cache-Control" content="no-transform">
+    <meta http-equiv="Cache-Control" content="no-siteapp">
+    <meta name="applicable-device" content="pc,mobile">
+    <meta name="MobileOptimized" content="width">
+    <meta name="HandheldFriendly" content="true">
+    <title>送温暖</title>
+    <script src="http://apps.bdimg.com/libs/jquery/2.1.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="../css/double12.css">
+    <script type="text/javascript">
+      (function() {
+      /*rem*/
+      function setFont() {
+      var __rootrem;
+      var clientWidth = (document.documentElement || document.body.parentNode).clientWidth;
+      if ( clientWidth > 650) {
+      clientWidth = 640;
+      }
+      // 375尺寸的比例，换算成@1x设计稿后1px=0.01rem
+      __rootrem = Math.floor(clientWidth * 100 / 640);
+      (document.documentElement || document.body.parentNode).style.fontSize = __rootrem + "px";
+      }
+      setFont();
+      window.addEventListener("resize", function() {
+      setFont();
+      });
+      })();
+    </script>
+  </head>
+  <body>
+    <div class="outer">
+      <div class="friend hide J-send-friend">
+        <div class="bg">
+          <div class="friend-text"> <span class="name J-name">Sunshine </span><br>既然你点进来，就说明你心里还是有我的那你看我那么冷，还不快来暖暖我~</div>
+          <div class="friend-head">
+            <div class="pic"><img class="J-friend-face hide" src="../images/choicePic.jpg" alt=""></div>
+            <div class="friend-woman J-woman hide"></div>
+            <div class="friend-man J-man hide"></div>
+          </div>
+        </div>
+        <div class="btn"><a class="J-send-btn" href="javascript:;"></a></div>
+      </div>
+      <div class="flame hide J-send-warm">
+        <div class="bg">
+          <div class="time"><span class="J-send-time">12</span>s</div>
+          <div class="flame-temp">
+            <div class="temp"></div>
+            <div class="current-box">
+              <div class="current J-send-current"></div>
+            </div>
+          </div>
+          <div class="flame-figure">
+            <div class="flame-woman J-send-woman hide"><img src="http://css.dev.meixincdn.com:1314/debug/20171212/images/flameWoman.gif"></div>
+            <div class="flame-woman J-send-imgWoman hide"></div>
+            <div class="flame-man J-send-man hide"><img src="http://css.dev.meixincdn.com:1314/debug/20171212/images/flameMan.gif"></div>
+            <div class="flame-man J-send-imgMan hide"></div>
+          </div>
+        </div>
+        <div class="flame-text">
+          <div class="text-pic"></div>
+          <div class="text">规定时间内搓动的次数越多朋友得到的温暖值越高</div>
+        </div>
+        <div class="flame-popup J-send-warm"></div>
+      </div>
+      <div class="result hide J-send-sended">
+        <div class="bg">
+          <div class="result-text">
+            <p>你已成功为好友送出温暖值<span class="send J-send-number">0</span></p>
+            <p>好友当前温暖值为<span class="now J-now-number">0</span></p>
+            <p>可领取价值XX的优惠券</p>
+          </div>
+          <div class="result-figure">
+            <div class="result-woman hide J-woman"></div>
+            <div class="result-man hide J-man"></div>
+          </div>
+        </div>
+        <div class="common-btn clearfix">
+          <div class="btn fl"><a class="also" href="javascript:;"></a></div>
+          <div class="btn fr"><a class="stroll" href="javascript:;"></a></div>
+        </div>
+      </div>
+      <div class="cruel hide J-send-normal">
+        <div class="bg">
+          <div class="cruel-cont">
+            <div class="cont-title"> <span class="J-name">sunshine</span>：好狠的心<br>一点温暖都不给我~<br>哭唧唧</div>
+            <div class="cont-head">
+              <div class="pic"><img class="J-face" src="../images/choicePic.jpg" alt=""></div>
+              <div class="cruel-woman hide J-woman"></div>
+              <div class="cruel-man hide J-man"></div>
+            </div>
+          </div>
+        </div>
+        <div class="common-btn clearfix">
+          <div class="btn fl"><a class="also" href="javascript:;"></a></div>
+          <div class="btn fr"><a class="stroll" href="javascript:;"></a></div>
+        </div>
+      </div>
+    </div>
+    <script type="text/javascript">$GLOBAL_CONFIG={};$GLOBAL_CONFIG['currWarmNum']=100;$GLOBAL_CONFIG['userFace']='http://localhost:1314/debug/20171212/images/choicePic.jpg';$GLOBAL_CONFIG['userName']='你好';$GLOBAL_CONFIG['userSex']=1;</script>
+    <script type="text/javascript" src="http://localhost:1314/CDN8176/dist/vendor/js/zepto.js"></script>
+    <script type="text/javascript" src="http://localhost:1314/CDN8176/dist/20171212/js/sendWarm.js"></script>
+  </body>
+</html>

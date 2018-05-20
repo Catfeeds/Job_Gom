@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+	<meta charset="utf-8">
+	<meta name="renderer" content="webkit">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>GomePlus视频频道</title>
+	<meta name="keywords" content="GomePlus视频频道" />
+	<meta name="description" content="" />
+	<meta name="format-detection" content="telephone=no">
+	<meta name="x5-page-mode" content="no-title"/>
+	<link rel="stylesheet" href="http://css.atguat.com.cn/??gmlib/reset/1.1.0/reset.css,gmpro/1.0.0/public/1.0.0/css/top.min.css,gmpro/1.0.0/public/1.2.0/css/foot-gomeplus.min.css?v=201704181727">
+	<link rel="stylesheet" type="text/css" href="<%=devenv%>dist/css/my-subscribe.css">
+</head>
+<body>
+	<script>
+	var $CONFIG = {
+        userId: 0, //用户id，为0标识未登录
+        nickName: "",
+        avatar: "",
+    };
+    // cms
+    $CONFIG['domain-data'] = 'http://m.v.dev.gomeplus.com';
+    // php
+    $CONFIG['domain-user'] = 'http://api.be.v.dev.gomeplus.com';
+
+    $CONFIG['userId'] = '100018018011';
+    $CONFIG['SCN'] = 'Pc0jlCMLaagpVY%2BMHlWDstWE5oYfTKsV2J%2BjTgPlwKX7ntkfYXhAOA2tPfabN3BiGc1G5wB1T%2FqecyW4zuqBAzsY2mIscAm1%2B10MpBzXUeRdcaQvgTCwvA%3D%3D8392c3660d385899126e60a8d0c0a544';
+    </script>
+
+    <script type="text/javascript">
+		/* 登录脚本所需的全局变量 */
+		// pre 环境
+		$CONFIG['dynSite']='//g.atguat.com.cn';
+		$CONFIG['staSite']='//www.atguat.com.cn/';
+		$CONFIG['contextPath']='/ec/homeus';
+		$CONFIG['secureURL']='//g.atguat.com.cn';
+		$CONFIG['cookieDomain']='.atguat.com.cn';
+		$CONFIG['stageImageServer']= '//img.atguat.net.cn/';
+		$CONFIG['imgServer']='//img.atguat.com.cn/images';
+		$CONFIG['pictureserver']='//img.atguat.com.cn/image';
+		$CONFIG['stageCssServer']='//css.atguat.com.cn';
+		$CONFIG['cssserver']='//css.atguat.com.cn/css';
+		$CONFIG['stageJsServer']='//js.atguat.com.cn';
+		$CONFIG['jsserver']='//js.atguat.com.cn/js';
+		$CONFIG['js_net_server']='https://js.atguat.net.cn/';
+		$CONFIG['protocol']='https';
+		$CONFIG['versionData']='1487836100';
+	</script>
+
+	<%- include('../../common/head.ejs')%>
+	<!-- main -->
+	<div class="user-home wrap">
+		<%- include('../../common/user-banner.ejs')%>
+		<div class="content clearfix">
+			<%- include('../../common/user-left-nav.ejs')%>
+			<div class="main fl" id="list-container">
+				<div class="indicator"><span>加载中</span></div>
+				<!--
+				<div class="subscriber clearfix">
+					<div class="user clearfix">
+						<div class="avatar fl">
+							<img src="https://www.terlici.com/img/posts/2014-08-25-best-practices-express-structure-750x400.jpg" />
+						</div>
+						<div class="fl">
+							<div class="name">刁蛮任性小关闭</div>
+							<div class="desc">一个诗人，一个美食家</div>
+						</div>
+						<a class="more fr" href="#">查看更多></a>
+					</div>
+				</div>
+				<div class="list">
+					<%- include('../../common/user-look.ejs')%>
+				</div>
+
+				<div class="subscriber clearfix">
+					<div class="user clearfix">
+						<div class="avatar fl">
+							<img src="https://www.terlici.com/img/posts/2014-08-25-best-practices-express-structure-750x400.jpg" />
+						</div>
+						<div class="fl">
+							<div class="name">刁蛮任性小关闭</div>
+							<div class="desc">一个诗人，一个美食家</div>
+						</div>
+						<a class="more fr" href="#">查看更多></a>
+					</div>
+				</div>
+				<div class="list">
+					<%- include('../../common/user-look.ejs')%>
+				</div>
+
+				<div class="subscriber clearfix">
+					<div class="user clearfix">
+						<div class="avatar fl">
+							<img src="https://www.terlici.com/img/posts/2014-08-25-best-practices-express-structure-750x400.jpg" />
+						</div>
+						<div class="fl">
+							<div class="name">刁蛮任性小关闭</div>
+							<div class="desc">一个诗人，一个美食家</div>
+						</div>
+						<a class="more fr" href="#">查看更多></a>
+					</div>
+				</div>
+				<div class="list">
+					<%- include('../../common/user-look.ejs')%>
+				</div>
+				-->
+			</div>
+		</div>
+	</div>
+	<!-- main -->
+	<%- include('../../common/footer.ejs')%>
+	<script src="<%=devenv%>dist/js/vendor.js"></script>
+	<script src="<%=devenv%>dist/js/my-subscribe.js"></script>
+</body>
+</html>

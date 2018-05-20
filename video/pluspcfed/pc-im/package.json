@@ -1,0 +1,50 @@
+{
+  "name": "gomeplus_pc",
+  "version": "1.1.3",
+  "description": "国美+",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "webpack-dev-server --config bin/webpack.config.js --progress --colors --profile --mx-dev",
+    "pre": "webpack-dev-server --config bin/webpack.config.js --progress --colors --profile --https --mx-pre",
+    "prd": "webpack-dev-server --config bin/webpack.config.js --progress --colors --profile --https --mx-prd",
+    "conf": "webpack --config bin/webpack.config.js",
+    "dist": "webpack --config bin/webpack.prd.config.js --progress --colors --profile && node bin/css_bg_ver.js",
+    "uppre": "node bin/git.js -c ./webpack.config.js --env pre",
+    "upprd": "node bin/git.js -c ./webpack.prd.config.js --env prd"
+  },
+  "author": "jiyunpeng",
+  "license": "",
+  "dependencies": {
+    "vue": "^2.1.8",
+    "vue-lazyload": "^0.9.4"
+  },
+  "devDependencies": {
+    "babel-core": "^6.1.2",
+    "babel-loader": "^6.1.0",
+    "babel-plugin-transform-object-rest-spread": "^6.16.0",
+    "babel-plugin-transform-runtime": "^6.1.2",
+    "babel-polyfill": "^6.20.0",
+    "babel-preset-es2015": "^6.1.2",
+    "babel-preset-stage-3": "^6.17.0",
+    "babel-runtime": "^6.20.0",
+    "clean-webpack-plugin": "^0.1.8",
+    "commander": "^2.9.0",
+    "css-loader": "^0.26.1",
+    "extract-text-webpack-plugin": "^1.0.1",
+    "file-loader": "^0.9.0",
+    "fs-extra": "^1.0.0",
+    "html-loader": "^0.4.4",
+    "optimize-css-assets-webpack-plugin": "^1.3.0",
+    "simple-git": "^1.59.0",
+    "style-loader": "^0.13.0",
+    "transfer-webpack-plugin": "^0.1.4",
+    "url-loader": "^0.5.7",
+    "vue-html-loader": "^1.0.0",
+    "vue-loader": "^10.0.2",
+    "vue-template-compiler": "^2.1.8",
+    "vuex": "^2.0.0",
+    "webpack": "^1.13.3",
+    "webpack-dev-server": "^1.16.2"
+  }
+}

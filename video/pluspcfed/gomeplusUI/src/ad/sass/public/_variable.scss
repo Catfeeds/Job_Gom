@@ -1,0 +1,112 @@
+@charset "utf-8";
+// variable
+// ##-------------------------------------------------
+
+// Colors
+// ##-----------------------------------------------
+
+// background color
+$bg-body:                    #f0f3f6;
+$bg-white:                   #fff;
+$bg-red:                     #d30312;
+$bg-blue:                    #1197ed;
+$bg-green:                   #1bb169;
+$bg-header:                  #23272c;
+$bg-menu-status:             #f5f8fb #f0f3f6;
+
+$bg-table-head:              #e8ebee;
+$bg-table-hover:             #f2faff;
+$bg-table-select:            #f7fafc;
+
+$bg-dialog:                  #23272c;
+$bg-dialog-hover:            #eef1f4;
+
+$bg-btn-normal:              #fefefe #ebebeb;
+$bg-btn-hover:               #ffffff #f7f7f7;
+$bg-btn-fouce:               #e7e7e7 #f3f3f3;
+
+$bg-btn-primary:             $bg-red #e70b1b #b9000d;
+
+$bg-btn-gray:                #d9dbde #e6e7e8 #d9dbde;
+
+$bg-btn-blue:                #74a1fe #6f9bf2 #6f9bf2;       
+
+// border color
+$border-btn-normal:          #d9dbde;
+$border-btn-primary:         transparent;
+
+$border-input-normal:        #d9dbde;
+$border-input-hover:         #0dadf5;
+$border-input-error:         $bg-red;
+
+$border-select-normal:       #e1e3e5;
+
+$border-header:              #313a43;
+$border-menu:                #e8ebee;
+$border-table-col:           #f0f3f6;
+
+// text color
+$text-dark:         	     #23272c;
+$text-medium:                #596069;
+$text-light:                 #89919c;
+
+
+// links color
+$link-web-color:             #0090ec;
+$link-header-color:          #8d98a3 #f0f1f1;
+$link-menu-color:            #32353a #f0f1f1;
+$link-table-color:           $bg-blue $bg-blue;
+
+// border-radius
+$border-radius-big:           6px;
+$border-radius-normal:        4px;
+$border-radius-small:         2px;
+
+// font family
+$font-family:                Microsoft YaHei,sans-serif,PingFang SC,Myriad Pro,Hiragino Sans GB;
+$ff-icon:                    'icomoon';
+
+// grid
+$set-width:                  1200px;
+$space:                      40px;
+
+// mixin
+// ##-------------------------------------------------
+
+// Define linear sheetstyle
+@mixin linear($start-color,$end-color){
+	background: -moz-linear-gradient(top, $start-color 0%, $end-color 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,$start-color), color-stop(100%,$end-color));
+    background: -webkit-linear-gradient(top, $start-color 0%,$end-color 100%);
+    background: -o-linear-gradient(top, $start-color 0%,$end-color 100%);
+    background: -ms-linear-gradient(top, $start-color 0%,$end-color 100%);
+    background: linear-gradient(to bottom, $start-color 0%,$end-color 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#{$start-color}', endColorstr='#{$end-color}',GradientType=0 );
+}
+
+// Define clearfix sheetstyle
+%clearfix{
+    @include clearfix();
+}
+
+// Define img path
+$img-css-path:				  '../../images/public/';
+@mixin img($img-name,$pos:left top,$img-url:$img-css-path){
+	background-image:url('#{$img-url}#{$img-name}');
+	background-repeat:no-repeat;
+	background-position:$pos;
+}
+
+// Define inline-block
+@mixin inline-block(){
+	display:inline-block;
+	*display:inline;
+	*zoom:1;
+	vertical-align:middle;
+}
+
+// Define opacity
+@mixin opacity($opacity:50) {
+  opacity:$opacity/100;
+  filter:alpha(opacity=$opacity);
+}

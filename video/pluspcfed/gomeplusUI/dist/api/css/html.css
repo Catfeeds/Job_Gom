@@ -1,0 +1,16 @@
+section{
+	padding-top: 1rem;
+}
+.section pre{
+	padding-left: .3rem;	
+}
+p{
+	padding: 0 .3rem;
+}
+a{
+	color: blue;
+	border-bottom: 1px solid blue;
+}
+.son{
+	padding-left: .32rem;
+}

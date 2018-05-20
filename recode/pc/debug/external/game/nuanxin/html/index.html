@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <style>
+    #container {
+      background: silver;
+      height: 300px;
+      text-align: center;
+      font: 30px/300px Helvetica, Arial, sans-serif;
+    }
+
+    #container2 {
+      background: gold;
+      height: 300px;
+      text-align: center;
+      font: 30px/300px Helvetica, Arial, sans-serif;
+    }
+  </style>
+</head>
+<body>
+  <div id="container"></div>
+  <div id="container2"></div>
+</body>
+<script src="../js/hammer.js"></script>
+<script>
+    // 先要对监听的DOM进行一些初始化
+    var myElement = document.getElementById('container');
+    var myElement2 = document.getElementById('container2');
+    // create a simple instance
+    // by default, it only adds horizontal recognizers
+    var mc = new Hammer(myElement);
+
+    // let the pan gesture support all directions.
+    // this will block the vertical scrolling on a touch-device while on the element
+    mc.get('pan').set({ direction: Hammer.DIRECTION_ALL });
+
+    // listen to events...
+    mc.on("panleft panright panup pandown tap press", function(ev) {
+      // console.log(ev)
+      myElement.textContent = ev.type;
+    });
+
+    myElement.addEventListener('touchmove', function(ev) {
+      if(ev.touches) {
+        myElement2.innerHTML = ev.touches.length;
+      }
+
+      // console.log(ev.touches)
+    })
+</script>
+</html>

@@ -1,0 +1,89 @@
+@charset "UTF-8";
+
+//========== _configure.scss ==========//
+@import "../../../sasscore/_configure.scss";
+
+
+//========== public-wap.scss ==========//
+// reset
+@import "../../../m-widget/reset/reset.scss";		//全局
+
+/*button*/
+@import "../../../m-widget/button/button.scss";		//全局
+
+/*coupon*/
+// @import "../../../m-widget/coupon/coupon.scss";		//非全局
+
+/*dialog*/
+@import "../../../m-widget/dialog/dialog.scss";		//全局
+
+/*footer*/
+@import "../../../m-widget/footer/footer.scss";		//全局
+
+/*grid*/
+// @import "../../../m-widget/grid/grid.scss";			//非全局
+
+/*header*/
+@import "../../../m-widget/header/header.scss";		//全局
+
+/*hint*/
+@import "../../../m-widget/hint/hint.scss";			//全局
+
+/*icon*/
+@import "../../../m-widget/icon/icon.scss";			//全局
+
+/*menu*/
+@import "../../../m-widget/menu/menu.scss";			//全局
+
+/*pic*/
+// @import "../../../m-widget/pic/pic.scss";			//非全局
+
+/*prompt*/
+@import "../../../m-widget/prompt/prompt.scss";		//全局
+
+/*shaer*/
+@import "../../../m-widget/share/share.scss";		//全局
+
+/*toast*/
+@import "../../../m-widget/toast/toast.scss";		//全局
+
+
+
+
+
+
+
+
+
+//========== 调用方法 ==========//
+// 单位换算（rem）
+	// width:	rem(100);
+	// margin:	rem(100 200 300 400);
+	//----------
+// 单行&多行截字
+	// @include ellipsis(); 默认截字一行
+	// @include ellipsis(mobile,3); 截字多行
+	// @include ellipsis(){width:2rem;}; 带有宽度截字
+ 
+// 圆角
+	//@include prefix(border-radius,50%,webkit moz ms);
+ 
+// box-sizing: border-box;
+	// box-sizing(border,webkit moz ms o);
+ 
+// flex布局
+	// @include flex(center,center); 非常用属性
+	// @include flex-box(); 常用属性
+	// @include flex-col(1); 常用属性
+
+//0.5像素边框
+	// .btn{
+	//		&:after{
+	//			@include border(all,1px,#f00);
+	//			all left right top bottom
+	//		}
+	//	}
+//==========使用方法 End==========//
+
+
+

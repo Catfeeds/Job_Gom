@@ -1,0 +1,53 @@
+doctype html
+html(lang="zh-CN",data-use-rem="750")
+	include ../../../m-widget/head/head.jade
+	link(type="text/css",rel="stylesheet",href="../../css/public/public-wap.css")
+	link(type="text/css",rel="stylesheet",href="../../css/module/usercenter-new.css")
+	
+	body(style="background-color: #fff;").opg.user-center
+		include ../../../m-widget/head/rem.jade
+		
+		header.header
+			span
+				a.head-back(href="javascript:;")
+					em.iconn-1
+			h1.head-title 达人招募
+		// /header
+
+		.daren-wrap
+			.dr-6
+			.dr-7
+			.dr-8.dr-process
+				ul
+					li.active
+						.step-num 1
+						span.step-txt 填写资料
+					li.active
+						.step-num 2
+						span.step-txt 审核
+					li
+						.step-num 3
+						span.step-txt 填写资料
+				p.fail-txt
+					span 拜托拜托，不要这么着急啦！
+					span 您的申请我们正在认真审核哦～
+			ul.dr-check-table
+				li
+					label 真实姓名:
+					span JOJOK
+				li
+					label 身份证号:
+					span 3422**********0061
+				li
+					label 实名认证:
+					span.gray （身份证正反面照、手持身份证照）
+					.idpics
+						img(src="../../images/coupon_share_logo.jpg")
+						img(src="../../images/coupon_share_logo.jpg")
+						img(src="../../images/coupon_share_logo.jpg")
+				li
+					label 达人类别:
+					span 美妆达人
+				li
+					label 个人介绍:
+					p 我是一名信息工程大学印刷工程专业应届本科即将毕业的学员。 我的性格偏于内向，为人坦率、热情、讲求原则；处事乐观、专心、细致、头脑清醒；富有责任心、乐于助人。

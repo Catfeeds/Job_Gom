@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+	<meta charset="utf-8">
+	<meta name="renderer" content="webkit">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>GomePlus视频频道</title>
+	<meta name="keywords" content="GomePlus视频频道" />
+	<meta name="description" content="" />
+	<link rel="stylesheet" type="text/css" href="<%=devenv%>dist/css/app.css">
+</head>
+<body>
+	<div class="main">
+		<%- include('../../common/head.ejs')%>
+		<%- include('../../common/menu.ejs')%>
+		<div class="content">
+			<!--右侧内容区-->
+			<div class="av-wrap hide">
+				<table border="0" cellspacing="0" cellpadding="0" width="100%" class="av-bar">
+					<tr>
+					    <td>
+					        <h3>视频渠道</h3>
+					        <p class="gray">视频渠道简介视频渠道简介视频渠道简介视频渠道简介视频渠道简介</p>
+					    </td>
+					    <td>
+					        <div class="state">
+					            <span class="red">审核失败</span>
+					            <span class="green">审核失败</span>
+					            <span class="orange">审核失败</span>
+					        </div>
+					        <div class="state-text">
+					        	<p>原因：1、失败原因失败原因失…</p>
+					        	<div class="text-all">
+					        		1. 标题问题<br />
+                                    2. 视频转码失败视频转码失败视频转码失视频转码失败视频转码失败视频转码失视频转码失败视频
+
+					        	</div>
+					        </div>
+					    </td>
+					    <td>
+					        <a href="#" class="btn">申请</a>
+					    </td>
+					</tr>
+				</table>
+			</div>
+			
+			<div class="av-form">
+				<h2>视频渠道申请</h2>
+				<div class="form-list">
+					<div class="form-group">
+                        <label>
+                            <span class="color-rad">*</span>
+                            作品链接1：
+                        </label>
+                        <div class="form-input">
+                            <input class="input-text" type="text" placeholder="请输入真实身份证号，以便更好确认身份" value="">
+                            <p class="error show">请输入真实姓名</p>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label>
+                            作品链接2：
+                        </label>
+                        <div class="form-input">
+                            <input class="input-text" type="text" placeholder="请输入真实身份证号，以便更好确认身份" value="">
+                            <p class="error show">请输入真实姓名</p>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label>
+                            作品链接3：
+                        </label>
+                        <div class="form-input">
+                            <input class="input-text" type="text" placeholder="请输入真实身份证号，以便更好确认身份" value="">
+                            <p class="error show">请输入真实姓名</p>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label>
+                            <span class="color-rad">*</span>
+                            视频制作过程截图：
+                        </label>
+                        <div class="form-input upload-box">
+                            <div class="upload-attention">仅支持JPG、JPEG、PNG图片文件，且文件小于4M</div>
+                            <div class="clearfix">
+                                <div class="upload-img img-apply">
+                                    <div class="upload-add">
+                                        <div class="add-item">
+                                            <em class="icon-7"></em>
+                                        </div>
+                                        <input type="file" name="" value="" class="upload-btn" />
+                                    </div>
+                                    <div class="img-add">
+                                        <div class="loading-bg">
+                                            <span class="icon-20 indicator"></span>
+                                        </div>
+                                        <img src="//gfs10.gomein.net.cn/T1mfCjBgLT1RCvBVdK_c126_126.jpg" />
+                                        <span class="icon-4 del"></span>
+                                    </div>
+                                </div>
+                                <div class="upload-img img-apply">
+                                    <div class="upload-add">
+                                        <div class="add-item">
+                                            <em class="icon-7"></em>
+                                        </div>
+                                        <input type="file" name="" value="" class="upload-btn" />
+                                    </div>
+                                </div>
+                                <div class="upload-img img-apply">
+                                    <div class="upload-add">
+                                        <div class="add-item">
+                                            <em class="icon-7"></em>
+                                        </div>
+                                        <input type="file" name="" value="" class="upload-btn" />
+                                    </div>
+                                </div>
+                            </div>
+                            <p class="error show">图片仅支持jpg、png、pneg格式</p>
+                        </div>
+                    </div>
+                    <div class="btn-next2">
+                        <input type="button" value="提交" class="btn submit" />
+                        <input type="button" value="取消" class="btn change" />
+                    </div>
+				</div>
+			</div>
+			
+			<div class="footer">
+                <div class="main-footer">
+                    <ul>
+                        <li><a>国美官网</a><span>|</span></li>
+                        <li><a>美妙官网</a><span>|</span></li>
+                        <li><a>联系我们</a><span>|</span></li>
+                        <li><a>关于我们</a><span>|</span></li>
+                        <li><a>平台协议</a></li>
+                    </ul>
+                    <div className="copyRight">Copyright © 2015-2017 美信网络技术有限公司版权所有</div>
+                </div>
+            </div>
+		</div>
+	</div>
+	<script src="<%=devenv%>dist/js/vendor.js"></script>
+	<script src="<%=devenv%>dist/js/main.js"></script>
+</body>
+</html>

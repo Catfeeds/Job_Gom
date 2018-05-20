@@ -1,0 +1,85 @@
+doctype html
+html(lang="zh-CN")
+	include ../../../pc-widget/head/head.jade
+	link(type="text/css",rel="stylesheet",href="../../css/public/public.css")
+	link(type="text/css",rel="stylesheet",href="../../css/module/usercenter.css")
+	body.opg
+		include ../../../pc-widget/header/header.jade
+		include ../../../pc-widget/menu/menu.jade
+		div.wrap-box.marg-t20
+			.ship-addr-left
+				h2.ship-addr-setting 设置
+				p.ship-addr-manage 收货地址管理
+			.ship-addr-right
+				div.new-add-addr.hide
+					a(href="javascript:").pc-btn.pc-btnw130.pc-btnh35 新增收货地址
+					| &nbsp;&nbsp;&nbsp;您已创建
+					span 32
+					| 个收货地址，最多可创建20个
+				table.ship-addr-table.hide
+					tr
+						th(width="17%") 收货人
+						th(width="28%") 所在地址
+						th(width="25%") 详细地址
+						th(width="17%") 手机/电话
+						th(width="13%") 操作
+					tr
+						td.reciever
+							span.name 宋仲基
+						td.address 北京丰台区三环到四环之间
+						td.detailed-addr 霄云路26号鹏润大厦B座
+						td.tel 18888888888
+						td
+							a.amend-link(href="javascript:") 修改
+							span |
+							a.delete-link(href="javascript:") 删除
+					tr
+						td.reciever
+							span.name 宋仲基
+							span.default-addr 默认地址
+						td.address 北京丰台区三环到四环之间
+						td.detailed-addr 霄云路26号鹏润大厦B座
+						td.tel 18888888888
+						td
+							a.amend-link(href="javascript:") 修改
+							span |
+							a.delete-link(href="javascript:") 删除
+					tr
+						td.reciever
+							span.name 宋仲基
+						td.address 北京丰台区三环到四环之间
+						td.detailed-addr 霄云路26号鹏润大厦B座
+						td.tel 18888888888
+						td
+							a.amend-link(href="javascript:") 修改
+							span |
+							a.delete-link(href="javascript:") 删除
+					tr
+						td.reciever
+							span.name 宋仲基
+							span.default-addr.set-default-addr 设为地址
+						td.address 北京丰台区三环到四环之间
+						td.detailed-addr 霄云路26号鹏润大厦B座
+						td.tel 18888888888
+						td
+							a.amend-link(href="javascript:") 修改
+							span |
+							a.delete-link(href="javascript:") 删除
+					- for(i=0;i<4;i++)
+						tr
+							td.reciever
+								span.name 宋仲基
+							td.address 北京丰台区三环到四环之间
+							td.detailed-addr 霄云路26号鹏润大厦B座
+							td.tel 18888888888
+							td
+								a.amend-link(href="javascript:") 修改
+								span |
+								a.delete-link(href="javascript:") 删除
+				.no-address
+					img(src="../../images/public/circle-disband-bg.png" width="192" height="100")
+					p 您还未设置收货地址，请点击下方按钮设置您的收货地址
+					a(href="##").pc-btn.pc-btnw130.pc-btnh35 新增收货地址
+		include ../../../pc-widget/footer/footer.jade
+			
+		

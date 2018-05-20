@@ -1,0 +1,20 @@
+@import 'widget/_config';
+
+h2, h3 {
+  text-align: center;
+}
+
+.itemAction {
+  background: red;
+}
+
+.marginTop {
+  margin-top: 0.50rem;
+}
+
+.userButton {
+  width: .50rem;
+  height: .50rem;
+  margin: .20rem auto;
+  background: red;
+}

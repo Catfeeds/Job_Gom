@@ -1,0 +1,112 @@
+doctype html
+html(lang="zh-CN",data-use-rem="750")
+	include ../../../m-widget/head/head.jade
+	link(type="text/css",rel="stylesheet",href="../../css/public/public-wap.css")
+	link(type="text/css",rel="stylesheet",href="../../css/module/usercenter-new.css")
+	
+	body(style="background-color:#fff;").opg.user-center
+		include ../../../m-widget/head/rem.jade
+		
+		header.header
+			span
+				a.head-back(href="javascript:;")
+					em.iconn-1
+			h1.head-title 我的收藏
+			span
+				a(href="javascript:;").head-edit 编辑
+		// /header
+
+		.collection
+			ul.menu-list
+				li.item
+					p.txt 店铺
+				li.item
+					p.txt 商品
+				li.item.active
+					i.num
+					p.txt 话题
+			section.dynamic-list
+				article.article.audit-failed.edit
+					a(href="javascript:;").check-btn
+						em.iconn-39
+					a(href="##").item-box
+						h2.art-tit
+							em.ic-tag.ic-jingp 精品
+							em.ic-tag.ic-zhuanf 专访
+							| 老店铺新装修！
+						.source
+							| 来自圈子 
+							span.red 摄影爱好者摄影爱好者摄影爱好者
+						.art-txt
+							p 本店始创于康熙年间，经过先后6000多年，研制出这款显示器，绝对高清，绝对靠谱！
+						.m-pics
+							.img
+								em.num 36
+								img(src='../../images/3.jpg')
+							.img
+								em.iconn-79
+								img(src='../../images/3.jpg')
+							.img
+								em.iconn-80
+								img(src='../../images/3.jpg')
+						.art-info
+							span.time 2016.11.17
+							
+							span
+								em.iconn-19
+								| 23
+				article.article.edit
+					a(href="javascript:;").check-btn
+						em.iconn-39
+					a(href="##").item-box
+						h2.art-tit
+							em.ic-tag.ic-jingp 精品
+							em.ic-tag.ic-zhuanf 专访
+							| 老店铺新装修！
+						.source
+							| 来自圈子 
+							span.red 摄影爱好者摄影爱好者摄影爱好者
+						.art-txt
+							p 本店始创于康熙年间，经过先后6000多年，研制出这款显示器，绝对高清，绝对靠谱！
+						.m-pics
+							.img
+								em.num 36
+								img(src='../../images/3.jpg')
+							.img
+								em.iconn-79
+								img(src='../../images/3.jpg')
+						.art-info
+							span.time 2016.11.17
+							
+							span
+								em.iconn-19
+								| 23
+				article.article.edit
+					a(href="javascript:;").check-btn
+						em.iconn-39
+					a(href="##").item-box
+						h2.art-tit
+							em.ic-tag.ic-jingp 精品
+							em.ic-tag.ic-zhuanf 专访
+							| 老店铺新装修！
+						.source
+							| 来自圈子 
+							span.red 摄影爱好者摄影爱好者摄影爱好者
+						.art-txt
+							p 本店始创于康熙年间，经过先后6000多年，研制出这款显示器，绝对高清，绝对靠谱！
+						.m-pics
+							.img
+								em.num 36
+								img(src='../../images/3.jpg')
+						.art-info
+							span.time 2016.11.17
+							
+							span
+								em.iconn-19
+								| 23
+				.del-menu
+					a(href="javascript:;").check-all-btn
+						em.iconn-38
+						em.iconn-39
+						| 全选
+					a(href="javascript:;").m-btn 删除

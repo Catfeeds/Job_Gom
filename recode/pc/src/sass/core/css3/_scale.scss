@@ -1,0 +1,25 @@
+// based on prefix() API
+// Arhtor: Mapk Jia Shilong
+
+@import "../utils/_prefix.scss";
+
+// ## Define scale
+// == $prefix:none || scales
+// -----------------------------------------------------
+
+// scales
+@mixin scales($ratioX:1,$ratioY:2,$prefixs:webkit){
+	@include prefix(transform,scale($ratioX,$ratioY),$prefixs);
+}
+// scaleX
+@mixin scaleX($ratioX:1,$prefixs:webkit){
+	@include prefix(transform,scaleX($ratioX),$prefixs);
+}
+// scaleY
+@mixin scaleY($scaleY:1,$prefixs:webkit){
+	@include prefix(transform,scaleY($scaleY),$prefixs);
+}
+// scaleZ
+@mixin scaleZ($scaleZ:1,$prefixs:webkit){
+	@include prefix(transform,scaleZ($scaleZ),$prefixs);
+}

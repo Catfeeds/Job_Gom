@@ -1,0 +1,184 @@
+.amp-index {
+  margin: 0 auto;
+  padding: 30px 0 20px;
+  width: 1200px; }
+  .amp-index .index-statis {
+    overflow: hidden;
+    zoom: 1; }
+    .amp-index .index-statis ul {
+      *zoom: 1;
+      position: relative;
+      margin-left: -10px; }
+      .amp-index .index-statis ul:after {
+        content: "";
+        display: block;
+        height: 0;
+        clear: both;
+        visibility: hidden; }
+      .amp-index .index-statis ul li {
+        overflow: hidden;
+        float: left;
+        margin-left: 10px;
+        *display: inline;
+        width: 393px;
+        height: 230px;
+        background: #fff;
+        -webkit-border-radius: 4px;
+        border-radius: 4px; }
+    .amp-index .index-statis .statis-title {
+      padding: 14px 20px;
+      font-size: 26px;
+      font-weight: normal;
+      color: #23272c; }
+      .amp-index .index-statis .statis-title .icon {
+        font-size: 30px;
+        margin-right: 10px; }
+      .amp-index .index-statis .statis-title .icon-advert {
+        color: #ff3652; }
+      .amp-index .index-statis .statis-title .icon-rebate {
+        color: #ffc931; }
+      .amp-index .index-statis .statis-title .icon-msg {
+        color: #37ce85; }
+      .amp-index .index-statis .statis-title span {
+        display: inline-block;
+        *display: inline;
+        *zoom: 1;
+        vertical-align: middle; }
+    .amp-index .index-statis .statis-cont {
+      position: relative;
+      padding: 23px 60px 0px;
+      color: #596069;
+      font-size: 18px;
+      line-height: 38px; }
+      .amp-index .index-statis .statis-cont p {
+        overflow: hidden;
+        height: 38px; }
+      .amp-index .index-statis .statis-cont .cont-fn {
+        position: absolute;
+        right: 60px;
+        top: 23px; }
+      .amp-index .index-statis .statis-cont dt {
+        overflow: hidden; }
+        .amp-index .index-statis .statis-cont dt a {
+          display: block;
+          height: 30px;
+          line-height: 30px;
+          overflow: hidden;
+          color: #596069;
+          font-size: 14px; }
+          .amp-index .index-statis .statis-cont dt a:hover {
+            font-size: 14px;
+            color: #596069; }
+          .amp-index .index-statis .statis-cont dt a .icon {
+            position: relative;
+            color: #b3babf;
+            margin-right: 9px;
+            margin-top: 7px;
+            float: left; }
+          .amp-index .index-statis .statis-cont dt a .cont-text {
+            width: 185px;
+            float: left;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            empty-cells: show; }
+          .amp-index .index-statis .statis-cont dt a .cont-time {
+            float: right; }
+        .amp-index .index-statis .statis-cont dt.cont-new .icon-letter:after {
+          display: block; }
+    .amp-index .index-statis .statis-cont-reset {
+      padding-left: 30px;
+      padding-right: 30px; }
+  .amp-index .index-map {
+    margin-top: 20px;
+    padding: 16px 20px 20px;
+    background: #fff;
+    -webkit-border-radius: 4px;
+    border-radius: 4px; }
+    .amp-index .index-map .map-title {
+      position: relative;
+      height: 24px;
+      line-height: 24px;
+      font-size: 16px;
+      color: #23272c; }
+      .amp-index .index-map .map-title i {
+        padding-left: 5px;
+        font-size: 12px;
+        color: #89919c;
+        font-style: normal; }
+      .amp-index .index-map .map-title .ele-select {
+        position: absolute;
+        right: 0;
+        top: 4px; }
+    .amp-index .index-map .map-data {
+      padding: 16px 40px; }
+      .amp-index .index-map .map-data ul {
+        *zoom: 1; }
+        .amp-index .index-map .map-data ul:after {
+          content: "";
+          display: block;
+          height: 0;
+          clear: both;
+          visibility: hidden; }
+        .amp-index .index-map .map-data ul li {
+          float: left;
+          display: inline;
+          margin-right: 10px;
+          width: 190px;
+          height: 100px;
+          background: #ebf8fe;
+          -webkit-border-radius: 4px;
+          border-radius: 4px; }
+          .amp-index .index-map .map-data ul li strong {
+            display: block;
+            padding: 20px 20px 10px;
+            font-weight: normal;
+            font-size: 14px;
+            color: #89919c; }
+          .amp-index .index-map .map-data ul li span {
+            display: block;
+            padding: 0 20px;
+            font-size: 24px;
+            color: #23272c; }
+    .amp-index .index-map .map-select {
+      *zoom: 1;
+      padding: 35px 40px 30px; }
+      .amp-index .index-map .map-select:after {
+        content: "";
+        display: block;
+        height: 0;
+        clear: both;
+        visibility: hidden; }
+      .amp-index .index-map .map-select .ele-select {
+        float: left;
+        margin-right: 20px; }
+        .amp-index .index-map .map-select .ele-select .dialog {
+          top: 38px;
+          width: 100%; }
+      .amp-index .index-map .map-select .map-direct {
+        float: right;
+        height: 40px;
+        line-height: 40px; }
+        .amp-index .index-map .map-select .map-direct span {
+          position: relative;
+          display: inline-block;
+          padding-left: 53px;
+          color: #23272c; }
+          .amp-index .index-map .map-select .map-direct span:before {
+            content: '';
+            display: inline-block;
+            position: absolute;
+            left: 34px;
+            top: 50%;
+            margin-top: -5px;
+            width: 10px;
+            height: 10px;
+            background: #01a9f4;
+            -webkit-border-radius: 10px;
+            border-radius: 10px; }
+          .amp-index .index-map .map-select .map-direct span.direct-click:before {
+            background: #ffc931; }
+    .amp-index .index-map .map-show {
+      padding-bottom: 40px; }
+
+

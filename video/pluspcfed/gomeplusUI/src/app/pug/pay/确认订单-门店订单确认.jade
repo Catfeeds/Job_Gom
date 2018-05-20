@@ -1,0 +1,33 @@
+extends ../public/head.jade
+block title
+	title 门店订单
+block link-theme
+	link(rel='stylesheet' type="text/css" href="../../css/pay/pay.css")
+block content
+	//- js
+	include ../public/mobileJs.jade
+	section.sec.mb10
+		h3.pay-tl 
+			em.iconn-64
+			| 国美西坝河门店
+		div.pay-sec.bor
+				p.infor
+				| 会专用100mm紫色亮片高跟鞋宴会专用宴会专100mm紫色亮片高跟鞋紫色
+				div.detail
+					span.d-nomey ¥2929.00
+					em.num x1
+		.goods
+			span.gd-num 共1件商品
+			em.gd-pay
+				| 合计: 
+				strong ¥2929.00
+	.bar
+		span.bar-money
+			| 应付金额：
+			strong ¥1999.98
+		a.m-btn(href="javascript:;") 提交订单
+	.m-mask
+		.m-dialog
+			.dialog-tit 订单已失效，请重新扫码完成购买
+			.dialog-btn
+				a(href="javasciript:;") 确定

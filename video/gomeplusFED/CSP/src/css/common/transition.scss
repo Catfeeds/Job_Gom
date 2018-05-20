@@ -1,0 +1,12 @@
+/*
+ * vue transition 组件过渡效果
+ */
+
+.transition {
+	transition: all ease 0.2s;
+}
+
+.fade-enter,
+.fade-leave {
+	opacity: 0;
+}

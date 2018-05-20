@@ -1,0 +1,2 @@
+webpackJsonp([1],{"0":function(t,exports,n){"use strict";n(41).init()},"41":function(t,exports){"use strict";t.exports={"getItems":getItems,"init":function(){console.log(1)}}}});
+//# sourceMappingURL=channelPage.js.map

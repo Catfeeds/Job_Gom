@@ -1,0 +1,89 @@
+/* 图片裁剪弹窗样式 */
+.crop-wrap{
+	padding-top: 10px;
+	padding-left: 10px;
+	padding-right: 10px;
+	h3{
+		font-size: 14px;
+		color: $base;
+		margin-bottom: 10px;
+	}
+	.crop-section, .preview{
+		float: left;
+		img{
+			max-width: 100%;
+		}
+	}
+	/* 头像裁剪 */
+	&.avatar{
+		.crop-section{
+			margin-left: 50px;
+			/* 订阅号头像裁剪区 */
+			.cropper{
+				width: 250px;
+				height: 250px;
+			}
+		}
+		.preview{
+			margin-left: 40px;
+			h3{
+				padding-left: 5px;
+			}
+		}
+	}
+	.crop-section{
+		.cropper{
+			width: 442px;
+			height: 249px;
+		}
+	}
+	.preview{
+		margin-left: 15px;
+		/* 封面图预览 */
+		.img-preview{
+			width: 285px;
+			height: 160px;
+		}
+		/* 封面图预览时的标题 */
+		.sample{
+			width: 262px;
+			padding: 10px;
+			border: 1px solid #f7f7f7;
+			border-top: none;
+			.title{
+				color: #666;
+			}
+			.icon{
+				width: 116px;
+				height: 16px;
+				margin-top: 13px;
+				// background: url("../../imgs/public/sample-icon.jpg") no-repeat;
+			}
+		}
+		/* 订阅号头像预览 */
+		.m{
+			width: 65px;
+			height: 65px;
+			border-radius: 50%;
+		}
+		.s{
+			width: 20px;
+			height: 20px;
+			margin-left: 21px;
+			border-radius: 50%;
+		}
+		p{
+			font-size: 12px;
+			margin-top: 10px;
+			margin-bottom: 30px;
+			text-align: center;
+		}
+	}
+	.img_preview{
+		overflow: hidden;
+		> img{
+			max-width: 100%;
+		}
+	}
+	
+}

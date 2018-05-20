@@ -1,0 +1,45 @@
+doctype html
+html(lang="zh-CN")
+	include ../../widget/head/head.pug
+	link(type="text/css",rel="stylesheet",href="../../css/public/public.css")
+	link(type="text/css",rel="stylesheet",href="../../css/module/circle-list.css")
+	body.opg
+		include ../../widget/header/header.pug
+		include ../../widget/menu/menu.pug
+		.container
+			.page-tags
+				.circle-classify 圈子分类
+				.tags-container
+					a(hre='#').tagHover 数码/家电
+					-var circleAry = ['时尚','家居/智能','母婴','娱乐','健身','美食','PLUS活动社','视频','旅行','汽车','生活','宠物','摄影','文玩','玩具'];
+					each val,index in circleAry
+						a(hre='#') #{val}
+			.page-tab
+				.tab-container
+					ul.tab-item
+						- for (var x = 0; x < 16; x++)
+							li
+								.mg-negative
+									.img.scale-small
+										a(href="#")
+											img(src="../../images/circle/cirle-list.png")
+										span.tag.overflow-one 时尚摄影
+									.text
+										a(href="#").list-title.overflow-one 旅游出行摄影必备
+										.text-icon
+											span.fl
+												em 成员：
+												| 238
+											span.fl
+												em 话题：
+												| 238
+				.page
+					a(href='#').pageup 上一页
+						em
+					-for(var i = 1;i < 6;i++)
+						a(href="#") #{i}
+					a(href="#") ...
+					a(href="#").active 100
+					a(href='#').pagedown.pageup-dis.disabled 下一页
+						em
+		include ../../widget/footer/footer.pug

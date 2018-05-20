@@ -1,0 +1,55 @@
+// based on prefix() API
+// Arhtor: Mapk Jia Shilong
+
+@import "../utils/_prefix.scss";
+
+// ## bounce-in
+// == @include bounce-in() or @include bounce-in(webkit moz)
+// ------------------------------------------------------
+
+@mixin bounce-in($prefixs:webkit){
+	@include keyframes(bounce-in,$prefixs){
+		0% {
+			opacity:0;
+			@include scales(0.3,0.3,$prefixs);
+		}
+		50% {
+			opacity:1;
+			@include scales(1.05,1.05,$prefixs);
+		}
+		70% {
+			@include scales(0.9,0.9,$prefixs);
+		}
+		100% {
+			@include scales(1,1,$prefixs);
+		}
+	}
+	.bounce-in {
+		@include animation((bounce-in 0.5s 0.1s),$prefixs);
+	}
+}
+
+// ## bounce-down
+// ------------------------------------------------------
+
+@mixin bounce-down($prefixs:webkit){
+	@include keyframes(bounce-down,$prefixs){
+		0% {
+			opacity: 0;
+			@include translateY(-2000px,$prefixs);
+		}
+		60% {
+			opacity: 1;
+			@include translateY(30px,$prefixs);
+		}
+		80% {
+			@include translateY(-10px,$prefixs);
+		}
+		100% {
+			@include translateY(0px,$prefixs);
+		}
+	}
+	.bounce-down{
+		@include animation((bounce-down 0.5s 0.1s),$prefixs);
+	}
+}

@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="zh-CN" data-use-rem="750">
+<head>
+	<meta charset="utf-8">
+	<title></title>
+	<meta name="keywords" content="GomePlus视频频道" />
+	<meta name="description" content="" />
+	<meta name="format-detection" content="telephone=no">
+	<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no,minimal-ui" />
+	<meta name="x5-page-mode" content="no-title"/>
+	<link rel="stylesheet" href="/m/vm/dist/css/video_detail.css">
+</head>
+<body>
+<div data-id="wrap">
+	<%- include('../../common/rem.ejs')%>
+	<div class="openapp" id="openapp">
+		<em class="icon-25" data-id="close"></em>
+		<p>上客户端看，更高清，更流畅！</p>
+		<a href="javascript:;" id="J-call-app">戳我打开</a>
+		<input id="J-download-app" type="hidden" name="storeurl" value="gome-meimiao://com.gomeplus.v.meimiao/v/1535.html">
+	</div>
+	<header class="head-bar">
+		<a href="/" class="fl"><em class="icon-logo"></em></a>
+		<a href="javascript:void 0;" data-id="search" class="fr"><em class="icon-17"></em></a>
+	</header>
+	<%- include('../../common/testUser.ejs')%>
+	<div class="back"><a href="javascript:;" class="icon-22"></a></div>
+	<div class="player" id="videoContainer"></div>
+	<script type="text/javascript" src="https://player-pre.gomeplus.com/gvs-player/dist/vod/js/meixinplayer-min.js"></script>
+	<script>
+		// var v = new MeixinPlayer();
+		// v.init(428, 'videoContainer', {
+		// 	type: 'vod', // 直播：live，点播：vod
+		// 	poster: '', // 播放器封面图
+		// 	env: 'dev', // dev, pre, dist
+	    // });
+	</script>
+	
+	
+	
+	
+	
+	<div class="article">
+		<h1 class="title">了解红酒从这10个词开始，让你从此不是红酒小白</h1>
+		<div class="subtitle">
+			<span class="date">2017-02-20</span>
+		</div>
+		<div class="user-box">
+			<p class="user-name">
+				<img src="/dist/imgs/public/default-head.jpg"/>
+				<span>名字名字</span>
+			</p>
+			<p class="gray">科技型男科技型男科技型男科技型…</p>
+			<p>
+				<a href="javascript:;" class="btn-ding" data-subscribeid="id" data-action="subscribe" data-status="0">
+					<em class="icon-18"></em>
+					<span class="show">订阅</span>
+					<span class="hide">已订阅</span>
+				</a>
+			</p>
+		</div>
+		<div class="section">各种测试文章各种家庭聚会，章各种家庭聚会章各种家庭聚会章各种家庭聚会章各种家庭聚会章各种家庭聚会章各种家庭聚会</div>
+		<div class="section">各种测试文章各种家庭聚会，章各种家庭聚会章各种家庭聚会章各种家庭聚会章各种家庭聚会章各种家庭聚会章各种家庭聚会</div>
+		<div class="section">各种测试文章各种家庭聚会，章各种家庭聚会章各种家庭聚会章各种家庭聚会章各种家庭聚会章各种家庭聚会章各种家庭聚会<img src="https://i3.meixincdn.com/v1/img/T1PyYTBmdv1RXrhCrK.jpg" /></div>
+		<div class="section">各种测试文章各种家庭聚会，章各种家庭聚会章各种家庭聚会章各种家庭聚会章各种家庭聚会章各种家庭聚会章各种家庭聚会</div>
+		<div class="tag">
+			<div class="clearfix">
+				<a href="javascript:;" class="btn btn-text">酒</a>
+				<a href="javascript:;" class="btn btn-text">美食</a>
+				<a href="javascript:;" class="btn btn-text">评测</a>
+			</div>
+		</div>
+		<div class="item-icon clearfix">
+			<div class="fl" data-share="share">
+				<em class="icon-12"></em>
+			</div>
+			<div class="fl" data-action="collect" data-collectid="id" data-status="0">
+				<em class="icon-7"></em>
+			</div>
+			<div class="fl" data-action="like" data-likeid="id" data-status="0">
+				<em class="icon-3"></em>
+				<span data-node="count">1020</span>
+			</div>
+		</div>
+		<a class="product clearfix">
+			<div class="img"><img src="https://i3.meixincdn.com/v1/img/T1PyYTBmdv1RXrhCrK.jpg"/></div>
+			<div class="desc">
+				<p class="head">适合女生喝的葡萄酒</p>
+				<p class="sub">圣旨红酒 意大利进口桃红水电费是否水电费水电费水电费水电费</p>
+			</div>
+		</a>
+	</div>
+	
+	<!--<div class="back-top">
+		<em class="icon-2"></em>
+	</div>-->
+	<!-- <%- include('../../common/footer.ejs')%> -->
+	<div class="shareMask click">
+		<div class="share-h">
+			<!-- <img src="../../../src/imgs/public/share-h.png"> -->
+		</div>
+		<div class="share-h-app">
+			<!-- <img src="../../../src/imgs/public/share-h.png"> -->
+		</div>
+		<div class="share-x">
+			<em class="icon-25"></em>
+		</div>
+	</div>
+	<div data-id="commentComponent"></div>
+</div>
+	<script src=" https://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
+	<script type="text/javascript" src="/m/vm/dist/js/vendor.js"></script>
+	<script type="text/javascript" src="/m/vm/dist/js/video_detail.js"></script>
+</body>
+</html>

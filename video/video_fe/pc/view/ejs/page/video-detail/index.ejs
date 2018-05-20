@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+	<meta charset="utf-8">
+	<title>GomePlus视频详情</title>
+	<meta name="keywords" content="GomePlus视频频道" />
+	<meta name="description" content="" />
+	<meta name="x5-page-mode" content="no-title"/>
+	<link rel="stylesheet" href="http://css.atguat.com.cn/??gmlib/reset/1.1.0/reset.css,gmpro/1.0.0/public/1.0.0/css/top.min.css,gmpro/1.0.0/public/1.2.0/css/foot-gomeplus.min.css?v=201704181727">
+	<link rel="stylesheet" type="text/css" href="<%=devenv%>dist/css/video-detail.css">
+</head>
+<body>
+
+<%- include('../../common/testUser.ejs')%>
+
+
+    <script type="text/javascript">
+    /* 登录脚本所需的全局变量 */
+
+    // pre 环境
+    $CONFIG['dynSite']='//g.atguat.com.cn';
+    $CONFIG['staSite']='//www.atguat.com.cn/';
+    $CONFIG['contextPath']='/ec/homeus';
+    $CONFIG['secureURL']='//g.atguat.com.cn';
+    $CONFIG['cookieDomain']='.atguat.com.cn';
+    $CONFIG['stageImageServer']= '//img.atguat.net.cn/';
+    $CONFIG['imgServer']='//img.atguat.com.cn/images';
+    $CONFIG['pictureserver']='//img.atguat.com.cn/image';
+    $CONFIG['stageCssServer']='//css.atguat.com.cn';
+    $CONFIG['cssserver']='//css.atguat.com.cn/css';
+    $CONFIG['stageJsServer']='//js.atguat.com.cn';
+    $CONFIG['jsserver']='//js.atguat.com.cn/js';
+    $CONFIG['js_net_server']='https://js.atguat.net.cn/';
+    $CONFIG['protocol']='https';
+    $CONFIG['versionData']='1487836100';
+
+    // prd 环境
+    // $CONFIG['dynSite']='https://g.gome.com.cn:443';
+    // $CONFIG['staSite']='//www.gome.com.cn/';
+    // $CONFIG['contextPath']='/ec/homeus';
+    // $CONFIG['secureURL']='https://g.gome.com.cn:443';
+    // $CONFIG['cookieDomain']='.gome.com.cn';
+    // $CONFIG['stageImageServer']= '//img.gomein.net.cn/';
+    // $CONFIG['imgServer']='//img.gome.com.cn/images';
+    // $CONFIG['pictureserver']='//img.gome.com.cn/image';
+    // $CONFIG['stageCssServer']='//css.gome.com.cn';
+    // $CONFIG['cssserver']='//css.gome.com.cn/css';
+    // $CONFIG['stageJsServer']='//js.gome.com.cn';
+    // $CONFIG['jsserver']='//js.gome.com.cn/js';
+    // $CONFIG['js_net_server']='https://js.gomein.net.cn/';
+    // $CONFIG['protocol']='https';
+    // $CONFIG['versionData']='1.7.1';
+
+    </script>
+
+	<%- include('../../common/head.ejs')%>
+	<div class="mixture-content clearfix" data-id="wrap">
+		<div class="content-left">
+			<div class="player" id="videoContainer1"></div>
+			<h1>2017我们从新起航，为梦想而奔跑</h1>
+			<div class="message clearfix">
+				<div class="fl">
+					<div class="img">
+						<a href="#"><img src="http://gfs14.atguat.net.cn/T1iyVTBQ_T1RCvBVdK.png"></a>
+					</div>
+					<div class="text">
+						<a href="#" class="name">名字名字名字</a>
+						<a href="javascript:;" class="btn-ding" data-subscribeid="id" data-action="subscribe" data-status="0">
+							<em class="icon-23"></em>
+							<span class="show">订阅</span>
+							<span class="hide">已订阅</span>
+						</a>
+						<p>发布时间：<em>2017-2-20</em></p>
+					</div>
+				</div>
+				<div class="fr">
+					<span>
+						<em class="icon-47"></em>
+						<span>890606</span>
+						<span>次播放</span>
+					</span>
+					<span class="line">|</span>
+					<a href="javascript:;">
+						<em class="icon-14"></em>
+						<span>890606</span>
+					</a>
+					<span class="line">|</span>
+					<a href="javascript:;">
+						<em class="icon-1"></em>
+						<span>收藏</span>
+					</a>
+				</div>
+			</div>
+			<div class="con">
+				<p class="textLeft">为了让大家更好的了解国美在线的用户行为数据，快速查看并分析不同渠道、
+				不同时间在国美的转化与网站浏览情况，并通过使用大数据平台对用户行为数据
+				进行不同角度的获取与使用，大数据中心计划进行大数据平台系统的相关系列培
+				训，请各位领导及同事协调本中心相关人员参与此次培训</p>
+				<p>
+					<img class="img" src="http://js.dev.meixincdn.com/m/vpc/src/imgs/comment/bmw.png">
+				</p>
+				<p class="mt textLeft">为了让大家更好的了解国美在线的用户行为数据，快速查看并分析不同渠道、
+				不同时间在国美的转化与网站浏览情况，并通过使用大数据平台对用户行为数据
+				进行不同角度的获取与使用，中心相关人员参与此次培训</p>
+				<img class="img " src="http://js.dev.meixincdn.com/m/vpc/src/imgs/comment/audi.png">
+				<p class="mt textLeft">为了让大家更好的了解国美在线的用户行为数据，快速查看并分析不同渠道。</p>
+				<img class="img" src="http://js.dev.meixincdn.com/m/vpc/src/imgs/comment/sports.png">
+				<p class="mt textLeft">为了让大家更好的了解国美在线的用户行为数据，快速查看并分析不同渠道、不同时间在国美的转化与网站浏览情况。</p>
+				<h2>什么是边缘型人格障碍？</h2>
+				<p class="textLeft">边缘型人格障碍（以下简称BPD）是一种严重的精神疾病。BPD的患者有四种常见的核心表现：
+				情绪不稳定、冲动性的行为，极度不稳定的人际关系，以及扭曲的认知（National Health Service, NHS, 2016）。</p>
+			</div>
+			<a class="paste">
+				<img src="http://js.dev.meixincdn.com/m/vpc/src/imgs/comment/paste-img.png">
+				<div class="paste-right">
+					<h6>
+					    <img src="<%=devenv%>dist/imgs/public/icon-quan.png"/>
+					       红酒知识科普贴1
+					</h6>
+					<p>澳大利亚最早开始栽种葡萄的地方是悉尼，但悉尼农场湾(Farm Cove)炎热潮湿的气候不适合葡萄藤的生长。澳大利亚第一个商
+					   业葡萄园和葡萄酒酿造厂诞生于19世纪早期，是由约翰?麦克阿瑟在澳大利亚最早开始栽种葡萄的地方是悉尼，但悉尼农场湾(Farm Cove)炎热潮湿的气候不适合葡萄藤的生长。澳大利亚第一个商
+					   业葡萄园和葡萄酒酿造厂诞生于19世纪早期，是由约翰?麦克阿瑟在澳大利亚最早开始栽种葡萄的地方是悉尼，但悉尼农场湾(Farm Cove)炎热潮湿的气候不适合葡萄藤的生长。澳大利亚第一个商
+					   业葡萄园和葡萄酒酿造厂诞生于19世纪早期，是由约翰?麦克阿瑟在澳大利亚最早开始栽种葡萄的地方是悉尼，但悉尼农场湾(Farm Cove)炎热潮湿的气候不适合葡萄藤的生长。澳大利亚第一个商
+					   业葡萄园和葡萄酒酿造厂诞生于19世纪早期，是由约翰?麦克阿瑟在</p>
+				</div>
+			</a>
+			
+			<div class="clearfix tag-share">
+				<div class="label fl">
+					<a href="">小鲜肉</a>
+					<a href="">都市生活</a>
+				</div>
+				<div id="sharebox" class="share fr"></div>
+				<!-- <div class="share">
+					<span class="share-to">分享到：</span>
+					<a><span class="share-icon qq"><em class="icon-9"></em></span></a>
+					<a><span class="share-icon weixin"><em class="icon-7"></em></span></a>
+					<a><span class="share-icon weibo"><em class="icon-10"></em></span></a>
+					<a><span class="share-icon space"><em class="icon-14"></em></span></a>
+					<em class="icon-12 point-down"></em>
+				</div> -->
+			</div>
+			<div class="comment" data-id="commentComponent"></div>
+			<div class="new-comment">
+				<div class="comment-title">
+					评论<span>（102条评论）</span>
+				</div>
+				<div class="comment-form">
+				    <div class="textarea-box">
+				        <div class="form-area">
+				        	我来说两句，请先<span>登录</span>
+				        </div>
+				    	<textarea class="form-area" placeholder="我来说两句..."></textarea>
+				    </div>
+					<div class="form-btn clearfix">
+					    <div class="fl">
+                            <em class="icon-45"></em>
+                            <div class="emoji">
+                                <a href="javascript:;">
+                                    <img src="<%=devenv%>dist/imgs/emoji/baiyan.png"/>
+                                </a>
+                                <a href="javascript:;">
+                                    <img src="<%=devenv%>dist/imgs/emoji/baiyan.png"/>
+                                </a>
+                                <a href="javascript:;">
+                                    <img src="<%=devenv%>dist/imgs/emoji/baiyan.png"/>
+                                </a>
+                                <a href="javascript:;">
+                                    <img src="<%=devenv%>dist/imgs/emoji/baiyan.png"/>
+                                </a>
+                                <a href="javascript:;">
+                                    <img src="<%=devenv%>dist/imgs/emoji/baiyan.png"/>
+                                </a>
+                                <a href="javascript:;">
+                                    <img src="<%=devenv%>dist/imgs/emoji/baiyan.png"/>
+                                </a>
+                                <a href="javascript:;">
+                                    <img src="<%=devenv%>dist/imgs/emoji/baiyan.png"/>
+                                </a>
+                                <a href="javascript:;">
+                                    <img src="<%=devenv%>dist/imgs/emoji/baiyan.png"/>
+                                </a>
+                                <a href="javascript:;">
+                                    <img src="<%=devenv%>dist/imgs/emoji/baiyan.png"/>
+                                </a>
+                                <a href="javascript:;">
+                                    <img src="<%=devenv%>dist/imgs/emoji/baiyan.png"/>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="fr">
+                            <a href="javascript:;" class="btn">发送</a>
+                        </div>
+						<div class="fr">
+                            <span>10</span>
+                            <span class="gray"> / 300</span>
+                        </div>
+					</div>
+				</div>
+				<div class="hot-title">热门评论</div>
+				<div class="comment-list">
+				    <div class="list-item">
+                        <div class="list-img">
+                            <img src="http://gfs3.gomein.net.cn/T15P_TBbZT1RCvBVdK.jpeg"/>
+                        </div>
+                        <div class="list-text">
+                            <div class="text-hover">
+                            	<div class="text-name">
+                                    <span>爱吃土豆的查小易</span>
+                                    <span class="gray">21天前</span>
+                                </div>
+                                <div class="text-con">人生若只如初见，何事秋风悲画扇,被酒莫惊春睡重，赌书消得泼茶香，当时只道是寻常,被酒莫惊春睡重，赌书消得泼茶香，当时只道是寻常被酒莫惊春睡重，赌书消得泼茶香，当时只道是寻常何事秋风悲画扇,被酒莫惊春睡重。
+                                </div>
+                                <div class="text-edit">
+                                    <p>
+                                        <em class="icon-14"></em>
+                                        <span>8.9万</span>
+                                    </p>
+                                    <p>
+                                        <em class="icon-50"></em>
+                                        <span>回复(1908)</span>
+                                    </p>
+                                    <p class="hover">
+                                        <em class="icon-51"></em>
+                                        <span>举报</span>
+                                    </p>
+                                    <p class="hover">
+                                        <em class="icon-52"></em>
+                                        <span>删除</span>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+					<div class="list-item">
+						<div class="list-img">
+							<img src="http://gfs3.gomein.net.cn/T15P_TBbZT1RCvBVdK.jpeg"/>
+						</div>
+						<div class="list-text">
+						    <div class="text-hover">
+    							<div class="text-name">
+    								<span>爱吃土豆的查小易</span>
+    								<span class="gray">21天前</span>
+    							</div>
+    							<div class="text-con">人生若只如初见，何事秋风悲画扇,被酒莫惊春睡重，赌书消得泼茶香，当时只道是寻常,被酒莫惊春睡重，赌书消得泼茶香，当时只道是寻常被酒莫惊春睡重，赌书消得泼茶香，当时只道是寻常何事秋风悲画扇,被酒莫惊春睡重。
+                                </div>
+                                <div class="text-edit">
+                                    <p>
+                                        <em class="icon-14"></em>
+                                        <span>8.9万</span>
+                                    </p>
+                                    <p>
+                                        <em class="icon-50"></em>
+                                        <span>回复(1908)</span>
+                                    </p>
+                                    <p class="hover">
+                                        <em class="icon-51"></em>
+                                        <span>举报</span>
+                                    </p>
+                                    <p class="hover">
+                                        <em class="icon-52"></em>
+                                        <span>删除</span>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="text-comment">
+                                <div class="comment-form">
+                                    <div class="textarea-box">
+                                        <div class="form-area">我来说两句，请先<span>登录</span></div>
+                                        <textarea class="form-area" placeholder="我来说两句..."></textarea>
+                                    </div>
+                                    <div class="form-btn clearfix">
+                                        <div class="fl">
+                                            <em class="icon-45"></em>
+                                            <div class="emoji">
+                                                <a href="javascript:;">
+                                                    <img src="<%=devenv%>dist/imgs/emoji/baiyan.png"/>
+                                                </a>
+                                                <a href="javascript:;">
+                                                    <img src="<%=devenv%>dist/imgs/emoji/baiyan.png"/>
+                                                </a>
+                                                <a href="javascript:;">
+                                                    <img src="<%=devenv%>dist/imgs/emoji/baiyan.png"/>
+                                                </a>
+                                                <a href="javascript:;">
+                                                    <img src="<%=devenv%>dist/imgs/emoji/baiyan.png"/>
+                                                </a>
+                                                <a href="javascript:;">
+                                                    <img src="<%=devenv%>dist/imgs/emoji/baiyan.png"/>
+                                                </a>
+                                                <a href="javascript:;">
+                                                    <img src="<%=devenv%>dist/imgs/emoji/baiyan.png"/>
+                                                </a>
+                                                <a href="javascript:;">
+                                                    <img src="<%=devenv%>dist/imgs/emoji/baiyan.png"/>
+                                                </a>
+                                                <a href="javascript:;">
+                                                    <img src="<%=devenv%>dist/imgs/emoji/baiyan.png"/>
+                                                </a>
+                                                <a href="javascript:;">
+                                                    <img src="<%=devenv%>dist/imgs/emoji/baiyan.png"/>
+                                                </a>
+                                                <a href="javascript:;">
+                                                    <img src="<%=devenv%>dist/imgs/emoji/baiyan.png"/>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="fr">
+                                            <a href="javascript:;" class="btn">发送</a>
+                                        </div>
+                                        <div class="fr">
+                                            <span>10</span>
+                                            <span class="gray"> / 300</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="list-item">
+                                    <div class="list-img">
+                                        <img src="http://gfs3.gomein.net.cn/T15P_TBbZT1RCvBVdK.jpeg"/>
+                                    </div>
+                                    <div class="list-text">
+                                        <div class="text-hover">
+                                            <div class="text-name">
+                                                <span>爱吃土豆的查小易</span>
+                                                <span class="gray">21天前</span>
+                                            </div>
+                                            <div class="text-con"><span class="blue">回复xxx：</span>人生若只如初见，何事秋风悲画扇,被酒莫惊春睡重，赌书消得泼茶香，当时只道是寻常,被酒莫惊春睡重，赌书消得泼茶香，当时只道是寻常被酒莫惊春睡重，赌书消得泼茶香，当时只道是寻常何事秋风悲画扇,被酒莫惊春睡重。
+                                            </div>
+                                            <div class="text-edit">
+                                                <p>
+                                                    <em class="icon-14"></em>
+                                                    <span>8.9万</span>
+                                                </p>
+                                                <p>
+                                                    <em class="icon-50"></em>
+                                                    <span>回复(1908)</span>
+                                                </p>
+                                                <p class="hover">
+                                                    <em class="icon-51"></em>
+                                                    <span>举报</span>
+                                                </p>
+                                                <p class="hover">
+                                                    <em class="icon-52"></em>
+                                                    <span>删除</span>
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="comment-form">
+                                            <div class="textarea-box">
+                                                <div class="form-area">我来说两句，请先<span>登录</span></div>
+                                                <textarea class="form-area" placeholder="我来说两句..."></textarea>
+                                            </div>
+                                            <div class="form-btn clearfix">
+                                                <div class="fl">
+                                                    <em class="icon-45"></em>
+                                                    <div class="emoji">
+                                                        <a href="javascript:;">
+                                                            <img src="<%=devenv%>dist/imgs/emoji/baiyan.png"/>
+                                                        </a>
+                                                        <a href="javascript:;">
+                                                            <img src="<%=devenv%>dist/imgs/emoji/baiyan.png"/>
+                                                        </a>
+                                                        <a href="javascript:;">
+                                                            <img src="<%=devenv%>dist/imgs/emoji/baiyan.png"/>
+                                                        </a>
+                                                        <a href="javascript:;">
+                                                            <img src="<%=devenv%>dist/imgs/emoji/baiyan.png"/>
+                                                        </a>
+                                                        <a href="javascript:;">
+                                                            <img src="<%=devenv%>dist/imgs/emoji/baiyan.png"/>
+                                                        </a>
+                                                        <a href="javascript:;">
+                                                            <img src="<%=devenv%>dist/imgs/emoji/baiyan.png"/>
+                                                        </a>
+                                                        <a href="javascript:;">
+                                                            <img src="<%=devenv%>dist/imgs/emoji/baiyan.png"/>
+                                                        </a>
+                                                        <a href="javascript:;">
+                                                            <img src="<%=devenv%>dist/imgs/emoji/baiyan.png"/>
+                                                        </a>
+                                                        <a href="javascript:;">
+                                                            <img src="<%=devenv%>dist/imgs/emoji/baiyan.png"/>
+                                                        </a>
+                                                        <a href="javascript:;">
+                                                            <img src="<%=devenv%>dist/imgs/emoji/baiyan.png"/>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                                <div class="fr">
+                                                    <a href="javascript:;" class="btn">发送</a>
+                                                </div>
+                                                <div class="fr">
+                                                    <span>10</span>
+                                                    <span class="gray"> / 300</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <a href="javascript:;" class="more">查看更多</a>
+                                <a href="javascript:;" class="more">加载错误，点击重新加载</a>
+                                <a href="javascript:;" class="more disabled"><em class="icon-49"></em>正在加载…</a>
+                                <a href="javascript:;" class="more disabled">没有更多了</a>
+                            </div>
+						</div>
+					</div>
+				</div>
+				<div class="no-comment">
+					还没有评论，快来抢沙发~
+				</div>
+			</div>
+		</div>
+		<div class="content-right">
+			<div class="right-title">
+				<p>随便看看</p>
+			</div>
+			<div class="right-list">
+				<ul class="clearfix">
+					<li>
+						<a href="" target="_blank">
+							<div class="img">
+								<img src="http://js.dev.meixincdn.com/m/vpc/src/imgs/comment/shirtdress4.png">
+								<span class="time">13:00</span>
+							</div>
+						</a>
+						<div class="text">
+							<a href="#">最酷潮牌CRSZY进驻北京三里</a>
+							<p>
+								<em class="icon-15"></em>
+								<span>8888</span>
+							</p>
+						</div>
+					</li>
+					<li>
+						<a href="" target="_blank">
+							<div class="img">
+								<img src="http://js.dev.meixincdn.com/m/vpc/src/imgs/comment/shirtdress4.png">
+								<span class="time">13:00</span>
+							</div>
+						</a>
+						<div class="text">
+							<a href="#">最酷潮牌CRSZY进驻北京三里屯</a>
+							<p>
+								<em class="icon-15"></em>
+								<span>8888</span>
+							</p>
+						</div>
+					</li>
+					<li>
+						<a href="" target="_blank">
+							<div class="img">
+								<img src="http://js.dev.meixincdn.com/m/vpc/src/imgs/comment/shirtdress4.png">
+								<span class="time">13:00</span>
+							</div>
+						</a>
+						<div class="text">
+							<a href="#">最酷潮牌CRSZY进驻北京三里屯</a>
+							<p>
+								<em class="icon-15"></em>
+								<span>8888</span>
+							</p>
+						</div>
+					</li>
+					<li>
+						<a href="" target="_blank">
+							<div class="img">
+								<img src="http://js.dev.meixincdn.com/m/vpc/src/imgs/comment/shirtdress4.png">
+								<span class="time">13:00</span>
+							</div>
+						</a>
+						<div class="text">
+							<a href="#">最酷潮牌CRSZY进驻北京三里屯</a>
+							<p>
+								<em class="icon-15"></em>
+								<span>8888</span>
+							</p>
+						</div>
+					</li>
+					<li>
+						<a href="" target="_blank">
+							<div class="img">
+								<img src="http://js.dev.meixincdn.com/m/vpc/src/imgs/comment/shirtdress4.png">
+								<span class="time">13:00</span>
+							</div>
+						</a>
+						<div class="text">
+							<a href="#">最酷潮牌CRSZY进驻北京三里屯</a>
+							<p>
+								<em class="icon-15"></em>
+								<span>8888</span>
+							</p>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	
+	<div class="dialog-bg"></div>
+	<div class="dialog-new">
+		<div class="title">确定要删除该评论吗？</div>
+		<div class="btn-box">
+			<a href="javascript:;" class="btn sure">确定</a>
+			<a href="javascript:;" class="btn">取消</a>
+		</div>
+	</div>
+	<%- include('../../common/footer.ejs')%>
+	<!-- <script src="https://js.meixincdn.com/gvs-player/dist/vod/js/meixinplayer-min.js"></script> -->
+	<script src="https://player-pre.gomeplus.com/gvs-player/dist/vod/js/meixinplayer-min.js"></script>
+	<script src="<%=devenv%>dist/js/vendor.js"></script>
+	<script src="<%=devenv%>dist/js/video-detail.js"></script>
+</body>
+</html>

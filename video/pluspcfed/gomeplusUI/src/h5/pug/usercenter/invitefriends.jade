@@ -1,0 +1,38 @@
+doctype html
+html(lang="zh-CN" data-use-rem="750")
+    include ../../../m-widget/head/head.jade
+    link(type="text/css",rel="stylesheet",href="../../css/public/public-wap.css")
+    link(type="text/css",rel="stylesheet",href="../../css/module/usercenter-new.css")
+    
+    body.opg.user-center
+        include ../../../m-widget/head/rem.jade
+        
+        div
+            header.header
+                span
+                    a.head-back(href="##")
+                        em.iconn-1
+                h1.head-title 我的优惠券
+                span
+                    a.head-edit(href="##") 说明
+            .nav-dis
+                ul.menu-list.menu-list-shopmin
+                    li.item.active
+                        p.txt 未使用
+                            em (3)
+                    li.item
+                        p.txt 已过期
+                            em (13)
+                    li.item
+                        p.txt 已使用
+                            em(2)
+
+            .m-prompt
+                .pro-img
+                    img(src="../../images/common/img-4.png")
+                .pro-txt
+                    | 亲，您的手机网络不太顺畅哦
+                    br
+                    | 请检查您的手机是否联网
+                .pro-btn
+                    a.m-btn 重新加载

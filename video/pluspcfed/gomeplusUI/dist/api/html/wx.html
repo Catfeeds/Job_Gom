@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="zh-CN" data-use-rem="750">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+	<meta name="format-detection" content="telephone=no">
+	<meta name="format-detection" content="email=no">
+	<meta http-equiv="expires" content="0">
+    <link type="text/css" rel="stylesheet" href="../css/public.css">
+	<link type="text/css" rel="stylesheet" href="../css/wx.css">
+    <script type="text/javascript" src="../js/jquery-1.9.0.js"></script>
+    <script type="text/javascript" src="../js/effect.js"></script>
+</head>
+<body class="opg body-font-family">
+
+
+<script type="text/javascript">
+    (function appVersion() {
+        window.platform = {};
+        var ua = window.navigator.userAgent.toLowerCase();
+        var isIphone = ua.match(/iphone os/i) == 'iphone os';
+        var isAndroid = ua.match(/android/i) == 'android';
+        // ipad 也为mobile
+        var isMobile = ua.match(/mobile/i) == 'mobile';
+        var isIpad = ua.match(/ipad/) == 'ipad';
+
+        platform.isMobile = function () {
+            return isMobile && !isIpad;
+        }
+        if(platform.isMobile()) {
+            (function(win){var doc=win.document,html=doc.documentElement,option=html.getAttribute("data-use-rem");if(option===null){return}var baseWidth=parseInt(option).toString()==="NaN"?640:parseInt(option);var grids=baseWidth/100;var clientWidth=html.clientWidth||320;html.style.fontSize=clientWidth/grids+"px";var testDom=document.createElement("div");var testDomWidth=0;var adjustRatio=0;testDom.style.cssText="height:0;width:1rem;";doc.body.appendChild(testDom);var calcTestDom=function(){testDomWidth=testDom.offsetWidth;if(testDomWidth!==Math.round(clientWidth/grids)){adjustRatio=clientWidth/grids/testDomWidth;var reCalcRem=clientWidth*adjustRatio/grids;html.style.fontSize=reCalcRem+"px"}else{doc.body.removeChild(testDom)}};setTimeout(calcTestDom,20);var reCalc=function(){var newCW=html.clientWidth;if(newCW===clientWidth){return}clientWidth=newCW;html.style.fontSize=newCW*(adjustRatio?adjustRatio:1)/grids+"px"};if(!doc.addEventListener){return}var resizeEvt="orientationchange" in win?"orientationchange":"resize";win.addEventListener(resizeEvt,reCalc,false);doc.addEventListener("DOMContentLoaded",reCalc,false)})(window);
+        }
+    })()
+</script>
+    <!-- header -->
+    <nav class="header header-mobile">
+        <section class="logo">微信小程序<span class="classify"></span></section>
+        <section class="nav">
+            <ul>
+                <li class="active"><a href="#">Css</a></li>
+                <li><a href="#">Javascript</a></li>
+            </ul>
+        </section>
+        <span class="nav-button fade-in show"><i></i></span>
+        <a href="http://opg-pre.intra.gomeplus.com" class="fade-in icon-home"><i></i></a>
+    </nav>
+    <!-- header end-->
+    <!-- master -->
+    <section class="master"></section>
+    <!-- master end-->
+    <!-- home -->
+    <span class="back-home bounce-in-down"><a href="#">Home</a></span>
+    <!-- home end -->
+    <!--css-->
+    <section class="section module" style="display:block;">
+        <!-- 获取ID -->
+        <h1 class="h1">获取微信小程序的 AppID</h1>
+        <div id="git-id">
+            <p>登录 <a href="#">https://mp.weixin.qq.com </a>，就可以在网站的“设置”-“开发者设置”中，查看到微信小程序的 AppID 了，注意不可直接使用服务号或订阅号的 AppID 。</p>
+            <div class="wx-img1">
+                <img src="../images/setting.png" alt="">
+            </div>
+        </div>
+        <!-- 获取ID end-->
+        <!-- 工具 -->
+        <h1 class="h1">工具下载地址</h1>
+        <div id="tool">
+            <p>最新版本 2017.02.06 （0.13.140600）</p>
+            <a href="https://servicewechat.com/wxa-dev-logic/download_redirect?type=x64&from=mpwiki">windows 64</a>
+            <a href="https://servicewechat.com/wxa-dev-logic/download_redirect?type=ia32&from=mpwiki">windows 32</a>
+            <a href="https://servicewechat.com/wxa-dev-logic/download_redirect?type=darwin&from=mpwiki">mac</a>
+        </div>
+        <!-- 工具 end -->
+        <!-- 组件 -->
+        <h1 class="h1">组件</h1>
+        <h2 class="h2"><a href="https://mp.weixin.qq.com/debug/wxadoc/dev/component/">参考地址</a></h2>
+        <table class="table">
+            <thead>
+            <tr>
+                <th colspan="3">视图容器</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>view</td>
+                <td>scroll-view</td>
+                <td>sweiper</td>
+            </tr>
+            </tbody>
+        </table>
+        <table class="table">
+            <thead>
+            <tr>
+                <th colspan="3">基本内容</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>icon</td>
+                <td>text</td>
+                <td>progrss</td>
+            </tr>
+            </tbody>
+        </table>
+        <table class="table">
+            <thead>
+            <tr>
+                <th colspan="3">表单组件</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>button</td>
+                <td>checkbox</td>
+                <td>form</td>
+            </tr>
+            <tr>
+                <td>label</td>
+                <td>picker</td>
+                <td>picker-view</td>
+            </tr>
+            <tr>
+
+                <td>radio</td>
+                <td>slider</td>
+                <td>switch</td>
+            </tr>
+            </tbody>
+        </table>
+        <table class="table">
+            <thead>
+            <tr>
+                <th>导航</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>navigator</td>
+            </tr>
+            </tbody>
+        </table>
+        <table class="table">
+            <thead>
+            <tr>
+                <th colspan="3">媒体组件</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>audio</td>
+                <td>image</td>
+                <td>video</td>
+            </tr>
+            </tbody>
+        </table>
+        <table class="table">
+            <thead>
+            <tr>
+                <th>地图</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>map</td>
+            </tr>
+            </tbody>
+        </table>
+        <table class="table">
+            <thead>
+            <tr>
+                <th>画布</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>canvas</td>
+            </tr>
+            </tbody>
+        </table>
+        <table class="table">
+            <thead>
+            <tr>
+                <th>客服电话</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>contact-button</td>
+            </tr>
+            </tbody>
+        </table>
+        <!-- 组件 end -->
+        <!-- 标签 -->
+        <h1 class="h1">标签</h1>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th colspan="2">标签</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>view</td>
+                    <td>块级标签</td>
+                </tr>
+                <tr>
+                    <td>navigator</td>
+                    <td>超链接</td>
+                </tr>
+                <tr>
+                    <td>icon</td>
+                    <td>图标</td>
+                </tr>
+                <tr>
+                    <td>image</td>
+                    <td>图片</td>
+                </tr>
+                <tr>
+                    <td>text</td>
+                    <td>文本</td>
+                </tr>
+                <tr>
+                    <td>input</td>
+                    <td>输入框</td>
+                </tr>
+                <tr>
+                    <td>checkbox</td>
+                    <td>复选框</td>
+                </tr>
+                <tr>
+                    <td>radio</td>
+                    <td>单选框</td>
+                </tr>
+            </tbody>
+        </table>
+        <!-- 标签 end -->
+        <!-- 手机预览 -->
+        <h1 class="h1">手机预览</h1>
+        <div class="img-picture">
+            <img src="../images/start_preview.png" alt="">
+        </div>
+        <!-- 手机预览 end -->
+        <!-- 坑 -->
+        <h1 class="h1">微信小程序之坑の初探</h1>
+        <div class="txt">
+            <p>1.   设计图按照iPhone6的尺寸设计（750宽）</p>
+            <p>2.   Background写的图片只能是base64或者线上地址，本地地址不显示</p>
+            <p>3.   单位要用rpx数值等于设计图的实际px，2rpx 不等 1px<br/></p>
+            <p> 4.  行高字体大小不能为单数像素，部分位置会有BUG，如：多行截取会截取不全<br/></p>
+            <p>5.   滚动条相关，开发时会显示滚动条，实际到手机上是没滚动条的，无需做隐藏滚动条处理<br/></p>
+            <p>6.   Text标签默认是inline-block属性<br/></p>
+            <p>7.   Block标签它仅仅是一个包装元素，不会在页面中做任何渲染，只接受控制属性<br/></p>
+            <p>8.   App.json<br/></p>
+            <p class="padd-left">a) Window<br/></p>
+            <p class="padd-left1">i.    navigationBarTextStyle导航栏标题颜色，仅支持 black/white<br/></p>
+            <p class="padd-left1">ii.   backgroundTextStyle下拉背景字体、loading 图的样式，仅支持 dark/light<br/></p>
+            <p class="padd-left">b) tabBar<br/></p>
+            <p class="padd-left1">i.通过页面跳转（wx.navigateTo）或者页面重定向（wx.redirectTo）所到达的页面，即使它是定义在 tabBar 配置中的页面，也不会显示底部的 tab 栏<br/></p>
+            <p class="padd-left1">ii.   abBar 是一个数组，只能配置最少2个、最多5个 tab，tab 按数组的顺序排序<br/></p>
+            <p class="padd-left1">iii.  borderStyle边框的颜色， 仅支持 black/white<br/></p>
+            <p class="padd-left1">iv.   iconPath图片路径，icon 大小限制为40kb，建议尺寸为 81px * 81px<br/></p>
+            <p class="padd-left1">v.    selectedIconPath选中时的图片路径，icon 大小限制为40kb，建议尺寸为 81px * 81px<br/></p>
+            <p>9.   App()注册小程序<br/></p>
+            <p class="padd-left">a) 前台、后台定义： 当用户点击左上角关闭，或者按了设备 Home 键离开微信，小程序并没有直接销毁，而是进入了后台；当再次进入微信或再次打开小程序，又会从后台进入前台。<br/></p>
+            <p class="padd-left">b) 只有当小程序进入后台一定时间，或者系统资源占用过高，才会被真正的销毁。<br/></p>
+            <p class="padd-left">c) App() 必须在 app.js 中注册，且不能注册多个。<br/></p>
+            <p class="padd-left">d) 不要在定义于 App() 内的函数中调用 getApp() ，使用 this 就可以拿到 app 实例。<br/></p>
+            <p class="padd-left">e) 不要在 onLaunch 的时候调用 getCurrentPage()，此时 page 还没有生成。<br/></p>
+            <p class="padd-left">f) 通过 getApp() 获取实例之后，不要私自调用生命周期函数。<br/></p>
+            <p>10.  wx:key 的值以两种形式提供<br/></p>
+            <p class="padd-left">a) 字符串，代表在 for 循环的 array 中 item 的某个 property，该 property 的值需要是列表中唯一的字符串或数字，且不能动态改变。<br/></p>
+            <p class="padd-left">b) 保留关键字 *this 代表在 for 循环中的 item 本身，这种表示需要 item 本身是一个唯一的字符串或者数字<br/></p>
+            <p class="padd-left">c) 如不提供 wx:key，会报一个 warning， 如果明确知道该列表是静态，或者不必关注其顺序，可以选择忽略。<br/></p>
+            <!--<p>11.  WXML的import作用域<br/></p>-->
+            <!--<p class="padd-left">a) C import B，B import A，在C中可以使用B定义的template，在B中可以使用A定义的template，但是C不能使用A定义的template<br/></p>-->
+            <p>11.  input 输入文字重叠的bug（小程序bug）</p>
+            <p>12.  而且如果修改组件，组件本身用什么定义你修改就要用什么定义（例：组件是px，你修改不能使用 em rem rpx）</p>
+            <p class="key-bug">13.  小程序 page 加伪类，调试 wxml 下看不见代码</p>
+        </div>
+        <!-- 坑 end -->
+    </section>
+    <!-- css end -->
+    <!-- javascript -->
+    <section class="section module">
+        <h1 class="h1">那些年走过的小程序坑</h1>
+        <h2 class="h2">添加注释报错</h2>
+        <p><em class="code">page json</em>配置文件中添加注释后会导致小程序报错无法预览。</p>
+        <h2 class="h2">预览文件配置</h2>
+        <p>新增页面需在<em class="code">page json</em>的<em class="code">pages</em>的配置文件进行配置，如需预览新增页面，则需将其初始化在<em class="code">pages</em>的第一行。</p>
+        <pre><code>"pages":[
+    "pages/index/index", // 配置预览文件
+    "pages/detail/detail"
+]</code></pre>
+    <h2 class="h2">getApp()</h2>
+    <p>通过全局函数<em class="code">getApp()</em>可以获取全局的应用实例，如果需要全局数据则可以在<em class="code">getApp()</em>中配置，如</p>
+    <pre><code>// app.js
+App({
+    globalData: 1
+})
+// 获取
+app.js globalData
+var app = getApp();
+app.globalDat;</code></pre>
+    <h2 class="h2">data</h2>
+    <p>设置/获取<em class="code">data</em>值</p>
+    <pre><code>page({
+    data：{
+        toBok:true
+    },
+    onShow: function(){
+        // 赋值
+        this.setData({
+          toBok:false
+        });
+        // 获取
+        var toBok = this.data.toBok
+    },
+})
+</code></pre>
+    <h2 class="h2">wx:for</h2>
+    <p><em class="code">wx:for</em>循环数组时，下标变量名默认为<em class="code">index</em>，数组当前项的变量名默认为<em class="code">item</em>。</p>
+    <pre><code>&lt;view wx:for="{{args}}"&gt;
+    {{index}}: {{item.message}}
+&lt;/view&gt;
+</code></pre>
+    <h2 class="h2">redirectTo</h2>
+    <p>微信小程序并发数不能超过<em class="code">5</em>个,如超过<em class="code">5</em>则需使用<em class="code">redirectTo</em>关闭当前页面并跳转到指定的应用地址。</p>
+    <p><em class="code">wx.navigateTo</em>和<em class="code">wx.redirectTo</em>不允许跳转到<em class="code">tabbar</em>页面，只能用<em class="code">wx.switchTab</em>跳转到<em class="code">tabbar</em>页面</p>
+    </section>
+    <!-- javascript end -->
+</body>
+</html>

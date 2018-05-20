@@ -1,0 +1,132 @@
+@import '../../../pc-widget/config/_base.scss';
+@import '../../../pc-widget/config/_mixins.scss';
+
+.opg .crumbs-box{
+    background: #f6f5ee;
+    width: 1200px;
+    margin: 0 auto;
+}
+.comment-suc{
+	text-align: center;
+	padding: 30px 0 20px;
+	background-color: $bg-fff;
+	.title{
+	    line-height: 1;
+		.iconn-20{
+			display: inline-block;
+		    width: 70px;
+    		height: 70px;
+			font-size: 78px;
+			color: #13c1ec;
+			margin-right: 25px;
+		}
+		h2{
+			font-size: $text30;
+			font-weight: normal;
+			display: inline-block;
+		    vertical-align: 16px;
+		}
+	}
+	p{
+		color: $color-gray;
+	    text-indent: 51px;
+	}
+	a{
+		display: block;
+		color: $color-danger;
+		margin-top: 18px;
+		&:hover{
+			color: $btn-e30d3e;
+		}
+	}
+}
+.goods-title{
+    font-size: $text30;
+    line-height: 70px;
+    font-weight: normal;
+    border-bottom: 1px solid #e3e3db;
+    text-align: center;
+    margin-bottom: 20px;
+    span{
+        display: inline-block;
+        border-bottom: 3px solid #e80032;
+        margin-bottom: -1px;
+    }
+}
+.shop-list{
+    position: relative;
+    .icon{
+        font-size: 50px;
+        position: absolute;
+        top: 115px;
+        color: #9a9a9a;
+        &:hover{
+            color: $link-hover;
+        }
+    }
+    .iconn-8{
+        left: -50px;
+    }
+    .iconn-9{
+        right: -50px;
+    }
+    ul{
+        margin-right: -13px;
+        li{
+            background: $bg-fff;
+            $img230:230px;
+            float: left;
+            width: $img230;
+            margin: 0 12px 15px 0;
+            position: relative;
+            .icon-fan{
+                position: absolute;
+                right: 6px;
+                top: -5px;
+                width: 33px;
+                height: 28px;
+                background: url(../../images/public/sprite.png) no-repeat 0 -25px;
+                color: $bg-fff;
+                font-style: normal;
+                text-align: center;
+            }
+            .icon-jiang{
+                background: url(../../images/public/sprite.png) no-repeat -40px -25px;
+            }
+            img{
+                width: $img230;
+                height: $img230;
+            }
+            .comment-btn{
+                height: 40px;
+                color: #fff;
+                line-height: 40px;
+                text-align: center;
+                background-color: #f95353;
+                &:hover{
+                	background-color: #e30d3e;
+                }
+            }
+            .text{
+                color: $link-hover;
+                padding: 10px 15px;
+                line-height: 26px;
+                border-top: #f6f5ee;
+                span{
+                    font-size: 25px;
+                }
+                p{
+                    width: 100%;
+                    @extend %text-hide;
+                    color: $color-default;
+                    &:hover{
+                    	color: #e30d3e;
+                    }
+                }
+            }
+        }
+    }
+}
+.more-comments{
+	margin-top: 15px;
+}

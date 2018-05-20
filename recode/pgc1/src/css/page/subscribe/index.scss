@@ -1,0 +1,232 @@
+/* subscribe */
+@import "../../base/public.scss";
+
+.content .subscribe.blankPage{
+  height:100%;
+}
+.subscribe {
+  padding: 0 24px;
+
+  /* 操作区 */
+  .addSub {
+    position: relative;
+    height: 80px;
+    .newSub-btn {
+      &:hover{
+        border:1px solid #75b8f9;
+        color: #75b8f9;
+      }
+      position: absolute;
+      right: 0;
+      display: inline-block;
+      padding: 0 20px;
+      height: 36px;
+      line-height: 36px;
+      text-align: center;
+      margin-top: 21px;
+      border: 1px solid $primary;
+      color: $primary;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+  }
+
+  .video-list-table{
+    tbody{
+      .video-msg{
+        a.video-img{
+          cursor: pointer;
+          &:hover{
+            .shadeBox{
+              position: absolute;
+              height:100%;
+              width:100%;
+              background: #fff;
+              top:0;
+              left:0;
+              opacity:0.3;
+            }
+          }
+        }
+      }
+      .video-detail{
+        .name{
+          a:hover{
+            color:$option-hover;
+            cursor: pointer;
+          }
+        }
+      }
+    }
+  }
+
+}
+
+/* 列表展示 */
+.video-list-table {
+  width:100%;
+  text-align: center;
+  .text-left{
+    text-align: left;
+  }
+  .stater{
+    width:90px;
+    padding:0 20px;
+    position:relative;
+  }
+  .operate{
+    width:70px;
+    padding:0 20px;
+    position: relative;
+  }
+  /*theader*/
+  .thead {
+    height: 48px;
+    line-height: 48px;
+    background: #f0f0f0;
+    th.text-left{
+      padding-left:50px;
+      text-align: left;
+    }
+  }
+
+  /*tbody*/
+  tbody{
+    tr{
+      border-bottom:1px solid $border;
+      &:hover {
+        td{
+          background: $disabled-bg;
+        }
+      }
+      td{
+        padding:20px 0;
+      }
+    }
+    tr.nodataItem{
+      border-bottom: 1px solid transparent;
+      td{
+        padding-top:70px;
+        font-size: 16px;
+        color:$gray;
+      }
+    }
+    .video-msg.sub{
+      .video-img{
+        width:96px;
+      }
+      .video-detail{
+        left:115px;
+      }
+
+    }
+    .video-msg{
+      position: relative;
+      a.video-img{
+        cursor: default;
+        display: inline-block;
+        position: relative;
+        width:170px;
+        height:96px;
+        .video-num{
+          em{
+            position: absolute;
+            left:0;
+            display: inline-block;
+            width:100%;
+            height:20px;
+            bottom: 0;
+            line-height:20px;
+            background: $primary;
+            opacity: 0.6;
+            text-align: center;
+            color:$white;
+          }
+          span{
+            position: absolute;
+            left:0;
+            display: inline-block;
+            width:100%;
+            height:20px;
+            bottom: 0;
+            line-height:20px;
+            text-align: center;
+            color:$white;
+            z-index: 4;
+          }
+
+        }
+
+      }
+      .video-detail{
+        position: absolute;
+        left:190px;
+        top:20px;
+        bottom:0;
+        .name{
+          margin: 5px 0 10px 0;
+          font-size:18px;
+          color:$base;
+          a{
+            cursor: default;
+          }
+        }
+        .build-time{
+          font-size:14px;
+          color: $gray;
+        }
+        .sub-targ{
+          position:absolute;
+          left:-7px;
+          bottom:20px;
+          color: $gray;
+        }
+        .sub-targ.state-auditing{
+          color:$auditing;
+        }
+      }
+
+    }
+
+    /* 审核状态 */
+    .state-auditing{
+      color:$auditing;
+    }
+    .state-audited{
+      color:$audit-succeed;
+    }
+    .state-audit-error{
+      color:$audit-errormsg;
+    }
+    .state-audit-hover{
+
+    }
+    .operate{
+      div{
+        position: relative;
+        height:25px;
+        line-height:25px;
+        .position-left{
+          position: absolute;
+          left:0;
+
+        }
+        .position-right{
+          position: absolute;
+          right:0;
+
+        }
+      }
+      span:hover,a:hover{
+        color:$option-hover;
+        cursor: pointer;
+      }
+    }
+  }
+
+}
+
+
+
+
+

@@ -1,0 +1,20 @@
+//- extends layout.jade
+extends ../../../widget-platform/pug/layout/layout.jade
+
+//- slider
+block content
+	h2.platform-title slider
+	div.platform-content
+		h3.platform-header slider
+		div.platform-intro 
+			p slider切换
+		div.platform-example#slider
+			include ../../../../pc-widget/slider/slider.jade
+		pre.platform-pre
+			code.platform-code#slider_code
+			span.platform-jade pug
+			span.platform-jade.platform-html.actived html
+	//- js format html code
+	script(type='text/javascript').
+		HtmlFormat.init(['slider'],false,'_code','html','span.platform-jade');
+		$(".platform-slider").parent('li').addClass("actived");

@@ -1,0 +1,68 @@
+@charset "UTF-8";
+// @ Css name： 国美币-实名认证说明
+// @Author： matianye@
+// @Date： 2017-02-28 10:30
+// @Last Modified by： maty
+// @Last Modified time：
+//==========================
+
+.explain-box{
+	.e-hd{
+		padding-top: .5rem;
+		padding-bottom: .8rem;
+		background-color: #fff;
+	}
+	.img-box{
+		margin-left: auto;
+		margin-right: auto;
+		position: relative;
+		overflow: visible;
+		width: 3.5rem;
+		height: 1.9rem;
+		em{
+			position: absolute;
+			right: .2rem;
+			bottom: -.1rem;
+			width: .6rem;
+			height: .6rem;
+			font-size: .6rem;
+			color: #68d147;
+			border-radius: 50%;
+			background-color: #fff;
+		}
+	}
+	.txt-box{
+		margin-top: .24rem;
+		margin-bottom: -.3rem;
+		line-height: .36rem;
+		text-align: center;
+	}
+
+	.e-info{
+		.flex-boxs{
+			margin-top: .2rem;
+			// line-height: 1rem;
+			// background-color: #fff;
+		}
+		.fail{
+			padding: .2rem .4rem;
+			font-size: .24rem;
+		}
+	}
+	.flex-ft{
+		.iconn-39{
+			width: .26rem;
+			height: .26rem;
+			color: #68d147;
+			font-size: .26rem;
+			margin-right: .12rem;
+		}
+		.iconn-41{
+			font-size: .3rem;
+		}
+	}
+	
+}
+// End
+
+

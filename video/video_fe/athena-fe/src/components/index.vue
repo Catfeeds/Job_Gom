@@ -1,0 +1,18 @@
+<template>
+	<div>
+		<el-radio class="radio" v-model="radio" label="1">备选项1</el-radio>
+		<el-radio class="radio" v-model="radio" label="2">备选项2</el-radio>
+	</div>
+</template>
+<script type="text/babel">
+import {getUrlsCount, findUrls, regCancelUrl, checkReg} from '../api/urls';
+import store from 'store';
+import actions from 'actions';
+export default {
+	data() {
+		return {
+            radio: '1'
+		};
+	}
+};
+</script>

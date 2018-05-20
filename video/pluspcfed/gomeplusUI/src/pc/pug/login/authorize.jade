@@ -1,0 +1,33 @@
+doctype html
+html(lang="zh-CN")
+	include ../../../pc-widget/head/head.jade
+	link(type="text/css",rel="stylesheet",href="../../css/public/public.css")
+	link(type="text/css",rel="stylesheet",href="../../css/module/authorize.css")
+	body.opg
+		include ../../../pc-widget/header/header.jade
+		include ../../../pc-widget/menu/menu.jade
+		.wrap
+			.authorize-t
+				.overseas
+				p.link
+					span 提供授权信息
+					span 提供增值服务
+				.gomeplus
+			.authorize-b
+				p.txt  为了能够给您提供更佳优质的服务，国美海外购希望得到您的授权！您授权后，此应用可以：
+				ul
+					li
+						em.iconn-67
+						span 读取您的用户名等基本信息
+					li
+						em.iconn-67
+						span 为您创建新的交易订单
+					li.space
+						a(href="javascript:;").check.active
+							em.iconn-20
+						p
+							| 我已阅读并同意
+							a(href="javascript:;").know 《国美外购授权须知》
+				a(href="javascript:;").pc-btn.pc-btnh30 确定
+				a(href="javascript:;").pc-btn.pc-btnh30.btn-cancel 取消
+		include ../../../pc-widget/footer/footer.jade

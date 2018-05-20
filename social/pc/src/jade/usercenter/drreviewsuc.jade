@@ -1,0 +1,49 @@
+doctype html
+html(lang="zh-CN")
+	include ../../../../../gomeplusUI/pc/src/jade/head.jade
+	link(type="text/css",rel="stylesheet",href="../../css/public/public.css")
+	link(type="text/css",rel="stylesheet",href="../../css/module/usercenter/usercenter.css")
+	body.opg
+		.dr-bg
+			a(href="##").back-to-index
+			ul.info-steps
+				li.bar
+					span.active
+					span.active
+				li.step1.active
+					span.step-num
+						em 1
+					span.step-txt 填写资料
+				li.step2.active
+					span.step-num
+						em 2
+					span.step-txt 审核
+				li.step3.active
+					span.step-num
+						em 3
+					span.step-txt 审核成功
+			.dr-sprites.review-suc-bg
+			p.review-txt
+				span.txt1 恭喜你！审核通过！从今天起你就是一名光荣的“国美Plus”达人了！
+				span.txt2 聚拢人气，建个专属圈子吧~
+			a(href="##").pc-btn.pc-btnh45.dr-btn.dr-create-btn 创建圈子
+			h3.dr-logo-title 欢迎打开福利宝藏：
+			.dr-privilege.dr-logo-box.clearfix
+				dl
+					dt.dr-sprites.privilege-logo.logo1
+					dd.privilege-txt 达人专属标识
+				dl
+					dt.dr-sprites.privilege-logo.logo2
+					dd.privilege-txt 内容优先推荐
+				dl
+					dt.dr-sprites.privilege-logo.logo3
+					dd.privilege-txt 专访专栏推荐
+				dl
+					dt.dr-sprites.privilege-logo.logo4
+					dd.privilege-txt 活动优先参与
+				dl
+					dt.dr-sprites.privilege-logo.logo5
+					dd.privilege-txt 不定期有偿约稿
+				dl
+					dt.dr-sprites.privilege-logo.logo6
+					dd.privilege-txt 产品优先试用

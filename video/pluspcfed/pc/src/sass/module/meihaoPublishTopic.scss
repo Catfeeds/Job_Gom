@@ -1,0 +1,101 @@
+@charset "utf-8";
+@import '../../widget/config/_base.scss';
+@import '../../widget/header/header-meihao.scss'; 
+@import '../../widget/aside/meihao.scss'; 
+.meihao{
+	.meihao-publish-topic{
+		float:left;
+		width:908px;
+		padding: 0 40px 180px 40px;
+	}
+
+	.release-topic-wrap .edit-wrap{
+		padding-top:0;
+	}
+
+	.more-preview{
+		width:935px;
+		padding-top:0;
+		padding-left:0;
+	}
+	.publish-form{
+	    .btn-red-md{
+	   	 	background:#107eee;
+			color:#fff;
+			width:110px;
+			height:30px;
+			line-height:30px;
+	    }
+		.btn-yl{
+			background:#fff;
+	  		color:#333;
+	  		border:1px solid #ababab;
+		}
+	}
+	.pub-for-title{
+		color:#a1a1a1;
+	}
+	.preview-publish{
+		.wraper{
+			width:1200px;
+			margin:0 auto;
+		} 
+		a{
+			width:110px;
+			height:30px;
+			line-height:30px;
+		}
+		.btn-red-md{
+			background:#fff;
+	  		color:#333;
+	  		border:1px solid #ababab;
+		}
+		.btn-edit{
+			background:#107eee;
+			color:#fff;
+		}
+	}
+}
+
+.opg .pc-btnh35{
+	background:#107eee;
+}
+
+.pop-box .two-buttons a{
+	border-radius:2px;
+	margin:0 15px !important;
+	padding:0 40px !important;
+}
+
+.pop-box .two-buttons .ok-btn{
+	background: #107eee;
+	color:#fff;
+	&:hover{
+		background: #046ebf;
+	}
+}
+.pop-box .two-buttons .cancel-btn{
+	border:1px solid #888;
+	background: #fff;
+	&:hover{
+		background: #f3f3f3;
+	}
+}
+
+.meihao .publish-form .btn-red-md{
+	&:hover{
+		background: #046ebf;
+	}
+}
+
+.meihao .publish-form .btn-yl{
+	&:hover{
+		background: #f3f3f3;
+	}
+}
+
+.meihao .btn-edit{
+	&:hover{
+		background: #046ebf !important;
+	}
+}

@@ -1,0 +1,59 @@
+extends ../../../m-widget/head/head-set.jade
+block style
+	link(type="text/css",rel="stylesheet",href="../../css/module/daren/daren.css")
+block body
+	body.opg
+		include ../../../m-widget/head/rem.jade
+		// /header
+		header.header
+			.h-left
+				a.h-back(href="javascript:;")
+					em.iconn-1
+			.h-cnt.flex-cell
+				h1.h-tit 达人招募
+		// /content
+		.dr-bg.dr-bg1
+		.dr-bg.drform-c
+			h3.dr-sprites.title-start
+			ul.apply-step
+				li.active
+					span.dr-sprites.step.step1
+					span.num 1
+				li
+					span.dr-sprites.step.step2
+					span.num 2
+				li
+					span.dr-sprites.step.step3
+					span.num 3
+			.dr-form
+				.list.flex-box
+					label 真实姓名：
+					input(type="text" placeholder="请输入真实姓名").flex-bd
+				.list.flex-box
+					label 联系方式：
+					input(type="text" placeholder="请输入联系方式").flex-bd
+				.list.flex-box
+					label 达人类别：
+					.dr-type.flex-bd
+						select(placeholder="请选择达人类别")
+						.input
+							span 请选择达人类别
+						em.iconn-42
+				.txtarea-list
+					label 个人介绍：
+					.txtarea
+						textarea(placeholder="请填写简单的文字介绍，包括您的微博、微信等其它平台的个人账号，是否与其他品牌有过合作等。")
+						.txt-num
+							span 0
+							| /
+							span 200
+				.agreement
+					a(href="javascript:;").check-btn.active
+					p.agree-txt
+						| 我已阅读并同意
+						a(href="##") 《签约达人合作协议》
+						a(href="##") 《平台管理规范》
+		a(href="##").dr-btn.apply-btn.submit-btn.disabled
+			span.dr-sprites
+		a(href="##").dr-btn.apply-btn.submit-btn
+			span.dr-sprites

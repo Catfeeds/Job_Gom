@@ -1,0 +1,12 @@
+$(function(){
+	//上下架
+	require('./soldInOut').init();
+	//加载更多
+	require('./moreItems').init();
+	//图片加载
+	require('./imgError').init();
+	//顶部轮播
+	require('./slider').init();
+    //吸顶导航和一键上架
+    require('./navTop').init();
+});

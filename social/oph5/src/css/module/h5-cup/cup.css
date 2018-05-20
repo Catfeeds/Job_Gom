@@ -1,0 +1,64 @@
+body{
+	background: #ff8964;
+}
+.opg-cup{
+	overflow: hidden;
+}
+.opg-cup .cup-top img,.cup-banner img,.cup-pd img,.activate-pd a img{
+	width: 100%;
+}
+.opg-cup .cup-dec{
+	text-align: center;
+}
+.opg-cup .cup-dec img{
+	width: 6.05rem;
+	margin: 0.2rem 0;
+}
+.opg-cup .cup-pd{
+	margin: 0.55rem 0 0.4rem 0;
+}
+.opg-cup .activate-pd header img{
+	width: 2.6rem;
+}
+.opg-cup .activate-pd header{
+	text-align: center;
+}
+.opg-cup .footer{
+	text-align: center;
+
+}
+.opg-cup .footer img{
+	width: 4.2rem;
+	margin: 0.2rem 0;
+}
+/*dropload*/
+.dropload-up,.dropload-down{
+    position: relative;
+    height: 0;
+    overflow: hidden;
+    -webkit-transform:translate3d(0,0,0);
+    transform:translate3d(0,0,0);
+    font-size: 0.26rem;
+}
+.dropload-refresh,.dropload-update,.dropload-load{
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    width: 100%;
+    height: 0.7rem;
+    line-height: 0.7rem;
+    text-align: center;
+    font-size:0.26rem;
+    -webkit-transform:translate(-50%,0);
+    transform:translate(-50%,0);
+}
+.dropload-up .loading,.dropload-down .loading{
+    display: inline-block;
+    height: 0.4rem;
+    width: 0.4rem;
+    background-image: url(../../../images/public/loading-1.gif);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    margin: 0.1rem 0.1rem 0.2rem 0.1rem;
+    vertical-align: middle;
+}    

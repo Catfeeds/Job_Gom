@@ -1,0 +1,110 @@
+#aside-meihao{
+    float: left;
+    width: 209px;
+    font-family: 'Microsoft Yahei', '微软雅黑', 'PingFang SC', 'Hiragino Sans GB', '黑体', sans-serif;
+    margin-bottom: -10000px;
+    padding-bottom: 10000px;
+    border-right: 1px solid #e1e1e1;
+    dl{
+        padding:10px 0;
+    }
+    .secondary-container{
+        dl{
+            padding-bottom:40px;
+        }
+    }
+    dt{
+        height:32px;
+        line-height: 32px;
+        padding-left:30px;
+    }
+
+    dd{
+        height:32px;
+        line-height: 32px;
+        a{
+            color:#333;
+        }
+        cursor: pointer;
+    }
+
+    .main-container{
+
+        height: 800px;
+        min-height:800px;
+        _height:expression((document.documentElement.clientHeight||document.body.clientHeight)<1000?"900px":document.body.clientHeight-60+"px");
+        dl{
+            border-bottom:1px solid #e7e7eb;
+            &:last-child{
+                border:0;
+            }
+        }
+    }
+
+    dd:hover{
+        background: #eff4f6;
+        a{
+            color:#333;
+        }
+    }
+    /***图标***/
+    em{
+        float:left;
+        margin-right:12px;
+        width:18px;
+        height:32px;
+        background:url(../../images/meihao/aside-ico.png) no-repeat;
+    }
+
+    .index{
+        dd{padding-left: 30px;}
+        a{padding-left:0;}
+    }
+    .index em{
+        background-position: 0px 8px;
+    }
+    .index .active em{
+        background-position: 0px -17px;
+    }
+
+    .con-manager em{
+        background-position: -25px 8px;
+    }
+    .con-manager .active em{
+        background-position: -25px -17px;
+    }
+
+    .seting em{
+        background-position: -50px 7px;
+    }
+    .seting .active em{
+        background-position: -50px -17px;
+    }
+
+    /***图标结束***/
+    a{
+        float:left;
+        padding-left:60px;
+        width:148px;
+        height:32px;
+        line-height: 32px;
+    }
+    span{
+        color:#a5a5a5;
+    }
+
+    .active{
+        background: #107eee !important;
+        a{
+            color:#fff !important;
+        }
+    }
+
+    .black{
+        color:#333;
+    }
+}
+/*长度备用*/
+/*.talent{
+    _width:expression((document.documentElement.clientWidth||document.body.clientWidth)<1280?"1280px":"");
+}*/

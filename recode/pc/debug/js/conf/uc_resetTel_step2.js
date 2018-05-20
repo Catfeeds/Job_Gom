@@ -1,0 +1,532 @@
+webpackJsonp([41],{
+
+/***/ 0:
+/***/ (function(module, exports, __webpack_require__) {
+
+	'use strict';
+	
+	__webpack_require__(306).initTel();
+	__webpack_require__(307).initCode();
+	__webpack_require__(308).initSub();
+
+/***/ }),
+
+/***/ 83:
+/***/ (function(module, exports) {
+
+	'use strict';
+	
+	/**
+	 * Created by dongyukuan on 2016/7/4.
+	 */
+	var inputTip = {
+	    tel: {
+	        ept: '请填写11位手机号',
+	        err: '手机号格式错误',
+	        errBack: '该手机号已被注册'
+	    },
+	    msgCode: {
+	        tipGet: '请获取短信验证码',
+	        tipEpt: '请输入短信验证码',
+	        tipErr: '验证码是6位数字,请重新输入',
+	        tipErrEdit: '验证码错误',
+	        tipWrong: '验证码有误,请重新输入',
+	        checkCodeWrong: '验证码输入错误,请重新输入',
+	        send: '验证码已发送，请注意查收',
+	        tipSend: '验证码已发送您的手机，10分钟内输入有效',
+	        tipDisabled: "验证码再次获取需间隔60s",
+	        tipLimitEdit: '获取验证码超限，请稍后再试',
+	        btnAfterSend: "秒后重新获取",
+	        btnDefault: "获取验证码"
+	    },
+	    pwd: {
+	        commonTip: '请输入6-20位英文字母,数字或符号'
+	    },
+	    pwdV: {
+	        ept: '请再次输入密码',
+	        err: '两次输入的密码不一致'
+	    },
+	    nickName: {
+	        eptName: '请输入昵称！',
+	        commonTip: '昵称只能输入2-20位字符、字母、数字、-、_',
+	        existName: '此昵称太受欢迎了，已经有人抢了~',
+	        sucSub: '资料修改成功！',
+	        errLine: "网络超时!",
+	        wrongName: '此昵称含有敏感词,请重新输入'
+	    },
+	    birthTip: {
+	        tip: '生日不能重复设置'
+	    },
+	    refCode: {
+	        err: '推荐码错误'
+	    },
+	    imgCode: {
+	        ept: '请输入验证码',
+	        err: '验证码输入错误，请重新输入'
+	    },
+	    login: {
+	        errCode: '请输入验证码',
+	        errNum: '请输入账号',
+	        errPwd: '请输入密码',
+	        agreement: '请同意协议并勾选'
+	    },
+	    createCircle: {
+	        typeEmpty: '请选择圈子分类',
+	        nameEmpty: '圈子名称不能为空',
+	        upperLimit: '抱歉，您创建的圈子已经达到上限，暂不能创建！'
+	    },
+	    circle: {
+	        login: '登录成功！',
+	        unJoin: '需要先加入该圈子才能发布话题',
+	        cannotJoin: '抱歉！该圈子不允许发布话题!',
+	        review: '加入圈子审核中，请耐心等待!',
+	        joinSuccess: '恭喜您已经加入圈子！',
+	        joinSuccessPublic: '恭喜您已经加入圈子，快来发布话题吧！',
+	        cannotJoinCircle: '抱歉！该圈子不允许任何人加入！',
+	        exit: '您已经退出该圈子！',
+	        dissolved: '抱歉！该圈子已被解散'
+	    },
+	    qrCodeTip: {
+	        loseEffTip: '二维码已失效',
+	        loseEffBtn: '点击刷新',
+	        failGetTip: '二维码生成失败',
+	        failGetBtn: '重新生成'
+	    },
+	    masterApply: {
+	        nameLength: '姓名要2-20个字符',
+	        nameType: '姓名仅限汉字和字母',
+	        isIdCard: '请填写18位有效身份证号',
+	        type: '请选择达人类别',
+	        summary: '请输入自我介绍，2-100个字符'
+	    },
+	    upload: {
+	        noUpload: '请上传图片',
+	        uploadError: '请上传小于4M的图片，支持格式jpg、jpeg、png、gif！',
+	        uploadFaild: '上传失败,请重新上传',
+	        uploadError_Master: '请上传小于4M的图片，支持格式jpg、jpeg、png、gif!',
+	        Q_EXCEED_NUM_LIMIT: '请上传小于4M的图片，支持格式jpg、jpeg、png、gif！',
+	        Q_EXCEED_SIZE_LIMIT: '总文件大小超出限制',
+	        Q_TYPE_DENIED: '文件类型错误',
+	        F_EXCEED_SIZE: '请上传jpg、png格式且小于4M的图片！',
+	        excess: '文件个数超出限制'
+	    },
+	    errLine: {
+	        tip: '网络错误,请稍后再试！'
+	    }
+	};
+	module.exports = inputTip;
+
+/***/ }),
+
+/***/ 199:
+/***/ (function(module, exports) {
+
+	"use strict";
+	
+	/**
+	 * Created by dongyukuan on 2016/5/20.
+	 * 参数：
+	 *      num:从num开始倒计时
+	 *      options:{onChange:倒计时过程中执行，onFinish:倒计时结束执行}
+	 * 调用方式：new CountDown(num,{function onChange(num){},function onFinish(){}})
+	 */
+	var noop = function noop() {};
+	var CountDown = function CountDown(count, options) {
+	    this.onChange = options.onChange || noop;
+	    this.onFinish = options.onFinish || noop;
+	    this.count = count || 60;
+	    this.start();
+	};
+	CountDown.prototype.start = function () {
+	    var self = this;
+	    setTimeout(function () {
+	        self.onChange(self.count);
+	        self.count--;
+	        if (self.count <= 0) {
+	            self.onFinish();
+	        } else {
+	            self.start();
+	        }
+	    }, 1000);
+	};
+	module.exports = CountDown;
+
+/***/ }),
+
+/***/ 282:
+/***/ (function(module, exports) {
+
+	'use strict';
+	
+	/**
+	 * Created by dongyukuan on 2016/5/20.
+	 */
+	var obj = {
+	    checkVal: function checkVal(val, pattern) {
+	        return pattern.test(val);
+	    },
+	    isMobileNum: function isMobileNum(mobile) {
+	        return (/^1[34578][0-9]{9}$/.test(mobile)
+	        );
+	    },
+	    isEmail: function isEmail(email) {
+	        return (/w+([-+.]w+)*@w+([-.]w+)*.w+([-.]w+)*/.test(email)
+	        );
+	    },
+	    isCertificate: function isCertificate(certificate) {
+	        return (/^(\d{15}$|^\d{18}$|^\d{17}(\d|X|x))$/.test(certificate)
+	        );
+	    },
+	    isCID: function isCID(cardNo) {
+	        return (/^(\d{16}|\d{19})$/.test(cardNo)
+	        );
+	    },
+	    isCWord: function isCWord(word, start, end) {
+	        start = !isNaN(start) && start > 0 ? start : 1;
+	        end = !isNaN(end) && end > 0 ? end : '';
+	        var reg = new RegExp('^[\\u4e00-\\u9fa5]{' + start + ',' + end + '}$');
+	        //var regPunctuation = /[1-9<>《》！\*\(\^\)\$%~!@#\…&%￥—\+=、。，；‘’“”：'"\·`]/;
+	        // var regRes = reg.test(word);
+	        //var pugRes = regPunctuation.test(word);
+	        return reg.test(word);
+	    },
+	    isArray: function isArray(arr) {
+	        return Array.isArray(arr) || arr instanceof Array;
+	    },
+	    passwordReg: function passwordReg(val) {
+	        var reg = /^((?=.*?\d)(?=.*?[A-Za-z])|(?=.*?\d)(?=.*?[<>《》！\*\(\^\)\$%~!@#\…&%￥—\+=、。，\"\,\:\;；,\.‘’“”：'"\·`【】])|(?=.*?[A-Za-z])(?=.*?[<>《》！\*\(\^\)\$%~!@#\…&%￥—\+=、。，；‘’“”：'"\·`,\.【】]))[\dA-Za-z<>《》！\*\(\^\)\$%~!@#\…&%￥—\+=、。，；‘’“”：'"\·`,\.【】]{6,21}$/;
+	        return reg.test(val);
+	    },
+	    checkSpace: function checkSpace(val) {
+	        var reg = /\s+/;
+	        return reg.test(val);
+	    },
+	    checkRefCode: function checkRefCode(refCode) {
+	        var reg = /^[0-9a-zA-Z]{8}$/;
+	        return reg.test(refCode);
+	    },
+	    checkNickName: function checkNickName(name) {
+	        var nickNameReg = /^([\u4e00-\u9fa5]|[0-9a-zA-Z_-])+$/;
+	        return nickNameReg.test(name);
+	    },
+	    isMsgCode: function isMsgCode(num) {
+	        var reg = /^\d{6}$/;
+	        return reg.test(num);
+	    },
+	    isImgCode: function isImgCode(str) {
+	        var reg = /^[0-9a-zA-Z]{4}$/;
+	        return reg.test(str);
+	    }
+	};
+	module.exports = obj;
+
+/***/ }),
+
+/***/ 284:
+/***/ (function(module, exports) {
+
+	"use strict";
+	
+	/**
+	 * Created by dongyukuan on 2016/5/28.
+	 */
+	function limitLen(str, len) {
+	    if (str.length > len) {
+	        return str.substr(0, len);
+	    } else {
+	        return str;
+	    }
+	}
+	module.exports = limitLen;
+
+/***/ }),
+
+/***/ 306:
+/***/ (function(module, exports, __webpack_require__) {
+
+	/* WEBPACK VAR INJECTION */(function($) {'use strict';
+	
+	var telTip = __webpack_require__(83).tel;
+	var check = __webpack_require__(282);
+	var limitLen = __webpack_require__(284);
+	
+	var formBox = $('[data-node=formBox]');
+	
+	var telInput = formBox.find('[data-node=telInput]');
+	
+	var publicErr = formBox.find('[data-node=publicErr]');
+	var rightFlag = formBox.find('[data-node=rightFlag]');
+	var telErrTip = formBox.find('[data-node=telErrTip]');
+	
+	var telLi = formBox.find('[data-node=telLi]');
+	
+	var hideCls = 'hide';
+	var lgFormError = 'lg-form-error';
+	var codeTipCls = 'code-tip';
+	
+	var telFoc = function telFoc() {
+	    telLi.removeClass(lgFormError).addClass(codeTipCls);
+	    publicErr.addClass(hideCls);
+	    rightFlag.addClass(hideCls);
+	    telErrTip.addClass(hideCls);
+	};
+	var telKeyup = function telKeyup() {
+	    var telVal = telInput.val();
+	    var len = telVal.length;
+	    if (len > 11) {
+	        telInput.val(limitLen(telVal, 11));
+	    }
+	};
+	var telBlur = function telBlur() {
+	    var telVal = telInput.val();
+	    var len = telVal.length;
+	    var flag = true;
+	    if (!check.isMobileNum(telVal)) {
+	        flag = false;
+	        telLi.removeClass(codeTipCls).addClass(lgFormError);
+	        telErrTip.removeClass(hideCls);
+	        if (!len) {
+	            telErrTip.text(telTip.ept);
+	        } else {
+	            telErrTip.text(telTip.err);
+	        }
+	    } else {
+	        flag = true;
+	        rightFlag.removeClass(hideCls);
+	    }
+	    return flag;
+	};
+	var telEvent = function telEvent() {
+	    telInput.on({
+	        'focus': telFoc,
+	        'keyup': telKeyup,
+	        'blur': telBlur
+	    });
+	};
+	module.exports = {
+	    initTel: telEvent,
+	    checkTel: telBlur
+	};
+	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(2)))
+
+/***/ }),
+
+/***/ 307:
+/***/ (function(module, exports, __webpack_require__) {
+
+	/* WEBPACK VAR INJECTION */(function($) {"use strict";
+	
+	var fetch = __webpack_require__(21);
+	var url = __webpack_require__(24);
+	var inputTip = __webpack_require__(83);
+	var msgTip = inputTip.msgCode;
+	var CountDown = __webpack_require__(199);
+	var check = __webpack_require__(282);
+	var limitLen = __webpack_require__(284);
+	
+	var checkTel = __webpack_require__(306).checkTel;
+	
+	var formBox = $('[data-node=formBox]');
+	var publicErr = formBox.find('[data-node=publicErr]');
+	var errText = formBox.find('[data-node=errText]');
+	
+	var telInput = formBox.find('[data-node=telInput]');
+	
+	var sendMsgBtn = formBox.find('[data-action=sendMsg]');
+	var msgCode = formBox.find('[data-node=msgCode]');
+	var codeLi = formBox.find('[data-node=codeLi]');
+	var codeTip = formBox.find('[data-node=codeTip]');
+	var codeIcon = formBox.find('[data-node=codeIcon]');
+	var codeText = formBox.find('[data-node=codeText]');
+	
+	var sendFlag = 1;
+	
+	var hideCls = 'hide';
+	var lgFormError = 'lg-form-error';
+	var codeTipCls = 'code-tip';
+	var codeDisabled = 'code-disabled';
+	
+	//公共提示隐藏显示
+	var hideErrBox = function hideErrBox() {
+	    publicErr.addClass(hideCls);
+	};
+	var showErrBox = function showErrBox(str) {
+	    publicErr.removeClass(hideCls);
+	    errText.text(str);
+	};
+	
+	var sendMsg = function sendMsg() {
+	    if (!sendFlag) {
+	        return false;
+	    }
+	    var telFlag = checkTel();
+	    if (!telFlag) {
+	        return false;
+	    }
+	    var telVal = telInput.val();
+	    var sendData = {
+	        "mobile": telVal
+	    };
+	    sendFlag = 0;
+	    fetch.get(url.get('sendNewCode'), {
+	        data: sendData
+	    }).done(function (data) {
+	        if (data.success) {
+	            //input框下方提示
+	            codeTip.removeClass(hideCls);
+	            codeIcon.removeClass(hideCls);
+	            codeText.text(msgTip.send);
+	            //去掉li边框红色
+	            codeLi.removeClass(lgFormError).addClass(codeTipCls);
+	            //隐藏公共错误提示
+	            hideErrBox();
+	
+	            new CountDown(60, {
+	                onChange: function onChange(num) {
+	                    sendMsgBtn.text(num + inputTip.msgCode.btnAfterSend).addClass(codeDisabled);
+	                },
+	                onFinish: function onFinish() {
+	                    sendFlag = 1;
+	                    sendMsgBtn.text(inputTip.msgCode.btnDefault).removeClass(codeDisabled);
+	                }
+	            });
+	        } else {
+	            sendFlag = 1;
+	            showErrBox(data.message);
+	        }
+	    }).fail(function () {
+	        sendFlag = 1;
+	        showErrBox(inputTip.errLine.tip);
+	    });
+	    return false;
+	};
+	var inputFoc = function inputFoc() {
+	    hideErrBox();
+	    if (codeLi.hasClass(lgFormError)) {
+	        codeLi.removeClass(lgFormError).addClass(codeTipCls);
+	        codeTip.addClass(hideCls);
+	    }
+	};
+	var inputKeyup = function inputKeyup() {
+	    var codeVal = msgCode.val();
+	    var len = codeVal.length;
+	    if (len > 6) {
+	        msgCode.val(limitLen(codeVal, 6));
+	    }
+	    // if (codeVal) {
+	    // 	nextStep.addClass(activeCls);
+	    // } else {
+	    // 	nextStep.removeClass(activeCls);
+	    // }
+	};
+	var inputBlur = function inputBlur() {
+	    var flag = true;
+	    var codeVal = msgCode.val();
+	    var len = codeVal.length;
+	    if (!check.isMsgCode(codeVal)) {
+	        flag = false;
+	        codeLi.removeClass(codeTipCls).addClass(lgFormError);
+	        codeTip.removeClass(hideCls);
+	        codeIcon.addClass(hideCls);
+	        if (!len) {
+	            codeText.text(msgTip.tipEpt);
+	        } else {
+	            codeText.text(msgTip.tipErr);
+	        }
+	    } else {
+	        flag = true;
+	    }
+	    return flag;
+	};
+	var initCode = function initCode() {
+	    sendMsgBtn.on('click', sendMsg);
+	    msgCode.on({
+	        "focus": inputFoc,
+	        "keyup": inputKeyup,
+	        "blur": inputBlur
+	    });
+	};
+	module.exports = {
+	    initCode: initCode,
+	    checkCode: inputBlur
+	};
+	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(2)))
+
+/***/ }),
+
+/***/ 308:
+/***/ (function(module, exports, __webpack_require__) {
+
+	/* WEBPACK VAR INJECTION */(function($, $_CONFIG) {'use strict';
+	
+	var fetch = __webpack_require__(21);
+	var url = __webpack_require__(24);
+	var errLineTip = __webpack_require__(83).errLine.tip;
+	
+	var checkTel = __webpack_require__(306).checkTel;
+	var checkCode = __webpack_require__(307).checkCode;
+	
+	var formBox = $('[data-node=formBox]');
+	var telInput = formBox.find('[data-node=telInput]');
+	var codeInput = formBox.find('[data-node=msgCode]');
+	var nextStep = formBox.find('[data-action=nextStep]');
+	
+	var publicErr = formBox.find('[data-node=publicErr]');
+	var errText = formBox.find('[data-node=errText]');
+	
+	var inputs = $('input');
+	var activeCls = 'active';
+	var hideCls = 'hide';
+	
+	//显示公共错误提示
+	var showErrBox = function showErrBox(str) {
+		publicErr.removeClass(hideCls);
+		errText.text(str);
+	};
+	
+	var btnActive = function btnActive() {
+		var telVal = telInput.val();
+		var codeVal = codeInput.val();
+		if (telVal.length && codeVal.length) {
+			nextStep.addClass(activeCls);
+		} else {
+			nextStep.removeClass(activeCls);
+		}
+	};
+	var submit = function submit() {
+		var telFlag = checkTel();
+		var codeFlag = checkCode();
+		if (telFlag && codeFlag) {
+			var telVal = telInput.val();
+			var codeVal = codeInput.val();
+			var subData = {
+				"verifyCode": codeVal,
+				"mobile": telVal
+			};
+			fetch.post(url.get('checkNewCode'), {
+				data: subData
+			}).done(function (data) {
+				if (data.success) {
+					location.href = $_CONFIG['i_domain'] + 'bind/thirdStep';
+				} else {
+					showErrBox(data.message);
+				}
+			}).fail(function () {
+				showErrBox(errLineTip);
+			});
+		}
+	};
+	
+	var initSub = function initSub() {
+		inputs.on('keyup', btnActive);
+		nextStep.on('click', submit);
+	};
+	module.exports = {
+		initSub: initSub
+	};
+	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(2), __webpack_require__(3)))
+
+/***/ })
+
+});
+//# sourceMappingURL=uc_resetTel_step2.js.map

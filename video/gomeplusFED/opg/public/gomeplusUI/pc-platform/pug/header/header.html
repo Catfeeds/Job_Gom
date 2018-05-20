@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="renderer" content="webkit">
+    <meta name="description" content="gomepulusUI">
+    <meta name="keyword" content="gomepulusUI">
+    <title>OPG/gomeplusUI</title>
+    <link rel="shortcut icon" href="https://www.gomeplus.com/favicon.ico">
+    <link rel="stylesheet" type="text/css" href="../../sass/public/public.css">
+    <link rel="stylesheet" type="text/css" href="../../sass/platform/platform.css">
+    <script src="../../../js-platform/jquery1.42.min.js"></script>
+    <script src="../../../js-platform/htmlToJade.js"></script>
+  </head>
+  <body class="opg">
+    <div class="platform-m"><a href="http://opg-pre.intra.gomeplus.com/gomeplusUI/m-platform/pug/index/index.html" class="icon platform-mobile">
+         
+        &#xe9af;<span class="platform-code"> </span></a></div>
+    <div class="platform-menu"><span class="platform-glass"></span>
+      <h1><a href="../index/index.html" title="OPG/GomeplusUI">OPG/GomeplusUI</a></h1>
+      <ul>
+        <li><a href="../button/button.html" title="" class="platform-button">button</a></li>
+        <li><a href="../cell/cell.html" title="" class="platform-cell">cell</a></li>
+        <li><a href="../tab/tab.html" title="" class="platform-tab">tab</a></li>
+        <li><a href="../dialog/dialog.html" title="" class="platform-dialog">dialog</a></li>
+        <li><a href="../footer/footer.html" title="" class="platform-footer">footer</a></li>
+        <li><a href="../grid/grid.html" title="" class="platform-grid">grid</a></li>
+        <li><a href="../header/header.html" title="" class="platform-head">header</a></li>
+        <li><a href="../menu/menu.html" title="" class="platform-menu-new">menu</a></li>
+        <li><a href="../slider/slider.html" title="" class="platform-slider">slider</a></li>
+        <li><a href="../toast/toast.html" title="" class="platform-toast">toast</a></li>
+        <li><a href="../icon/icon.html" title="" class="platform-icon">icon</a></li>
+        <li><a href="../crumbs/crumbs.html" title="" class="platform-crumbs">crumbs</a></li>
+        <li><a href="../pagination/pagination.html" title="" class="platform-pagination">pagination</a></li>
+        <li><a href="../article/article.html" title="" class="platform-article">article</a></li>
+      </ul>
+    </div>
+    <div class="platform-main">
+      <div class="platform-scroll">
+        <h2 class="platform-title">header</h2>
+        <div class="platform-content">
+          <h3 class="platform-header">header</h3>
+          <div class="platform-intro"> 
+            <p>网站顶部信息</p>
+          </div>
+          <div id="header" class="platform-example">
+            <div class="header">
+              <div class="wrap-box clearfix">
+                <h1 class="fl"><a href="#"><img src="../../images/public/logo.png"></a></h1>
+                <div class="search">
+                  <div class="search-val"> 
+                    <p><span>圈子</span>
+                      <!-- icon替换 icon-down--><em class="iconn-2"></em>
+                    </p>
+                    <div class="search-list"><a href="javascript:;">话题</a><a href="javascript:;">圈子</a><a href="javascript:;">商品</a><a href="javascript:;">店铺</a></div>
+                  </div>
+                  <input type="text" name="" value="" placeholder="请输入关键词">
+                  <!-- icon替换 icon-search--><em class="iconn-3"></em>
+                </div>
+                <div class="shop-car"><a href="javascript:;">
+                    <!-- icon替换 icon-car--><em class="iconn-4"></em>消息<span>0</span>条</a><a href="#">
+                    <!-- icon替换 icon-car--><em class="iconn-5"></em>购物车<span>0</span>件</a></div>
+              </div>
+            </div>
+            <div style="display:none" class="windows-bg">
+              <div class="windows-ma">
+                <!-- icon替换 icon-close--><a href="javascript:;" class="iconn-7"></a><img src="../../images/public/down-ma.png">
+                <p>扫描二维码，下载国美+APP查看消息</p>
+              </div>
+            </div>
+            <div style="display:none" class="windows-bg">
+              <div class="windows-ma">
+                <!-- icon替换 icon-close--><a href="javascript:;" class="iconn-7"></a><img src="../../images/public/down-ma.png">
+                <p>查看订单状态、及物流信息、办理退换货请下载国美+APP查看！<br>客服电话：010-57098333</p>
+              </div>
+            </div>
+          </div>
+          <pre class="platform-pre"><code id="header_code" class="platform-code"></code><span class="platform-jade">pug</span><span class="platform-jade platform-html actived">html</span></pre>
+        </div>
+        <script type="text/javascript">
+          HtmlFormat.init(['header'],false,'_code','html','span.platform-jade');
+          $(".platform-head").parent('li').addClass("actived");
+        </script>
+      </div>
+    </div>
+  </body>
+</html>

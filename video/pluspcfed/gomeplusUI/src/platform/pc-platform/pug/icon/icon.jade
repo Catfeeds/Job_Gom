@@ -1,0 +1,21 @@
+//- extends layout.jade
+extends ../../../widget-platform/pug/layout/layout.jade
+
+//- icon
+block content
+	h2.platform-title icon
+	div.platform-content
+		h3.platform-header icon
+		div.platform-intro 
+			p 网站通用图标
+			p '&amp;#x' + '图标码' 如：&amp;#xe905;
+		div.platform-example#icon
+			include ../../../../pc-widget/icon/icon.jade
+		pre.platform-pre
+			code.platform-code#icon_code
+			span.platform-jade pug
+			span.platform-jade.platform-html.actived html
+	//- js format html code
+	script(type='text/javascript').
+		HtmlFormat.init(['icon'],false,'_code','html','span.platform-jade');
+		$(".platform-icon").parent('li').addClass("actived");

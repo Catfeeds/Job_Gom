@@ -1,0 +1,59 @@
+doctype html
+html(lang="zh-CN" data-use-rem="750")
+    include wibget/head.jade
+    link(type="text/css",rel="stylesheet",href="../../css/gomeplus/public.css")
+    link(type="text/css",rel="stylesheet",href="../../css/gomeplus/test.css")
+    body
+        script(type='text/javascript').
+           (function(win){var doc=win.document,html=doc.documentElement,option=html.getAttribute("data-use-rem");if(option===null){return}var baseWidth=parseInt(option).toString()==="NaN"?640:parseInt(option);var grids=baseWidth/100;var clientWidth=html.clientWidth||320;html.style.fontSize=clientWidth/grids+"px";var testDom=document.createElement("div");var testDomWidth=0;var adjustRatio=0;testDom.style.cssText="height:0;width:1rem;";doc.body.appendChild(testDom);var calcTestDom=function(){testDomWidth=testDom.offsetWidth;if(testDomWidth!==Math.round(clientWidth/grids)){adjustRatio=clientWidth/grids/testDomWidth;var reCalcRem=clientWidth*adjustRatio/grids;html.style.fontSize=reCalcRem+"px"}else{doc.body.removeChild(testDom)}};setTimeout(calcTestDom,20);var reCalc=function(){var newCW=html.clientWidth;if(newCW===clientWidth){return}clientWidth=newCW;html.style.fontSize=newCW*(adjustRatio?adjustRatio:1)/grids+"px"};if(!doc.addEventListener){return}var resizeEvt="orientationchange" in win?"orientationchange":"resize";win.addEventListener(resizeEvt,reCalc,false);doc.addEventListener("DOMContentLoaded",reCalc,false)})(window);
+        .test-body
+            .test-bg
+                ul.test-list
+                    li.test-item
+                        h4.test-title 1.之前开过网店吗？
+                        label.test-option(for="num1")
+                            input(type="radio" name='shose')#num1.ip-radio
+                            i.icon-radio
+                            开过
+                        label.test-option(for="num2")
+                            input(type="radio" name='shose')#num2.ip-radio
+                            i.icon-radio
+                            没开过
+                    li.test-item
+                        h4.test-title 2.身边开网店的朋友多吗？
+                        label.test-option(for="num3")
+                            input(type="radio" name='ff')#num3.ip-radio
+                            i.icon-radio
+                            没有
+                        label.test-option(for="num4")
+                            input(type="radio" name='ff')#num4.ip-radio
+                            i.icon-radio
+                            | 1-5个
+                        label.test-option(for="num5")
+                            input(type="radio" name='ff')#num5.ip-radio
+                            i.icon-radio
+                            | 5个以上
+                    li.test-item
+                        h4.test-title 
+                            | 3.微信的好友个数是
+                            input(type='text' placeholder="请输入").ip-txt
+                    li.test-item
+                        h4.test-title 4.去年网购的总额度大概是？
+                        label.test-option(for="num6")
+                            input(type="radio" name='dd')#num6.ip-radio
+                            i.icon-radio
+                            | 1万以下
+                        label.test-option(for="num7")
+                            input(type="radio" name='dd')#num7.ip-radio
+                            i.icon-radio
+                            | 1-3万
+                        label.test-option(for="num8")
+                            input(type="radio" name='dd')#num8.ip-radio
+                            i.icon-radio
+                            | 3-5万
+                        label.test-option(for="num9")
+                            input(type="radio" name='dd')#num9.ip-radio
+                            i.icon-radio
+                            | 5万以上
+                div.test-btn-zone
+                    a.xin-btn.orange-btn(href="javascript:;") 查看结果

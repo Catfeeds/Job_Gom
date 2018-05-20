@@ -1,0 +1,41 @@
+extends ../../pc-widget/head/head-set.jade
+block css-file
+	link(type="text/css",rel="stylesheet",href="../css/public/public.css")
+	link(type="text/css",rel="stylesheet",href="../css/module/login.css")
+block body
+	body.opg
+		.wrap-login
+			.login-close
+				a(href="javascript:;").iconn-3
+				a(href="javascript:;").iconn-11
+			.login-name 白鹭
+			.login-form
+				.form-box
+					em.iconn-41.icon
+					input(type="text",placeholder="输入账号")
+					// .active为显示关闭按钮
+					em.iconn-11.active
+				.form-box
+					em.iconn-12.icon
+					input(type="text",placeholder="输入密码")
+					// .active为变色
+					em.iconn-7.active
+			.login-link.clearfix
+				.fl
+					label
+						// .iconn-10为选中效果
+						em.iconn-9.iconn-10
+						| 记住密码
+					label
+						em.iconn-9.iconn-10
+						| 自动登录
+				.fr
+					p
+						a(href="#") 激活账号
+					p
+						a(href="#") 找回密码
+			
+			.login-loading
+				img(src="../images/public/loading.gif")
+				p 登陆中
+			.pop-warning 您输入的账号或密码有误

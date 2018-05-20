@@ -1,0 +1,2 @@
+webpackJsonp([13],[function(n,exports,c){(function($){"use strict";$("[data-node=warning-icon]").on("click",function(){$("[data-node=search-warning]").hide()})}).call(exports,c(2))}]);
+//# sourceMappingURL=normal.js.map

@@ -1,0 +1,70 @@
+@mixin rotate($x){
+    transform:rotate($x);
+    -ms-transform:rotate($x);
+    -moz-transform:rotate($x);
+    -webkit-transform:rotate($x);
+    -o-transform:rotate($x);
+}
+@mixin tanslate($x,$y){
+    -webkit-transform: translate($x,$y);
+    -moz-transform: translate($x,$y);
+    -ms-transform: translate($x,$y);
+    -o-transform: translate($x,$y);
+    transform: translate($x,$y);
+}
+%text-hide{
+    -webkit-text-overflow: ellipsis;
+    -o-text-overflow: ellipsis;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+@mixin border-radius($radius:(50%)){
+    -webkit-border-radius:$radius;
+    border-radius:$radius;
+}
+
+//暂时无用
+@mixin box-zing($cont:border-box){
+    -webkit-box-sizing: $cont;
+    box-sizing: $cont;
+}
+@mixin border-radius($radius:(6rem/100)){
+    -webkit-border-radius:$radius;
+    border-radius:$radius;
+}
+@mixin text-align($align:center){
+    text-align: $align;
+}
+%text-hide-more{overflow : hidden;
+    text-overflow: ellipsis;
+    display:-webkit-box;
+    -webkit-line-clamp:2;
+    -webkit-box-orient: vertical;
+}
+%center{
+    position: absolute;
+    left:50%;
+    top:50%;
+    -webkit-transform: translate(-50%,-50%);
+    -moz-transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+    -o-transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%);
+}
+%border-level{
+    content: '';
+    display: block;
+    position: absolute;
+    height:1px;
+    width:100%;
+    transform: scaleY(0.5);
+}
+%border-vertical{
+    content: '';
+    display: block;
+    position: absolute;
+    width:1px;
+    height:100%;
+    transform: scaleX(0.5);
+}

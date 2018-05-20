@@ -1,0 +1,98 @@
+doctype html
+html(lang='zh-CN', data-use-rem='750')
+  head
+    meta(charset='UTF-8')
+    meta(name='viewport', content='width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no')
+    meta(name='format-detection', content='telephone=no')
+    meta(name='format-detection', content='email=no')
+    title 绑定工号-默认
+    link(type='text/css', rel='stylesheet', href='../../css/worker/worker.css')
+  body.opg
+    script(type='text/javascript').
+      (function(win){var doc=win.document,html=doc.documentElement,option=html.getAttribute("data-use-rem");if(option===null){return}var baseWidth=parseInt(option).toString()==="NaN"?640:parseInt(option);var grids=baseWidth/100;var clientWidth=html.clientWidth||320;html.style.fontSize=clientWidth/grids+"px";var testDom=document.createElement("div");var testDomWidth=0;var adjustRatio=0;testDom.style.cssText="height:0;width:1rem;";doc.body.appendChild(testDom);var calcTestDom=function(){testDomWidth=testDom.offsetWidth;if(testDomWidth!==Math.round(clientWidth/grids)){adjustRatio=clientWidth/grids/testDomWidth;var reCalcRem=clientWidth*adjustRatio/grids;html.style.fontSize=reCalcRem+"px"}else{doc.body.removeChild(testDom)}};setTimeout(calcTestDom,20);var reCalc=function(){var newCW=html.clientWidth;if(newCW===clientWidth){return}clientWidth=newCW;html.style.fontSize=newCW*(adjustRatio?adjustRatio:1)/grids+"px"};if(!doc.addEventListener){return}var resizeEvt="orientationchange" in win?"orientationchange":"resize";win.addEventListener(resizeEvt,reCalc,false);doc.addEventListener("DOMContentLoaded",reCalc,false)})(window);
+    .employee
+      .employee-subject 920国美＋邀请你来赚大钱
+      .employee-infor
+        h3.employee-title
+          span 员工信息绑定
+        .infor-personal
+          .personal-input
+            em.icon 
+            input#name.input-style(type='text', placeholder='请输入真实姓名')
+          .personal-input
+            em.icon 
+            input#staff-num.input-style(type='number', placeholder='请输入员工编号')
+        .infor-form.infor-form-gray
+          .form-group.clearfix
+            label.group-title(for='') 所属大区
+            #big-dep.group-control
+              input.group-input(type='text', placeholder='请选择大区', readonly='')
+              em.icon 
+          .form-group.clearfix
+            label.group-title(for='') 一级分部
+            #first-dep.group-control
+              input.group-input(type='text', placeholder='请选择一级分部', readonly='')
+              em.icon 
+          .form-group.clearfix
+            label.group-title(for='') 二级分部
+            #second-dep.group-control
+              input.group-input(type='text', placeholder='请选择二级分部', readonly='')
+              em.icon 
+          .form-group.form-search.clearfix
+            label.group-title(for='') 门店/公司名称
+            #company-name.group-control.group-control-icon
+              input.group-input(type='text', placeholder='请选择或输入门店/公司', readonly='')
+              em#companyname-icon.icon 
+              #think-list.group-list
+                ul
+                  li 北京亮马桥旗舰店
+                  li.active 北京三元桥旗舰店
+                  li 北京朝阳公园旗舰店
+                  li 北京双井旗舰店
+                  li 北京双井旗舰店
+          .form-group.clearfix
+            label.group-title(for='') 岗位
+            #position.group-control
+              input.group-input(type='text', placeholder='请选择对应岗位', readonly='')
+              em.icon 
+          .form-explain * 总部将通过此账号考核您的业绩，请认真填写！
+          a.employee-btn.btn-primary(href='javascript:;') 确定绑定
+    #choose_cover.xin-mask-all
+    section.tpc-address
+      h4.tpc-adr-title 所属大区
+      .adr-choose
+        ul#adr-ch-list.adr-ch-list
+          li.active 长安街道
+          li 长安街道
+          li 长安街道
+          li 长安街道
+          li 长安街道
+    section#confirm-info.employee-pop
+      h2 总部将通过此账号考核您的业绩，请认真填写如因信息错误产生的后果，请自行承担！
+      .employee-record
+        ul
+          li
+            span.record-title 姓名
+            span.record-infor 姚丽丽
+          li
+            span.record-title 员工编号
+            span.record-infor 000345
+          li
+            span.record-title 所属大区
+            span.record-infor 华北大区
+          li
+            span.record-title 一级分布
+            span.record-infor 北京分部
+          li
+            span.record-title 二级分布
+            span.record-infor 朝阳分部
+          li
+            span.record-title 门店/公司名称
+            span.record-infor 朝阳大悦城
+          li
+            span.record-title 岗位
+            span.record-infor 门店经理
+      .record-btn
+        a#submit.btn-ok(href='javascript:;') 确认无误
+        a#go-back.btn-back(href='javascript:;') 返回修改
+      span#close.icon.record-close 

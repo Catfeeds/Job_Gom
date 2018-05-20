@@ -1,0 +1,83 @@
+@import '../../widget/reset/reset.scss';
+
+@mixin clearfix{
+  *zoom:1;
+    &:after{
+        content:"";
+        display:block;
+        height:0;
+        clear:both;
+        visibility:hidden;
+    }
+}
+
+.clearfix{
+    @include clearfix();
+}
+.visihide{
+	visibility: hidden;
+}
+::-ms-clear, ::-ms-reveal{display: none;}
+.gm-gray{
+    color: #999!important;
+}
+.gome-head-wrap,
+.gome-footer-wrap{
+	background: #fff;
+}
+#gome-help{
+	padding: 15px 0 0 0;
+}
+
+.bg-fff{
+   background: #fff;
+}
+//IE兼容webuploader上传图片
+.webuploader-element-invisible {
+	position: absolute !important;
+    clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+    clip: rect(1px,1px,1px,1px);
+}    
+/* confirm组件 */
+.circle-cancel-btn{
+	color: #fff !important;
+	background-color: #a5a5a5 !important;
+}  
+
+
+.share-down {
+  display: none;
+  position: absolute;
+  *z-index: 1;
+}
+.share-down .share-box {
+  display: block;
+  text-align: center;
+  width: 226px;
+  background-color: #fff;
+  border-radius: 3px;
+  border: 1px solid #e9e8e5;
+  box-shadow: 0 0 2px 0px rgba(0, 0, 0, 0.6);
+  height: 33px;
+}
+.pop-more-com {
+  clear: both;
+  width: 550px;
+  margin: 0 auto 20px;
+  font-size: 12px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  background: none; 
+}
+.pop-more-com a {
+  width: 550px;
+  font-size: 12px;
+  height: 40px;
+  line-height: 40px; 
+  }
+.pop-more-com .reload {
+  display: inline;
+  color: #376492; 
+}
+@import '../../widget/button/button.scss';

@@ -1,0 +1,41 @@
+//- extends layout.jade
+extends ../../../widget-platform/pug/layout/layout-m.jade
+
+//- index
+block content
+	.platform-tipsinfo
+		h5 说明
+		p m-downapp 框架
+		p 具体查看结构，谢谢~
+		p.maty 有问题沟通-maty
+	//end
+
+	//- downapp-1
+	div.platform-content
+		h3.platform-header
+			| APP下载提示
+			small (单行文字)
+		//- div.platform-intro
+		//- 	p 积极维护中...
+		div.platform-example-auto#downapp-1
+			include ../../../../plus-widget/downapp/downapp-1.jade
+		pre.platform-pre.hide
+			code.platform-code#downapp-1_code
+			span.platform-jade pug
+			span.platform-jade.platform-html.actived html
+	//- downapp-2
+	div.platform-content
+		h3.platform-header
+			| APP下载提示
+			small (两行文字，加 br 换行)
+		//- div.platform-intro
+		//- 	p 积极维护中...
+		div.platform-example-auto#downapp-2
+			include ../../../../plus-widget/downapp/downapp-2.jade
+		pre.platform-pre.hide
+			code.platform-code#downapp-2_code
+			span.platform-jade pug
+			span.platform-jade.platform-html.actived html
+	script(type='text/javascript').
+		HtmlFormat.init(['downapp-1','downapp-2'],false,'_code','html','span.platform-jade');
+		$(".platform-article").parent('li').addClass("actived");

@@ -1,0 +1,512 @@
+@import 'basic/_base.scss';
+@import 'basic/_mixins.scss';
+body,button,input,select,textarea{
+    font-size: 14px;
+    font-family:'PingFang SC','Myriad Pro','Hiragino Sans GB','Microsoft YaHei',sans-serif;
+}
+body,h1,h2,h3,h4,h5,h6,dl,dt,dd,ul,ol,li,th,td,p,blockquote,pre,form,fieldset,legend,input,button,textarea,article,aside,footer,header,hgroup,nav,section,menu{margin:0;padding:0;}
+table{border-collapse:collapse;border-spacing:0;}
+ul,li{list-style:none;}
+fieldset,img{border:0;vertical-align:middle;}
+input,textarea{outline-style:none;}
+textarea{resize:none;}
+a{text-decoration:none;outline:none; color: $link-color;}
+a:hover{text-decoration:none;}
+em{font-style:normal;}
+//字体
+//@font-face {
+//  font-family: 'icomoon';
+//  src:    url('/dist/img/ui/fonts/icomoon.eot?1741lu');
+//  src:    url('/dist/img/ui/fonts/icomoon.eot?1741lu#iefix') format('embedded-opentype'),
+//      url('/dist/img/ui/fonts/icomoon.ttf?1741lu') format('truetype'),
+//      url('/dist/img/ui/fonts/icomoon.woff?1741lu') format('woff'),
+//      url('/dist/img/ui/fonts/icomoon.svg?1741lu#icomoon') format('svg');
+//  font-weight: normal;
+//  font-style: normal;
+//}
+//
+//.icon{
+//  /* use !important to prevent issues with browser extensions that change fonts */
+//  font-family: 'icomoon' !important;
+//  speak: none;
+//  font-style: normal;
+//  font-weight: normal;
+//  font-variant: normal;
+//  text-transform: none;
+//  line-height: 1;
+//  vertical-align: -1px;
+//  /* Better Font Rendering =========== */
+//  -webkit-font-smoothing: antialiased;
+//  -moz-osx-font-smoothing: grayscale;
+//}
+
+//全局样式
+body{
+    background: #ececec;
+    padding-bottom: 50px;
+}
+.wrap-box{
+    width: $w1080;
+    margin: 0 auto;
+}
+.clearfix:after{content:"";display:block;height:0;clear:both;visibility:hidden;}
+.clearfix{zoom:1;}
+.none{
+    display: none;
+}
+.block{
+    display: block;
+}
+
+//结构宽度
+.wrap-left{
+    float: left;
+    width: $w200;
+}
+.wrap-right{
+    float: right;
+    width: $w870;
+}
+
+
+//header.jade
+.opg{
+    .header{
+        height: 70px;
+        background: $color-blue;
+        color: #f2f2f2;
+        margin-bottom: 12px;
+        .fl{
+            float: left;
+            line-height: 28px;
+            padding-top: 21px;
+            .header-select{
+                display: inline-block;
+                padding: 0 9px;
+                position: relative;
+                height: 26px;
+                border: 1px solid #287cc3;
+                @include border-radius(3px);
+                background: #47abff;
+                color: #f2f2f2;
+                margin: 0 20px;
+                cursor: pointer;
+                span{
+                    display: inline-block;
+                    width: 12px;
+                    height: 12px;
+                    border: 1px solid $color-white;
+                    @include border-radius(50%);
+                    background: #5cb86c;
+                    vertical-align: -2px;
+                    margin-right: 10px;
+                }
+                .red{
+                    background:#ee2f2f;
+                }
+                .gray{
+                    background:#cdcdcd;
+                }
+                em.san{
+                    font-style: normal;
+                    display: inline-block;
+                    width: 0;
+                    height: 0;
+                    border-left: 6px solid transparent;
+                    border-right: 6px solid transparent;
+                    border-top: 6px solid $color-white;
+                    margin-left: 15px;
+                }
+                .select-s{
+                    position: absolute;
+                    left: 0;
+                    top: 100%;
+                    width: 100%;
+                    line-height: 40px;
+                    background: $color-white;
+                    z-index: 50;
+                    margin-top: 1px;
+                    a{
+                        display: block;
+                        padding-left: 9px;
+                        &:hover{
+                            background: $border-color;
+                        }
+                    }
+                    .active{
+                        background: $border-color;
+                    }
+                }
+            }
+            .text{
+                background: $color-white;
+                color: #666;
+                padding: 0 5px;
+                @include border-radius(2px);
+                margin-right: 10px;
+            }
+            .btn-header{
+                display: inline-block;
+                height: 26px;
+                border: 1px solid #287cc3;
+                @include border-radius(3px);
+                padding: 0 15px;
+                background: #47abff;
+                color: #f2f2f2;
+                margin-left: 20px;
+            }
+        }
+        .fr{
+            float: right;
+            padding-top: 12px;
+        }
+    }
+}
+.opg{
+    .wrap-left{
+        .menu{
+            background: #f9f9f9;
+            a{
+                line-height: 60px;
+                display: block;
+                text-align: center;
+            }
+            .active{
+                background: $border-color;
+            }
+        }
+    }
+}
+.opg{
+    .btn{
+        display: inline-block;
+        padding: 0 15px;
+        line-height: 30px;
+        @include border-radius(3px);
+        background: $color-white;
+        color: #666;
+        text-align: center;
+        border:1px solid #cdcdcd;
+        box-sizing: border-box;
+        &:hover{
+            color: $color-white;
+            border-color: $color-blue;
+            background: $color-blue;
+        }
+    }
+    .btn~.btn{
+        margin-left: 10px;
+    }
+    .btn-big{
+        line-height: 40px;
+        padding: 0 30px;
+    }
+    .btn-red{
+        color: $color-danger;
+        border-color: $color-danger;
+        background: $color-white;
+    }
+    .btn-blue{
+        color: $color-white;
+        border-color: $color-blue;
+        background: $color-blue;
+    }
+    .btn-block{
+        width: 100%;
+    }
+    .disable{
+        cursor: no-drop;
+        &:hover{
+            color: #666;
+            background: $color-white;
+            border:1px solid #cdcdcd;
+        }
+    }
+}
+.gap{
+    margin: 50px;
+}
+.pop-box{
+    width: 460px;
+    background: #f9f9f9;
+    &.check-chat{
+        width: 540px;
+    }
+    label{
+        float: left;
+    }
+    .ui-dialog-title{
+        height: 36px;
+        line-height: 36px;
+        padding-left: 13px;
+        color: $color-white;
+        background-color: $color-blue;
+    }
+    .add-acount{
+        width: 392px;
+        padding: 0 33px 0 35px;
+        label{
+            width: 52px;
+            height: 40px;
+            line-height: 40px;
+        }
+        input{
+            width: 190px;
+        }
+        .login-name{
+            width: 330px;
+        }
+        .add-acount-title{
+            font-weight: normal;
+            text-align: center;
+            padding: 28px 0 12px;
+        }
+    }
+    .character{
+        position: relative;
+        width: 200px;
+        height: 40px;
+        float: left;
+        cursor: pointer;
+        input{
+            cursor: pointer;
+        }
+        em{
+            position: absolute;
+        }
+        .line{
+            display: block;
+            top: 5px;
+            right: 40px;
+            width: 1px;
+            height: 28px;
+            background-color: $color-border;
+        }
+        .icon-down{
+            top: 18px;
+            right: 15px;
+            width: 10px;
+            height: 5px;
+            background: url(/dist/img/ui/icon-down.png) no-repeat;
+        }
+        ul{
+            width: 198px;
+            border-left: 1px solid $border-color;
+            border-right: 1px solid $border-color;
+            background-color: #fff;
+            li{
+                padding-left: 8px;
+                height: 39px;
+                line-height: 39px;
+                border-bottom: 1px solid $border-color;
+                &:hover{
+                    background-color: $border-color;
+                }
+            }
+        }
+    }
+    .input{
+        margin-top: 15px;
+        input{
+            padding-left: 8px;
+            height: 38px;
+            line-height: 38px;
+            border: 1px solid $border-color;
+        }
+    }
+    .ui-dialog-button{
+        float: right;
+        padding: 24px 34px 32px 0;
+    }
+    .prompt-txt{
+        width: 460px;
+        padding: 50px 0 26px;
+        text-align: center;
+    }
+    .im-prompt-txt{
+        width: 323px;
+        padding: 36px 65px 38px 72px;
+        span{
+            color: $color-danger;
+            font-size: 16px;
+        }
+    }
+    .welcome-txt{
+        width: 388px;
+        padding: 15px 40px 0 35px;
+        label{
+            width: 72px;
+        }
+        p{
+            width: 315px;
+            float: left;
+        }
+        textarea{
+            width: 296px;
+            height: 56px;
+            padding: 11px 6px;
+            border: 1px solid $border-color;
+        }
+        .set-time-box{
+            height: 40px;
+            line-height: 40px;
+            margin: 24px 0 26px;
+        }
+        .time-set{
+            position: relative;
+            float: left;
+            span{
+                float: left;
+                margin: 0 11px;
+            }
+            input{
+                float: left;
+                width: 38px;
+                height: 38px;
+                text-align: center;
+                border: 1px solid $border-color;
+            }
+        }
+    }
+    .confirm-txt{
+        width: 460px;
+        padding: 66px 20px 30px;
+        text-align: center;
+        box-sizing: border-box;
+    }
+    .confirm-btn{
+        width: 143px;
+        margin: 0 auto;
+        float: none;
+        padding-right: 0;
+    }
+    .export-chat-records{
+        width: 505px;
+        padding: 38px 0 0 35px;
+        .chat-date{
+            margin-bottom: 22px;
+            label{
+                height: auto;
+                line-height: 16px;
+            }
+            .date-box{
+                float: left;
+                .raido{
+                    float: left;
+                    width: 16px;
+                    height: 16px;
+                    margin-right: 11px;
+                    background: url(/dist/img/ui/icon-o.png) no-repeat;
+                }
+                .active{
+                    background: url(/dist/img/ui/icon-o2.png) no-repeat;
+                }
+                label{
+                    width: auto;
+                    line-height: 16px;
+                }
+                .date-nav{
+                    width: 310px;
+                    height: 23px;
+                    line-height: 23px;
+                    a{
+                        width: 110px;
+                        float: left;
+                        img{
+                            margin: -3px 7px 0 0;
+                        }
+                    }
+                    .line{
+                        float: left;
+                        width: 36px;
+                        height: 1px;
+                        margin: 10px 16px 0 8px;
+                        background-color: #666;
+                    }
+                }
+                .choose-date{
+                    margin-top: 14px;
+                    .raido{
+                        margin-top: 2px;
+                    }
+                }
+            }
+        }
+        label{
+            width: 66px;
+            height: 40px;
+            line-height: 40px;
+        }
+        input{
+            width: 310px;
+        }
+        .file{
+            float: left;
+            width: 320px;
+            height: 40px;
+            position: relative; 
+            .icon-file{
+                position: absolute;
+                top: 9px;
+                left: 11px;
+            }
+            input{
+                width: 279px;
+                padding-left: 39px;
+            }
+        }
+        .read-btn{
+            margin: 4px 0 0 15px;
+        }
+    }
+    .pdr43{
+        padding-right: 43px;
+    }
+    .opg .btn ~ .mgl19{
+        margin-left: 19px;
+    }
+}
+.im-video-dialog{
+    width: 321px;
+    height: 468px;
+    position: relative;
+    .icon-close{
+        position: absolute;
+        right: -60px;
+        top: -42px;
+        width: 50px;
+        height: 50px;
+        background: url(/dist/img/ui/icon-close.png) no-repeat center;
+        cursor: pointer;
+    }
+    .icon-stop{
+        position: absolute;
+        left: 11px;
+        bottom: 12px;
+        width: 50px;
+        height: 50px;
+        background: url(/dist/img/ui/icon-stop.png) no-repeat center;
+        cursor: pointer;
+    }
+    .icon-play{
+        background-image: url(/dist/img/ui/icon-play.png);
+        background-size: 100%;
+    }
+    .progress{
+        font-size: 0;
+        height: 4px;
+        line-height: 4px;
+        overflow: hidden;
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        background: $color-white;
+        .progress-play{
+            background: #419dea;
+            height: 4px;
+            line-height: 4px;
+            float: left;
+        }
+    }
+}

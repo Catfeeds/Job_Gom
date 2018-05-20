@@ -1,0 +1,100 @@
+@import '../../widget/config/_base.scss';
+@import '../../widget/config/_mixins.scss';
+
+.wxpay-header{
+	width: 100%;
+	height: 50px;
+	line-height: 50px;
+	text-align: center;
+	font-size: $text16;
+	color: $color-txt;
+	background-color: #333840;
+	img{
+		margin-right: 8px;
+	}
+}
+.wrap-box{
+	margin: 30px auto 0;
+}
+.code-content{
+	width: 580px;
+	margin: 0 auto;
+	padding: 43px 0 15px;
+	text-align: center;
+	border-bottom: 1px solid $bor-bom;
+	img{
+		display: block;
+		width: 260px;
+		height: 260px;
+		margin: 0 auto 25px;
+	}
+	.tip{
+		width: 260px;
+		padding: 11px 0 15px;
+		line-height: 24px;
+		text-align: center;
+		font-size: $text16;
+		color: $color-txt;
+		background-color: #456083;
+		margin: 0 auto 47px;
+	}
+	.bar{
+		width: 580px;
+		height: 41px;
+		span{
+			display: block;
+			width: 247px;
+			height: 3px;
+			margin-top: 16px;
+			background-color: #e0e3eb;
+		}
+		.bar-l{
+			float: left;
+		}
+		.bar-r{
+			float: right;
+		}
+		.iconn-5{
+			font-size: 46px;
+			font-weight: bold;
+			color: #d5d6dd;
+			float: left;
+			margin-left: 22px;
+		    margin-top: -6px;
+		}
+	}
+	.price{
+		font-size: $text30;
+		text-align: center;
+		display: block;
+		margin-top: 28px;
+	}
+}
+.order-content{
+	width: 853px;
+	margin: 0 auto;
+	text-align: center;
+	padding-bottom: 30px;
+	h2{
+		font-size: $text30;
+		line-height: 30px;
+		font-weight: normal;
+		margin: 19px 0 11px;
+	}
+	p{
+		color: $color-gray;
+		margin-bottom: 30px;
+	}
+	div{
+		margin-bottom: 10px;
+	}
+	.span-l{
+		float: left;
+		color: $color-gray;
+	}
+	.span-r{
+		width: 224px;
+		text-align: left;
+		float: right;
+	}
+}

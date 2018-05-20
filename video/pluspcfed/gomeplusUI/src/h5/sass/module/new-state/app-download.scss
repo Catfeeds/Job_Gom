@@ -1,0 +1,108 @@
+@charset "UTF-8";
+/*App官方下载页*/
+.app-mask{
+    overflow: hidden;
+    padding: .3rem .4rem;
+    background: rgba(0,0,0,.6);
+    position: fixed;
+    top:0;
+    left:0;
+    right: 0;
+    z-index: 10;
+    p{
+        font-size: .32rem;
+        line-height: .6rem;
+        color: #fff;
+    }
+}
+.app-download{
+    background-color:#ffd200;
+    .banner{
+        background: url("../../images/state/app-banner.jpg") top center no-repeat;
+        background-size:cover;
+        width: rem(750);
+        height: rem(766);
+        text-align: center;
+        padding-top:rem(373);
+        .logo{
+            display: block;
+            width: rem(180);
+            height: rem(180);
+            background:#fff;
+            margin:0 auto;
+            border-top:1px solid #e7e7e7;
+            @include prefix(border-radius,rem(20));
+            img{
+                width: 1.8rem;
+                height: 1.8rem;
+                @include prefix(border-radius,rem(20));
+            }
+        }
+        .title{
+            margin-top: rem(10);
+            font-size: .5rem;
+            color: #7a4c20;
+            line-height: .8rem;
+            span{
+                font-size: rem(45);
+            }
+        }
+    }
+    .ios-btn{
+        .ios-icon{
+            background-position:rem(-10) rem(-195);
+        }
+    }
+    .and-btn{
+        .and-icon{
+            background-position:rem(-71) rem(-195);
+        }
+    }
+    a{
+        em{
+            background: url("../../images/state/sprites.png");
+            background-size: rem(854) rem(334);
+            width: rem(45);
+            height:rem(55);
+            display: inline-block;
+            vertical-align: middle;
+            margin-right: rem(30);
+        }
+        position: relative;
+        display: block;
+        width: rem(540);
+        height: rem(110);
+        line-height: rem(110);
+        text-align: left;
+        font-size: rem(36);
+        color: #fabe00;
+        background: #fff;
+        @include prefix(border-radius,rem(50));
+        margin: rem(45) auto;
+        text-align: center;
+    }
+    .line{
+        @include line(bottom,#ffe980);
+        margin-bottom: rem(90);
+        width: rem(540);
+        display: block;
+        margin-left: rem(-270);
+        left: 50%;
+    }
+    .introduce-txt{
+        padding: rem(50);
+        color: #6a3b0f;
+        h3{
+            height: rem(45);
+            line-height: rem(45);
+            font-size: rem(30);
+            margin-top: rem(30);
+        }
+        p{
+            font-size: rem(24);
+            line-height: rem(42);
+            margin-top: rem(20);
+        }
+    }
+
+}

@@ -1,0 +1,27 @@
+doctype html
+html(lang="zh-CN",data-use-rem="750")
+	include ../../../m-widget/head/head.jade
+	link(type="text/css",rel="stylesheet",href="../../css/public/public-wap.css")
+	link(type="text/css",rel="stylesheet",href="../../css/module/shop.css")
+	
+	body.opg
+		include ../../../m-widget/head/rem.jade		
+
+		header.header
+			span
+				a.head-back(href="javascript:;")
+					em.iconn-1
+			h1.head-title 营业执照
+			span
+				a.head-icn(href="javascript:;")
+					em.iconn-4
+		// /header
+
+		.check-license.mt20
+			p 输入验证码查看营业执照信息
+			.code
+				input(type="text")
+				img(src="../../images/coupon_share_logo.jpg")
+				a(href="javascript:;") 刷新
+			a(href="javascript:;").m-btn.m-btn-big 确定
+			a(href="javascript:;").m-btn.m-btn-big.disabled 确定

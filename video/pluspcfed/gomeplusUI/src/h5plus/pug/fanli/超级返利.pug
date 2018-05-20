@@ -1,0 +1,46 @@
+doctype html
+html(lang="zh-CN", data-use-rem="750")
+	include ../../../m-widget/head/head.jade
+	link(type="text/css",rel="stylesheet",href="../../css/public/gomeplusUI.css")
+	link(type="text/css",rel="stylesheet",href="../../css/module/fanli/fanli.css")
+	
+	body.opg.fanli
+		include ../../../m-widget/head/rem.jade
+		header.header
+			.h-left
+				a.h-back(href="javascript:;")
+					em.iconn-1
+			.h-cnt.flex-cell
+				h1.h-tit 超级返利
+		// /header
+		.banner.bor-b
+			img(src="../../images/share/Bitmap3.png" width="100%")
+		// .sec-title
+			em.icon.icon-coupon
+			h3 抢券
+		.sec-title.fan-title
+			em.icon.icon-fan
+			h3 超级返
+		ul.bor-b.fan-list
+			- for(i=0;i<6;i++)
+				li.bor-t.bor-r
+					a(href="##")
+						img(src="../../images/share/share-items02.jpg")
+		.sec-title
+			em.icon.icon-extra
+			h3 赚外快
+			a(href="##").more-btn
+				| 更多 
+				em.iconn-41
+		ul.main-list.grid-list-bor
+			- for(i=0;i<6;i++)
+				li.item
+					a.link(href="javascript:;")
+					.fail-img.item-img
+						img(src="../../images/_temp/w236x236.jpg")
+					.item-txt 情人生日礼Crystallin精装礼品
+					.item-price
+						span.c-f5c ¥2199.40
+					.fan-txt
+						em.ic-fan
+						span 最高返105.00国美币

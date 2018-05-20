@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="zh-CN" data-use-rem="750">
+<head>
+	<meta charset="utf-8">
+	<title>GomePlus视频频道</title>
+	<meta name="keywords" content="GomePlus视频频道" />
+	<meta name="description" content="" />
+	<meta name="format-detection" content="telephone=no">
+	<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no,minimal-ui" />
+	<meta name="x5-page-mode" content="no-title"/>
+	<link rel="stylesheet" type="text/css" href="/m/vm/dist/css/sublist.css">
+</head>
+<body>
+	<%- include('../../common/rem.ejs')%>
+	
+	<header class="top-title">
+        <div class="left">
+            <a href="#"><em class="icon-18"></em></a>
+        </div>
+    	<h2>订阅</h2>
+         <div class="right ">
+            <a href="#" class="compile"><em class="icon-17 "></em></a>
+        </div>
+    </header>
+    <!-- 订阅－没有登录，没订阅-->
+    <div id="">
+        <div class="loginBtn">
+        	<a href=""><div><span>登录</span></div></a>
+        </div>
+       	<%- include('../../common/sub-list.ejs')%>
+    </div>
+    <!-- 已登陆，有订阅 -->
+    <div id="listCon">
+        <%- include('../../common/card.ejs')%>
+        <%- include('../../common/card.ejs')%>
+        <%- include('../../common/card.ejs')%>
+        <!-- 空白页 -->
+        <div class="no-data no-dy">
+            <div class="img"></div>
+            <p>暂无订阅记录</p>
+        </div>
+    </div>
+	<%- include('../../common/footer.ejs')%>
+	<script src="/m/vm/dist/js/vendor.js"></script>
+	<script src="/m/vm/dist/js/sublist.js"></script>
+</body>
+</html>

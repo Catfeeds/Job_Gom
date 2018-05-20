@@ -1,0 +1,632 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+	<meta charset="utf-8">
+	<meta name="renderer" content="webkit">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>GomePlus视频频道</title>
+	<meta name="keywords" content="GomePlus视频频道" />
+	<meta name="description" content="" />
+	<meta name="format-detection" content="telephone=no">
+	<meta name="x5-page-mode" content="no-title"/>
+	<link rel="stylesheet" href="http://css.atguat.com.cn/??gmlib/reset/1.1.0/reset.css,gmpro/1.0.0/public/1.0.0/css/top.min.css,gmpro/1.0.0/public/1.2.0/css/foot-gomeplus.min.css?v=201704181727">
+	<link rel="stylesheet" type="text/css" href="<%=devenv%>dist/css/index-new.css">
+</head>
+<body>
+	<%- include('../../common/gmhead.ejs')%>
+    <!-- header -->
+    <!--head-fixed-->
+    <div class="header head-fixed" data-node="header">
+        <div class="header-main clearfix">
+            <a class="logo" href="/" target="_self" title="国美视频">
+                <img alt="国美视频" src="<%=devenv%>dist/imgs/public/logo.png"/>
+            </a>
+            <ul class="nav">
+                <li class="active"><a href="#">首页推荐</a></li>
+                <li><a href="#">订阅</a></li>
+            </ul>
+            <div class="user-area" data-node="userArea">
+                <div class="avatar"></div>
+                <div class="user-info hide">
+                    <em class="arrow"></em>
+                    <dl class="user-nickname">
+                        <dt><img src=""></dt>
+                        <dd>用户昵称很长很长</dd>
+                    </dl>
+                    <div class="user-nav">
+                        <a href="#">我的收藏</a>
+                        <a href="#">我的订阅</a>
+                        <a href="#">帮助反馈</a>
+                    </div>
+                </div>
+            </div>
+            <div class="record" data-node="record">
+                <div class="name">
+                    <em class="icon-29"></em><br/>
+                    <span>观看记录</span>
+                </div>
+                <!--<div></div>-->
+                
+                <div class="record-card hide" data-node="recordWrap">
+                    <em class="arrow"></em>
+                    <div class="empty hide">暂时还没有观看记录哦～</div>
+                    <div class="record-card-list">
+                        <h3>最近</h3>
+                        <ul>
+                            <li>
+                                <a class="title" href="#">视频文章标题</a>
+                                <span class="progress">剩余90%</span>
+                                <em title="删除" class="del icon-13"></em>
+                            </li>
+                            <li>
+                                <a class="title" href="#">视频文章标题也是很长很长很长很长很长很长很长的标题</a>
+                                <span class="progress">剩余90%</span>
+                                <em title="删除" class="del icon-13"></em>
+                            </li>
+                            <li>
+                                <a class="title" href="#">视频文章标题</a>
+                                <span class="progress">已看完</span>
+                                <em title="删除" class="del icon-13"></em>
+                            </li>
+                            <li>
+                                <a class="title" href="#">视频文章标题</a>
+                                <span class="progress">剩余90%</span>
+                                <em title="删除" class="del icon-13"></em>
+                            </li>
+                            <li>
+                                <a class="title" href="#">视频文章标题</a>
+                                <span class="progress">剩余90%</span>
+                                <em title="删除" class="del icon-13"></em>
+                            </li>
+                        </ul>
+                        <a class="more-record" href="#">查看更多</a>
+                    </div>
+                </div>
+            </div>
+            <div class="record" data-node="record">
+                <a href="http://meimiao.gomeplus.com/" class="name" target="_blank">
+                    <em class="icon-48"></em><br/>
+                    <span>下载</span>
+                </a>
+            </div>
+            <div class="search clearfix" data-id="search-container">
+                <form action="javascript:;" data-id="search-form">
+                    <input class="input" type="text" data-id="search-input" placeholder="请输入您感兴趣的视频" autocomplete="off">
+                    <button class="btn" data-id="search-button" type="button">搜索</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <!-- header -->
+    <div class="banner">
+    	<div class="img">
+    		<a href="#" style="background-image: url('http://gfs10.gomein.net.cn/T1F_dvBvAT1RCvBVdK.jpg');"></a>
+    		<a href="#" style="background-image: url('http://gfs10.gomein.net.cn/T1F_dvBvAT1RCvBVdK.jpg');"></a>
+    	</div>
+    	<div class="nav">
+    		<a href="#" class="active">
+    		    <div class="title">小手牵小狗</div>
+    		    <span>道格姐妹救二格姐</span>
+    		</a>
+    		<a href="#">
+                <div class="title">小手牵小狗</div>
+                <span>道格姐妹救二格姐</span>
+            </a>
+            <a href="#">
+                <div class="title">小手牵小狗</div>
+                <span>道格姐妹救二格姐</span>
+            </a>
+            <a href="#">
+                <div class="title">小手牵小狗</div>
+                <span>道格姐妹救二格姐</span>
+            </a>
+            <a href="#">
+                <div class="title">小手牵小狗</div>
+                <span>道格姐妹救二格姐</span>
+            </a>
+            <a href="#">
+                <div class="title">小手牵小狗</div>
+                <span>道格姐妹救二格姐</span>
+            </a>
+    	</div>
+    </div>
+	<!-- main -->
+	<div class="wrap-new">
+        <div class="block-title">
+            <h2>热门推荐</h2>
+        </div>
+        <div class="hot-list">
+            <ul class="clearfix list">
+            	<li>
+                    <div class="img">
+                        <a href="#" target="_blank">
+                            <img src="https://i2.meixincdn.com/v1/img/T1seCTB7DQ1RXrhCrK.jpg" alt="带你了解罗技G613 G603的黑科技！">
+                            <span class="live">即将直播</span>
+                            <div class="img-text">
+                                <span class="count">2017-11-08 19:00</span>
+                            </div>
+                        </a>
+                    </div>
+                    <a href="#" target="_blank" class="list-title" title="带你了解罗技G613 G603的黑科技！">带你了解罗技G613 G603的黑科技！</a>
+                    <div class="num">
+                        <a target="_blank" href="#" class="list-name">
+                            <img src="https://i0.meixincdn.com/v1/img/T11IVTBXbT1RXrhCrK.jpg.100x100cTzq80.jpg">
+                            <span>ZEALER</span>
+                        </a>
+                    </div>
+                </li>
+                <li>
+                    <div class="img">
+                        <a href="#" target="_blank">
+                            <img src="https://i2.meixincdn.com/v1/img/T1seCTB7DQ1RXrhCrK.jpg" alt="带你了解罗技G613 G603的黑科技！">
+                            <span class="vod">已结束</span>
+                        </a>
+                    </div>
+                    <a href="#" target="_blank" class="list-title" title="带你了解罗技G613 G603的黑科技！">带你了解罗技G613 G603的黑科技！</a>
+                    <div class="num">
+                        <a target="_blank" href="#" class="list-name">
+                            <img src="https://i0.meixincdn.com/v1/img/T11IVTBXbT1RXrhCrK.jpg.100x100cTzq80.jpg">
+                            <span>ZEALER</span>
+                        </a>
+                    </div>
+                </li>
+                <li>
+                    <div class="img">
+                        <a href="#" target="_blank">
+                            <img src="https://i2.meixincdn.com/v1/img/T1seCTB7DQ1RXrhCrK.jpg" alt="带你了解罗技G613 G603的黑科技！">
+                            <div class="img-text">
+                            	<span class="count"><em class="icon-47"></em>123次</span>
+                                <span class="time">24:09</span>
+                            </div>
+                        </a>
+                    </div>
+                    <a href="#" target="_blank" class="list-title" title="带你了解罗技G613 G603的黑科技！">带你了解罗技G613 G603的黑科技！</a>
+                    <div class="num">
+                        <a target="_blank" href="#" class="list-name">
+                            <img src="https://i0.meixincdn.com/v1/img/T11IVTBXbT1RXrhCrK.jpg.100x100cTzq80.jpg">
+                            <span>ZEALER</span>
+                        </a>
+                    </div>
+                </li>
+                <li>
+                    <div class="img">
+                        <a href="#" target="_blank">
+                            <img src="https://i2.meixincdn.com/v1/img/T1seCTB7DQ1RXrhCrK.jpg" alt="带你了解罗技G613 G603的黑科技！">
+                            <div class="img-text">
+                            	<span class="count"><em class="icon-47"></em>123次</span>
+                                <span class="time">24:09</span>
+                            </div>
+                        </a>
+                    </div>
+                    <a href="#" target="_blank" class="list-title" title="带你了解罗技G613 G603的黑科技！">带你了解罗技G613 G603的黑科技！</a>
+                    <div class="num">
+                        <a target="_blank" href="#" class="list-name">
+                            <img src="https://i0.meixincdn.com/v1/img/T11IVTBXbT1RXrhCrK.jpg.100x100cTzq80.jpg">
+                            <span>ZEALER</span>
+                        </a>
+                    </div>
+                </li>
+                <li>
+                    <div class="img">
+                        <a href="#" target="_blank">
+                            <img src="https://i2.meixincdn.com/v1/img/T1seCTB7DQ1RXrhCrK.jpg" alt="带你了解罗技G613 G603的黑科技！">
+                            <div class="img-text">
+                            	<span class="count"><em class="icon-47"></em>123次</span>
+                                <span class="time">24:09</span>
+                            </div>
+                        </a>
+                    </div>
+                    <a href="#" target="_blank" class="list-title" title="带你了解罗技G613 G603的黑科技！">带你了解罗技G613 G603的黑科技！</a>
+                    <div class="num">
+                        <a target="_blank" href="#" class="list-name">
+                            <img src="https://i0.meixincdn.com/v1/img/T11IVTBXbT1RXrhCrK.jpg.100x100cTzq80.jpg">
+                            <span>ZEALER</span>
+                        </a>
+                    </div>
+                </li>
+                <li>
+                    <div class="img">
+                        <a href="#" target="_blank">
+                            <img src="https://i2.meixincdn.com/v1/img/T1seCTB7DQ1RXrhCrK.jpg" alt="带你了解罗技G613 G603的黑科技！">
+                            <div class="img-text">
+                            	<span class="count"><em class="icon-47"></em>123次</span>
+                                <span class="time">24:09</span>
+                            </div>
+                        </a>
+                    </div>
+                    <a href="#" target="_blank" class="list-title" title="带你了解罗技G613 G603的黑科技！">带你了解罗技G613 G603的黑科技！</a>
+                    <div class="num">
+                        <a target="_blank" href="#" class="list-name">
+                            <img src="https://i0.meixincdn.com/v1/img/T11IVTBXbT1RXrhCrK.jpg.100x100cTzq80.jpg">
+                            <span>ZEALER</span>
+                        </a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="block-title">
+            <h2>精彩视频</h2>
+            <div class="index-tab">
+        		<a href="javascript:;" class="active">国美视频</a>
+        		<a href="javascript:;">奇葩喝</a>
+        		<a href="javascript:;">FUN设计</a>
+            </div>
+        </div>
+        <div class="video-list">
+            <ul class="clearfix list">
+                <li class="big">
+                    <div class="img">
+                        <a href="#" target="_blank">
+                            <img src="https://i2.meixincdn.com/v1/img/T1seCTB7DQ1RXrhCrK.jpg" alt="带你了解罗技G613 G603的黑科技！">
+                            <div class="img-text">
+                                <span class="count"><em class="icon-47"></em>123次</span>
+                                <span class="time">24:09</span>
+                            </div>
+                        </a>
+                    </div>
+                    <a href="#" target="_blank" class="list-title" title="带你了解罗技G613 G603的黑科技！">带你了解罗技G613 G603的黑科技！</a>
+                    <p>带你了解罗技G613 G603的黑科技！</p>
+                </li>
+                <li>
+                    <div class="img">
+                        <a href="#" target="_blank">
+                            <img src="https://i2.meixincdn.com/v1/img/T1seCTB7DQ1RXrhCrK.jpg" alt="带你了解罗技G613 G603的黑科技！">
+                            <span class="live">即将直播</span>
+                        </a>
+                    </div>
+                    <a href="#" target="_blank" class="list-title" title="带你了解罗技G613 G603的黑科技！">带你了解罗技G613 G603的黑科技！</a>
+                </li>
+                <li>
+                    <div class="img">
+                        <a href="#" target="_blank">
+                            <img src="https://i2.meixincdn.com/v1/img/T1seCTB7DQ1RXrhCrK.jpg" alt="带你了解罗技G613 G603的黑科技！">
+                            <span class="vod">已结束</span>
+                        </a>
+                    </div>
+                    <a href="#" target="_blank" class="list-title" title="带你了解罗技G613 G603的黑科技！">带你了解罗技G613 G603的黑科技！</a>
+                </li>
+                <li>
+                    <div class="img">
+                        <a href="#" target="_blank">
+                            <img src="https://i2.meixincdn.com/v1/img/T1seCTB7DQ1RXrhCrK.jpg" alt="带你了解罗技G613 G603的黑科技！">
+                            <div class="img-text">
+                                <span class="count"><em class="icon-47"></em>123次</span>
+                                <span class="time">24:09</span>
+                            </div>
+                        </a>
+                    </div>
+                    <a href="#" target="_blank" class="list-title" title="带你了解罗技G613 G603的黑科技！">带你了解罗技G613 G603的黑科技！</a>
+                </li>
+                <li>
+                    <div class="img">
+                        <a href="#" target="_blank">
+                            <img src="https://i2.meixincdn.com/v1/img/T1seCTB7DQ1RXrhCrK.jpg" alt="带你了解罗技G613 G603的黑科技！">
+                            <div class="img-text">
+                                <span class="count"><em class="icon-47"></em>123次</span>
+                                <span class="time">24:09</span>
+                            </div>
+                        </a>
+                    </div>
+                    <a href="#" target="_blank" class="list-title" title="带你了解罗技G613 G603的黑科技！">带你了解罗技G613 G603的黑科技！</a>
+                </li>
+                <li>
+                    <div class="img">
+                        <a href="#" target="_blank">
+                            <img src="https://i2.meixincdn.com/v1/img/T1seCTB7DQ1RXrhCrK.jpg" alt="带你了解罗技G613 G603的黑科技！">
+                            <div class="img-text">
+                                <span class="count"><em class="icon-47"></em>123次</span>
+                                <span class="time">24:09</span>
+                            </div>
+                        </a>
+                    </div>
+                    <a href="#" target="_blank" class="list-title" title="带你了解罗技G613 G603的黑科技！">带你了解罗技G613 G603的黑科技！</a>
+                </li>
+                <li>
+                    <div class="img">
+                        <a href="#" target="_blank">
+                            <img src="https://i2.meixincdn.com/v1/img/T1seCTB7DQ1RXrhCrK.jpg" alt="带你了解罗技G613 G603的黑科技！">
+                            <div class="img-text">
+                                <span class="count"><em class="icon-47"></em>123次</span>
+                                <span class="time">24:09</span>
+                            </div>
+                        </a>
+                    </div>
+                    <a href="#" target="_blank" class="list-title" title="带你了解罗技G613 G603的黑科技！">带你了解罗技G613 G603的黑科技！</a>
+                </li>
+                <li>
+                    <div class="img">
+                        <a href="#" target="_blank">
+                            <img src="https://i2.meixincdn.com/v1/img/T1seCTB7DQ1RXrhCrK.jpg" alt="带你了解罗技G613 G603的黑科技！">
+                            <div class="img-text">
+                                <span class="count"><em class="icon-47"></em>123次</span>
+                                <span class="time">24:09</span>
+                            </div>
+                        </a>
+                    </div>
+                    <a href="#" target="_blank" class="list-title" title="带你了解罗技G613 G603的黑科技！">带你了解罗技G613 G603的黑科技！</a>
+                </li>
+                <li>
+                    <div class="img">
+                        <a href="#" target="_blank">
+                            <img src="https://i2.meixincdn.com/v1/img/T1seCTB7DQ1RXrhCrK.jpg" alt="带你了解罗技G613 G603的黑科技！">
+                            <div class="img-text">
+                                <span class="count"><em class="icon-47"></em>123次</span>
+                                <span class="time">24:09</span>
+                            </div>
+                        </a>
+                    </div>
+                    <a href="#" target="_blank" class="list-title" title="带你了解罗技G613 G603的黑科技！">带你了解罗技G613 G603的黑科技！</a>
+                </li>
+            </ul>
+        </div>
+        <div class="block-title">
+            <h2>热门订阅号</h2>
+            <a href="#" class="more">查看更多 ></a>
+        </div>
+        <div class="sub-list" data-node="hotSubscribe">
+            <ul class="hot-sub clearfix">
+            	<li>
+        	    	<div class="img">
+        	    	    <a href="#">
+        	    	        <img src="https://i0.meixincdn.com/v1/img/T11IVTBXbT1RXrhCrK.jpg.100x100cTzq80.jpg">
+        	    	    </a>
+        	    	</div>
+        	    	<div class="text">
+        	    		<a href="#">生锈的镜头1</a>
+        	    		<p>那些不容错过的唯美镜头那些不容错过的唯美镜头</p>
+        	    		<p class="gray">粉丝：<span>6910</span></p>
+        	    	</div>
+        	    	<div class="sub-btn active">
+        	    		<span class="on">+ 订阅</span>
+                        <span class="off">已订阅</span>
+        	    	</div>
+            	</li>
+                <li>
+                    <div class="img">
+                        <a href="#">
+                            <img src="https://i0.meixincdn.com/v1/img/T11IVTBXbT1RXrhCrK.jpg.100x100cTzq80.jpg">
+                        </a>
+                    </div>
+                    <div class="text">
+                        <a href="#">生锈的镜头2</a>
+                        <p>那些不容错过的唯美镜头那些不容错过的唯美镜头</p>
+                        <p class="gray">粉丝：<span>6910</span></p>
+                    </div>
+                    <div class="sub-btn active">
+                        <span class="on">+ 订阅</span>
+                        <span class="off">已订阅</span>
+                    </div>
+                </li>
+                <li>
+                    <div class="img">
+                        <a href="#">
+                            <img src="https://i0.meixincdn.com/v1/img/T11IVTBXbT1RXrhCrK.jpg.100x100cTzq80.jpg">
+                        </a>
+                    </div>
+                    <div class="text">
+                        <a href="#">生锈的镜头3</a>
+                        <p>那些不容错过的唯美镜头那些不容错过的唯美镜头</p>
+                        <p class="gray">粉丝：<span>6910</span></p>
+                    </div>
+                    <div class="sub-btn active">
+                        <span class="on">+ 订阅</span>
+                        <span class="off">已订阅</span>
+                    </div>
+                </li>
+                <li>
+                    <div class="img">
+                        <a href="#">
+                            <img src="https://i0.meixincdn.com/v1/img/T11IVTBXbT1RXrhCrK.jpg.100x100cTzq80.jpg">
+                        </a>
+                    </div>
+                    <div class="text">
+                        <a href="#">生锈的镜头4</a>
+                        <p>那些不容错过的唯美镜头那些不容错过的唯美镜头</p>
+                        <p class="gray">粉丝：<span>6910</span></p>
+                    </div>
+                    <div class="sub-btn active">
+                        <span class="on">+ 订阅</span>
+                        <span class="off">已订阅</span>
+                    </div>
+                </li>
+                <li>
+                    <div class="img">
+                        <a href="#">
+                            <img src="https://i0.meixincdn.com/v1/img/T11IVTBXbT1RXrhCrK.jpg.100x100cTzq80.jpg">
+                        </a>
+                    </div>
+                    <div class="text">
+                        <a href="#">生锈的镜头5</a>
+                        <p>那些不容错过的唯美镜头那些不容错过的唯美镜头</p>
+                        <p class="gray">粉丝：<span>6910</span></p>
+                    </div>
+                    <div class="sub-btn active">
+                        <span class="on">+ 订阅</span>
+                        <span class="off">已订阅</span>
+                    </div>
+                </li>
+                <li>
+                    <div class="img">
+                        <a href="#">
+                            <img src="https://i0.meixincdn.com/v1/img/T11IVTBXbT1RXrhCrK.jpg.100x100cTzq80.jpg">
+                        </a>
+                    </div>
+                    <div class="text">
+                        <a href="#">生锈的镜头6</a>
+                        <p>那些不容错过的唯美镜头那些不容错过的唯美镜头</p>
+                        <p class="gray">粉丝：<span>6910</span></p>
+                    </div>
+                    <div class="sub-btn active">
+                        <span class="on">+ 订阅</span>
+                        <span class="off">已订阅</span>
+                    </div>
+                </li>
+                <li>
+                    <div class="img">
+                        <a href="#">
+                            <img src="https://i0.meixincdn.com/v1/img/T11IVTBXbT1RXrhCrK.jpg.100x100cTzq80.jpg">
+                        </a>
+                    </div>
+                    <div class="text">
+                        <a href="#">生锈的镜头7</a>
+                        <p>那些不容错过的唯美镜头那些不容错过的唯美镜头</p>
+                        <p class="gray">粉丝：<span>6910</span></p>
+                    </div>
+                    <div class="sub-btn active">
+                        <span class="on">+ 订阅</span>
+                        <span class="off">已订阅</span>
+                    </div>
+                </li>
+                <li>
+                    <div class="img">
+                        <a href="#">
+                            <img src="https://i0.meixincdn.com/v1/img/T11IVTBXbT1RXrhCrK.jpg.100x100cTzq80.jpg">
+                        </a>
+                    </div>
+                    <div class="text">
+                        <a href="#">生锈的镜头8</a>
+                        <p>那些不容错过的唯美镜头那些不容错过的唯美镜头</p>
+                        <p class="gray">粉丝：<span>6910</span></p>
+                    </div>
+                    <div class="sub-btn active">
+                        <span class="on">+ 订阅</span>
+                        <span class="off">已订阅</span>
+                    </div>
+                </li>
+                <li>
+                    <div class="img">
+                        <a href="#">
+                            <img src="https://i0.meixincdn.com/v1/img/T11IVTBXbT1RXrhCrK.jpg.100x100cTzq80.jpg">
+                        </a>
+                    </div>
+                    <div class="text">
+                        <a href="#">生锈的镜头9</a>
+                        <p>那些不容错过的唯美镜头那些不容错过的唯美镜头</p>
+                        <p class="gray">粉丝：<span>6910</span></p>
+                    </div>
+                    <div class="sub-btn active">
+                        <span class="on">+ 订阅</span>
+                        <span class="off">已订阅</span>
+                    </div>
+                </li>
+            	
+            </ul>
+            <!-- <a data-node class="prevBtn icon-16"></a>
+            <a data-node class="nextBtn icon-17"></a> -->
+        </div>
+        <div class="block-title">
+            <h2>原创精选</h2>
+        </div>
+        <div class="hot-list">
+            <ul class="clearfix list">
+                <li>
+                    <div class="img">
+                        <a href="#" target="_blank">
+                            <img src="https://i2.meixincdn.com/v1/img/T1seCTB7DQ1RXrhCrK.jpg" alt="带你了解罗技G613 G603的黑科技！">
+                            <span class="live">即将直播</span>
+                        </a>
+                    </div>
+                    <a href="#" target="_blank" class="list-title" title="带你了解罗技G613 G603的黑科技！">带你了解罗技G613 G603的黑科技！</a>
+                    <div class="num">
+                        <a target="_blank" href="#" class="list-name">
+                            <img src="https://i0.meixincdn.com/v1/img/T11IVTBXbT1RXrhCrK.jpg.100x100cTzq80.jpg">
+                            <span>ZEALER</span>
+                        </a>
+                    </div>
+                </li>
+                <li>
+                    <div class="img">
+                        <a href="#" target="_blank">
+                            <img src="https://i2.meixincdn.com/v1/img/T1seCTB7DQ1RXrhCrK.jpg" alt="带你了解罗技G613 G603的黑科技！">
+                            <span class="vod">已结束</span>
+                        </a>
+                    </div>
+                    <a href="#" target="_blank" class="list-title" title="带你了解罗技G613 G603的黑科技！">带你了解罗技G613 G603的黑科技！</a>
+                    <div class="num">
+                        <a target="_blank" href="#" class="list-name">
+                            <img src="https://i0.meixincdn.com/v1/img/T11IVTBXbT1RXrhCrK.jpg.100x100cTzq80.jpg">
+                            <span>ZEALER</span>
+                        </a>
+                    </div>
+                </li>
+                <li>
+                    <div class="img">
+                        <a href="#" target="_blank">
+                            <img src="https://i2.meixincdn.com/v1/img/T1seCTB7DQ1RXrhCrK.jpg" alt="带你了解罗技G613 G603的黑科技！">
+                            <div class="img-text">
+                                <span class="count"><em class="icon-47"></em>123次</span>
+                                <span class="time">24:09</span>
+                            </div>
+                        </a>
+                    </div>
+                    <a href="#" target="_blank" class="list-title" title="带你了解罗技G613 G603的黑科技！">带你了解罗技G613 G603的黑科技！</a>
+                    <div class="num">
+                        <a target="_blank" href="#" class="list-name">
+                            <img src="https://i0.meixincdn.com/v1/img/T11IVTBXbT1RXrhCrK.jpg.100x100cTzq80.jpg">
+                            <span>ZEALER</span>
+                        </a>
+                    </div>
+                </li>
+                <li>
+                    <div class="img">
+                        <a href="#" target="_blank">
+                            <img src="https://i2.meixincdn.com/v1/img/T1seCTB7DQ1RXrhCrK.jpg" alt="带你了解罗技G613 G603的黑科技！">
+                            <div class="img-text">
+                                <span class="count"><em class="icon-47"></em>123次</span>
+                                <span class="time">24:09</span>
+                            </div>
+                        </a>
+                    </div>
+                    <a href="#" target="_blank" class="list-title" title="带你了解罗技G613 G603的黑科技！">带你了解罗技G613 G603的黑科技！</a>
+                    <div class="num">
+                        <a target="_blank" href="#" class="list-name">
+                            <img src="https://i0.meixincdn.com/v1/img/T11IVTBXbT1RXrhCrK.jpg.100x100cTzq80.jpg">
+                            <span>ZEALER</span>
+                        </a>
+                    </div>
+                </li>
+                <li>
+                    <div class="img">
+                        <a href="#" target="_blank">
+                            <img src="https://i2.meixincdn.com/v1/img/T1seCTB7DQ1RXrhCrK.jpg" alt="带你了解罗技G613 G603的黑科技！">
+                            <div class="img-text">
+                                <span class="count"><em class="icon-47"></em>123次</span>
+                                <span class="time">24:09</span>
+                            </div>
+                        </a>
+                    </div>
+                    <a href="#" target="_blank" class="list-title" title="带你了解罗技G613 G603的黑科技！">带你了解罗技G613 G603的黑科技！</a>
+                    <div class="num">
+                        <a target="_blank" href="#" class="list-name">
+                            <img src="https://i0.meixincdn.com/v1/img/T11IVTBXbT1RXrhCrK.jpg.100x100cTzq80.jpg">
+                            <span>ZEALER</span>
+                        </a>
+                    </div>
+                </li>
+                <li>
+                    <div class="img">
+                        <a href="#" target="_blank">
+                            <img src="https://i2.meixincdn.com/v1/img/T1seCTB7DQ1RXrhCrK.jpg" alt="带你了解罗技G613 G603的黑科技！">
+                            <div class="img-text">
+                                <span class="count"><em class="icon-47"></em>123次</span>
+                                <span class="time">24:09</span>
+                            </div>
+                        </a>
+                    </div>
+                    <a href="#" target="_blank" class="list-title" title="带你了解罗技G613 G603的黑科技！">带你了解罗技G613 G603的黑科技！</a>
+                    <div class="num">
+                        <a target="_blank" href="#" class="list-name">
+                            <img src="https://i0.meixincdn.com/v1/img/T11IVTBXbT1RXrhCrK.jpg.100x100cTzq80.jpg">
+                            <span>ZEALER</span>
+                        </a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+	</div>
+	<!-- main -->
+	<%- include('../../common/footer.ejs')%>
+	<script src="<%=devenv%>dist/js/vendor.js"></script>
+	<script src="<%=devenv%>dist/js/index-new.js"></script>
+</body>
+</html>

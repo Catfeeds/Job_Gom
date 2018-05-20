@@ -1,0 +1,101 @@
+@import '../../widget/config/_base.scss';
+@import '../../widget/config/_mixins.scss';
+.wrap{
+	width: 800px;
+	height: 450px;
+	overflow: hidden;
+	margin: 47px auto 105px;
+	background-color: #fff;
+}
+.authorize-t{
+	width: 582px;
+	overflow: hidden;
+	margin: 72px auto 40px;
+	.overseas, .gomeplus{
+		width: 220px;
+		height: 130px;
+	}
+	.overseas{
+		float: left;
+		background: url(../../images/public/overseas.png) #fafafa no-repeat center center;
+	}
+	.link{
+		float: left;
+		width: 93px;
+		color: #666;
+		line-height: 24px;
+		text-align: center;
+		margin: 36px 24px 50px;
+		background: url(../../images/public/link.png) no-repeat center center;
+	}
+	.gomeplus{
+		float: right;
+		background: url(../../images/public/logo.png) #fafafa no-repeat 48px 34px;
+		background-size: 125px 41px;
+	}
+}
+.authorize-b{
+	width: 578px;
+	margin: 0 auto;
+	text-align: center;
+	.txt {
+		text-align: center;
+		margin-bottom: 14px;
+	}
+	ul{
+		text-align: left;
+	}
+	li{
+		line-height: 22px;
+		margin-left: 174px;
+		overflow: hidden;
+	}
+	.iconn-67{
+		width: 6px;
+		height: 6px;
+		font-size: 6px;
+		color: #fc524e;
+		margin-right: 6px;
+	}
+	.space{
+		margin: 15px 0 0 177px;
+		p{
+			color: #666;
+		}
+	}
+	.check{
+		float: left;
+		width: 12px;
+		height: 12px;
+	    margin: 4px 7px 0 0;
+		border: 1px solid $bor-bom;
+		position: relative;
+		.iconn-20{
+			display: none;
+			width: 15px;
+			height: 15px;
+			font-size: 20px;
+			color: #fc514e;
+			position: absolute;
+			top: -6px;
+			right: -1px;
+		}
+		&.active{
+			.iconn-20{
+				display: inline-block;
+			}
+		}
+	}
+	.know:hover{
+		color: #fc524e;
+	}
+	.pc-btn{
+		width: 70px;
+		margin-top: 15px;
+	}
+	.btn-cancel{
+		color: #333;
+		margin-left: 34px;
+		background-color: #eae9e3;
+	}
+}

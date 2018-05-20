@@ -1,0 +1,18 @@
+doctype html
+html(lang="zh-CN", data-use-rem="750")
+	include ../../../m-widget/head/head.jade
+	link(type="text/css",rel="stylesheet",href="../../css/public/gomeplusUI.css")
+	link(type="text/css",rel="stylesheet",href="../../css/module/plaintext/plaintext.css")
+	//- link(type="text/css",rel="stylesheet",href="../../css/module/im-packet/im-packet.css")
+	body.opg.im-packet
+		include ../../../m-widget/head/rem.jade
+		<!--header-->
+		header.header
+			.h-left
+				a.h-back(href="javascript:;")
+					em.iconn-1
+			.h-cnt.flex-cell
+				h1.h-tit 说明
+		section.plaintext
+			h2 国美币是否可以提现？
+			p 国美币账户余额可随时提现，即将余额转至自己的银行卡内；安全等级低于V1（包含V1）的用户累计提现额度为1000元(与银盈通共享)，安全等级高于V1的用户没有提现上限；单笔提现金额最少为10元，每个国美币账户每天最多提现5次。

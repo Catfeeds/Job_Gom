@@ -1,0 +1,22 @@
+doctype html
+html(lang="zh-CN")
+	include ../../../pc-widget/head/head.jade
+	link(type="text/css",rel="stylesheet",href="../../css/public/public.css")
+	link(type="text/css",rel="stylesheet",href="../../css/module/searchresultnone.css")
+	body.opg
+		include ../../../pc-widget/header/header.jade
+		include ../../../pc-widget/menu/menu.jade
+		.wrap-box
+			.search-result.top30
+				.result-text.clearfix
+					// icon替换 icon
+					em.iconn-25
+					p
+						| 抱歉，没有找到“
+						span 关键词
+						| ”相关的结果
+						br
+						| 建议您尝试其他关键词
+		include ../../../pc-widget/footer/footer.jade
+			
+		

@@ -1,0 +1,104 @@
+/* index */
+@import '../../components/_app';
+@import '../../base/public';
+@import "../../components/scroll-load.scss";
+// @import "../../components/pullToRefresher";
+@import '../../components/pullToRefresher';
+
+
+body, html {
+    background-color:#e8edf3;
+    height: 100%;
+}
+.list-item{
+    padding-bottom: rem(30px);
+    >a{
+        display:block;
+        background: #FFF;
+        padding: rem(20px) rem(20px) rem(35px) rem(20px);
+    }
+    .item-img{
+        width:rem(710px);
+        height: rem(398px);
+        overflow:hidden;
+        position: relative;
+        background: url(../../../imgs/public/video-default.png) no-repeat #d6d6d6;
+        background-size: cover;
+        >img{
+            width:rem(710px);
+            height:rem(398px);
+        }
+    }
+    .item-flag{
+        height:rem(40px);
+        line-height:rem(40px);
+        font-size:rem(28px);
+        color:#FFF;
+        background-color:#ea362f;
+        padding:0 rem(16px);
+        position: absolute;
+        right: 0;
+        bottom: 0;
+    }
+    .item-title{
+        max-height:rem(96px);
+        font-size:rem(40px);
+        line-height:rem(48px);
+        color:#202020;
+        font-weight: normal;
+        margin-top:rem(25px);
+        @include ellipsis(2);
+    }
+    .item-desc{
+        font-size:rem(24px);
+        line-height:rem(32px);
+        color:#808080;
+        margin-top:rem(20px);
+        @include ellipsis(2);
+    }
+}
+.list-item:last-child{
+    padding-bottom:0;
+}
+
+::-webkit-scrollbar{display:none}
+
+.nav-list{
+    height: rem(200);
+    background: #fff;
+    width: 100%;
+    overflow-x: scroll;
+    white-space:nowrap;
+    position:relative;
+    margin-bottom:rem(10);
+    &:before{
+        content:'';
+        display:block;
+        width:0;
+        overflow:hidden;
+        border-top:none;
+        border-right:rem(16) solid transparent;
+        border-bottom:rem(20) solid #e8edf3;
+        border-left:rem(16) solid transparent;
+        position:absolute;
+        left:rem(56);
+        bottom:0;
+    }
+    a{
+        width: rem(140);
+        display: inline-block;
+        background: url(../../../imgs/public/icon-zb.png) no-repeat center rem(30);
+        background-size: rem(100);
+        padding-top: rem(130);
+        text-align: center;
+        font-size: rem(30);
+        color: #333;
+    }
+}
+
+/* 解决在iphone x上,因为webview设置不当,导致页面元素被遮挡的问题 */
+@media only screen and (device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3) {
+    #videoList{
+        padding-bottom: 34px;
+    }
+}

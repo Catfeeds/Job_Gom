@@ -1,0 +1,45 @@
+doctype html
+html(lang="zh-CN")
+	include ../../../pc-widget/head/head.jade
+	link(type="text/css",rel="stylesheet",href="../../css/public/public.css")
+	link(type="text/css",rel="stylesheet",href="../../css/module/order.css")
+	body.opg
+		include ../../../pc-widget/header/header.jade
+		include ../../../pc-widget/menu/menu.jade
+		.wrap-box
+			h2.title 订单信息
+			.order-state
+				p.attention 提示：请您在下单后3小时内完成支付，否则订单会自动取消
+				dl.clearfix
+					dt 订单编号：
+					dd 8000000000
+				dl.clearfix
+					dt 支付金额：
+					dd
+						span ￥50.00
+				dl.clearfix
+					dt 下单时间：
+					dd 2015.05.05 12:20:00
+				dl.clearfix
+					dt 寄 送 至：
+					dd 北京市朝阳区东三环霄云路8号  蒋先生 收
+			h2.title 支付平台
+			.order-state.clearfix
+				label.pay-way.active
+					span.icon-tui
+					input(type="radio")
+					span.menu-radio.menu-radio-checked
+					img(src="../../images/shop/pay-gm.png")
+				label.pay-way
+					input(type="radio")
+					span.menu-radio.menu-radio-checked
+					img(src="../../images/shop/pay-weixin.png")
+				label.pay-way
+					input(type="radio")
+					span.menu-radio
+					img(src="../../images/shop/pay-zfb.png")
+				.btn-box
+					a(href="javascript:;").pc-btn.pc-bj-fc8753.pc-btnw120.pc-btnh45 下一步
+		include ../../../pc-widget/footer/footer.jade
+			
+		

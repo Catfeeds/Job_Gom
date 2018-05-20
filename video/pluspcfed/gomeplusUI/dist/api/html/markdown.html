@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="zh-CN" data-use-rem="750" style="font-size:50px;">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+	<meta name="format-detection" content="telephone=no">
+	<meta name="format-detection" content="email=no">
+	<meta http-equiv="expires" content="0">
+	<title>markdown 文档模板</title>
+	<link type="text/css" rel="stylesheet" href="../css/markdown.css">
+</head>
+<body class="opg body-font-family">
+	<script type="text/javascript">
+	 (function appVersion() {
+      	window.platform = {};
+      	var ua = window.navigator.userAgent.toLowerCase();
+      	var isIphone = ua.match(/iphone os/i) == 'iphone os';
+      	var isAndroid = ua.match(/android/i) == 'android';
+      	// ipad 也为mobile
+      	var isMobile = ua.match(/mobile/i) == 'mobile';
+      	var isIpad = ua.match(/ipad/) == 'ipad';
+      
+      	platform.isMobile = function () {
+      		return isMobile && !isIpad;
+      	}
+      	if(platform.isMobile()) {
+      		(function(win){var doc=win.document,html=doc.documentElement,option=html.getAttribute("data-use-rem");if(option===null){return}var baseWidth=parseInt(option).toString()==="NaN"?640:parseInt(option);var grids=baseWidth/100;var clientWidth=html.clientWidth||320;html.style.fontSize=clientWidth/grids+"px";var testDom=document.createElement("div");var testDomWidth=0;var adjustRatio=0;testDom.style.cssText="height:0;width:1rem;";doc.body.appendChild(testDom);var calcTestDom=function(){testDomWidth=testDom.offsetWidth;if(testDomWidth!==Math.round(clientWidth/grids)){adjustRatio=clientWidth/grids/testDomWidth;var reCalcRem=clientWidth*adjustRatio/grids;html.style.fontSize=reCalcRem+"px"}else{doc.body.removeChild(testDom)}};setTimeout(calcTestDom,20);var reCalc=function(){var newCW=html.clientWidth;if(newCW===clientWidth){return}clientWidth=newCW;html.style.fontSize=newCW*(adjustRatio?adjustRatio:1)/grids+"px"};if(!doc.addEventListener){return}var resizeEvt="orientationchange" in win?"orientationchange":"resize";win.addEventListener(resizeEvt,reCalc,false);doc.addEventListener("DOMContentLoaded",reCalc,false)})(window);
+      	}
+      })()
+	</script>
+	<!-- markdown -->
+	<div class="markdown">
+		<h1 type="h1">标题1</h2>
+		<h2 type="h2">标题2</h2>
+		<h3 type="h3">标题3</h3>
+		<h4 type="h4">标题4</h4>
+		<h5 type="h5">标题5</h5>
+		<h6 type="h6">标题6</h6>
+		<dl>
+			<dt type="h3">说明</dt>
+			<dd type="p item">构建并推送完成后，通过固定格式的邮件通知产品、设计师、前端开发及项目其它相关人员。</dd>
+			<dd type="p item">访问形式：虚拟服务器(IP地址或二维码)</dd>
+		</dl>
+		<h3>引用</h3>
+		<blockquote type="blockquote">
+			<p>引用说明</p>
+		</blockquote>
+		<h3>计算机码</h3>
+		<div type="code">pug</div>
+		<div type="code">sass</div>
+		<h3>段落</h3>
+		<p>访问形式：虚拟服务器(IP地址或二维码)</p>
+		<h3>源码</h3>
+		<pre type="pre-warn"><code>bounce-in($prefixes)</code></pre>
+		<pre><code>bounce-in($prefixes)</code></pre>
+		<h3>表格</h3>
+		<table>
+			<thead>
+				<tr>
+					<th>参数</th>
+					<th>参数种类</th>
+					<th>默认值</th>
+					<th>选项</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>$value</td>
+					<td>contain<sup>new</sup></td>
+					<td>contain</td>
+					<td>选填</td>
+				</tr>
+				<tr>
+					<td>$line</td>
+					<td>自定义</td>
+					<td>2</td>
+					<td>选填</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+	<!-- markdown end -->
+</body>
+</html>

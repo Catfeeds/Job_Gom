@@ -1,0 +1,24 @@
+// based on prefix() API
+// Arhtor: Mapk Jia Shilong
+
+@import "../utils/_prefix.scss";
+
+// ## Define translate
+// -----------------------------------------------------
+
+// translate
+@mixin translate($X:0,$Y:0,$prefixs:webkit){
+	@include prefix(transform,translate($X,$Y),$prefixs);
+}
+// translateX
+@mixin translateX($X:0,$prefixs:webkit){
+	@include prefix(transform,translateX($X),$prefixs);
+}
+// translateY
+@mixin translateY($Y:0,$prefixs:webkit){
+	@include prefix(transform,translateY($Y),$prefixs);
+}
+// translateZ
+@mixin translateZ($Z:0,$prefixs:webkit){
+	@include prefix(transform,translateZ($Z),$prefixs);
+}

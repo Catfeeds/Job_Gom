@@ -1,0 +1,21 @@
+extends ../../../m-widget/head/head-set.jade
+block style
+	link(type="text/css",rel="stylesheet",href="../../css/module/daren/daren.css")
+block body
+	body.opg.daren
+		include ../../../m-widget/head/rem.jade
+		// /header
+		header.header
+			.h-left
+				a.h-back(href="javascript:;")
+					em.iconn-1
+			.h-cnt.flex-cell
+				h1.h-tit 达人招募
+		// /content
+		.dr-bg.drzm-t
+		.dr-bg.drzm-c
+		a(href="##").dr-btn.tq-btn 去创建圈子呀
+		p.btn-btxt 聚拢人气，建个专属圈子吧～
+		a(href="##").auth
+			| 去实名认证
+			em.iconn-41

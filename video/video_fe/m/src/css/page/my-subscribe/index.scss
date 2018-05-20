@@ -1,0 +1,14 @@
+/* my-subscribe */
+@import "../../base/public.scss";
+@import "../../components/topTitle.scss";
+@import "../../components/sub-list.scss";
+@import "../../components/scroll-load.scss";
+@import '../../components/pullToRefresher';
+
+body{
+	background:#FFF;
+	padding-bottom: 0;
+}
+.subscribe-list{
+	padding-top:rem(40);
+}

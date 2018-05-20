@@ -1,0 +1,24 @@
+{
+  "name": "md5",
+  "version": "1.0.0",
+  "description": "gulp",
+  "main": "index.js",
+  "scripts": {
+    "release": "node ver-tool/app.js"
+  },
+  "author": "liangxiao",
+  "license": "ISC",
+  "devDependencies": {
+    "browser-sync": "^2.18.5",
+    "gulp": "^3.9.1",
+    "gulp-clean": "^0.3.2",
+    "gulp-minify-html": "^1.0.6",
+    "gulp-rev": "^7.1.2",
+    "gulp-rev-collector": "^1.1.1",
+    "gulp-rev-hash3": "^1.0.8",
+    "gulp-sass": "^3.0.0",
+    "gulp-uglify": "^2.0.0",
+    "node-sass": "^4.1.1",
+    "run-sequence": "^1.2.2"
+  }
+}

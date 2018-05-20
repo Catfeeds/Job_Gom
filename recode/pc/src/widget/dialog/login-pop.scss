@@ -1,0 +1,324 @@
+@import '../config/_base.scss';
+@import '../config/_mixins.scss';
+@import '../reset/reset.scss';
+@import '../icon/icon.scss';
+.clearfix{
+    @include clearfix();
+}
+::-ms-clear, ::-ms-reveal{display: none;}
+.gm-gray{
+    color: #999!important;
+}
+.bg-fff{
+   background: #fff;
+}
+.none{
+    display: none;
+}
+.pc-btn{
+    color: #fff;
+    background: #f95353;
+    font-size: 14px;
+    width: auto;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    margin: 0 auto;
+    height: 45px;
+    line-height: 45px;
+    width: 300px;
+    font-size: 16px;
+}
+.icon-close{
+    color: $link-hover;
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    font-size: 28px;
+    cursor: pointer;
+    background: transparent;
+    _background: #fff;
+    border: 0;
+    -webkit-appearance: none;
+    outline: none;
+}
+.ui-dialog{
+    position: relative; 
+    min-height: 130px;
+    background: #fff;
+    padding: 24px 0;
+    border-radius: 3px;
+}
+.lg-code-main{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width:100%;
+    height: 100%;
+    box-sizing: border-box;
+    padding: 23px 20px;
+    background: url(../../images/login/lg-pc-pop.png) #fff no-repeat 20px 0;
+    .land-title-pop{
+        line-height: 1;
+        font-size: 16px;
+        color: #646464;
+        font-weight: normal;
+        text-align: center;
+    }
+    .land-code-img{
+        width: 135px;
+        height: 135px;
+        margin: 62px auto 42px;
+        position: relative;
+        img{
+            display: block;
+            width: 135px;
+            height: 135px;
+        }
+        .sm-failed{
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 135px;
+            height: 93px;
+            padding-top: 42px;
+            font-size: $text16;
+            text-align: center;
+            background-color: rgba(255,255,255,.95);
+            a{
+                display: block;
+                width: 95px;
+                height: 30px;
+                line-height: 30px;
+                color: $color-txt;
+                border-radius: 3px;
+                font-size: 14px;
+                background-color: #f95353;
+                margin: 10px auto 0;
+            }
+        }
+    }
+    .land-bottom{
+        padding: 0 0 42px 75px;
+        .iconn-19{
+            float: left;
+            font-size: 40px;
+            color: #f95353;
+            margin-right: 12px;
+            display: inline;
+        }
+        p{
+            width: 122px;
+            float: left;
+            span{
+                color: #f95353;
+            }
+        }
+    }
+    .sm-success{
+        text-align: center;
+        .sm-succes-img{
+            display: inline-block;
+            width: 67px;
+            height: 117px;
+            margin-top: 61px;
+        }
+        span{
+            display: block;
+            font-size: $text12;
+            color: $color-gray;
+            margin-top: 14px;
+        }
+        p{
+            font-size: $text16;
+            margin: 12px 0 48px;
+        }
+        a{
+            display: inline-block;
+            font-size: $text12;
+            color: #d71438;
+            padding-bottom: 14px;
+        }
+    }
+}
+.lg-land-main{
+    background: url(../../images/login/lg-sm-pop.png) #fff no-repeat 20px 0;
+    background-color: #fff;
+    width:300px;
+    padding:10px 20px;
+    float: right;
+    margin-top:10px;
+    position: relative;
+	.lg-saoma{
+	    position: absolute;
+	    top: 0;
+	    right: 0;
+	    width: 55px;
+	    height: 55px;
+	    display: block;
+	}
+	.lg-saoma-pop{
+	    position: absolute;
+	    top: 0;
+	    left: 20px;
+	    width: 55px;
+	    height: 55px;
+	    display: block;
+	}
+	.iconn-13{
+		top: -8px;
+	}
+    .lg-error-tip{
+        margin-left: 0;
+        width: 298px;
+        border:1px solid #ffb2b2;
+        background-color: #ffefea;
+        color: #f95353;
+        border-radius: 2px;
+        position: absolute;
+        top: 48px;
+        left: 20px;
+    }
+    .lg-land-tl-pop{
+        height: 32px;
+        line-height: 32px;
+        margin: 12px 0 44px;
+        font-weight: normal;
+        font-size: 16px;
+        color: #646464;
+        text-align: center;
+    }
+    .land-form-it{
+        border: 1px solid #e5e5e5;
+        border-radius: 2px;
+        height: 43px;
+        margin-bottom: 20px;
+        position: relative;
+        .icon-tip{
+
+        }
+        .iconn-14, .iconn-15{
+            float: left;
+            width:42px;
+            height: 26px;
+            line-height: 26px;
+            text-align: center;
+            font-size: 22px;
+            color: #dcdcdc;
+            border-right:1px solid #e5e5e5;
+            margin-top:9px; 
+        }
+        .iconn-13{
+                color: #e8e8e8;
+                font-size: 20px;
+                position: absolute;
+                top:12px;
+                right: 9px;
+                cursor: pointer;
+          }
+        .land-input-md{
+            width: 215px;
+            height: 43px;
+            line-height: 1;
+            line-height: 43px\9;
+            padding: 0 12px 0 11px;
+            border:none;
+            background: transparent;
+        }
+    }
+    .land-form-cell{
+        height: 45px;
+        .land-input-short{
+            height: 43px;
+            line-height: 43px;
+            width: 103px;
+            padding:0 10px;
+            border:1px solid #e5e5e5;
+            border-radius: 2px;
+            margin-right: 15px;
+        }
+        .code-img{
+            width: 100px;
+            height: 30px;
+        }
+        .chage-code{
+            color: #f95353;
+            margin-left: 10px;
+            text-decoration: underline;
+        }
+    }
+        .land-focus{
+            border:1px solid #00a0e9;
+        }
+        .land-error-it{
+        border:1px solid #f95353;
+        .iconn-14, .iconn-15{
+            color: #f95353;
+        }
+    }
+    .land-forget-txt{
+        height: 32px;
+        line-height: 32px;
+        margin-top: 24px;
+        .forget-ps-word{
+            float: left;
+            color: #a7a7a7;
+        }
+        .rapid-log{
+            float: right;
+            color: #f95353;
+        }
+    }
+    .oac-btn{
+		display: block;
+	    color: #f95353;
+		text-align: right;
+		margin-top: 12px;
+    }
+    .land-types{
+        color: #a7a7a7;
+        line-height: 22px;
+        height: 30px;
+        margin: 20px 0 7px;
+        a{
+            display: inline-block;
+            width: 26px;
+            height: 26px;
+            line-height: 26px;
+            text-align: center;
+            color: #999;
+            font-size: 18px;
+            vertical-align: middle;
+            border: 1px solid #999;
+            border-radius: 50%;
+            margin-right: 10px;
+            &:hover{
+                color: $bg-fff;
+                background: #5ed5e0;
+                border: 1px solid transparent;
+                @include border-radius(50%);
+            }
+        }
+        .iconn-17:hover{
+            background: #63cf5b;
+        }
+        .iconn-18:hover{
+            background: #f95353;
+        }
+        .icon-gm,.icon-gj{
+            text-indent: -9999px;
+        }
+        .icon-gm{
+            background: url(../../images/login/icon-gm.png) no-repeat center;
+            &:hover{
+                background: url(../../images/login/icon-gm-on.png) no-repeat center #0091db;
+            }
+        }
+        .icon-gj{
+            background: url(../../images/login/icon-gj.png) no-repeat center;
+            &:hover{
+                background: url(../../images/login/icon-gj-on.png) no-repeat center #d04d63;
+            }
+        }
+    }
+}

@@ -1,0 +1,81 @@
+doctype html
+html(lang="zh-CN", data-use-rem="750")
+	include ../../../m-widget/head/head.jade
+	link(type="text/css",rel="stylesheet",href="../../css/public/gomeplusUI.css")
+	link(type="text/css",rel="stylesheet",href="../../css/module/gmb/gmb.css")
+	body.opg.gmb
+		include ../../../m-widget/head/rem.jade
+		style.
+			h4{font-size:.4rem; margin: .3rem .2rem .2rem;}
+			.m-picker{position:static}
+		
+		h4 14-国美币 首页
+		.m-picker
+			.p-bd
+				p.p-item.bor-b 银行卡管理
+				p.p-item.bor-b 交易管理
+				p.p-item.bor-b 常见问题
+				p.p-item.bor-b 取消
+
+
+		h4 16-国美币 充值
+		.m-picker
+			.flex-box.bor-b.p-hd
+				p.flex-cell &nbsp;
+				p.flex-cell.close ×
+			.p-bd
+				.bor-b.m-radio
+					em.u-sj
+					| 北京银行卡
+				.bor-b.m-radio
+					em.u-sj
+					| 北京银行卡
+				.bor-b.m-radio
+					em.u-sj
+					| 北京银行卡
+				.bor-b.m-radio
+					em.u-sj
+					| 北京银行卡
+			.bor-t.p-ft
+				a.p-btn(href="javascript:;")
+					em.u-sj
+					| 添加银行卡
+
+		h4 30-银行卡详情页
+		.m-picker
+			.p-bd
+				p.p-item.bor-b 删除
+				p.p-item.bor-b 取消
+
+		h4 31-交易记录2(1)
+		.m-picker
+			.flex-box.bor-b.p-hd
+				p.flex-cell &nbsp;
+				p.flex-cell.close ×
+			.p-bd
+				.m-radio
+					.bor-b.m-radio
+						em.u-sj
+						| 全部
+					.bor-b.m-radio
+						em.u-sj
+						| 红包
+					.bor-b.m-radio
+						em.u-sj
+						| 充值
+					.bor-b.m-radio
+						em.u-sj
+						| 退款
+					.bor-b.m-radio
+						em.u-sj
+						| 全部
+					.bor-b.m-radio
+						em.u-sj
+						| 红包
+					.bor-b.m-radio
+						em.u-sj
+						| 充值
+					.bor-b.m-radio
+						em.u-sj
+						| 退款
+		

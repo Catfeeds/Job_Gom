@@ -1,0 +1,104 @@
+doctype html
+html(lang="zh-CN")
+	include ../../widget/head/head.pug
+	link(type="text/css",rel="stylesheet",href="../../css/public/public.css")
+	link(type="text/css",rel="stylesheet",href="../../css/module/releasetopic1.css")
+	body.opg
+		include ../../widget/header/header.pug
+		include ../../widget/menu/menu.pug
+		.top
+			em.iconn-1
+			span 返回顶部
+		div.wrap-box.release-topic-wrap
+			include ../../widget/crumbs/crumbs.pug
+			.edit-wrap
+				.input-topic
+					input.input-txt(type="text")
+					label.topic-txt
+						| 请输入话题标题
+						span （必填）
+					p.content_discuss_tips
+						span 32
+						| /50
+				.nav-occupying
+					.changeable-nav
+						.edit-nav
+							a(href="javascript:;")
+								// icon替换 insert-imoj icon
+								em.iconn-27
+								span 表情
+							a(href="javascript:;")
+								// icon替换 insert-pic icon
+								em.iconn-28
+								span 图片
+							a(href="javascript:;")
+								// icon替换 insert-merchant icon
+								em.iconn-29
+								span 商品
+				.edit-box
+					p 鲜果贝糖水黄桃罐头鲜果贝糖水黄桃罐头鲜果贝糖水黄桃罐头鲜果贝糖水黄桃罐头鲜果贝糖水黄桃罐头鲜果贝糖水黄桃罐头
+					p
+						img(src="http://img1.gomein.net.cn/image/prodimg/production_image/201604/27/1123230704/1000871346_360.jpg")
+					.zone-content
+						.publish-item.hover-dele
+							a.img-out(href="javascript:;")
+								img(src="http://img1.gomein.net.cn/image/prodimg/production_image/201604/27/1123230704/1000871346_360.jpg")
+							.publish-cont
+								h3.pub-tl
+									a(href="javascript:;") 鲜果贝糖水黄桃罐头425g*6新鲜方便蜜桃水果罐头宁波特产
+								.pub-row
+									span.red ￥
+									strong.money-inf 199.00
+								.pub-row
+									em.icon-fan 返
+									| 购买该商品最高可返
+									span.red 0.04
+									| 国美币
+								a.scan-more(href="javascript:;") 查看详情
+						.publish-item.hover-dele
+							a.img-out(href="javascript:;")
+								img(src="http://img1.gomein.net.cn/image/prodimg/production_image/201604/27/1123230704/1000871346_360.jpg")
+							.publish-cont
+								h3.pub-tl
+									a(href="javascript:;") 鲜果贝 糖水黄桃罐头
+									a(href="javascript:;").icon-fan 优惠券
+								.pub-row
+									span.red ￥
+									strong.money-inf 199.00
+								a.scan-more(href="javascript:;") 查看详情
+						.publish-text
+							a(href="#")
+								img(src="http://img1.gomein.net.cn/image/prodimg/production_image/201604/27/1123230704/1000871346_360.jpg")
+							a(href="#").link 听说下雪天和巧克力更配哦~今日特价。听说下雪天和巧克力更配哦~今日特价。听说下雪天和巧克力更配哦~今日特价。
+							a(href="#").pc-btn 查看详情
+			.wrap-box.whtie-bg
+				.publish-label.clearfix
+					i.pub-lab-icon
+					input.pub-lab-cont(type="text",name="label",placeholder="添加标签",data-node="lab-cont")
+					.pub-search-lenovo(data-node="search-lenovo")
+						ul.label-lists.clearfix(data-node="label-lists")
+							li.label-frist-items(data-node="frist-items")
+								span 创建新标签
+							ul.label-list-search.clearfix(data-node="list-search")
+				.publish-form
+					span.pub-for-title
+						| 发布的圈子
+						span.red (必选)
+						| ：
+					em.topic-cell 美食甜品
+					a.btn-or-md(href="javascript:;") 选择圈子
+					a.btn-red-md(href="javascript:;") 发布
+					a.btn-red-md.btn-yl(href="javascript:;") 预览
+					a.btn-red-md.btn-white(href="javascript:;" data-action="save") 保存
+				.publish-label-created
+					ol.label-crt-lists.clearfix
+						li.label-crt-items
+							span.crt-items-md 冰淇淋
+							i.crt-items-close ×
+						li.label-crt-items
+							span.crt-items-md 冰淇淋
+							i.crt-items-close ×
+						li.label-crt-items
+							span.crt-items-md 冰淇淋
+							i.crt-items-close ×
+		include ../../widget/footer/footer.pug

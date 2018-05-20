@@ -1,0 +1,272 @@
+@charset "utf-8";
+
+// _configure.scss
+@import "../public/_configure.scss";
+
+.open_account{
+	.group-detail{
+		overflow:hidden;
+		margin:0;
+	}
+	.ele-input-s{
+		width:86px;
+	}
+	.ele-input-m{
+		width:194px;
+	}
+}
+.amp-content{
+	// background-color: #eff3f6;
+	vertical-align: middle;
+}
+.account_content {
+	width: 100%;
+	height: 890px;
+	background-color: white;
+	margin-top:40px;
+	padding: 50px 0;
+	h1{
+		font-size: 26px;
+		text-align: center;
+		color:#2e2e2e;
+		margin: 0 0 130px 0;
+	}
+}
+.content_img{
+	margin: 0 0 0 350px;
+	.img_content_f,.img_content_c{
+		width: 200px;
+		height: 260px;
+		background: 100% 100%;
+		display: inline-block;
+		background-color: #f4f5f7;
+		color: #8a909c;
+		em{
+			margin-top:70px;
+			font-size:80px;
+			display: inline-block;
+			text-align: center;
+			width: 100%;
+		}
+		p{
+			color:#282a29;
+			text-align: center;
+			margin-top:24px;
+		}
+	}
+	.active{
+		background-color: #ffc41d;
+		color:white;
+		em,p{
+			color: white;
+		}
+	}
+}
+.img_content_f:hover,.img_content_c:hover{
+	background-color: #ffc41d;
+	color:white;
+	em,p{
+		color: white;
+	}
+}
+.content_img .img_content_f{
+	margin-right: 100px;
+}
+.open_account{
+	width: 1200px;
+	min-height: 740px;
+	margin: 0 auto;
+}
+.account-icon{
+	padding: 110px 0 0 0;
+	text-align: center;
+	em{
+		font-size: 60px;
+		color: #1bb169;
+	}
+	h1{
+		font-size: 40px;
+		color:#2e2e2e;
+		margin: 40px 0 0 0;
+	}
+	h4{
+		font-size: 20px;
+		color:#596069;
+		margin: 18px 0 0 0;
+	}
+}
+.dialog{
+	border:0px;
+}
+.part-guide{
+	position:relative;
+	margin:70px auto 36px;
+	height:4px;
+	width:680px;
+	background:#d9dbde;
+	.guide-percent{
+		overflow:hidden;
+		display:block;
+		height:4px;
+		width:0%;
+		background:$bg-green;
+	}
+	.guide-step{
+		position:absolute;
+		top:-10px;
+		width:20px;
+		height:20px;
+		text-align:center;
+		background:#d9dbde;
+		@include prefix(border-radius,20px);
+		.step-text{
+			position:absolute;
+			top:-24px;
+			left:50%;
+			margin-left:-62px;
+			width:125px;
+			height:24px;
+			line-height:24px;
+			font-size:16px;
+			font-weight:normal;
+			color:$text-light;
+		}
+		.step-number{
+			display:block;
+			height:20px;
+			line-height:21px;
+			font-size:13px;
+			font-weight:normal;
+			color:#fff;
+		}
+		.step-icon{
+			display:none;
+			.icon{
+				width:20px;
+				height:20px;
+				// margin-top:-2px;
+				line-height:20px;
+				font-size:10px;
+				color:#fff;
+				font-weight:normal;
+			}
+		}
+	}
+	// .guide-step01
+	.guide-step01{
+		left:-10px;
+	}
+	// guide-step02
+	.guide-step02{
+		left:33%;
+		margin-left:-10px;
+	}
+	// guide-step03
+	.guide-step03{
+		left:66%;
+	}
+	.guide-step04{
+		right: -8px;
+	}
+}
+.part-guide01{
+	.guide-step01{
+		background:$bg-green!important;
+		.step-text{
+			color:$bg-green!important;
+		}
+	}
+}
+// part-guide02
+.part-guide02{
+	.guide-step01{
+		background:$bg-green!important;
+		.step-number{
+			display:none;
+		}
+		.step-icon{
+			display:inline-block;
+		}
+	}
+	.guide-step02{
+		background:$bg-green!important;
+		.step-text{
+			color:$bg-green!important;
+		}
+	}
+	.guide-percent{
+		width:33%;
+	}
+}
+// part-guide03
+.part-guide03{
+	.guide-step01{
+		background:$bg-green!important;
+		.step-number{
+			display:none;
+		}
+		.step-icon{
+			display:inline-block;
+		}
+	}
+	.guide-step02{
+		background:$bg-green!important;
+		.step-number{
+			display:none;
+		}
+		.step-icon{
+			display:inline-block;
+		}
+	}
+	.guide-step03{
+		background:$bg-green!important;
+		.step-text{
+			color:$bg-green!important;
+		}
+	}
+	.guide-percent{
+		width:66%;
+	}
+}
+// part-guide04
+.part-guide04{
+	.guide-step01{
+		background:$bg-green!important;
+		.step-number{
+			display:none;
+		}
+		.step-icon{
+			display:inline-block;
+		}
+	}
+	.guide-step02{
+		background:$bg-green!important;
+		.step-number{
+			display:none;
+		}
+		.step-icon{
+			display:inline-block;
+		}
+	}
+	.guide-step03{
+		background:$bg-green!important;
+		.step-number{
+			display:none;
+		}
+		.step-icon{
+			display:inline-block;
+		}
+	}
+	.guide-step04{
+		background:$bg-green!important;
+		.step-text{
+			color:$bg-green!important;
+		}
+	}
+	.guide-percent{
+		width:100%;
+	}
+}
+.identity-content{
+	margin:130px 0 270px 0;
+}

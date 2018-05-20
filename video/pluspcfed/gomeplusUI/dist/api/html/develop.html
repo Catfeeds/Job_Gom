@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="zh-CN" data-use-rem="750">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+	<meta name="format-detection" content="telephone=no">
+	<meta name="format-detection" content="email=no">
+	<meta http-equiv="expires" content="0">
+	<link type="text/css" rel="stylesheet" href="../css/public.css">
+	<link type="text/css" rel="stylesheet" href="../css/develop.css">
+	<script type="text/javascript" src="../js/jquery-1.9.0.js"></script>
+	<script type="text/javascript" src="../js/effect.js"></script>
+</head>
+<body class="opg body-font-family">
+	<script type="text/javascript">
+	 (function appVersion() {
+      	window.platform = {};
+      	var ua = window.navigator.userAgent.toLowerCase();
+      	var isIphone = ua.match(/iphone os/i) == 'iphone os';
+      	var isAndroid = ua.match(/android/i) == 'android';
+      	// ipad 也为mobile
+      	var isMobile = ua.match(/mobile/i) == 'mobile';
+      	var isIpad = ua.match(/ipad/) == 'ipad';
+      
+      	platform.isMobile = function () {
+      		return isMobile && !isIpad;
+      	}
+      	if(platform.isMobile()) {
+      		(function(win){var doc=win.document,html=doc.documentElement,option=html.getAttribute("data-use-rem");if(option===null){return}var baseWidth=parseInt(option).toString()==="NaN"?640:parseInt(option);var grids=baseWidth/100;var clientWidth=html.clientWidth||320;html.style.fontSize=clientWidth/grids+"px";var testDom=document.createElement("div");var testDomWidth=0;var adjustRatio=0;testDom.style.cssText="height:0;width:1rem;";doc.body.appendChild(testDom);var calcTestDom=function(){testDomWidth=testDom.offsetWidth;if(testDomWidth!==Math.round(clientWidth/grids)){adjustRatio=clientWidth/grids/testDomWidth;var reCalcRem=clientWidth*adjustRatio/grids;html.style.fontSize=reCalcRem+"px"}else{doc.body.removeChild(testDom)}};setTimeout(calcTestDom,20);var reCalc=function(){var newCW=html.clientWidth;if(newCW===clientWidth){return}clientWidth=newCW;html.style.fontSize=newCW*(adjustRatio?adjustRatio:1)/grids+"px"};if(!doc.addEventListener){return}var resizeEvt="orientationchange" in win?"orientationchange":"resize";win.addEventListener(resizeEvt,reCalc,false);doc.addEventListener("DOMContentLoaded",reCalc,false)})(window);
+      	}
+      })()
+	</script>
+	<!-- header -->
+	<nav class="header header-mobile">
+		<section class="logo">gomeplus规范<span class="classify"></span></section>
+		<section class="nav">
+			<ul>
+				<li class="active"><a href="#">Css</a></li>
+				<li><a href="#"	>Javascript</a></li>
+			</ul>
+		</section>
+		<span class="nav-button fade-in show"><i></i></span>
+		<a href="http://opg-pre.intra.gomeplus.com" class="fade-in icon-home"><i></i></a>
+	</nav>
+	<!-- header end-->
+	<!-- home -->
+	<span class="back-home bounce-in-down"><a href="#">Home</a></span>
+	<!-- home end -->
+	<!-- master -->
+	<section class="master"></section>
+	<!-- master end-->
+	<!-- css -->
+	<section class="section module" style="display: block;">
+		<h1 class="h1">一、基础文件</h1>
+		<h2 class="h2">1、文件命名统一使用小写，不建议使用混合</h2>
+		<p>1.1、pug文件扩展名为<em class="code">.pug</em></p>
+		<p>1.2、sass文件扩展名为<em class="code">.sass</em></p>
+		<p>1.3、img文件扩展名为<em class="code">.jpg</em><em class="code">.png</em><em class="code">.gif</em></p>
+		<h1 class="h1">二、代码风格</h1>
+		<h2 class="h2">1、缩进与换行</h2>
+		<p>使用<em class="code">4</em>个空格或一个<em class="code">tab</em>作为代码格式化缩进形式，禁止使用<em class="code">2</em>个空格进行格式化缩进。</p>
+		<h2 class="h2">2、pug</h2>
+		<p>pug源码编写禁止<em class="code">tab</em>与<em class="code">4</em>个空格进行代码格式化缩进，否则<em class="code">gulp</em>编译报错；</p>
+		<p><em class="code">Ctrl+A</em>全选源码文件即可查看<em class="code">tab</em><em class="code">空格</em>是否同时存在。</p>
+		<h2 class="h2">3、代码风格</h2>
+		<p>3.1 <em class="code">body</em>元素必须定义<em class="code">opg</em>基类，所有公用组件都依赖与<em class="code">opg</em>；</p>
+		<pre class="pre"><code>body.opg</code></pre>
+		<p>3.2 <em class="code">class</em>类命名方式全部采用英文小写字母，多个单词组合之间以中横线<em class="code">-</em>字符连接；</p>
+		<pre class="pre"><code>.demo-name{
+  ... ...
+}</code></pre>
+		<p>3.3 <em class="code">class</em>类命名采用模块、内容及功能语义化命名，避免使用展示样式信息的方式命名；</p>
+		<p>【正确】</p>
+		<pre class="pre"><code>&lt;div class="sidebar"&gt;... &lt;/div&gt;</code></pre>
+		<p>【错误】</p>
+		<pre class="pre erro"><code>&lt;div class="left"&gt;... &lt;/div&gt;</code></pre>
+		<p>3.4 <em class="code">class</em>必须代表相应模块或部件的内容或功能，不得以样式信息进行命名；</p>
+		<p>3.5 如无特殊需要禁止在页面中使用<em class="code">ID</em>定义样式；</p>
+		<p>3.6 公用模块class类以<em class="code">m-</em>开头+模块功能描述方式命名，如<em class="code">m-btn</em><em class="code">m-mask</em><em class="code">m-dialog</em><em class="code">m-toast</em>等；</p>
+		<h2 class="h2">4、标签</h2>
+		<p>4.1 html标签统一采用小写方式</p>
+		<p>【正确】</p>
+		<pre class="pre"><code>&lt;div&gt;... ...&lt;/div&gt;</code></pre>
+		<p>【错误】</p>
+		<pre class="pre erro"><code>&lt;DIV&gt;... ...&lt;/DIV&gt;</code></pre>
+		<h2 class="h2">5、注释</h2>
+		<p>5.1 <em class="code">pug</em>注释</p>
+		<p>源码中需根据模块内容添加模块功能注释说明，便于后续调整或开发人员熟悉页面结构</p>
+		<p>pug</p>
+		<p class="gray">// 商品展示</p>
+		<p>html</p>
+		<p class="gray">&lt;!-- 商品展示 --&gt;</p>
+		<p>5.2 <em class="code">sass</em>注释</p>
+		<p>sass源码文件顶部需添加相关负责人详细信息，如下所示：</p>
+		<p class="gray">
+			// @ Css Name： 商品详情页<br>
+			// @Author： 马添野<br>
+			// @Date： 2017-02-18 20:00<br>
+			// -----------------------------------------------<br>
+			// @Last Modified by： 马金斗<br>
+			// @Last Modified time： 2017-02-26 20:10
+		</p>
+		<p>sass</p>
+		<p class="gray">/**/ → 可编译，输出css注释</p>
+		<p class="gray">// → 不可编译，仅限sass源码中注释</p>
+		<h1 class="h1">三、HTML(pug)编码</h1>
+		<h2 class="h2">1、文件编码</h2>
+		<p><em class="code">pug</em><em class="code">sass</em>源码文件统一采用<em class="code">UTF-8</em>编码格式。</p>
+		<h2 class="h2">2、CSS引用</h2>
+		<p>每个页面引用<em class="code">2</em>个css文件，即<em class="code">共用样式</em>和<em class="code">项目私有样式</em></p>
+		<pre class="pre"><code>&lt;link rel="stylesheet" href="public.css"&gt;
+&lt;link rel="stylesheet" href="personal.css"&gt;
+</code></pre>
+		<h2 class="h2">3、rem.js</h2>
+		<p><em class="code">rem.js</em>源码片段需作为第一个子元素插入<em class="code">body</em>元素标签内，且禁止进行rem外部文件调用，否则会造成页面初始化加载时白屏问题。</p>
+		<h2 class="h2">4、image</h2>
+		<p>二维码需用<em class="code">image</em>标签直接插入图片，禁止<em class="code">background-image</em>样式定义，否则会造成手机长按无法识别问题；</p>
+		<p><em class="code">alt=" "</em><em class="code">src=" "</em>属性值不能置空，必须填写属性值；</p>
+		<p><em class="code">src=" "</em>属性值为空时会导致部分浏览器重新加载渲染当前页面，即使做延迟或预加载处理时也需要填写<em class="code">src</em>默认属性值；</p>
+		<h2 class="h2">5、标签</h2>
+		<p>采用语义化标签，如：<em class="code">nav</em><em class="code">article</em><em class="code">aside</em><em class="code">header</em><em class="code">footer</em><em class="code">menu</em><em class="code">head类</em><em class="code">del</em><em class="code">p</em>等；</p>
+		<p>禁止<em class="code">inline</em>元素嵌套<em class="code">block</em>元素；</p>
+		<p>减少元素的嵌套层级，提升浏览器重绘或回流引起的渲染性能；</p>
+		<p><em class="code">em</em>预定为定义iconfont图标元素标签，如下所示：</p>
+		<pre class="pre"><code>&lt;em class="iconn-0"&gt;&lt;/em&gt;</code></pre>
+		<p><em class="code">inline</em><em class="code">inline-block</em>元素标签禁用flex布局属性(如用需要声明为block块状盒模型)；</p>
+		<h1 class="h1">四、CSS规范</h1>
+		<p>4.1 减少<em class="code">css</em>的嵌套层级，原则上不超过<em class="code">3</em>层，提高浏览器渲染/匹配的性能；</p>
+		<p>4.2 编写顺序</p>
+		<p>
+			位置属性：
+			<em class="code">position</em>
+			<em class="code">( top | right | bottom | left )</em>
+			<em class="code">z-index</em>
+			<em class="code">display</em>
+			<em class="code">float</em>
+		</p>
+		<p>
+			元素展示：
+			<em class="code">width</em>
+			<em class="code">height</em>
+			<em class="code">padding</em>
+			<em class="code">margin</em>
+		</p>
+		<p>
+			文字系列：
+			<em class="code">font (font-size | font-weight) </em>
+			<em class="code">line-height</em>
+			<em class="code">letter-spacing</em>
+			<em class="code">color</em>
+			<em class="code">text-align</em>
+		</p>
+		<p>
+			装饰属性：
+			<em class="code">background</em>
+			<em class="code">border</em>
+		</p>
+		<p>
+			其他属性：
+			<em class="code">animation</em>
+			<em class="code">transition</em>
+		</p>
+		<p>注释：<em class="code">sass</em>文件中<em class="code">$</em>变量需置顶，<em class="code">@include</em>需放置本样式的底部调用。</p>
+		<p>4.3 简写</p>
+		<p><em class="code">attribute</em><em class="code">value</em><em class="code">color</em>等必须进行简写编写。</p>
+		<p>【正确】</p>
+		<pre class="pre"><code>.demo{
+  background-color:#fff;
+}</code></pre>
+		<p>【错误】</p>
+		<pre class="pre erro"><code>.demo{
+  background:#ffffff;
+}</code></pre>
+		<p>4.3 共用</p>
+		<p>样式文件中的共用属性必须进行提取。</p>
+		<p>4.4 属性继承</p>
+		<p>编写样式时尽量采用属性继承，减少样式的重复定义，常用可继承属性如下所示：</p>
+		<p>
+			<em class="code">font-weight</em>
+			<em class="code">font-family</em>
+			<em class="code">font-size</em>
+			<em class="code">font-style</em>
+			<em class="code">font</em>
+			<em class="code">line-height</em>
+			<em class="code">letter-spacing</em>
+			<em class="code">color</em>
+		</p>
+		<p>注释：font-size的子类继承的不是实际值，而是计算后的值。</p>
+		<p>4.5 z-index层级</p>
+		<table class="table">
+			<thead>
+				<tr>
+					<th>常规</th>
+					<th>menu</th>
+					<th>header</th>
+					<th>遮罩</th>
+					<th>组件</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>1-10</td>
+					<td>66</td>
+					<td>77</td>
+					<td>88</td>
+					<td>90</td>
+				</tr>
+			</tbody>
+		</table>
+		<p>4.6 避免属性</p>
+		<p>尽量避免在<em class="code">html</em>页面中使用<em class="code">style=" "</em>属进行样式定义或修改；</p>
+		<p>尽量避免在<em class="code">css</em>文件中使用<em class="code">@important</em>定义；</p>
+		<p></p>
+		<!-- <p style="height:200px;"></p> -->
+	</section>
+	<!-- css end-->
+	<!-- javascript -->
+	<section class="section module">
+		<h1 class="h1">写在前面的话</h1>
+		<p>1、手机站的不同人有不同叫法，新同学不要懵逼。手机站、<em class="code">wap</em>站、<em class="code">H5</em>站都是一个意思；</p>
+		<p>2、也许和你之前的公司前端定位稍有不同，咱这目标是培养沟通与技术兼备的同学。</p>
+		<h1 class="h1">项目流程</h1>
+		<p>明确需求—构建页面—前后端联调—提测—合并代码—上线—维护。</p>
+		<h2 class="h2">1、明确需求</h2>
+		<p>参加产品宣讲会，整体了解产品的需求及项目排期和基本技术实现可行性。
+一般以会后结论和产品需求文档为准。
+		</p>
+		<h2 class="h2">2、构建页面</h2>
+		<p>页面主要分两种：</p>
+		<p>一是短线活动类需求，<em class="code">javascript</em>开发需要自己切图写静态页；</p>
+		<p>二是功能类长线需求，会由构建组同学提供页面。</p>
+		<p>注释：页面构建完需由<em class="code">UI</em>设计同学视觉校验（构建页面时要考虑<em class="code">javascript</em>对<em class="code">DOM</em>操作的便捷）。</p>
+		<h2 class="h2">3、前后端联调</h2>
+		<p>静态页面同步给后端<em class="code">PHP</em>同学，进行首屏渲染；</p>
+		<p>前端负责在<a href="http://gitlab.intra.gomeplus.com/groups/gomeplusFED">git平台</a>从<em class="code">develop</em>分支创建单独的项目分支，并在前端<a href="http://10.69.207.16:3344/gitProject">tag平台</a>生成资源端口号;</p>
+		<p>完成以上步骤后端搭到前端资源端口，到这开发环境搭建完成。</p>
+		<h2 class="h2">4、提测</h2>
+		<p>开发完成，前后端对于项目自测完成，由项目主要负责方（前后端均可）发提测邮件。</p>
+		<h2 class="h2">5、合并代码</h2>
+		<p>测试通过后，待收到产品上线邮件后将分支代码合并至<em class="code">develop</em>主干，合并时务必记得修改js版本号。</p>
+		<h2 class="h2">6、上线</h2>
+		<p>由前后端项目总负责人向运维发上线邮件，并通过TAG平台‘项目上线’功能将<em class="code">develop</em>合并至<em class="code">release</em>主干，运维发布后即上线完成。</p>
+		<h2 class="h2">7、维护</h2>
+		<p>上线后，密切关注项目运行状况，如有线上BUG及时修复，可通过紧急BUG修复流程。</p>
+	</section>
+	<!-- javascript end-->
+</body>
+</html>

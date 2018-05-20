@@ -1,0 +1,23 @@
+@charset "UTF-8";
+@import '../../../m-widget/reset/_base.scss';
+@import '../../../m-widget/reset/_mixin.scss';
+// _base / _mixin
+//========== _configure.scss ==========//
+@import "../../../sasscore/_configure.scss";
+
+
+@import"new-shop/public.scss"; // 公用样式
+@import"new-shop/shop1.scss";// 店铺首页
+
+
+
+
+
+
+//==========广播 广播 广播==========//
+// 页面中全部调用本尊
+// 本尊会@import 其他页面样式
+// 谁在本尊中编写样式，本尊是要揍人的哦
+
+// @import 的sass要和pug文件对应，并加好备注是什么页面，顺便留下您的大名，感谢~
+//==========广播结束==========//

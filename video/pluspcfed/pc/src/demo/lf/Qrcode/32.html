@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+	<head>
+		
+		<meta charset="UTF-8">
+		<meta name="renderer" content="webkit">    
+ 		<meta http-equiv="X-UA-Compatible" content="IE=EDGE">
+		<title>上传</title>
+		<link rel="shortcut icon" href="https://www.gomeplus.com/favicon.ico">
+		<link rel="stylesheet" type="text/css" href="http://js.dev.meixincdn.com:1314/CDN8130/dist/css/public/public.css?version=1490237704">
+		<link rel="stylesheet" type="text/css" href="http://js.dev.meixincdn.com:1314/CDN8130/dist/css/module/issuePreview.css?version=1490237704">
+		<link type="text/css" rel="stylesheet" href="http://js.dev.meixincdn.com:1314/CDN8130/dist/css/module/releasetopic1.css?version=1490237704">
+
+<link type="text/css" rel="stylesheet" href="http://js.dev.meixincdn.com:1314/CDN8130/dist/css/module/pop.css?version=1490237704">
+
+<link type="text/css" rel="stylesheet" href="http://js.dev.meixincdn.com:1314/CDN8130/dist/css/module/ueditor.css?v=1.8.1">
+
+		<script>
+		var $GLOBAL_CONFIG = $GLOBAL_CONFIG || {};
+		$GLOBAL_CONFIG['main_domain']= 'http://www.dev.gomeplus.com:1314/';//主域名
+		$GLOBAL_CONFIG['js_domain'] = 'http://js.dev.meixincdn.com';
+		$GLOBAL_CONFIG['pcjspath'] = 'http://js.dev.meixincdn.com:1314/debug';
+		$GLOBAL_CONFIG['pccsspath'] = 'http://js.dev.meixincdn.com:1314/debug';
+		$GLOBAL_CONFIG['pcimgpath'] = 'http://js.dev.meixincdn.com:1314/debug';
+		$GLOBAL_CONFIG['wap_url'] = 'http://m.test.gomeplus.com/';
+		$GLOBAL_CONFIG['prefix'] = 'mx_pc_';
+		$GLOBAL_CONFIG['csrf_token'] = 'hbiEZrTcyWR9d7qwgc14r4Kdj5t-nY6rgKaP3IGompSHqJqqtMyrYw';
+		$GLOBAL_CONFIG['cartProdNumReal'] = 0;
+		var userId = '0';
+	   
+	</script>
+				
+		<script src="http://js.dev.meixincdn.com:1314/debug/js/conf/vendor.js"></script>
+		<!--<script src="jquery.js"></script>-->
+		<style>
+			img{display:none;width:100px;height:40px;}
+		</style>
+	</head>
+
+  	<body class="opg">
+	
+	<div data-node="picPopBox" class="picPopBox" style="top: 100px; left: 100px; display: none;">
+	<em class="sanjiao"></em> <div class="container clearfix"> <div class="left"> <div class="qr"> <img src=""> <div class="cover" data-node="cover" style="display: none;">上传中...</div> </div> <p>扫描二维码,上传手机图片</p> </div> <div class="right">  <a href="javascript:;" class="upload-btn"> <input type="file" name="file" data-node="upLocal" multiple="multiple"> 本地上传图片 </a> </div> </div> 
+	</div>
+	
+	
+	<div>
+		<p id="p1" qid="12">p1</p>
+		<img src=""/>
+	</div>
+	<div>
+		<p id="p2" qid="34">p2</p>
+		<img src=""/>
+	</div>
+	
+	<script>
+		
+		var maxNum=20;
+		var time = 2000;
+		var pageId = window.pageId;
+		function Scans(o){
+			this.qid = o.qid;
+			this.topicQrId="";
+			this.$parent = o.$parent;
+			this.uploadMaxNum = o.maxNum ;
+			this.currentMaxNum = 0;
+			this.useNewCode = 0;
+			this.interval=0;
+			this.$showBox = o.$showBox,
+			this.time=o.time||2000,
+			//this.getCb:o.getCb,
+			this.customCb=o.customCb,
+			this.isLoad = 0,
+			this.$insertDom = o.$insertDom,
+			this.imgArr = []
+		}
+		 
+		
+		Scans.prototype = {
+			constructor:Scans,
+			init:function(){
+				var _this = this;
+					_this.start();
+				_this.$parent.find("p").on("click",function(){
+					_this.start();
+				})
+			},
+			start:function(){
+
+				var $img = this.$parent.find("img");
+		
+				if(!this.useNewCode){
+					this.currentMaxNum = this.uploadMaxNum - this.$parent.find("img").length
+					this.getId()
+				}else{
+				
+					if(this.checkShow()){
+						this.hide()
+					}else{
+						this.show();
+					}
+				}	
+			},
+			getId:function(){
+				var _this = this;
+			
+				var datas = {
+					pageId:pageId,
+					maxNum:_this.currentMaxNum
+				}
+				var qid = _this.qid;
+				var qidArr = window.topicQrId;	//检测window变量是否有此变量 格式为：
+				 //topicQrId:{
+				//  qid1:s1111,
+				//  qid2:s2222
+				// }			
+				//console.log(qidArr)
+				if(qidArr[qid].qrcodeId){
+					console.log(qidArr[qid])
+					datas.qrcodeId = _this.topicQrId;
+				}
+				/*fetch
+					.get(url.get('img.json'), {
+						data: datas
+					})
+					*/
+					$.ajax({
+						url:'img.json',
+						data:datas,
+						cache:false
+					})
+					.done(function(data) {
+						if (data.success == true) {
+
+							if (data.code == 200) {
+
+								_this.useNewCode = 1;
+
+								var _data = data.data
+					
+								if (!window.topicQrId[qid].qrcodeId) {
+									window.topicQrId[qid].qrcodeId = _this.topicQrId = _data.qrcodeId;		//把data的值赋予 window [qid].qrcodeId
+								}
+								
+								var str = data.data.path;
+								//var str = domain + 'qrupload/index?pageId=' + _data.pageId + '&qrcodeId=' + _data.qrcodeId;
+								//str = domain + 'ajax/qrcode/urlcode?url=' + encodeURIComponent(str);
+								// $('.qr').find('img').attr('src', str)
+								
+								_this.getIdCb(str);
+								_this.interval = setInterval(function(){
+									_this.monitor();
+								},_this.time)
+								
+
+							}
+						} else {
+							alert(data.message);
+							clear(o);
+						}
+					})
+					.fail(function(e, s) {
+						console.log(s)
+					})
+				
+				
+				
+			},
+			
+			monitor:function() {
+				var _this = this;
+				var insertedImgLen = this.$parent.find('img').length;
+				var maxNum = this.uploadMaxNum - insertedImgLen;
+				//fetch.post(url.get('topListenImg'), {
+				
+					$.ajax({
+								// url: "http://zhang.group.dev.gomeplus.com/topic/checkinfo",
+								url: "monitor.json",
+								 type: "GET",
+								 //dataType: 'json',
+								 /*
+								 data: {
+									 code: pageId,
+									 groupkey: window.topicQrId
+								 }
+								 */
+							// })
+						// fetch.post('zhang.group.dev.gomeplus.com/topic/checkinfo', {
+						//fetch.get('qr.json', {
+						data: {
+							code: pageId,
+							groupkey: window.topicQrId[_this.qid].qrcodeId,
+							num: maxNum
+						}
+					})
+					//fetch.get(testUrl)
+					.done(function(data) {
+
+						if (data.success == true) { //ok
+							if(typeof customCb == 'function'){
+								_this.customCb(data,_this)
+							}else{
+								_this.scanCb(data);
+							}
+							 
+	/*
+							switch (data.isload) {
+								case 1:
+									alias.loading = 0;
+									alias.setEnabled()
+									break;
+								case 2: //上传中
+									alias.loading = 1;
+									$cover.show();
+									console.log($cover)
+									$upLocal.addClass('upload-unable');
+
+									alias.setDisabled();
+									break;
+								case 3: //上传完成
+									//根据后台需求调整的临时代码 不封装成函数了
+									alias.loading = 1;
+									$cover.show();
+									$upLocal.addClass('upload-unable');
+									alias.setDisabled();
+
+									clearInterval(editorQrTime);
+									setTimeout(function() {
+										alias.loading = 0;
+										coverHide();
+										//clear();
+										insertPic(data.data);
+									}, 2000)
+
+									break;
+								case 10000:
+									alias.loading = 0;
+									editor.useNewCode = 0; //useNewCode 为0 意味着二维码过期
+									clearInterval(editorQrTime)
+									clear();
+									alert("二维码过期，请重新点击获取");
+									break;
+							}
+						*/
+
+						} else {
+							_this.hide();
+							console.log(data.msg)
+								//alert(data.msg);
+								// alias.loading = 0;
+
+							//alias.setEnabled()
+						}
+					}).fail(function(e,m) {
+						console.log(e,m)
+						clearInterval(_this.interval)
+						_this.hide();
+						// alert(e);
+					})
+			},
+			insertPic:function(data) {
+				for (var i = 0, len = data.length; i < len; i++) {
+					var str = '<p><img src="' + data[i] + '" _src="' + data[i] + '" data-type="insertImg"/></p>'
+					console.log(str)
+					//alias.execCommand('inserthtml', str);
+				}
+			},
+			
+			checkShow:function() {
+				if(this.$showBox.is(":visible")){
+					return true;
+				}
+				return false;
+			},
+			show:function() {
+				this.$showBox.show();
+			},
+			hide:function() {
+				if(this.isLoad != 2){
+					this.$showBox.hide();
+				}	
+			},
+			getIdCb : function(str){
+				this.$showBox.find("img").attr('src',str).css("display","block");
+				this.show();
+			},
+			scanCb :function(data){
+				var _this = this;
+				switch(data.isload){
+					case 1:
+						this.loading = 0;
+						//this.$insertDom.setEnabled()
+						break;
+					case 2: //上传中
+						this.loading = 2;
+						//$cover.show();
+						//console.log($cover)
+						//$upLocal.addClass('upload-unable');
+
+						//alias.setDisabled();
+						break;
+					case 3: //上传完成
+						this.loading = 3;
+						//根据后台需求调整的临时代码 不封装成函数了
+						//alias.loading = 1; 
+						//$cover.show();
+						//$upLocal.addClass('upload-unable');
+						//alias.setDisabled();
+						var dataArr = data.data;
+						var tempArr =[];
+						
+						var diffLen = dataArr.length - this.imgArr.length;
+						
+						if(diffLen){
+							this.imgArr = dataArr;
+							tempArr = dataArr.slice(-diffLen)
+							console.log(tempArr)
+							setTimeout(function() {
+								_this.hide();
+								_this.insertPic(tempArr);
+							}, _this.time)
+						}
+						break;
+					case 10000:
+						this.imgArr = [];
+						this.loading = 0;
+						this.useNewCode = 0; //useNewCode 为0 意味着二维码过期
+						clearInterval(this.interval);
+						this.hide();
+						alert("二维码过期，请重新点击获取");
+						break;
+				}
+			}
+			//prototype end
+		}	
+			
+		$(function(){
+			$("p").on("click",function(){
+				$(this).off("click");
+				var qid = "s" + $(this).attr("qid");
+				var $parent = $(this).parents("div");
+				var newP;
+				if(!window.topicQrId){
+					window.topicQrId=[];								
+				}
+				if(!window.topicQrId[qid]){
+					window.topicQrId[qid] = {};
+					var obj = {
+						qid:qid,
+						$parent:$parent,
+						time:2000,
+						$showBox:$(".picPopBox"),
+						//getCb:getCb,
+						customCb:"",
+						$insertDom:""
+					}
+					newP = new Scans(obj)
+					newP.init();
+				}
+			})
+		})
+		
+	</script>
+  	</body>
+</html>

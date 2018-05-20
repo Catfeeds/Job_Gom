@@ -1,0 +1,192 @@
+@charset "UTF-8";
+// @ Css name：填写表单
+// @ Author： Kan Jingjing
+// @ Date： 2017-05-11
+// @ Last Modified by： Kan Jingjing
+// @ Last Modified time：2017-05-12
+//==========================
+
+.drform-c{
+	min-height: rem(428);
+	margin-bottom: rem(-10);
+	overflow: hidden;
+	background: url(../../../images/daren/dr-bg4.png) no-repeat;
+}
+.title-start{
+	width: rem(200);
+	height: rem(48);
+	margin: rem(238) auto 0;
+	background-position: rem(0 -322);
+}
+.apply-step{
+	height: rem(150);
+	margin-top: rem(64);
+	li{
+		float: left;
+		width: rem(170);
+		height: rem(120);
+		text-align: center;
+		margin: 0 rem(39);
+		border-radius: rem(26);
+		background-color: #a4a4a4;
+		position: relative;
+		span{
+			display: inline-block;
+		}
+		.step{
+			width: rem(126);
+			height: rem(33);
+			margin-top: rem(32);
+			background-position: rem(0 -698);
+		}
+		.step1{
+			background-position: rem(0 -698);
+		}
+		.step2{
+			width: rem(62);
+			background-position: rem(0 -748);
+		}
+		.step3{
+			background-position: rem(0 -800);
+		}
+		.fail-icon{
+			width: rem(124);
+			height: rem(108);
+			background-position: rem(0 -844);
+		}
+		.num{
+			width: rem(70);
+			height: rem(70);
+			line-height: rem(66);
+			border-radius: rem(70);
+			font-size: rem(36);
+			font-weight: bold;
+			color: #a4a4a4;
+			background-color: #fff;
+			border: 2px solid #a4a4a4;
+			position: absolute;
+			left: rem(50);
+			bottom: rem(-30);
+		}
+	}
+	.active{
+		background-color: #ff5c5c;
+		.num{
+			color: #ff5c5c;
+			border-color: #ff5c5c; 
+		}
+	}
+}
+.dr-form{
+	margin-top: rem(40);
+	padding: rem(30 45);
+	background-color: #fff;
+	label{
+		line-height: rem(80);
+		font-size: rem(32);
+		margin-right: rem(12);
+	}
+	.list{
+		overflow: hidden;
+		margin-bottom: rem(30);
+		position: relative;
+		input, .input{
+			height: rem(80);
+			line-height: 1.2;
+			font-size: rem(28);
+			padding: rem(0 20);
+			border-radius: 3px;
+    		-webkit-appearance: none;
+			border: 1px solid #cdcdcd;
+		}
+		.dr-type{
+			position: relative;
+			select{
+				position: absolute;
+				top: 0;
+				left: 0;
+				z-index: 9;
+				width: 100%;
+				height: 100%;
+				font-size: rem(28);
+				padding-left: rem(20);
+				border: none;
+				appearance:none;
+				-moz-appearance:none;
+				-webkit-appearance:none;
+				background: transparent;
+			}
+			span{
+				position: absolute;
+				left: rem(20);
+				top: rem(26);
+				font-size: rem(28);
+				color: #999;
+			}
+		}
+		em{
+			font-size: rem(24);
+			position: absolute;
+			top: rem(29);
+			right: rem(18);
+		}
+	}
+	.txtarea-list{
+		margin-top: rem(-10);
+		label{
+			line-height: 1;
+		}
+		.txtarea{
+			position: relative;
+			width: rem(656);
+			height: rem(220);
+			padding: rem(20 20 38 16);
+			font-size: rem(28);
+			border-radius: 3px;
+			margin-top: rem(26);
+			border: 1px solid #cdcdcd;
+			overflow: hidden;
+			textarea{
+				display: block;
+				width: 100%;
+				height: 100%;
+				resize: none;
+				outline: none;
+			}
+			.txt-num{
+				position: absolute;
+				right: rem(15);
+				bottom: rem(11);
+				font-size: rem(24);
+				color: #999;
+			}
+		}
+	}
+	.agreement{
+		margin-top: rem(18);
+		overflow: hidden;
+		.check-btn{
+			float: left;
+			width: rem(26);
+			height: rem(27);
+			margin: rem(0 10 0 8);
+			background: url(../../../images/daren/check.png) 0 0 no-repeat;
+			background-size: rem(68 26);
+			&.active{
+				background-position: rem(-42 0);
+			}
+		}
+		p{
+			font-size: rem(24);
+			a{
+				color: #4990e2;
+			}
+		}
+	}
+}
+.submit-btn{
+	span{
+	    width: rem(158);
+	    background-position: rem(0 -527rem);
+	}
+}

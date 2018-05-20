@@ -1,0 +1,393 @@
+doctype html
+html(lang="zh-CN")
+	include ../../../pc-widget/head/head.jade
+	link(type="text/css",rel="stylesheet",href="../../css/public/public.css")
+	link(type="text/css",rel="stylesheet",href="../../css/module/goodsdetail-new.css")
+	body.opg
+		include ../../../pc-widget/header/header.jade
+		include ../../../pc-widget/menu/menu.jade
+		include ../../../pc-widget/button/fixed.jade
+		include ../../../pc-widget/top/top.jade
+		.wrap-box
+			include ../../../pc-widget/crumbs/crumbs.jade
+			.detail-cont.clearfix
+				.goods-menu
+					.fl
+						| 商品分类
+						// icon替换 
+						em.icon.iconn-2
+						// icon替换 
+						em.icon.iconn-1
+						.menu-list
+							a(href="#") 未分类
+							a(href="#") 未分类
+							a(href="#") 未分类
+							a(href="#") 未分类
+							a(href="#") 未分类
+							a(href="#") 未分类
+					a(href="#") 店铺首页
+					a(href="#") 全部商品
+					a(href="#") 上新商品
+					a(href="#") 店铺特惠
+				//左侧轮播
+				.goods-carousel
+					.carousel-cont
+						ul.carousel-list(style="width:2000px;")
+							li
+								img.loading(src="../../images/public/goods-loading.gif")
+							- for (var i=0;i<6;i++)
+								li 
+									img(src="https://i6.meixincdn.com/v1/img/T1GRYTB7KT1R4cSCrK.png",alt="heheda")
+					.moving-main
+						// icon替换 em改成a标签，去掉icon 加上iconn-8
+						a(href="javascript:;").iconn-8.moving-btn
+						div.moving-cont
+							ol.clearfix.moving-list
+								- for (var i=0;i<6; i++)
+									li.active
+										img(src="https://i6.meixincdn.com/v1/img/T1GRYTB7KT1R4cSCrK.png",alt="heheda")
+						// icon替换 em改成a标签，去掉icon 加上iconn-9
+						a(href="javascript:;").iconn-9.moving-btn.disabled
+					.a-shares
+						span.text-add +1
+						p.error 收藏加入失败
+						.shares-collect
+							em.sanjiao
+							// icon替换 icon icon-close
+							em.iconn-7
+							p.f16
+								// icon替换 icon icon-suc
+								em.iconn-20
+								| 成功加入我的收藏
+							p
+								| 你可以查看
+								a(href="#") 我的收藏
+								| ，或
+								a(href="#") 下载国美PlusAPP
+						// icon替换active给a加
+						a(href="javascript:;").active
+							// icon替换 icon-collection
+							em.icon.iconn-57
+							| 收藏商品
+						// icon替换 icon-shares
+						em.icon.iconn-38
+						| 分享到
+						p
+							// icon替换 .icon-weixin
+							a(href="javascript:;").icon.iconn-30
+							// icon替换 .icon-qq
+							a(href="javascript:;").icon.iconn-32
+							// icon替换 .icon-sina
+							a(href="javascript:;").icon.iconn-31
+							// icon替换 .icon-sina
+							a(href="javascript:;").icon.iconn-42
+							// icon替换 .icon-kongjian
+							a(href="javascript:;").icon.iconn-33
+				//右侧数据内容
+				.detail-data
+					h3.detail-data-tl
+					em.ic-hwg 海外购
+					| 纯色衬衫女长袖春秋新款韩版大码中长款时尚纯棉修身休闲翻领衬衣
+					.detail-summary
+						.summary-it
+							label.summary-label 价格：
+							.summary-more
+								span.red ￥
+									strong 200
+								del 原价：￥300
+						.summary-it.clearfix
+							label.summary-label 促销：
+							.summary-more.promotion.clearfix
+								span.coupon-list
+									em.icon-fan 返
+									| 购买该商品最高可返
+									span.red.pl6 0.02
+									| 国美币
+								// icon替换 .icon.icon-down
+								a(href="##").iconn-2
+								ul.promotion-list
+									- for( var x = 0; x < 3; x++)
+										li
+											em.icon-fan 返
+											| 购买该商品最高可返
+											span.red.pl6 0.02
+											| 国美币
+						.summary-it
+							label.summary-label 领券：
+							.summary-more
+								p.receive-coupon
+									| ￥
+									span 30
+									a(href="javascript:;") 领取
+								p.receive-coupon
+									| ￥
+									span 30
+									a(href="javascript:;") 领取
+								a.red(href="javascript:;") 点击领取优惠券
+								.tickets-more(style="display:none")
+									em.iconn-7
+									.ticket-cont
+										ul.ticket-list
+											- for(var i=0;i<5;i++)
+												li
+													.ticket-mn ￥
+														strong 10
+													.ticket-tip
+														p 满100元可用
+														span 2015.04.24-2015.05.05
+															span.fr 领取成功，还可以领取10张
+													a.btn-ticket(href="javascript:;") 领取
+													a.receive-success 领取成功
+											li
+												.ticket-mn ￥
+													strong 10
+													span 20张
+												.ticket-tip
+													p 满100元可用
+													span 2015.04.24-2015.05.05
+												a.btn-ticket(href="javascript:;") 领取
+												a.btn-ticket.disabled(href="javascript:;") 已领取
+												a.receive-success(href="javascript:;") 领取成功
+					.data-choose.disabled
+						.choose-it.clearfix
+							label.choose-label 配 送 至：
+							.choose-cont
+								.select-area
+									a(href="javascript:;")
+										span.chosed-area 北京朝阳区五环全部区域
+										// icon替换 .icon.icon-down
+										em(href="##").iconn-2
+									.select-box
+										// icon替换 icon-close
+										em.iconn-40
+										.select-title
+											a(href="javascript:;").selected-span
+												span 北京
+												// icon替换 .icon.icon-down
+												em.iconn-2
+											a(href="javascript:;")
+												span 朝阳区
+												// icon替换 .icon.icon-down
+												em.iconn-2
+											a(href="javascript:;")
+												span 五环全部区域
+												// icon替换 .icon.icon-down
+												em.iconn-2
+											a(href="javascript:;")
+												span 五环全部区域
+												// icon替换 .icon.icon-down
+												em.iconn-2
+										ul.select-content
+											- for (var x = 0; x < 10; x++)
+												li 四环到五环之间
+								span.choose-span 有货
+								p.overseas-ship
+									| 该商品由 
+									a(href="##") 国美海外购国美酒窖
+									|  发货，预计3-5日内送达
+						.choose-it.choose-itxt.clearfix
+							label.choose-label 税　　费：
+							.choose-cont
+								| 单品税费预计约106.99元
+								em.iconn-74
+									.detail-tips.none
+										em.icon-up
+										p 税费说明税费说明税费说明税费说明税费说明税费说税费说明税费说明税费说明税费说明税费说明税费说税费说明税费说明税费说明税费说明税费说明税费说税费说明税费说明税费说明税费说明税费说明税费说
+						.choose-it.choose-itxt.clearfix
+							label.choose-label 服　　务：
+							.choose-cont 由国美海外购官方旗舰店 发货并负责售后服务
+						.choose-it.clearfix
+							label.choose-label 规　　格：
+							.choose-cont 
+								- for (var i=0;i<4;i++)
+									a.choose-cell.choose-cell-true(href="javascript:;") 白色
+						.choose-it.clearfix
+							label.choose-label 规格参数：
+							.choose-cont 
+								- for (var i=0;i<3;i++)
+									a.choose-cell.choose-cell-true(href="javascript:;") M
+						.choose-it.clearfix
+							label.choose-label 数　　量：
+							.choose-cont 
+								.goods-num
+									span.num-add.disabled -
+									input(type="text")
+									span.num-minus +
+								span.choose-span 库存2000件
+						.choose-it.clearfix
+							label.choose-label 数　　量：
+							.choose-cont 
+								.goods-num.active
+									span.num-add.disabled -
+									input(type="text")
+									span.num-minus +
+								p.warn
+									em.iconn-12
+									| 该店铺单笔限额￥5000.00，请重新选择
+						.choose-it.choose-itxt.clearfix
+							label.choose-label 运　　费：
+							.choose-cont
+								| 免运费
+								em.iconn-74
+									.detail-tips
+										em.icon-up
+										p 税费说明税费说明税费说明税费说明税费说明税费说税费说明税费说明税费说明税费说明税费说
+					.choose-bt.clearfix
+						a(href="javascript:;").pc-btn.pc-btnh45 立即购买
+						a(href="javascript:;").pc-btn.pc-bj-fc8753.pc-btnh45 加入购物车
+						p.off-shelf 此宝贝已下架
+						p.error 加入购物车失败
+						.shop-img
+							img(src="https://i6.meixincdn.com/v1/img/T1GRYTB7KT1R4cSCrK.png")
+						//点击添加active样式即可显示大二维码
+						.shop-ma
+							span 手机购买
+							img(src="../../images/public/down-ma.png")
+							// icon替换 .icon.icon-d
+							em.iconn-1
+							// icon替换 .icon.icon-up
+							em.iconn-2
+							p
+								img(src="../../images/public/down-ma.png")
+				.goods-shop
+					.store-logo
+						img(src="https://i6.meixincdn.com/v1/img/T1ItYTB5WT1RXrhCrK.jpg")
+					p.p-store-name 德世朗旗舰店德世朗旗舰店德世朗
+					p
+						span.icon-vip
+						span.icon-vip.vip2
+						span.icon-vip.vip3
+					p.p-store-stars 商品描述：
+						span 4.8
+					p.p-store-stars 卖家服务：
+						span 4.6
+					p.p-store-stars 物流服务：
+						span 4
+					p.gray 由德世朗旗舰的店铺提供服务
+					.btn-box2
+						a(href="javascript:;").fl 联系客服
+						a(href="javascript:;").fr 收藏店铺
+						a(href="javascript:;") 逛逛店铺
+					p.gray.gray2 本店铺由国美在线提供，查看更多店铺资质信息请前往国美在线官网
+			.goods-box.clearfix
+				.w960
+					.goods-tab
+						a(href="javascript:;").active 图文详情
+						a(href="javascript:;") 产品参数
+						a(href="javascript:;")
+							| 商品评价
+							span (129)
+					.tab-content.goods-img
+						img(src="https://i6.meixincdn.com/v1/img/T1GRYTB7KT1R4cSCrK.png")
+					.tab-content.goods-paramet
+						table
+							tr
+								th(colspan="2") 基本参数
+							- for (var i=0;i<10;i++)
+								tr
+									td 品牌名称
+									td GOME酒窖 蝶之兰（D’Esclans）
+					
+					.tab-content.goods-comments
+						.comments-tab
+							a(href="javascript:;").active 全部评论 
+								span 129
+							a(href="javascript:;") 好评 
+								span 129
+							a(href="javascript:;") 中评 
+								span 129
+							a(href="javascript:;") 差评 
+								span 129
+							a(href="javascript:;") 有图 
+								span 129
+						.comments-none 此商品暂无评论
+						.comments-list
+							ul.clearfix
+								- for (var i=0;i<4;i++)
+									li
+										.fr
+											a(href="#")
+												img(src="https://i6.meixincdn.com/v1/img/T1GRYTB7KT1R4cSCrK.png")
+												| 昵称昵称
+											.star-box
+												// icon替换 icon
+												em.iconn-43.active
+												// icon替换 icon
+												em.iconn-43
+												// icon替换 icon
+												em.iconn-43
+												// icon替换 icon
+												em.iconn-43
+												// icon替换 icon
+												em.iconn-43
+												// icon替换 icon
+											p 下单3天后评论
+												br
+												| 2015-12-02 16:23
+										.list-con 收到宝贝了，包装还挺不错的，味道超赞，值了
+										.list-img.clearfix
+											a(href="#").active
+												img(src="https://i6.meixincdn.com/v1/img/T1GRYTB7KT1R4cSCrK.png")
+											a(href="#")
+												img(src="https://i6.meixincdn.com/v1/img/T1GRYTB7KT1R4cSCrK.png")
+										.list-img-big
+											span
+												em.icon-narrow
+												img(src="https://i6.meixincdn.com/v1/img/T1GRYTB7KT1R4cSCrK.png")
+										.list-shop.clearifx
+											span 商家回复
+											| 我是解释内容我是解释内容我是解释内容我是解释内容是解释内容是解释内容是解释内容是解释内容是解释内容我是解释内容我是解释内容我是解释内容我是解释内容是解释内容是解释内容是解释内容是解释内容是解释内容
+							.page
+								a(href="javascript:;").disabled 上一页
+								a(href="javascript:;") 1
+								a(href="javascript:;") 2
+								a(href="javascript:;") 3
+								a(href="javascript:;").active 4
+								a(href="javascript:;") 5
+								a(href="javascript:;") 6
+								a(href="javascript:;") ···
+								a(href="javascript:;") 下一页
+								a(href="javascript:;") 最后一页
+					.push-goods
+						.goods-tab
+							p 商品推荐
+						.shop-list
+							ul.clearfix
+								- for (var x = 0; x < 4; x++)
+									li
+										a(href="#")
+											img(src="https://i6.meixincdn.com/v1/img/T1GRYTB7KT1R4cSCrK.png")
+										.text
+											| ￥
+											span 259.00
+											p
+												a(href="#")
+													em.ic-hwg 海外购
+													| 我新依旧心潮澎湃要你命300湃要你命300
+				.w230
+					.goods-tab
+						p 店内推荐
+					.shop-list.push-shop
+						ul.clearfix
+							li
+								em.icon-fan 返
+								a(href="#")
+									img(src="https://i6.meixincdn.com/v1/img/T1GRYTB7KT1R4cSCrK.png")
+								.text
+									| ￥
+									span 259.00
+									p
+										a(href="#")
+											em.ic-hwg 海外购
+											| 我新依旧心潮澎湃要你命300湃要你命300
+							- for (var x = 0; x < 3; x++)
+								li
+									em.icon-fan.icon-jiang 降
+									a(href="#")
+										img(src="https://i6.meixincdn.com/v1/img/T1GRYTB7KT1R4cSCrK.png")
+									.text
+										| ￥
+										span 259.00
+										p
+											a(href="#") 我新依旧心潮澎湃要你命300湃要你命300
+		include ../../../pc-widget/footer/footer.jade

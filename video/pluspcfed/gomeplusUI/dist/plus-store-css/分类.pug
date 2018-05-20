@@ -1,0 +1,33 @@
+extends ../plus-widget/head/head.jade
+block style
+	link(type="text/css",rel="stylesheet",href="store.css")
+block body
+	body.opg.store
+		include ../plus-widget/head/rem.jade
+		
+
+		header.header
+			.h-left
+				a.h-back(href="javascript:;")
+					em.iconn-1
+			.h-cnt.flex-cell
+			.h-right
+				a.h-btn(href="javascript:;")
+					em.iconn-3
+		// /header
+
+		.store_wrap
+			ul.gds-class
+				li.bor-b
+						a(href="##") 我的标题可能会有很多很多很多很多很多很多很多很多很多的问题反正你也看不见我
+				-for(i=0; i<6; i++)
+					li.bor-b
+						a(href="##") 冰箱
+		// /store_wrap
+
+
+
+
+
+
+

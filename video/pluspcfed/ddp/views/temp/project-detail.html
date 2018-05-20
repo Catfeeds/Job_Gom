@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>项目详情</title>
+
+    <link rel="stylesheet" href="../../node_modules/bootstrap/dist/css/bootstrap.min.css">
+</head>
+<style>
+    td {
+        padding:8px;
+    }
+
+    body {
+        padding-top:70px;
+    }
+</style>
+<body>
+<div class="container">
+    <div class="row">
+        <nav class="navbar navbar-default navbar-fixed-top">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <a style="padding: 9px;display:block;" href="#">
+                        <img alt="Brand" src="../src/assets/img/navbarLogo.png">
+                    </a>
+                </div>
+                <ul class="nav navbar-nav">
+                    <!-- add "active" to any li tag to control active state-->
+                    <li class="nav-item active"><a href="#" class="index" @click="makeActive('index')">项目</a></li>
+                    <li class="nav-item"><a href="#" class="reports" @click="makeActive('reports')">报表</a></li>
+                    <li class="nav-item"><a href="#" class="components" @click="makeActive('components')">组件</a></li>
+                    <li class="nav-item"><a href="#" class="data" @click="makeActive('data')">数据</a></li>
+                    <li class="nav-item"><a href="#" class="tools" @click="makeActive('tools')">工具</a></li>
+                    <li class="nav-item"><p class="navbar-text navbar-right">用户名： <a href="#" class="navbar-link">abc </a>
+                        <a href="javascript:">登出</a></p>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+
+    <h4>项目</h4>
+    <p>项目1</p>
+
+    <table class="table">
+        <tr>
+            <td><p>项目简介: </p></td>
+            <td colspan="3"><textarea style="height:120px;width:400px;resize:none;" placeholder="简介内容"></textarea></td>
+        </tr>
+
+        <tr>
+            <td>创建时间：</td>
+            <td><input disabled value="2016/06/21"></td>
+            <td>创建者：</td>
+            <td><input disabled value="Donald Trump"></td>
+        </tr>
+        <tr>
+            <td>更新时间：</td>
+            <td><input disabled value="2016/06/21"></td>
+            <td>报表数量：</td>
+            <td><input disabled value="10"></td>
+        </tr>
+        <tr>
+            <td>状态：</td>
+            <td><input disabled value="正常/已删除"></td>
+            <td>用户数量：</td>
+            <td><input disabled value="10"></td>
+        </tr>
+
+        <tr>
+            <td colspan="4">
+                <table class="table">
+                    <tr>
+                        <th>报表名</th><th>创建时间</th><th>创建者</th><th>所在项目</th><th>操作</th>
+                    </tr>
+                    <tr>
+                        <td>报表1</td><td>2016/06/01</td><td>Donald Trump</td><td>项目1</td>
+                        <td><form><input type="submit" class="btn btn-danger" value="删除"></form></td>
+                    </tr>
+                    <tr>
+                        <td>报表2</td><td>2016/06/01</td><td>Clinton Hillary</td><td>项目1</td>
+                        <td><form><input type="submit" class="btn btn-danger" value="删除"></form></td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+
+        <tr>
+            <td colspan="4">
+                <table class="table">
+                    <tr><td colspan="5"><button class="btn btn-primary">+ 新增用户</button></td></tr>
+                    <tr>
+                        <th>用户名</th><th>创建时间</th><th>上次登录时间</th><th>状态</th><th>操作</th>
+                    </tr>
+                    <tr>
+                        <td>Donald Trump</td><td>2016/06/01</td><td>2016/06/11</td><td>在职</td>
+                        <td><form><input type="submit" class="btn btn-danger" value="删除"></form></td>
+                    </tr>
+                    <tr>
+                        <td>Clinton Hillary</td><td>2016/06/01</td><td>2016/06/11</td><td>在职</td>
+                        <td><form><input type="submit" class="btn btn-danger" value="删除"></form></td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+</div>
+</body>
+</html>

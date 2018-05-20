@@ -1,0 +1,69 @@
+doctype html
+html(lang="zh-CN")
+	include ../../../pc-widget/head/head.jade
+	body.opg
+		link(type="text/css",rel="stylesheet",href="../../css/public/public.css")
+		link(type="text/css",rel="stylesheet",href="../../css/module/login.css")
+		.lg-header
+			.lg-header-in
+				h1.lg-logo
+					a 国美plus
+					span |
+					| 升级国美一账通账户
+		.wrap-box.oac-main
+			// 升级成功
+			.oac-result
+				em.iconn-20
+				.result-txt
+					p.txt-big
+						| 尊敬的
+						span.bold 17801096666
+						| 恭喜您已经成功升级国美一账通账户！
+					p.txt-small
+						| 现在您只需要一个账户、一套密码、一次登录，即可轻松登录国美平台
+						span.dark 国美在线
+						| 、
+						span.dark 国美Plus
+						| 、
+						span.dark 来购
+						| 、
+						span.dark 国美管家
+						| 、
+						span.dark 三联手机
+						| 、
+						span.dark 云智
+						| 、
+						span.dark 华人金融
+						| 、
+						span.dark 美易理财
+						| 、
+						span.dark 国美基金
+						| 、
+						span.dark 美易分
+						| 、
+						span.dark 美借
+						| 、
+						| 实现个人账户管理需求，享受一站式服务。
+					p.txt-turn
+						span 8
+						| s后自动跳转到首页，您也可以点击
+						a(href="##")  立刻跳转到首页 
+						em.iconn-9
+			// 升级失败
+			.oac-result.result-fail
+				em.iconn-49
+				.result-txt
+					p.txt-big 您未能成功升级一账通账户
+				.btnwrap
+					a(href="javascipt:;").pc-btn.pc-btnh45 重新升级
+			// 已升级页面
+			.oac-result
+				em.iconn-20
+				.result-txt
+					p.txt-big.nowrap 您已是国美一账通账户，请直接返回首页
+					p.txt-turn
+						span 8
+						| s后自动跳转到首页，您也可以点击
+						a(href="##")  立刻跳转到首页 
+						em.iconn-9
+		include ../../../pc-widget/footer/footer.jade

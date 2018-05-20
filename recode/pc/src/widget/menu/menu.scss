@@ -1,0 +1,157 @@
+@import '../config/_base.scss';
+@import '../config/_mixins.scss';
+
+//menu
+.opg{
+    .menu{
+        position: relative;
+        z-index: 100;
+        height: 50px;
+        line-height: 50px;
+        font-size: $text16;
+        background: $color-danger;
+        .wrap-box{
+            background: $color-danger;
+        }
+        .nav{
+            float: left;
+            a{
+                float: left;
+                display: block;
+                padding: 0 20px;
+                color: $bg-fff;
+                position: relative;
+                .down-ma{
+                    display: none;
+                    width: 230px;
+                    padding: 20px 0;
+                    text-align: center;
+                    position: absolute;
+                    left: 50%;
+                    top: 100%;
+                    margin-left: -115px;
+                    color: $color-default;
+                    line-height: 40px;
+                    background: $bg-fff;
+                    border-radius: 3px;
+                    -webkit-box-shadow:0 0 3px 0px rgba(0,0,0,0.6);  
+                    -moz-box-shadow:0 0 3px 0px rgba(0,0,0,0.6);  
+                    box-shadow:0 0 3px 0px rgba(0,0,0,0.6);
+                    z-index: 30;
+                    .sanjiao{
+                        position: absolute;
+                        top: -9px;
+                        left: 50%;
+                        margin-left: -5px;
+                        width: 0;
+                        height: 0;
+                        border-left: 9px solid transparent;
+                        border-right: 9px solid transparent;
+                        border-bottom: 9px solid $bg-fff;
+                    }
+                    img{ margin-top: 10px;}
+                }
+                &:hover{
+                    background: #e60039;
+                    .down-ma{
+                        display: block;
+                    }
+                }
+            }
+            .active{
+                background: #e60039;
+            }
+        }
+        .index-regist{
+            float: right;
+            /* background: $color-warning;
+            width: 160px; */
+            text-align: center;
+            color: $bg-fff;
+            /* .icon-user{
+                margin-right: 5px;
+            } */
+            a{
+                color: $bg-fff;
+                padding: 0 24px;
+            }
+        }
+        .index-login{
+            float: right;
+            padding: 0 20px;
+            white-space:nowrap;
+            background: $color-warning;
+            text-align: center;
+            color: $bg-fff;
+            cursor: pointer;
+            position: relative;
+            a.name-color{
+                color: $color-txt;
+                display: inline-block;
+            }
+            .index-login-head{
+                float: left;
+                position: relative;
+                width: 30px;
+                border-radius: 50%;
+                margin-right: 6px;
+                margin-top: -1px;
+            }
+            .icon-daren{
+                /* display: none; */
+                position: absolute;
+                bottom: 8px;
+                right: 0;
+                width: 10px;
+                height: 10px;
+                background: url(../../images/public/sprite.png) no-repeat -58px -91px;
+            }
+            img{
+                width: 30px;
+                height: 30px;
+                border-radius: 50%;
+            }
+            .login-link{
+                display: none;
+                width: 110px;
+                padding: 5px 0;
+                text-align: center;
+                position: absolute;
+                left: 50%;
+                top: 100%;
+                margin-left: -55px;
+                color: $color-default;
+                line-height: 34px;
+                background: $bg-fff;
+                border-radius: 3px;
+                -webkit-box-shadow:0 0 3px 0px rgba(0,0,0,0.6);  
+                -moz-box-shadow:0 0 3px 0px rgba(0,0,0,0.6);  
+                box-shadow:0 0 3px 0px rgba(0,0,0,0.6);
+                z-index: 30;
+                .sanjiao{
+                    position: absolute;
+                    top: -9px;
+                    left: 50%;
+                    margin-left: -5px;
+                    width: 0;
+                    height: 0;
+                    border-left: 9px solid transparent;
+                    border-right: 9px solid transparent;
+                    border-bottom: 9px solid $bg-fff;
+                }
+                a{
+                    display: block;
+                    &:hover{
+                        color: $link-hover;
+                    }
+                }
+            }
+            &:hover{
+                .login-link{
+                    display: block;
+                }
+            }
+        }
+    }
+}
+

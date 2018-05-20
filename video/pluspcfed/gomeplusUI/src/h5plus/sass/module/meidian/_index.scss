@@ -1,0 +1,234 @@
+@charset "UTF-8";
+// @ Css name：美店首页
+// @ Author： kanjingjing
+// @ Date： 2017-04-17
+// @ Last Modified by： kanjingjing
+// @ Last Modified time：2017-04-17
+//==========================
+
+@import "../../../../sasscore/_configure.scss";
+.mt20{
+	margin-top: .2rem;
+}
+.meidian-wrap{
+	.meidian-top{
+		width: 100%;
+	    padding-top: 1.74rem;
+		background: url(../../../images/meidian/meidian-bg.jpg) no-repeat center;
+		background-size: cover;
+	}
+	.header .head-title{
+		color: #666;
+	}
+	.shop-head{
+	    width: 100%;
+	    background-color: #fff;
+		padding: .16rem .14rem .17rem .2rem;
+	    position: relative;
+	    .head-l{
+		    position: absolute;
+		    top: -.2rem;
+		    left: .2rem;
+		    z-index: 99;
+		    width: .96rem;
+		    height: .96rem;
+			img{
+				width: 100%;
+			}
+	    }
+	    .head-c{
+			display: inline-block;
+			width: 3.63rem;
+			margin-left: 1.16rem;
+			h3{
+				line-height: .32rem;
+				font-size: .28rem;
+				font-weight: normal;
+			    word-break: break-all;
+			    overflow: hidden;
+			}
+			.shop-desc{
+				max-height: .56rem;
+				color: #999;
+				font-size: .2rem;
+				line-height: .28rem;
+				margin-top: 0.08rem;
+				word-break: break-all;
+				overflow: hidden;
+			}
+			.iconn-40{
+				display: none;
+			}
+			.iconn-42{
+				display: block;
+			}
+			&.active{
+				.shop-desc{
+					height: auto;
+			    	max-height: inherit;
+			    }
+				.iconn-40{
+					display: block;
+				}
+				.iconn-42{
+					display: none;
+				}
+			}
+		}
+		.unfold-btn{
+			display: block;
+			text-align: center;
+			em{
+				color: #999;
+				font-size: .22rem;
+			}
+		}
+	    .head-r{
+			float: right;
+			a{
+				float: left;
+				padding: 0 .1rem;
+				color: #666;
+				text-align: center;
+				&:first-child{
+					padding-left: 0;
+				}
+			}
+			em{
+				width: .33rem;
+				height: .33rem;
+				line-height: .33rem;
+				font-size: .33rem;
+			}
+			span{
+				display: block;
+				font-size: .24rem;
+				margin-top: .08rem;
+			}
+		}
+		.like{
+			&.active{
+				.iconn-29{
+					color: #FF5C5C;
+				}
+			}
+		}
+		.collect{
+			&.active{
+				.iconn-46{
+					color: #FFCE4D;
+				}
+			}
+		}
+	}
+	.check-all{
+		width: 100%;
+		height: .8rem;
+		line-height: .8rem;
+		font-size: .24rem;
+		overflow: hidden;
+		padding: 0 .15rem;
+		background-color: #fff;
+		.sort-name{
+			float: left;
+		}
+		.checkall-btn{
+			float: right;
+			color: #999;
+			em{
+				font-size: .24rem;
+				color: #999;
+				margin-left: .1rem;
+			}
+		}
+	}
+	.m-menu{
+		overflow: visible;
+		li{
+			height: rem(90);
+		    position: relative;
+		    -webkit-box-flex: 1;
+		    box-flex: 1;
+		    -webkit-flex: 1;
+		    -ms-flex: 1;
+		    flex: 1;
+		}
+	}
+	.tab-nav{
+		width: rem(302);
+		position: absolute;
+		bottom: rem(113);
+		left: rem(-10);
+		border: 1px solid #D7D6D6;
+		@include prefix(border-radius,rem(10),webkit);
+		background: #fff;
+		-webkit-box-shadow: 0 0 .06rem #D7D6D6;
+		box-shadow: 0 0 .06rem #D7D6D6;
+		.triangle{
+			display: block;
+			width: rem(26);
+			height: rem(14);
+			overflow: hidden;
+			position: absolute;
+			left: rem(56);
+			bottom: rem(-13);
+			z-index: 10;
+			&:after{
+				z-index: 9;
+				width: rem(26);
+				height: rem(26);
+				content: "";
+				overflow: hidden;
+				display: block;
+				margin-top: rem(-18);
+				background-color: #fff;
+				-webkit-box-shadow: 0 0 .1rem #D7D6D6;
+				box-shadow: 0 0 .1rem #D7D6D6;
+				-webkit-transform: rotate(45deg);
+				transform: rotate(45deg);
+			}
+		}
+		ul{
+			width: rem(302);
+			overflow: hidden;
+			margin-bottom: -1px;
+			@include prefix(border-radius,rem(10),webkit)
+		}
+		li{
+			float: left;
+			width: rem(302);
+			height: auto;
+			color: #666;
+			font-size: $fs28;
+			text-align: center;
+			padding: 0;
+			border-bottom: 1px solid #D8D8D8;
+			a{
+				max-height: rem(60);
+				padding: rem(16 26);
+				line-height: rem(28);
+				@include ellipsis();
+			}
+		}
+	}
+	.nav-big{
+		width: rem(605);
+		left: rem(-168);
+		ul{
+			width: rem(605);
+		}
+		.triangle{
+			left: rem(212);
+		}
+		&:after{
+			content: "";
+			width: 1px;
+			display: block;
+			background-color: #D8D8D8;
+			position: absolute;
+			top: 0;
+			bottom: 0;
+			left: 50%;
+		}
+	}
+}

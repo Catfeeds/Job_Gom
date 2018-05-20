@@ -1,0 +1,109 @@
+@charset "utf-8";
+
+// _configure.scss
+@import "../public/_configure.scss";
+
+.amp-account{
+    .account-set-new{
+        padding-top: 70px;
+		padding-bottom: 10px;
+		position:relative;
+		.set-tab{
+			background-color: #f7fafc;
+			color:$text-medium;
+			// color: #596069;
+			position:absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 42px;
+			line-height: 42px;
+			border: 1px solid #d9dbde;
+			border-left:0;
+			span{
+				display:block;
+				float: left;
+				width: 134px;
+				text-align: center;
+				border-right:1px solid #d9dbde;
+			}
+			.first{
+				border-left:1px solid #d9dbde;
+			}
+			.active{
+				background-color: #ffffff;
+				height:42px;
+				line-height: 42px;
+				position: relative;
+				top:-1px;
+				border-left:0;
+				border-top:3px solid #d30312;
+			}
+		}
+		.set-fn{
+			position: relative;
+			margin: 0 0 30px 0;
+			.fn-export{
+				// position: absolute;
+				right: 20px;
+				// top:20px;
+				margin:10px 0 0 0;
+				float:right;
+				color:#0090ec;
+				.em:before{
+					content: '\e90f';
+				}
+				span{
+					margin: 0 0 0 6px;
+				}
+			}
+			.fn-play{
+				.re-ele-select{
+					width: 100px;
+				}
+			}
+		}
+		.table-content{
+			width: 100%;
+			overflow:hidden;
+			overflow-x:scroll;
+			.table{
+				min-width: 1300px;
+				margin:0 0 10px 0;
+				td img{
+					display: inline-block;
+					vertical-align: middle;
+					-webkit-border-radius: 6px;
+					border-radius: 5px;
+					width: 48px;
+					height: 24px;
+					margin:5px 35px;
+					border: 1px solid #d9dbde;
+				}
+			}
+		}
+    }
+	.account-tab{
+		width:22%;
+		height: 42px;
+		line-height: 42px;
+		margin:0 0 20px 38%;
+		span{
+			display:block;
+			float: left;
+			width: 134px;
+			text-align: center;
+			border:1px solid #d9dbde;
+			background-color: #f7fafc;
+			width: 50%;
+			color:$text-medium;
+		}
+		.active{
+			background-color: white;
+			color:black;
+		}
+		span:first-child{
+			border-right:0;
+		}
+	}
+}

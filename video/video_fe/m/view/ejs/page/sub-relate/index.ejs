@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="zh-CN" data-use-rem="750">
+<head>
+	<meta charset="utf-8">
+	<title>GomePlus视频频道</title>
+	<meta name="keywords" content="GomePlus视频频道" />
+	<meta name="description" content="" />
+	<meta name="format-detection" content="telephone=no">
+	<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no,minimal-ui" />
+	<meta name="x5-page-mode" content="no-title"/>
+	<link rel="stylesheet" type="text/css" href="/m/vm/dist/css/sub-relate.css">
+</head>
+<body>
+	<%- include('../../common/rem.ejs')%>
+	<%- include('../../common/testUser.ejs')%>
+	<div id="wrap">
+		<header class="top-title">
+			<div class="left"><a class="icon-13" href="#"></a></div>
+			<h2>相关订阅号</h2>
+			<div class="right"><a class="compile" href="javascript:;"></a></div>
+		</header>
+		<div class="sub-relate-name">与TA相关</div>
+		<ul class="subDetails" data-id="subList">
+			<li class="msgList" data-id="subcontent">
+				<div class="msgNav">
+					<div class="msgNav-head fl"><img src="http://js-pre.meixincdn.com/m/vm/dist/imgs/public/default-head.jpg"></div>
+					<ul class="msgNav-msg fl">
+						<li class="msgNav-name">天使</li>
+						<li class="msgNav-intr">123天使3333</li>
+						<li class="msgNav-fans"><span>4</span>人订阅</li>
+					</ul>
+					<a class="subscripBtn fr" data-action="subscribe" data-subscribeid="625" data-status="0">
+						<span class="show"><em>+</em>订阅</span>
+						<span class="hide">已订阅</span>
+					</a>
+				</div>
+			</li>
+			<li class="msgList" data-id="subcontent">
+				<div class="msgNav">
+					<div class="msgNav-head fl"><img src="http://js-pre.meixincdn.com/m/vm/dist/imgs/public/default-head.jpg"></div>
+					<ul class="msgNav-msg fl">
+						<li class="msgNav-name">天使</li>
+						<li class="msgNav-intr">11天使111111</li>
+						<li class="msgNav-fans"><span>4</span>人订阅</li>
+					</ul>
+					<div class="subscripBtn fr" data-action="subscribe" data-subscribeid="625" data-status="0">
+						<span class="show"><em>+</em>订阅</span>
+						<span class="hide">已订阅</span>
+					</div>
+				</div>
+			</li>
+			<li class="msgList" data-id="subcontent">
+				<div class="msgNav">
+					<div class="msgNav-head fl"><img src="http://js-pre.meixincdn.com/m/vm/dist/imgs/public/default-head.jpg"></div>
+					<ul class="msgNav-msg fl">
+						<li class="msgNav-name">天使</li>
+						<li class="msgNav-intr">33333看看</li>
+						<li class="msgNav-fans"><span>4</span>人订阅</li>
+					</ul>
+					<div class="subscripBtn fr" data-action="subscribe" data-subscribeid="625" data-status="0">
+						<span class="show"><em>+</em>订阅</span>
+						<span class="hide">已订阅</span>
+					</div>
+				</div>
+			</li>
+		</ul>
+	</div>
+	<%- include('../../common/footer.ejs')%>
+	<script src="/m/vm/dist/js/vendor.js"></script>
+	<script src="/m/vm/dist/js/sub-relate.js"></script>
+</body>
+</html>

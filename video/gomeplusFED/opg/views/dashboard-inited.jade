@@ -1,0 +1,8 @@
+div.btn-group.mr20#initedBtn
+  button(type="button" class="btn btn-primary") 已经构建的分支
+  button(type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown")
+    span.caret
+    span.sr-only
+  ul(class="dropdown-menu", role="menu")
+    li(v-for="item in compiledProjects")
+      a(v-if="item.value.dist",@click="setCompileInit", href="#",:data-bizType="item.value.dist.bizType", :data-distUrl="item.value.dist.url" ,:data-distBranch="item.value.dist.branch", :data-sourceUrl="item.value.source.url", :data-sourceBranch="item.value.source.branch") {{item.name}}

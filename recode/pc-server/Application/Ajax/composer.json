@@ -1,0 +1,8 @@
+{
+    "require": {
+        "overtrue/validation":"1.1.1"
+    },
+    "autoload": {
+        "classmap" : ["./"]
+    }
+}

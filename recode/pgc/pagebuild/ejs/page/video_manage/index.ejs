@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+	<meta charset="utf-8">
+	<meta name="renderer" content="webkit">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>GomePlus视频频道</title>
+	<meta name="keywords" content="GomePlus视频频道" />
+	<meta name="description" content="" />
+	<link rel="stylesheet" type="text/css" href="<%=devenv%>dist/css/main.css">
+</head>
+<body>
+	<!-- main -->
+	<div class="wrap">
+
+		<div class="vm-preview">
+			<div>
+				<div class="video-container" id="videoContainer"></div>
+				<div class="vm-title">
+					<h1>我就是标题</h1>
+				</div>
+				<div class="vm-header">
+					<div class="img"><img src="http://gfs14.atguat.net.cn/T1iyVTBQ_T1RCvBVdK.png" /></div>
+					<div class="text">
+						<div>名称</div>
+						<p>发布时间:<span>2017-8-24</span> </p>
+					</div>
+				</div>
+				<div class="vm-content">
+					<p>天有多热，只有非洲来的小哥知道。来帝都避暑的非洲小哥热晕倒了……
+						仗着皮肤黑，不擦防晒霜的黑人球员小哥晒黑了……</p>
+					<p><img src="https://cmsimg.meixincdn.com/images/2017/08/V7LOXfSAT4E5WvQoCZazncmYiuNyIU.jpg" alt=""></p>
+					<p>天有多热，只有非洲来的小哥知道。来帝都避暑的非洲小哥热晕倒了……
+						仗着皮肤黑，不擦防晒霜的黑人球员小哥晒黑了……</p>
+					<p>天有多热，只有非洲来的小哥知道。来帝都避暑的非洲小哥热晕倒了……
+						仗着皮肤黑，不擦防晒霜的黑人球员小哥晒黑了……</p>
+				</div>
+
+
+				<div class="clearfix tag-share">
+					<div class="label fl">
+						<a href="/tag/3.html" target="_blank">美食</a>
+
+						<a href="/tag/441.html" target="_blank">饮品</a>
+
+						<a href="/tag/273.html" target="_blank">葡萄酒</a>
+
+						<a href="/tag/347.html" target="_blank">奇葩喝</a>
+
+						<a href="/tag/648.html" target="_blank">张小贱</a>
+
+						<a href="/tag/648.html" target="_blank">张小贱</a>
+						<a href="/tag/648.html" target="_blank">张小贱</a>
+						<a href="/tag/648.html" target="_blank">张小贱</a>
+						<a href="/tag/648.html" target="_blank">张小贱</a>
+						<a href="/tag/648.html" target="_blank">张小贱</a>
+					</div>
+				</div>
+			</div>
+
+		</div>
+	</div>
+	<script src="https://js.meixincdn.com/gvs-player/dist/vod/js/meixinplayer-min.js"></script>
+	<script>
+        var v1 = new MeixinPlayer();
+        v1.init(14677, 'videoContainer', {
+            type: 'vod', // 直播：live，点播：vod
+            poster: '', // 播放器封面图
+            env: 'dev', // dev, pre, dist
+        });
+	</script>
+	<!-- main -->
+	<script src="<%=devenv%>dist/js/vendor.js"></script>
+	<script src="<%=devenv%>dist/js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,207 @@
+@import '../../widget/config/_base.scss';
+@import '../../widget/config/_mixins.scss';
+
+.pc-video{
+    h2{
+        font-size: 30px;
+        font-weight: normal;
+        padding: 10px 0;
+    }
+}
+.video-box{
+    background: $color-default;
+    .video{
+        position: relative;
+        float: left;
+        width: 750px;
+        height: 456px;
+        .iconn-37{
+            width: 15px;
+            height: 60px;
+            line-height: 60px;
+            text-align: center;
+            color: $color-gray;
+            background: #121212;
+            border-top-right-radius: 2px;
+            border-bottom-right-radius: 2px;
+            position: absolute;
+            right: -15px;
+            top: 50%;
+            margin-top: -30px;
+            cursor: pointer;
+            display: none;
+        }
+    }
+    .video-text{
+        float: right;
+        width: 300px;
+        height: 546px;
+        box-sizing: border-box;
+        padding: 10px 20px;
+        color: $color-gray;
+        line-height: 24px;
+        p{
+            padding: 5px 0;
+        }
+        a{
+            color: $bg-fff;
+            margin-right: 15px;
+        }
+    }
+    .video-foot{
+        background: #eee;
+        height: 45px;
+        line-height: 45px;
+        padding: 0 15px;
+        position: relative;
+        .fl{
+            float: left;
+        }
+        em{
+            font-size: 18px;
+            margin-right: 10px;
+            cursor: pointer;
+            vertical-align: -3px;
+            color: #acacac;
+        }
+        span{
+            margin-right: 10px;
+        }
+        .iconn-1,.iconn-2{
+            font-size: 10px;
+            vertical-align: 0px;
+            color: $color-default;
+        }
+        .iconn-30:hover{
+            color: #5fca7e;
+        }
+        .iconn-32:hover{
+            color: #4fc9f8;
+        }
+        .iconn-31:hover{
+            color: #fa5c50;
+        }
+        .iconn-33:hover{
+            color: #f7c71d;
+        }
+        .share-box{
+            position: absolute;
+            left: 0;
+            top: 48px;
+            border: 1px solid #ccc;
+            background: #fff;
+            border-radius: 4px;
+            width: 420px;
+            .icon-sanjiao{
+                position: absolute;
+                left: 70px;
+                top: -11px;
+                width: 22px;
+                height: 11px;
+                background: url(../../images/public/icon-up.png) no-repeat center;
+            }
+            .share-list{
+                padding: 15px;
+                p{
+                    line-height: 24px;
+                }
+                .video-add{
+                    position: relative;
+                    padding: 5px 0 5px 77px;
+                    line-height: 25px;
+                    span{
+                        position: absolute;
+                        left: 0;
+                        top: 5px;
+                        width: 77px;
+                        color: $color-gray;
+                        font-size: 12px;
+                    }
+                    .copy-text{
+                        border: 1px solid #ccc;
+                        height: 25px;
+                        width: 250px;
+                        @include box-zing;
+                        padding: 0 6px;
+                        line-height: 25px\9;
+                        font-size: 12px;
+                    }
+                    .copy-btn{
+                        border: 1px solid #ccc;
+                        @include box-zing;
+                        height: 25px;
+                        line-height: 25px\9;
+                        width: 50px;
+                        background: #eee;
+                        font-size: 12px;
+                        cursor: pointer;
+                        vertical-align: -1px;
+                        margin-left: 5px;
+                    }
+                }
+            }
+        }
+    }
+}
+.weixinsharebox {
+  height: 500px;
+  margin-top: 50px; }
+
+.share-weixin {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 1000;
+  display: none; }
+
+.wx-mask {
+  width: 100%;
+  height: 100%;
+  background-color: #333;
+  opacity: .3;
+  filter: alpha(opacity=30); }
+
+.wx-main {
+  width: 370px;
+  height: 370px;
+  padding: 15px;
+  border: 1px solid #CCC;
+  border-radius: 5px;
+  background-color: #fff;
+  text-align: center;
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  margin: -200px 0 0 -200px;
+  z-index: 99; }
+
+.wx-main span {
+  height: 50%;
+  display: inline-block; }
+
+.wx-main img {
+  vertical-align: middle;
+  max-width: 300px; }
+
+.wx-main p {
+  font: 12px/30px "Microsoft YaHei";
+  margin: 0;
+  padding: 0; }
+
+.wx-code {
+  height: 300px;
+  padding-top: 30px; }
+
+.wx-close {
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  right: 5px;
+  top: 5px;
+  font: 30px/30px SimSun;
+  text-align: center;
+  line-height: 30px;
+  text-decoration: none;
+  color: #e60039; }

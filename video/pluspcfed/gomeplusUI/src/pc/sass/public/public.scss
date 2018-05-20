@@ -1,0 +1,28 @@
+@import '../../../pc-widget/reset/reset.scss';
+.clearfix{
+    @include clearfix();
+}
+::-ms-clear, ::-ms-reveal{display: none;}
+.gm-gray{
+    color: #999!important;
+}
+.bg-fff{
+   background: #fff;
+}
+@import '../../../pc-widget/icon/icon.scss';
+@import '../../../pc-widget/header/header.scss';
+@import '../../../pc-widget/menu/menu.scss';
+@import '../../../pc-widget/footer/footer.scss';
+@import '../../../pc-widget/button/button.scss';
+@import '../../../pc-widget/crumbs/crumbs.scss';
+@import '../../../pc-widget/sort/sort.scss';
+@import '../../../pc-widget/article/article.scss';
+@import '../../../pc-widget/checkmorecomments/checkmorecomments.scss';
+@import '../../../pc-widget/dialog/pop.scss';
+@import '../../../pc-widget/select/select.scss';
+@import '../../../pc-widget/top/top.scss';
+@import '../../../pc-widget/slider/slider.scss';
+@import '../../../pc-widget/calendar/calendar.scss';
+@import '../../../pc-widget/button/fixed.scss';
+@import '../../../pc-widget/header/header-merge.scss';
+@import '../../../pc-widget/header/header-gome.scss';

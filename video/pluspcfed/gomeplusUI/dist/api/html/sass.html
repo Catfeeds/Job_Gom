@@ -1,0 +1,1668 @@
+<!DOCTYPE html>
+<html lang="zh-CN" data-use-rem="750">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+	<meta name="format-detection" content="telephone=no">
+	<meta name="format-detection" content="email=no">
+	<meta http-equiv="expires" content="0">
+	<link type="text/css" rel="stylesheet" href="../css/public.css">
+	<link type="text/css" rel="stylesheet" href="../css/sass.css">
+	<script type="text/javascript" src="../js/jquery-1.9.0.js"></script>
+	<script type="text/javascript" src="../js/effect.js"></script>
+	<script type="text/javascript" src="../js/widget.js"></script>
+</head>
+<body class="opg body-font-family">
+	<script type="text/javascript">
+	 (function appVersion() {
+      	window.platform = {};
+      	var ua = window.navigator.userAgent.toLowerCase();
+      	var isIphone = ua.match(/iphone os/i) == 'iphone os';
+      	var isAndroid = ua.match(/android/i) == 'android';
+      	// ipad 也为mobile
+      	var isMobile = ua.match(/mobile/i) == 'mobile';
+      	var isIpad = ua.match(/ipad/) == 'ipad';
+      
+      	platform.isMobile = function () {
+      		return isMobile && !isIpad;
+      	}
+      	if(platform.isMobile()) {
+      		(function(win){var doc=win.document,html=doc.documentElement,option=html.getAttribute("data-use-rem");if(option===null){return}var baseWidth=parseInt(option).toString()==="NaN"?640:parseInt(option);var grids=baseWidth/100;var clientWidth=html.clientWidth||320;html.style.fontSize=clientWidth/grids+"px";var testDom=document.createElement("div");var testDomWidth=0;var adjustRatio=0;testDom.style.cssText="height:0;width:1rem;";doc.body.appendChild(testDom);var calcTestDom=function(){testDomWidth=testDom.offsetWidth;if(testDomWidth!==Math.round(clientWidth/grids)){adjustRatio=clientWidth/grids/testDomWidth;var reCalcRem=clientWidth*adjustRatio/grids;html.style.fontSize=reCalcRem+"px"}else{doc.body.removeChild(testDom)}};setTimeout(calcTestDom,20);var reCalc=function(){var newCW=html.clientWidth;if(newCW===clientWidth){return}clientWidth=newCW;html.style.fontSize=newCW*(adjustRatio?adjustRatio:1)/grids+"px"};if(!doc.addEventListener){return}var resizeEvt="orientationchange" in win?"orientationchange":"resize";win.addEventListener(resizeEvt,reCalc,false);doc.addEventListener("DOMContentLoaded",reCalc,false)})(window);
+      	}
+      })()
+	</script>
+	<!-- header -->
+	<nav class="header header-mobile">
+		<section class="logo">SassCore API<span class="classify"></span></section>
+		<section class="nav">
+			<ul>
+				<li class="active"><a href="#">animation</a></li>
+				<li><a href="#"	>css3</a></li>
+				<li><a href="#">stylesheet</a></li>
+				<li><a href="#">utils</a></li>
+				<li><a href="#">view</a></li>
+				<li><a href="#">configure</a></li>
+			</ul>
+		</section>
+		<span class="nav-button fade-in show"><i></i></span>
+		<a href="http://opg-pre.intra.gomeplus.com" class="fade-in icon-home"><i></i></a>
+	</nav>
+	<!-- header end-->
+	<!-- master -->
+	<section class="master"></section>
+	<!-- master end-->
+	<!-- home -->
+	<span class="back-home bounce-in-down"><a href="#">Home</a></span>
+	<!-- home end -->
+
+	<!--animate动画-->
+	<section class="section module" style="display: block;">
+		<h1 class="h1">_bounce.scss</h1>
+		<p>定义缓冲弹出、弹入的系列效果。</p>
+		<p>此方法禁止与_suspend()同时作用于同一个元素。</p>
+		<h2 class="h2">syntax</h1>
+		<pre><code>bounce-in($prefixes)</code></pre>
+		<h2 class="h2">parameter</h1>
+		<p>配置keyframes浏览器前缀</p>
+		<table class="table">
+			<thead>
+				<tr>
+					<th>参数</th>
+					<th>可选值</th>
+					<th>默认值</th>
+					<th>选项</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>$prefixes</td>
+					<td>
+						<span class="span-col">webkit</span>
+						<span class="span-col">moz</span>
+						<span class="span-col">ms</span>
+						<span class="span-col">o</span>
+						<span class="span-col">none</span>
+					</td>
+					<td>webkit</td>
+					<td>选填</td>
+				</tr>
+			</tbody>
+		</table>
+		<h2 class="h2">effect</h1>
+		<p>弹入效果</p>
+		<table class="table">
+			<colgroup>
+				<col>
+				<col>
+			</colgroup>
+			<thead>
+				<tr>
+					<th>class</th>
+					<th>effect</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>bounce-in()</td>
+					<td>中心放大弹入</td>
+				</tr>
+				<tr>
+					<td>bounce-in-up()</td>
+					<td>从下至上弹入</td>
+				</tr>
+				<tr>
+					<td>bounce-in-down()</td>
+					<td>从上至下弹入</td>
+				</tr>
+				<tr>
+					<td>bounce-in-left()</td>
+					<td>从右往左弹入</td>
+				</tr>
+				<tr>
+					<td>bounce-in-right()</td>
+					<td>从左往右弹入</td>
+				</tr>
+			</tbody>
+		</table>
+		<!-- 动效列表 -->
+		<section class="demo" id="bounce-in">
+			<div class="animate-type">bounce-in</div>
+			<div class="animate-btn">
+				<span class="animate-select">bounce-in动画效果</span>
+				<ul class="animate-list">
+					<li>bounce-in</li>
+					<li>bounce-in-up</li>
+					<li>bounce-in-down</li>
+					<li>bounce-in-left</li>
+					<li>bounce-in-right</li>
+				</ul>
+			</div>
+		</section>
+		<!-- 动效列表 end-->
+		<p>弹出效果</p>
+		<table class="table">
+			<colgroup>
+				<col>
+				<col>
+			</colgroup>
+			<thead>
+				<tr>
+					<th>class</th>
+					<th>effect</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>bounce-out()</td>
+					<td>中心缩小弹出</td>
+				</tr>
+				<tr>
+					<td>bounce-out-up()</td>
+					<td>从下至上弹出</td>
+				</tr>
+				<tr>
+					<td>bounce-out-down()</td>
+					<td>从上至下弹出</td>
+				</tr>
+				<tr>
+					<td>bounce-out-left()</td>
+					<td>从右往左弹出</td>
+				</tr>
+				<tr>
+					<td>bounce-out-right()</td>
+					<td>从左往右弹出</td>
+				</tr>
+			</tbody>
+		</table>
+		<!-- 动效列表 -->
+		<section class="demo" id="bounce-out">
+			<div class="animate-type">bounce-out</div>
+			<div class="animate-btn">
+				<span class="animate-select">bounce-out动画效果</span>
+				<ul class="animate-list">
+					<li>bounce-out</li>
+					<li>bounce-out-up</li>
+					<li>bounce-out-down</li>
+					<li>bounce-out-left</li>
+					<li>bounce-out-right</li>
+				</ul>
+			</div>
+		</section>
+		<!-- 动效列表 end-->
+		<h2 class="h2">sass</h1>
+		<pre><code>@include bounce-in();</code></pre>
+		<h2 class="h2">css</h1>
+		<pre><code>@-webkit-keyframes bounce-in {
+  ... ...
+}
+@keyframes bounce-in {
+  ... ...
+}</code></pre>
+		<h1 class="h1">_fade.scss</h1>
+		<p>定义淡入、淡出系列效果。</p>
+		<p>此方法禁止与_suspend()同时作用于同一个元素。</p>
+		<h2 class="h2">syntax</h1>
+		<pre><code>fade-in($prefixes)</code></pre>
+		<h2 class="h2">parameter</h1>
+		<p>配置keyframes浏览器前缀</p>
+		<table class="table">
+			<colgroup>
+				<col>
+				<col>
+				<col>
+				<col>
+			</colgroup>
+			<thead>
+				<tr>
+					<th>参数</th>
+					<th>可选值</th>
+					<th>默认值</th>
+					<th>选项</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>$prefixes</td>
+					<td>
+						<span class="span-col">webkit</span>
+						<span class="span-col">moz</span>
+						<span class="span-col">ms</span>
+						<span class="span-col">o</span>
+						<span class="span-col">none</span>
+					</td>
+					<td>webkit</td>
+					<td>选填</td>
+				</tr>
+			</tbody>
+		</table>
+		<h2 class="h2">effect</h1>
+		<p>淡入效果</p>
+		<table class="table">
+			<colgroup>
+				<col>
+				<col>
+			</colgroup>
+			<thead>
+				<tr>
+					<th>class</th>
+					<th>effect</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>fade-in()</td>
+					<td>淡入效果</td>
+				</tr>
+				<tr>
+					<td>fade-in-up()</td>
+					<td>从下往上淡入</td>
+				</tr>
+				<tr>
+					<td>fade-in-down()</td>
+					<td>从上往下淡入</td>
+				</tr>
+				<tr>
+					<td>fade-in-left()</td>
+					<td>从右往左淡入</td>
+				</tr>
+				<tr>
+					<td>fade-in-right()</td>
+					<td>从左往右淡入</td>
+				</tr>
+			</tbody>
+		</table>
+		<!-- 动效列表 -->
+		<section class="demo" id="fade-in">
+			<div class="animate-type">fade-in</div>
+			<div class="animate-btn">
+				<span class="animate-select">fade-in动画效果</span>
+				<ul class="animate-list">
+					<li>fade-in</li>
+					<li>fade-in-up</li>
+					<li>fade-in-down</li>
+					<li>fade-in-left</li>
+					<li>fade-in-right</li>
+				</ul>
+			</div>
+		</section>
+		<!-- 动效列表 end-->
+		<p>淡出效果</p>
+		<table class="table">
+			<colgroup>
+				<col>
+				<col>
+			</colgroup>
+			<thead>
+				<tr>
+					<th>class</th>
+					<th>effect</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>fade-out()</td>
+					<td>淡出效果</td>
+				</tr>
+				<tr>
+					<td>fade-out-up()</td>
+					<td>从下往上淡出</td>
+				</tr>
+				<tr>
+					<td>fade-out-down()</td>
+					<td>从上往下淡出</td>
+				</tr>
+				<tr>
+					<td>fade-out-left()</td>
+					<td>从右往左淡出</td>
+				</tr>
+				<tr>
+					<td>fade-out-right()</td>
+					<td>从左往右淡出</td>
+				</tr>
+			</tbody>
+		</table>
+		<!-- 动效列表 -->
+		<section class="demo" id="fade-out">
+			<div class="animate-type">fade-out</div>
+			<div class="animate-btn">
+				<span class="animate-select">fade-out动画效果</span>
+				<ul class="animate-list">
+					<li>fade-out</li>
+					<li>fade-out-up</li>
+					<li>fade-out-down</li>
+					<li>fade-out-left</li>
+					<li>fade-out-right</li>
+				</ul>
+			</div>
+		</section>
+		<!-- 动效列表 end-->
+		<h2 class="h2">sass</h1>
+		<pre><code>@include fade-in($prefixes)</code></pre>
+		<h2 class="h2">css</h1>
+		<pre><code>@-webkit-keyframes fade-in {
+  ... ...
+}
+@keyframes fade-in {
+  ... ...
+}
+.fade-in{
+  ... ...
+}</code></pre>
+
+	</section>
+	<!--animate 动画 end-->
+
+	<!--css3-->
+	<section class="section module">
+
+		<!--css3 _background-size-->
+		<h1 class="h1">_background-size()</h1>
+		<p>背景图片收缩尺寸。</p>
+		<h1 class="h2">syntax</h1>
+		<pre><code>background-size($value:contain,$prefixs:webkit)</code></pre>
+		<h2 class="h2">parameter</h1>
+		<table class="table">
+			<thead>
+				<tr>
+					<th>参数</th>
+					<th>参数种类</th>
+					<th>默认值</th>
+					<th>选项</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>$value</td>
+					<td>
+						<span class="span-col">contain</span>
+						<span class="span-col">cover</span>
+						<span class="span-col">auto</span>
+						<span class="span-col">自定义</span>
+					</td>
+					<td>contain</td>
+					<td>选填</td>
+				</tr>
+				<tr>
+					<td>$prefixes</td>
+					<td>
+						<span class="span-col">webkit</span>
+						<span class="span-col">moz</span>
+						<span class="span-col">ms</span>
+						<span class="span-col">o</span>
+						<span class="span-col">none</span>
+					</td>
+					<td>webkit</td>
+					<td>选填</td>
+				</tr>
+			</tbody>
+		</table>
+		<h2 class="h2">sass</h2>
+		<pre><code>@include background-size(cover,webkit);</code></pre>
+		<h2 class="h2">css</h2>
+		<pre><code>.demo{
+  -webkit-background-size: cover;
+  background-size: cover;
+}</code></pre>
+		<!--css3 _background-size end-->
+		
+		<!--css3 _border-radius-->
+		<h1 class="h1">_border-radius()</h1>
+		<p>圆角边框。</p>
+		<h1 class="h2">syntax</h1>
+		<pre><code>border-radius($radius:0,$prefixs:webkit)</code></pre>
+		<h2 class="h2">parameter</h1>
+		<table class="table">
+			<thead>
+				<tr>
+					<th>参数</th>
+					<th>参数种类</th>
+					<th>默认值</th>
+					<th>选项</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>$radius</td>
+					<td>自定义</td>
+					<td>0</td>
+					<td>选填</td>
+				</tr>
+				<tr>
+					<td>$prefixes</td>
+					<td>
+						<span class="span-col">webkit</span>
+						<span class="span-col">moz</span>
+						<span class="span-col">ms</span>
+						<span class="span-col">o</span>
+						<span class="span-col">none</span>
+					</td>
+					<td>webkit</td>
+					<td>选填</td>
+				</tr>
+			</tbody>
+		</table>
+		<h2 class="h2">sass</h2>
+		<pre><code>@include border-radius(10px,none);</code></pre>
+		<h2 class="h2">css</h2>
+		<pre><code>.demo{
+  border-radius: 10px;
+}</code></pre>
+		<!--css3 _border-radius end-->
+
+		<!--css3 _box-shadow-->
+		<h1 class="h1">_box-shadow()</h1>
+		<p>容器阴影。</p>
+		<h1 class="h2">syntax</h1>
+		<pre><code>box-shadow($shadows:(0 0 4px rgba(0,0,0,0.3)),$prefixs:webkit)</code></pre>
+		<p>$shadows：配置多组投影参数值时，需使用括号‘()’将参数组包裹，每一组参数使用逗号‘,’分隔。</p>
+		<h2 class="h2">parameter</h1>
+		<table class="table">
+			<thead>
+				<tr>
+					<th>参数</th>
+					<th>参数种类</th>
+					<th>默认值</th>
+					<th>选项</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>$pos</td>
+					<td>自定义</td>
+					<td>0 0 4px rgba(0,0,0,0.3)</td>
+					<td>选填</td>
+				</tr>
+				<tr>
+					<td>$prefixes</td>
+					<td>
+						<span class="span-col">webkit</span>
+						<span class="span-col">moz</span>
+						<span class="span-col">ms</span>
+						<span class="span-col">o</span>
+						<span class="span-col">none</span>
+					</td>
+					<td>webkit</td>
+					<td>选填</td>
+				</tr>
+			</tbody>
+		</table>
+		<h2 class="h2">sass</h2>
+		<pre><code>@include box-shadow((0 0 4px red,0 0 10px blue inset),webkit);</code></pre>
+		<h2 class="h2">css</h2>
+		<pre><code>.demo{
+  -webkit-box-shadow: 0 0 4px red, 0 0 10px blue inset;
+  box-shadow: 0 0 4px red, 0 0 10px blue inset;
+}</code></pre>
+		<!--css3 _box-shadow end-->
+
+		<!--css3 _box-sizing-->
+		<h1 class="h1">_box-sizing()</h1>
+		<p>盒模型计算。</p>
+		<h1 class="h2">syntax</h1>
+		<pre><code>box-sizing($type:border-box,$prefixs:webkit)</code></pre>
+		<h2 class="h2">parameter</h1>
+		<table class="table">
+			<thead>
+				<tr>
+					<th>参数</th>
+					<th>参数种类</th>
+					<th>默认值</th>
+					<th>选项</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>$type</td>
+					<td>
+						<span class="span-col">border-box</span>
+						<span class="span-col">paddigg-box</span>
+						<span class="span-col">content-box</span>
+					</td>
+					<td>border-box</td>
+					<td>选填</td>
+				</tr>
+				<tr>
+					<td>$prefixes</td>
+					<td>
+						<span class="span-col">webkit</span>
+						<span class="span-col">moz</span>
+						<span class="span-col">ms</span>
+						<span class="span-col">o</span>
+						<span class="span-col">none</span>
+					</td>
+					<td>webkit</td>
+					<td>选填</td>
+				</tr>
+			</tbody>
+		</table>
+		<h2 class="h2">sass</h2>
+		<pre><code>@include box-sizing(padding-box,webkit);</code></pre>
+		<h2 class="h2">css</h2>
+		<pre><code>.demo{
+  -webkit-box-sizing: padding-box;
+  box-sizing: padding-box;
+}</code></pre>
+		<!--css3 _box-sizing end-->
+
+		<!--css3 _keyframes-->
+		<h1 class="h1">_keyframes()</h1>
+		<p>配置@keyframes浏览器前缀。</p>
+		<h1 class="h2">syntax</h1>
+		<pre><code>keyframes($animation-name,$prefixs:webkit)</code></pre>
+		<p>定义Css3的Animate动画兼容浏览器时调用。</p>
+		<h2 class="h2">parameter</h1>
+		<table class="table">
+			<thead>
+				<tr>
+					<th>参数</th>
+					<th>参数种类</th>
+					<th>默认值</th>
+					<th>选项</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>$animation-name</td>
+					<td>自定义</td>
+					<td>-</td>
+					<td>必填</td>
+				</tr>
+				<tr>
+					<td>$prefixes</td>
+					<td>
+						<span class="span-col">webkit</span>
+						<span class="span-col">moz</span>
+						<span class="span-col">ms</span>
+						<span class="span-col">o</span>
+						<span class="span-col">none</span>
+					</td>
+					<td>webkit</td>
+					<td>选填</td>
+				</tr>
+			</tbody>
+		</table>
+		<h2 class="h2">sass</h2>
+		<p>源码</p>
+		<pre><code>@mixin demo($prefixs:none){
+  @include keyframes(demo,$prefixs){
+    0% {
+        opacity:0;
+        @include scale((0.3),$prefixs);
+    }
+    100% {
+        @include scale((1),$prefixs);
+    }
+}
+  .demo {
+    @include animation((demo 0.5s 0.1s),$prefixs);
+  }
+}</code></pre>
+		<h2 class="h2">css</h2>
+		<p>调用</p>
+		<pre><code>@include demo(none);</code></pre>
+		<p>解析</p>
+		<pre><code>@keyframes demo {
+  0% {
+    opacity: 0;
+    transform: scale(0.3); 
+  }
+  100% {
+    transform: scale(1); 
+  } 
+}
+.demo {
+  animation: demo 0.5s 0.1s; 
+}
+
+</code></pre>
+		<!--css3 _keyframes end-->
+
+		<!--css3 _origin-->
+		<h1 class="h1">_origin()</h1>
+		<p>旋转元素。</p>
+		<h1 class="h2">syntax</h1>
+		<pre><code>origin($pos:center center,$prefixs:webkit)</code></pre>
+		<p>$pos：多个参数值需要空格进行分隔。</p>
+		<h2 class="h2">parameter</h1>
+		<table class="table">
+			<thead>
+				<tr>
+					<th>参数</th>
+					<th>参数种类</th>
+					<th>默认值</th>
+					<th>选项</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>$pos</td>
+					<td>
+						<span class="span-col">left</span>
+						<span class="span-col">center</span>
+						<span class="span-col">top</span>
+						<span class="span-col">percent</span>
+						<span class="span-col">number</span>
+					</td>
+					<td>center center</td>
+					<td>选填</td>
+				</tr>
+				<tr>
+					<td>$prefixes</td>
+					<td>
+						<span class="span-col">webkit</span>
+						<span class="span-col">moz</span>
+						<span class="span-col">ms</span>
+						<span class="span-col">o</span>
+						<span class="span-col">none</span>
+					</td>
+					<td>webkit</td>
+					<td>选填</td>
+				</tr>
+			</tbody>
+		</table>
+		<h2 class="h2">sass</h2>
+		<pre><code>@include origin(center center,webkit);</code></pre>
+		<h2 class="h2">css</h2>
+		<pre><code>.demo{
+  -webkit-transform-origin: center center;
+  transform-origin: center center;
+}</code></pre>
+		<!--css3 _origin end-->
+
+		<!--css3 _rotate-->
+		<h1 class="h1">_rotate()</h1>
+		<p>旋转元素。</p>
+		<h1 class="h2">syntax</h1>
+		<pre><code>rotate($value:0deg,$prefixs:webkit)</code></pre>
+		<p>$value参数个数 ≤ 4</p>
+		<p>1个参数定义2D旋转</p>
+		<p>2个参数时，第一个参数为值，第二个参数用于定义3D旋转轴向(x、y、z)</p>
+		<p>4个参数定义3D旋转的x、y、z、angle</p>
+		<h2 class="h2">parameter</h1>
+		<table class="table">
+			<thead>
+				<tr>
+					<th>参数</th>
+					<th>参数种类</th>
+					<th>默认值</th>
+					<th>选项</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>$value</td>
+					<td>
+						<span class="span-col">($value)</span>
+						<span class="span-col">($value,x)</span>
+						<span class="span-col">($value,y)</span>
+						<span class="span-col">($value,z)</span>
+						<span class="span-col">(x,y,z,angle)</span>
+					</td>
+					<td>0deg</td>
+					<td>选填</td>
+				</tr>
+				<tr>
+					<td>$prefixes</td>
+					<td>
+						<span class="span-col">webkit</span>
+						<span class="span-col">moz</span>
+						<span class="span-col">ms</span>
+						<span class="span-col">o</span>
+						<span class="span-col">none</span>
+					</td>
+					<td>webkit</td>
+					<td>选填</td>
+				</tr>
+			</tbody>
+		</table>
+		<h2 class="h2">sass</h2>
+		<pre><code>@include rotate((-45deg),webkit);</code></pre>
+		<h2 class="h2">css</h2>
+		<pre><code>.demo{
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}</code></pre>
+		<!--css3 _rotate end-->
+
+		<!--css3 _scale-->
+		<h1 class="h1">_scale()</h1>
+		<p>缩放元素。</p>
+		<h1 class="h2">syntax</h1>
+		<pre><code>scale($value:1,$prefixs:webkit)</code></pre>
+		<p>$value的参数值数目 ≤ 2。</p>
+		<p>$value配置2个参数时，需使用括号'()'包裹参数且参数之间需使用逗号‘,’分隔。第2个参数也可以设置x、y、z字符串，分别表示对元素的x轴、y轴、z轴进行缩放。</p>
+		<p>如：scale((1.5,x),webkit);</p>
+		<h2 class="h2">parameter</h1>
+		<table class="table">
+			<thead>
+				<tr>
+					<th>参数</th>
+					<th>参数种类</th>
+					<th>默认值</th>
+					<th>选项</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>$value</td>
+					<td>
+						<span class="span-col">($value)</span>
+						<span class="span-col">($value,$value)</span>
+						<span class="span-col">($value,x)</span>
+						<span class="span-col">($value,y)</span>
+						<span class="span-col">($value,z)</span>
+						<span class="span-col">(x,y,z)</span>
+					</td>
+					<td>1</td>
+					<td>选填</td>
+				</tr>
+				<tr>
+					<td>$prefixes</td>
+					<td>
+						<span class="span-col">webkit</span>
+						<span class="span-col">moz</span>
+						<span class="span-col">ms</span>
+						<span class="span-col">o</span>
+						<span class="span-col">none</span>
+					</td>
+					<td>webkit</td>
+					<td>选填</td>
+				</tr>
+			</tbody>
+		</table>
+		<h2 class="h2">sass</h2>
+		<pre><code>@include scale((1.5,x));</code></pre>
+		<h2 class="h2">css</h2>
+		<pre><code>-webkit-transform: scaleX(1.5);
+transform: scaleX(1.5);</code></pre>
+		<!--css3 _scale end-->
+
+		<!--css3 _text-shadow-->
+		<h1 class="h1">_text-shadow()</h1>
+		<p>文本阴影。</p>
+		<h1 class="h2">syntax</h1>
+		<pre><code>text-shadow($shadows:(0 0 4px rgba(0,0,0,0.3)),$prefixs:webkit)</code></pre>
+		<p>$shadows设置多个文本阴影时需使用括号“()”包裹，且每个文本阴影效果之间需使用逗号“,”间隔。</p>
+		<h2 class="h2">parameter</h1>
+		<table class="table">
+			<thead>
+				<tr>
+					<th>参数</th>
+					<th>可选值</th>
+					<th>默认值</th>
+					<th>选项</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>$shadows</td>
+					<td>自定义</td>
+					<td>0 0 4px rgba(0,0,0,0.3)</td>
+					<td>选填</td>
+				</tr>
+				<tr>
+					<td>$prefixes</td>
+					<td>
+						<span class="span-col">webkit</span>
+						<span class="span-col">moz</span>
+						<span class="span-col">ms</span>
+						<span class="span-col">o</span>
+						<span class="span-col">none</span>
+					</td>
+					<td>webkit</td>
+					<td>选填</td>
+				</tr>
+			</tbody>
+		</table>
+		<h2 class="h2">sass</h2>
+		<pre><code>@include text-shadow((1px 1px 1px red,2px 2px 2px orange),none);</code></pre>
+		<h2 class="h2">css</h2>
+		<pre><code>.demo{
+  text-shadow: 1px 1px 1px red, 2px 2px 2px orange;
+}</code></pre>
+		<!--css3 _text-shadow end-->
+
+
+		<!--css3 _transition-->
+		<h1 class="h1">_transition()</h1>
+		<p>属性过渡。</p>
+		<h1 class="h2">syntax</h1>
+		<pre><code>transition($transition-para:(all linear 0.5s),$prefixs:webkit)</code></pre>
+		<p>$transition-para配置多组属性过渡时，需使用括号'()'将属性过渡包裹且每组属性过渡需逗号‘,’分隔。</p>
+		<h2 class="h2">parameter</h1>
+		<table class="table">
+			<thead>
+				<tr>
+					<th>参数</th>
+					<th>可选值</th>
+					<th>默认值</th>
+					<th>选项</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>$transition-para</td>
+					<td>
+						<span class="span-col">property</span>
+						<span class="span-col">duration</span>
+						<span class="span-col">timing-function</span>
+						<span class="span-col">delay</span>
+					</td>
+					<td>all linear 0.5s</td>
+					<td>选填</td>
+				</tr>
+				<tr>
+					<td>$prefixes</td>
+					<td>
+						<span class="span-col">webkit</span>
+						<span class="span-col">moz</span>
+						<span class="span-col">ms</span>
+						<span class="span-col">o</span>
+						<span class="span-col">none</span>
+					</td>
+					<td>webkit</td>
+					<td>选填</td>
+				</tr>
+			</tbody>
+		</table>
+		<h2 class="h2">sass</h2>
+		<pre><code>@include transition((width linear 1s,background-color linear 3s 1s),webkit);</code></pre>
+		<h2 class="h2">css</h2>
+		<pre><code>.demo{
+  -webkit-transition: width linear 1s, background-color linear 3s 1s;
+  transition: width linear 1s, background-color linear 3s 1s;
+}</code></pre>
+		<!--css3 _transition end-->
+
+
+		<!--css3 _translate-->
+		<h1 class="h1">_translate()</h1>
+		<p>相对元素本身位移。</p>
+		<h1 class="h2">syntax</h1>
+		<pre><code>translate($value:0,$prefixs:webkit)</code></pre>
+		<p>$value配置参数 ≤ 2</p>
+		<p>设置1个参数则仅x轴有效</p>
+		<p>设置2个参数时，参数需要使用括号‘()’包裹，且参数需使用逗号‘,’间隔，第2个参数也可以设置x、y字符串，分别表示对元素的x轴、y轴进行位移。</p>
+		<h2 class="h2">parameter</h1>
+		<table class="table">
+			<thead>
+				<tr>
+					<th>参数</th>
+					<th>可选值</th>
+					<th>默认值</th>
+					<th>选项</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>$value</td>
+					<td>
+						<span class="span-col">(value)</span>
+						<span class="span-col">(val1,val2)</span>
+						<span class="span-col">(value,x)</span>
+						<span class="span-col">(value,y)</span>
+					</td>
+					<td>
+						0
+						<span class="span-col">(不位移)</span>
+						<!-- <span class="span-col">translate()</span>
+						<span class="span-col">translate()</span>
+						<span class="span-col">translateX()</span>
+						<span class="span-col">translateY()</span> -->
+					</td>
+					<td title="red">必填</td>
+				</tr>
+				<tr>
+					<td>$prefixes</td>
+					<td>
+						<span class="span-col">webkit</span>
+						<span class="span-col">moz</span>
+						<span class="span-col">ms</span>
+						<span class="span-col">o</span>
+						<span class="span-col">none</span>
+					</td>
+					<td>webkit</td>
+					<td>选填</td>
+				</tr>
+			</tbody>
+		</table>
+		<h2 class="h2">sass</h2>
+		<pre><code>@include translate((10px,15px),none);</code></pre>
+		<h2 class="h2">css</h2>
+		<pre><code>transform: translate(10px, 15px);</code></pre>
+		<!--css3 _translate end-->
+	</section>
+	<!--css3 end-->
+	
+	<!--stylesheet-->
+	<section class="section module">
+
+		<!--stylesheet _ellipsis-->
+		<h1 class="h1">_ellipsis()</h1>
+		<p>设置字符截取，以省略号'...'结束。</p>
+		<h2 class="h2">syntax</h1>
+		<pre><code>ellipsis($type:pc,$line:2)</code></pre>
+		<p>可以配置自定义属性值，如width。</p>
+		<pre><code>ellipsis($type:pc,$line:2){
+  width:100px;
+}</code></pre>
+		<h2 class="h2">parameter</h1>
+		<p>一行文本截取，mobile和pc统一使用$type:pc。</p>
+		<p>$line仅在配置$type:mobile时有效。</p>
+		<table class="table">
+			<thead>
+				<tr>
+					<th>参数</th>
+					<th>可选值</th>
+					<th>默认值</th>
+					<th>选项</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>$type</td>
+					<td>
+						<span class="span-col">mobile</span>
+						<span class="span-col">pc</span>
+					</td>
+					<td>pc</td>
+					<td>选填</td>
+				</tr>
+				<tr>
+					<td>$line</td>
+					<td>自定义</td>
+					<td>2</td>
+					<td>选填</td>
+				</tr>
+				<tr>
+					<td>@content</td>
+					<td>自定义属性</td>
+					<td>-</td>
+					<td>选填</td>
+				</tr>
+			</tbody>
+		</table>
+		<h2 class="h2">sass</h2>
+		<pre><code>@include ellipsis(mobile,3);</code></pre>
+		<h2 class="h2">css</h2>
+		<pre><code>.demo{
+  overflow: hidden;
+  word-break: break-all;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+}</code></pre>
+		<!--stylesheet _ellipsis end-->
+		
+		<!--stylesheet _font-face-->
+		<h1 class="h1">_font-face()</h1>
+		<p>配置font-face引用iconFont图标文件路径及基本样式。</p>
+		<h2 class="h2">syntax</h1>
+		<pre><code>font-face($name,$version,$type:pc)</code></pre>
+		<h2 class="h2">parameter</h1>
+		<p>$set-file-path配置iconfont图标文件路径。</p>
+		<table class="table">
+			<thead>
+				<tr>
+					<th>参数</th>
+					<th>可选值</th>
+					<th>默认值</th>
+					<th>选项</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>$name</td>
+					<td>-</td>
+					<td>iconwap</td>
+					<td>选填</td>
+				</tr>
+				<tr>
+					<td>$version</td>
+					<td>-</td>
+					<td>时间戳</td>
+					<td title="red">必填</td>
+				</tr>
+				<tr>
+					<td>$type</td>
+					<td>
+						<span class="span-col">pc</span>
+						<span class="span-col">mobile</span>
+					</td>
+					<td>pc</td>
+					<td>选填</td>
+				</tr>
+				<tr>
+					<td>$set-file-path</td>
+					<td>-</td>
+					<td>../../images/iconfont/</td>
+					<td>选填</td>
+				</tr>
+			</tbody>
+		</table>
+
+		<h2 class="h2">sass</h2>
+		<pre><code>$set-file-path:  '../../images/iconfont/';
+@include font-face(iconwap,20170217,pc);</code></pre>
+		<h2 class="h2">css</h2>
+		<pre><code>@font-face{
+	font-family:iconwap;
+	src:url("../../images/iconfont/iconwap.eot?20170217#iefix") format("embedded-opentype"), 
+      url("../../images/iconfont/iconwap.ttf?20170217") format("truetype"),
+      url("../../images/iconfont/iconwap.woff?20170217") format("woff"),
+      url("../../images/iconfont/iconwap.svg?20170217") format("svg");
+}
+.icon{
+  font-family: iconwap !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  }</code></pre>
+		<!--stylesheet _font-face-->
+
+		<!--stylesheet _img-->
+		<h1 class="h1">_img()</h1>
+		<p>定义stylesheet样式文件中装饰图片的background基本属性。</p>
+		<h2 class="h2">syntax</h1>
+		<pre><code>img($img-name,$pos:left top,$repeat:no-repeat,$img-url:$set-img-path)</code></pre>
+		<h2 class="h2">parameter</h1>
+		<p>$set-img-path配置装饰图片文件路径。</p>
+		<p>图片名字必须使用引号‘ ’包裹。</p>
+		<table class="table">
+			<thead>
+				<tr>
+					<th>参数</th>
+					<th>可选值</th>
+					<th>默认值</th>
+					<th>选项</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>$img-name</td>
+					<td>-</td>
+					<td>-</td>
+					<td title="red">必填</td>
+				</tr>
+				<tr>
+					<td>$pos</td>
+					<td>-</td>
+					<td>left top</td>
+					<td>选填</td>
+				</tr>
+				<tr>
+					<td>$repeat</td>
+					<td>
+						<span class="span-col">no-repeat</span>
+						<span class="span-col">repeat-x</span>
+						<span class="span-col">repeat-y</span>
+						<span class="span-col">repeat</span>
+					</td>
+					<td>no-repeat</td>
+					<td>选填</td>
+				</tr>
+				<tr>
+					<td>$img-url</td>
+					<td>-</td>
+					<td>../../images/public/</td>
+					<td>选填</td>
+				</tr>
+			</tbody>
+		</table>
+		<h2 class="h2">sass</h2>
+		<pre><code>$set-img-path:     '../../images/public/';
+@include img('gomeplusUI.png');</code></pre>
+		<h2 class="h2">css</h2>
+		<pre><code>.demo{
+  background-image: url("../../images/public/gomeplusUI.png");
+  background-repeat: no-repeat;
+  background-position: left top;
+}</code></pre>
+		<!--stylesheet _img end-->
+
+		<!--stylesheet line-->
+		<h1 class="h1">_line()</h1>
+		<p>定义边框效果，主要处理移动端0.5px效果。</p>
+		<p>pc端禁用此方法。</p>
+		<h2 class="h2">syntax</h1>
+		<pre><code>line($direct:top,$border-color:#c7c7c7,$radius:0)</code></pre>
+		<p>$radius主有配合$direct:all使用，设置为其它属性时无效；</p>
+		<p>如需设置两个边框效果，则<em class="code">$direct</em>需配置<em class="code">2</em>个参数值并使用括号'<em class="code">()</em>'包裹，参数值之间需要使用逗号'<em class="code">,</em>'间隔(非必须)。</p>
+		<h2 class="h2">parameter</h1>
+		<p></p>
+		<table class="table">
+			<thead>
+				<tr>
+					<th>参数</th>
+					<th>可选值</th>
+					<th>默认值</th>
+					<th>选项</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>$direct</td>
+					<td>
+						<span class="span-col">top</span>
+						<span class="span-col">right</span>
+						<span class="span-col">bottom</span>
+						<span class="span-col">left</span>
+						<span class="span-col">all</span>
+						<span class="span-col">(para1,para2)<sup class="new">new</sup></span>
+					</td>
+					<td>top</td>
+					<td>选填</td>
+				</tr>
+				<tr>
+					<td>$border-color</td>
+					<td>-</td>
+					<td>#c7c7c7</td>
+					<td>选填</td>
+				</tr>
+				<tr>
+					<td>$radius</td>
+					<td>-</td>
+					<td>0</td>
+					<td>选填</td>
+				</tr>
+			</tbody>
+		</table>
+		<h2 class="h2">sass</h2>
+		<pre><code>@include line(bottom,#ccc);</code></pre>
+		<h2 class="h2">css</h2>
+		<pre><code>.demo{
+  .line:before {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 1px;
+  display: block;
+  border-bottom: 1px solid #ccc;
+  -webkit-transform-origin: 100% 100%;
+  transform-origin: 100% 100%; 
+}
+@media(-webkit-min-device-pixel-ratio: 1.5){
+    .line:before{
+      -webkit-transform: scale(1,0.5);
+      transform: scale(1,0.5); } 
+    }
+@media(-webkit-min-device-pixel-ratio:3) {
+    .line:before{
+      -webkit-transform:scale(1, 0.3);
+      transform: scale(1,0.3);
+    } 
+}
+}</code></pre>
+		<!--stylesheet line end-->
+			
+		<!--stylesheet _suspend-->
+		<h1 class="h1">_suspend()</h1>
+		<p>定于元素垂直水平居中显示，如弹框。</p>
+		<p>此方法禁止与_fade.scss、_bounce.scss同时作用于同一个元素。</p>
+		<h2 class="h2">syntax</h1>
+		<pre><code>@mixin suspend()</code></pre>
+		<h2 class="h2">parameter</h1>
+		<p></p>
+		<table class="table">
+			<thead>
+				<tr>
+					<th>参数</th>
+					<th>可选值</th>
+					<th>默认值</th>
+					<th>选项</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>-</td>
+					<td>-</td>
+					<td>-</td>
+					<td>-</td>
+				</tr>
+			</tbody>
+		</table>
+		<h2 class="h2">sass</h2>
+		<pre><code>@include suspend();</code></pre>
+		<h2 class="h2">css</h2>
+		<pre><code>.demo{
+  position: fixed;
+  left:50%;
+  top:50%;
+  -webkit-transform:translate(-50%,-50%);
+  transform:translate(-50%,-50%);
+}</code></pre>
+		<!--stylesheet _suspend end-->
+		
+	</section>
+	<!--stylesheet end-->
+
+	<!--utils-->
+	<section class="section module">
+
+		<!--utils _calc(rem)-->
+		<h1 class="h1">_rem()</h1>
+		<p>封装‘px’单位转‘rem’单位方法。</p>
+		<h2 class="h2">syntax</h1>
+		<pre><code>rem($values)</code></pre>
+		<p>$values参数值≥4个值，且参数的px单位可以忽略不写，多个参数值需要使用空格进行间隔。</p>
+		<p>计算基准值(base value)设定为100，UI设计稿尺寸必须以750px进行设计。</p>
+		<h2 class="h2">parameter</h1>
+		<table class="table">
+			<thead>
+				<tr>
+					<th>参数</th>
+					<th>可选值</th>
+					<th>默认值</th>
+					<th>选项</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>$values</td>
+					<td>-</td>
+					<td>-</td>
+					<td title="red">必填</td>
+				</tr>
+				<tr>
+					<td>base value</td>
+					<td>-</td>
+					<td>100</td>
+					<td>固定</td>
+				</tr>
+				<tr>
+					<td>px</td>
+					<td>-</td>
+					<td>-</td>
+					<td>可忽略</td>
+				</tr>
+			</tbody>
+		</table>
+		<h2 class="h2">sass</h1>
+		<pre><code>padding:rem(10 20 30 40)</code></pre>
+		<h2 class="h2">css</h1>
+		<pre><code>.demo{
+  padding: 0.1rem 0.2rem 0.3rem 0.4rem;
+}</code></pre>
+		<!--utils _calc(rem) end-->
+
+		<!--utils _prefix-->
+		<h1 class="h1">_prefix()</h1>
+		<p>配置属性浏览器前缀，适用范围极广，可以对任何属性进行处理。</p>
+		<h2 class="h2">syntax</h1>
+		<pre><code>prefix($key,$val,$prefixes:webkit)</code></pre>
+		<h2 class="h2">parameter</h1>
+		<table class="table">
+			<thead>
+				<tr>
+					<th>参数</th>
+					<th>可选值</th>
+					<th>默认值</th>
+					<th>选项</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>$key</td>
+					<td>自定义</td>
+					<td>-</td>
+					<td title="red">必填</td>
+				</tr>
+				<tr>
+					<td>$val</td>
+					<td>自定义</td>
+					<td>-</td>
+					<td title="red">必填</td>
+				</tr>
+				<tr>
+					<td>$prefixes</td>
+					<td>
+						<span class="span-col">webkit</span>
+						<span class="span-col">ms</span>
+						<span class="span-col">moz</span>
+						<span class="span-col">o</span>
+					</td>
+					<td>webkit</td>
+					<td>选填</td>
+				</tr>
+			</tbody>
+		</table>
+		<h2 class="h2">sass</h1>
+		<pre><code>@include prefix(box-sizing,border-box,webkit)</code></pre>
+		<h2 class="h2">css</h1>
+		<pre><code>.demo{
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}</code></pre>
+		<!--utils _prefix end-->
+
+		<!--utils _prefix-value-->
+		<h1 class="h1">_prefix-value()</h1>
+		<p>配置属性值的浏览器前缀。</p>
+		<h2 class="h2">syntax</h1>
+		<pre><code>prefix-value($key,$val,$prefixes:webkit)</code></pre>
+		<h2 class="h2">parameter</h1>
+		<table class="table">
+			<thead>
+				<tr>
+					<th>参数</th>
+					<th>可选值</th>
+					<th>默认值</th>
+					<th>选项</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>$key</td>
+					<td>自定义</td>
+					<td>-</td>
+					<td title="red">必填</td>
+				</tr>
+				<tr>
+					<td>$val</td>
+					<td>自定义</td>
+					<td>-</td>
+					<td title="red">必填</td>
+				</tr>
+				<tr>
+					<td>$prefixes</td>
+					<td>
+						<span class="span-col">webkit</span>
+						<span class="span-col">ms</span>
+						<span class="span-col">moz</span>
+						<span class="span-col">o</span>
+					</td>
+					<td>webkit</td>
+					<td>选填</td>
+				</tr>
+			</tbody>
+		</table>
+		<h2 class="h2">sass</h1>
+		<pre><code>@include prefix-value(background,linear-gradient(45deg,red,blue),webkit);</code></pre>
+		<h2 class="h2">css</h1>
+		<pre><code>.demo{
+  background: -webkit-linear-gradient(45deg, red, blue);
+  background: linear-gradient(45deg, red, blue);
+}</code></pre>
+		<!--utils _prefix-value end-->
+			
+		<!--utils _unit-->
+		<h1 class="h1">_rm-unit()</h1>
+		<p>剔除string字符串单位，获取number数字。</p>
+		<h2 class="h2">syntax</h1>
+		<pre><code>rm-unit($num)</code></pre>
+		<h2 class="h2">parameter</h1>
+		<table class="table">
+			<thead>
+				<tr>
+					<th>参数</th>
+					<th>可选值</th>
+					<th>默认值</th>
+					<th>选项</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>$num</td>
+					<td>自定义</td>
+					<td>-</td>
+					<td title="red">必填</td>
+				</tr>
+			</tbody>
+		</table>
+		<h2 class="h2">sass</h1>
+		<pre><code>line-height:rm-unit(1.5px);</code></pre>
+		<h2 class="h2">css</h1>
+		<pre><code>.demo{
+  line-height:1.5;
+}</code></pre>
+		<!--utils _unit end-->
+
+	</section>
+	<!--utils end-->
+
+	<!-- view -->
+	<section class="section module">
+		<!--view-flex-->
+		<h1 class="h1">_flex()</h1>
+		<p>简单快捷的创建一个具有弹性功能的布局。</p>
+		<h2 class="h2">syntax</h1>
+		<pre><code>flex($horizontal:left,$vertical:top)</code></pre>
+		<h2 class="h2">parameter</h1>
+		<table class="table">
+			<thead>
+				<tr>
+					<th>参数</th>
+					<th>可选值</th>
+					<th>默认值</th>
+					<th>选项</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>$horizontal</td>
+					<td>
+						<span class="span-col">left</span>
+						<span class="span-col">center</span>
+						<span class="span-col">right</span>
+						<span class="span-col">space</span>
+					</td>
+					<td>left</td>
+					<td>选填</td>
+				</tr>
+				<tr>
+					<td>$vertical</td>
+					<td>
+						<span class="span-col">top</span>
+						<span class="span-col">center</span>
+						<span class="span-col">bottom</span>
+					</td>
+					<td>top</td>
+					<td>选填</td>
+				</tr>
+			</tbody>
+		</table>
+		<h2 class="h2">sass</h1>
+		<pre><code>@include flex(center,center)</code></pre>
+		<h2 class="h2">css</h1>
+		<pre><code>.demo{
+  display: -webkit-box;
+  display: -moz-box;
+  display: box;
+  display: -ms-flexbox;
+  display: flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -moz-box-pack: center;
+  -ms-box-pack: center;
+  box-pack: center;
+  -ms-flex-pack: center;
+  flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  box-align: center;
+  -ms-flex-align: center;
+  flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}</code></pre>
+		<!--view-flex end-->
+
+		<!--view-flex-col-->
+		<h1 class="h1">_flex-col()</h1>
+		<p>按设定的值对伸缩容器的剩余空间进行对应比例的分配。</p>
+		<h2 class="h2">syntax</h1>
+		<pre><code>flex-col($column:1)</code></pre>
+		<h2 class="h2">parameter</h1>
+		<table class="table">
+			<thead>
+				<tr>
+					<th>参数</th>
+					<th>可选值</th>
+					<th>默认值</th>
+					<th>选项</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>$column</td>
+					<td>—</td>
+					<td>1</td>
+					<td>选填</td>
+				</tr>
+			</tbody>
+		</table>
+		<h2 class="h2">sass</h1>
+		<pre><code>@include flex-col(2)</code></pre>
+		<h2 class="h2">css</h1>
+		<pre><code>.demo{
+  -webkit-box-flex:2;
+  box-flex:2;
+  -webkit-flex:2;
+  -ms-flex:2;
+  flex:2;
+}</code></pre>
+		<!--view-flex-col end-->
+
+		<!--view-flex-box-->
+		<h1 class="h1">_flex-box()</h1>
+		<h2 class="h2">syntax</h1>
+		<p>设置容器为弹性布局。</p>
+		<pre><code>flex-box()</code></pre>
+		<h2 class="h2">parameter</h1>
+		<table class="table">
+			<thead>
+				<tr>
+					<th>参数</th>
+					<th>可选值</th>
+					<th>默认值</th>
+					<th>选项</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>-</td>
+					<td>-</td>
+					<td>-</td>
+					<td>-</td>
+				</tr>
+			</tbody>
+		</table>
+		<h2 class="h2">sass</h1>
+		<pre><code>@include flex-box()</code></pre>
+		<h2 class="h2">css</h1>
+		<pre><code>.demo{
+  display: -webkit-box;
+  display: -moz-box;
+  display: box;
+  display: -ms-flex-box;
+  display: flex-box;
+  display: -webkit-flex;
+  display: flex;
+}</code></pre>
+		<!--view-flex-box end-->
+
+	</section>
+	<!--view end-->
+
+	<!--configure-->
+	<section class="section module">
+		<h1 class="h1">Update log</h1>
+		<p>更新日志</p>
+		<dl class="update-logo">
+			<dt>2017.02.15</dt>
+			<dd>add css3/</dd>
+			<dd>add animate/</dd>
+		</dl>
+		<dl class="update-logo">
+			<dt>2017.02.03</dt>
+			<dd>delete view/_box-sizing.scss</dd>
+			<dd>delete view/_scale.scss</dd>
+		</dl>
+		<h1 class="h1">Directory tree </h1>
+		<p>目录树组织结构。</p>
+		<pre><code>sasscore/
+├──animate/
+   ├─_bounce.css
+   ├─_fade.css
+├──css3/
+   ├─_animation.css
+   ├─_background-size.css
+   ├─_border-radius.css
+   ├─_box-shadow.css
+   ├─_box-sizing.css
+   ├─_keyframes.css
+   ├─_origin.css
+   ├─_rotate.css
+   ├─_scale.css
+   ├─_text-shadow.css
+   ├─_transition.css
+   ├─_translate.css
+├──reset/
+   ├─_utils.css
+   ├─_text.css
+├──stylesheet/
+   ├─_font-face.css
+   ├─_img.css
+   ├─_ellipsis.css
+   ├─_line.css
+├──utils/
+   ├─_calc.css
+   ├─_prefix.css
+   ├─_unit.css
+├──view/
+   ├─_flex.css
+├──_configure.scss 
+</code></pre>
+		<h1 class="h1">_configure.scss</h1>
+		<p>引用所有sasscore里的sass文件源码文件，其作为唯一出口文件。</p>
+		<pre><code>// animation
+@import "animation/_bounce.scss";
+@import "animation/_fade.scss";
+
+// reset
+@import "reset/_utils.scss";
+
+// stylesheet
+@import "stylesheet/_ellipsis.scss";
+@import "stylesheet/_font-face.scss";
+@import "stylesheet/_img.scss";
+@import "stylesheet/_line.scss";
+@import "stylesheet/_suspend.scss";
+
+// untils
+@import "utils/_calc.scss";
+@import "utils/_prefix.scss";
+@import "utils/_unit.scss";
+
+// view
+@import "view/_flex.scss";
+
+// css3
+@import "css3/_border-radius.scss";
+@import "css3/_box-shadow.scss";
+@import "css3/_text-shadow.scss";
+@import "css3/_scale.scss";
+@import "css3/_keyframes.scss";
+@import "css3/_animation.scss";
+@import "css3/_translate.scss";
+@import "css3/_box-sizing.scss";
+@import "css3/_background-size.scss";
+@import "css3/_transition.scss";
+@import "css3/_rotate.scss";
+@import "css3/_origin.scss";</code></pre>
+	</section>
+	<!--configure end-->
+
+</body>
+</html>

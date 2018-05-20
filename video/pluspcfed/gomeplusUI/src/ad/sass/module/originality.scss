@@ -1,0 +1,57 @@
+@charset "utf-8";
+
+// _configure.scss
+@import "../public/_configure.scss";
+
+// originality
+.amp-originality{
+	.ele-input-01{
+		width:260px!important;
+	}
+	.ele-select{
+		width:200px!important;
+	}
+	.fn-plan{
+		margin-right:20px;
+	}
+	// able-list
+	.table-list{
+		min-width:1750px;
+		span{
+			&.span-col-1{
+				width:228px;
+			}
+			&.span-col-2{
+				width:210px;
+			}
+			&.span-col-3{
+				width:210px;
+				img{
+					@include inline-block;
+					@include prefix(border-radius,$border-radius-big);
+					width:90px;
+					height:50px;
+					border:1px solid #d9dbde;
+				}
+			}
+			&.span-col-4{
+				width:160px;
+			}
+			&.span-col-5{
+				width:195px;
+			}
+			&.span-col-6{
+				width:162px;
+			}
+			&.span-col-7{
+				width:300px;
+			}
+			&.span-col-8{
+				width:153px;
+			}
+			&.span-col-9{
+				width:100px;
+			}
+		}
+	}
+}

@@ -1,0 +1,217 @@
+/**
+ *
+ Created by zhangzhao on 2017/8/17.
+ Email: zhangzhao@gomeplus.com
+ */
+import React, {Component} from 'react';
+import 'css/page/video_uploader/index.scss';
+import InputText from 'components/InputText';
+import ImgUploader from 'components/ImgUploader';
+import TitleField from 'components/TitleField';
+import Notification from 'components/Notification';
+import Dialog from 'components/Dialog';
+import Tag from 'components/Tag';
+import VideoService from 'api/video';
+
+export default class VideoModifyDialog extends Component {
+    constructor(props) {
+        super(props)
+        this.form = {
+            title : this.props.title,
+            description: this.props.description,
+            image :this.props.image,
+            tags: this.props.tags
+        }
+        this.state={
+                a: this.props.title,
+                title : this.props.title,
+                description: this.props.description,
+                image :this.props.image,
+                tags: this.props.tags,
+                disabled: false
+        }
+        this.nameInput = null;
+        this.desInput = null;
+        this.imgUploader = null;
+    }
+    validate=()=> {
+        var validate = true;
+
+        var form = this.form;
+        var title = form.title;
+        var tags = form.tags;
+        var image = form.image;
+        var imgUploader = this.imgUploader;
+
+        if(!title.length){
+            this.titleInput.error('请填写标题');
+            validate = false;
+        }
+        if(!tags.length){
+            this.tagInstance.showError('请添加标签');
+            validate = false;
+        }
+
+        if (image && image.status) {
+            switch(image.status){
+                case 'pending':
+                    imgUploader.setMsg('请添加封面图');
+                    validate = false;
+                    break;
+                case 'selected':
+                    validate = false;
+                    this.notification.notice({
+                        content: <span>{'封面图未上传完成，请耐心等待'}</span>,
+                        onClose: function(){
+                            console.log('close 2')
+                        }
+                    });
+                    break;
+                case 'error':
+                    imgUploader.error('上传失败，请重新上传');
+                    validate = false;
+                    return;
+            }
+        }
+
+        return validate;
+    }
+    modify=(close)=> {
+        var that = this;
+        if (this.validate()) {
+            VideoService.update({
+                id: this.props.id,
+                title: this.form.title,
+                tags: this.form.tags.join(','),
+                image: this.form.image.imgUrl,
+                description: this.form.description
+            }).then(ret=>{
+               let data = ret.data;
+               if (data.code === 1) {
+                   close();
+                   that.props.fetchData();
+                   that.notification.notice({
+                       content: <span>{'修改成功'}</span>,
+                       onClose: function(){
+                          // console.log('close 2')
+                       }
+                   });
+               } else {
+                   that.notification.notice({
+                       content: <span>{'修改失败'}</span>,
+                       onClose: function(){
+                          // console.log('close 2')
+                       }
+                   });
+               }
+            });
+        }
+    }
+    onTitleChange = (title)=> {
+        this.form.title = title;
+        this.setDisabled();
+    }
+    onTagChange = (tags)=> {
+        this.form.tags = tags;
+        this.setDisabled();
+    }
+    onCoverChange = (img) => {
+        this.form.image = img;
+        this.setDisabled();
+    }
+    onDescChange = (desc) => {
+        this.form.description = desc;
+        //this.setDisabled();
+    }
+    initVal=(editor)=> {
+        editor.setData(this.props.description);
+    }
+    setDisabled=()=> {
+        if (this.form.title === '' ||
+            this.form.tags.length ===0 || this.form.image.imgUrl === "") {
+            this.setState({
+                disabled: true
+            });
+        } else {
+            this.setState({
+                disabled: false
+            });
+        }
+    }
+    componentDidMount() {
+        this.notification = Notification();
+    }
+    componentWillReceiveProps(nextPrep){
+        this.form = {
+            title : nextPrep.title,
+            description: nextPrep.description,
+            image :nextPrep.image,
+            tags: nextPrep.tags
+        };
+        this.setDisabled();
+    }
+    render () {
+        let disabled = false;
+        return (
+            <Dialog
+                visible={true}
+                title="修改视频资料"
+                style={
+                    {width: 960}
+                }
+                disabled={this.state.disabled}
+                onOk={this.modify}
+                footer={
+                    {
+                        defaults: {
+                            num:1,
+                            buttonName: '提交'
+                        }
+                    }
+                }
+            ><div className="vm"><div className="video-uploader">
+                <div className='upload-form'>
+                    <div className="form">
+                        <div className="form-group">
+                            <label>
+                                <span className="color-rad">*</span>
+                                标题：
+                            </label>
+                            <TitleField
+                                ref={(input) => {this.titleInput = input}}
+                                value={this.form.title}
+                                onChange={(val)=>{this.onTitleChange(val)}}
+                            />
+                        </div>
+                        <div className="form-group">
+                            <label>
+                                简介描述：
+                            </label>
+                            <div className="form-input">
+                                <InputText onChange={this.onDescChange} value={this.form.description} />
+                            </div>
+                        </div>
+                        <div className="form-group">
+                            <label>
+                                <span className="color-rad">*</span>
+                                标签：
+                            </label>
+                            <Tag
+                                ref={(tag) => {this.tagInstance = tag}}
+                                tags={this.form.tags}
+                                onChange={(val)=>{this.onTagChange(val)}}
+                            />
+                        </div>
+                        <ImgUploader
+                            ref={(loader) => {this.imgUploader = loader}}
+                            onChange={(val)=>{this.onCoverChange(val)}}
+                            imgUrl={this.form.image}
+                        />
+                    </div>
+                </div>
+            </div>
+            </div>
+        </Dialog>
+        )
+    }
+}

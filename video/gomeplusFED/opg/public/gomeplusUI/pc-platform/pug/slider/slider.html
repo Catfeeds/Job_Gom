@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="renderer" content="webkit">
+    <meta name="description" content="gomepulusUI">
+    <meta name="keyword" content="gomepulusUI">
+    <title>OPG/gomeplusUI</title>
+    <link rel="shortcut icon" href="https://www.gomeplus.com/favicon.ico">
+    <link rel="stylesheet" type="text/css" href="../../sass/public/public.css">
+    <link rel="stylesheet" type="text/css" href="../../sass/platform/platform.css">
+    <script src="../../../js-platform/jquery1.42.min.js"></script>
+    <script src="../../../js-platform/htmlToJade.js"></script>
+  </head>
+  <body class="opg">
+    <div class="platform-m"><a href="http://opg-pre.intra.gomeplus.com/gomeplusUI/m-platform/pug/index/index.html" class="icon platform-mobile">
+         
+        &#xe9af;<span class="platform-code"> </span></a></div>
+    <div class="platform-menu"><span class="platform-glass"></span>
+      <h1><a href="../index/index.html" title="OPG/GomeplusUI">OPG/GomeplusUI</a></h1>
+      <ul>
+        <li><a href="../button/button.html" title="" class="platform-button">button</a></li>
+        <li><a href="../cell/cell.html" title="" class="platform-cell">cell</a></li>
+        <li><a href="../tab/tab.html" title="" class="platform-tab">tab</a></li>
+        <li><a href="../dialog/dialog.html" title="" class="platform-dialog">dialog</a></li>
+        <li><a href="../footer/footer.html" title="" class="platform-footer">footer</a></li>
+        <li><a href="../grid/grid.html" title="" class="platform-grid">grid</a></li>
+        <li><a href="../header/header.html" title="" class="platform-head">header</a></li>
+        <li><a href="../menu/menu.html" title="" class="platform-menu-new">menu</a></li>
+        <li><a href="../slider/slider.html" title="" class="platform-slider">slider</a></li>
+        <li><a href="../toast/toast.html" title="" class="platform-toast">toast</a></li>
+        <li><a href="../icon/icon.html" title="" class="platform-icon">icon</a></li>
+        <li><a href="../crumbs/crumbs.html" title="" class="platform-crumbs">crumbs</a></li>
+        <li><a href="../pagination/pagination.html" title="" class="platform-pagination">pagination</a></li>
+        <li><a href="../article/article.html" title="" class="platform-article">article</a></li>
+      </ul>
+    </div>
+    <div class="platform-main">
+      <div class="platform-scroll">
+        <h2 class="platform-title">slider</h2>
+        <div class="platform-content">
+          <h3 class="platform-header">slider</h3>
+          <div class="platform-intro"> 
+            <p>slider切换</p>
+          </div>
+          <div id="slider" class="platform-example">
+            <div class="order-side-bar">
+              <h3>我的主页</h3>
+              <h3>社交</h3>
+              <ul>
+                <li><a href="javascript:;">我的圈子</a></li>
+                <li><a href="javascript:;">我的话题</a></li>
+              </ul>
+              <h3>购物</h3>
+              <ul>
+                <li><a href="javascript:;" class="active">我的订单</a></li>
+                <li><a href="javascript:;">我的优惠券</a></li>
+              </ul>
+              <h3>收藏</h3>
+              <ul>
+                <li><a href="javascript:;">我的收藏</a></li>
+              </ul>
+              <h3>设置</h3>
+              <ul>
+                <li><a href="javascript:;">个人信息</a></li>
+                <li><a href="javascript:;">登录密码修改</a></li>
+                <li><a href="javascript:;">修改绑定手机号</a></li>
+                <li><a href="javascript:;">收货地址管理</a></li>
+              </ul>
+              <h3><a href="javascript:;">售后服务</a></h3>
+              <ul>
+                <li><a href="javascript:;">退款/售后</a></li>
+              </ul>
+            </div>
+          </div>
+          <pre class="platform-pre"><code id="slider_code" class="platform-code"></code><span class="platform-jade">pug</span><span class="platform-jade platform-html actived">html</span></pre>
+        </div>
+        <script type="text/javascript">
+          HtmlFormat.init(['slider'],false,'_code','html','span.platform-jade');
+          $(".platform-slider").parent('li').addClass("actived");
+        </script>
+      </div>
+    </div>
+  </body>
+</html>

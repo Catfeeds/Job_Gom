@@ -1,0 +1,41 @@
+@import '../../widget/config/_base.scss';
+@import '../../widget/config/_mixins.scss';
+@import 'speakList.scss';
+body {
+    background: #fff;
+}
+.meidian-speak {
+    width: 1000px;
+    float: left;
+}
+.speak-title {
+    height: 30px;
+    line-height: 30px;
+    padding: 20px 0 10px 0;
+    border-bottom: 1px solid #e4e4e4;
+    font-size: 16px;
+    color: #666;
+}
+.speak-list {
+    margin: 20px 0 0 0;
+    li {
+        border: 1px solid #e4e4e4;
+    }
+}
+.no-speak-box {
+    line-height: 474px;
+    .no-speak {
+        *width: 291px;
+        *margin: 0 0 0 -146px;
+    }
+    p,span {
+        width: 168px;
+    }
+    span {
+        margin: -29px 0 0 0\9;
+    }
+}
+
+
+
+

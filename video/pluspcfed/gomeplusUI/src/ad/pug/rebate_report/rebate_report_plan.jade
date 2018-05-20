@@ -1,0 +1,90 @@
+//- extends layout.jade
+extends ../public/layout.jade
+
+block title
+	title 投放计划
+//- block link-theme
+//- 	link(rel='stylesheet' type="text/css" href="../../css/module/amp_report.css")
+
+//- account
+block content
+	include ../public/menu-rebate-report.jade
+	div.content-main
+		div.amp-account
+			div.crumbs
+				a(href="javascript:void(0);")
+					span 数据报表
+					em >
+				a(href="javascript:void(0);").actived
+					span 返利报表
+					em >
+			div.account-set.account-set-new
+				div.set-tab
+					span.first.active 投放计划
+					span 投放单元
+					span 创意
+				div.set-fn
+					div.fn-plan
+						span.plan-title 起止日期：
+						div.ele-select.ele-selected
+							span.select-text 2016/12/13
+						span.plan-title.plan-title-gray -
+						div.ele-select.ele-selected
+							span.select-text 2016/12/13
+					div.fn-plan.fn-plan-new
+						span.plan-title 投放计划：
+						div.ele-select
+							span.select-text 全部
+					div.fn-search
+						a(href="#").btn.btn-primary 查询
+					div.fn-export
+						em.icon.icon-report
+						span 导出
+				div.table-content
+					table.table
+								tr
+									th(width="120")
+										span 日期
+									th(width="120")
+										span 投放计划名称
+									th(width="120")
+										span 中间页PV
+									th(width="120")
+										span 中间页UV
+									th(width="120")
+										span 计费分享次数
+									th(width="120")
+										span 分享单价
+									th(width="120")
+										span 总费用
+								tr
+									td
+										span 2016-12-19
+									td
+										span
+									td
+										span
+									td
+										span
+									td
+										span
+									td
+										span
+									td
+										span
+								tr
+									td
+										span 2016-12-19
+									td
+										span
+									td
+										span
+									td
+										span
+									td
+										span
+									td
+										span
+									td
+										span
+			include ../public/page.jade

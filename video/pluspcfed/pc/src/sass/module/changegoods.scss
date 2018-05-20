@@ -1,0 +1,452 @@
+@import '../../widget/config/_base.scss';
+@import '../../widget/config/_mixins.scss';
+
+.bordr{
+	border-right: 1px solid $bor-bom;
+}
+.progress-box{
+	display: none;
+	li{
+		float: left;
+		height: 40px;
+		line-height: 40px;
+		text-align: center;
+		color: $color-txt;
+		font-size: $text16;
+		background: url(../../images/shop/change-prod.png) no-repeat right top;
+		background-color: #bdbcb7;
+		&.first{
+			width: 423px;
+		}
+		&.second{
+			width: 399px;
+		}
+		&.third{
+			width: 377px;
+			background: none;
+			background-color: #bdbcb7;
+		}
+		span{
+			display: inline-block;
+			width: 30px;
+			height: 30px;
+			line-height: 30px;
+			text-align: center;
+			color: #bdbcb7;
+			border-radius: 50%;
+			background-color: $bg-fff;
+			margin-right: 18px;
+		}
+	}
+}
+.progress-return{
+	li{
+		&.first{
+			width: 323px;
+		}
+		&.second{
+			width: 298px;
+		}
+		&.third{
+			width: 301px;
+			background: url(../../images/shop/change-prod.png) no-repeat right top;
+		    background-color: #bdbcb7;
+		}
+		&.fourth{
+			width: 277px;
+			background: none;
+			background-color: #bdbcb7;
+		}
+	}
+}
+.progress-box{
+	li{
+		&.active{
+			background-color: $color-warning;
+			span{
+				color: $color-warning;
+			}
+		}
+		&.actived{
+			background: url(../../images/shop/change-prod-o.png) no-repeat right top;
+			background-color: $color-warning;
+			span{
+				color: $color-warning;
+			}
+		}
+	}
+}
+.change-box{
+	background-color: $bg-fff;
+
+	th{
+		height: 60px;
+		line-height: 60px;
+	    font-weight: normal;
+	    text-align: left;
+		border-bottom: 1px solid $bor-bom;
+	}
+	td{
+		vertical-align: top;
+	}
+	.apply-title{
+		width: 191px;
+		h2{
+			float: left;
+			font-size: $text20;
+			font-weight: normal;
+			margin-left: 20px;
+		}
+		.trade-state-select{
+		    width: 3em;
+		}
+	}
+	.trade-state-select{
+	    float: left;
+	    height: 28px;
+	    line-height: 28px;
+	    cursor: pointer;
+	    padding: 0 7px;
+	    padding-right: 24px;
+	    margin-top: 15px;
+	    text-align: left;
+	    position: relative;
+	    border: 1px solid $bor-bom;
+	    width: 14em;
+	    .iconn-2{
+	    	position: absolute;
+		    right: 7px;
+		    top: 7px;
+		}
+		.iconn-1{
+			position: absolute;
+		    right: 7px;
+		    top: 7px;
+		}
+		.trade-state-select-list{
+			display: none;
+			z-index: 9;
+			position: absolute;
+			top: 28px;
+			left: -1px;
+			min-width: 100%;
+			border: 1px solid $bor-bom;
+			border-bottom: none;
+	    	background-color: $bg-fff;
+	    	max-height: 140px;
+	    	overflow-y: auto;
+			a{
+				display: block;
+				padding: 0 7px;
+				border-bottom: 1px solid $bor-bom;
+				&:hover{
+					background-color: #eee;
+				}
+			}
+		}
+	}
+	.order-num{
+		color: $color-gray;
+		margin-left: 40px;
+		span{
+			color: $color-default;
+			margin-left: 14px;
+		}
+	}
+	.mark{
+		float: right;
+		color: $color-gray;
+		margin-right: 30px;
+	}
+	.product-info {
+	    width: 152px;
+	    minheight: 315px;
+	    text-align: center;
+	    padding: 20px 15px 0 19px;
+	    img{
+		    width: 78px;
+		    height: 78px;
+		    border: 1px solid #e9e8e5;
+		}
+		.prod-title{
+		    display: block;
+		    width: 152px;
+		    height: 38px;
+		    padding-top: 10px;
+		    word-break: break-all;
+		    overflow: hidden;
+		    &:hover{
+				color: $btn-e30d3e;
+			}
+		}
+		.spec{
+		    margin-top: 10px;
+		    padding-bottom: 8px;
+		    word-break: break-all;
+		}
+		.price{
+			color: $font-grey-normal;
+			margin-top: 6px;
+			span{
+				display: inline-block;
+				text-align: left;
+				width: 80px;
+				color: $color-default;
+			}
+			.price-l{
+				width: 72px;
+				text-align: right;
+				color: $color-gray;
+			}
+		}
+		.shop-info{
+			display: block;
+			margin-top: 56px;
+			&:hover{
+				color: $btn-e30d3e;
+			}
+			.iconn-64{
+				font-size: $text18;
+				color: $color-gray;
+				vertical-align: -3px;
+				margin-right: 14px;
+				word-break: break-all;
+			}
+			span{
+				font-size: $text16;
+			}
+		}
+		.connect-shop{
+			display: block;
+			margin-top: 14px;
+			&:hover{
+				color: $btn-e30d3e;
+			}
+			&.disabled{
+                color: #999;
+                cursor: no-drop;
+                &:hover{
+                    color: #999;
+                }
+            }
+		}
+	}
+	.input-apllication{
+		width: 625px;
+		padding: 29px 0 10px;
+		li{
+			margin-bottom: 20px;
+			label{
+				float: left;
+				width: 96px;
+				height: 28px;
+				line-height: 28px;
+				text-align: right;
+				margin-right: 12px;
+				vertical-align: top;
+				.red-star{
+					color: $color-danger;
+				}
+			}
+			.radio{
+			    float: left;
+			    margin-right: 20px;
+			    .menu-radio{
+			        margin-top: 2px;
+			    }
+			    &.disabled{
+			        color: #999;
+			        cursor: no-drop;
+			        .menu-radio{
+			            cursor: no-drop;
+			        }
+			    }
+			}
+			.trade-state-select{
+				margin-top: 0;
+				float: left;
+			}
+			.textarea{
+				height: 160px;
+				position: relative;
+				float: left;
+				overflow-y: auto;
+				textarea{
+					width: 464px;
+					height: 119px;
+					padding: 7px 9px;
+					overflow-y: auto;
+					border: 1px solid $bor-bom;
+					&:hover{
+						border: 1px solid #c9c8c5;
+					}
+					&:focus{
+						border: $btn-e30d3e solid 1px;
+					}
+				}
+				.txt-count{
+					position: absolute;
+					bottom: 0;
+					right: 0;
+					color: $color-gray;
+					span{
+						color: $color-danger;
+					}
+				}
+			}
+		}
+		.button{
+			margin-left: 109px;
+			a{
+				margin-right: 19px;
+			}
+		}
+	}
+	.service-intro{
+		width: 334px;
+		height: 374px;
+		overflow-y: auto;
+		margin-top: 22px;
+		margin-right: 10px;
+		padding: 0 20px;
+		h3{
+			font-size: $text18;
+			font-weight: normal;
+			margin-bottom: 18px;
+		}
+		h4{
+			font-weight: normal;
+		}
+		p{
+			color: $font-grey-normal;
+		}
+	}
+}
+.pics-list-wrap{
+	display: inline-block;
+	.pics-list{
+		width: 450px;
+		li{
+		    float: left;
+		    width: 78px;
+		    height: 78px;
+		    line-height: 76px;
+		    text-align: center;
+		    border: 1px solid #e9e8e5;
+		    margin-right: 10px;
+		    margin-bottom: 0;
+		    position: relative;
+		    cursor: pointer;
+		    img {
+			    width: 78px;
+			    height: 78px;
+			}
+			&:hover{
+				.iconn-66 {
+				    display: block;
+				}
+			}
+		}
+		.iconn-66 {
+		    display: none;
+		    position: absolute;
+		    top: -7px;
+		    right: -7px;
+		    font-size: 16px;
+		    opacity: 0.6;
+		    height: 16px\9;
+			overflow: hidden\9;
+		}
+		.bar-upload-pic{
+			width: 40px;
+			height: 3px;
+			overflow: hidden;
+			background-color: $bor-bom;
+			margin: 38px 0 0 19px;
+			span{
+				display: block;
+				width: 0%;
+				height: 3px;
+				background-color: $link-hover;
+			}
+		}
+		input {
+		    display: block;
+		    width: 76px;
+		    height: 76px;
+		    line-height: 76px;
+		    opacity: 0;
+	        visibility: hidden;
+		    cursor: pointer;
+		    position: absolute;
+		    top: 1px;
+		    left: 1px;
+		    z-index: 9;
+		}
+		.iconn-41 {
+		    font-size: 24px;
+		    font-weight: bold;
+		    color: #f95353;
+		    cursor: pointer;
+	        line-height: 80px;
+		}
+		.re-upload{
+			font-size: $text12;
+			color: $color-danger;
+		}
+	}
+	.num-pics {
+	    margin-top: 13px;
+	    color: #666;
+	    text-align: left;
+	    .link-hover-red {
+		    color: #e60039;
+		}
+		.deep-gray {
+		    color: #333;
+		}
+	}
+}
+.goods-num{
+    border:1px solid #e9e8e5;
+    width: 94px;
+    height: 28px;
+    line-height: 28px;
+    float: left;
+    .input{
+        float: left;
+        width: 48px;
+        border:none;
+        height: 28px;
+        text-align: center;
+        line-height: 1;
+    }
+    .disabled{
+        color: $bor-bom;;
+    }
+    span{
+        height: 100%;
+        width: 22px;
+        text-align: center;
+        cursor: pointer;
+    }
+    .num-add{
+        float: left;
+       border-right: 1px solid #e9e8e5;
+    }
+    .num-minus{
+        float: right;
+        border-left: 1px solid #e9e8e5;
+    }
+    .disabled{
+        color: $bor-bom;
+    }
+}
+.num-text{
+    clear: both;
+    padding: 10px 0 0 108px;
+    color: #666;
+    span{
+        color: $color-default;
+    }
+}

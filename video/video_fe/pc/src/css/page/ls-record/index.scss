@@ -1,0 +1,50 @@
+/* ls-record */
+@import "../../base/public.scss";
+@import "../../widgets/list-card.scss";
+@import "../../components/indicator.scss";
+
+.urecord{
+	.title{
+		color: #333;
+		font-size: 26px;
+		margin-bottom: 20px;
+		margin-top: 30px;
+		font-weight: normal;
+	}
+	.indicator{
+		margin-top: 200px;
+	}
+	.no-data{
+		background: url(../../../imgs/public/no-data-record.png) 50% 50% no-repeat;
+		min-height: 400px;
+		font-size: 18px;
+		color: #999;
+		text-align: center;
+		p{
+			padding-top: 275px;
+		}
+	}
+	.exchange{
+		margin-top: 40px;
+		a{
+			display: block;
+			width: 500px;
+			height: 50px;
+			line-height: 50px;
+			text-align: center;
+			color: #333;
+			font-size: 16px;
+			border-radius: 10px;
+			border: 1px solid #a6a7a9;
+			margin: 0 auto;
+			background-color: #fff;
+			&:hover{
+				color: #fff;
+				background-color: #262629;
+			}
+		}
+	}
+	.list-card li{
+		margin-bottom: 24px;
+	}
+}

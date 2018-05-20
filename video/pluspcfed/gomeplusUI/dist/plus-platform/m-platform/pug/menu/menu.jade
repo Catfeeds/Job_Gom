@@ -1,0 +1,139 @@
+//- extends layout.jade
+extends ../../../widget-platform/pug/layout/layout-m.jade
+
+//- index
+block content
+	.platform-tipsinfo
+		h5 说明
+		p m-menu 公用类名
+		p menu-fixed 吸顶类	
+		p 具体查看结构，谢谢~
+		p.maty 有问题沟通-maty
+		h5 知识点
+		p ①flex结构应用(table也可实现)
+	//end
+
+	//- menu-1
+	div.platform-content
+		h3.platform-header 公用结构
+		//- div.platform-intro
+		//- 	p menu-1
+		div.platform-example-auto#menu-1
+			include ../../../../plus-widget/menu/menu-1.jade
+		pre.platform-pre.hide
+			code.platform-code#menu-1_code
+			span.platform-jade pug
+			span.platform-jade.platform-html.actived html
+	//- menu-2
+	div.platform-content
+		h3.platform-header 可以滑动
+		//- div.platform-intro
+		//- 	p menu-2
+		div.platform-example-auto#menu-2
+			include ../../../../plus-widget/menu/menu-2.jade
+		pre.platform-pre.hide
+			code.platform-code#menu-2_code
+			span.platform-jade pug
+			span.platform-jade.platform-html.actived html
+	//- menu-3
+	//- div.platform-content
+	//- 	h3.platform-header 页底导航
+	//- 	//- div.platform-intro
+	//- 	//- 	p menu-3
+	//- 	div.platform-example-auto#menu-3
+	//- 		include ../../../../plus-widget/menu/menu-3.jade
+	//- 	pre.platform-pre.hide
+	//- 		code.platform-code#menu-3_code
+	//- 		span.platform-jade pug
+	//- 		span.platform-jade.platform-html.actived html
+	//- menu-4
+	//- div.platform-content
+	//- 	h3.platform-header 页底全选删除
+	//- 	//- div.platform-intro
+	//- 	//- 	p menu-4
+	//- 	div.platform-example-auto#menu-4
+	//- 		include ../../../../plus-widget/menu/menu-4.jade
+	//- 	pre.platform-pre.hide
+	//- 		code.platform-code#menu-4_code
+	//- 		span.platform-jade pug
+	//- 		span.platform-jade.platform-html.actived html
+	//- menu-5
+	div.platform-content
+		h3.platform-header 搜索结构
+		//- div.platform-intro
+		//- 	p menu-5
+		div.platform-example-auto#menu-5
+			include ../../../../plus-widget/menu/menu-5.jade
+		pre.platform-pre.hide
+			code.platform-code#menu-5_code
+			span.platform-jade pug
+			span.platform-jade.platform-html.actived html
+	//- menu-6
+	div.platform-content
+		h3.platform-header 我的订单
+		//- div.platform-intro
+		//- 	p menu-6
+		div.platform-example-auto#menu-6
+			include ../../../../plus-widget/menu/menu-6.jade
+		pre.platform-pre.hide
+			code.platform-code#menu-6_code
+			span.platform-jade pug
+			span.platform-jade.platform-html.actived html
+	//- menu-7
+	//- div.platform-content
+	//- 	h3.platform-header 店铺
+	//- 	//- div.platform-intro
+	//- 	//- 	p menu-7
+	//- 	div.platform-example-auto#menu-7
+	//- 		include ../../../../plus-widget/menu/menu-7.jade
+	//- 	pre.platform-pre.hide
+	//- 		code.platform-code#menu-7_code
+	//- 		span.platform-jade pug
+	//- 		span.platform-jade.platform-html.actived html
+	//- menu-8
+	//- div.platform-content
+	//- 	h3.platform-header 二级菜单
+	//- 	//- div.platform-intro
+	//- 	//- 	p menu-8
+	//- 	div.platform-example-auto#menu-8
+	//- 		include ../../../../plus-widget/menu/menu-8.jade
+	//- 	pre.platform-pre.hide
+	//- 		code.platform-code#menu-8_code
+	//- 		span.platform-jade pug
+	//- 		span.platform-jade.platform-html.actived html
+	//- menu-9
+	//- div.platform-content
+	//- 	h3.platform-header 底部按钮
+	//- 	//- div.platform-intro
+	//- 	//- 	p menu-9
+	//- 	div.platform-example-auto#menu-9
+	//- 		include ../../../../plus-widget/menu/menu-9.jade
+	//- 	pre.platform-pre.hide
+	//- 		code.platform-code#menu-9_code
+	//- 		span.platform-jade pug
+	//- 		span.platform-jade.platform-html.actived html
+	//- menu-10
+	//- div.platform-content
+	//- 	h3.platform-header 底部分类按钮
+	//- 	//- div.platform-intro
+	//- 	//- 	p menu-10
+	//- 	div.platform-example-auto#menu-10
+	//- 		include ../../../../plus-widget/menu/menu-10.jade
+	//- 	pre.platform-pre.hide
+	//- 		code.platform-code#menu-10_code
+	//- 		span.platform-jade pug
+	//- 		span.platform-jade.platform-html.actived html
+	//- menu-11
+	//- div.platform-content
+	//- 	h3.platform-header 顶部右侧更多
+	//- 	//- div.platform-intro
+	//- 	//- 	p menu-11
+	//- 	div.platform-example-auto#menu-11
+	//- 		include ../../../../plus-widget/menu/menu-11.jade
+	//- 	pre.platform-pre.hide
+	//- 		code.platform-code#menu-11_code
+	//- 		span.platform-jade pug
+	//- 		span.platform-jade.platform-html.actived html
+	script(type='text/javascript').
+		HtmlFormat.init(['menu-1','menu-5','menu-6'],false,'_code','html','span.platform-jade');
+		$(".platform-menu").parent('li').addClass("actived");

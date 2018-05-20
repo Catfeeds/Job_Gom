@@ -1,0 +1,31 @@
+//- amp-page.jade
+div.amp-page
+	div.page-nav
+		a(href="#").nav-home
+			em.icon.icon-home
+		a(href="#").nav-prev
+			em.icon.icon-prev
+		a(href="#") 1
+		a(href="#").actived 2
+		a(href="#") 3
+		span ...
+		a(href="#") 4
+		a(href="#").nav-next
+			em.icon.icon-next
+		a(href="#").nav-end
+			em.icon.icon-end
+	div.page-infor
+		span.infor-all 共50页
+		span.infor-split 
+			| 每页显示
+			b 10
+			| 条
+			//- dialog
+			div.dialog.dialog-white
+				ul
+					li
+						a(href="#",title="") 20
+					li.actived
+						a(href="#",title="") 50
+					li
+						a(href="#",title="") 100

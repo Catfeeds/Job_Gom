@@ -1,0 +1,49 @@
+doctype html
+html(lang="zh-CN",data-use-rem="750")
+	include ../../../m-widget/head/head.jade
+	link(type="text/css",rel="stylesheet",href="../../css/public/public-wap.css")
+	link(type="text/css",rel="stylesheet",href="../../css/module/shop.css")
+	
+	body.opg
+		include ../../../m-widget/head/rem.jade
+
+		.meidian-wrap
+			.meidianall-top.header-fixed
+				// /header
+				header.header
+					span
+						a.head-back(href="javascript:;")
+							em.iconn-1
+					h1.head-title
+						a(href="javascript:;").sort-name
+							| 分类名
+							em.iconn-42
+							em.iconn-40
+					span
+						a.head-icn(href="javascript:;")
+							em.iconn-3
+						a.head-icn(href="javascript:;")
+							em.iconn-11
+				ul.choose-sort
+					li.active
+						a(href="##")
+							span 毛衣
+					li
+						a(href="##")
+							span 牛仔裤
+					li
+						a(href="##")
+							span 呢子大衣
+					li.active
+						a(href="##")
+							span 床上四件套床上四件套床上四件套床上四件套床上四件套
+			ul.main-list.grid-list-bor
+				-for(i=0;i<6;i++)
+					li.item
+						a(href="javascript:;")
+							.item-img
+								img(src='https://i-pre.meixincdn.com/T15yWTBKxT1RXrhCrK.200x200cTz.jpg')
+							.item-txt 情人生日礼Crystallin精装礼品
+							.item-price
+								span.red ¥2199.40
+								del.del ¥2899.00

@@ -1,0 +1,96 @@
+//- extends layout.jade
+extends ../public/layout.jade
+
+block title
+	title AMP首页
+//- index
+block content
+	style.
+		body{
+			background-image:none;
+		}
+	div.amp-index
+		div.index-statis
+			ul
+				li
+					div.statis-title
+						em.icon.icon-advert
+						span 广告账户
+					div.statis-cont
+						p 账户金额：<span>¥80000</span>
+						p 今日花费：<span>¥80000</span>
+						span.cont-fn
+							a(href="#",title="") 充值
+				li
+					div.statis-title
+						em.icon.icon-rebate
+						span 返利账户
+					div.statis-cont
+						p 账户金额：<span>¥80000</span>
+						p 今日花费：<span>¥80000</span>
+						span.cont-fn
+							a(href="#",title="") 资金划拨
+				li
+					div.statis-title
+						em.icon.icon-msg
+						span 最新消息
+					div.statis-cont.statis-cont-reset
+						dl
+							dt.cont-new
+								a(href="#",title="")
+									em.icon.icon-letter
+									span.cont-text 素材素素材素材材素材审核审核通
+									span.cont-time 2016-10-08
+							dt
+								a(href="#",title="")
+									em.icon.icon-letter
+									span.cont-text 素材素材素材审核审核通
+									span.cont-time 2016-10-08
+							dt
+								a(href="#",title="")
+									em.icon.icon-letter
+									span.cont-text 素材素材素材审核审核通
+									span.cont-time 2016-10-08
+		div.index-map
+			h2.map-title
+				span 整体情况
+				i （以下数据有近三十分钟的统计延迟）
+				div.ele-select
+					span.select-text 今天 2016-11-24
+			div.map-data
+				ul
+					li
+						strong 曝光量（次）
+						span 12000
+					li
+						strong 点击量（次）
+						span 12000
+					li
+						strong 花费
+						span 1200
+					li
+						strong 平均点击率
+						span 12000
+			div.map-select
+				div.ele-select.ele-selected
+					span.select-text 曝光量
+					//- dialog
+					div.dialog.dialog-white
+						ul
+							li
+								a(href="#",title="") 全部
+							li.actived
+								a(href="#",title="") 暂停
+							li
+								a(href="#",title="") 有效
+							li
+								a(href="#",title="") 过期
+							li
+								a(href="#",title="") 未开启
+				div.ele-select
+					span.select-text 点击量
+				div.map-direct
+					span.direct-click 点击量
+					span.direct-view 曝光量
+			div.map-show
+				img(src="../../images/index/map.jpg")

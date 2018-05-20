@@ -1,0 +1,60 @@
+//- extends layout.jade
+extends ../public/layout.jade
+
+block title
+	title 商家资质
+//- block link-theme
+//- 	link(rel='stylesheet' type="text/css" href="../../css/module/shop.css")
+
+//- shop
+block content
+	include ../public/menu.jade
+	div.content-main
+		div.amp-account
+			div.crumbs
+				a(href="javascript:void(0);").actived
+					span 商家资质
+					em >
+			div.account-set
+				div.set-option
+					// 选择文件
+					div.uplode-file
+						a(href="#").btn.btn-normal 上传商家资质
+						input(type="file").file-input
+				div.set-fn
+					div.fn-plan
+						span.plan-title 资质名称：
+						div.ele-input.ele-input-normal
+							input(type="text",value="")
+					div.fn-search
+						a(href="#").btn.btn-primary 查询
+			div.shop-wrap
+				table.table.table-zebra.table-align-left
+					tr
+						th
+							span.first-child ID
+						th
+							span 资质名称
+						th
+							span 图片
+						th
+							span 有效期
+						th
+							span 操作
+					- for (var i =0;i<4;i++)
+						tr
+							td
+								span.first-child 1224429
+							td
+								span 授权文件
+							td
+								span.table-imgs
+									img(src="../../images/shop/shop-picture01.jpg")
+									img(src="../../images/shop/shop-picture02.jpg")
+									img(src="../../images/shop/shop-picture03.jpg")
+							td
+								span 2016-10-01/2017-10-12
+							td
+								span.table-links
+									a(href="#") 修改名称
+									a(href="#") 删除

@@ -1,0 +1,31 @@
+{
+  "name": "webpackcli",
+  "version": "1.0.0",
+  "description": "提供一个简单、纯净的环境，来测试webpack的各种配置，对最终输出的结果造成的影响；并在此基础上，完善成为一个可配置的脚手架工具；",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack --config webpack/webpack.config.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "http://gitlab.intra.gomeplus.com/jiyunpeng/webpackcli.git"
+  },
+  "keywords": [
+    "webpack",
+    "cli",
+    "nodejs"
+  ],
+  "author": "jiyunpeng",
+  "license": "ISC",
+  "devDependencies": {
+    "css-loader": "^0.28.5",
+    "extract-text-webpack-plugin": "^3.0.0",
+    "style-loader": "^0.18.2",
+    "webpack": "^3.5.5"
+  },
+  "dependencies": {
+    "chunk-manifest-webpack2-plugin": "^1.0.1",
+    "webpack-chunk-hash": "^0.4.0"
+  }
+}

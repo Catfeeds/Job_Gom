@@ -1,0 +1,13 @@
+// based on prefix() API
+// Arhtor: Mapk Jia Shilong
+
+@import "../utils/_prefix.scss";
+
+// ## Define box shadow
+// == $shadows is more one please use ()
+// == @include box-shadow((1px 1px 1px red,2px 2px 2px orange),webkit moz);
+// -----------------------------------------------------
+
+@mixin box-shadow($shadows:(0 0 4px rgba(0,0,0,0.3)),$prefixs:webkit){
+	@include prefix(box-shadow,$shadows,$prefixs);
+}

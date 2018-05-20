@@ -1,0 +1,84 @@
+/* search */
+@import "../../base/public.scss";
+@import "../../widgets/list-card.scss";
+@import "../../widgets/page.scss";
+.search-result-usernav {
+  margin-top: 30px;
+  margin-bottom: 20px;
+  font-size: 22px;
+  font-weight: normal;
+}
+.search-result-userlist {
+  margin-right: -20px;
+  overflow: hidden;
+  li {
+    float: left;
+    background-color: #f8f8f8;
+    margin-right: 20px;
+    width: 386px;
+    height: 120px;
+    margin-bottom: 20px;
+  }
+}
+
+.search-result-userhead {
+  margin: 30px 20px 30px 30px;
+  display:block;
+  width:60px;
+  height:60px;
+  border-radius:50%;
+  overflow:hidden;
+  background:url('../../../imgs/comment/default-face.png') no-repeat center center;
+  img{
+    width:60px;
+    height:60px;
+    transition:all .2s;
+    border-radius: 50%;
+  }
+}
+.search-result-usertitle {
+  margin: 40px 0 10px 0;
+  font-size: 16px;
+  color: #4d4d4d;
+  width: 15em;
+  @include ellipsis(1);
+  &:hover{
+    color: #ec392a;
+  }
+}
+.search-result-userdesc{
+  font-size: 14px;
+  color: #b0b0b0;
+  width: 17em;
+  @include ellipsis(1);
+}
+.search-result-videonav {
+  margin: 30px 0 10px 0;
+  font-size: 22px;
+}
+.search-result-seemore {
+  margin-top: 44px;
+  margin-bottom: 22px;
+  a {
+    font-size: 12px;
+    color: #bbbbbb;
+    &:hover{
+      color: #ec392a;
+    }
+  }
+}
+.list-card li{
+  margin-bottom: 24px;
+  .img {
+    em {
+      display: none;
+    }
+    a:hover em{
+      display: none;
+    }
+  }
+}
+
+.search-result-page {
+  text-align: center;
+}

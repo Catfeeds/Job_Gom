@@ -1,0 +1,114 @@
+/* wrap */
+@import "../../base/public.scss";
+
+
+
+.main{
+    overflow: hidden;
+    position: relative;
+    height: 100vh;
+}
+.head{
+    height: 90px;
+    line-height: 90px;
+    background: #3e9bf7;
+    .logo{
+        float: left;
+        width: 190px;
+        height: 90px;
+        padding-left: 30px;
+    }
+    .fr{
+        margin-right: 30px;
+        text-align: right;
+        color: $white;
+        .line{
+            margin: 0 8px;
+        }
+        a{
+            color: $white;
+            opacity: 0.8;
+            &:hover{
+                opacity: 1;
+            }
+        }
+    }
+}
+.menu{
+    z-index: 9;
+    position: absolute;
+    left: 0;
+    top: 90px;
+    width: 300px;
+    background: $white;
+    padding-bottom: 99999px;
+    margin-bottom: -99999px;
+    ul{
+        padding-top: 20px;
+        a{
+            display: block;
+            height: 60px;
+            line-height: 60px;
+            padding-left: 50px;
+            color: $link;
+            [class^="icon-"], [class*=" icon-"]{
+                color: #ccc;
+                margin-right: 10px;
+                font-size: 14px;
+                text-align:center;
+            }
+            &:hover{
+                background: #f9f9f9;
+                color: $link-hover;
+            }
+            &.active{
+                background: #f9f9f9;
+                color: $link-hover;
+                [class^="icon-"], [class*=" icon-"]{
+                    color: $link-hover;
+                }
+            }
+        }
+    }
+}
+.content{
+    margin: 24px 0 72px 320px;
+    background: $white;
+    height: calc(100vh - 186px);    //head 90px, margin 54px
+    overflow: auto;
+}
+/* .footer{
+    padding: 0 0 0px 320px;
+    text-align: center;
+    width:100%;
+    box-sizing: border-box;
+    left:0;
+    position: absolute;
+    z-index: 7;
+    bottom:0;
+    .bg{
+        border-top: 1px solid #f0f0f0;
+        background: $white;
+        text-align: center;
+        padding:20px 0;
+    }
+    ul{
+        display: inline-block;
+        overflow: hidden;
+        li{
+            float: left;
+            a{
+                margin:0 10px;
+                cursor:pointer;
+                &:hover{
+                    color: #53a6f8;
+                }
+            }
+        }
+    }
+    .copyRight{
+        font-size:12px;
+        color:#999;
+
+    }
+} */

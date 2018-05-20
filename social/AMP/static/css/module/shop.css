@@ -1,0 +1,23 @@
+.shop-wrap {
+  margin-top: 10px;
+  background: #fff; }
+
+.shop-cont {
+  padding: 50px 0px 0px 116px; }
+  .shop-cont .group-detail {
+    padding-bottom: 30px; }
+  .shop-cont .form-gray-width {
+    width: 235px; }
+  .shop-cont .form-gray-text {
+    margin-left: 10px; }
+  .shop-cont .shop-picture img {
+    border: 1px solid #d9dbde;
+    margin: 0px 10px 10px 0px;
+    width: 111px;
+    height: 153px; }
+  .shop-cont .column-group01 .group-detail {
+    padding-bottom: 7px; }
+  .shop-cont .column-group02 .group-detail {
+    padding-bottom: 11px; }
+
+

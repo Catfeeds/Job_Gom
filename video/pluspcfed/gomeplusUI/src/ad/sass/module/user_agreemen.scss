@@ -1,0 +1,154 @@
+@charset "utf-8";
+
+// _configure.scss
+@import "../public/_configure.scss";
+
+.amp-account{
+	.set-content-p{
+		background-color: white;
+		margin-bottom:20px;
+		.account-set{
+			max-height: 910px;
+			overflow-y: scroll;
+			margin-right: 10px;
+			.set-content{
+				padding: 0 65px;
+				margin-right: 10px;
+				h1{
+				text-align: center;
+				font-size: 26px;
+				margin:0 0 30px 0;
+				}
+				h2{
+				text-align: left;
+				font-size: 26px;
+				margin:0 0 30px 0;
+				}
+				h3{
+					font-size: 18px;
+					margin: 30px 0 10px 0;
+				}
+				p{
+					font-size: 14px;
+					line-height: 24px;
+				}
+				h4{
+					font-size: 18px;
+					margin: 30px 0;
+				}
+				.retract{
+					text-indent: 2em;
+				}
+			}
+		}
+	}
+}
+
+
+// standard
+.standard{
+	padding:10px 30px;
+	font-size:15px;
+	line-height:2;
+	h1,h2,h3,h4{
+		padding:10px 0;
+		font-weight:bold;
+	}
+	h1{
+		text-align:center;
+		font-size:28px;
+	}
+	h2{
+		font-size:18px;
+	}
+	h3{
+		font-size:16px;
+	}
+	h4{
+		font-size:15px;
+	}
+	p{
+		padding-bottom:10px;
+		text-indent:2em;
+	}
+	.pd0{
+		text-indent:0;
+	}
+	.pdl{
+		padding-left:3em;
+		text-indent:-1em;
+	}
+	.catalog-bold{
+		font-weight:bold;
+	}
+	dl{
+		padding-left:2em;
+		dd{
+			padding-left:2em;
+		}
+		&.catalog-dl{
+			dd{
+				padding-bottom:10px;
+				text-indent:-1em;
+				padding-left:3em;
+			}
+		}
+	}
+	.standard-time{
+		text-align:center;
+	}
+	.standard-catalog{
+		.catalog-three{
+			display:block;
+			font-size:24px;
+			text-align:center;
+			font-weight:normal;
+		}
+	}
+	.catalog-list{
+		background:rgba(0,0,0,0.03);
+		padding:20px;
+		li{
+			strong{
+				display:block;
+				font-size:18px;
+				font-weight:bold;
+				padding-bottom:10px;
+			}
+			dl{
+				padding-left:2em;
+				padding-bottom:1em;
+				dd{
+					padding-left:2em;
+				}
+			}
+		}
+	}
+	// .table
+	.table{
+		margin:10px 0;
+		th{
+			span{
+				text-align:center;
+				font-weight:bold;
+			}
+		}
+		tr{
+			td:first-child{
+				span{
+					text-align:center;
+				}
+			}
+			td{
+				span{
+					line-height:2!important;
+				}
+			}
+		}
+		span{
+			display:block;
+			padding:5px 10px;
+			text-align:left;
+		}
+	}
+}

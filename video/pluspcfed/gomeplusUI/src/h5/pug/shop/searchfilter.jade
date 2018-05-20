@@ -1,0 +1,84 @@
+doctype html
+html(lang="zh-CN",data-use-rem="750")
+    include ../../../m-widget/head/head.jade
+    link(type="text/css",rel="stylesheet",href="../../css/public/public-wap.css")
+    link(type="text/css",rel="stylesheet",href="../../css/module/search.css")
+    
+    body.opg.search
+        include ../../../m-widget/head/rem.jade
+        
+        .filter-box.showfilter-transition
+            .search-filter
+                header.header
+                    span
+                        a.head-back(href="javascript:;")
+                            em.iconn-1
+                    h1.head-title 筛选
+                .content-box
+                    .item-bx
+                        .item1
+                            p.item1-addres1 配送地址
+                            p.item1-addres2
+                                em.iconn-56
+                                | 黑龙江省齐齐哈尔市梅里斯达
+                    .item-bx
+                        h3
+                            span 价格区间
+                        .price-interval
+                            input(placeholder="最低价" type="text" ).low-price
+                            span.line2
+                            input(placeholder="最高价" type="text" )
+                    .item-bx
+                        h3
+                            span 品牌
+                            a(href="#")
+                                span 全部
+                                em.iconn-41
+                        h3
+                            span 品牌
+                            a(href="#").txt-red
+                                span 乐视,索尼,夏
+                                em.iconn-41
+                        ul.brand-list
+                            li 乐视乐视乐视乐视
+                            li 乐视乐视乐视乐视
+                            -for(var i=0; i<6; i++)
+                                li.active
+                                    | 乐视乐视乐视乐视1111222
+                    .item-bx
+                        h3
+                            span 优惠
+                        ul.brand-list
+                            -for(var i=0; i<3; i++)
+                                li 乐视乐视乐视乐视
+                    .item-bx
+                        h3
+                            span 分类
+                            a(href="#").txt-red
+                                span 智能电视配套设施
+                                em.iconn-42
+                        h3
+                            span 分类
+                            a(href="#")
+                                span 全部
+                                em.iconn-40
+                        //up:iconn-40  down:iconn-42
+                        ul.brand-list
+                            -for(var i=0; i<8; i++)
+                                li 乐视乐视乐视乐视
+                .botton-btn-bx
+                    p 有
+                        span 80
+                        | 件商品
+                    a(href="#") 重置
+                    a.active(href="#") 确定
+
+
+
+
+
+
+
+
+
+

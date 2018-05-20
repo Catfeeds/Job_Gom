@@ -1,0 +1,154 @@
+
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <script>
+    var BPConfig = {
+        startTime: new Date().valueOf()
+    };
+    </script>
+    <meta charset="UTF-8">
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="pragma" content="no-cache">
+    <meta http-equiv="cache-control" content="no-cache">
+    <link rel="shortcut icon" href="https://www.gomeplus.com/favicon.ico">
+    <meta http-equiv="expires" content="0">
+    <title>登录 - 国美+</title>
+    <meta name="author" content="美信网络技术有限公司">
+    <meta name="description" content="国美">
+    <meta name="keywords" content="国美+APP">
+    <!-- 引入公共css  -->
+    <link type="text/css" rel="stylesheet" href="https://css.meixincdn.com/m/pc/dist/css/public/public.css?version=1.6.0">
+    <!-- 引入每个页面的css -->
+    <link type="text/css" rel="stylesheet" href="https://css.meixincdn.com/m/pc/dist/css/module/login/login.css?version=1.6.0">    <script>
+    var $GLOBAL_CONFIG = {};
+    $GLOBAL_CONFIG['passport_domain'] = 'https://passport.gomeplus.com/';
+    $GLOBAL_CONFIG['redirect'] = 'https://www.gomeplus.com/';
+    $GLOBAL_CONFIG['csrf_token'] = 'hbiEZ7Omu2J9ncRngaeAaoKde95_dm1mgLVq3YDOmtmGqJqqtMy7qX6tsmc';
+    </script>
+    <script src="https://js.meixincdn.com/m/public/gomeplusJS/dist/bp/buriedPoint.min.js?version=1.6.0"></script>
+        <!--统计-->
+    <style type="text/css">
+.opg .footer{
+    background-color: #fff;
+    margin-top: 0;
+}
+.opg .footer .wrap-box{
+  background-color: #fff;
+}
+.opg .footer dl.link-list dt{
+    color: #333;
+}
+</style>
+    </head>
+
+
+
+<body class="opg lg-bg">
+    <div class="lg-header">
+      <div class="lg-header-in">
+        <h1 class="lg-logo"><a href="https://www.gomeplus.com/">国美plus</a></h1>
+      </div>
+    </div>
+    <div class="land-main">
+      <div class="lg-main land-bg">
+        <div class="lg-land-main" data-node="userForm">
+        <a href="javascript:;" class="lg-saoma" data-action="qrCodeBtn"></a>
+          <h4 class="lg-land-tl">欢迎登录</h4>
+           <div class="lg-error-tip none clearfix" data-node="error"> <em class="icon icon-error">&#xe983;</em><span></span></div>
+
+          <div class="land-form">
+            <div class="land-form-it">
+              <em class="icon icon-close none" data-node="emptyUser">&#xe92b;</em>
+              <label class="icon icon-label">&#xe939;</label>
+              <input type="txt" placeholder="手机号 / 国美在线账号" class="land-input-md" data-node="userNum">
+            </div>
+            <div class="land-form-it">
+              <em class="icon icon-close none" data-node="emptyPwd">&#xe92b;</em>
+              <label class="icon icon-label">&#xe96e;</label>
+              <input type="password" placeholder="密码" class="land-input-md" data-node="userPwd">
+            </div>
+            <div class="land-form-cell none" data-node="identifyplace">
+              <input type="txt" placeholder="请输入验证码" data-node="code"  class="land-input-short"><img src="" class="code-img"><a href="javascript:;" class="chage-code" data-node="change-code">换一张</a>
+            </div>
+          </div>
+
+          <div class="land-forget-txt">
+            <a href="/forgetpwd" class="forget-ps-word">忘记密码</a><a href="/regist" class="rapid-log">立即注册</a>
+          </div>
+
+          <a href="javascript:;" class="pc-btn pc-btnw300 pc-btnh45" data-node="userLogin">登 录</a>
+
+          <p class="land-types">
+            <span>第三方账号登录：</span>
+            <a  class="icon icon-qq" href="/login/connect_qq">&#xe901;</a>
+            <a  class="icon icon-wx" href="/login/connect_wechat">&#xe938;</a>
+            <a  class="icon icon-wb" href="/login/connect_wb">&#xe936;</a>
+          </p>
+
+          <div style="display:none" class="lg-code-main" data-node="qrCodeBox">
+              <a href="javascript:;" class="lg-saoma" data-action="accLoginBtn"></a>
+              <h5 class="land-title">手机扫码，安全登录</h5>
+              <div class="land-code-img">
+                <img src="" data-node="qrCodeImg">
+                <div style="display:none" class="sm-failed" data-node="qrCodeFailBox">
+                  <span data-node="qrCodeTip">二维码已失效</span>
+                  <a href="javascript:;" data-action="refQrCode">点击刷新</a>
+                </div>
+              </div>
+              <div class="land-bottom clearfix"><em class="icon">&#xe929;</em>
+                <p>打开 <span>国美+app<br></span>扫一扫登录</p>
+              </div>
+          </div>
+
+          <div style="display:none" class="lg-code-main" data-node="qrCodeSucBox">
+              <a href="javascript:;" class="lg-saoma" data-action="accLoginBtn"></a>
+              <h5 class="land-title">手机扫码，安全登录</h5>
+              <div class="sm-success">
+                <img src="https://js.meixincdn.com/m/pc/dist/images/login/sm-success.jpg" class="sm-succes-img">
+                <span>扫描成功</span>
+                <p>请在手机上确认登录</p>
+                <!-- <a href="javascript:;" data-action="backToQrCode">返回二维码登录</a> -->
+              </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+    <div class="footer">
+      <div class="wrap-box clearfix">
+        <dl class="link-list">
+          <dt>商家服务</dt>
+          <dd><a target="_blank" href="https://www.gomeplus.com/others/process.html">商家入驻</a></dd>
+          <dd><a target="_blank" href="http://xpop.gomeplus.com/login">商家管理中心</a></dd>
+          <dd><a target="_blank" href="https://www.gomeplus.com/others/help.html">帮助中心</a></dd>
+          <dd><a target="_blank" href="https://www.gomeplus.com/others/content.html">联系我们</a></dd>
+        </dl>
+        <dl class="link-list">
+          <dt>关于我们</dt>
+          <dd><a target="_blank" href="https://www.gomeplus.com/others/join-list.html">社会招聘</a></dd>
+          <dd><a target="_blank" href="http://gomeplus.zhaopin.com">校园招聘</a></dd>
+          <dd><a target="_blank" href="https://www.gomeplus.com/others/siteMapHtml/siteMap.html">站点地图</a></dd>
+        </dl>
+        <div class="ma">
+          <p><img src="https://js.meixincdn.com/m/pc/dist/images/public/ma1.jpg">国美+APP</p>
+          <p><img src="https://js.meixincdn.com/m/pc/dist/images/public/ma2.jpg">国美+微信服务号</p>
+        </div>
+      </div>
+        <div class="copyright">
+         <div class="wrap-box">
+          <p>出版物经营许可证：渝北-500112122号 | 食品流通许可证：SP5001121610159782号</p>
+          <p>Copyright © 2015-2016 美信网络技术有限公司版权所有 渝ICP备15012739号 增值电信业务经营许可证：<a href="http://www.miibeian.gov.cn/state/outPortal/loginPortal.action" target="_blank">渝B2-20160039</a></p>
+        </div>
+        </div>
+    </div>
+
+    
+    <!-- <script src="https://js.meixincdn.com/m/pc/dist/js/conf/vendor.js?version=1.6.0"></script>
+    <script src="https://js.meixincdn.com/m/pc/dist/js/conf/login.js?version=1.6.0" ></script> -->
+    <script src="../../../dist/js/conf/vendor.js?version=1.7.21"></script>
+    <script src="../../../dist/js/conf/login.js?version=1.7.21"></script>
+    <!-- <script src="dist/login.js?version=1.7.21" ></script>   -->
+    </body>
+</html>

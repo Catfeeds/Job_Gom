@@ -1,0 +1,79 @@
+<block wx:if="{{!hasVideo}}">
+
+    <view class="nodata">
+        <icon type="warn" size="40"/>
+        <text>{{videoMsg}}</text>
+    </view>
+</block>
+<block wx:else>
+    <block wx:if="{{isLoaded}}">
+    <scroll-view>
+        <video style="display: {{videoIsHide ? 'none' : 'block'}}" src="{{videoData.videos[0].address}}" id="myVideo" live="{{videoData.video_type == 2 ? true : false}}" autoplay="true" objectFit="fill"></video>
+    </scroll-view>
+    <scroll-view class="detail-scroll" scroll-y="true" bindscrolltoupper="upper" bindscrolltolower="lower">
+        <view class="detail-video-info">
+            <view class="video-namebox">
+                <view class="detail-video-name"><text>{{videoData.title}}</text></view>
+            </view>
+            <view class="detail-video-desc"><text>{{videoData.description}}</text></view>
+        </view>
+
+        <!-- 相关视频 -->
+        <block wx:if="{{false}}">
+        <view class="area-title"><text>相关视频</text></view>
+        <view class="related-videos">
+            <scroll-view style="width: {{relatedBoxWidth}};">
+                <block wx:for="{{videoRelated}}" wx:key="unique">
+                    <navigator class="related-item" url="/pages/detail/detail?id={{item.id}}&related=1" open-type="redirect">
+                        <image class="related-item-img" src="{{item.preview}}"></image>
+                        <view class="related-item-name"><text>{{item.videoName}}</text></view>
+                        <view class="related-item-desc"><text>{{item.videoDesc}}</text></view>
+                    </navigator>
+                </block>
+            </scroll-view>
+        </view>
+        </block>
+
+        <!--评论-->
+        <block wx:if="{{false}}">
+        <view class="area-title"><text>评论</text></view>
+        <view class="comments-list">
+            <block wx:for="{{comments}}" wx:key="unique">
+                <view class="comments-item">
+                    <view class="comments-left">
+                        <image class="user-head" src="{{item.avatar}}"></image>
+                    </view>
+                    <view class="comments-right">
+                        <text class="user-name">{{item.author}}</text>
+                        <view class="comments-content">
+                            <text>{{item.content}}</text>
+                        </view>
+                        <view class="comments-tool">
+                            <text class="comments-time">{{item.pushtime}}</text>
+                            <view bindtap="likeRecomment" data-cid="{{item.id}}" data-isliked="{{item.isliked}}" class="comments-like {{item.isliked==1 ? 'liked':''}}"><text>{{item.likes}}</text></view>
+                            <view class="comments-recom"></view>
+                        </view>
+                    </view>
+                </view>
+            </block>
+        </view>
+        </block>
+    </scroll-view>
+    </block>
+</block>
+
+<block wx:if="{{false}}">
+<view class="comment-bar" bindtap="publishComment">
+    <text>发表评论...</text>
+</view>
+<view class="comment-form" wx:if="{{publishComment}}">
+    <form bindsubmit="formSubmit" bindreset="formReset">
+        <view class="comment-form-title"><text>评论:</text></view>
+        <textarea class="comment-textarea" name="comment" placeholder="请输入您的评论内容..." auto-focus maxlength="-1" />
+        <view class="comment-btnbox">
+            <button formType="reset" class="comment-btn" type="default">取消</button>
+            <button formType="submit" class="comment-btn" type="primary">发布</button>
+        </view>
+    </form>
+</view>
+</block>

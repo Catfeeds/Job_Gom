@@ -1,0 +1,477 @@
+@import '../../../../../../gomeplusUI/pc/src/sass/common/basic/_base.scss';
+@import '../../../../../../gomeplusUI/pc/src/sass/common/basic/_mixins.scss';
+//shoplist
+.shop-title{
+    .crumbs-box{
+    }
+    .sort{
+        padding-top: 18px;
+    }
+}
+.shop-list{
+    background: $bg-fff;
+    .list-name{
+        padding: 15px;
+        border-bottom: 1px solid #f6f5ee;
+        position: relative;
+        .pc-btn{
+            position: absolute;
+            top: 15px;
+            right: 15px;
+        }
+        .img{
+            float: left;
+            margin-right: 15px;
+            $imgsize:120px;
+            width: $imgsize;
+            height: $imgsize;
+            img{
+                width: $imgsize;
+                height: $imgsize;
+            }
+        }
+        h1{
+            font-size: $text30;
+            font-weight: normal;
+            line-height: 48px;
+            span{
+                display: inline-block;
+                width: 18px;
+                height: 20px;
+                background: url(../../../images/public/sprite.png) no-repeat;
+                margin-left: 8px;
+            }
+            .vip1{
+                background-position: 0 0;
+            }
+            .vip2{
+                background-position: -25px 0;
+            }
+            .vip3{
+                background-position: -49px 0;
+            }
+        }
+        p{
+            color: $color-gray;
+            line-height: 1.2em;
+            span{
+                color: $link-hover;
+                margin-right: 20px;
+            }
+            em{
+                font-size: 16px;
+                float: left;
+                margin-right: 7px;
+                color: $color-default;
+            }
+        }
+        .shop-score{
+            width: 400px;
+            float: left;
+        }
+        .function-icon{
+            width: 180px;
+            float: right;
+            a{
+                float: left;
+                margin-left: 15px;
+            }
+            .icon-share{
+                &:before{
+                    content: "\e997";
+                }
+                &.active{
+                    color: $link-hover;
+                    &:before{
+                        content: "\e998";
+                    }
+                }
+            }
+            .icon-save{
+                &:before{
+                    content: "\e92d";
+                }
+                &.active{
+                    color: $link-hover;
+                    &:before{
+                        content: "\e92e";
+                    }
+                }
+            }
+            .icon-like{
+                &:before{
+                    content: "\e917";
+                }
+                &.active{
+                    color: $link-hover;
+                    &:before{
+                        content: "\e918";
+                    }
+                }
+            }
+            span{
+                float: left;
+                color: $color-default;
+                margin-right: 0;
+            }
+        }
+        .line2{
+            height: 4em;
+            line-height: 1.7em;
+        }
+    }
+    ul{
+        margin-right: -13px;
+        li{
+            /* box-sizing: border-box;
+            border: 5px solid transparent; */
+            $img230:230px;
+            float: left;
+            width: $img230;
+            margin: 0 12px 12px 0;
+            position: relative;
+            background: $bg-fff;
+            /* .mg-negative{
+                margin: -5px;
+            } */
+            .icon-fan{
+                position: absolute;
+                right: 6px;
+                top: -5px;
+                width: 33px;
+                height: 28px;
+                background: url(../../../images/public/sprite.png) no-repeat 0 -25px;
+                color: $bg-fff;
+                font-style: normal;
+                text-align: center;
+                z-index: 25;
+            }
+            .icon-jiang{
+                background: url(../../../images/public/sprite.png) -40px -25px;
+            }
+            img{
+                width: $img230;
+                height: $img230;
+                -moz-transition: all .3s ease;
+                -o-transition: all .3s ease;
+                -webkit-transition: all .3s ease;
+                transition: all .3s ease;
+            }
+            .text{
+                box-sizing: border-box;
+                padding: 10px 15px;
+                line-height: 24px;
+                border-top: 1px solid #f6f5ee;
+                color: $link-hover;
+                span{
+                    font-size: 25px;
+                }
+                p{
+                    width: 100%;
+                    @extend %text-hide;
+                    color: $color-default;
+                }
+            }
+            .btn-box{
+                display: none;
+                position: absolute;
+                left: 0;
+                top: 190px;
+                width: 100%;
+                height: 40px;
+                z-index: 20;
+                a{
+                    width: 50%;
+                    border-radius: 0;
+                    float: left;
+                }
+            }
+            &:hover{
+                /* border-color: #e60039;
+                overflow: hidden; */
+                box-shadow: 3px 3px 6px 0 #d2d2d2;
+                -webkit-box-shadow: 3px 3px 6px 0 #d2d2d2;
+                -moz-box-shadow: 3px 3px 6px 0 #d2d2d2;
+                img{
+                    -moz-transform: scale3d(.98,.98,1);
+                    -ms-transform: scale3d(.98,.98,1);
+                    -webkit-transform: scale3d(.98,.98,1);
+                    transform: scale3d(.98,.98,1);
+                }
+                .text{
+                    p{
+                        color: $link-hover;
+                    }
+                }
+                .btn-box{
+                    display: block;
+                }
+            }
+        }
+    }
+}
+.detail-menu{
+    height: 50px;
+    line-height: 50px;
+    border-top: 1px solid $link-hover;
+    text-align: center;
+    background: $color-default;
+    margin-bottom: 15px;
+    a{
+        float: left;
+        display: inline-block;
+        width: 96px;
+        color: $bg-fff;
+        &:hover{
+            color: $link-hover;
+        }
+    }
+    .active{
+        background: url(../../../images/public/icon-up.png) no-repeat center bottom;
+    }
+    .fl{
+        float: left;
+        position: relative;
+        a{
+            width: 135px;
+            .icon{
+                margin-left: 5px;
+            }
+            .icon-up{
+                display: none;
+            }
+            &.active{
+                background-image: none;
+                color: $link-hover;
+                .icon-down{
+                    display: none;
+                }
+                .icon-up{
+                    display: inline-block;
+                }
+            }
+            &.hover{
+                background-image: none;
+                color: $link-hover;
+            }
+        }
+        
+        .open-list{
+            display: none;
+            width: 150px;
+            line-height: 50px;
+            position: absolute;
+            left: 0;
+            top: 50px;
+            background: $color-default;
+            z-index: 30;
+            text-align: left;
+            a{
+                width: 100%;
+                color: $bg-fff;
+                padding: 0 10px 0 20px;
+                box-sizing: border-box;
+                &:hover{
+                    color: $bg-fff;
+                    background: #f95353;
+                }
+                &.active{
+                    color: $bg-fff;
+                    background: #f95353;
+                }
+            }
+        }
+    }
+}
+.detail-coupons{
+    background: $bg-fff;
+    padding: 5px 5px 0;
+    dl{
+        margin-right: -5px;
+    }
+    dt{
+        float: left;
+        width: 123px;
+        font-size: 18px;
+        text-align: center;
+        padding-top: 42px;
+        .icon{
+            color: $link-hover;
+            font-size: 40px;
+        }
+    }
+    .coupon-list{
+        float: left;
+        width: 1072px;
+    }
+    dd{
+        float: left;
+        width: 262px;
+        margin: 0 6px 5px 0;
+        text-align: center;
+        padding: 10px 0 15px;
+        background: url(../../../images/shop/shop-coupon.png) #fff8e7 no-repeat left top;
+        background-color: #fff8e7;
+        p{
+            color: $color-gray;
+            padding-top: 5px;
+        }
+        .fl{
+            text-align: center;
+            font-size: 22px;
+            color: $color-danger;
+            span{
+                font-size: 55px;
+                line-height: 1;
+            }
+        }
+        .fr{
+            font-size: $text16;
+            line-height: 20px;
+            text-align: center;
+            padding-bottom: 8px;
+            /* p{
+                color: $color-danger;
+            } */
+        }
+    }
+}
+.shop-list-bg{
+    background: #f6f5ee;
+}
+.no-new{
+    height: 206px;
+    margin-top: 15px;
+    padding-top: 160px;
+    background: $bg-fff;
+    dl{
+        width: 285px;
+        margin: 0 auto;
+        dt{
+            float: left;
+            .icon-bag{
+                font-size: 65px;
+                color: #999;
+            }
+        }
+        dd{
+            float: right;
+            span, a{
+                display: block;
+            }
+            span{
+                color: $font-grey-normal;
+                font-size: $text16;
+            }
+            .red-big{
+                margin-top: 6px;
+                color: $color-danger;
+                font-size: $text30;
+                em{
+                    margin-left: 8px;
+                    color: #999;
+                    font-size: 16px;
+                    display:none;
+                }
+            }
+        }    
+    }
+    .no-business{
+        width: 210px;
+    }
+}
+.page-more{
+    padding-top: 15px;
+    a.pc-btn{
+        background: #e9e8e5;
+        color: $color-default;
+        line-height: 60px;
+        font-size: $text16;
+    }
+}
+.fixed-tool{
+    position: fixed;
+    top: 50%;
+    right: 0;
+    width: 50px;
+    height: 310px;
+    margin-top: -150px;
+    z-index: 99;
+    a{
+        display: block;
+        width: 50px;
+        height: 50px;
+        color: $color-txt;
+        text-align: center;
+        margin-bottom: 1px;
+        background-color: #fc8752;
+        position: relative;
+        &.tool-2{
+            height: 105px;
+            p{
+                width: 16px;
+                line-height: 1;
+                position: absolute;
+                top: 47px;
+                left: 18px;
+            }
+            .cart-num{
+                position: absolute;
+                top: 10px;
+                right: 5px;
+                width: 20px;
+                height: 20px;
+                line-height: 20px;
+                text-align: center;
+                font-size: $text12;
+                border-radius: 50%;
+                background-color: $link-hover;
+            }
+        }
+        em{
+            font-size: 24px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            margin: -12px 0 0 -12px;
+            &.icon-cart{
+                top: 31px;
+            }
+        }
+        .hover-txt{
+            width: 28px;
+            line-height: 16px;
+            padding-top: 10px;
+            margin: 0 auto;
+            font-size: $text12;
+            display: none;
+        }
+        &.tool-3{
+            .hover-txt{
+                width: 42px;
+            }
+        }
+        &:hover{
+            background-color: #fda984;
+            -webkit-transition: all .3s ease;
+            -moz-transition: all .3s ease;
+            -o-transition: all .3s ease;
+            transition: all .3s ease;
+            .hover-txt{
+                display: block;
+            }
+            em{
+                display: none;
+            }
+            em.icon-cart{
+                display: block;
+            }
+        }
+    }
+}
+.no-merchants{
+    font-size: $text16;
+    color: $font-grey-normal;
+    text-align: center;
+    margin-top: 185px;
+}

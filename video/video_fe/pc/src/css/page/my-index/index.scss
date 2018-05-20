@@ -1,0 +1,104 @@
+/* my-index */
+@import "../../base/public.scss";
+@import "../../widgets/user/home-banner.scss";
+@import "../../widgets/user/home-nav.scss";
+@import "../../widgets/list-card.scss";
+
+.user-home {
+    .content{
+    	margin-top: 40px;
+    	margin-bottom: 50px;
+    	.main{
+    		width: 895px;
+    		margin-left: 40px;
+    		.title{
+    			h1{
+    				color: #333;
+    				font-weight: normal;
+    				font-size: 22px;
+    			}
+    			.more{
+    				font-size: 14px;
+    				color: #999;
+    				margin-top: 9px;
+					&:hover{
+						color: #ec392a;
+					}
+					em{
+					    font-size: 10px;
+					}
+    			}
+    		}
+    		.sublist, .listwrap {
+    			margin-top: 20px;
+    			padding-bottom: 32px;
+
+                .list-card li{
+                    margin-bottom: 24px;
+                }
+    			.subscriber{
+    				width: 212px;
+    				height: 192px;
+    				border: 1px solid #ededed;
+    				text-align: center;
+    				background-color: #fff;
+    				float: left;
+    				margin-left: 13px;
+    				&:first-child{
+    					margin-left: 0;
+    				}
+    				&:hover{
+    					border: 1px solid #f27469;
+    				}
+    				a{
+    				    display: block;
+    				    padding: 0 10px;
+    				}
+    				.avatar{
+    					width: 60px;
+    					height: 60px;
+    					border-radius: 50%;
+    					margin-top: 20px;
+    				}
+    				.name{
+    					color: #333;
+    					font-size: 16px;
+    					margin-top: 16px;
+                        &:hover{
+                            color: #f21818;
+                        }
+    				}
+    				.desc{
+    					color: #999;
+    					font-size: 14px;
+    					margin-top: 16px;
+                        word-break:break-all; /*支持IE，chrome，FF不支持*/
+                        word-wrap:break-word;
+    				}
+    			}
+    		}
+    		.listwrap{
+    		    padding-bottom: 0;
+    		}
+    		.exchange{
+    			a{
+    				display: block;
+	    			width: 500px;
+	    			height: 50px;
+	    			line-height: 50px;
+	    			text-align: center;
+	    			color: #333;
+	    			font-size: 16px;
+	    			border-radius: 25px;
+	    			border: 1px solid #a6a7a9;
+	    			margin: 0 auto;
+	    			background-color: #fff;
+	    			&:hover{
+                        color: #fff;
+	    				background-color: #262629;
+	    			}
+    			}
+    		}
+    	}
+    }
+}

@@ -1,0 +1,404 @@
+{
+    "publicPath": "https://js.meixincdn.com/m/vm/dist",
+    "page": {
+        "video_detail": {
+            "css": [
+                {
+                    "path": "css\\video_detail",
+                    "hash": "748474e",
+                    "extname": ".css"
+                }
+            ],
+            "js": [
+                {
+                    "path": "js/vendor",
+                    "hash": "f5df5fc",
+                    "extname": ".js"
+                },
+                {
+                    "path": "js\\video_detail",
+                    "hash": "4970c06",
+                    "extname": ".js"
+                }
+            ]
+        },
+        "search-result": {
+            "css": [
+                {
+                    "path": "css\\search-result",
+                    "hash": "ba7a44b",
+                    "extname": ".css"
+                }
+            ],
+            "js": [
+                {
+                    "path": "js/vendor",
+                    "hash": "f5df5fc",
+                    "extname": ".js"
+                },
+                {
+                    "path": "js\\search-result",
+                    "hash": "a61aa11",
+                    "extname": ".js"
+                }
+            ]
+        },
+        "index": {
+            "css": [
+                {
+                    "path": "css\\index",
+                    "hash": "ef06a1d",
+                    "extname": ".css"
+                }
+            ],
+            "js": [
+                {
+                    "path": "js/vendor",
+                    "hash": "f5df5fc",
+                    "extname": ".js"
+                },
+                {
+                    "path": "js\\index",
+                    "hash": "a893404",
+                    "extname": ".js"
+                }
+            ]
+        },
+        "live": {
+            "css": [
+                {
+                    "path": "css\\live",
+                    "hash": "922ef9c",
+                    "extname": ".css"
+                }
+            ],
+            "js": [
+                {
+                    "path": "js/vendor",
+                    "hash": "f5df5fc",
+                    "extname": ".js"
+                },
+                {
+                    "path": "js\\live",
+                    "hash": "ba0603f",
+                    "extname": ".js"
+                }
+            ]
+        },
+        "tag": {
+            "css": [
+                {
+                    "path": "css\\tag",
+                    "hash": "8e21ff2",
+                    "extname": ".css"
+                }
+            ],
+            "js": [
+                {
+                    "path": "js/vendor",
+                    "hash": "f5df5fc",
+                    "extname": ".js"
+                },
+                {
+                    "path": "js\\tag",
+                    "hash": "c20f872",
+                    "extname": ".js"
+                }
+            ]
+        },
+        "live-detail": {
+            "css": [
+                {
+                    "path": "css\\live-detail",
+                    "hash": "96fc255",
+                    "extname": ".css"
+                }
+            ],
+            "js": [
+                {
+                    "path": "js/vendor",
+                    "hash": "f5df5fc",
+                    "extname": ".js"
+                },
+                {
+                    "path": "js\\live-detail",
+                    "hash": "6c6fb01",
+                    "extname": ".js"
+                }
+            ]
+        },
+        "sublist": {
+            "css": [
+                {
+                    "path": "css\\sublist",
+                    "hash": "9c853f9",
+                    "extname": ".css"
+                }
+            ],
+            "js": [
+                {
+                    "path": "js/vendor",
+                    "hash": "f5df5fc",
+                    "extname": ".js"
+                },
+                {
+                    "path": "js\\sublist",
+                    "hash": "6a95ce4",
+                    "extname": ".js"
+                }
+            ]
+        },
+        "sub-main": {
+            "css": [
+                {
+                    "path": "css\\sub-main",
+                    "hash": "be033e2",
+                    "extname": ".css"
+                }
+            ],
+            "js": [
+                {
+                    "path": "js/vendor",
+                    "hash": "f5df5fc",
+                    "extname": ".js"
+                },
+                {
+                    "path": "js\\sub-main",
+                    "hash": "f7ddaf4",
+                    "extname": ".js"
+                }
+            ]
+        },
+        "sub-all": {
+            "css": [
+                {
+                    "path": "css\\sub-all",
+                    "hash": "fc16be0",
+                    "extname": ".css"
+                }
+            ],
+            "js": [
+                {
+                    "path": "js/vendor",
+                    "hash": "f5df5fc",
+                    "extname": ".js"
+                },
+                {
+                    "path": "js\\sub-all",
+                    "hash": "dfdbb6f",
+                    "extname": ".js"
+                }
+            ]
+        },
+        "sub-relate": {
+            "css": [
+                {
+                    "path": "css\\sub-relate",
+                    "hash": "3a88de9",
+                    "extname": ".css"
+                }
+            ],
+            "js": [
+                {
+                    "path": "js/vendor",
+                    "hash": "f5df5fc",
+                    "extname": ".js"
+                },
+                {
+                    "path": "js\\sub-relate",
+                    "hash": "1a7aa62",
+                    "extname": ".js"
+                }
+            ]
+        },
+        "comment": {
+            "css": [
+                {
+                    "path": "css\\comment",
+                    "hash": "c3a5df0",
+                    "extname": ".css"
+                }
+            ],
+            "js": [
+                {
+                    "path": "js/vendor",
+                    "hash": "f5df5fc",
+                    "extname": ".js"
+                },
+                {
+                    "path": "js\\comment",
+                    "hash": "8c58eff",
+                    "extname": ".js"
+                }
+            ]
+        },
+        "my-record": {
+            "css": [
+                {
+                    "path": "css\\my-record",
+                    "hash": "bcba226",
+                    "extname": ".css"
+                }
+            ],
+            "js": [
+                {
+                    "path": "js/vendor",
+                    "hash": "f5df5fc",
+                    "extname": ".js"
+                },
+                {
+                    "path": "js\\my-record",
+                    "hash": "3958dd9",
+                    "extname": ".js"
+                }
+            ]
+        },
+        "my-collect": {
+            "css": [
+                {
+                    "path": "css\\my-collect",
+                    "hash": "d505a6d",
+                    "extname": ".css"
+                }
+            ],
+            "js": [
+                {
+                    "path": "js/vendor",
+                    "hash": "f5df5fc",
+                    "extname": ".js"
+                },
+                {
+                    "path": "js\\my-collect",
+                    "hash": "c739076",
+                    "extname": ".js"
+                }
+            ]
+        },
+        "my-subscribe": {
+            "css": [
+                {
+                    "path": "css\\my-subscribe",
+                    "hash": "44b1424",
+                    "extname": ".css"
+                }
+            ],
+            "js": [
+                {
+                    "path": "js/vendor",
+                    "hash": "f5df5fc",
+                    "extname": ".js"
+                },
+                {
+                    "path": "js\\my-subscribe",
+                    "hash": "2e8b938",
+                    "extname": ".js"
+                }
+            ]
+        },
+        "ui-collection": {
+            "css": [
+                {
+                    "path": "css\\ui-collection",
+                    "hash": "1e0b1e9",
+                    "extname": ".css"
+                }
+            ],
+            "js": [
+                {
+                    "path": "js/vendor",
+                    "hash": "f5df5fc",
+                    "extname": ".js"
+                },
+                {
+                    "path": "js\\ui-collection",
+                    "hash": "7828056",
+                    "extname": ".js"
+                }
+            ]
+        },
+        "my-index": {
+            "css": [
+                {
+                    "path": "css\\my-index",
+                    "hash": "703d24f",
+                    "extname": ".css"
+                }
+            ],
+            "js": [
+                {
+                    "path": "js/vendor",
+                    "hash": "f5df5fc",
+                    "extname": ".js"
+                },
+                {
+                    "path": "js\\my-index",
+                    "hash": "89c2cb4",
+                    "extname": ".js"
+                }
+            ]
+        },
+        "demo": {
+            "css": [
+                {
+                    "path": "css\\demo",
+                    "hash": "f7595b4",
+                    "extname": ".css"
+                }
+            ],
+            "js": [
+                {
+                    "path": "js/vendor",
+                    "hash": "f5df5fc",
+                    "extname": ".js"
+                },
+                {
+                    "path": "js\\demo",
+                    "hash": "910a63e",
+                    "extname": ".js"
+                }
+            ]
+        },
+        "icon": {
+            "css": [
+                {
+                    "path": "css\\icon",
+                    "hash": "b46712c",
+                    "extname": ".css"
+                }
+            ],
+            "js": [
+                {
+                    "path": "js/vendor",
+                    "hash": "f5df5fc",
+                    "extname": ".js"
+                },
+                {
+                    "path": "js\\icon",
+                    "hash": "73218c0",
+                    "extname": ".js"
+                }
+            ]
+        },
+        "error": {
+            "css": [
+                {
+                    "path": "css\\error",
+                    "hash": "0447f92",
+                    "extname": ".css"
+                }
+            ],
+            "js": [
+                {
+                    "path": "js/vendor",
+                    "hash": "f5df5fc",
+                    "extname": ".js"
+                },
+                {
+                    "path": "js\\error",
+                    "hash": "8651d90",
+                    "extname": ".js"
+                }
+            ]
+        }
+    }
+}

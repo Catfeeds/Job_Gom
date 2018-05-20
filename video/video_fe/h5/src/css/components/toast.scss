@@ -1,0 +1,21 @@
+/**
+ * [toast]
+ * @Author: Fu Xiaochun
+ * @Email:  fuzhengchun@gomeplus.com
+ */
+@import '_app';
+.pub-toast{
+ 	box-sizing:border-box;
+ 	padding:rem(20px) rem(50px);
+ 	background:rgba(0,0,0,.7);
+ 	font-size:rem(32px);
+ 	color:#FFF;
+ 	border-radius:rem(20px);
+ 	line-height:rem(40px);
+ 	text-align:center;
+ 	position:fixed;
+ 	left:0;
+ 	top:0;
+ 	z-index:999;
+ 	max-width:80%;
+}

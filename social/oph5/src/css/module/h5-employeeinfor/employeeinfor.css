@@ -1,0 +1,761 @@
+
+body{
+	background:#fff;
+}
+*{
+	-webkit-box-sizing:border-box;
+	box-sizing:border-box;
+}
+::-webkit-input-placeholder {
+	color: #cbcbcb; 
+} 
+:-moz-placeholder {
+	color: #cbcbcb; 
+} 
+::-moz-placeholder {
+	color: #cbcbcb; 
+}
+/*font family*/
+@font-face {
+  font-family: 'icomoon';
+  src:  url('../../../images/iconfont/icomoon.eot?mjrnqg');
+  src:  url('../../../images/iconfont/icomoon.eot?mjrnqg#iefix') format('embedded-opentype'),
+    url('../../../images/iconfont/icomoon.ttf?mjrnqg') format('truetype'),
+    url('../../../images/iconfont/icomoon.woff?mjrnqg') format('woff'),
+    url('../../../images/iconfont/icomoon.svg?mjrnqg#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+.icomoon,.icon{
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+/*登录|注册*/
+.employee{
+	overflow-x:hidden;
+}
+.employee-gray{
+	background:#f2f2f2;
+}
+.employee-theme{
+	width:7.5rem;
+	height:3.68rem;
+	margin:0px auto 0.3rem;
+	background-image:url("../../../images/module/h5-employeeinfor/employee-theme.jpg");
+	background-repeat:no-repeat;
+	-webkit-background-size:100%;
+	background-size:100%;
+}
+.employee a.employee-btn{
+	display:block;
+	cursor:pointer;
+	text-align:center;
+	font-size:0.35rem;
+	width:6.86rem;
+	height:0.91rem;
+	margin:0.21rem auto 0px;
+	line-height:0.91rem;
+	color:#575757;
+	letter-spacing:0.03rem;
+	border:1px solid transparent;
+  	-webkit-border-radius:0.04rem;
+  	-ms-touch-action: manipulation;
+  	touch-action: manipulation;
+  	border-radius:0.04rem;
+}
+.employee a.employee-btn:hover,
+.employee a.employee-btn:focus{
+	outline:0;
+}
+.employee a.btn-default,
+.employee a.btn-default:hover,
+.employee a.btn-default:focus{
+	border-color:#f3cd7a;
+	background-color:#fff;
+	color:#575757;
+}
+.employee a.btn-primary,
+.employee a.btn-primary:hover,
+.employee a.btn-primary:focus{
+	border-color:#f3cd7a;
+	background-color:#f3cd7a;
+	color:#575757;
+}
+.employee a.btn-disable,
+.employee a.btn-disable:hover,
+.employee a.btn-disable:focus{
+	border-color:#f8e1af;
+	background-color:#f8e1af;
+	color:#b29962;
+}
+.employee .employee-tip{
+	font-size:0.26rem;
+	color:#cbcbcb;
+	text-align:center;
+	line-height:1;
+	margin-top:0.15rem;
+}
+.employee .employee-notice{
+	width:6.91rem;
+	margin:0.85rem auto 0;
+}
+.employee h3.employee-title{
+	position:relative;
+	height:0.44rem;
+	line-height:0.44rem;
+}
+.employee h3.employee-title:after{
+	content:"";
+	position:absolute;
+	left:0;
+	right:0;
+	top:50%;
+	z-index:1;
+	margin-top:-1px;
+	width:100%;
+	height:0px;
+	overflow:hidden;
+	border-top:1px solid #ae904e;
+}
+.employee h3.employee-title span{
+	position:relative;
+	z-index:2;
+	display:block;
+	width:1.49rem;
+	height:0.44rem;
+	margin:0px auto;
+	line-height:0.44rem;
+	font-size:0.3rem;
+	text-align:center;
+	color:#ae904e;
+	background:#fff;
+}
+.employee-notice ul{
+	margin-top:0.19rem;
+}
+.employee-notice ul li{
+	font-size:0.26rem;
+	line-height:0.46rem;
+	color:#d4cab4;
+}
+/*绑定工号*/
+.employee .employee-subject{
+	height:0.8rem;
+	line-height:0.8rem;
+	font-size:0.3rem;
+	text-align:center;
+	color:#575757;
+	background:#f3cd7a;
+}
+.employee .employee-infor{
+	padding:0.31rem 0.3rem 0rem;
+}
+.employee .employee-infor h3.employee-title span{
+	width:2.37rem;
+	font-size:0.35rem;
+	color:#414141;
+}
+.employee .employee-infor h3.employee-title:after{
+	border-top-color:#bfbfbf;	
+}
+.employee .infor-personal{
+	margin-top:0.22rem;
+}
+.employee .personal-input{
+	position:relative;
+	overflow:hidden;
+	height:0.8rem;
+	line-height:0.8rem;
+	margin-bottom:0.2rem;
+	border-bottom:1px solid #e5e5e5;
+}
+.employee .personal-input .icon{
+	position:absolute;
+	left:0.07rem;
+	top:0;
+	text-align:center;
+	width:0.40rem;
+	height:0.80rem;
+	line-height:0.80rem;
+	font-size:0.44rem;
+	color:#ccac6d;
+}
+.employee .infor-personal .input-style{
+	display:block;
+	height:0.8rem;
+	vertical-align:middle;
+	width:100%;
+	padding:0.25rem 0rem 0.25rem 0.85rem;
+	outline:none;
+	font-size:0.3rem;
+	background:#fff;
+}
+.employee .infor-personal .input-style{
+	color:#515151;
+}
+
+.employee .infor-form{
+	margin-top:0.42rem;
+}
+.employee .infor-form .form-group {
+	position:relative;
+	margin-bottom:0.19rem;
+}
+.employee .infor-form .group-title{
+	display:block;
+	float:left;
+	width:2.13rem;
+	height:0.7rem;
+	line-height:0.7rem;
+	text-align:left;
+	font-size:0.3rem;
+	color:#858585;
+}
+.employee .infor-form .group-control{
+	float:left;
+	position:relative;
+	padding:0rem 0.7rem 0rem 0.21rem;
+	height:0.7rem;
+	width:4.77rem;
+	border:1px solid #e5e5e5;
+	-webkit-border-radius:0.04rem;
+  	border-radius:0.04rem;
+}
+.employee .infor-form .group-control .icon{
+	position:absolute;
+	right:0;
+	top:0;
+	text-align:center;
+	width:0.76rem;
+	height:0.7rem;
+	line-height:0.68rem;
+	font-size:0.12rem;
+	color:#ccac6d;
+}
+.employee .infor-form .form-search{
+	z-index:20;
+}
+.employee .infor-form .form-search .icon{
+	background-image:url("../../../images/module/h5-employeeinfor/select-line.png");
+	background-repeat:no-repeat;
+	background-position:left center;
+	background-size:0.02rem 0.36rem;
+}
+.employee .infor-form .group-input{
+	display:block;
+	padding:0.18rem 0rem;
+	width:100%;
+	height:0.67rem;
+	font-size:0.3rem;
+	color:#515151;
+	background:transparent;
+}
+.employee .infor-form .group-icon{
+	position:absolute;
+	right:0;
+	top:0;
+	text-align:center;
+	width:0.7rem;
+	height:0.7rem;
+}
+.employee .infor-form .form-explain{
+	color:#9b9b9b;
+	font-size:0.26rem;
+	padding:0.13rem 0rem 0.37rem;
+}
+.employee .group-control .group-list{
+	display:none;
+	position:absolute;
+	left:-1px;
+	right:-1px;
+	top:0.66rem;
+	background:#f8f8f8;
+	border:1px solid #e8e8e8;
+	border-top:0;
+	-webkit-border-radius:0rem 0rem 0.08rem 0.08rem;
+	border-radius:0rem 0rem 0.08rem 0.08rem;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+.employee .group-control .group-list ul{
+	overflow:hidden;
+	overflow-y:auto;
+	max-height:2.76rem;
+}
+.employee .group-control .group-list li{
+	height:0.69rem;
+	line-height:0.69rem;
+	overflow:hidden;
+	white-space:nowrap;
+	width:100%;
+	text-overflow:ellipsis;
+	padding:0rem 0.23rem;
+	font-size:0.26rem;
+	color:#4d4c4c;
+}
+
+.employee .group-control .group-list li.active{
+	background:#ececec;
+}
+/*置灰*/
+.employee .infor-form-gray .group-input,
+.employee .infor-form-gray .group-control .icon{
+	color:#c7c7c7;
+	cursor:not-allowed;
+}
+/* --------------------------------select element--------------------------------*/
+.adr-choose {
+    clear: both;
+    position: relative;
+    overflow: hidden;
+    height: 4.9rem; }
+    .adr-choose .adr-ch-list {
+      position: absolute;
+      width: 100%;
+      margin-top: 0.3rem;
+      max-height: 4.6rem;
+      overflow: auto; }
+      .adr-choose .adr-ch-list li {
+        margin-bottom: 0.2rem;
+        display: block;
+        text-align: center;
+        color: #999;
+        height: .7rem;
+        line-height: .7rem;
+        font-size:0.28rem; 
+   }
+        .adr-choose .adr-ch-list li.active {
+          background-color: #f5f5f5;
+          color: #333; }
+      .adr-choose .adr-ch-list a {
+        display: block;
+        text-align: center;
+        color: #999;
+        height: 0.7rem;
+        line-height: 0.7rem; }
+        .adr-choose .adr-ch-list a:active, .adr-choose .adr-ch-list a.active {
+          background-color: #f5f5f5;
+          color: #333; }
+  .tpc-address {
+  	bottom:-200%;
+    padding: 0.46rem 0.3rem 0;
+    background-color: #fff;
+    position: fixed;
+    width: 100%;
+    left: 0;
+    z-index: 30; }
+  .tpc-adr-title {
+    height: 0.6rem;
+    line-height: 0.6rem;
+    text-align: center;
+    color: #333;
+    position: relative;
+    font-size: 0.36rem; }
+    .tpc-adr-title:before {
+      content: '';
+      position: absolute;
+      width: 2.1rem;
+      height: 1px;
+      background-color: #ECECEC;
+      top: 50%;
+      left: 0; }
+    .tpc-adr-title:after {
+      content: '';
+      position: absolute;
+      width: 2.1rem;
+      height: 1px;
+      background-color: #ECECEC;
+      top: 50%;
+      right: 0; }
+  .adr-zone {
+    height: 0.62rem;
+    line-height: 0.62rem;
+    font-size: 0.28rem;
+    font-size: 0; }
+    .adr-zone span {
+      display: block;
+      float: left;
+      height: 0.6rem;
+      max-width: 1.6rem;
+      color: #333;
+      padding-right: 0.3rem;
+      font-size: 0.28rem; }
+      .adr-zone span.active {
+        color: #ed5b5d;
+        font-size: .28rem; }
+    .adr-zone a {
+      color: #ed5b5d;
+      font-size: 0.28rem; }
+  .select-gd-wrap {
+    background-color: #fff;
+    padding: 0.3rem 0.3rem 0;
+    position: fixed;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+    z-index: 20; }
+    .select-gd-wrap .close-btn {
+      position: absolute;
+      right: 0;
+      top: 0;
+      font-size: 0.4rem;
+      color: #666;
+      width: 0.8rem;
+      height: 0.8rem;
+      line-height: 0.8rem;
+      text-align: center; }
+ 
+.xin-mask-all{
+	/*display:none;*/
+	position:fixed;
+	z-index:29;
+	left:0;
+	right:0;
+	bottom:0;
+	top:0;
+	background:rgba(0,0,0,0.5);
+}
+/*绑定工号-弹框*/
+.employee-pop{
+	display:none;
+	position:absolute;
+	left:50%;
+	top:50%;
+	z-index:30;
+	margin-left:-3.47rem;
+	margin-top:-4.245rem;
+	width:6.94rem;
+	height:9.12rem;
+	background:#fff;
+	-webkit-border-radius:0.1rem;
+	border-radius:0.1rem;
+}
+.employee-pop h2{
+	width:6.27rem;
+	margin:0.51rem auto 0.33rem;
+	line-height:0.52rem;
+	font-size:0.3rem;
+	color:#d00101;
+}
+.employee-record{
+	width:6.23rem;
+	height:6rem;
+	margin:0 auto;
+	background-image:url("../../../images/module/h5-employeeinfor/employee-pop-bg.png");
+	background-repeat:no-repeat;
+	-webkit-background-size:6.23rem 5.39rem;
+	-ms-background-size:6.23rem 5.39rem;
+	background-size:6.23rem 6rem;
+}
+.employee-record ul{
+	padding:0.33rem 0.62rem 0rem;
+}
+.employee-record li{
+	font-size:0.3rem;
+	line-height:0.56rem;
+	padding-bottom:0.13rem;
+	overflow:hidden;
+	zoom:1;
+}
+.employee-record .record-title{
+	display:block;
+	float:left;
+	width:2.54rem;
+	height:0.56rem;
+	color:#aeaeae;
+}
+.employee-record .record-infor{
+	display:block;
+	float:left;
+	overflow:hidden;
+	white-space: nowrap;
+	text-overflow:ellipsis;
+	width:2.45rem;
+	height:0.56rem;
+	color:#ac9f84;	
+}
+.record-btn{
+	height:0.94rem;
+	margin-top:0.29rem;
+	border-top:1px solid #eee;
+	overflow:hidden;
+}
+.record-btn a{
+	display:block;
+	float:left;
+	width:50%;
+	outline:0;
+	height:0.94rem;
+	line-height:0.94rem;
+	text-align:center;
+	color:#e29500;
+	font-size:0.3rem;
+}
+.record-btn a.btn-back{
+	border-left:1px solid #eee;
+}
+.record-close{
+	position:absolute;
+	top:-0.22rem;
+	right:-0.13rem;
+	width:0.73rem;
+	height:0.73rem;
+	line-height:0.73rem;
+	font-size:0.32rem;
+	color:#fec853;
+	text-align:center;
+	background:#fff;
+	-webkit-border-radius:50%;
+	border-radius:50%;
+}
+/*信息管理*/
+.employee .employee-manage{
+	padding:0.32rem 0.3rem 0.39rem;
+	background:#fff;
+}
+.employee .employee-manage h3.employee-title span{
+	width:2.38rem;
+	color:#414141;
+	font-size:0.35rem;
+}
+.employee .employee-manage h3.employee-title:after{
+	border-top:1px solid #bfbfbf;
+}
+.employee-manage .employee-record{
+	margin-top:0.23rem;
+	width:6.9rem;
+	height:5.39rem;
+	-ms-background-size:6.9rem 6rem;
+	background-size:6.9rem 6rem;
+}
+.employee-manage .employee-record ul{
+	padding-left:1.19rem;
+	padding-top:0.34rem;
+}
+.employee-manage .employee-record .record-title{
+	width:2.24rem;
+	color:#b3a382;
+}
+.employee-manage .employee-record .record-infor{
+	width:2.11rem;
+	color:#cbac6b;
+}
+.manage-button{
+	overflow:hidden;
+	zoom:1;
+}
+.manage-button a.employee-btn,
+.manage-button a.employee-btn:focus{
+	margin-top:0.3rem!important;
+	width:2.67rem;
+	height:0.67rem;
+	line-height:0.67rem;
+	border-color:#f8e1af;
+	background-color:#f8e1af;
+	color:#5d5d5d;
+	font-size:0.28rem;
+	letter-spacing: 0;
+}
+/*信息管理-任务说明*/
+.employee .manage-task{
+	margin-top:0.23rem;
+	padding:0.32rem 0.29rem 0.39rem;
+	background:#fff;
+}
+.employee .manage-task h2{
+	font-size:0.3rem;
+	line-height:0.48rem;
+	color:#e29500;
+}
+.employee .manage-task h2 b{
+	font-weight:bold;
+}
+.employee .manage-task h2 a,
+.employee .manage-task h2 a:hover,
+.employee .manage-task h2 a:focus{
+	float:right;
+	font-size:0.3rem;
+	color:#0184ff;
+}
+.employee .tast-data{
+	margin-top:0.15rem;
+	margin-bottom:0.26rem;
+}
+.employee .data-table{
+	table-layout:fixed;
+	border:1px solid #c2c2c2;
+	border-collapse:collapse;
+	width:100%;
+}
+.employee .data-table th,.employee .data-table td{
+	border:1px solid #c2c2c2;
+	border-collapse:collapse;
+	font-size:0.28rem;
+	text-align:center;
+	padding:0.2rem 0;
+}
+.employee .data-table th{
+	color:#797979;
+	font-weight:normal;
+}
+.employee .data-table td{
+	color:#2b2b2b;
+}
+.employee .data-table tr td:nth-child(2){
+	color:#ff7800;
+}
+.employee .data-table tr td:nth-child(3){
+	color:#2bca00;
+}
+.employee .manage-task ol{
+	position:relative;
+	color:#9e9e9e;
+	font-size:0.28rem;
+	line-height:0.49rem;
+	margin-top:0.04rem;
+}
+.employee .manage-task ol li{
+	position:relative;
+	padding:0 0 0 0.4rem;
+}
+.employee .manage-task ol li span{
+	position:absolute;
+	left:0;
+}
+/*做任务引导*/ 
+.employee .employee-guide{
+	// margin-top:0.28rem;
+}
+.employee .employee-guide h3.employee-title span{
+	font-size:0.35rem;
+	color:#414141;
+	width:2.37rem;
+	height:0.45rem;
+	line-height:0.45rem;
+}
+.employee .employee-guide h3.employee-title:after{
+	border-top:1px solid #bfbfbf;
+}
+.employee .employee-guide .guide-header{
+	overflow:hidden;
+	zoom:1;
+	padding:0.27rem 0.3rem 0.23rem;
+}
+.employee .guide-header .gomeplus-logo{
+	display:block;
+	float:left;
+	width:1.55rem;
+	height:0.53rem;
+	background-image:url("../../../images/module/h5-employeeinfor/gomeplus-logo.png");
+	background-repeat:no-repeat;
+	-webkit-background-size:cover;
+	background-size:cover;
+}
+.employee .guide-header .employee-btn{
+	float:right;
+	margin-top:0.06rem;
+	width:2.72rem;
+	height:0.52rem;
+	line-height:0.52rem;
+	font-size:0.26rem;
+}
+.employee .employee-guide h3.employee-title{
+	margin:0rem 0.3rem;
+}
+.employee .guide-step{
+	padding:0.27rem 0.3rem 0rem;
+}
+.employee .guide-step h4{
+	font-size:0.3rem;
+	color:#515151;
+	line-height:0.52rem;
+	margin:0rem 0rem 0.33rem;
+}
+.employee .guide-step h4 b{
+	font-weight:normal;
+	color:#0184ff;
+}
+.employee .guide-step span{
+	display:block;
+	margin-bottom:0.54rem;
+}
+.employee .guide-step span img{
+	display:block;
+	width:100%;
+}
+/*弹层*/
+.xin-mask {
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	background-color: rgba(0,0,0,.6);
+	line-height: 1.5;
+	z-index: 50;
+}
+.cover_bg > div {
+	top: 50%;
+	width: 82%;
+	position: absolute;
+	background-color: #fff;
+	opacity: 0.9;
+}
+.xin-dialog {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	-webkit-transform: translate(-50%,-50%);
+	-ms-transform: translate(-50%,-50%);
+	    transform: translate(-50%,-50%);
+	background-color: #F9F9F9;
+	-webkit-border-radius: 6px;
+	        border-radius: 6px;
+	width: 80%;
+	z-index:60;
+}
+.xin-dialog-tip .xin-dialog-title {
+	padding-bottom: 24px;
+	line-height: 26px;
+}
+.xin-dialog .xin-dialog-title {
+	font-size: 16px;
+	text-align: center;
+	padding-top: 24px;
+}
+.cover_bg h3 {
+	margin: 0;
+	padding: 8px 10px;
+	font-size: 1.4rem;
+	text-align: center;
+	border-bottom: 1px solid #ececec;
+}
+.xin-dialog .xin-dialog-btns {
+	font-size: 0;
+	position: relative;
+	z-index:10;
+}
+.xin-dialog .xin-dialog-btns a:first-child {
+	border-right: 1px solid #999;
+}
+.xin-dialog .xin-dialog-btns a {
+	font-size: 16px;
+	display: inline-block;
+	width: 50%;
+	height: 46px;
+	line-height: 46px;
+	color: #333;
+	text-align: center;
+	z-index:10;
+}
+.xin-dialog-tip .xin-btn-strech {
+	width: 100%!important;
+	border: none!important;
+}

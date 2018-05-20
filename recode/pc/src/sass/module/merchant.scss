@@ -1,0 +1,23 @@
+@import '../../widget/config/_base.scss';
+@import '../../widget/config/_mixins.scss';
+
+.merchant-join {
+	background: url(../../images/other/tenants.jpg);
+	height: 650px;
+	position: relative;
+	margin: 30px 0 -20px 0;
+}
+.merchant-join a {
+	position: absolute;
+	left: 50%;
+	bottom: 127px;
+	margin: 0 0 0 -87px;
+	width: 174px;
+	height: 45px;
+	line-height: 45px;
+	border-radius: 5px;
+	text-align: center;
+	color: $color-txt;
+	font-size: $text18;
+	background-color: nth($bg-btnclor,1);
+}

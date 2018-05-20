@@ -1,0 +1,18 @@
+doctype html
+html(lang="zh-CN", data-use-rem="750")
+	include ../../../m-widget/head/head.jade
+	link(type="text/css",rel="stylesheet",href="../../css/public/gomeplusUI.css")
+	link(type="text/css",rel="stylesheet",href="../../css/module/plaintext/plaintext.css")
+	//- link(type="text/css",rel="stylesheet",href="../../css/module/im-packet/im-packet.css")
+	body.opg.im-packet
+		include ../../../m-widget/head/rem.jade
+		<!--header-->
+		header.header
+			.h-left
+				a.h-back(href="javascript:;")
+					em.iconn-1
+			.h-cnt.flex-cell
+				h1.h-tit 说明
+		section.plaintext
+			h2 支付红包提示笔数超过限制怎么办？
+			p 根据央行监管要求，微信红包单日最高支付笔数为200笔，若已达到限制，请明日再尝试操作。

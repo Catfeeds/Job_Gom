@@ -1,0 +1,185 @@
+<!-- project-detail begin -->
+<div class="panel panel-default">
+	<div class="panel-heading">
+		项目详情
+	</div>
+	<div class="panel-body">
+		<form>
+			<fieldset>
+				<div class="col-sm-12">
+					<label class="col-sm-2 align-rt proj-dtail pad-rt" style="padding-bottom: 20px;">项目名称：</label>
+					<div class="col-sm-4 del-pad">
+						<input id="avatar" type="hidden" value="项目一" style="position:absolute;">
+						<p class="proj-dtail" style="position:relative">项目一 </p>
+					</div>
+					<div class="col-sm-1 proj-dtail">
+						<button class="btn btn-sm btn-default" style="float:right;">更改</button>
+					</div>
+					<div class="col-sm-2"></div>
+				</div>
+
+				<div class="col-sm-12">
+					<label class="col-sm-2 align-rt proj-dtail pad-rt">项目简介：</label>
+					<div class="col-sm-4 del-pad">
+						<textarea class="form-control" style="height:120px;resize:none;" placeholder="简介内容"></textarea>
+					</div>
+				</div>
+			</fieldset>
+			<fieldset>
+				<legend>
+					基础详情：
+				</legend>
+				<div class="col-sm-6 proj-dtail">
+					<label class="col-sm-4 align-rt">
+						创建时间：
+					</label>
+					<div>
+						<input style="width:40%;" class="form-control" readonly value="2016/06/21">
+					</div>
+				</div>
+
+				<div class="col-sm-6 proj-dtail">
+					<label class="col-sm-4 align-rt">
+						创建者：
+					</label>
+					<div>
+						<input style="width:40%;" class="form-control" readonly value="Clinton Hillary">
+					</div>
+				</div>
+
+				<div class="col-sm-6 proj-dtail">
+					<label class="col-sm-4 align-rt">
+						更新时间：
+					</label>
+					<div>
+						<input style="width:40%;" class="form-control" readonly value="2016/06/21">
+					</div>
+				</div>
+
+				<div class="col-sm-6 proj-dtail">
+					<label class="col-sm-4 align-rt">
+						报表数量：
+					</label>
+					<div>
+						<div>
+							<input style="width:40%;" class="form-control" readonly value="10">
+						</div>
+					</div>
+				</div>
+				<hr>
+				<div class="col-sm-6 proj-dtail">
+					<label class="col-sm-4 align-rt">
+						状态：
+					</label>
+					<div>
+						<div>
+							<input style="width:40%;" class="form-control" readonly value="正常/已删除">
+						</div>
+					</div>
+				</div>
+
+				<div class="col-sm-6 proj-dtail">
+					<label class="col-sm-4 align-rt">
+						用户数量：
+					</label>
+					<div>
+						<div>
+							<input style="width:40%;" class="form-control" readonly value="2">
+						</div>
+					</div>
+				</div>
+			</fieldset>
+
+			<fieldset>
+				<legend>报表详情：
+					<button class="btn btn-sm btn-primary" style="float:right;">+ 新增报表</button>
+				</legend>
+				<div>
+					<table class="table table-striped">
+						<tr>
+							<th>报表名</th><th>创建时间</th><th>创建者</th><th>所在项目</th><th>操作</th>
+						</tr>
+						<tr>
+							<td>报表1</td><td>2016/06/01</td><td>Donald Trump</td><td>项目1</td>
+							<td class="">
+								<form class="form-control hiddenForm"><input type="submit" class="btn btn-sm btn-warning" value="编辑"></form>
+								<form class="form-control hiddenForm"><input type="submit" class="btn btn-sm btn-danger" value="删除"></form>
+							</td>
+						</tr>
+						<tr>
+							<td>报表2</td><td>2016/06/01</td><td>Clinton Hillary</td><td>项目1</td>
+							<td>
+								<form class="form-control hiddenForm"><input type="submit" class="btn btn-sm btn-warning" value="编辑"></form>
+								<form class="form-control hiddenForm"><input type="submit" class="btn btn-sm btn-danger" value="删除"></form>
+							</td>
+						</tr>
+					</table>
+				</div>
+			</fieldset>
+
+			<fieldset>
+				<legend>用户详情：
+					<button class="btn btn-sm btn-primary" style="float:right;">+ 新增用户</button>
+				</legend>
+				<div>
+					<table class="table table-striped">
+						<tr>
+							<th>用户名</th><th>创建时间</th><th>上次登录时间</th><th>状态</th><th>操作</th>
+						</tr>
+						<tr>
+							<td>Donald Trump</td><td>2016/06/01</td><td>2016/06/11</td><td>在职</td>
+							<td><form><input type="submit" class="btn btn-sm btn-danger" value="删除"></form></td>
+						</tr>
+						<tr>
+							<td>Clinton Hillary</td><td>2016/06/01</td><td>2016/06/11</td><td>在职</td>
+							<td><form><input type="submit" class="btn btn-sm btn-danger" value="删除"></form></td>
+						</tr>
+					</table>
+				</div>
+			</fieldset>
+		</form>
+	</div>
+</div>
+
+<style>
+	fieldset {
+		padding-bottom:30px;
+	}
+
+	label {
+		padding-top:5px;
+	}
+
+	.hiddenForm {
+		display: inline;
+		border: 0px;
+		padding: 0px;
+	}
+	.table td{
+		text-align:center;
+	}
+	.table th{
+		text-align:center;
+	}
+	legend {
+		padding-bottom:8px;
+	}
+
+	.proj-dtail {
+		padding-top:10px;
+		float:left;
+	}
+
+	.align-rt {
+		text-align: right;
+
+	}
+
+	.del-pad {
+		margin-left:-15px;
+	}
+	.pad-rt {
+		padding-right:20px;
+	}
+</style>
+<!-- project-detail end -->

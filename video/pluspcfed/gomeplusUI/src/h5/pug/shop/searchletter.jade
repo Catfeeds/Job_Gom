@@ -1,0 +1,72 @@
+doctype html
+html(lang="zh-CN",data-use-rem="750")
+    include ../../../m-widget/head/head.jade
+    link(type="text/css",rel="stylesheet",href="../../css/public/public-wap.css")
+    link(type="text/css",rel="stylesheet",href="../../css/module/search.css")
+    
+    body.opg.search
+        include ../../../m-widget/head/rem.jade
+        
+        .filter-box.showfilter-transition
+            .search-filter
+                header.header
+                    span
+                        a.head-back(href="javascript:;")
+                            em.iconn-1
+                    h1.head-title 筛选
+                    span
+                        a.head-edit(href="javascript:;") 确认
+                .heat-bx
+                    a.head(href="javascript:;") 按热度
+                    a.active(href="javascript:;") 按首字母
+                        i.head-line
+                .heat-box
+                    .letter
+                        span #
+                        span A
+                        span B
+                        span C
+                        span D
+                        span E
+                        span F
+                        span G
+                        span H
+                        span I
+                        span J
+                        span K
+                        span L
+                        span S
+                        span T
+                        span W
+                        span Z
+                    h4.heat-tit A
+                    ul.heat-list
+                        -for(var i=0; i<16; i++)
+                            li
+                                span 创维
+                                em.iconn-94
+                    h4.heat-tit B
+                    ul.heat-list
+                        -for(var i=0; i<16; i++)
+                            li
+                                span 创维
+                                em.iconn-94
+                    h4.heat-tit C
+                    ul.heat-list
+                        -for(var i=0; i<16; i++)
+                            li
+                                span 创维
+                                em.iconn-94
+                    
+
+
+
+
+
+
+
+
+
+
+
+

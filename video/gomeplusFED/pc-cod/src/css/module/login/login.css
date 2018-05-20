@@ -1,0 +1,483 @@
+@charset "UTF-8";
+/*==============================标准色==========================*/
+/*----主色-----*/
+/*==============================字体大小==========================*/
+/*==============================wrap宽度==========================*/
+/*==============================btn 宽度==========================*/
+/*==============================nav==========================*/
+/*==============================text clolor==========================*/
+.lg-form-cont .nick-name-list a {
+  -webkit-text-overflow: ellipsis;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap; }
+
+.lg-bg {
+  background-color: #f6f5ee; }
+
+.none {
+  display: none; }
+
+.lg-mt {
+  margin: 40px 0 0 449px; }
+
+.placeholder {
+  color: #a7a7a7; }
+
+::-ms-clear, ::-ms-reveal {
+  display: none; }
+
+.lg-radio {
+  display: inline-block;
+  width: 14px;
+  height: 14px;
+  border: 1px solid #e5e5e5;
+  border-radius: 2px;
+  cursor: pointer; }
+
+.marg {
+  margin: 0 auto; }
+
+.lg-radio-true {
+  background: url(../../../images/login/lg-radio.png) no-repeat; }
+
+/*---------denglubuzhou----------*/
+.lg-steps {
+  margin: 73px 0 20px; }
+  .lg-steps li {
+    float: left;
+    font-size: 16px;
+    color: #a7a7a7;
+    margin-right: 30px;
+    display: inline; }
+    .lg-steps li em {
+      display: inline-block;
+      width: 22px;
+      height: 22px;
+      line-height: 22px;
+      text-align: center;
+      border-radius: 50%;
+      font-style: normal;
+      background-color: #a7a7a7;
+      color: #fff;
+      margin-right: 6px; }
+  .lg-steps .active {
+    color: #fc8753; }
+    .lg-steps .active em {
+      background-color: #fc8753;
+      color: #fff; }
+
+.lg-header {
+  border-bottom: 4px solid #f95353;
+  background-color: #fff; }
+  .lg-header .lg-header-in {
+    width: 1200px;
+    height: 86px;
+    margin: 0 auto; }
+  .lg-header .lg-logo {
+    width: 137px;
+    height: 47px;
+    position: relative;
+    left: 0;
+    top: 20px; }
+    .lg-header .lg-logo a {
+      display: block;
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+      text-indent: -9999em;
+      background: url(../../../images/login/lg-logo.png) no-repeat; }
+
+.lg-main {
+  width: 1200px;
+  margin: 0 auto;
+  position: relative; }
+
+.land-bg {
+  width: 934px;
+  margin: 0 auto;
+  min-height: 544px;
+  background: url(../../../images/public/login-bg.png) no-repeat 30px 45px; }
+
+.land-bg .lg-land-main {
+  margin-top: 100px;
+  background: url(../../../images/login/lg-sm.png) #fff no-repeat top right; }
+
+.lg-tip-title {
+  color: #f07e04;
+  font-weight: normal;
+  font-size: 16px;
+  height: 30px;
+  line-height: 30px;
+  margin: 73px 0 14px; }
+  .lg-tip-title span {
+    font-size: 14px;
+    color: #a7a7a7; }
+
+.lg-form {
+  background-color: #fff;
+  padding: 65px 0; }
+  .lg-form .lg-succ-top {
+    font-weight: normal;
+    font-size: 28px;
+    height: 36px;
+    line-height: 36px;
+    color: #00a222;
+    text-align: center; }
+    .lg-form .lg-succ-top img {
+      vertical-align: middle;
+      margin-right: 10px; }
+  .lg-form .lg-succ-tl {
+    font-weight: normal;
+    font-size: 28px;
+    height: 36px;
+    line-height: 36px;
+    color: #00a222;
+    padding-left: 52px;
+    background: url(../../../images/login/lg-all-big.png) no-repeat left top; }
+  .lg-form .lg-btn-bor {
+    display: block;
+    width: 208px;
+    height: 43px;
+    line-height: 42px;
+    font-size: 16px;
+    border: 1px solid #fc8753;
+    border-radius: 2px;
+    color: #fc8753;
+    text-align: center; }
+  .lg-form .congratulation {
+    display: block;
+    text-align: center;
+    color: #a7a7a7;
+    font-size: 16px;
+    line-height: 32px;
+    height: 32px;
+    margin: 27px 0 61px; }
+    .lg-form .congratulation em {
+      font-style: normal;
+      color: #f95353; }
+
+.lg-form-list {
+  margin-left: 292px;
+  position: relative; }
+  .lg-form-list .pass-level {
+    margin-left: 155px;
+    padding-top: 5px;
+    clear: both; }
+    .lg-form-list .pass-level span {
+      display: inline-block;
+      width: 70px;
+      height: 15px;
+      line-height: 15px;
+      text-align: center;
+      margin-right: 3px;
+      color: #fff;
+      background-color: #dcdcdc; }
+      .lg-form-list .pass-level span:last-child {
+        border-radius: 0 8px 8px 0; }
+    .lg-form-list .pass-level .level-weak {
+      border-radius: 8px 0 0 8px;
+      background-color: #e60012; }
+    .lg-form-list .pass-level .level-md {
+      background-color: #f39800; }
+    .lg-form-list .pass-level .level-strong {
+      background-color: #22ac38; }
+
+.lg-back-tl {
+  margin-left: 363px;
+  color: #666;
+  margin-bottom: 50px; }
+  .lg-back-tl span {
+    color: #000; }
+
+.lg-form-it label {
+  float: left;
+  width: 140px;
+  text-align: right;
+  line-height: 45px;
+  margin-right: 15px;
+  color: #666; }
+  .lg-form-it label.lg-head-label {
+    line-height: 65px; }
+
+.lg-warm {
+  color: #f95353; }
+
+.lg-form-error .lg-warm {
+  color: #f95353; }
+.lg-form-error .lg-input-it {
+  border: 1px solid #f95353 !important;
+  background: transparent; }
+
+.lg-form-cont {
+  float: left;
+  position: relative; }
+  .lg-form-cont .pc-btn {
+    margin-top: 40px; }
+  .lg-form-cont .lg-codes {
+    font-size: 12px;
+    position: absolute;
+    padding: 0 10px;
+    right: 2px;
+    top: 2px;
+    line-height: 40px;
+    color: #f95353;
+    cursor: pointer; }
+  .lg-form-cont.lg-user-head {
+    width: 65px;
+    height: 65px;
+    overflow: hidden;
+    border-radius: 50%;
+    cursor: pointer;
+    margin-bottom: 30px; }
+    .lg-form-cont.lg-user-head img {
+      width: 65px;
+      height: 65px;
+      border-radius: 50%; }
+    .lg-form-cont.lg-user-head .change-img {
+      display: none;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 65px;
+      height: 25px;
+      line-height: 20px;
+      font-size: 12px;
+      color: #fff;
+      text-align: center;
+      background: url(../../../images/public/opacity.png) repeat; }
+    .lg-form-cont.lg-user-head:hover .change-img {
+      display: block;
+      text-decoration: underline; }
+  .lg-form-cont .lg-allright {
+    position: absolute;
+    top: 12px;
+    right: 10px;
+    width: 20px;
+    height: 20px;
+    background: url(../../../images/login/lg-all.png) no-repeat; }
+  .lg-form-cont .nick-name-list {
+    position: absolute;
+    top: 45px;
+    left: 0;
+    width: 298px;
+    border: 1px solid #e5e5e5;
+    border-top: none;
+    background-color: #fff; }
+    .lg-form-cont .nick-name-list p {
+      font-size: 12px;
+      color: #e90033;
+      text-indent: 16px;
+      height: 30px;
+      line-height: 30px;
+      background-color: #fff3ce; }
+    .lg-form-cont .nick-name-list a {
+      display: block;
+      width: 268px;
+      height: 40px;
+      line-height: 40px;
+      padding: 0 15px;
+      color: #666; }
+      .lg-form-cont .nick-name-list a:hover {
+        color: #333;
+        background-color: #f6f6f6; }
+  .lg-form-cont .lg-codes.icon {
+    font-size: 20px;
+    color: #e5e5e5; }
+  .lg-form-cont .code-disabled {
+    cursor: not-allowed;
+    color: #a7a7a7; }
+  .lg-form-cont .lg-input-it {
+    height: 43px;
+    line-height: 1;
+    line-height: 43px\9;
+    border-radius: 2px;
+    border: 1px solid #e5e5e5;
+    width: 268px;
+    padding: 0 15px;
+    background: transparent; }
+  .lg-form-cont .lg-input-short {
+    width: 90px; }
+  .lg-form-cont .img-code {
+    width: 100px;
+    height: 30px;
+    margin: 0 15px 0 20px;
+    display: inline-block; }
+  .lg-form-cont .change-txt {
+    color: #f95e5e; }
+
+.lg-warm {
+  clear: both;
+  display: block;
+  margin-left: 155px;
+  height: 20px;
+  line-height: 20px;
+  font-size: 12px; }
+
+.lg-txt {
+  line-height: 42px;
+  color: #646464; }
+  .lg-txt a {
+    color: #e71246; }
+
+.lg-skip-more {
+  text-align: right;
+  margin-right: 451px;
+  height: 26px;
+  line-height: 26px;
+  margin-top: 9px; }
+  .lg-skip-more a {
+    color: #f95e5e; }
+
+/*succ*/
+.lg-succ-left {
+  float: left;
+  width: 482px;
+  padding-right: 82px;
+  border-right: 1px solid #eee;
+  text-align: right; }
+  .lg-succ-left .lg-scan {
+    height: 28px;
+    line-height: 28px;
+    color: #6e6e6e;
+    margin-top: 22px; }
+    .lg-succ-left .lg-scan a {
+      color: #e6003b; }
+
+.lg-succ-right {
+  float: left;
+  padding-left: 65px; }
+  .lg-succ-right .lg-succ-para {
+    font-size: 16px;
+    line-height: 30px;
+    color: #646464;
+    margin: 30px 0 37px;
+    white-space: nowrap; }
+    .lg-succ-right .lg-succ-para span {
+      color: #000; }
+
+/*--------land  footer---------*/
+.opg .footer-land {
+  background-color: #fff;
+  margin-top: 0; }
+
+.opg .footer-land dl.link-list dt {
+  color: #333; }
+
+/*-------------mask--------------*/
+.lg-mask {
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.8);
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0; }
+
+.color-box {
+  width: 900px;
+  height: 518px;
+  left: 50%;
+  top: 50%;
+  margin: -259px 0 0 -450px;
+  background-color: #fff;
+  position: absolute;
+  border-radius: 2px; }
+  .color-box .icon-btn {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    cursor: pointer;
+    width: 15px;
+    height: 15px;
+    background: url(../../../images/login/close-btn.png) no-repeat; }
+  .color-box .deal-page {
+    height: 390px;
+    overflow-y: auto; }
+  .color-box h3 {
+    height: 45px;
+    line-height: 45px;
+    background-color: #eee;
+    font-size: 16px;
+    padding: 0 25px;
+    font-weight: normal;
+    color: #333;
+    border-radius: 2px 2px 0 0; }
+  .color-box .deal-cont {
+    padding: 0 25px; }
+  .color-box .pc-btn {
+    display: block;
+    margin: 20px auto 0 auto; }
+  .color-box .deal-title-md {
+    color: #333;
+    text-align: center;
+    line-height: 64px;
+    font-weight: normal;
+    font-size: 18px; }
+  .color-box .deal-para {
+    font-size: 12px;
+    line-height: 18px;
+    color: #666;
+    margin-bottom: 18px; }
+  .color-box .deal-title-sm {
+    font-size: 16px;
+    color: #333;
+    font-weight: normal;
+    margin-bottom: 15px;
+    line-height: 1.5; }
+  .color-box .deal-title-add {
+    font-size: 14px;
+    color: #333;
+    font-weight: normal;
+    margin-bottom: 15px;
+    line-height: 1.5; }
+  .color-box .deal-add-para {
+    font-size: 12px;
+    line-height: 18px;
+    color: #646464;
+    margin: 0 0 18px 20px; }
+
+.lg-error-tip {
+  width: 298px;
+  margin-bottom: 20px;
+  margin-left: 155px;
+  border: 1px solid #fdb2b3;
+  color: #f95353;
+  background-color: #ffefea; }
+  .lg-error-tip .icon-error {
+    float: left;
+    font-size: 18px;
+    color: #e8503f;
+    margin: 3px 8px 3px 13px; }
+  .lg-error-tip span {
+    float: left;
+    width: 255px;
+    padding-top: 2px; }
+
+.txt-center {
+  text-align: center; }
+
+.lg-land-tl {
+  height: 32px;
+  line-height: 32px;
+  margin: 12px 0 44px;
+  font-weight: normal;
+  font-size: 16px;
+  color: #646464;
+  text-align: left; }
+
+.lg-code-main {
+  background: url(../../../images/login/lg-pc.png) #fff no-repeat top right; }
+
+.land-title {
+  line-height: 1;
+  font-size: 16px;
+  color: #646464;
+  font-weight: normal; }
+
+.find-shop-psw {
+  position: absolute;
+  bottom: 18px;
+  right: 20px;
+  color: #f95353; }
+
+

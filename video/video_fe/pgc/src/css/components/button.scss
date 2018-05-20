@@ -1,0 +1,23 @@
+
+.btn{
+    display: inline-block;
+    height: 50px;
+    line-height: 50px;
+    border-radius: 3px;
+    border: 0;
+    background: $primary;
+    color: $white;
+    text-align: center;
+    cursor: pointer;
+    &.btn-block{
+        display: block;
+        width: 100%;
+    }
+    &:hover{
+        background: #75b8f9;
+    }
+    &.disable,&[disabled]{
+        background: #ccc;
+        cursor: no-drop;
+    }
+}

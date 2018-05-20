@@ -1,0 +1,20 @@
+//- extends layout.jade
+extends ../../../widget-platform/pug/layout/layout.jade
+
+//- header
+block content
+	h2.platform-title header
+	div.platform-content
+		h3.platform-header header
+		div.platform-intro 
+			p 网站顶部信息
+		div.platform-example#header
+			include ../../../../pc-widget/header/header.jade
+		pre.platform-pre
+			code.platform-code#header_code
+			span.platform-jade pug
+			span.platform-jade.platform-html.actived html
+	//- js format html code
+	script(type='text/javascript').
+		HtmlFormat.init(['header'],false,'_code','html','span.platform-jade');
+		$(".platform-head").parent('li').addClass("actived");

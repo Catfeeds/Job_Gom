@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<link rel="stylesheet" type="text/css" href="../../node_modules/bootstrap/dist/css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="../../node_modules/font-awesome/css/font-awesome.css">
+	<link rel="stylesheet" type="text/css" href="../css/global.css">
+</head>
+
+<body>
+	<div id="wrapper">
+		<nav class="navbar navbar-inverse navbar-fixed-top">
+			<!-- logo begin-->
+			<div class="navbar-header">
+				<a class="navbar-brand" href="index.html">美信数据开放平台</a>
+			</div>
+			<style type="text/css">
+			.navbar-header {
+				width: 180px;
+			}
+			
+			.navbar-brand {
+				width: 100%;
+			}
+			</style>
+			<!-- logo end-->
+			<!-- nav-title begin -->
+			<!-- <div class="nav-title">
+	<a href="javascript:void(0)">项目</a>
+</div> -->
+			<!-- nav-title begin -->
+			<style type="text/css">
+			.nav-title {
+				float: left;
+				text-indent: 10px;
+			}
+			
+			.nav-title a {
+				line-height: 50px;
+				font-size: 22px;
+				color: #9d9d9d;
+			}
+			
+			.nav-title a:hover {
+				color: #fff;
+			}
+			</style>
+			<!-- nav-right bigin -->
+			<ul class="nav navbar-right top-nav">
+				<li class="dropdown">
+					<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-user"></i>骆也<b class="caret"></b></a>
+					<ul class="dropdown-menu" style="display: block;">
+						<li>
+							<a href="#"><i class="fa fa-fw fa-power-off"></i>退出登录</a>
+						</li>
+					</ul>
+				</li>
+			</ul>
+			<style type="text/css">
+			.top-nav {
+				padding: 0 15px;
+			}
+			
+			.top-nav>li {
+				display: inline-block;
+				float: left;
+			}
+			
+			.top-nav>li>a {
+				padding-top: 15px;
+				padding-bottom: 15px;
+				line-height: 20px;
+				color: #999;
+			}
+			
+			.top-nav>li>a:hover,
+			.top-nav>li>a:focus,
+			.top-nav>.open>a,
+			.top-nav>.open>a:hover,
+			.top-nav>.open>a:focus {
+				color: #465173;
+				background-color: #e8e8e8;
+			}
+			
+			.top-nav>.open>.dropdown-menu {
+				float: left;
+				position: absolute;
+				margin-top: 0;
+				border: 1px solid rgba(0, 0, 0, .15);
+				border-top-left-radius: 0;
+				border-top-right-radius: 0;
+				background-color: #fff;
+				-webkit-box-shadow: 0 6px 12px rgba(0, 0, 0, .175);
+				box-shadow: 0 6px 12px rgba(0, 0, 0, .175);
+			}
+			
+			.top-nav>.open>.dropdown-menu>li>a {
+				white-space: normal;
+			}
+			</style>
+			<!-- nav-right end -->
+			<!-- nav-side begin -->
+			<ul class="nav navbar-nav side-nav">
+				<li class="active">
+					<a href="javascript:void(0)"><i class="fa fa-fw fa-cubes"></i>项目</a>
+				</li>
+				<li>
+					<a href="javascript:void(0)"><i class="fa fa-fw fa-table"></i>报表</a>
+				</li>
+				<li>
+					<a href="javascript:void(0)"><i class="fa fa-fw fa-plug"></i>组件</a>
+				</li>
+				<li>
+					<a href="javascript:void(0)"><i class="fa fa-fw fa-bar-chart"></i>数据</a>
+				</li>
+				<li>
+					<a href="javascript:void(0)"><i class="fa fa-fw fa-legal"></i>工具</a>
+				</li>
+			</ul>
+			<style type="text/css">
+			@media(min-width:768px) {
+				.side-nav {
+					position: fixed;
+					top: 51px;
+					left: 180px;
+					width: 180px;
+					margin-left: -180px;
+					border: none;
+					border-radius: 0;
+					overflow-y: auto;
+					background-color: #3d454d;
+					bottom: 0;
+					overflow-x: hidden;
+					padding-bottom: 40px;
+				}
+				.side-nav>li>a {
+					width: 180px;
+				}
+				.side-nav li a:hover,
+				.side-nav li a:focus {
+					outline: none;
+					background-color: #353b41 !important;
+				}
+			}
+			
+			.side-nav>li>ul {
+				padding: 0;
+			}
+			
+			.side-nav>li>ul>li>a {
+				display: block;
+				padding: 10px 15px 10px 38px;
+				text-decoration: none;
+				color: #999;
+			}
+			
+			.side-nav>li>ul>li>a:hover {
+				color: #fff;
+			}
+			</style>
+			<!-- nav-side end -->
+		</nav>
+		<div id="page-wrapper">
+			<div class="container-fluid">
+				<!-- project-detail begin -->
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						项目详情
+					</div>
+					<div class="panel-body">
+						<form>
+							<fieldset>
+								<div class="col-sm-12">
+									<label class="col-sm-2" style="padding-bottom: 20px;">项目名称</label>
+									<div class="col-sm-4">
+										<input id="avatar" type="hidden" value="项目一" style="position:absolute;">
+										<p style="position:relative">项目一
+											<button class="btn btn-sm btn-default" style="float:right;">更改</button>
+										</p>
+									</div>
+									<div class="col-sm-2"></div>
+								</div>
+								<div class="col-sm-12">
+									<label class="col-sm-2">项目简介</label>
+									<div class="col-sm-10">
+										<textarea class="form-control" style="height:120px;width:365px;resize:none;" placeholder="简介内容"></textarea>
+									</div>
+								</div>
+							</fieldset>
+							<fieldset>
+								<legend>
+									基础详情：
+								</legend>
+								<div class="col-sm-6 proj-dtail">
+									<label class="col-sm-3">
+										创建时间：
+									</label>
+									<div>
+										<input style="width:40%;" class="form-control" readonly value="2016/06/21">
+									</div>
+								</div>
+								<div class="col-sm-6 proj-dtail">
+									<label class="col-sm-3">
+										创建者：
+									</label>
+									<div>
+										<input style="width:40%;" class="form-control" readonly value="Clinton Hillary">
+									</div>
+								</div>
+								<div class="col-sm-6 proj-dtail">
+									<label class="col-sm-3">
+										更新时间：
+									</label>
+									<div>
+										<input style="width:40%;" class="form-control" readonly value="2016/06/21">
+									</div>
+								</div>
+								<div class="col-sm-6 proj-dtail">
+									<label class="col-sm-3">
+										报表数量：
+									</label>
+									<div>
+										<div>
+											<input style="width:40%;" class="form-control" readonly value="10">
+										</div>
+									</div>
+								</div>
+								<hr>
+								<div class="col-sm-6 proj-dtail">
+									<label class="col-sm-3">
+										状态：
+									</label>
+									<div>
+										<div>
+											<input style="width:40%;" class="form-control" readonly value="正常/已删除">
+										</div>
+									</div>
+								</div>
+								<div class="col-sm-6 proj-dtail">
+									<label class="col-sm-3">
+										用户数量：
+									</label>
+									<div>
+										<div>
+											<input style="width:40%;" class="form-control" readonly value="2">
+										</div>
+									</div>
+								</div>
+							</fieldset>
+							<fieldset>
+								<legend>报表详情
+									<button class="btn btn-sm btn-primary" style="float:right;">+ 新增报表</button>
+								</legend>
+								<div>
+									<table class="table table-striped">
+										<tr>
+											<th>报表名</th>
+											<th>创建时间</th>
+											<th>创建者</th>
+											<th>所在项目</th>
+											<th>操作</th>
+										</tr>
+										<tr>
+											<td>报表1</td>
+											<td>2016/06/01</td>
+											<td>Donald Trump</td>
+											<td>项目1</td>
+											<td class="">
+												<form class="form-control hiddenForm">
+													<input type="submit" class="btn btn-sm btn-warning" value="编辑">
+												</form>
+												<form class="form-control hiddenForm">
+													<input type="submit" class="btn btn-sm btn-danger" value="删除">
+												</form>
+											</td>
+										</tr>
+										<tr>
+											<td>报表2</td>
+											<td>2016/06/01</td>
+											<td>Clinton Hillary</td>
+											<td>项目1</td>
+											<td>
+												<form class="form-control hiddenForm">
+													<input type="submit" class="btn btn-sm btn-warning" value="编辑">
+												</form>
+												<form class="form-control hiddenForm">
+													<input type="submit" class="btn btn-sm btn-danger" value="删除">
+												</form>
+											</td>
+										</tr>
+									</table>
+								</div>
+							</fieldset>
+							<fieldset>
+								<legend>用户详情
+									<button class="btn btn-sm btn-primary" style="float:right;">+ 新增用户</button>
+								</legend>
+								<div>
+									<table class="table table-striped">
+										<tr>
+											<th>用户名</th>
+											<th>创建时间</th>
+											<th>上次登录时间</th>
+											<th>状态</th>
+											<th>操作</th>
+										</tr>
+										<tr>
+											<td>Donald Trump</td>
+											<td>2016/06/01</td>
+											<td>2016/06/11</td>
+											<td>在职</td>
+											<td>
+												<form>
+													<input type="submit" class="btn btn-sm btn-danger" value="删除">
+												</form>
+											</td>
+										</tr>
+										<tr>
+											<td>Clinton Hillary</td>
+											<td>2016/06/01</td>
+											<td>2016/06/11</td>
+											<td>在职</td>
+											<td>
+												<form>
+													<input type="submit" class="btn btn-sm btn-danger" value="删除">
+												</form>
+											</td>
+										</tr>
+									</table>
+								</div>
+							</fieldset>
+						</form>
+					</div>
+				</div>
+				<style>
+				fieldset {
+					padding-bottom: 30px;
+				}
+				
+				label {
+					padding-top: 5px;
+				}
+				
+				.hiddenForm {
+					display: inline;
+					border: 0px;
+					padding: 0px;
+				}
+				
+				.table td {
+					text-align: center;
+				}
+				
+				.table th {
+					text-align: center;
+				}
+				
+				legend {
+					padding-bottom: 8px;
+				}
+				
+				.proj-dtail {
+					padding: 10px;
+				}
+				</style>
+				<!-- project-detail end -->
+			</div>
+		</div>
+	</div>
+</body>
+
+</html>

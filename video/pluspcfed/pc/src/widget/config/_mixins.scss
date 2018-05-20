@@ -1,0 +1,64 @@
+@charset "UTF-8";
+//旋转
+@mixin rotate($x){
+    transform:rotate($x);
+    -ms-transform:rotate($x);
+    -moz-transform:rotate($x);
+    -webkit-transform:rotate($x);
+}
+//放大，缩小
+@mixin scale($x,$y){
+    -webkit-transform: scale($x,$y);
+    -moz-transform: scale($x,$y);
+    -ms-transform: scale($x,$y);
+    transform: scale($x,$y);
+}
+//定位偏移，可用于弹层等
+@mixin tanslate($x,$y){
+    -webkit-transform: translate($x,$y);
+    -moz-transform: translate($x,$y);
+    -ms-transform: translate($x,$y);
+    transform: translate($x,$y);
+}
+//浮动,兼容ie6
+@mixin float($value:left){
+    float: $value;
+    _display: inline;
+}
+//文字对齐方式
+@mixin text-align($align:center){
+    text-align: $align;
+}
+//圆角，默认50%
+@mixin border-radius($radius:50%){
+    -webkit-border-radius:$radius;
+    border-radius:$radius;
+}
+//圆形（图片，div等）
+@mixin circular($width){
+    width: $width;
+    height: $width;
+    border-radius:50%;
+    -webkit-border-radius:50%;
+}
+//异常盒模型
+@mixin box-zing($cont:border-box){
+    box-sizing: $cont;
+}
+//弹层上下左右居中对齐
+%center{
+    position: absolute;
+    left:50%;
+    top:50%;
+    -webkit-transform: translate(-50%,-50%);
+    -moz-transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%);
+}
+//单行截取，需自己写宽度，在调用这个
+%text-hide{
+    -webkit-text-overflow: ellipsis;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}

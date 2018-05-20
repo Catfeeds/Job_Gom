@@ -1,0 +1,46 @@
+doctype html
+html(lang="zh-CN")
+    meta(charset="utf-8")
+    link(type="text/css",rel="stylesheet",href="../../css/public/public.css")
+    link(type="text/css",rel="stylesheet",href="../../css/module/amendSetup.css")
+    body.opg
+        include ../../widget/header/header-meihao.pug
+        .meihao.clearfix
+            include ../../widget/aside/meihao.pug
+            .setup-info
+                h3 账号信息设置&gt; 
+                    span 修改资料 
+                .info.pt20.clearfix
+                    .info-left 名称
+                    .info-right
+                      input(data-edit="editName",type="text",minlength="2", maxlength="15").right-name
+                      .right-term(data-node="noticeName") 名称长度为2-15个字，不含有特殊字符
+                .info.clearfix
+                    .info-left.info-head 头像
+                    .info-right.info-head
+                      .right-img.head(data-node="cropWrap")
+                        div.loading-img-progress(data-node="loadNotice")
+                          p 头像加载中
+                          div.progress-bar-bx
+                            span(data-node="uploadProgress")
+                        img.avatar-img(data-edit="editImg")
+                        div(data-defaultAddFile="picker",type="file")
+                      .img-again
+                        a.retry-upload(data-action="upload-edit",href="javascript:;") 重新上传
+                      .right-term(data-node="noticeBox") 大小不超过4M，支持.PNG .JPG  .JPEG格式         
+                .info.clearfix
+                    .info-left 标签
+                    .info-right
+                        .right-lable
+                          .lable-text(data-edit="editLabelDiv")
+                            .text-checked 生活美学家
+                            span.lable-btn
+                          ul(data-edit="editLabelSearch").lable-list
+                        .right-term(data-node="noticeLabel") 选择您擅长/感兴趣的领域
+                .info.clearfix
+                    .info-left 简介
+                    .info-right
+                      textarea(data-edit="editDetail").right-text
+                      .right-term(data-node="noticeDetail") 简介长度为4-120个字
+                .setup-continue
+                  a(data-submit="editSubmit", href='javascript:;') 继续       

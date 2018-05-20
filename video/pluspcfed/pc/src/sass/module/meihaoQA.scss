@@ -1,0 +1,124 @@
+@charset "utf-8";
+#qa{
+	h1{
+		height:135px;
+		line-height:135px;
+		font-size: 30px;
+		text-align: center;
+		color:#333;
+	}
+	.wrap{
+		width:1198px;
+		margin-bottom: 60px;
+		border:1px solid #e1e1e1;
+		margin:0 auto;
+		background:#fff;
+		overflow: hidden;
+		.slide{
+			padding-bottom:2000px;
+			margin-bottom: -2000px;
+			float:left;
+			width: 239px;
+			background:#f6f8f9;
+			.title{
+				padding-left:83px;
+				border-bottom: 1px solid #e1e1e1;
+				height:55px;
+				line-height: 55px;
+				font-size:16px;
+				color:#333;
+
+			}
+			dl{
+				&.on{
+					b{
+						background-position:  0px -347px;
+					}
+					&:hover{
+						b{
+							background-position: 0px -392px;
+						}
+					}
+				}
+				&:hover{
+					b{
+						background-position: 0px -292px;
+					}
+				}
+			}
+			dt a{
+				display:block;
+				padding-left:60px;
+				height:55px;
+				line-height: 55px;
+				font-size:16px;
+				color:#333;
+				&:active{
+					color:#107eee;
+				}
+				&:hover{
+					span{
+						color:#107eee;				
+					}
+				}
+			}
+
+			b{
+				float:left;
+				width:20px;
+				height:55px;
+				margin-right:4px;
+				background: url("../../images/meihao/sprite.png")  0px -236px no-repeat;
+			}
+			span{
+				float:left;
+				font-size:16px;
+				cursor:pointer;
+			}
+			dd a{
+				display:block;
+				padding-left:83px;
+				height:30px;
+				line-height: 30px;
+				margin-bottom:5px;
+				font-size:14px;
+				color:#333;
+				&:hover{
+					text-decoration:underline;
+				}
+			}
+
+			a.active{
+				color:#107eee;
+			}
+
+		}
+		.right{
+			float: left;
+			border-left:1px solid #e1e1e1;
+			
+			.con{
+				padding:60px;
+				width:820px;
+				h2{
+					font-size:22px;
+					color:#333;
+					margin-bottom: 30px;
+				}
+				h3{
+					font-size:16px;
+					color:#333; 
+					padding-top:10px;
+					margin-bottom:30px;
+					font-weight:bold;
+				}
+				p{
+					font-size:14px;
+					line-height: 18px;
+					margin-bottom: 20px;
+					color:#333;
+				}
+			}
+		}
+	}
+}

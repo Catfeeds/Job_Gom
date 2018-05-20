@@ -1,0 +1,161 @@
+//- extends layout.jade
+extends ../public/layout.jade
+
+block title
+	title 创意
+//- block link-theme
+//- 	link(rel='stylesheet' type="text/css" href="../../css/module/amp_report_element.css")
+
+//- account
+block content
+	include ../public/menu-amp-report.jade
+	div.content-main
+		div.amp-account
+			div.crumbs
+				a(href="javascript:void(0);")
+					span 数据报表
+					em >
+				a(href="javascript:void(0);").actived
+					span 广告报表
+					em >
+			div.account-tab
+				span.active 投资报表
+				span 效果报表
+			div.account-set.account-set-new
+				div.set-tab
+					span.first 投放计划
+					span 投放单元
+					span.active 创意
+				div.set-fn
+					div.fn-plan
+						span.plan-title 起止日期：
+						div.ele-select.ele-selected
+							span.select-text 2016/12/13
+						span.plan-title.plan-title-gray -
+						div.ele-select.ele-selected
+							span.select-text 2016/12/13
+					div.fn-plan.fn-plan-new
+						span.plan-title 投放计划：
+						div.ele-select.re-ele-select
+							span.select-text 全部
+					div.fn-plan.fn-plan-new
+						span.plan-title 投放单元：
+						div.ele-select.re-ele-select
+							span.select-text 全部
+					div.fn-plan.fn-plan-new
+						span.plan-title 创意：
+						div.ele-select.re-ele-select
+							span.select-text 全部
+					div.fn-search
+						a(href="#").btn.btn-primary 查询
+					div.fn-export
+						em.icon.icon-report
+						span 导出
+				div.table-content
+					table.table
+								tr
+									th(width="120")
+										span 日期
+									th(width="120")
+										span 计划名称
+									th(width="120")
+										span 单元名称
+									th(width="120")
+										span 创意名称
+									th(width="120")
+										span 设备类型
+									th(width="120")
+										span 展现数
+									th(width="120")
+										span 点击数
+									th(width="120")
+										span 点击率（%）
+									th(width="120")
+										span 总费用
+									th(width="120")
+										span ROI
+									th(width="120")
+										span 直接订单行
+									th(width="120")
+										span 直接订单金额
+									th(width="120")
+										span 间接订单行
+									th(width="120")
+										span 间接订单金额
+									th(width="120")
+										span 总订单行
+									th(width="120")
+										span 总订单金额
+									th(width="120")
+										span 转化率
+								tr
+									td
+										span 2016-12-19
+									td
+										span
+									td
+										span
+									td
+										span
+									td
+										span
+									td
+										span
+									td
+										span
+									td
+										span
+									td
+										span
+									td
+										span
+									td
+										span
+									td
+										span
+									td
+										span
+									td
+										span
+									td
+										span
+									td
+										span
+									td
+										span
+								tr
+									td
+										span 2016-12-19
+									td
+										span
+									td
+										span
+									td
+										span
+									td
+										span
+									td
+										span
+									td
+										span
+									td
+										span
+									td
+										span
+									td
+										span
+									td
+										span
+									td
+										span
+									td
+										span
+									td
+										span
+									td
+										span
+									td
+										span
+									td
+										span
+			include ../public/page.jade

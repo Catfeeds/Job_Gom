@@ -1,0 +1,132 @@
+extends ../plus-widget/head/head.jade
+block style
+	link(type="text/css",rel="stylesheet",href="wireless-h5/plus-public/css/gomeplusUI.css")
+	link(type="text/css",rel="stylesheet",href="plaintext.css")
+block body
+	<script  type="text/javascript" src="zepto.js"></script>
+	<script  type="text/javascript" src="effect.js"></script>
+	body.opg.plaintext
+		include ../plus-widget/head/rem.jade
+		<!--header-->
+		header.header
+			.h-left
+				a.h-back(href="javascript:;")
+					em.iconn-1
+			.h-cnt.flex-cell
+				h1.h-tit 美店等级规则
+		.meidian-main
+			.level-title 什么是美店等级
+			p.level-introction
+				| 美店等级是以积分制的形式将美店划分为不同的等级，积分是通过美店主的登陆、分享、销售行为以及美店被收藏、点赞、浏览所获得的。
+			//- 等级对照表
+			.level-compare 等级对照表
+			.level-table
+				table
+					tr
+						th(width=61) 等级
+						th(width=100) 等级图标
+						th 等级积分
+					tr
+						td
+							span.level-rank 1
+						td
+							span.level-icon.level-icon-1
+						td
+							span.level-scor 0-49
+					tr
+						td
+							span.level-rank 2
+						td
+							span.level-icon.level-icon-2
+						td
+							span.level-scor 50-199
+					tr
+						td
+							span.level-rank 3
+						td
+							span.level-icon.level-icon-3
+						td
+							span.level-scor 200-899
+					tr
+						td
+							span.level-rank 4
+						td
+							span.level-icon.level-icon-4
+						td
+							span.level-scor 900-1799
+					tr
+						td
+							span.level-rank 5
+						td
+							span.level-icon.level-icon-5
+						td
+							span.level-scor 1800-3599
+					tr
+						td
+							span.level-rank 6
+						td
+							span.level-icon.level-icon-6
+						td
+							span.level-scor 3600-5399
+					tr
+						td
+							span.level-rank 7
+						td
+							span.level-icon.level-icon-7
+						td
+							span.level-scor 5400-7199
+					tr
+						td
+							span.level-rank 8
+						td
+							span.level-icon.level-icon-8
+						td
+							span.level-scor 7200-8999
+					tr
+						td
+							span.level-rank 9
+						td
+							span.level-icon.level-icon-9
+						td
+							span.level-scor 9000-10799
+					tr
+						td
+							span.level-rank 10
+						td
+							span.level-icon.level-icon-10
+						td
+							span.level-scor 10800及以上
+			//- 如何提升等级
+			.level-title 如何提升等级
+			.level-grade
+				ul
+					li.flex-box
+						.flex-hd.level-grade-icon.level-grade-1
+						.flex-bd
+							strong 登陆美店
+							span 店主每天登陆一次，记10积分，每日上限10分。
+					li.flex-box
+						.flex-hd.level-grade-icon.level-grade-2
+						.flex-bd
+							strong 上架商品
+							span 美店主每上架一个商品，记1积分，每日上限10分。
+					li.flex-box
+						.flex-hd.level-grade-icon.level-grade-3
+						.flex-bd
+							strong 分享
+							span 美店主每天分享自己的美店或商品到其它社交平台。每次分享记2积分，每日上限10分。
+					li.flex-box
+						.flex-hd.level-grade-icon.level-grade-4
+						.flex-bd
+							strong 销售
+							span 美店主每售出一件商品（已完结未退货订单）记2积分，每天上限30分。
+					li.flex-box
+						.flex-hd.level-grade-icon.level-grade-5
+						.flex-bd
+							strong 收藏、点赞
+							span 根据美店被收藏或点赞数量每增加1次，记1积分，收藏和点赞每天上限各10分。
+					li.flex-box
+						.flex-hd.level-grade-icon.level-grade-6
+						.flex-bd
+							strong 浏览
+							span 根据美店被浏览的数量来计算相应的积分，每天上限20分。

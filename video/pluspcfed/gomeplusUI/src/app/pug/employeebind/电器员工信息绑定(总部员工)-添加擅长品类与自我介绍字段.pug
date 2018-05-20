@@ -1,0 +1,48 @@
+extends ../public/head.jade
+block title
+	title 电器员工信息绑定(总部员工)
+block link-theme
+	link(rel='stylesheet' type="text/css" href="../../css/module/employeebind/employeebind.css")
+block content
+	//- js
+	include ../public/mobileJs.jade
+	.banner 国美 Plus 邀请你来赚大钱
+	.bind-infor
+		.header-module.header-module_gray
+			span 员工信息绑定
+		ul.form-list
+			li.list-item.list-item_color
+				em.icon.icon-person
+				.item-text 姚丽丽
+			li.list-item.list-item_color
+				em.icon.icon-id
+				.item-text 00345
+			li.list-item
+				em.icon.icon-first
+				em.icon.iconn-41
+				input.input-style(type="text" placeholder="请选择一级分部")
+			li.list-item
+				em.icon.icon-second
+				em.icon.iconn-41
+				input.input-style(type="text" placeholder="请选择二级分部")
+			li.list-item
+				em.icon.icon-part
+				em.icon.iconn-41
+				input.input-style(type="text" placeholder="请选择门店")
+		ul.form-personal.form-validate
+			li.personal-item
+				span.item-company 擅长品类
+				.item-show
+					textarea.textarea-style(maxlength="30",placeholder="例如：手机、电脑、冰箱等")
+					span.work-count
+						<i>10</i>/30
+			li.personal-item
+				span.item-company 自我介绍
+				.item-show
+					textarea.textarea-style(maxlength="140")
+					span.work-count
+						<i>80</i>/140
+		.notice
+			span *
+			| 总部将通过此帐号考核您的业绩，请认真填写。如因信息错误产生的后果，请自行承担。
+		a.button.button-primary.button-mb(href="javascript:;") 提交

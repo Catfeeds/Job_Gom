@@ -1,0 +1,28 @@
+@charset "utf-8";
+@import '../../widget/config/_base.scss';
+@import '../../widget/header/header-meihao.scss';
+@import '../../widget/list/notic-list.scss';
+.content{
+	width:1198px;
+	background:#fff;
+	margin:0 auto 80px;
+	padding-bottom:30px;
+	h2{
+		padding-left:48px;
+		height:70px;
+		font-size:18px;
+		line-height:70px;
+		background:#f6f8f9;
+	}
+	.page{
+		.active{
+			color:#107eee;
+		}
+		a:hover{
+			color:#107eee;
+		}
+		.disabled:hover {
+      		color: #999;
+      	}
+	}
+}

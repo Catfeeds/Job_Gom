@@ -1,0 +1,32 @@
+//- layout.jade
+doctype html
+html(lang="zh-CN")
+	head
+		block meta-charset
+			meta(charset="UTF-8")
+		block meta-renderer
+			meta(name="renderer" content="webkit")
+		block meta-description
+			meta(name="description",content="gomepulus")
+		block meta-keyword
+			meta(name="keyword",content="gomepulus AMP")
+		block title
+			title GOMEPLUS
+		block compatible
+			meta(http-equiv="X-UA-Compatible",content="IE=edge")
+		block pragma
+			meta(http-equiv="pragma",content="no-cache")
+		block cache
+			meta(http-equiv="cache-control",content="no-cache")
+		block expires
+			meta(http-equiv="expires",content="0")
+		block author
+			meta(name="author",content="")
+		block link-public
+			link(rel='stylesheet' type="text/css" href="../../css/public/public.css")
+		block link-theme
+			link(rel='stylesheet' type="text/css" href="../../css/module/amp.css")
+	body
+		include login_header.jade
+		div.amp-content
+			block content

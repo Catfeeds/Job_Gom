@@ -1,0 +1,118 @@
+/**
+ * [热门订阅]
+ * @Author: Fu Xiaochun
+ * @Email:  fuzhengchun@gomeplus.com
+ */
+
+.unslider-item{
+    text-align:center;
+    width:182px;
+    height:230px;
+    padding:20px;
+    border:1px solid #e6e6e6;
+    .head{
+        display:block;
+        width:60px;
+        height:60px;
+        border-radius:50%;
+        overflow:hidden;
+        margin:0 auto;
+        img{
+            width:60px;
+            height:60px;
+            &:hover{
+                
+            }
+        }
+    }
+    &:hover{
+        border-color:#ec392a;
+        img{
+            opacity: 0.8;
+        }
+    }
+    .nickname{
+        width:100%;
+        height:34px;
+        a{
+            display:block;
+            height:34px;
+            line-height:34px;
+            font-size:16px;
+            font-weight:normal;
+            color:#333;
+            margin-top:6px;
+            @include ellipsis(1);
+            
+        }
+        a:hover{
+            color:#ec392a;
+        }
+    }
+    .desc{
+        height:40px;
+        line-height:20px;
+        margin-top:5px;
+        color:#666;
+        overflow:hidden;
+    }
+    .fans{
+        height:20px;
+        line-height:20px;
+        font-size:14px;
+        color:#999;
+        margin-top:10px;
+        span{
+            color:#333;
+            padding-left:5px;
+        }
+    }
+    .subscribe-btn{
+        width:90px;
+        height:34px;
+        line-height:34px;
+        font-size:14px;
+        border:1px solid #ec392a;
+        border-radius:17px;
+        cursor:pointer;
+        margin:15px auto 0 auto;
+        span{
+            color:#ec392a;
+        }
+        em,b{
+            display:none;
+        }
+       
+    }
+    .subscribe-btn.active{
+        background:#e1e2e5;
+        border-color:#e1e2e5;
+        span{
+            display:none;
+        }
+        em{
+            display:inline;
+            color:#666;
+        }
+    }
+}
+
+.c:hover{
+        background:#ec392a;
+            span{
+                color:#FFF;
+            }
+}
+
+.active.acAdd:hover{
+        background:#ec392a;
+        border-color:#ec392a;
+        em{
+            display:none;
+        }
+        b{
+            display:inline;
+            color:#fff;
+            font-weight:normal;
+        }
+}

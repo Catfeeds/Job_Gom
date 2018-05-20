@@ -1,0 +1,48 @@
+body {
+  background: url("../../images/life/bg.jpg") repeat; }
+
+.aside {
+  position: fixed;
+  width: 118px;
+  height: 580px;
+  right: 0;
+  bottom: 0;
+  overflow: hidden;
+  z-index: 1; }
+
+.aside ul {
+  background: url("../../images/life/right_nav.png") no-repeat;
+  height: 493px;
+  top: 100px;
+  right: 0;
+  width: 118px;
+  overflow: hidden;
+  z-index: 1; }
+
+.aside a {
+  position: relative; }
+
+.aside ul > li:first-child {
+  margin-top: 146px; }
+
+.banner {
+  background: url("../../images/life/banner.png") no-repeat center center;
+  width: 100%;
+  height: 740px;
+  background-size: cover;
+  margin: 0 0 70px 0; }
+
+.title {
+  text-align: center;
+  margin: 0 0 80px 0; }
+
+.index-life-list {
+  background: #dfdedc;
+  padding: 8px 0 25px 8px;
+  margin: 0 0 100px 0; }
+
+.index-life-list li {
+  float: left;
+  width: 290px;
+  background: #fff;
+  margin: 0 8px 20px 0; }

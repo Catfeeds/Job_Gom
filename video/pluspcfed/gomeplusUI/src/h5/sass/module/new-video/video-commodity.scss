@@ -1,0 +1,264 @@
+@charset "UTF-8";
+@import '../../../../m-widget/reset/_base.scss';
+@import '../../../../m-widget/reset/_mixin.scss';
+
+// 公用组件
+.opg{
+	.m-user80{
+		overflow: hidden;
+		@include flex-box();
+		.face{
+			width: rem(80);
+			overflow: hidden;
+			@include prefix(border-radius,50%,webkit);
+			img{
+				width: 100%;
+			}
+		}
+		.name{
+			font-size: $fs28;
+			padding-top: rem(24);
+			padding-left: rem(20);
+			@include flex-col(1);
+		}
+	}
+	// 80
+}
+// 公用组件
+
+/*视频终端*/
+.video-commodity{
+	.header-private{
+		position: absolute;
+	}
+	// 顶导
+
+	.vcd-tabs{
+		&:before{
+			@include border(top,1px,#DDD);
+		}
+		.item + .item{
+			&:after{
+				@include border(left,1px,#ddd);
+				top: rem(20);
+				bottom: rem(20);
+			}
+		}
+		.txt{
+			font-size: $fs32;
+		}
+	}
+	// TAB样式
+
+	.vcd-commlist{
+		padding-bottom: rem(30);
+		.item{
+			padding: rem(0 20 0 232);
+			margin-top: rem(20);
+			&:before {
+				display: none;
+			}
+		}
+		.item-img{
+			width: rem(192);
+			height: rem(192);
+			margin-left: rem(-212);
+		}
+		.item-txt{
+			min-height: rem(72);
+			font-size: $fs26;
+		}
+		.item-price{
+			font-size: $fs28;
+			line-height: rem(40);
+			left: rem(232);
+			bottom: 0;
+		}
+		a.m-btn{
+			padding-top: rem(15);
+			padding-bottom: rem(15);
+			position: absolute;
+			right: rem(20);
+			bottom: 0;
+		}
+	}
+	// 商品列表
+
+	.vcd-fail{
+		a.m-btn{
+			font-size: $fs28;
+			margin-top: rem(60);
+			background: none;
+		}
+	}
+	// 视频播放失败
+
+	.m-prompt{
+		margin-top: rem(120);
+		margin-bottom: rem(240);
+	}
+}
+// 重置UI组件
+
+.m-switch{
+	position: absolute;
+	right: rem(30);
+	top: rem(22);
+}
+// 字幕开关
+
+.vcd-box{
+	height: rem(422);
+	position: relative;
+	img,
+	video{
+		width: 100%;
+	}
+	.bar-bot{
+		color: nth($color,1);
+		height: rem(76);
+		line-height: rem(76);
+		text-align: right;
+		padding-left: rem(20);
+		padding-right: rem(20);
+		background-color: rgba(0,0,0,.7);
+		position: absolute;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		z-index: 1;
+		.tit{
+			float: left;
+			font-size: $fs28;
+		}
+		.time{
+			font-size: $fs36;
+		}
+	}
+}
+.vcd-fail{
+	text-align: center;
+	padding-top: rem(148);
+	background-color: #000;
+	@include link;
+	p{
+		color: nth($color,1);
+		font-size: $fs28;
+	}
+}
+// 视频区
+
+.vcd-userbox{
+	overflow: hidden;
+	padding: rem(30 20 30 20);
+	position: relative;
+	background-color: #fff;
+	@include flex-box();
+	.m-user80{
+		@include flex-col(2);
+	}
+	a.share{
+		color: nth($color,3);
+		font-size: $fs24;
+		padding: rem(48 20 48 20);
+		position: absolute;
+		right: 0;
+		top: 0;
+		bottom: 0;
+		&:after{
+			@include border(left,1px,#DDD);
+		}
+		em{
+			color: nth($color,3);
+			font-size: $fs42;
+			margin-right: rem(10);
+		}
+	}
+}
+// 用户信息
+
+.vcd-titinfo{
+	margin-top: rem(20);
+	background-color: #fff;
+	position: relative;
+	&:after{
+		@include border(bottom,1px,#DDD);
+	}
+	h3{
+		font-size: $fs28;
+		line-height: rem(40);
+		padding: rem(20 60 20 20);
+		overflow: hidden;
+		position: relative;
+		em{
+			color: nth($color,3);
+			font-size: $fs32;
+			position: absolute;
+			right: rem(20);
+			top: rem(20);
+		}
+		&.active{
+			font-size: $fs30;
+			line-height: rem(42);
+		}
+	}
+	.text{
+		color: nth($color,3);
+		font-size: $fs26;
+		line-height: rem(36);
+		padding: rem(0 20 28 20);
+	}
+}
+// 标题+展开内容
+
+// .vcd-fixed-top{
+// 	position: fixed;
+// 	left: 0;
+// 	right: 0;
+// 	top: 0;
+// 	z-index: 40000;
+// }
+.vcd-fixed-bot{
+	width: rem(320);
+	height: rem(180);
+	position: fixed;
+	right: rem(24);
+	bottom: rem(120);
+	z-index: 40010;
+	.vcd-fail{
+		padding-top: rem(76);
+		background-color: #666;
+	}
+	a.vcd-close{
+		width: rem(34);
+		height: rem(34);
+		display: block;
+		@include prefix(border-radius,rem(34),webkit);
+		background-color: #333;
+		position: absolute;
+		right: rem(10);
+		top: rem(10);
+		z-index: 12;
+		-webkit-transform: rotate(-45deg);
+		transform: rotate(-45deg);
+		&:before,
+		&:after{
+			@include after;
+			background-color: #fff;
+		}
+		&:after{
+			width: 60%;
+			height: 1px;
+			left: rem(6);
+			top: rem(16);
+		}
+		&:before{
+			width: 1px;
+			height: 60%;
+			left: rem(16);
+			top: rem(6);
+		}
+	}
+}
+// 视频右下角
+

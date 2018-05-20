@@ -1,0 +1,269 @@
+doctype html
+html(lang="zh-CN")
+	include ../../../../../gomeplusUI/pc/src/jade/head.jade
+	link(type="text/css",rel="stylesheet",href="../../css/public/public.css")
+	link(type="text/css",rel="stylesheet",href="../../css/module/shop/shoppublic.css")
+	link(type="text/css",rel="stylesheet",href="../../css/module/shop/sureorder.css")
+	body.opg
+		include ../../../../../gomeplusUI/pc/src/jade/header.jade
+		include ../../../../../gomeplusUI/pc/src/jade/menu.jade
+		div.wrap-box
+			h1.shopcar 确认收货地址
+				a(href="javescript:") 新增收货地址
+			div.address-editor
+				p.addre-send 寄送至:
+				div.addre-box
+					table.table(width="100%")
+						tr
+							td(width="10%")
+								.name-box.name-active 宋仲基
+							td(width="65%")
+								span.ship-address(title="我是最多的显示字数的我是最多的显示字数的我是最多的显示字数的我是最多的显示字数的") 我是最多的显示字数的我是最多的显示字数的我是最多的显示字数的我是最多的显示字数的
+								span.phone-numb 12345678901
+							td.text-aglin-r(width="25%")
+								span.default-address-bj 默认地址
+								a(href="javescript:;") 删除
+								a(href="javescript:;") 编辑
+						tr
+							td
+								.name-box.name-no-bor 宋仲基
+							td
+								span.ship-address(title="我是最多的显示字数的我是最多的显示字数的我是最多的显示字数的我是最多的显示字数的") 我是最多的显示字数的我是最多的显示字数的我是最多的显示字数的我是最多的显示字数的
+								span.phone-numb 12345678901
+							td.text-aglin-r
+								a(href="javescript:;") 删除
+								a(href="javescript:;") 编辑
+								a(href="javescript:;") 设置为默认地址
+						tr
+							td
+								.name-box.name-no-bor 宋仲基11
+							td
+								span.ship-address(title="我是最多的显示字数的我是最多的显示字数的我是最多的显示字数的我是最多的显示字数的") 最多的显示字数的我是最多的显
+								span.phone-numb 12345678901
+							td.text-aglin-r.hide-text
+								a(href="javescript:") 删除
+								a(href="javescript:").active 编辑
+								a(href="javescript:") 设置为默认地址
+						tr
+							td
+								.name-box.name-no-bor 宋仲基
+							td
+								span.ship-address(title="我是最多的显示字数的我是最多的显示字数的我是最多的显示字数的我是最多的显示字数的") 我是最多的显示字数的我是最多的显示字数的我是最多的显示字数的我是最多的显示字数的
+								span.phone-numb 12345678901
+							td.text-aglin-r
+								a(href="javescript:") 删除
+								a(href="javescript:") 编辑
+								a(href="javescript:") 设置为默认地址
+				p.unfold-bx
+					a(href="javescript:")
+						span 展开
+						em
+					a(href="javescript:")
+						span 收起
+						em.rotate90
+			h1.shopcar 确认订单信息
+			table.shop-car-list.order-information
+				tr.bor-bom
+					th.width55
+						.merchandise-news.margi-left20 商品信息
+					th 单价（元）
+					th 数量
+					th 金额（元）
+			table.shop-car-list.order-information
+				tr.bor-bom
+					td.align-left(colspan="4")
+						.check-all
+							input(type="checkbox")
+							div.shop-arl-check.icon-fontsize
+								em.icon &#xe90c;
+							span.store-name-text 1qq马克华妃旗舰店
+				- for (var a = 0; a < 3; a++)
+					tr
+						td.width55
+							.products-by.margi-left20
+								input(type="checkbox")
+								.graphic
+									.product-bx
+										a(href="#")
+											img(src="//img.alicdn.com/bao/uploaded/i1/TB1OgSRLVXXXXaaXFXXXXXXXXXX_!!0-item_pic.jpg_250x250xz.jpg")
+									.product-name
+										h4.product-title
+											a(href="#") 洗颜专科矿物质水清透防晒乳液洗颜专科矿物质水清透防晒乳液防晒乳液洗颜专科矿物质水清透防晒乳液洗颜专科矿物质水清透防晒乳液防晒乳液
+										p.product-color 颜色：SPF30 .PA 40ml
+										p.product-source
+											span 商品来自美店：
+											a(href="#") 农夫山泉小店
+						td
+							.new-border-bom 500.00
+						td
+							.new-border-bom 20
+						td
+							.new-border-bom 1122.00
+			table.shop-car-list.order-information
+				tr.bor-bom
+					td.align-left(colspan="4").total-price
+						.commodity-prices 运费：
+							strong ￥15.00
+							| 件&nbsp;&nbsp;&nbsp;店铺合计（含运费）:
+							strong ￥1234.00
+			table.shop-car-list.order-information
+				tr.bor-bom
+					td.align-left(colspan="4")
+						.check-all
+							input(type="checkbox")
+							div.shop-arl-check.icon-fontsize
+								em.icon &#xe90c;
+							span.store-name-text 马克华妃旗舰店
+				- for (var a = 0; a < 2; a++)
+					tr
+						td.width55
+							.products-by.margi-left20
+								input(type="checkbox")
+								.graphic
+									.product-bx
+										a(href="#")
+											img(src="//img.alicdn.com/bao/uploaded/i1/TB1OgSRLVXXXXaaXFXXXXXXXXXX_!!0-item_pic.jpg_250x250xz.jpg")
+									.product-name
+										h4.product-title
+											a(href="#") 洗颜专科矿物质水清透防晒乳液洗颜专科矿物质水清透防晒乳液防晒乳液洗颜专科矿物质水清透防晒乳液洗颜专科矿物质水清透防晒乳液防晒乳液
+										p.product-color 颜色：SPF30 .PA 40ml
+										p.product-source
+											span 商品来自美店：
+											a(href="#") 农夫山泉小店
+						td
+							.new-border-bom 500.00
+						td
+							.new-border-bom 20
+						td
+							.new-border-bom 1122.00
+			table.shop-car-list.order-information
+				tr
+					td.align-left(colspan="4").total-price
+						.commodity-prices 运费：
+							strong ￥15.00
+							| 件&nbsp;&nbsp;&nbsp;店铺合计（含运费）:
+							strong ￥1234.00
+			table.shop-car-list
+				tr.bor-bom
+					th.width55
+						.check-all
+							span 失效商品
+					th 单价（元）
+					th 数量
+					th 金额（元）
+			table.shop-car-list.shop-car-fail
+				tr.bor-bom
+					td.align-left(colspan="5")
+						.check-all
+							em.icon.icon-shop &#xe90c;
+							span.store-name-text 马克华妃旗舰店2
+				- for (var a = 0; a < 4; a++)
+					tr
+						td.width55
+							.products-by
+								.graphic
+									a(href="javescript:")
+										.product-bx
+											img(src="//img.alicdn.com/bao/uploaded/i1/TB1OgSRLVXXXXaaXFXXXXXXXXXX_!!0-item_pic.jpg_250x250xz.jpg")
+											span.off-shelf 已下架
+										.product-name
+											h4.product-title 洗颜专科矿物质水清透防晒乳液洗颜专科矿物质水清透防晒乳液防晒乳液
+											p.product-color 颜色：SPF30 .PA 40ml
+											p.product-source
+												span.red.pl0 该商品已经无货了
+						td
+							div.new-border-bom 500.00
+						td
+							div.new-border-bom 2
+						td
+							div.new-border-bom  1122.00
+			table.shop-car-list.over-inherit.shop-car-fail
+				tr.bor-bom
+					td.align-left.volume-pop(colspan="5")
+						.check-all
+							em.icon.icon-shop &#xe90c;
+							span.store-name-text 马克华妃旗舰店
+				- for (var a = 0; a < 4; a++)
+					tr
+						td.width55
+							.products-by
+								.graphic
+									a(href="javescript:")
+										.product-bx
+											img(src="//img.alicdn.com/bao/uploaded/i1/TB1OgSRLVXXXXaaXFXXXXXXXXXX_!!0-item_pic.jpg_250x250xz.jpg")
+										.product-name
+											h4.product-title 洗颜专科矿物质水清透防晒乳液洗颜专科矿物质水清透防晒乳液防晒乳液
+											p.product-color 颜色：SPF30 .PA 40ml
+											p.product-source
+												span.red.pl0 该商品已经无货了
+						td
+							div.new-border-bom 500.00
+						td
+							div.new-border-bom 2
+						td
+							div.new-border-bom 1122.00
+			h1.shopcar 买家留言
+			.address-editor
+				input(type="text",placeholder="给商家留言（30字内）").order-message
+			h1.shopcar 发票信息
+			.address-editor
+				div.invoice-details
+					// p.invoice-type
+						| 发票类型：
+						span 不开票
+						a(href="javascript:;") 修改
+					p.invoice-txt 发票类型：
+						span 普通发票
+					p.invoice-txt 发票抬头：
+						span 个人
+					p.invoice-txt 发票内容：
+						span 明细
+					a(href="javascript:;").modify 修改
+			h1.shopcar 优惠信息
+			.address-editor.marg-b20
+				div.invoice-details
+					p.invoice-txt.marg-r10
+						a(href="javescript:")
+							span.looked-up 使用优惠券
+							em.icon.rotate &#xe98c;
+					p.invoice-txt 已抵扣：
+						span.looked-up ￥6.00
+					p.invoice-txt.marg-r10
+						a(href="javescript:")
+							span.looked-up 使用国美币
+							em.icon.rotate &#xe98c;
+					p.invoice-txt 无可用国美币
+			.address-editor.marg-b20.pad0
+				div.items-total
+					p
+						span.goods-together
+							strong.numb 4
+							| 件商品，商品合计：
+						span ￥300.00
+					p
+						span.goods-together 运费：
+						span ￥30.00
+					p
+						span.goods-together 使用优惠券：
+						span ￥300.00
+					p
+						span.goods-together 使用国美币：
+						span ￥0.00
+				.submit-order-bx
+					p.submit-order-txt 应付金额：
+						span
+							strong ￥
+							| 300.00
+					p.submit-order-txt
+						span.info 寄送至：北京市朝阳区鹏润大厦33层
+						span.info 张倩倩收 1800000000
+					div.submit-btn
+						a(href="javescript:").pc-btn.pc-btnw160.pc-btnh50.pc-no-radius 提交订单
+			.order-edit-box
+				.order-edit-text.clearfix
+					em.icon &#xe983;
+					span 订单中含有跨境商品，需点击编辑完善身份信息！
+				.order-edit-san
+		include ../../../../../gomeplusUI/pc/src/jade/footer.jade
+			
+		

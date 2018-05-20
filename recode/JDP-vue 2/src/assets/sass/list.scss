@@ -1,0 +1,140 @@
+.main{
+  font-family: "PingFangSC-Regular";
+  text-align: left;
+  color: #333;
+  font-size: .32rem;
+  .nav-list{
+    li{
+      border-bottom: 1px solid #ddd;
+      height: 1.2rem;
+      line-height: 1.2rem;
+      margin-left: .3rem;
+      position: relative;
+      a{
+        font-size: .32rem;
+        display: block;
+        *{
+          vertical-align: middle;
+        }
+      }
+      .icon{
+        width: .4rem;
+        height: .4rem;
+        display: inline-block;
+        margin: 0 .44rem 0 .15rem;
+        height: .36rem;
+        margin-right: .3rem;
+      }
+      .icon-info{
+        position: absolute;
+        right: 0rem;
+        top: 50%;
+        margin: -0.15rem 0 0 0;
+      }
+      .iconn-5:before {
+        color: #666;
+      }
+      b{
+        position: absolute;
+        right: .28rem;
+        top: 50%;
+        margin-top: -0.12rem;
+        height: .24rem;
+        width: .13rem;
+      }
+    }
+    .clips{
+      height: .1rem;
+      background-color: #f3f5f7;
+    }
+    .content-box{
+      li{
+        strong{
+          font-size: .28rem;
+          color: #666;
+          float: right;
+          font-weight: normal;
+          margin-right: .5rem;
+        }
+      }
+      .search-li{
+        *{
+          vertical-align: middle;
+        }
+        em{
+          height: .32rem;
+          width: .32rem;
+          display: inline-block;
+          margin: 0 .1rem 0 .1rem;
+        }
+        input[type="text"]{
+          color: #333;
+          font-size:  .32rem;
+          &::-webkit-input-placeholder{
+            color: #999;
+          };
+        }
+      }
+      .btn-box{
+        margin-top: .5rem;
+        padding: 0 .3rem;
+        button{
+          display: block;
+          height: .88rem;
+          width: 100%;
+          border-radius: .12rem;
+          background-color: #bfbfbf;
+          color: #fff;
+          font-size: .32rem;
+        }
+        .on{
+          background-color: #d63333;
+        }
+      }
+    }
+    .load-more{
+      *{
+        vertical-align: middle;
+      }
+      height: .9rem;
+      line-height: .9rem;
+      color: #999;
+      font-size: .3rem;
+      text-align: center;
+      .icon{
+        margin-left: .08rem;
+      }
+    }
+    .navListItemTitle{
+      margin-right: .42rem;
+      color: #b9b9b9;
+      width: 100%;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      display: block;
+      strong{
+        color: #333;
+        font-weight:normal;
+        margin-right: .16rem;
+      }
+    }
+  }
+  .search-head{
+    height: .8rem;
+    line-height: .8rem;
+    span{
+      display: inline-block;
+      width: 49%;
+      text-align: center;
+      height: .3rem;
+      line-height: .3rem;
+    }
+    .on{
+      color: #d63333;
+    }
+    .filter{
+      border-right: 1px solid #ddd;
+    }
+  }
+}

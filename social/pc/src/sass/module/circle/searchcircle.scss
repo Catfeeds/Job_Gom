@@ -1,0 +1,114 @@
+@import '../../../../../../gomeplusUI/pc/src/sass/common/basic/_base.scss';
+@import '../../../../../../gomeplusUI/pc/src/sass/common/basic/_mixins.scss';
+.circle-index-list{
+	width: 1210px;
+	padding-bottom: 15px;
+	.shop-list{
+		background-color: $bg-fff;
+		width: 230px;
+		height: 215px;
+		float: left;
+		margin: 0 12px 15px 0;
+		text-align: center;
+		position: relative;
+		background-color: $bg-fff;
+		a{
+			display: block;
+		}
+		.search-circle-share{
+			position: absolute;
+			top: 9px;
+			right: 7px;
+			margin-right: 5px;
+			.icon-share{
+				margin-right: 5px;
+				&:before{
+					content: "\e997";
+				}
+			}
+			&:hover{
+				color: $color-default;
+				.icon-share{
+					color: $link-hover;
+					&:before{
+						content: "\e998";
+					}
+				}
+			}
+		}
+		.user-head{
+			width: 80px;
+			padding-top: 20px;
+			margin: 0 auto;
+			a, img{
+				width: 80px;
+				height: 80px;
+				overflow: hidden;
+				border-radius: 50%;
+			}
+		}
+		.user-name{
+			font-weight: normal;
+			font-size: $text16;
+			line-height: 16px;
+			margin-top: 10px;
+		}
+		.circle-type{
+			padding: 0 8px;
+			height: 16px;
+			line-height: 16px;
+			font-size: 12px;
+			margin: 14px auto 0;
+		}
+		.user-top-info{
+			position: relative;
+			left: 50%;
+			float: left;
+			margin-top: 14px;
+			ul{
+				position: relative;
+				right: 50%;
+				float: left;
+				margin-right: -22px;
+				li{
+					float: left;
+					margin-right: 22px;
+					font-size: $text14;
+					color: $color-gray;
+					span{
+						color: $color-default;
+					}
+				}
+			}
+		}
+        &:hover{
+	        box-shadow: 3px 3px 6px 0 #d2d2d2;
+            -webkit-box-shadow: 3px 3px 6px 0 #d2d2d2;
+            -moz-box-shadow: 3px 3px 6px 0 #d2d2d2;
+    	}
+	}
+}
+.search-result{
+    background: $bg-fff;
+    .result-text{
+        width: 410px;
+        margin: 0 auto;
+        text-align: center;
+        padding: 80px 0;
+        .icon{
+            font-size: 60px;
+            float: left;
+            margin-right: 20px;
+            color: $color-gray;
+        }
+        p{
+            font-size: $text16;
+            color: $font-grey-normal;
+            padding-top: 5px;
+            line-height: 45px;
+        }
+        .text-left{
+            text-align: left;
+        }
+    }
+}

@@ -1,0 +1,18 @@
+doctype html
+html(lang="zh-CN", data-use-rem="750")
+	include ../../../m-widget/head/head.jade
+	link(type="text/css",rel="stylesheet",href="../../css/public/gomeplusUI.css")
+	link(type="text/css",rel="stylesheet",href="../../css/module/plaintext/plaintext.css")
+	//- link(type="text/css",rel="stylesheet",href="../../css/module/im-packet/im-packet.css")
+	body.opg.im-packet
+		include ../../../m-widget/head/rem.jade
+		<!--header-->
+		header.header
+			.h-left
+				a.h-back(href="javascript:;")
+					em.iconn-1
+			.h-cnt.flex-cell
+				h1.h-tit 说明
+		section.plaintext
+			h2 实名认证
+			p 实名认证需要用户提供姓名、身份证号、银行卡号和手机号，当用户在国美币系统实名认证通过后，则可以进行充值、提现操作。

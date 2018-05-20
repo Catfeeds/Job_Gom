@@ -1,0 +1,220 @@
+extends ../plus-widget/head/head.jade
+block style
+	link(type="text/css",rel="stylesheet",href="rebate.css")
+	script(type="text/javascript",src="../plus-shop-js/src/communal/zepto.min.js")
+	script(type="text/javascript",src="../plus-shop-js/src/communal/zepto.swipe.js")
+	script(type="text/javascript",src="../plus-shop-js/src/rebate/rebate.js")
+block body
+	body.opg.rebate
+		include ../plus-widget/head/rem.jade
+		// header-start
+		header.header
+			.h-left
+				a.h-back(href="javascript:;")
+					em.iconn-1
+			.h-cnt.flex-cell
+				h1.h-tit 返利专区
+		// header-end
+
+		// 搜索-start
+		.search_box
+			header.idx_header
+				.idx_searech
+					// .search_module.fixed_search
+					.search_module
+						input#default_kwd(type="hidden" value="这里是value")
+						input#default_kwd_url(type="hidden" value="这里是value")
+						.search_bar
+							p.cancle#wok 取消
+							.search
+								em.iconn-10.search_btn
+								em.iconn-82.search_clear
+								.search_input_bar
+									// placeholder="请输入要搜索的商品"
+									input#search_input(type="text")
+									h1 例如创维49英寸电视 2479元
+						// 搜索弹框				
+						.search_show
+							.history
+								p.search_his_name
+									em.iconn-105
+									| 搜索历史
+								ul.history_word
+									a(href="##") 空调空调空调
+									a(href="##") 空调空调
+									a(href="##") 空调空调空调空调
+									a(href="##") 空调
+									a(href="##") 空调空调
+									a(href="##") 空调空调空调空调
+								a.clear_btn 清空搜索历史
+							.search_sug
+								ul
+									li.keyword
+										a(href="##") 扫地机器人
+											span.import 448条
+									li.keyword
+										a(href="##")
+											| 在
+											span.category
+												|手机通讯
+												| &gt;
+												| 手机
+											| &nbsp;分类中搜索
+		// 搜索-end
+
+		// banner-start
+		.banner#swiper-container1
+			.swiper-wrapper
+				a(href="##").swiper-slide
+					img(src="https://f10.baidu.com/it/u=3351520644,1070383534&fm=72" width="100%")
+				a(href="##").swiper-slide
+					img(src="https://f10.baidu.com/it/u=3351520644,1070383534&fm=72" width="100%")
+				a(href="##").swiper-slide
+					img(src="https://f10.baidu.com/it/u=3351520644,1070383534&fm=72" width="100%")
+			.swiper-pagination
+		// banner-end
+
+		// 单图楼层-start
+		.sec-title
+			span 单图楼层
+			a(href="javascript:;")
+				| 更多
+				em.iconn-41
+		a(href="##").one-img
+			img(src="https://f10.baidu.com/it/u=3351520644,1070383534&fm=72" width="100%")
+		// 单图楼层-end
+		// 超级返6商品-start
+		.sec-title
+			span 三图楼层
+			a(href="javascript:;")
+				| 更多
+				em.iconn-41
+		.sec-title.title-f
+			span 超级返
+		ul.fan-list.bor-b
+			- for(i=0;i<6;i++)
+				li.bor-t.bor-r
+					a(href="##")
+						img(src="https://ss1.bdstatic.com/70cFvXSh_Q1YnxGkpoWK1HF6hhy/it/u=2116881695,1396251290&fm=26&gp=0.jpg")
+		// 超级返6商品-end
+		.sec-title
+			span 三商品轮播
+			a(href="javascript:;")
+				| 更多
+				em.iconn-41
+		// 三商品轮播swiper-start
+		.module.mgt-20
+			.module-single_new#swiper-container2
+				ul.swiper-wrapper
+					- for(i=0;i<8;i++)
+						li.swiper-slide
+							a(href="##")
+								.item-img
+									img(src="https://ss1.bdstatic.com/70cFvXSh_Q1YnxGkpoWK1HF6hhy/it/u=2116881695,1396251290&fm=26&gp=0.jpg")
+								p.title.elli
+									em.ict-fan
+									| OPPORS9全网更新 不买后悔
+								p.price ¥27995.0
+				.swiper-pagination
+		// 三商品轮播swiper-end
+
+		// 三列商品-start
+		.sec-title
+			span 三列商品
+			a(href="javascript:;")
+				| 更多
+				em.iconn-41
+		.module.mgt-20
+			.module-single.static
+				ul
+					- for(i=0;i<3;i++)
+						li
+							a(href="##")
+								.item-img
+									img(src="https://ss1.bdstatic.com/70cFvXSh_Q1YnxGkpoWK1HF6hhy/it/u=2116881695,1396251290&fm=26&gp=0.jpg")
+								p.title.elli
+									em.ict-fan
+									| OPPORS9全网更新 不买后悔
+								p.price ¥27995.0
+		// 三列商品-end
+
+		// tab切换-start
+		ul.m-menu.mgt-20
+			li.flex-cell.active
+				a.link(href="javascript:;")
+					p.txt
+						| 手机通讯
+			li.flex-cell
+				a.link(href="javascript:;")
+					p.txt
+						| 数码摄影
+			li.flex-cell
+				a.link(href="javascript:;")
+					p.txt
+						| 电脑办公
+			li.flex-cell
+				a.link(href="javascript:;")
+					p.txt
+						| 大家电
+			li.flex-cell
+				a.link(href="javascript:;")
+					p.txt
+						| 手机数码
+		ul.main-list.mgt-20
+			- for(i=0;i<2;i++)
+				li.item
+					a.link(href="javascript:;")
+					.fail-img.item-img
+						img(src="https://ss1.bdstatic.com/70cFvXSh_Q1YnxGkpoWK1HF6hhy/it/u=2116881695,1396251290&fm=26&gp=0.jpg")
+					.item-txt.elli2 情人生日礼Crystallin精装礼品情人生日礼Crystallin精装礼品
+					.item-price
+						span.c-f5c ¥2199.40
+					span.ict-area
+						span.ict-box
+							em.ict-fan
+							cite 最高返73.52国美币
+		// tab切换-end
+
+		// 多商品滑动-start
+		.sec-title
+			span 多商品轮播
+			a(href="javascript:;")
+				| 更多
+				em.iconn-41
+		.module.mgt-20
+			.module-single.sub-list#swiper-container3
+				ul.swiper-wrapper
+					- for(i=0;i<7;i++)
+						li.swiper-slide
+							a(href="##")
+								.item-img
+									img(src="https://ss1.bdstatic.com/70cFvXSh_Q1YnxGkpoWK1HF6hhy/it/u=2116881695,1396251290&fm=26&gp=0.jpg")
+								p.title.elli
+									em.ict-fan
+									| OPPORS9全网更新 不买后悔
+								p.price ¥27995.0
+		// 多商品滑动-end
+
+		.sec-title
+			span 赚外快
+			a(href="javascript:;")
+				| 更多
+				em.iconn-41
+		// 赚外快商品列表-start
+		ul.main-list.main-list-new
+			- for(i=0;i<4;i++)
+				li.item
+					a.link(href="javascript:;")
+					.fail-img.item-img
+						img(src="https://ss1.bdstatic.com/70cFvXSh_Q1YnxGkpoWK1HF6hhy/it/u=2116881695,1396251290&fm=26&gp=0.jpg")
+					.item-txt.elli2 情人生日礼Crystallin精装礼品情人生日礼Crystallin精装礼品
+					.item-price
+						span.c-f5c ¥2199.40
+					span.ict-area
+						span.ict-box
+							em.ict-fan
+							cite 最高返73.52国美币
+		// 赚外快商品列表-end
+		a(href="javascript:;").click-more 点击加载更多
+
+		

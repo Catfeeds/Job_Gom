@@ -1,0 +1,96 @@
+doctype html
+html(lang="zh-CN" data-use-rem="750")
+	//- head.jade
+	include ../../../m-widget/head/head.jade
+	link(type="text/css",rel="stylesheet",href="../../css/public/gomeplusUI.css")
+	link(type="text/css",rel="stylesheet",href="../../css/module/share/share.css")
+	body.opg
+		include ../../../m-widget/head/rem.jade
+		header.header
+			.h-left
+				a.h-back(href="javascript:;")
+					em.iconn-1
+			.h-cnt.flex-cell
+				h1.h-tit 分享专区
+		// /header
+
+		// 搜索
+		section.search-type
+			// 搜索框
+			//- 追加.header-reset为设置四个字符样式
+			section.header
+				.h-cnt.flex-cell
+					.input-box
+						em.iconn-10
+						input.sec-ipt(type="text",placeholder="面膜")
+						em.iconn-82
+				a.head-btn(href="javascript:;")
+					| 综合
+					em.iconn-42
+			
+			section.header.header-reset
+				.h-cnt.flex-cell
+					.input-box
+						em.iconn-10
+						input.sec-ipt(type="text",placeholder="面膜")
+						em.iconn-82
+				a.head-btn.active(href="javascript:;")
+					| 分享次数
+					em.iconn-42
+			// 分类
+			.search-classify(style="top:1.76rem;display:block")
+				a(href="#") 综合
+				a(href="#") 分享次数从高到低
+				a(href="#") 赚钱金额从高到低
+		// 搜索结果列表
+		.search-result.share-income
+			.m-prompt
+				.pro-img
+					img(src="../../images/public/img-1.png")
+				.pro-txt
+					| 宝贝没有找到
+			.share-header.share-header-reset.tuijian-title
+				span 为你推荐
+			ul.main-list.grid-list-bor
+				li.item
+					a.link(href="javascript:;")
+					.item-img.fail-img.fail-img
+						img(src="")
+					.item-txt 情人生日礼Crystallin精装礼品
+					.item-price
+						span.c-f5c ¥2199.40
+						del.c-9 ¥2899.00
+					div.item-pay 131付款
+				li.item
+					a.link(href="javascript:;")
+					.item-img.fail-img
+						img(src="")
+					.item-txt
+						| 情人生日礼Crystallin精装礼品
+					.item-price
+						span.c-f5c ¥2199.40
+						del.c-9 ¥2899.00
+					div.item-pay 131付款
+				li.item
+					a.link(href="javascript:;")
+					.item-img.fail-img.fail-img
+						img(src="")
+					.item-txt 情人生日礼Crystallin精装礼品
+					.item-price
+						span.c-f5c ¥2199.40
+						del.c-9 ¥2899.00
+					div.item-pay 131付款
+				li.item
+					a.link(href="javascript:;")
+					.item-img.fail-img
+						img(src="")
+					.item-txt
+						| 情人生日礼Crystallin精装礼品
+					.item-price
+						span.c-f5c ¥2199.40
+						del.c-9 ¥2899.00
+					div.item-pay 131付款
+		// 加载至底部
+		.share-header.share-header-reset
+			span 送君千里，终须一别
+	

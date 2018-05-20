@@ -1,0 +1,1 @@
+"use strict";GomeLogin.getUserInfo(function(o){console.log(o)});

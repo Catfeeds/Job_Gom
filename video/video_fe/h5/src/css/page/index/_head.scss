@@ -1,0 +1,25 @@
+/**
+ * [header]
+ * @Author: Fu Xiaochun
+ * @Email:  fuzhengchun@gomeplus.com
+ */
+@import "../../components/_app";
+.head-bar{
+    height: rem(88px);
+    line-height: rem(88px);
+    border-bottom: rem(1px) solid #ddd;
+    text-align: center;
+    background: #fff;
+    font-size: rem(36);
+    a{
+        color: #202020;
+    }
+    .icon-logo{
+        display: inline-block;
+        width: rem(42px);
+        height: rem(44px);
+        background: url(../../../imgs/public/icon-logo.png) no-repeat;
+        background-size: cover;
+        vertical-align: rem(-5px);
+    }
+}

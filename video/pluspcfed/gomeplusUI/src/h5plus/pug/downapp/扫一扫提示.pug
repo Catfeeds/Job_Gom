@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+html(lang="zh-CN" data-use-rem="750")
+	head
+		meta(charset="UTF-8")
+		meta(name="viewport",content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no")
+		meta(name="format-detection",content="telephone=no")
+		meta(name="format-detection" content="email=no")
+		meta(http-equiv="expires",content="0")
+		title 请用国美APP打开
+		style.
+			*{margin:0;padding:0;}
+			body{background-color:#707070;}
+			.m-scan{padding-top:.86rem;padding-bottom:.4rem;text-align: center;}
+			.txt-box{color:#fff;font-size:.32rem;line-height:.44rem;}
+			.txt-box span{padding-left:.16rem;padding-right:.16rem;display:inline-block;color:#fabe00;}
+			.img-box{ position:relative;margin:.4rem auto 0;width:3.68rem;height:6.54rem;background:url(../../images/scan/scan-img.jpg) no-repeat 0 0; background-size:100% auto;}
+			.img-box:before{content:"";position:absolute;left:-.64rem;top:-.58rem; width:.5rem;height:1rem;background:url(../../images/scan/scan-jt.jpg) no-repeat 0 0; background-size:100% auto;}
+			.hr{margin:.3rem .4rem .4rem;height:1px;overflow:hidden;background-color:#979797;}
+			.btn-box{display:block;margin:.3rem auto 0;width:3.1rem;height:.68rem;color:#fff;font-size:.3rem;line-height:.68rem;border:1px solid #fff; border-radius:.08rem;text-decoration:none;-webkit-tap-highlight-color: transparent;}
+			@media screen and (min-width: 641px){html{font-size:85px;}
+	body.opg
+		include ../../../m-widget/head/rem.jade
+		.m-scan
+			p.txt-box 无法进行更多操作
+			p.txt-box
+				| 请用
+				span 国美Plus APP
+				| 扫码
+			.img-box
+			p.hr
+			p.txt-box 还没有 国美Plus APP ？
+			a.btn-box(href="http://m.gomeplus.com/state/appdownload") 去下载

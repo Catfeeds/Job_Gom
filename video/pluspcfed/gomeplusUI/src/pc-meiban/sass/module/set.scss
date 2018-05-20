@@ -1,0 +1,220 @@
+@import '../../../sasscore/configure.scss';
+
+.windows-set{
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    .set-left{
+        position: absolute;
+        left: 0;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        background: #4A4C5B;
+        width: 154px;
+        h2{
+            font-size: 18px;
+            line-height: 24px;
+            padding: 40px 0 30px 40px;
+            color: #fff;
+        }
+        li{
+            line-height: 36px;
+            padding-left: 40px;
+            font-size: 12px;
+            a{
+                display: block;
+                color: #ccc;
+                position: relative;
+                &.active{
+                    color: #4590E4;
+                    &:after{
+                        content: "";
+                        position: absolute;
+                        right: 0;
+                        top: 12px;
+                        width: 0;
+                        height: 0;
+                        border-top: 5px solid transparent;
+                        border-right: 7px solid #fff;
+                        border-bottom: 5px solid transparent;
+                    }
+                }
+            }
+            em{
+                font-size: 16px;
+                vertical-align: -2px;
+                margin-right: 10px;
+            }
+        }
+    }
+    .set-right{
+        position: absolute;
+        left: 154px;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        .right-top{
+            height: 16px;
+            padding: 19px 20px;
+            text-align: right;
+            a{
+                font-size: 16px;
+                margin-left: 10px;
+                color: #cdcdcd;
+            }
+        }
+        .right-con{
+            text-align: center;
+            .im-name{
+                width: 80px;
+                height: 80px;
+                border-radius: 5px;
+                background: #4590E4;
+                color: #fff;
+                font-size: 20px;
+                line-height: 80px;
+                text-align: center;
+                display: inline-block;
+                margin: 46px 0 10px;
+            }
+            .set-name p{
+                font-size: 18px;
+                line-height: 24px;
+            }
+            .btn-out{
+                margin-top: 52px;
+            }
+        }
+        .set-copyright{
+            position: absolute;
+            left: 0;
+            bottom: 20px;
+            width: 100%;
+            text-align: center;
+            color: #ccc;
+        }
+        .set-password{
+            width: 200px;
+            margin: 26px auto 0;
+            .pr{
+                position: relative;
+                .iconn-11{
+                    position: absolute;
+                    right: 5px;
+                    bottom: 14px;
+                    font-size: 12px;
+                    color: #ccc;
+                }
+            }
+            input{
+                font-size: 12px;
+                line-height: 16px;
+                height: 16px;
+                padding: 10px;
+                width: 180px;
+                border-bottom: 2px solid #ccc;
+                margin-top: 10px;
+                &.error{
+                    border-color: #FA4042;
+                }
+            }
+            .btn-send{
+                display: inline-block;
+                margin-top: 30px;
+                width: 136px;
+                height: 34px;
+                line-height: 34px;
+                text-align: center;
+                color: #fff;
+                background: #4590E4;
+                border-radius: 4px;
+                &:active{
+                    background: #3773b6;
+                }
+                &.disabled{
+                    background: #ccc;
+                }
+            }
+        }
+        .set-all{
+            padding-left: 40px;
+            text-align: left;
+            .all-title{
+                padding-bottom: 10px;
+            }
+            label{
+                display: block;
+                width: 140px;
+                cursor: pointer;
+                line-height: 31px;
+                font-size: 12px;
+                em{
+                    margin: 0 5px;
+                }
+            }
+            .set-key{
+                line-height: 32px;
+                .fl{
+                    padding: 0 20px 0 5px;
+                }
+                .key-select{
+                    height: 33px;
+                    width: 148px;
+                    float: left;
+                    overflow: hidden;
+                    border: 1px solid #fff;
+                    a{
+                        display: block;
+                        font-size: 12px;
+                        position: relative;
+                        border-bottom: 1px solid #ccc;
+                        .iconn-29{
+                            color: #fff;
+                            margin: 0 5px;
+                        }
+                        .down{
+                            position: absolute;
+                            right: 7px;
+                            top: 12px;
+                            width: 0;
+                            height: 0;
+                            border-left: 5px solid transparent;
+                            border-right: 5px solid transparent;
+                            border-top: 7px solid #4A4C5B;
+                        }
+                        &.active{
+                            .iconn-29{
+                                color: #4590E4;
+                            }
+                        }
+                    }
+                    &.open{
+                        height: 65px;
+                        border-color: #979797;
+                    }
+                }
+            }
+        }
+    }
+}
+.error-text{
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%);
+    width: 200px;
+    text-align: center;
+    line-height: 40px;
+    background: #4A4C5B;
+    color: #fff;
+}
+
+
+
+
+
+
+

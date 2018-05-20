@@ -1,0 +1,13 @@
+div.input-group#bizTypeBtn
+  div.input-group-btn
+    button(type="button", class="btn btn-default dropdown-toggle", data-toggle="dropdown") 请选择业务分支类型
+      span.caret
+    ul(class="dropdown-menu", role="menu")
+      - if(data.bizType) {
+      - var keys = Object.keys(data.bizType);
+      -    for(var i in keys) {
+      li
+        a(href="#") #{keys[i]}
+      -    }
+      - }
+  input#bizTypeText.form-control(disabled="disabled",type="text",value="",placeholder="请选择业务分支类型")

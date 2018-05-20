@@ -1,0 +1,61 @@
+//- extends layout.jade
+extends ../../../widget-platform/pug/layout/layout-m.jade
+
+//- index
+block content
+	.platform-tipsinfo
+		h5 说明
+		p m-pics 公用类名
+		p 具体查看结构，谢谢~
+		p.maty 有问题沟通-maty
+		h5 知识点
+		p ①flex布局
+	//end
+
+	//- pic-1
+	div.platform-content
+		h3.platform-header 单张图片
+		//- div.platform-intro
+		//- 	p pic-1
+		div.platform-example#pic-1
+			include ../../../../m-widget/pic/pic-1.jade
+		pre.platform-pre.hide
+			code.platform-code#pic-1_code
+			span.platform-jade pug
+			span.platform-jade.platform-html.actived html
+	//- pic-2
+	div.platform-content
+		h3.platform-header 两张图片
+		//- div.platform-intro
+		//- 	p pic-2
+		div.platform-example#pic-2
+			include ../../../../m-widget/pic/pic-2.jade
+		pre.platform-pre.hide
+			code.platform-code#pic-2_code
+			span.platform-jade pug
+			span.platform-jade.platform-html.actived html
+	//- pic-3
+	div.platform-content
+		h3.platform-header 三张图片
+		//- div.platform-intro
+		//- 	p pic-3
+		div.platform-example#pic-3
+			include ../../../../m-widget/pic/pic-3.jade
+		pre.platform-pre.hide
+			code.platform-code#pic-3_code
+			span.platform-jade pug
+			span.platform-jade.platform-html.actived html
+	//- pic-4
+	div.platform-content
+		h3.platform-header 带有其他展示
+		div.platform-intro
+			p pic-4
+		div.platform-example#pic-4
+			include ../../../../m-widget/pic/pic-4.jade
+		pre.platform-pre.hide
+			code.platform-code#pic-4_code
+			span.platform-jade pug
+			span.platform-jade.platform-html.actived html
+	script(type='text/javascript').
+		HtmlFormat.init(['pic-1','pic-2','pic-3','pic-4'],false,'_code','html','span.platform-jade');
+		$(".platform-pic").parent('li').addClass("actived");

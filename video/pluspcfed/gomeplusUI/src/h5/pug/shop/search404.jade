@@ -1,0 +1,48 @@
+doctype html
+html(lang="zh-CN",data-use-rem="750")
+    include ../../../m-widget/head/head.jade
+    link(type="text/css",rel="stylesheet",href="../../css/public/public-wap.css?v=1.1.9")
+    link(type="text/css",rel="stylesheet",href="../../css/module/search.css")
+
+    body.opg.search
+        include ../../../m-widget/head/rem.jade
+        
+        .search404
+            header.header
+                span
+                    a.head-back(href="javascript:;")
+                        em.iconn-1
+                .head-search.w606
+                    .sec-tab
+                        .tab-txt 商品
+                        .tab-nav
+                            p.active
+                                em.iconn-83
+                                | 商品
+                            p
+                                em.iconn-93
+                                | 店铺
+                    input.sec-ipt(type="search" placeholder="小清新")
+                    em.iconn-77
+                span
+                    a.head-icn(href="javascript:;")
+                        em.iconn-18
+            ul.menu-list
+                li.item.active
+                    i.num
+                    p.txt 综合
+                li.item
+                    p.txt 销量
+                li.item
+                    p.txt 价格
+                        span
+                        // /span.up
+                        // /span.down
+                li.item
+                    p.txt 新品
+                li.item.screen
+                    p.txt 筛选
+            .m-prompt
+                .pro-img
+                    img(src="../../images/common/img-6.png")
+                .pro-txt 没有找到相关商品

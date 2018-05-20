@@ -1,0 +1,49 @@
+div.urlInput.mb40
+  fieldset
+    legend UI分支路径（源路径）
+    //label(for="sourceGitUrl",class="lable-element") UI分支路径（源路径）
+    //textarea#sourceGitUrl(name="sourceGitUrl",placeholder="请输入UI分支的git路径",class="form-control",rows="3") #{defaultGit}
+    div.input-group
+      div.input-group-btn
+        button(type="button", class="btn btn-default dropdown-toggle", data-toggle="dropdown") 选择默认值
+          span.caret
+        ul.dropdown-menu(role="menu", id="gitUrlSrc")
+          li
+            a(href="#") #{defaultGit}
+      input#sourceGitUrl.form-control(type="text")
+    div.branch
+      //label(for="sourceBranch",class="lable-element") 分支
+      //input.form-control.branch#sourceBranch(name="sourceBranch",placeholder="请输入分支")
+      div.input-group
+        div.input-group-btn
+          button(type="button", class="btn btn-default dropdown-toggle", data-toggle="dropdown") 请选择分支
+            span.caret
+          ul.dropdown-menu(role="menu", id="branchesSrc")
+        input#sourceBranch.form-control(type="text")
+  fieldset
+    legend 业务分支路径（推送路径）
+    //label(for="distGitUrl",class="lable-element") 业务分支路径（推送路径）
+    input#distGitUrl(name="distGitUrl",placeholder="请输入业务分支的git路径",class="form-control")
+    div.branch
+      //label(for="distBranch",class="lable-element") 分支
+      input.form-control#distBranch.branch(name="distBranch",placeholder="请输入分支")
+    include dashboard-bizType.jade
+
+div.commitBtn
+
+  button#init.mr20(data-trigger="hover",data-container="body", data-toggle="popover", data-placement="top", data-content="删除并重新检出项目，避免代码冲突，速度较慢！",
+  data-hoverTip="",data-isClear="1", data-formAction="compileAndPush/init",class="ladda-button btn btn-success",data-style="zoom-out")
+    span.ladda-label 初始化项目
+  button#updateProj.mr20(data-trigger="hover",data-container="body", data-toggle="popover", data-placement="top", data-content="更新已经检出的代码，有可能会造成冲突，速度较快！",
+  data-hoverTip="",data-isClear="0", data-formAction="compileAndPush/init",class="ladda-button btn btn-success",data-style="zoom-out")
+    span.ladda-label 更新项目
+  button#compileAndpush(data-trigger="hover",data-container="body", data-toggle="popover", data-placement="top", data-content="编译已经检出的代码，并推送到业务分支，如果有合并冲突产生，点击初始化项目，再次推送。",
+  data-hoverTip="",data-isClear="0", data-formAction="compileAndPush/compileAndPushProj",class="ladda-button btn btn-success",data-style="zoom-out")
+    span.ladda-label 编译并推送
+  button#compile.ml20(data-trigger="hover",data-container="body", data-toggle="popover", data-placement="top", data-content="编译已经检出的代码。可以选择部分结果进行推送。如果想编译完之后立即推送全部结果，请选择【编译并推送】",
+  data-hoverTip="",data-isClear="0", data-formAction="compileAndPush/compileProj",class="ladda-button btn btn-success",data-style="zoom-out")
+    span.ladda-label 编译
+  button#push.ml20(data-trigger="hover",data-container="body", data-toggle="popover", data-placement="top", data-content="推送已经编译的代码。可以选择部分结果进行推送。只有在编译之后，并且选择编译结果中的文件才能推送！如果想编译完之后立即推送全部结果，请选择【编译并推送】",
+  data-hoverTip="",data-isClear="0", data-formAction="compileAndPush/push",class="ladda-button btn btn-success",data-style="zoom-out")
+    span.ladda-label 推送
+  span.tip.ml20#resultTip
